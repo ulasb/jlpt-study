@@ -2,7 +2,10 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
-export default defineConfig({
+// GitHub Pages serves a project site under /<repo>/, so production builds need a
+// matching base path. Dev/preview at the root keeps `base: '/'`.
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/jlpt-study/' : '/',
   plugins: [
     react(),
     VitePWA({
@@ -18,7 +21,8 @@ export default defineConfig({
         theme_color: '#b91c1c',
         background_color: '#0f172a',
         display: 'standalone',
-        start_url: '/',
+        // Relative so it resolves correctly whether served at / or /jlpt-study/.
+        start_url: '.',
         icons: [
           { src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' },
           { src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'maskable' },
@@ -26,4 +30,4 @@ export default defineConfig({
       },
     }),
   ],
-})
+}))
