@@ -1,5 +1,7 @@
 # JLPT Study
 
+**▶ Live app: https://ulasb.github.io/jlpt-study/**
+
 A web app for studying the JLPT (Japanese-Language Proficiency Test) across **kanji**, **vocabulary**, and **grammar**, with spaced repetition. Built as an offline-first PWA — install it to your phone's home screen or run it in any browser.
 
 Levels **N5, N4, and N3** are populated (N2/N1 are stubbed for later).
