@@ -30,11 +30,14 @@ export default function App() {
       </header>
       <main className="content">
         <Routes>
+          {/* Level-scoped pages read selectedLevel reactively and show a brief
+              loading state until it's set — no route-level redirect, which would
+              race the settings write right after picking a level on Home. */}
           <Route path="/" element={<Home />} />
-          <Route path="/today" element={hasLevel ? <Dashboard /> : <Navigate to="/" replace />} />
-          <Route path="/study/:dimension" element={hasLevel ? <Study /> : <Navigate to="/" replace />} />
-          <Route path="/browse/:dimension" element={hasLevel ? <Browse /> : <Navigate to="/" replace />} />
-          <Route path="/exam" element={hasLevel ? <Exam /> : <Navigate to="/" replace />} />
+          <Route path="/today" element={<Dashboard />} />
+          <Route path="/study/:dimension" element={<Study />} />
+          <Route path="/browse/:dimension" element={<Browse />} />
+          <Route path="/exam" element={<Exam />} />
           <Route path="/settings" element={<Settings />} />
           {/* Legacy path → home (home now also serves level selection). */}
           <Route path="/level" element={<Navigate to="/" replace />} />

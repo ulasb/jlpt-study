@@ -64,7 +64,8 @@ export function Dashboard() {
   const navigate = useNavigate()
   const settings = useSettings()
   const level = settings?.selectedLevel
-  if (!level) return null
+  // No route-level guard: tolerate the one-tick lag after selecting a level.
+  if (!level) return <div className="loading">Loading…</div>
 
   return (
     <div className="page">
