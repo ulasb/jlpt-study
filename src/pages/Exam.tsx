@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Reveal } from '../components/Reveal'
 import { db } from '../db/db'
+import { ensureLevelSeeded } from '../db/seed'
 import { useSettings } from '../hooks/useSettings'
 import {
   buildGrammarQuestion,
@@ -23,6 +24,7 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 async function buildExam(level: JlptLevel): Promise<Question[]> {
+  await ensureLevelSeeded(level)
   const [kanji, vocab, grammar] = await Promise.all([
     db.kanji.where('level').equals(level).toArray(),
     db.vocab.where('level').equals(level).toArray(),

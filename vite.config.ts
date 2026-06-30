@@ -17,9 +17,6 @@ export default defineConfig(({ command }) => {
       VitePWA({
         registerType: 'autoUpdate',
         includeAssets: ['favicon.svg', 'icon.svg'],
-        // The bundled JLPT content pushes the main chunk past workbox's 2 MiB
-        // default; allow precaching the larger bundle so the app stays offline.
-        workbox: { maximumFileSizeToCacheInBytes: 6 * 1024 * 1024 },
         manifest: {
           name: 'JLPT Study',
           short_name: 'JLPT Study',

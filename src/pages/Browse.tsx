@@ -1,8 +1,9 @@
 import { useLiveQuery } from 'dexie-react-hooks'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Furigana } from '../components/Furigana'
 import { db } from '../db/db'
+import { ensureLevelSeeded } from '../db/seed'
 import { useSettings } from '../hooks/useSettings'
 import type { Dimension } from '../types'
 
@@ -13,6 +14,11 @@ export function Browse() {
   const settings = useSettings()
   const level = settings?.selectedLevel
   const [open, setOpen] = useState<string | null>(null)
+
+  // Lazy-load this level's content; the live queries below react to the writes.
+  useEffect(() => {
+    if (level) void ensureLevelSeeded(level)
+  }, [level])
 
   const kanji = useLiveQuery(
     () => (level && dim === 'kanji' ? db.kanji.where('level').equals(level).toArray() : []),

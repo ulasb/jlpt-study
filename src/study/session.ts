@@ -1,4 +1,6 @@
+import { LEVEL_COUNTS } from '../data/meta'
 import { db } from '../db/db'
+import { ensureLevelSeeded } from '../db/seed'
 import { applyGrade, freshReview, type Grade } from '../srs/sm2'
 import type { Dimension, JlptLevel } from '../types'
 import {
@@ -14,13 +16,9 @@ export interface QueueStats {
   total: number
 }
 
-async function contentForDimension(level: JlptLevel, dimension: Dimension): Promise<Studyable[]> {
-  if (dimension === 'kanji') return db.kanji.where('level').equals(level).toArray()
-  if (dimension === 'vocab') return db.vocab.where('level').equals(level).toArray()
-  return db.grammar.where('level').equals(level).toArray()
-}
-
 type Studyable = { id: string }
+
+const DIMS: Dimension[] = ['kanji', 'vocab', 'grammar']
 
 // Split content into due items (sorted by due date) and brand-new items (no
 // review row yet), capping new items at `newPerDay`.
@@ -49,6 +47,7 @@ export async function buildSession(
   newPerDay: number,
   now: number,
 ): Promise<Question[]> {
+  await ensureLevelSeeded(level)
   const reviews = await db.reviews.where('[level+dimension]').equals([level, dimension]).toArray()
   const reviewById = new Map(reviews.map((r) => [r.itemId, r]))
 
@@ -68,23 +67,19 @@ export async function buildSession(
   return partitionQueue(items, reviewById, newPerDay, now).map((it) => buildGrammarQuestion(it))
 }
 
+// Content-free: due/new are derived from the small reviews table plus the
+// per-level total from metadata, so the dashboard renders without loading the
+// content modules.
 export async function queueStats(
   level: JlptLevel,
   dimension: Dimension,
   newPerDay: number,
   now: number,
 ): Promise<QueueStats> {
-  const items = await contentForDimension(level, dimension)
   const reviews = await db.reviews.where('[level+dimension]').equals([level, dimension]).toArray()
-  const reviewById = new Map(reviews.map((r) => [r.itemId, r]))
-
-  let due = 0
-  let fresh = 0
-  for (const item of items) {
-    const r = reviewById.get(item.id)
-    if (!r) fresh++
-    else if (r.dueAt <= now) due++
-  }
+  const total = LEVEL_COUNTS[level][dimension]
+  const due = reviews.filter((r) => r.dueAt <= now).length
+  const fresh = Math.max(0, total - reviews.length)
   const newCount = Math.min(fresh, newPerDay)
   return { due, new: newCount, total: due + newCount }
 }
@@ -118,34 +113,28 @@ export async function levelSummary(
   newPerDay: number,
   now: number,
 ): Promise<LevelSummary> {
-  const dims: Dimension[] = ['kanji', 'vocab', 'grammar']
   let due = 0
   let newCount = 0
   let seen = 0
   let total = 0
   let mastered = 0
-  for (const dim of dims) {
-    const items = await contentForDimension(level, dim)
+  for (const dim of DIMS) {
     const reviews = await db.reviews.where('[level+dimension]').equals([level, dim]).toArray()
-    const reviewById = new Map(reviews.map((r) => [r.itemId, r]))
-    total += items.length
+    const dimTotal = LEVEL_COUNTS[level][dim]
+    total += dimTotal
     seen += reviews.length
     mastered += reviews.filter((r) => r.intervalDays >= 21).length
-    let fresh = 0
-    for (const item of items) {
-      const r = reviewById.get(item.id)
-      if (!r) fresh++
-      else if (r.dueAt <= now) due++
-    }
-    newCount += Math.min(fresh, newPerDay)
+    due += reviews.filter((r) => r.dueAt <= now).length
+    newCount += Math.min(Math.max(0, dimTotal - reviews.length), newPerDay)
   }
   return { level, due, new: newCount, seen, total, mastered }
 }
 
 // Progress summary for a dimension: how many items have been "learned"
 // (seen at least once) and how many are well-known (interval >= 21 days).
+// Total comes from metadata so this stays content-free.
 export async function dimensionProgress(level: JlptLevel, dimension: Dimension) {
-  const total = (await contentForDimension(level, dimension)).length
+  const total = LEVEL_COUNTS[level][dimension]
   const reviews = await db.reviews.where('[level+dimension]').equals([level, dimension]).toArray()
   const seen = reviews.length
   const mastered = reviews.filter((r) => r.intervalDays >= 21).length

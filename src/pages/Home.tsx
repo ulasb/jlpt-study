@@ -1,5 +1,6 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useNavigate } from 'react-router-dom'
+import { ensureLevelSeeded } from '../db/seed'
 import { setSelectedLevel, toggleLevelEnabled, useSettings } from '../hooks/useSettings'
 import { levelSummary } from '../study/session'
 import { ALL_LEVELS, type JlptLevel } from '../types'
@@ -33,6 +34,7 @@ export function Home() {
   const totalNew = active.reduce((a, s) => a + s.new, 0)
 
   async function open(level: JlptLevel) {
+    void ensureLevelSeeded(level) // warm the content cache while the dashboard renders
     await setSelectedLevel(level)
     navigate('/today')
   }
