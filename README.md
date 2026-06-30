@@ -34,6 +34,24 @@ npm run preview    # preview the production build
 npm run typecheck  # type-check only
 ```
 
+## Android (Capacitor)
+
+The same web app is wrapped for Android with [Capacitor](https://capacitorjs.com/) — no rewrite; it loads the built web assets inside a native shell.
+
+**Prerequisites (local machine):** [Android Studio](https://developer.android.com/studio) (which provides the Android SDK) and a JDK (17+).
+
+```bash
+npm run cap:sync   # build the web app (relative base) and copy it into android/
+npm run android    # sync, then open the project in Android Studio
+```
+
+In Android Studio, let Gradle sync, then **Run** on an emulator or a connected device. To produce a release APK/AAB, use **Build → Generate Signed Bundle / APK**.
+
+Notes:
+- `npm run build:cap` builds with `base: './'` and no service worker (correct for the native webview); the GitHub Pages build keeps `base: '/jlpt-study/'` + PWA.
+- App id is `com.ulasb.jlptstudy` (see `capacitor.config.ts`).
+- The `android/` native project is committed; sync-generated assets (the copied web bundle) are gitignored and recreated by `npm run cap:sync`, so run it once after cloning before opening Android Studio.
+
 ## Content
 
 JLPT content lives in `src/data/n5.ts`, `n4.ts`, `n3.ts` and is seeded into IndexedDB on first run (`src/db/seed.ts`). It was generated and verified against reference sources; corrections are welcome via PR.
