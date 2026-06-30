@@ -75,4 +75,6 @@ Notes:
 
 ## Content
 
-JLPT content lives in `src/data/n5.ts`, `n4.ts`, `n3.ts` and is seeded into IndexedDB on first run (`src/db/seed.ts`). It was generated and verified against reference sources; corrections are welcome via PR.
+JLPT content lives in `src/data/n5.ts`, `n4.ts`, `n3.ts` and is loaded lazily per level (dynamic import) and seeded into IndexedDB on demand (`src/db/seed.ts`). It was generated and verified against reference sources; corrections are welcome via PR.
+
+`src/data/meta.ts` (per-level item counts used by the Home overview) is **auto-generated** from the content files by `scripts/gen-meta.mjs`, which runs before every `dev`/`build` — so the totals can't drift from the data. Regenerate manually with `npm run gen:meta`.

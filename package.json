@@ -4,11 +4,12 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "gen:meta": "node scripts/gen-meta.mjs",
+    "dev": "node scripts/gen-meta.mjs && vite",
+    "build": "node scripts/gen-meta.mjs && tsc -b && vite build",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
-    "build:cap": "tsc -b && CAP_BUILD=1 vite build",
+    "build:cap": "node scripts/gen-meta.mjs && tsc -b && CAP_BUILD=1 vite build",
     "cap:sync": "npm run build:cap && cap sync android",
     "android": "npm run cap:sync && cap open android"
   },
