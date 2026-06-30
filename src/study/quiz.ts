@@ -1,4 +1,5 @@
 import { stripFurigana } from '../lib/furigana'
+import { tofuguSearchUrl } from '../lib/tofugu'
 import type { Dimension, Grammar, Kanji, Vocab } from '../types'
 
 // A block in the post-answer explanation. `main`/`sentence` may carry furigana
@@ -8,6 +9,7 @@ export type RevealBlock =
   | { kind: 'sentence'; text: string }
   | { kind: 'trans'; text: string }
   | { kind: 'note'; ok: boolean; form: string; text: string }
+  | { kind: 'link'; label: string; url: string }
 
 export interface Question {
   itemId: string
@@ -147,6 +149,7 @@ export function buildGrammarQuestion(item: Grammar): Question {
     { kind: 'trans', text: example.translation },
     { kind: 'note', ok: true, form: correct, text: item.whyRight },
     ...wrong.map((d): RevealBlock => ({ kind: 'note', ok: false, form: d.form, text: d.gloss })),
+    { kind: 'link', label: `Read more about ${item.title} on Tofugu`, url: tofuguSearchUrl(item.title) },
   ]
 
   return {

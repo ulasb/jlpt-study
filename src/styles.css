@@ -160,6 +160,10 @@ h3 { margin: 0; font-size: 16px; }
 .rb-note.ok .rb-form { color: var(--good); }
 .rb-note.bad .rb-form { color: var(--accent-2); }
 .rb-gloss { color: var(--muted); font-size: 13px; line-height: 1.45; }
+.rb-link { display: inline-block; margin-top: 6px; color: var(--accent-2); font-weight: 600; font-size: 14px; text-decoration: none; }
+.rb-link:hover { text-decoration: underline; }
+.tofugu-link { display: inline-block; margin-top: 12px; color: var(--accent-2); font-weight: 600; font-size: 14px; text-decoration: none; }
+.tofugu-link:hover { text-decoration: underline; }
 
 /* Furigana ruby */
 ruby { ruby-position: over; }

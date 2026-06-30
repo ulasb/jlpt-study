@@ -2,6 +2,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Furigana } from '../components/Furigana'
+import { tofuguSearchUrl } from '../lib/tofugu'
 import { db } from '../db/db'
 import { ensureLevelSeeded } from '../db/seed'
 import { useSettings } from '../hooks/useSettings'
@@ -118,6 +119,14 @@ export function Browse() {
                           </li>
                         ))}
                       </ul>
+                      <a
+                        className="tofugu-link"
+                        href={tofuguSearchUrl(it.title)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Look up {it.title} on Tofugu ↗
+                      </a>
                     </div>
                   )}
                 </div>

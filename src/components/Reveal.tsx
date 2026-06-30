@@ -33,6 +33,12 @@ export function Reveal({ blocks }: { blocks: RevealBlock[] }) {
                 <span className="rb-gloss">{b.text}</span>
               </div>
             )
+          case 'link':
+            return (
+              <a key={i} className="rb-link" href={b.url} target="_blank" rel="noopener noreferrer">
+                {b.label} ↗
+              </a>
+            )
         }
       })}
     </div>
