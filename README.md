@@ -38,7 +38,7 @@ npm run typecheck  # type-check only
 
 The same web app is wrapped for Android with [Capacitor](https://capacitorjs.com/) — no rewrite; it loads the built web assets inside a native shell.
 
-**Prerequisites (local machine):** [Android Studio](https://developer.android.com/studio) (which provides the Android SDK) and a JDK (17+).
+**Prerequisites (local machine):** [Android Studio](https://developer.android.com/studio) (which provides the Android SDK) and **JDK 21** (Capacitor 8 compiles against Java 21). On macOS: `brew install openjdk@21`.
 
 ```bash
 npm run cap:sync   # build the web app (relative base) and copy it into android/
@@ -47,10 +47,31 @@ npm run android    # sync, then open the project in Android Studio
 
 In Android Studio, let Gradle sync, then **Run** on an emulator or a connected device. To produce a release APK/AAB, use **Build → Generate Signed Bundle / APK**.
 
+### Building from the command line
+
+```bash
+export JAVA_HOME="$(/usr/libexec/java_home -v 21)"   # or brew's openjdk@21 path
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+npm run cap:sync
+cd android && ./gradlew assembleDebug
+# → android/app/build/outputs/apk/debug/app-debug.apk
+adb install -r app/build/outputs/apk/debug/app-debug.apk   # to a connected device/emulator
+```
+
+### App icons & splash
+
+Launcher icons and splash screens are generated from `assets/logo.svg` with [`@capacitor/assets`](https://github.com/ionic-team/capacitor-assets). To regenerate after changing the logo:
+
+```bash
+npx capacitor-assets generate --android \
+  --iconBackgroundColor '#b91c1c' --iconBackgroundColorDark '#b91c1c' \
+  --splashBackgroundColor '#0f172a' --splashBackgroundColorDark '#0f172a'
+```
+
 Notes:
 - `npm run build:cap` builds with `base: './'` and no service worker (correct for the native webview); the GitHub Pages build keeps `base: '/jlpt-study/'` + PWA.
 - App id is `com.ulasb.jlptstudy` (see `capacitor.config.ts`).
-- The `android/` native project is committed; sync-generated assets (the copied web bundle) are gitignored and recreated by `npm run cap:sync`, so run it once after cloning before opening Android Studio.
+- The `android/` native project (including generated launcher/splash assets) is committed; the sync-copied web bundle is gitignored and recreated by `npm run cap:sync`, so run it once after cloning before opening Android Studio.
 
 ## Content
 
