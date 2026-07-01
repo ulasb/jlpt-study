@@ -90,6 +90,13 @@ To enable on the deployed site:
 
 For local production testing, put `VITE_GA_ID=G-…` in `.env.local` and run `npm run build && npm run preview`.
 
-**Events tracked** (beyond page views): `select_level`, `study_start`, `answer` (with grade), `study_complete`, `exam_start`, `exam_complete`, `browse_open` — each tagged with level/dimension so you can see study behavior, not just traffic.
+**Events tracked** (beyond page views): `select_level`, `study_start`, `answer` (grade + `is_correct`), `study_complete` (with `accuracy`), `exam_start`, `exam_complete`, `browse_open`, and `flag_item` (user-reported bad exercise) — each tagged with level/dimension so you can see study behavior, not just traffic.
+
+### GA4 custom definitions (to see accuracy & flags in reports)
+
+GA4 collects event parameters automatically, but you must register them once to use them in reports (**Admin → Custom definitions**):
+
+- **Study accuracy** — register `is_correct` as a **custom metric** (event `answer`). In an Exploration, the *average* of `is_correct` is your accuracy; break it down by the `level` / `dimension` custom dimensions. (`study_complete` also carries a per-session `accuracy` 0–100 metric.)
+- **Flagged exercises** — register `item` as a **custom dimension**. The `flag_item` event count tells you *how often* users flag problems; the `item` dimension tells you *which exercise* (its stable id, e.g. `grammar:N3:～ように`) so you can find and fix it. Register `level`/`dimension`/`grade` as custom dimensions too if you want to slice by them.
 
 **Privacy note:** GA4 sets cookies. If you have EU visitors you may need a consent banner (not included). Prefer no cookies? Swap `src/lib/analytics.ts` for a privacy-first provider (Plausible, Cloudflare, GoatCounter).

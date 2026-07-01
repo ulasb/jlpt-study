@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import { FlagButton } from '../components/FlagButton'
 import { Reveal } from '../components/Reveal'
 import { useSettings } from '../hooks/useSettings'
 import { trackEvent } from '../lib/analytics'
@@ -79,9 +80,11 @@ export function Study() {
 
   async function grade(g: Grade) {
     await recordGrade(q.itemId, level!, dim, g, Date.now())
-    trackEvent('answer', { level: level!, dimension: dim, grade: g })
+    // is_correct (0/1) → register as a GA4 custom metric; its average is accuracy.
+    trackEvent('answer', { level: level!, dimension: dim, grade: g, is_correct: g === 'again' ? 0 : 1 })
     if (index + 1 >= total) {
-      trackEvent('study_complete', { level: level!, dimension: dim, total, correct: correctCount })
+      const accuracy = total > 0 ? Math.round((correctCount / total) * 100) : 0
+      trackEvent('study_complete', { level: level!, dimension: dim, total, correct: correctCount, accuracy })
     }
     setPicked(null)
     setRevealed(false)
@@ -142,6 +145,7 @@ export function Study() {
               {picked === null ? 'Continue — review again soon' : 'Got it wrong — review again soon'}
             </button>
           )}
+          <FlagButton key={q.itemId} itemId={q.itemId} level={level} dimension={dim} />
         </div>
       )}
     </div>

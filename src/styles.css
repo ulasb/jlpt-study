@@ -170,6 +170,11 @@ ruby { ruby-position: over; }
 rt { font-size: 0.5em; color: var(--muted); font-weight: 400; }
 
 .grade-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+
+/* Flag / report a problem */
+.flag { align-self: center; background: none; border: none; color: var(--muted); font-size: 13px; cursor: pointer; padding: 6px; margin-top: 2px; }
+.flag:hover { color: var(--accent-2); text-decoration: underline; }
+.flag.flagged { color: var(--due); cursor: default; }
 .btn.grade { padding: 14px; }
 .btn.grade.again { background: var(--accent); color: #fff; }
 .btn.grade.hard { background: var(--due); color: #1f2937; }

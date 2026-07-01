@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Reveal } from '../components/Reveal'
+import { FlagButton } from '../components/FlagButton'
 import { db } from '../db/db'
 import { ensureLevelSeeded } from '../db/seed'
 import { useSettings } from '../hooks/useSettings'
@@ -147,6 +148,7 @@ export function Exam() {
           <button className="btn primary" onClick={next}>
             {index + 1 < questions.length ? 'Next question' : 'See result'}
           </button>
+          <FlagButton key={index} itemId={q.itemId} level={level} dimension={q.dimension} />
         </div>
       )}
     </div>
