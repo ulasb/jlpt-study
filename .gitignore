@@ -11,6 +11,9 @@ dev-dist/
 # local env / editor / OS
 .DS_Store
 *.local
+.env
+.env.*
+!.env.example
 .vscode/
 .idea/
 

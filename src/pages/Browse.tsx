@@ -2,6 +2,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Furigana } from '../components/Furigana'
+import { trackEvent } from '../lib/analytics'
 import { tofuguSearchUrl } from '../lib/tofugu'
 import { db } from '../db/db'
 import { ensureLevelSeeded } from '../db/seed'
@@ -20,6 +21,10 @@ export function Browse() {
   useEffect(() => {
     if (level) void ensureLevelSeeded(level)
   }, [level])
+
+  useEffect(() => {
+    if (level) trackEvent('browse_open', { level, dimension: dim })
+  }, [level, dim])
 
   const kanji = useLiveQuery(
     () => (level && dim === 'kanji' ? db.kanji.where('level').equals(level).toArray() : []),

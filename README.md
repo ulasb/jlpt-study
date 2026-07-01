@@ -78,3 +78,18 @@ Notes:
 JLPT content lives in `src/data/n5.ts`, `n4.ts`, `n3.ts` and is loaded lazily per level (dynamic import) and seeded into IndexedDB on demand (`src/db/seed.ts`). It was generated and verified against reference sources; corrections are welcome via PR.
 
 `src/data/meta.ts` (per-level item counts used by the Home overview) is **auto-generated** from the content files by `scripts/gen-meta.mjs`, which runs before every `dev`/`build` — so the totals can't drift from the data. Regenerate manually with `npm run gen:meta`.
+
+## Analytics (optional)
+
+Usage analytics use **Google Analytics 4** and are **disabled unless a Measurement ID is configured** — nothing loads without it, and analytics never runs in dev (production builds only). All tracking goes through `src/lib/analytics.ts`, so the provider can be swapped in one file.
+
+To enable on the deployed site:
+1. Create a GA4 property and copy its Measurement ID (`G-XXXXXXXXXX`).
+2. In the GitHub repo: **Settings → Secrets and variables → Actions → Variables → New repository variable**, named `VITE_GA_ID`, value = your ID.
+3. Trigger a deploy (push to `main`, or the Actions tab → Run workflow). The build inlines the ID.
+
+For local production testing, put `VITE_GA_ID=G-…` in `.env.local` and run `npm run build && npm run preview`.
+
+**Events tracked** (beyond page views): `select_level`, `study_start`, `answer` (with grade), `study_complete`, `exam_start`, `exam_complete`, `browse_open` — each tagged with level/dimension so you can see study behavior, not just traffic.
+
+**Privacy note:** GA4 sets cookies. If you have EU visitors you may need a consent banner (not included). Prefer no cookies? Swap `src/lib/analytics.ts` for a privacy-first provider (Plausible, Cloudflare, GoatCounter).

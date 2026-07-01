@@ -1,5 +1,7 @@
-import { Navigate, Route, Routes, useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import { useSettings } from './hooks/useSettings'
+import { trackPageview } from './lib/analytics'
 import { Home } from './pages/Home'
 import { Dashboard } from './pages/Dashboard'
 import { Study } from './pages/Study'
@@ -10,6 +12,12 @@ import { Settings } from './pages/Settings'
 export default function App() {
   const settings = useSettings()
   const navigate = useNavigate()
+  const location = useLocation()
+
+  // Report a page_view on every route change (SPA hash routing).
+  useEffect(() => {
+    trackPageview(location.pathname)
+  }, [location.pathname])
 
   // Wait for settings to load to avoid a flash of the wrong screen.
   if (settings === undefined) return <div className="loading">Loading…</div>

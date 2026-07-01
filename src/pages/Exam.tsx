@@ -4,6 +4,7 @@ import { Reveal } from '../components/Reveal'
 import { db } from '../db/db'
 import { ensureLevelSeeded } from '../db/seed'
 import { useSettings } from '../hooks/useSettings'
+import { trackEvent } from '../lib/analytics'
 import {
   buildGrammarQuestion,
   buildKanjiQuestion,
@@ -57,6 +58,7 @@ export function Exam() {
       setPicked(null)
       setRevealed(false)
       setScore(0)
+      if (q.length > 0) trackEvent('exam_start', { level })
     })
   }
 
@@ -83,6 +85,7 @@ export function Exam() {
   }
 
   const q = questions[index]
+  const total = questions.length
 
   function answer(i: number | null) {
     if (revealed) return
@@ -92,6 +95,10 @@ export function Exam() {
   }
 
   function next() {
+    if (index + 1 >= total) {
+      const pct = Math.round((score / total) * 100)
+      trackEvent('exam_complete', { level: level!, total, score, pct })
+    }
     setPicked(null)
     setRevealed(false)
     setIndex((n) => n + 1)

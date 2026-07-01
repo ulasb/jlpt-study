@@ -22,6 +22,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # Set this as a repository Actions *variable* (Settings → Secrets and
+      # variables → Actions → Variables). If unset, analytics stays disabled.
+      VITE_GA_ID: ${{ vars.VITE_GA_ID }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v6

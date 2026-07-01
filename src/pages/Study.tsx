@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Reveal } from '../components/Reveal'
 import { useSettings } from '../hooks/useSettings'
+import { trackEvent } from '../lib/analytics'
 import type { Grade } from '../srs/sm2'
 import { buildSession, recordGrade } from '../study/session'
 import type { Question } from '../study/quiz'
@@ -34,6 +35,7 @@ export function Study() {
       setPicked(null)
       setRevealed(false)
       setCorrectCount(0)
+      if (q.length > 0) trackEvent('study_start', { level, dimension: dim, queued: q.length })
     })
   }
 
@@ -65,6 +67,7 @@ export function Study() {
   }
 
   const q = queue[index]
+  const total = queue.length
   const isCorrect = revealed && picked === q.correctIndex
 
   function answer(i: number | null) {
@@ -76,6 +79,10 @@ export function Study() {
 
   async function grade(g: Grade) {
     await recordGrade(q.itemId, level!, dim, g, Date.now())
+    trackEvent('answer', { level: level!, dimension: dim, grade: g })
+    if (index + 1 >= total) {
+      trackEvent('study_complete', { level: level!, dimension: dim, total, correct: correctCount })
+    }
     setPicked(null)
     setRevealed(false)
     setIndex((n) => n + 1)
