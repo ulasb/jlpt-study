@@ -1,11 +1,19 @@
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { db } from '../db/db'
 import { setNewPerDay, useSettings } from '../hooks/useSettings'
+import { analyticsAvailable, getConsent, setConsent, type Consent } from '../lib/analytics'
 
 export function Settings() {
   const navigate = useNavigate()
   const settings = useSettings()
+  const [consent, setConsentState] = useState<Consent | null>(() => getConsent())
   if (!settings) return null
+
+  function chooseConsent(v: Consent) {
+    setConsent(v)
+    setConsentState(v)
+  }
 
   async function resetProgress() {
     const level = settings?.selectedLevel
@@ -38,6 +46,34 @@ export function Settings() {
           <button className="btn ghost" onClick={() => setNewPerDay(settings.newPerDay + 5)}>+</button>
         </div>
       </div>
+
+      {analyticsAvailable() && (
+        <div className="setting-row">
+          <div>
+            <strong>Usage analytics</strong>
+            <div className="muted small">
+              {consent === 'granted'
+                ? 'Enabled — anonymous usage stats help improve the app.'
+                : 'Disabled — no analytics cookies are set.'}
+              {consent === 'granted' ? ' Turning off applies next launch.' : ''}
+            </div>
+          </div>
+          <div className="stepper">
+            <button
+              className={`btn ${consent !== 'granted' ? 'primary' : 'ghost'}`}
+              onClick={() => chooseConsent('denied')}
+            >
+              Off
+            </button>
+            <button
+              className={`btn ${consent === 'granted' ? 'primary' : 'ghost'}`}
+              onClick={() => chooseConsent('granted')}
+            >
+              On
+            </button>
+          </div>
+        </div>
+      )}
 
       <div className="setting-row">
         <div>

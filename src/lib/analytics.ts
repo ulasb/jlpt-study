@@ -12,12 +12,41 @@ declare global {
 }
 
 type EventParams = Record<string, string | number | boolean>
+export type Consent = 'granted' | 'denied'
 
 const GA_ID = import.meta.env.VITE_GA_ID
+const CONSENT_KEY = 'analytics-consent'
 let ready = false
 
+// Analytics is only relevant when a Measurement ID is configured in a prod build.
+export function analyticsAvailable(): boolean {
+  return import.meta.env.PROD && !!GA_ID
+}
+
+export function getConsent(): Consent | null {
+  try {
+    const v = localStorage.getItem(CONSENT_KEY)
+    return v === 'granted' || v === 'denied' ? v : null
+  } catch {
+    return null
+  }
+}
+
+// Record the user's choice. Granting also loads GA immediately; denying keeps
+// it unloaded. (Revoking a prior grant takes effect on next load — GA can't be
+// unloaded once running.)
+export function setConsent(consent: Consent): void {
+  try {
+    localStorage.setItem(CONSENT_KEY, consent)
+  } catch {
+    /* ignore */
+  }
+  if (consent === 'granted') initAnalytics()
+}
+
 export function initAnalytics(): void {
-  if (ready || !import.meta.env.PROD || !GA_ID) return
+  // No cookies / no GA load until the user has explicitly consented.
+  if (ready || !analyticsAvailable() || getConsent() !== 'granted') return
   ready = true
 
   const script = document.createElement('script')
@@ -34,6 +63,9 @@ export function initAnalytics(): void {
   window.gtag('js', new Date())
   // We drive page_view manually (SPA + hash routing), so disable the automatic one.
   window.gtag('config', GA_ID, { send_page_view: false })
+  // Record the current page now (on load for returning users, or right after
+  // consent) — route-change page_views only fire on subsequent navigation.
+  trackPageview(window.location.hash.replace(/^#/, '') || '/')
 }
 
 export function trackPageview(path: string): void {

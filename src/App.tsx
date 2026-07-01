@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
+import { ConsentBanner } from './components/ConsentBanner'
 import { useSettings } from './hooks/useSettings'
 import { trackPageview } from './lib/analytics'
 import { Home } from './pages/Home'
@@ -52,6 +53,7 @@ export default function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
+      <ConsentBanner />
     </div>
   )
 }

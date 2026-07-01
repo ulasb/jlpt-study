@@ -201,6 +201,19 @@ rt { font-size: 0.5em; color: var(--muted); font-weight: 400; }
 .stepper { display: flex; align-items: center; gap: 12px; }
 .stepper-val { min-width: 28px; text-align: center; font-weight: 700; font-size: 18px; }
 
+/* Cookie-consent banner */
+.consent {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+  max-width: 720px; margin: 0 auto;
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  background: var(--surface); border-top: 1px solid var(--surface-2);
+  padding: 14px 18px calc(14px + env(safe-area-inset-bottom));
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, .35);
+}
+.consent-text { margin: 0; font-size: 13px; color: var(--muted); flex: 1 1 240px; line-height: 1.5; }
+.consent-actions { display: flex; gap: 10px; margin-left: auto; }
+.consent-actions .btn { padding: 8px 18px; }
+
 /* Exam result */
 .score-ring { width: 130px; height: 130px; border-radius: 50%; display: grid; place-items: center; font-size: 34px; font-weight: 800; border: 8px solid var(--surface-2); }
 .score-ring.pass { border-color: var(--good); color: var(--good); }
