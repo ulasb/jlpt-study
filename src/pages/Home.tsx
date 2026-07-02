@@ -1,13 +1,14 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useNavigate } from 'react-router-dom'
+import { POPULATED_LEVELS } from '../data/meta'
 import { ensureLevelSeeded } from '../db/seed'
 import { setSelectedLevel, toggleLevelEnabled, useSettings } from '../hooks/useSettings'
 import { trackEvent } from '../lib/analytics'
 import { levelSummary } from '../study/session'
 import { ALL_LEVELS, type JlptLevel } from '../types'
 
-// Levels with content seeded. Others appear as "coming soon".
-const POPULATED: JlptLevel[] = ['N5', 'N4', 'N3']
+// Levels with content seeded (derived from generated meta). Others: "coming soon".
+const POPULATED = POPULATED_LEVELS
 
 const BLURB: Record<JlptLevel, string> = {
   N5: 'Beginner',

@@ -2,7 +2,7 @@ import type { Grammar, JlptLevel, Kanji, Vocab } from '../types'
 import { db } from './db'
 
 // Bump when seeded content changes; existing content is cleared so it re-seeds.
-const SEED_VERSION = 5
+const SEED_VERSION = 6
 
 // Each level's content lives in its own module, loaded lazily (dynamic import)
 // so the startup bundle stays small — only the level you open is parsed.
@@ -19,6 +19,10 @@ const LOADERS: Partial<Record<JlptLevel, () => Promise<LevelData>>> = {
   N3: async () => {
     const m = await import('../data/n3')
     return { kanji: m.N3_KANJI, vocab: m.N3_VOCAB, grammar: m.N3_GRAMMAR }
+  },
+  N2: async () => {
+    const m = await import('../data/n2')
+    return { kanji: m.N2_KANJI, vocab: m.N2_VOCAB, grammar: m.N2_GRAMMAR }
   },
 }
 
