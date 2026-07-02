@@ -130,6 +130,7 @@ h3 { margin: 0; font-size: 16px; }
 .study-progress-fill { height: 100%; background: var(--accent-2); transition: width .3s; }
 .question-card { background: var(--surface); border-radius: var(--radius); padding: 28px 20px; text-align: center; display: flex; flex-direction: column; gap: 10px; }
 .q-sub { color: var(--muted); font-size: 14px; }
+.q-context { color: var(--muted); font-size: 16px; line-height: 1.6; font-style: italic; border-left: 3px solid var(--surface-2); padding-left: 12px; text-align: left; }
 .q-prompt { font-weight: 700; }
 .q-prompt.kanji { font-size: 88px; line-height: 1; }
 .q-prompt.word { font-size: 40px; }

@@ -117,6 +117,7 @@ export function Exam() {
 
       <div className="question-card">
         <div className="q-sub">{q.modeLabel}</div>
+        {q.context && <div className="q-context">{q.context}</div>}
         <div className={`q-prompt ${q.promptStyle}`}>{q.prompt}</div>
       </div>
 

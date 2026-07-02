@@ -28,6 +28,10 @@ export interface Vocab {
 }
 
 export interface GrammarExample {
+  // Optional lead-in sentence that sets the situation so the target answer is
+  // the only correct choice (disambiguates otherwise-plausible distractors).
+  // Furigana markup allowed; no blank.
+  context?: string
   // The sentence is rendered with `___` standing in for `answer`.
   // Kanji carry inline furigana markup: 漢字[かんじ]. Furigana is stripped in the
   // quiz prompt and rendered as ruby in the post-answer explanation.
