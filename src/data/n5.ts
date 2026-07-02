@@ -11174,19 +11174,22 @@ export const N5_GRAMMAR: Grammar[] = [
         "sentence": "私[わたし]___学生[がくせい]です。",
         "answer": "も",
         "translation": "I am a student too.",
-        "context": "田中[たなか]さんは学生[がくせい]です。"
+        "context": "田中[たなか]さんは学生[がくせい]です。",
+        "contextTranslation": "Mr. Tanaka is a student."
       },
       {
         "sentence": "田中[たなか]さん___来[き]ます。",
         "answer": "も",
         "translation": "Mr. Tanaka will come too.",
-        "context": "明日[あした]のパーティーには山田[やまだ]さんが来[き]ます。"
+        "context": "明日[あした]のパーティーには山田[やまだ]さんが来[き]ます。",
+        "contextTranslation": "Mr. Yamada is coming to tomorrow's party."
       },
       {
         "sentence": "これ___あなたのですか。",
         "answer": "も",
         "translation": "Is this yours too?",
-        "context": "その本[ほん]はあなたのですね。"
+        "context": "その本[ほん]はあなたのですね。",
+        "contextTranslation": "That book is yours, right?"
       },
       {
         "sentence": "猫[ねこ]___犬[いぬ]もいます。",
@@ -11197,7 +11200,8 @@ export const N5_GRAMMAR: Grammar[] = [
         "sentence": "彼[かれ]はパン___食[た]べます。",
         "answer": "も",
         "translation": "He eats bread too.",
-        "context": "彼[かれ]は朝[あさ]ご飯[はん]にご飯[はん]を食[た]べます。"
+        "context": "彼[かれ]は朝[あさ]ご飯[はん]にご飯[はん]を食[た]べます。",
+        "contextTranslation": "He eats rice for breakfast."
       }
     ],
     "distractorPool": [
@@ -11350,7 +11354,8 @@ export const N5_GRAMMAR: Grammar[] = [
         "sentence": "パン___牛乳[ぎゅうにゅう]を買[か]います。",
         "answer": "と",
         "translation": "I will buy bread and milk.",
-        "context": "買[か]う物[もの]はこの二[ふた]つだけです。"
+        "context": "買[か]う物[もの]はこの二[ふた]つだけです。",
+        "contextTranslation": "The only things I'm buying are these two."
       },
       {
         "sentence": "友[とも]だち___映画[えいが]を見[み]ます。",
@@ -11361,7 +11366,8 @@ export const N5_GRAMMAR: Grammar[] = [
         "sentence": "犬[いぬ]___猫[ねこ]がいます。",
         "answer": "と",
         "translation": "There are a dog and a cat.",
-        "context": "この家[いえ]にいる動物[どうぶつ]はこの二[に]種類[しゅるい]だけです。"
+        "context": "この家[いえ]にいる動物[どうぶつ]はこの二[に]種類[しゅるい]だけです。",
+        "contextTranslation": "The only animals in this house are these two kinds."
       },
       {
         "sentence": "母[はは]___買[か]い物[もの]に行[い]きました。",
@@ -11372,7 +11378,8 @@ export const N5_GRAMMAR: Grammar[] = [
         "sentence": "本[ほん]___ノートが机[つくえ]の上[うえ]にあります。",
         "answer": "と",
         "translation": "There are a book and a notebook on the desk.",
-        "context": "机[つくえ]の上[うえ]にある物[もの]はこの二[ふた]つだけです。"
+        "context": "机[つくえ]の上[うえ]にある物[もの]はこの二[ふた]つだけです。",
+        "contextTranslation": "The only things on the desk are these two."
       }
     ],
     "distractorPool": [
@@ -11439,19 +11446,22 @@ export const N5_GRAMMAR: Grammar[] = [
         "sentence": "机[つくえ]の上[うえ]に本[ほん]___ノートがあります。",
         "answer": "や",
         "translation": "There are books and notebooks (among other things) on the desk.",
-        "context": "机[つくえ]の上[うえ]にはいろいろな物[もの]があります。"
+        "context": "机[つくえ]の上[うえ]にはいろいろな物[もの]があります。",
+        "contextTranslation": "There are various things on the desk."
       },
       {
         "sentence": "果物[くだもの]はりんご___みかんが好[す]きです。",
         "answer": "や",
         "translation": "As for fruit, I like apples and oranges (and such).",
-        "context": "私[わたし]はいろいろな果物[くだもの]が好[す]きです。"
+        "context": "私[わたし]はいろいろな果物[くだもの]が好[す]きです。",
+        "contextTranslation": "I like various kinds of fruit."
       },
       {
         "sentence": "週末[しゅうまつ]は買[か]い物[もの]___掃除[そうじ]をします。",
         "answer": "や",
         "translation": "On weekends I do shopping and cleaning (among other things).",
-        "context": "週末[しゅうまつ]はいろいろな用事[ようじ]をします。"
+        "context": "週末[しゅうまつ]はいろいろな用事[ようじ]をします。",
+        "contextTranslation": "On weekends I do various errands."
       },
       {
         "sentence": "公園[こうえん]には犬[いぬ]___猫[ねこ]などがいます。",
@@ -11462,7 +11472,8 @@ export const N5_GRAMMAR: Grammar[] = [
         "sentence": "かばんに財布[さいふ]___鍵[かぎ]を入[い]れます。",
         "answer": "や",
         "translation": "I put a wallet and keys (among other things) in the bag.",
-        "context": "かばんにはいろいろな物[もの]を入[い]れます。"
+        "context": "かばんにはいろいろな物[もの]を入[い]れます。",
+        "contextTranslation": "I put various things in the bag."
       }
     ],
     "distractorPool": [
@@ -11529,31 +11540,36 @@ export const N5_GRAMMAR: Grammar[] = [
         "sentence": "お茶[ちゃ]___コーヒーを飲[の]みます。",
         "answer": "か",
         "translation": "I will drink tea or coffee.",
-        "context": "飲[の]み物[もの]はどちらか一[ひと]つだけ選[えら]びます。"
+        "context": "飲[の]み物[もの]はどちらか一[ひと]つだけ選[えら]びます。",
+        "contextTranslation": "I will choose only one of the drinks."
       },
       {
         "sentence": "電車[でんしゃ]___バスで行[い]きます。",
         "answer": "か",
         "translation": "I will go by train or bus.",
-        "context": "駅[えき]まではどちらか一[ひと]つの乗[の]り物[もの]で行[い]きます。"
+        "context": "駅[えき]まではどちらか一[ひと]つの乗[の]り物[もの]で行[い]きます。",
+        "contextTranslation": "I will go to the station by just one means of transport."
       },
       {
         "sentence": "ペン___鉛筆[えんぴつ]を使[つか]います。",
         "answer": "か",
         "translation": "I will use a pen or a pencil.",
-        "context": "書[か]く道具[どうぐ]はどちらか一[ひと]つだけ使[つか]います。"
+        "context": "書[か]く道具[どうぐ]はどちらか一[ひと]つだけ使[つか]います。",
+        "contextTranslation": "I will use only one writing tool."
       },
       {
         "sentence": "土曜日[どようび]___日曜日[にちようび]に会[あ]いましょう。",
         "answer": "か",
         "translation": "Let's meet on Saturday or Sunday.",
-        "context": "来週[らいしゅう]のどちらか一[ひと]つの日[ひ]に会[あ]いたいです。"
+        "context": "来週[らいしゅう]のどちらか一[ひと]つの日[ひ]に会[あ]いたいです。",
+        "contextTranslation": "I want to meet on one of the days next week."
       },
       {
         "sentence": "肉[にく]___魚[さかな]を買[か]います。",
         "answer": "か",
         "translation": "I will buy meat or fish.",
-        "context": "今日[きょう]はどちらか一[ひと]つだけ買[か]います。"
+        "context": "今日[きょう]はどちらか一[ひと]つだけ買[か]います。",
+        "contextTranslation": "Today I will buy only one of them."
       }
     ],
     "distractorPool": [
@@ -11792,7 +11808,8 @@ export const N5_GRAMMAR: Grammar[] = [
         "sentence": "___は私[わたし]の部屋[へや]です。",
         "answer": "ここ",
         "translation": "This place is my room.",
-        "context": "どうぞ、この部屋[へや]に入[はい]ってください。"
+        "context": "どうぞ、この部屋[へや]に入[はい]ってください。",
+        "contextTranslation": "Please, come into this room."
       },
       {
         "sentence": "本[ほん]は___にありますよ。",
@@ -11803,19 +11820,22 @@ export const N5_GRAMMAR: Grammar[] = [
         "sentence": "___で写真[しゃしん]を撮[と]りましょう。",
         "answer": "あそこ",
         "translation": "Let's take a photo over there.",
-        "context": "向[む]こうの景色[けしき]がとてもきれいですね。"
+        "context": "向[む]こうの景色[けしき]がとてもきれいですね。",
+        "contextTranslation": "The scenery over there is very beautiful, isn't it?"
       },
       {
         "sentence": "トイレは___ですか。",
         "answer": "どこ",
         "translation": "Where is the toilet?",
-        "context": "すみません、トイレに行[い]きたいです。"
+        "context": "すみません、トイレに行[い]きたいです。",
+        "contextTranslation": "Excuse me, I want to go to the toilet."
       },
       {
         "sentence": "___から駅[えき]まで歩[ある]きます。",
         "answer": "ここ",
         "translation": "I will walk from here to the station.",
-        "context": "私[わたし]は今[いま]公園[こうえん]にいます。"
+        "context": "私[わたし]は今[いま]公園[こうえん]にいます。",
+        "contextTranslation": "I am at the park right now."
       }
     ],
     "distractorPool": [
@@ -12300,5670 +12320,6 @@ export const N5_GRAMMAR: Grammar[] = [
     ]
   },
   {
-    "id": "grammar:N5:あとで",
-    "level": "N5",
-    "title": "～あとで",
-    "meaning": "after (doing something)",
-    "explanation": "This indicates that an action takes place after another action is completed. The clause before あとで happens first.",
-    "formation": "Verb (た-form) / Noun + の + あとで",
-    "whyRight": "Before あとで a verb must be in the plain past (た-form) to show completion, and a noun connects with の; the dictionary form cannot precede あとで.",
-    "examples": [
-      {
-        "sentence": "晩[ばん]ご飯[はん]を食[た]べた___散歩[さんぽ]します。",
-        "answer": "あとで",
-        "translation": "I take a walk after eating dinner."
-      },
-      {
-        "sentence": "授業[じゅぎょう]の___友[とも]だちと遊[あそ]びます。",
-        "answer": "あとで",
-        "translation": "I hang out with friends after class."
-      },
-      {
-        "sentence": "宿題[しゅくだい]を___あとでテレビを見[み]ます。",
-        "answer": "した",
-        "translation": "I watch TV after doing my homework."
-      },
-      {
-        "sentence": "お風呂[ふろ]に入[はい]った___ビールを飲[の]みます。",
-        "answer": "あとで",
-        "translation": "I drink beer after taking a bath."
-      },
-      {
-        "sentence": "仕事[しごと]の___買[か]い物[もの]をします。",
-        "answer": "あとで",
-        "translation": "I go shopping after work."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "あとを",
-        "gloss": "を marks a direct object; 後を is ungrammatical as the temporal connector あとで"
-      },
-      {
-        "form": "あとへ",
-        "gloss": "へ marks direction; 後へ cannot link a completed action to a following one as あとで does"
-      },
-      {
-        "form": "ながら",
-        "gloss": "ながら attaches to the ます-stem; it cannot follow a past verb or 〜の to mean 'after'"
-      },
-      {
-        "form": "する",
-        "gloss": "dictionary form; あとで requires the past form した to show completion"
-      },
-      {
-        "form": "して",
-        "gloss": "て-form; should be the past form した before あとで"
-      },
-      {
-        "form": "仕事あとで",
-        "gloss": "missing の; a noun must connect as 仕事のあとで"
-      },
-      {
-        "form": "するの",
-        "gloss": "nominalizer の attached to する; it does not complete the temporal connector あとで"
-      },
-      {
-        "form": "しても",
-        "gloss": "ても means 'even if'; it is concessive and does not link a completed prior action"
-      },
-      {
-        "form": "までに",
-        "gloss": "means 'by (a deadline)'; a time limit, not 'after doing'"
-      },
-      {
-        "form": "あとごろ",
-        "gloss": "ごろ attaches only to clock times; 後ごろ is not a valid temporal connector here"
-      },
-      {
-        "form": "てから",
-        "gloss": "also 'after doing' but attaches differently (て-form); does not fit the あとで slot here"
-      },
-      {
-        "form": "入る",
-        "gloss": "dictionary form; before あとで the verb needs the past form 入った"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:てから",
-    "level": "N5",
-    "title": "～てから",
-    "meaning": "after doing / since doing (sequential, emphasizing order)",
-    "explanation": "This connects two actions to show that the second happens after the first is completed, emphasizing the sequence. It can also mean 'since' a starting point in time.",
-    "formation": "Verb (て-form) + から",
-    "whyRight": "から in this meaning attaches to the て-form of the verb to express 'after doing'; attaching it to plain forms would change the meaning to 'because'.",
-    "examples": [
-      {
-        "sentence": "手[て]を洗[あら]って___ご飯[はん]を食[た]べます。",
-        "answer": "から",
-        "translation": "I eat after washing my hands."
-      },
-      {
-        "sentence": "宿題[しゅくだい]を___から遊[あそ]びます。",
-        "answer": "して",
-        "translation": "I play after doing my homework."
-      },
-      {
-        "sentence": "日本[にほん]に来[き]て___三年[さんねん]になります。",
-        "answer": "から",
-        "translation": "It has been three years since I came to Japan."
-      },
-      {
-        "sentence": "お金[かね]を___から買[か]い物[もの]に行[い]きます。",
-        "answer": "おろして",
-        "translation": "I go shopping after withdrawing money."
-      },
-      {
-        "sentence": "薬[くすり]を飲[の]んで___寝[ね]ます。",
-        "answer": "から",
-        "translation": "I go to sleep after taking medicine."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "まえに",
-        "gloss": "means 'before'; reverses the sequence expressed by てから"
-      },
-      {
-        "form": "あとで",
-        "gloss": "also 'after' but pairs with the past form, not the て-form slot here"
-      },
-      {
-        "form": "ながら",
-        "gloss": "means 'while'; simultaneity rather than ordered sequence"
-      },
-      {
-        "form": "し",
-        "gloss": "bare ます-stem of する; it cannot precede から, which here needs the て-form して"
-      },
-      {
-        "form": "しよう",
-        "gloss": "volitional form; it cannot precede から in the て-form sequence pattern"
-      },
-      {
-        "form": "おろし",
-        "gloss": "bare ます-stem; it cannot precede から, which here needs the て-form おろして"
-      },
-      {
-        "form": "おろそう",
-        "gloss": "volitional form; it cannot precede から in the て-form sequence pattern"
-      },
-      {
-        "form": "ので",
-        "gloss": "means 'because'; gives a reason, not a sequence of actions"
-      },
-      {
-        "form": "けれど",
-        "gloss": "means 'but/although'; a contrast, not 'after doing'"
-      },
-      {
-        "form": "たら",
-        "gloss": "conditional 'if/when'; not the simple completed-sequence てから"
-      },
-      {
-        "form": "までに",
-        "gloss": "means 'by (a deadline)'; a time limit, not 'after doing'"
-      },
-      {
-        "form": "とき",
-        "gloss": "means 'when'; marks a moment rather than ordered completion"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:とき",
-    "level": "N5",
-    "title": "～とき",
-    "meaning": "when / at the time of",
-    "explanation": "This sets the time frame in which something happens. The tense of the verb before とき shows whether the action is ongoing/about to happen (non-past) or already completed (past) relative to the main clause.",
-    "formation": "Verb (plain) / い-adj + とき; な-adj + な + とき; Noun + の + とき",
-    "whyRight": "Different parts of speech connect to とき in fixed ways (verb/い-adjective plain, な-adjective with な, noun with の), and the chosen tense must match the intended timing relative to the main action.",
-    "examples": [
-      {
-        "context": "私[わたし]はいつも国[くに]の空港[くうこう]でお土産[みやげ]を買[か]います。",
-        "sentence": "国[くに]へ帰[かえ]る___お土産[みやげ]を買[か]います。",
-        "answer": "とき",
-        "translation": "When I go back to my country, I buy souvenirs."
-      },
-      {
-        "sentence": "子[こ]どもの___よくこの公園[こうえん]で遊[あそ]びました。",
-        "answer": "とき",
-        "translation": "When I was a child, I often played in this park."
-      },
-      {
-        "sentence": "暇[ひま]な___本[ほん]を読[よ]みます。",
-        "answer": "とき",
-        "translation": "When I have free time, I read books."
-      },
-      {
-        "sentence": "日本[にほん]へ___とき、写真[しゃしん]をたくさん撮[と]りました。",
-        "answer": "行[い]った",
-        "translation": "When I went to Japan, I took many photos."
-      },
-      {
-        "sentence": "わからない___先生[せんせい]に聞[き]きます。",
-        "answer": "とき",
-        "translation": "When I don't understand, I ask the teacher."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "へ",
-        "gloss": "へ is a directional particle; it cannot link a clause to a main action to mean 'when'"
-      },
-      {
-        "form": "あとで",
-        "gloss": "means 'after'; specifies later sequence, not the time frame of とき"
-      },
-      {
-        "form": "ながら",
-        "gloss": "means 'while'; ties two simultaneous actions by one subject, not a general time frame"
-      },
-      {
-        "form": "ところ",
-        "gloss": "means 'place/moment about to'; different nuance from the general 'when' of とき"
-      },
-      {
-        "form": "を",
-        "gloss": "を marks a direct object; it cannot serve as the time-frame word とき"
-      },
-      {
-        "form": "行きます",
-        "gloss": "polite ます-form; the plain form is required before とき (and the visit is completed)"
-      },
-      {
-        "form": "行って",
-        "gloss": "て-form; does not connect directly to とき"
-      },
-      {
-        "form": "暇の",
-        "gloss": "暇 is a な-adjective, so it should be 暇な before とき, not 暇の"
-      },
-      {
-        "form": "子どもとき",
-        "gloss": "missing の; a noun must connect as 子どものとき"
-      },
-      {
-        "form": "です",
-        "gloss": "the copula です ends the clause, so a following main action cannot attach as it does after とき"
-      },
-      {
-        "form": "までに",
-        "gloss": "means 'by (a deadline)'; a time limit, not the moment 'when'"
-      },
-      {
-        "form": "でも",
-        "gloss": "means 'but/even'; it cannot attach to a plain verb or 〜の to mark the time frame 'when'"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:辞書形 (dictionary form)",
-    "level": "N5",
-    "title": "辞書形 (dictionary form)",
-    "meaning": "the plain non-past (dictionary) form of a verb",
-    "explanation": "The dictionary form is the basic, citation form of a verb as listed in dictionaries. It is the plain, non-past affirmative form and serves as the base for many grammar patterns such as ことができる and 前に.",
-    "formation": "Group 1: -u ending (e.g., 飲む); Group 2: -る (e.g., 食べる); Irregular: する, 来る (くる)",
-    "whyRight": "The dictionary form is the plain non-past affirmative; converting from the polite ます-form means removing ます and restoring the dictionary ending (e.g., 飲みます to 飲む).",
-    "examples": [
-      {
-        "sentence": "「飲[の]みます」の辞書形[じしょけい]は「___」です。",
-        "answer": "飲[の]む",
-        "translation": "The dictionary form of 'nomimasu' is 'nomu'."
-      },
-      {
-        "sentence": "私[わたし]は日本語[にほんご]を話[はな]す___ができます。",
-        "answer": "こと",
-        "translation": "I can speak Japanese."
-      },
-      {
-        "sentence": "「食[た]べます」の辞書形[じしょけい]は「___」です。",
-        "answer": "食[た]べる",
-        "translation": "The dictionary form of 'tabemasu' is 'taberu'."
-      },
-      {
-        "sentence": "ここでたばこを___ことができますか。",
-        "answer": "吸[す]う",
-        "translation": "Can I smoke here?"
-      },
-      {
-        "sentence": "「します」の辞書形[じしょけい]は「___」です。",
-        "answer": "する",
-        "translation": "The dictionary form of 'shimasu' is 'suru'."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "飲みます",
-        "gloss": "polite ます-form, not the plain dictionary form requested"
-      },
-      {
-        "form": "飲んで",
-        "gloss": "て-form, not the dictionary form"
-      },
-      {
-        "form": "飲んだ",
-        "gloss": "plain past form, not the non-past dictionary form"
-      },
-      {
-        "form": "食べます",
-        "gloss": "polite ます-form, not the dictionary form 食べる"
-      },
-      {
-        "form": "食べて",
-        "gloss": "て-form, not the dictionary form"
-      },
-      {
-        "form": "もの",
-        "gloss": "もの means 'thing/object'; the potential pattern uses こと before ができます"
-      },
-      {
-        "form": "の",
-        "gloss": "nominalizer の; the fixed pattern here is ことができる, which requires こと"
-      },
-      {
-        "form": "吸います",
-        "gloss": "polite ます-form; ことができる needs the dictionary form 吸う"
-      },
-      {
-        "form": "吸って",
-        "gloss": "て-form; before ことができる the verb must be the dictionary form 吸う"
-      },
-      {
-        "form": "しる",
-        "gloss": "incorrect; する is irregular and does not become しる"
-      },
-      {
-        "form": "すりる",
-        "gloss": "not a real form; the dictionary form of します is simply する"
-      },
-      {
-        "form": "した",
-        "gloss": "plain past form; the dictionary form of します is する, not した"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:ことができる",
-    "level": "N5",
-    "title": "～ことができる",
-    "meaning": "can do / be able to do",
-    "explanation": "This pattern expresses ability or possibility. It attaches to the dictionary form of a verb to say that someone can do something.",
-    "formation": "Verb (dictionary form) + ことができる",
-    "whyRight": "After a noun-modifying dictionary-form verb plus こと, the verb する becomes できる to express ability, so できる is the correct form.",
-    "examples": [
-      {
-        "context": "私[わたし]は今[いま]、少[すこ]し日本語[にほんご]がわかります。",
-        "sentence": "私[わたし]は日本語[にほんご]を話[はな]すことが___。",
-        "answer": "できます",
-        "translation": "I can speak Japanese."
-      },
-      {
-        "context": "彼[かれ]は先月[せんげつ]、運転免許[うんてんめんきょ]を取[と]りました。",
-        "sentence": "彼[かれ]は車[くるま]を運転[うんてん]することが___。",
-        "answer": "できます",
-        "translation": "He can drive a car."
-      },
-      {
-        "context": "すみません、係[かかり]の人[ひと]に質問[しつもん]があります。",
-        "sentence": "ここで写真[しゃしん]を撮[と]ることが___か。",
-        "answer": "できます",
-        "translation": "Can I take photos here?"
-      },
-      {
-        "sentence": "子供[こども]の時[とき]は泳[およ]ぐことが___でした。",
-        "answer": "できません",
-        "translation": "When I was a child, I couldn't swim."
-      },
-      {
-        "sentence": "漢字[かんじ]を書[か]くことが___ようになりました。",
-        "answer": "できる",
-        "translation": "I have become able to write kanji."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "します",
-        "gloss": "'do' — ことが requires できる (potential), not the plain verb する"
-      },
-      {
-        "form": "しました",
-        "gloss": "polite past 'did' — ことが requires the potential できる, not the plain verb する"
-      },
-      {
-        "form": "なります",
-        "gloss": "'become' — does not express ability after ことが"
-      },
-      {
-        "form": "います",
-        "gloss": "'exist (animate)' — wrong; ability needs できる"
-      },
-      {
-        "form": "できた",
-        "gloss": "plain past 'was able' — past tense contradicts the present-time context and translation 'can'"
-      },
-      {
-        "form": "だできます",
-        "gloss": "ungrammatical garbled form"
-      },
-      {
-        "form": "するできます",
-        "gloss": "ungrammatical; する and できる cannot stack like this"
-      },
-      {
-        "form": "できるです",
-        "gloss": "ungrammatical; the verb できる cannot take です directly"
-      },
-      {
-        "form": "やります",
-        "gloss": "'do (casual)' — replaces the verb, does not form the potential pattern"
-      },
-      {
-        "form": "もできます",
-        "gloss": "adds an extra particle も that does not belong here"
-      },
-      {
-        "form": "ができます",
-        "gloss": "doubles the particle が which already appears in the sentence"
-      },
-      {
-        "form": "できないでした",
-        "gloss": "incorrect negative-past conjugation; should be できませんでした"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:でしょう",
-    "level": "N5",
-    "title": "～でしょう",
-    "meaning": "probably / I think (conjecture)",
-    "explanation": "This expresses a guess or probability about something the speaker is not certain of. It can also seek agreement when said with rising intonation.",
-    "formation": "Noun / な-adjective / Verb (plain form) / い-adjective + でしょう",
-    "whyRight": "To state a polite conjecture about a future or uncertain event, でしょう follows the plain form, making it the correct choice.",
-    "examples": [
-      {
-        "context": "空[そら]が暗[くら]くなってきました。",
-        "sentence": "明日[あした]は雨[あめ]が降[ふ]る___。",
-        "answer": "でしょう",
-        "translation": "It will probably rain tomorrow."
-      },
-      {
-        "context": "もう約束[やくそく]の時間[じかん]です。",
-        "sentence": "彼[かれ]はもうすぐ来[く]る___。",
-        "answer": "でしょう",
-        "translation": "He will probably come soon."
-      },
-      {
-        "context": "このテストは大学生[だいがくせい]のためのテストです。",
-        "sentence": "この問題[もんだい]は難[むずか]しい___。",
-        "answer": "でしょう",
-        "translation": "This problem is probably difficult."
-      },
-      {
-        "context": "彼女[かのじょ]はまだ若[わか]いです。",
-        "sentence": "彼女[かのじょ]は学生[がくせい]___。",
-        "answer": "でしょう",
-        "translation": "She is probably a student."
-      },
-      {
-        "context": "今度[こんど]の土曜日[どようび]は仕事[しごと]がありませんね。",
-        "sentence": "週末[しゅうまつ]は暇[ひま]___ね。",
-        "answer": "でしょう",
-        "translation": "You'll probably be free this weekend, right?"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "だです",
-        "gloss": "ungrammatical; the copula だ and です cannot combine, and this is not a conjecture"
-      },
-      {
-        "form": "ます",
-        "gloss": "polite verb ending — cannot attach to a plain-form verb to mean 'probably'"
-      },
-      {
-        "form": "だろうです",
-        "gloss": "ungrammatical; だろう and です cannot combine"
-      },
-      {
-        "form": "ました",
-        "gloss": "polite past — wrong tense and not a conjecture"
-      },
-      {
-        "form": "でした",
-        "gloss": "polite past 'was' — past tense, not a guess about the present or future"
-      },
-      {
-        "form": "ですか",
-        "gloss": "a direct question, not a probability statement"
-      },
-      {
-        "form": "でしょうか",
-        "gloss": "asks 'I wonder' — a question, but the context sets up an assertion, not an inquiry"
-      },
-      {
-        "form": "らしい",
-        "gloss": "'it seems / I hear' — based on outside report; the context gives the speaker's own guess, so でしょう fits"
-      },
-      {
-        "form": "そうです",
-        "gloss": "'I hear (hearsay)' after a plain form; the context is the speaker's own observation, not hearsay"
-      },
-      {
-        "form": "だでしょう",
-        "gloss": "ungrammatical; the plain copula だ cannot precede でしょう (a plain-form verb/noun connects directly)"
-      },
-      {
-        "form": "ません",
-        "gloss": "polite negative verb ending — not a conjecture form"
-      },
-      {
-        "form": "でしょうだ",
-        "gloss": "ungrammatical; だ cannot follow でしょう"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:と思います",
-    "level": "N5",
-    "title": "～と思います",
-    "meaning": "I think that ...",
-    "explanation": "Used to express the speaker's opinion or thought. The content of the thought comes in plain form before と思います.",
-    "formation": "Plain form (sentence) + と思います",
-    "whyRight": "An opinion is quoted with the particle と followed by 思います ('think'), so 思います completes the pattern correctly.",
-    "examples": [
-      {
-        "context": "今[いま]、空[そら]がとてもきれいです。",
-        "sentence": "明日[あした]は晴[は]れると___。",
-        "answer": "思います",
-        "translation": "I think it will be sunny tomorrow."
-      },
-      {
-        "context": "この映画[えいが]のポスターを見[み]ました。",
-        "sentence": "この映画[えいが]は面白[おもしろ]いと___。",
-        "answer": "思います",
-        "translation": "I think this movie is interesting."
-      },
-      {
-        "context": "彼[かれ]はとても忙[いそが]しい人[ひと]です。",
-        "sentence": "彼[かれ]は来[こ]ないと___。",
-        "answer": "思います",
-        "translation": "I think he won't come."
-      },
-      {
-        "context": "私[わたし]は毎日[まいにち]日本語[にほんご]を勉強[べんきょう]しています。",
-        "sentence": "日本語[にほんご]の勉強[べんきょう]は大切[たいせつ]だと___。",
-        "answer": "思います",
-        "translation": "I think studying Japanese is important."
-      },
-      {
-        "context": "彼女[かのじょ]は今日[きょう]、笑顔[えがお]で会社[かいしゃ]に来[き]ました。",
-        "sentence": "彼女[かのじょ]は元気[げんき]だと___。",
-        "answer": "思います",
-        "translation": "I think she is well."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "言[い]います",
-        "gloss": "'say' — quotes outward speech; the context marks this as the speaker's own opinion, not a report"
-      },
-      {
-        "form": "聞[き]きます",
-        "gloss": "'listen/ask' — wrong verb for expressing an opinion"
-      },
-      {
-        "form": "見[み]ます",
-        "gloss": "'see' — does not express a thought"
-      },
-      {
-        "form": "思[おも]って",
-        "gloss": "te-form — incomplete, cannot end the sentence politely here"
-      },
-      {
-        "form": "思[おも]いますです",
-        "gloss": "ungrammatical; です cannot follow the polite verb 思います"
-      },
-      {
-        "form": "考[かんが]える",
-        "gloss": "'consider' plain form — wrong politeness level for this polite context, and 思う suits a personal impression"
-      },
-      {
-        "form": "知[し]ります",
-        "gloss": "'come to know' — not used to state an opinion"
-      },
-      {
-        "form": "おもいです",
-        "gloss": "ungrammatical; 思い is a noun stem that cannot take です like this"
-      },
-      {
-        "form": "思[おも]いましょう",
-        "gloss": "volitional 'let's think' — wrong meaning; opinions are not stated as a suggestion"
-      },
-      {
-        "form": "思[おも]いません",
-        "gloss": "negative 'don't think' — the context supports the stated opinion, so the affirmative 思います fits"
-      },
-      {
-        "form": "思[おも]いなさい",
-        "gloss": "command form 'think!' — an order, not a statement of one's own opinion"
-      },
-      {
-        "form": "話[はな]します",
-        "gloss": "'speak/talk' — does not pair with quotative と to mean 'think'"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:と言いました",
-    "level": "N5",
-    "title": "～と言いました",
-    "meaning": "(someone) said that ...",
-    "explanation": "Used to report or quote what someone said. The quoted content in plain form is followed by と and the past tense of 言う.",
-    "formation": "Plain form (sentence) + と言いました",
-    "whyRight": "A direct or indirect quote is marked by と and reported with the past tense 言いました ('said'), so 言いました is correct.",
-    "examples": [
-      {
-        "context": "今日[きょう]、学校[がっこう]で先生[せんせい]の話[はなし]を聞[き]きました。",
-        "sentence": "先生[せんせい]は明日[あした]試験[しけん]があると___。",
-        "answer": "言いました",
-        "translation": "The teacher said there is an exam tomorrow."
-      },
-      {
-        "context": "昨日[きのう]、彼[かれ]と電話[でんわ]で話[はな]しました。",
-        "sentence": "彼[かれ]は来週[らいしゅう]来[く]ると___。",
-        "answer": "言いました",
-        "translation": "He said he will come next week."
-      },
-      {
-        "context": "今朝[けさ]、母[はは]は私[わたし]に電話[でんわ]をかけてきました。",
-        "sentence": "母[はは]は早[はや]く帰[かえ]りなさいと___。",
-        "answer": "言いました",
-        "translation": "My mother said to come home early."
-      },
-      {
-        "context": "きのう、田中[たなか]さんに会[あ]って話[はな]しました。",
-        "sentence": "田中[たなか]さんは日本[にほん]へ行[い]くと___。",
-        "answer": "言いました",
-        "translation": "Mr. Tanaka said he is going to Japan."
-      },
-      {
-        "context": "彼女[かのじょ]は私[わたし]が作[つく]った料理[りょうり]を全部[ぜんぶ]食[た]べました。",
-        "sentence": "彼女[かのじょ]はおいしいと___。",
-        "answer": "言いました",
-        "translation": "She said it was delicious."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "言[い]って",
-        "gloss": "te-form — incomplete; cannot end the reporting sentence on its own"
-      },
-      {
-        "form": "言[い]いなさい",
-        "gloss": "command 'say it!' — an order to someone, not a report of what was already said"
-      },
-      {
-        "form": "言[い]いましょう",
-        "gloss": "volitional 'let's say' — a suggestion, not a past report"
-      },
-      {
-        "form": "言[い]わせました",
-        "gloss": "causative 'made (someone) say' — wrong meaning; the subject simply said it"
-      },
-      {
-        "form": "言[い]いたいです",
-        "gloss": "'want to say' — expresses desire, not a completed report"
-      },
-      {
-        "form": "言[い]えました",
-        "gloss": "potential past 'was able to say' — ability, not the act of reporting a statement"
-      },
-      {
-        "form": "言[い]いません",
-        "gloss": "non-past negative 'does not say' — wrong tense and meaning for these past reports"
-      },
-      {
-        "form": "言[い]いませんでした",
-        "gloss": "'did not say' — the context shows the person did say it, so the affirmative 言いました fits"
-      },
-      {
-        "form": "言[い]った",
-        "gloss": "plain past — correct meaning but wrong polite level for this polite context"
-      },
-      {
-        "form": "言[い]ったり",
-        "gloss": "-tari listing form — implies 'do things like saying'; ungrammatical alone here"
-      },
-      {
-        "form": "言[い]いそうです",
-        "gloss": "'looks about to say' — appearance/conjecture, not a report of past speech"
-      },
-      {
-        "form": "言[い]いましたです",
-        "gloss": "ungrammatical; です cannot follow the polite past 言いました"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:が、 (but)",
-    "level": "N5",
-    "title": "～が、 (but)",
-    "meaning": "but / however (contrast)",
-    "explanation": "The particle が joins two clauses and shows contrast, like 'but'. It comes at the end of the first clause before introducing a contrasting idea.",
-    "formation": "Clause 1 (です/ます form) + が、 + Clause 2",
-    "whyRight": "To connect two contrasting clauses politely, が follows the first clause, making it the correct conjunctive particle.",
-    "examples": [
-      {
-        "sentence": "この店[みせ]は安[やす]いです___、おいしくないです。",
-        "answer": "が",
-        "translation": "This shop is cheap, but it's not tasty.",
-        "context": "安[やす]い店[みせ]はたいていおいしいです。"
-      },
-      {
-        "sentence": "日本語[にほんご]は難[むずか]しいです___、面白[おもしろ]いです。",
-        "answer": "が",
-        "translation": "Japanese is difficult, but interesting.",
-        "context": "難[むずか]しい勉強[べんきょう]はつまらないと思[おも]う人[ひと]が多[おお]いです。"
-      },
-      {
-        "sentence": "昨日[きのう]は雨[あめ]でした___、今日[きょう]は晴[は]れです。",
-        "answer": "が",
-        "translation": "It rained yesterday, but today it's sunny."
-      },
-      {
-        "sentence": "彼[かれ]は来[き]ました___、彼女[かのじょ]は来[き]ませんでした。",
-        "answer": "が",
-        "translation": "He came, but she didn't.",
-        "context": "二人[ふたり]はいつも一緒[いっしょ]に来[き]ます。"
-      },
-      {
-        "sentence": "すみません___、トイレはどこですか。",
-        "answer": "が",
-        "translation": "Excuse me, but where is the toilet?"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "から",
-        "gloss": "'because' — gives a reason; the second clause here contrasts rather than follows from the first"
-      },
-      {
-        "form": "ので",
-        "gloss": "'because' — also requires plain form (です→な), and states a cause rather than contrast"
-      },
-      {
-        "form": "と",
-        "gloss": "'and/with' — cannot attach after です here, and does not show 'but'"
-      },
-      {
-        "form": "は",
-        "gloss": "topic particle — does not connect contrasting clauses"
-      },
-      {
-        "form": "を",
-        "gloss": "object particle — grammatically impossible after です here"
-      },
-      {
-        "form": "に",
-        "gloss": "location/time particle — cannot mean 'but'"
-      },
-      {
-        "form": "だ",
-        "gloss": "plain copula 'is' — cannot attach after です and does not connect clauses"
-      },
-      {
-        "form": "でも",
-        "gloss": "'but' as a sentence starter; placed after です mid-sentence here it is incorrect"
-      },
-      {
-        "form": "そして",
-        "gloss": "'and then' — a sentence-initial connective; cannot attach after です mid-clause"
-      },
-      {
-        "form": "ね",
-        "gloss": "sentence-final particle for agreement, not a clause connector"
-      },
-      {
-        "form": "よ",
-        "gloss": "emphatic sentence-final particle, not a contrastive conjunction"
-      },
-      {
-        "form": "も",
-        "gloss": "'also' — does not express contrast between clauses"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:から、 (because)",
-    "level": "N5",
-    "title": "～から、 (because)",
-    "meaning": "because / since (subjective reason)",
-    "explanation": "から states a reason or cause, often a subjective one. The reason clause comes before から, and the result follows.",
-    "formation": "Clause (plain or polite form) + から、 + result",
-    "whyRight": "To give a reason clearly attributed by the speaker, から attaches to the reason clause, so から is the correct choice.",
-    "examples": [
-      {
-        "sentence": "時間[じかん]がない___、急[いそ]ぎましょう。",
-        "answer": "から",
-        "translation": "Because there's no time, let's hurry."
-      },
-      {
-        "sentence": "明日[あした]は休[やす]みだ___、出[で]かけます。",
-        "answer": "から",
-        "translation": "Because tomorrow is a holiday, I'll go out."
-      },
-      {
-        "sentence": "おなかがすいた___、ご飯[はん]を食[た]べます。",
-        "answer": "から",
-        "translation": "Because I'm hungry, I'll eat."
-      },
-      {
-        "sentence": "寒[さむ]い___、窓[まど]を閉[し]めてください。",
-        "answer": "から",
-        "translation": "Because it's cold, please close the window."
-      },
-      {
-        "sentence": "危[あぶ]ない___、ここで遊[あそ]ばないでください。",
-        "answer": "から",
-        "translation": "Because it's dangerous, please don't play here."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "が",
-        "gloss": "'but' — would reverse the sense; these clauses give a reason for the result, not a contrast"
-      },
-      {
-        "form": "けど",
-        "gloss": "'but' (casual) — contrast, not cause; clashes with the reason→result link here"
-      },
-      {
-        "form": "まで",
-        "gloss": "'until' — marks an endpoint, not a reason"
-      },
-      {
-        "form": "ながら",
-        "gloss": "'while doing' — attaches to verb stems, not to these clauses, and means simultaneity"
-      },
-      {
-        "form": "のに",
-        "gloss": "'even though' — concessive, opposite of giving a supporting reason"
-      },
-      {
-        "form": "ために",
-        "gloss": "'in order to / due to' — needs different connection (noun+の/plain verb) and a distinct nuance"
-      },
-      {
-        "form": "でも",
-        "gloss": "'but/even' — does not introduce a reason"
-      },
-      {
-        "form": "を",
-        "gloss": "object particle — cannot attach to a verb/adjective clause to mean 'because'"
-      },
-      {
-        "form": "より",
-        "gloss": "'than/from' — comparison or origin, not cause"
-      },
-      {
-        "form": "ても",
-        "gloss": "'even if' — concessive condition, not a reason"
-      },
-      {
-        "form": "ね",
-        "gloss": "sentence-final particle, not a reason connector"
-      },
-      {
-        "form": "だから",
-        "gloss": "sentence-initial 'therefore'; cannot attach after だ/い-adjective inside the clause here"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:ので",
-    "level": "N5",
-    "title": "～ので",
-    "meaning": "because / since (objective reason)",
-    "explanation": "ので gives a reason or cause in a softer, more objective way than から. It connects to the plain form, with な added after nouns and な-adjectives.",
-    "formation": "Verb / い-adjective (plain) + ので; Noun / な-adjective + な + ので",
-    "whyRight": "To state a reason politely and objectively, ので follows the clause (with な after a な-adjective or noun), making ので correct here.",
-    "examples": [
-      {
-        "sentence": "雨[あめ]が降[ふ]っている___、出[で]かけません。",
-        "answer": "ので",
-        "translation": "Because it's raining, I won't go out."
-      },
-      {
-        "sentence": "頭[あたま]が痛[いた]い___、休[やす]みます。",
-        "answer": "ので",
-        "translation": "Because I have a headache, I'll rest."
-      },
-      {
-        "sentence": "電車[でんしゃ]が遅[おく]れた___、遅刻[ちこく]しました。",
-        "answer": "ので",
-        "translation": "Because the train was late, I was late."
-      },
-      {
-        "sentence": "明日[あした]は試験[しけん]な___、勉強[べんきょう]します。",
-        "answer": "ので",
-        "translation": "Because there is an exam tomorrow, I'll study."
-      },
-      {
-        "sentence": "ここは静[しず]かな___、よく眠[ねむ]れます。",
-        "answer": "ので",
-        "translation": "Because it's quiet here, I can sleep well."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "のに",
-        "gloss": "'even though' — concessive, opposite of giving a reason"
-      },
-      {
-        "form": "だので",
-        "gloss": "ungrammatical; after a noun/な-adjective it should be な + ので, not だ"
-      },
-      {
-        "form": "ながら",
-        "gloss": "'while doing' — attaches to verb stems, not these clauses; means simultaneity"
-      },
-      {
-        "form": "まで",
-        "gloss": "'until' — endpoint of time/space, not a reason"
-      },
-      {
-        "form": "ために",
-        "gloss": "'due to / in order to' — connects differently (noun+の) and carries a distinct, more formal nuance"
-      },
-      {
-        "form": "けど",
-        "gloss": "'but' (casual) — contrast, not a reason"
-      },
-      {
-        "form": "ても",
-        "gloss": "'even if' — concessive condition, not a reason"
-      },
-      {
-        "form": "より",
-        "gloss": "'than/from' — comparison or starting point, not cause"
-      },
-      {
-        "form": "ですので",
-        "gloss": "ungrammatical inside the clause here; cannot insert です before ので mid-sentence"
-      },
-      {
-        "form": "なので",
-        "gloss": "after い-adjectives/plain verbs (examples 1-3) this is ungrammatical, and after the な already shown it doubles な"
-      },
-      {
-        "form": "を",
-        "gloss": "object particle — cannot attach to these clauses to mean 'because'"
-      },
-      {
-        "form": "そので",
-        "gloss": "not a word; no such connective exists in Japanese"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:が ほしい",
-    "level": "N5",
-    "title": "～が ほしい",
-    "meaning": "to want (a thing)",
-    "explanation": "Expresses the speaker's desire for an object. The desired noun is marked with が, and ほしい is an い-adjective meaning 'wanted'.",
-    "formation": "Noun + が + ほしい",
-    "whyRight": "The thing one wants is marked by が, and the い-adjective ほしい expresses the desire, so ほしい is the correct word.",
-    "examples": [
-      {
-        "sentence": "新[あたら]しい車[くるま]が___です。",
-        "answer": "ほしい",
-        "translation": "I want a new car.",
-        "context": "今[いま]の車[くるま]はもう古[ふる]いです。"
-      },
-      {
-        "sentence": "もっと時間[じかん]が___。",
-        "answer": "ほしい",
-        "translation": "I want more time.",
-        "context": "仕事[しごと]が多[おお]くて、毎日[まいにち]とても忙[いそが]しいです。"
-      },
-      {
-        "sentence": "私[わたし]は犬[いぬ]が___です。",
-        "answer": "ほしい",
-        "translation": "I want a dog.",
-        "context": "私[わたし]の家[いえ]にはペットが一[いっ]匹[ぴき]もいません。"
-      },
-      {
-        "sentence": "冷[つめ]たい水[みず]が___。",
-        "answer": "ほしい",
-        "translation": "I want some cold water.",
-        "context": "今日[きょう]はとても暑[あつ]くて、のどがかわきました。"
-      },
-      {
-        "sentence": "誕生日[たんじょうび]に何[なに]が___ですか。",
-        "answer": "ほしい",
-        "translation": "What do you want for your birthday?"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "たい",
-        "gloss": "'want to (do)' — attaches to verb stems, not to a noun marked with が"
-      },
-      {
-        "form": "ください",
-        "gloss": "'please give' — a request; also cannot be followed by です as in examples 1, 3 and 5"
-      },
-      {
-        "form": "ほしいません",
-        "gloss": "ungrammatical; the い-adjective ほしい cannot conjugate with the verb ending ません"
-      },
-      {
-        "form": "ほしくて",
-        "gloss": "te-form — incomplete; cannot end the sentence"
-      },
-      {
-        "form": "あります",
-        "gloss": "'there is' — states existence, not desire; also cannot precede です in examples 1, 3, 5"
-      },
-      {
-        "form": "います",
-        "gloss": "'exist (animate)' — existence, not wanting; cannot precede です here"
-      },
-      {
-        "form": "ほしいだ",
-        "gloss": "ungrammatical; an い-adjective cannot take だ directly"
-      },
-      {
-        "form": "ほしがる",
-        "gloss": "'(third person) shows wanting' — used for others' observed desire, plain form mismatching the polite です here"
-      },
-      {
-        "form": "ほしければ",
-        "gloss": "conditional 'if (one) wants' — incomplete and changes the meaning to a condition"
-      },
-      {
-        "form": "ほしそう",
-        "gloss": "'looks like (they) want' — appearance about someone else, not a direct statement of one's own desire"
-      },
-      {
-        "form": "ほしいだろう",
-        "gloss": "plain conjecture 'probably wants'; wrong politeness for です sentences and adds uncertainty"
-      },
-      {
-        "form": "ほしくなる",
-        "gloss": "'come to want'; describes a change of state, not the present desire stated here"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:より",
-    "level": "N5",
-    "title": "～より",
-    "meaning": "than (comparison)",
-    "explanation": "The particle より marks the standard you are comparing against, equivalent to English \"than\". The thing that is more is usually marked with は or のほうが.",
-    "formation": "Noun + より + (adjective/comparison)",
-    "whyRight": "より directly follows the noun being used as the baseline of comparison to express \"than\".",
-    "examples": [
-      {
-        "sentence": "電車[でんしゃ]は車[くるま]___速[はや]いです。",
-        "answer": "より",
-        "translation": "The train is faster than the car."
-      },
-      {
-        "sentence": "今日[きょう]は昨日[きのう]___寒[さむ]いです。",
-        "answer": "より",
-        "translation": "Today is colder than yesterday."
-      },
-      {
-        "sentence": "弟[おとうと]は私[わたし]___背[せ]が高[たか]いです。",
-        "answer": "より",
-        "translation": "My younger brother is taller than me."
-      },
-      {
-        "sentence": "この本[ほん]はあの本[ほん]___面白[おもしろ]いです。",
-        "answer": "より",
-        "translation": "This book is more interesting than that book."
-      },
-      {
-        "sentence": "飛行機[ひこうき]は船[ふね]___高[たか]いです。",
-        "answer": "より",
-        "translation": "Planes are more expensive than ships."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "から",
-        "gloss": "'from/because'; marks a starting point or reason, not a comparison standard"
-      },
-      {
-        "form": "まで",
-        "gloss": "'until/to'; marks an endpoint, not a comparison"
-      },
-      {
-        "form": "のほうが",
-        "gloss": "marks the side that is more, not the baseline being compared against"
-      },
-      {
-        "form": "ほど",
-        "gloss": "used in negative comparisons (Aほど〜ない), not in these plain affirmative comparisons"
-      },
-      {
-        "form": "とき",
-        "gloss": "'when'; a time noun, unrelated to comparison"
-      },
-      {
-        "form": "でも",
-        "gloss": "'even/but'; does not express 'than'"
-      },
-      {
-        "form": "しか",
-        "gloss": "'only' with a negative; not a comparison particle"
-      },
-      {
-        "form": "だけ",
-        "gloss": "'only/just'; limits a quantity, not a comparison"
-      },
-      {
-        "form": "ぐらい",
-        "gloss": "'about/approximately'; an estimate, not a comparison standard"
-      },
-      {
-        "form": "ごろ",
-        "gloss": "'around (a time)'; used with time points, not comparison"
-      },
-      {
-        "form": "ながら",
-        "gloss": "'while doing'; a verb suffix, ungrammatical after a noun here"
-      },
-      {
-        "form": "について",
-        "gloss": "'about/concerning'; introduces a topic, not a comparison"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:のほうが",
-    "level": "N5",
-    "title": "～のほうが",
-    "meaning": "the side that is more (in a comparison)",
-    "explanation": "のほうが marks the item that ranks higher in a comparison, often paired with より to mark the other item. ほう literally means \"side/direction\".",
-    "formation": "Noun + のほうが (＋ Noun + より) + adjective",
-    "whyRight": "のほうが points to the noun that is greater in the comparison, the natural partner of より.",
-    "examples": [
-      {
-        "sentence": "コーヒー___お茶[ちゃ]より好[す]きです。",
-        "answer": "のほうが",
-        "translation": "I like coffee more than tea."
-      },
-      {
-        "sentence": "電車[でんしゃ]___バスより速[はや]いです。",
-        "answer": "のほうが",
-        "translation": "The train is faster than the bus."
-      },
-      {
-        "sentence": "夏[なつ]___冬[ふゆ]より好[す]きです。",
-        "answer": "のほうが",
-        "translation": "I like summer more than winter."
-      },
-      {
-        "sentence": "この店[みせ]___あの店[みせ]より安[やす]いです。",
-        "answer": "のほうが",
-        "translation": "This shop is cheaper than that shop."
-      },
-      {
-        "sentence": "犬[いぬ]___猫[ねこ]より大[おお]きいです。",
-        "answer": "のほうが",
-        "translation": "Dogs are bigger than cats."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "より",
-        "gloss": "marks the baseline being compared against; here it would clash with the より already in the sentence"
-      },
-      {
-        "form": "のほうを",
-        "gloss": "を marks an object; the comparison subject here needs が, not を"
-      },
-      {
-        "form": "のほうに",
-        "gloss": "に marks a direction/target, not the higher-ranked comparison subject"
-      },
-      {
-        "form": "のほうで",
-        "gloss": "で marks means/location; wrong particle for the compared subject"
-      },
-      {
-        "form": "から",
-        "gloss": "'from/because'; not a comparison marker"
-      },
-      {
-        "form": "まで",
-        "gloss": "'until'; marks an endpoint, not the greater item"
-      },
-      {
-        "form": "だけ",
-        "gloss": "'only'; limits, does not mark the higher side of a comparison"
-      },
-      {
-        "form": "しか",
-        "gloss": "'only' with negative; not a comparison phrase"
-      },
-      {
-        "form": "ぐらい",
-        "gloss": "'about'; an estimate, not the greater item"
-      },
-      {
-        "form": "でも",
-        "gloss": "'even/but'; does not mark the preferred side"
-      },
-      {
-        "form": "のほうがいい",
-        "gloss": "'had better'; a full advice phrase, not just the comparison subject marker"
-      },
-      {
-        "form": "について",
-        "gloss": "'about'; introduces a topic, not a comparison"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:ほうがいい",
-    "level": "N5",
-    "title": "～ほうがいい",
-    "meaning": "had better / it is better to",
-    "explanation": "ほうがいい gives advice or a recommendation. With past-tense verbs (たほうがいい) it suggests doing something; with ないほうがいい it suggests not doing something.",
-    "formation": "Verb (た-form) + ほうがいい / Verb (ない-form) + ほうがいい",
-    "whyRight": "ほうがいい attaches to the た-form (or ない-form) of a verb to recommend that course of action.",
-    "examples": [
-      {
-        "sentence": "薬[くすり]を飲[の]んだ___です。",
-        "answer": "ほうがいい",
-        "translation": "You had better take medicine."
-      },
-      {
-        "sentence": "早[はや]く寝[ね]た___ですよ。",
-        "answer": "ほうがいい",
-        "translation": "You should go to bed early."
-      },
-      {
-        "sentence": "タバコは吸[す]わない___です。",
-        "answer": "ほうがいい",
-        "translation": "You had better not smoke."
-      },
-      {
-        "sentence": "傘[かさ]を持[も]って行[い]った___です。",
-        "answer": "ほうがいい",
-        "translation": "You had better take an umbrella."
-      },
-      {
-        "sentence": "野菜[やさい]をたくさん食[た]べた___ですよ。",
-        "answer": "ほうがいい",
-        "translation": "You should eat lots of vegetables."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "たいです",
-        "gloss": "\"want to\"; attaches to a verb masu-stem, so it is ungrammatical after the た／ない-form in the blank"
-      },
-      {
-        "form": "ことができる",
-        "gloss": "\"can do\"; takes the dictionary form, so 飲んだことができる is ungrammatical here"
-      },
-      {
-        "form": "なければならない",
-        "gloss": "\"must\"; built on the ない-stem, so 飲んだなければならない is ungrammatical in this slot"
-      },
-      {
-        "form": "のほうが",
-        "gloss": "comparison subject marker; needs a second item to compare and cannot close the sentence with です here"
-      },
-      {
-        "form": "より",
-        "gloss": "\"than\"; a comparison particle, ungrammatical right after the た-form in this blank"
-      },
-      {
-        "form": "ながら",
-        "gloss": "\"while doing\"; attaches to a verb masu-stem, so 飲んだながら is ungrammatical"
-      },
-      {
-        "form": "ほうがいかった",
-        "gloss": "not a valid form; いい conjugates to よかった, so this spelling is simply wrong"
-      },
-      {
-        "form": "なさい",
-        "gloss": "polite command suffix; attaches to a verb masu-stem, so 飲んだなさい is ungrammatical"
-      },
-      {
-        "form": "やすいです",
-        "gloss": "\"easy to\"; attaches to a verb masu-stem, so 飲んだやすいです is ungrammatical"
-      },
-      {
-        "form": "ましょう",
-        "gloss": "volitional suffix; attaches to a verb masu-stem, so 飲んだましょう is ungrammatical"
-      },
-      {
-        "form": "すぎます",
-        "gloss": "\"too much\"; attaches to a verb masu-stem, so 飲んだすぎます is ungrammatical"
-      },
-      {
-        "form": "にくいです",
-        "gloss": "\"hard to\"; attaches to a verb masu-stem, so 飲んだにくいです is ungrammatical"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:でも",
-    "level": "N5",
-    "title": "～でも",
-    "meaning": "or something (counter-suggestion / soft suggestion)",
-    "explanation": "When attached to a noun, でも softens a suggestion by presenting one option as a casual example, like \"…or something\". It implies other options are also fine.",
-    "formation": "Noun + でも (＋ suggestion)",
-    "whyRight": "でも follows a noun to offer it as one easygoing possibility among others, the soft-suggestion usage.",
-    "examples": [
-      {
-        "sentence": "お茶[ちゃ]___飲[の]みませんか。",
-        "answer": "でも",
-        "translation": "Would you like to drink some tea or something?"
-      },
-      {
-        "sentence": "映画[えいが]___見[み]に行[い]きましょう。",
-        "answer": "でも",
-        "translation": "Let's go see a movie or something."
-      },
-      {
-        "sentence": "週末[しゅうまつ]に公園[こうえん]___散歩[さんぽ]しませんか。",
-        "answer": "でも",
-        "translation": "How about a walk in the park or somewhere this weekend?"
-      },
-      {
-        "sentence": "コーヒー___いかがですか。",
-        "answer": "でも",
-        "translation": "How about some coffee or something?"
-      },
-      {
-        "sentence": "音楽[おんがく]___聞[き]きましょうか。",
-        "answer": "でも",
-        "translation": "Shall we listen to some music or something?"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "より",
-        "gloss": "\"than\"; a comparison particle that needs a second item, so お茶より飲みませんか is incomplete and ungrammatical"
-      },
-      {
-        "form": "のほうが",
-        "gloss": "comparison subject marker; needs something to compare against, leaving these sentences incomplete"
-      },
-      {
-        "form": "ごろ",
-        "gloss": "\"around (a time)\"; attaches only to time points, so お茶ごろ is ungrammatical"
-      },
-      {
-        "form": "について",
-        "gloss": "\"about (a topic)\"; cannot precede 飲む／散歩する here, so お茶について飲みませんか is ungrammatical"
-      },
-      {
-        "form": "ながら",
-        "gloss": "\"while doing\"; attaches to a verb masu-stem, so this bare noun + ながら is ungrammatical"
-      },
-      {
-        "form": "しか",
-        "gloss": "\"only\"; requires a negative predicate, so it breaks the volitional ましょう and いかが sentences"
-      },
-      {
-        "form": "ほど",
-        "gloss": "\"to the extent of\"; needs a comparison or degree, so お茶ほど飲みませんか is unnatural here"
-      },
-      {
-        "form": "や",
-        "gloss": "\"and (listing)\"; needs a second noun to list, so お茶や飲みませんか is ungrammatical"
-      },
-      {
-        "form": "たい",
-        "gloss": "\"want to\"; attaches to a verb masu-stem, so it is ungrammatical after a bare noun"
-      },
-      {
-        "form": "なさい",
-        "gloss": "polite command suffix; attaches to a verb masu-stem, ungrammatical after a noun like お茶"
-      },
-      {
-        "form": "ましょう",
-        "gloss": "volitional suffix; attaches to a verb masu-stem, ungrammatical after a bare noun"
-      },
-      {
-        "form": "と",
-        "gloss": "\"with/and\"; needs another noun to pair with, so お茶と飲みませんか is incomplete and ungrammatical"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:しかない",
-    "level": "N5",
-    "title": "～しか～ない",
-    "meaning": "only / nothing but (with negative)",
-    "explanation": "しか always pairs with a negative verb to mean \"only\", carrying a nuance of \"not as much/many as hoped\". It replaces particles like を or が.",
-    "formation": "Noun + しか + Verb (negative)",
-    "whyRight": "しか is the only particle here because the sentence ends in a negative verb, producing the \"only…\" meaning.",
-    "examples": [
-      {
-        "sentence": "百円[ひゃくえん]___ありません。",
-        "answer": "しか",
-        "translation": "I only have a hundred yen.",
-        "context": "財布[さいふ]の中[なか]を見[み]ました。"
-      },
-      {
-        "sentence": "日本語[にほんご]___話[はな]せません。",
-        "answer": "しか",
-        "translation": "I can only speak Japanese.",
-        "context": "私[わたし]は 英語[えいご]も 中国語[ちゅうごくご]も 話[はな]せません。"
-      },
-      {
-        "sentence": "一人[ひとり]___来[き]ませんでした。",
-        "answer": "しか",
-        "translation": "Only one person came.",
-        "context": "パーティーに たくさん 人[ひと]を 呼[よ]びましたが、"
-      },
-      {
-        "sentence": "水[みず]___飲[の]みません。",
-        "answer": "しか",
-        "translation": "I drink only water.",
-        "context": "彼[かれ]は お酒[さけ]も ジュースも 飲[の]みません。"
-      },
-      {
-        "sentence": "少[すこ]し___食[た]べませんでした。",
-        "answer": "しか",
-        "translation": "I ate only a little.",
-        "context": "今日[きょう]は おなかが 痛[いた]くて、"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "だけ",
-        "gloss": "\"only\"; with a negative it reads \"only X is not …\" (e.g. 百円だけありません = only the 100 yen is missing), which is not the intended \"I have only 100 yen\""
-      },
-      {
-        "form": "ばかり",
-        "gloss": "\"nothing but\"; normally takes an affirmative verb, so with these negative endings it is unnatural"
-      },
-      {
-        "form": "まで",
-        "gloss": "\"until/even\"; marks an endpoint or extreme, not the restrictive \"only\" meaning required"
-      },
-      {
-        "form": "より",
-        "gloss": "\"than\"; a comparison particle needing a second item, so 百円よりありません is ungrammatical"
-      },
-      {
-        "form": "ぐらい",
-        "gloss": "\"about\"; an approximation, not the restrictive \"only\" the sentence needs"
-      },
-      {
-        "form": "ごろ",
-        "gloss": "\"around (a time)\"; used only with time points, so 百円ごろ is ungrammatical"
-      },
-      {
-        "form": "から",
-        "gloss": "\"from/because\"; marks a source or reason, not \"only\""
-      },
-      {
-        "form": "のほうが",
-        "gloss": "comparison subject marker; needs a second item, leaving these sentences incomplete"
-      },
-      {
-        "form": "ほど",
-        "gloss": "\"to the extent\"; a degree/comparison marker, not the restrictive \"only\""
-      },
-      {
-        "form": "について",
-        "gloss": "\"about (a topic)\"; cannot precede ある／飲む here, so 百円について is ungrammatical"
-      },
-      {
-        "form": "しかない",
-        "gloss": "the full predicate phrase; only the particle slot is blank, so inserting it doubles the verb and is ungrammatical"
-      },
-      {
-        "form": "へ",
-        "gloss": "direction particle for destinations; ungrammatical after 百円／水／一人 before these verbs"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:だけ",
-    "level": "N5",
-    "title": "～だけ",
-    "meaning": "only / just",
-    "explanation": "だけ limits a noun or amount to \"only\" that and is used with affirmative verbs. Unlike しか, it carries no negative nuance and does not require a negative verb.",
-    "formation": "Noun + だけ / Verb (plain) + だけ",
-    "whyRight": "だけ restricts the noun to \"only\" it while the verb stays affirmative, the standard non-negative \"only\".",
-    "examples": [
-      {
-        "sentence": "これ___ください。",
-        "answer": "だけ",
-        "translation": "Just this one, please."
-      },
-      {
-        "sentence": "私[わたし]___知[し]っています。",
-        "answer": "だけ",
-        "translation": "Only I know."
-      },
-      {
-        "sentence": "少[すこ]し___食[た]べました。",
-        "answer": "だけ",
-        "translation": "I ate only a little."
-      },
-      {
-        "sentence": "彼[かれ]は水[みず]___飲[の]みます。",
-        "answer": "だけ",
-        "translation": "He drinks only water."
-      },
-      {
-        "sentence": "一回[いっかい]___聞[き]きました。",
-        "answer": "だけ",
-        "translation": "I listened only once."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "しか",
-        "gloss": "\"only\" but requires a negative verb; these sentences use affirmative verbs, so しか is ungrammatical here"
-      },
-      {
-        "form": "より",
-        "gloss": "\"than\"; a comparison particle needing a second item, so これよりください is incomplete"
-      },
-      {
-        "form": "のほうが",
-        "gloss": "comparison subject marker; needs something to compare against, leaving the sentence incomplete"
-      },
-      {
-        "form": "ごろ",
-        "gloss": "\"around (a time)\"; used only with time points, so これごろ／一回ごろ is ungrammatical"
-      },
-      {
-        "form": "から",
-        "gloss": "\"from/because\"; marks a source or reason, not the restrictive \"only\" meaning"
-      },
-      {
-        "form": "ほど",
-        "gloss": "\"to the extent\"; a degree marker, ungrammatical after 少し (少しほど食べました) here"
-      },
-      {
-        "form": "について",
-        "gloss": "\"about (a topic)\"; cannot precede ください／飲む here, so これについてください is ungrammatical"
-      },
-      {
-        "form": "ながら",
-        "gloss": "\"while doing\"; attaches to a verb masu-stem, ungrammatical in these noun slots"
-      },
-      {
-        "form": "へ",
-        "gloss": "direction particle for destinations; ungrammatical after これ／私／水 before these verbs"
-      },
-      {
-        "form": "や",
-        "gloss": "\"and (listing)\"; needs a second noun to list, so これやください is ungrammatical"
-      },
-      {
-        "form": "なさい",
-        "gloss": "polite command suffix; attaches to a verb masu-stem, ungrammatical after these nouns"
-      },
-      {
-        "form": "たい",
-        "gloss": "\"want to\"; attaches to a verb masu-stem, ungrammatical after a bare noun like これ"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:ぐらい／くらい",
-    "level": "N5",
-    "title": "～ぐらい／くらい",
-    "meaning": "about / approximately (quantity)",
-    "explanation": "ぐらい (or くらい) attaches to a quantity, number, or duration to express an approximate amount, like \"about\". For approximate points in time, use ごろ instead.",
-    "formation": "Number/quantity + ぐらい／くらい",
-    "whyRight": "ぐらい follows an amount or duration to mark it as approximate, the correct choice for quantities (not time points).",
-    "examples": [
-      {
-        "sentence": "三十分[さんじゅっぷん]___待[ま]ちました。",
-        "answer": "ぐらい",
-        "translation": "I waited about thirty minutes."
-      },
-      {
-        "sentence": "千円[せんえん]___かかりました。",
-        "answer": "ぐらい",
-        "translation": "It cost about a thousand yen."
-      },
-      {
-        "sentence": "十人[じゅうにん]___来[き]ました。",
-        "answer": "ぐらい",
-        "translation": "About ten people came."
-      },
-      {
-        "sentence": "三日[みっか]___かかります。",
-        "answer": "ぐらい",
-        "translation": "It takes about three days."
-      },
-      {
-        "sentence": "二[に]キロ___歩[ある]きました。",
-        "answer": "ぐらい",
-        "translation": "I walked about two kilometers."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ごろ",
-        "gloss": "\"around (a time)\"; used only with points in time, not durations or quantities like 三十分／千円"
-      },
-      {
-        "form": "しか",
-        "gloss": "\"only\" with a negative; these verbs are affirmative, so 三十分しか待ちました is ungrammatical"
-      },
-      {
-        "form": "より",
-        "gloss": "\"than\"; a comparison particle needing a second item, so 三十分より待ちました is incomplete"
-      },
-      {
-        "form": "から",
-        "gloss": "\"from/because\"; marks a starting point or reason, not an approximate amount"
-      },
-      {
-        "form": "のほうが",
-        "gloss": "comparison subject marker; needs something to compare against, leaving the sentence incomplete"
-      },
-      {
-        "form": "へ",
-        "gloss": "direction particle for destinations; ungrammatical after a duration or distance like 三十分／二キロ"
-      },
-      {
-        "form": "について",
-        "gloss": "\"about (a topic)\"; concerns subject matter, ungrammatical after a quantity here"
-      },
-      {
-        "form": "とき",
-        "gloss": "\"when\"; a time noun that needs の (三十分のとき), ungrammatical bare in this slot"
-      },
-      {
-        "form": "ながら",
-        "gloss": "\"while doing\"; attaches to a verb masu-stem, ungrammatical after a quantity"
-      },
-      {
-        "form": "や",
-        "gloss": "\"and (listing)\"; needs a second noun to list, so 三十分や待ちました is ungrammatical"
-      },
-      {
-        "form": "なさい",
-        "gloss": "polite command suffix; attaches to a verb masu-stem, ungrammatical after a quantity"
-      },
-      {
-        "form": "たい",
-        "gloss": "\"want to\"; attaches to a verb masu-stem, ungrammatical after a quantity like 三十分"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:ごろ",
-    "level": "N5",
-    "title": "～ごろ",
-    "meaning": "around / about (a point in time)",
-    "explanation": "ごろ attaches to a specific point in time (a clock time, month, year) to mean \"around\" that time. Use ぐらい for approximate amounts or durations instead.",
-    "formation": "Time point + ごろ",
-    "whyRight": "ごろ marks an approximate point in time, the correct approximation word for clock times and dates (not durations).",
-    "examples": [
-      {
-        "sentence": "三時[さんじ]___家[いえ]に帰[かえ]ります。",
-        "answer": "ごろ",
-        "translation": "I'll go home around three o'clock."
-      },
-      {
-        "sentence": "毎朝[まいあさ]七時[しちじ]___起[お]きます。",
-        "answer": "ごろ",
-        "translation": "I get up around seven every morning."
-      },
-      {
-        "sentence": "十二月[じゅうにがつ]___雪[ゆき]が降[ふ]ります。",
-        "answer": "ごろ",
-        "translation": "It snows around December."
-      },
-      {
-        "sentence": "昼[ひる]___電話[でんわ]します。",
-        "answer": "ごろ",
-        "translation": "I'll call around noon."
-      },
-      {
-        "sentence": "夜[よる]十時[じゅうじ]___寝[ね]ます。",
-        "answer": "ごろ",
-        "translation": "I go to bed around ten at night."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ずつ",
-        "gloss": "\"each/apiece\"; a distributive marker for quantities, ungrammatical with a single time point like 三時"
-      },
-      {
-        "form": "しか",
-        "gloss": "\"only\" with a negative; these verbs are affirmative, so 三時しか帰ります is ungrammatical"
-      },
-      {
-        "form": "のほうが",
-        "gloss": "comparison subject marker; needs something to compare against, leaving the sentence incomplete"
-      },
-      {
-        "form": "ほど",
-        "gloss": "\"to the extent\"; a degree marker, ungrammatical after a clock time like 三時 here"
-      },
-      {
-        "form": "について",
-        "gloss": "\"about (a topic)\"; concerns subject matter, ungrammatical after a time point"
-      },
-      {
-        "form": "ばかり",
-        "gloss": "\"only/just\"; expresses restriction or recency, not an approximate time, and is unnatural after 三時 here"
-      },
-      {
-        "form": "ながら",
-        "gloss": "\"while doing\"; attaches to a verb masu-stem, ungrammatical after a time point"
-      },
-      {
-        "form": "や",
-        "gloss": "\"and (listing)\"; needs a second noun to list, so 三時や帰ります is ungrammatical"
-      },
-      {
-        "form": "なさい",
-        "gloss": "polite command suffix; attaches to a verb masu-stem, ungrammatical after a time point"
-      },
-      {
-        "form": "たい",
-        "gloss": "\"want to\"; attaches to a verb masu-stem, ungrammatical after a time point like 三時"
-      },
-      {
-        "form": "ましょう",
-        "gloss": "volitional suffix; attaches to a verb masu-stem, ungrammatical after a time point"
-      },
-      {
-        "form": "へ",
-        "gloss": "direction particle for destinations; ungrammatical after a time point such as 三時／昼"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:ずつ",
-    "level": "N5",
-    "title": "～ずつ",
-    "meaning": "each / at a time / apiece / by (in increments)",
-    "explanation": "Attached to a quantity, ～ずつ expresses that something is distributed equally or done in fixed increments, such as 'one each' or 'little by little'. It follows numbers, counters, or quantity words.",
-    "formation": "Quantity / Counter + ずつ",
-    "whyRight": "ずつ is the correct particle to express an equal share or a repeated fixed amount ('one each', 'a little at a time'); it attaches directly after the quantity word.",
-    "examples": [
-      {
-        "sentence": "みんなに 一[ひと]つ___ あげます。",
-        "answer": "ずつ",
-        "translation": "I will give one to each person."
-      },
-      {
-        "sentence": "毎日[まいにち] 少[すこ]し___ 日本語[にほんご]を 勉強[べんきょう]します。",
-        "answer": "ずつ",
-        "translation": "I study Japanese a little every day."
-      },
-      {
-        "sentence": "学生[がくせい]は 三人[さんにん]___ グループを 作[つく]りました。",
-        "answer": "ずつ",
-        "translation": "The students made groups of three each.",
-        "context": "先生[せんせい]は クラスを 同[おな]じ 人数[にんずう]の グループに 分[わ]けました。"
-      },
-      {
-        "sentence": "りんごを 二[ふた]つ___ 買[か]いました。",
-        "answer": "ずつ",
-        "translation": "I bought two apples each.",
-        "context": "家族[かぞく]の 一人[ひとり]一人[ひとり]の ために、"
-      },
-      {
-        "sentence": "病気[びょうき]は 少[すこ]し___ よく なって います。",
-        "answer": "ずつ",
-        "translation": "The illness is getting better little by little."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "たい",
-        "gloss": "\"want to\"; attaches to a verb masu-stem, so 一つたい / 少したい is ungrammatical in this quantity slot"
-      },
-      {
-        "form": "ごろ",
-        "gloss": "'about (a time)'; attaches only to time points, so 一つごろ / 三人ごろ is ungrammatical"
-      },
-      {
-        "form": "が",
-        "gloss": "subject marker; 一つが あげます / 少しが 勉強します is ungrammatical in these sentences"
-      },
-      {
-        "form": "など",
-        "gloss": "'etc.'; requires a listing context, so 三人など グループ / 少しなど 勉強 is unnatural here"
-      },
-      {
-        "form": "しか",
-        "gloss": "'only'; requires a negative predicate, but あげます・買いました・なっています are all affirmative, so it is ungrammatical"
-      },
-      {
-        "form": "も",
-        "gloss": "'even/also'; 一つも・少しも force a following negative, so with the affirmative verbs here it is ungrammatical"
-      },
-      {
-        "form": "から",
-        "gloss": "'from/because'; 少しから 勉強します / 二つから 買いました is ungrammatical as a quantity modifier"
-      },
-      {
-        "form": "へ",
-        "gloss": "direction particle; cannot attach to a counted quantity such as 一つ/少し before these verbs"
-      },
-      {
-        "form": "とか",
-        "gloss": "'and the like'; informal listing particle, unnatural after a single quantity like 一つ/二つ here"
-      },
-      {
-        "form": "の",
-        "gloss": "possessive/nominalizer; 一つの あげます / 少しの 勉強します is ungrammatical in this slot"
-      },
-      {
-        "form": "より",
-        "gloss": "'than/from'; needs a comparison, so 二つより 買いました / 少しより is ungrammatical here"
-      },
-      {
-        "form": "こそ",
-        "gloss": "emphatic 'precisely'; 一つこそ あげます / 少しこそ is unnatural and does not express an equal share"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:ね",
-    "level": "N5",
-    "title": "～ね",
-    "meaning": "sentence-final particle seeking agreement / confirmation (right? / isn't it?)",
-    "explanation": "The particle ね is placed at the end of a sentence to seek the listener's agreement or to confirm shared understanding, similar to 'right?' or 'isn't it?'. It also softens statements.",
-    "formation": "Sentence + ね",
-    "whyRight": "ね is used when the speaker expects the listener to share or agree with the same feeling or information, so it fits a confirmation-seeking, empathetic context.",
-    "examples": [
-      {
-        "sentence": "今日[きょう]は いい 天気[てんき]です___。",
-        "answer": "ね",
-        "translation": "It's nice weather today, isn't it?",
-        "context": "空[そら]を 見[み]ながら 友[とも]だちと 話[はな]して います。"
-      },
-      {
-        "sentence": "この ケーキは おいしいです___。",
-        "answer": "ね",
-        "translation": "This cake is delicious, isn't it?",
-        "context": "友[とも]だちと 一緒[いっしょ]に 同[おな]じ ケーキを 食[た]べて います。"
-      },
-      {
-        "sentence": "あなたも 行[い]きます___。",
-        "answer": "ね",
-        "translation": "You're going too, right?",
-        "context": "みんなで パーティーに 行[い]く 話[はなし]を して います。"
-      },
-      {
-        "sentence": "もう 遅[おそ]いから、 帰[かえ]りましょう___。",
-        "answer": "ね",
-        "translation": "It's late, so let's go home, okay?",
-        "context": "友[とも]だちと 一緒[いっしょ]に 時計[とけい]を 見[み]て います。"
-      },
-      {
-        "sentence": "田中[たなか]さんは 親切[しんせつ]な 人[ひと]です___。",
-        "answer": "ね",
-        "translation": "Mr. Tanaka is a kind person, isn't he?",
-        "context": "二人[ふたり]とも 田中[たなか]さんを よく 知[し]って います。"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "よ",
-        "gloss": "'I tell you'; asserts new info to the listener rather than seeking agreement"
-      },
-      {
-        "form": "か",
-        "gloss": "question marker; turns the sentence into a plain question, not a shared confirmation"
-      },
-      {
-        "form": "な",
-        "gloss": "rough/masculine self-directed particle or prohibition; not polite agreement-seeking"
-      },
-      {
-        "form": "わ",
-        "gloss": "feminine softening particle; expresses the speaker's own feeling, not shared agreement"
-      },
-      {
-        "form": "ぞ",
-        "gloss": "masculine forceful assertion; normally follows plain forms and emphasizes one's own statement, not agreement"
-      },
-      {
-        "form": "ぜ",
-        "gloss": "casual masculine emphasis; normally follows plain forms and asserts, not seeking agreement"
-      },
-      {
-        "form": "の",
-        "gloss": "explanatory/soft question ending; takes plain forms (天気なの) and does not seek the listener's agreement"
-      },
-      {
-        "form": "さ",
-        "gloss": "casual assertive filler; does not attach to polite です／ます here and emphasizes one's own view"
-      },
-      {
-        "form": "もん",
-        "gloss": "casual reason 'because'; gives a justification, not agreement"
-      },
-      {
-        "form": "かな",
-        "gloss": "'I wonder'; expresses self-doubt, not seeking the listener's agreement"
-      },
-      {
-        "form": "って",
-        "gloss": "quoting/topic marker; reports speech as hearsay, not a confirmation particle"
-      },
-      {
-        "form": "けど",
-        "gloss": "'but/although'; a connective that leaves the sentence hanging, not a sentence-final 'right?'"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:よ",
-    "level": "N5",
-    "title": "～よ",
-    "meaning": "sentence-final particle asserting / informing (you know / I tell you)",
-    "explanation": "The particle よ is added to the end of a sentence to assert information, give emphasis, or inform the listener of something they may not know. It conveys the speaker's confidence in what is said.",
-    "formation": "Sentence + よ",
-    "whyRight": "よ is correct when the speaker is telling the listener something new or asserting a point with confidence, rather than seeking agreement.",
-    "examples": [
-      {
-        "context": "まだ その 映画[えいが]を 見[み]て いない 友[とも]だちに 教[おし]えます。",
-        "sentence": "その 映画[えいが]は とても 面白[おもしろ]いです___。",
-        "answer": "よ",
-        "translation": "That movie is very interesting, you know."
-      },
-      {
-        "context": "駅[えき]に 走[はし]って きた 人[ひと]に 知[し]らせます。",
-        "sentence": "電車[でんしゃ]は もう 出[で]ました___。",
-        "answer": "よ",
-        "translation": "The train has already left, I tell you."
-      },
-      {
-        "context": "前[まえ]を 見[み]て いない 友[とも]だちに 大[おお]きな 声[こえ]で 言[い]います。",
-        "sentence": "危[あぶ]ない___！ 気[き]を つけて。",
-        "answer": "よ",
-        "translation": "It's dangerous! Be careful."
-      },
-      {
-        "context": "重[おも]い 荷物[にもつ]を 持[も]って いる 人[ひと]に 言[い]います。",
-        "sentence": "私[わたし]が 手伝[てつだ]います___。",
-        "answer": "よ",
-        "translation": "I'll help you, you know."
-      },
-      {
-        "context": "銀行[ぎんこう]を さがして いる 人[ひと]に 場所[ばしょ]を 教[おし]えます。",
-        "sentence": "あそこに 銀行[ぎんこう]が あります___。",
-        "answer": "よ",
-        "translation": "There's a bank over there, you know."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "を",
-        "gloss": "object marker; ungrammatical placed at the end of these complete sentences after です/ます"
-      },
-      {
-        "form": "か",
-        "gloss": "question marker; would make it a question, not an assertion"
-      },
-      {
-        "form": "な",
-        "gloss": "self-directed/rough particle; does not inform the listener politely"
-      },
-      {
-        "form": "わ",
-        "gloss": "feminine soft feeling; not the assertive informing nuance of よ"
-      },
-      {
-        "form": "の",
-        "gloss": "explanatory or soft question ending; not a confident assertion to the listener"
-      },
-      {
-        "form": "ぞ",
-        "gloss": "rough masculine assertion; too forceful and casual for polite speech"
-      },
-      {
-        "form": "ぜ",
-        "gloss": "casual masculine emphasis; not appropriate in polite です/ます sentences"
-      },
-      {
-        "form": "さ",
-        "gloss": "casual filler emphasis; weaker and informal, not the standard informing よ"
-      },
-      {
-        "form": "かな",
-        "gloss": "'I wonder'; expresses uncertainty, opposite of asserting information"
-      },
-      {
-        "form": "でしょう",
-        "gloss": "'probably/right?'; expresses conjecture or seeks agreement, not direct assertion"
-      },
-      {
-        "form": "もの",
-        "gloss": "casual reason marker; explains a cause, not informing news"
-      },
-      {
-        "form": "って",
-        "gloss": "quotation/hearsay marker; reports something, not the speaker's own assertion"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:でしょう？",
-    "level": "N5",
-    "title": "～でしょう？",
-    "meaning": "right? / isn't it? (seeking confirmation with rising intonation)",
-    "explanation": "When でしょう is said with rising intonation, it asks the listener to confirm something the speaker believes to be true, similar to 'right?' or 'don't you think?'. It is the polite confirmation form.",
-    "formation": "Noun / な-adjective + でしょう？ ; い-adjective / Verb (plain) + でしょう？",
-    "whyRight": "でしょう with a question mark seeks the listener's confirmation of a presumed fact, fitting contexts where the speaker is fairly sure and wants agreement.",
-    "examples": [
-      {
-        "context": "相手[あいて]の 若[わか]い 様子[ようす]を 見[み]て、たぶん そうだと 思[おも]いながら 確[たし]かめます。",
-        "sentence": "あなたは 学生[がくせい]___？",
-        "answer": "でしょう",
-        "translation": "You're a student, right?"
-      },
-      {
-        "context": "自分[じぶん]も その 問題[もんだい]を やって みて、相手[あいて]も 同[おな]じだと 思[おも]って 言[い]います。",
-        "sentence": "この 問題[もんだい]は 難[むずか]しい___？",
-        "answer": "でしょう",
-        "translation": "This problem is hard, isn't it?"
-      },
-      {
-        "context": "相手[あいて]が 来[く]ると 前[まえ]に 聞[き]いたので、もう 一度[いちど] 確[たし]かめます。",
-        "sentence": "明日[あした] 来[く]る___？",
-        "answer": "でしょう",
-        "translation": "You're coming tomorrow, right?"
-      },
-      {
-        "context": "みんなが よく 知[し]って いる 店[みせ]だと 思[おも]って 相手[あいて]に 言[い]います。",
-        "sentence": "あの 店[みせ]は 有名[ゆうめい]___？",
-        "answer": "でしょう",
-        "translation": "That shop is famous, isn't it?"
-      },
-      {
-        "context": "自分[じぶん]も 昨日[きのう] 同[おな]じ 試験[しけん]を 受[う]けたので、相手[あいて]に 同意[どうい]を 求[もと]めます。",
-        "sentence": "昨日[きのう]の 試験[しけん]は 大変[たいへん]だった___？",
-        "answer": "でしょう",
-        "translation": "Yesterday's exam was tough, wasn't it?"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "です",
-        "gloss": "plain assertion; states a fact but does not seek confirmation"
-      },
-      {
-        "form": "ですか",
-        "gloss": "neutral question; asks for unknown info, not confirming a presumed fact"
-      },
-      {
-        "form": "ます",
-        "gloss": "polite verb ending; an assertion, not a confirmation-seeking form"
-      },
-      {
-        "form": "だった",
-        "gloss": "plain past copula; means a past state and is ungrammatical after the い-adjective 難しい (would need 難しかった)"
-      },
-      {
-        "form": "ました",
-        "gloss": "polite past; states a completed action, not seeking 'right?'"
-      },
-      {
-        "form": "ですね",
-        "gloss": "seeks soft agreement but is a statement+ね, not the conjecture form でしょう"
-      },
-      {
-        "form": "でした",
-        "gloss": "polite past of です; reports a past state, not confirmation"
-      },
-      {
-        "form": "かもしれません",
-        "gloss": "'might be'; expresses possibility, weaker than presumed confirmation"
-      },
-      {
-        "form": "そうです",
-        "gloss": "'it seems/I heard'; reports appearance or hearsay, not seeking agreement"
-      },
-      {
-        "form": "らしい",
-        "gloss": "'seems/apparently'; inference from evidence, not direct confirmation"
-      },
-      {
-        "form": "ましょう",
-        "gloss": "'let's'; a suggestion/volition, unrelated to confirming a fact"
-      },
-      {
-        "form": "でしょうか",
-        "gloss": "polite wondering question; expresses the speaker's doubt rather than seeking the listener's agreement"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:数量詞 (counters)",
-    "level": "N5",
-    "title": "数量詞 (counters)",
-    "meaning": "counting words / counters for quantities of things, people, and objects",
-    "explanation": "Japanese uses specific counter suffixes depending on what is being counted (e.g., 人[にん] for people, 枚[まい] for flat things, 本[ほん] for long objects, つ for general items). The number plus counter forms a quantity expression.",
-    "formation": "Number + appropriate Counter (人 / 枚 / 本 / 冊 / 匹 / つ etc.)",
-    "whyRight": "The correct counter must match the type of object being counted; choosing the counter that agrees with the noun's category makes the quantity expression grammatical.",
-    "examples": [
-      {
-        "sentence": "教室[きょうしつ]に 学生[がくせい]が 五[ご]___ います。",
-        "answer": "人",
-        "translation": "There are five students in the classroom."
-      },
-      {
-        "sentence": "切手[きって]を 三[さん]___ ください。",
-        "answer": "枚",
-        "translation": "Please give me three stamps."
-      },
-      {
-        "sentence": "机[つくえ]の 上[うえ]に 鉛筆[えんぴつ]が 二[に]___ あります。",
-        "answer": "本",
-        "translation": "There are two pencils on the desk."
-      },
-      {
-        "sentence": "図書館[としょかん]で 本[ほん]を 四[よん]___ 借[か]りました。",
-        "answer": "冊",
-        "translation": "I borrowed four books at the library."
-      },
-      {
-        "sentence": "りんごを 一[ひと]___ 食[た]べました。",
-        "answer": "つ",
-        "translation": "I ate one apple."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "円",
-        "gloss": "counter for yen (money); counts currency amounts, not people, stamps, pencils, books, or apples"
-      },
-      {
-        "form": "台",
-        "gloss": "counter for machines/vehicles; wrong for people, paper, or fruit"
-      },
-      {
-        "form": "匹",
-        "gloss": "counter for small animals; not for people or inanimate objects here"
-      },
-      {
-        "form": "杯",
-        "gloss": "counter for cupfuls/glassfuls; wrong for solid countable items"
-      },
-      {
-        "form": "回",
-        "gloss": "counter for times/occurrences; counts actions, not objects"
-      },
-      {
-        "form": "階",
-        "gloss": "counter for building floors; not for people or items"
-      },
-      {
-        "form": "歳",
-        "gloss": "counter for age in years; counts age, not objects or people quantity"
-      },
-      {
-        "form": "番",
-        "gloss": "ordinal/number-in-series counter; indicates order, not a count of things"
-      },
-      {
-        "form": "度",
-        "gloss": "counter for degrees/times; not a counter for tangible objects"
-      },
-      {
-        "form": "頭",
-        "gloss": "counter for large animals; inappropriate for people or stationery"
-      },
-      {
-        "form": "軒",
-        "gloss": "counter for houses/shops; wrong for the items counted here"
-      },
-      {
-        "form": "羽",
-        "gloss": "counter for birds/rabbits; not for people or objects in these sentences"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:に なる／く なる",
-    "level": "N5",
-    "title": "～に なる／～く なる",
-    "meaning": "to become ~ (change of state)",
-    "explanation": "なる expresses a natural change into a new state. With nouns and な-adjectives it takes に before なる; with い-adjectives, the final い changes to く before なる.",
-    "formation": "Noun / な-adjective + に なる ; い-adjective (drop い → く) + なる",
-    "whyRight": "Because the word before なる is an い-adjective or な-adjective/noun, the correct connector (く for い-adjectives, に for nouns/な-adjectives) must be used to express becoming that state.",
-    "examples": [
-      {
-        "sentence": "春[はる]に なって、 暖[あたた]か___ なりました。",
-        "answer": "く",
-        "translation": "Spring came and it became warm."
-      },
-      {
-        "sentence": "弟[おとうと]は 来年[らいねん] 大学生[だいがくせい]___ なります。",
-        "answer": "に",
-        "translation": "My younger brother will become a university student next year."
-      },
-      {
-        "sentence": "薬[くすり]を 飲[の]んで、 元気[げんき]___ なりました。",
-        "answer": "に",
-        "translation": "I took the medicine and became well."
-      },
-      {
-        "sentence": "毎日[まいにち] 練習[れんしゅう]して、 日本語[にほんご]が 上手[じょうず]___ なりました。",
-        "answer": "に",
-        "translation": "I practiced every day and became good at Japanese."
-      },
-      {
-        "sentence": "夜[よる]に なると、 外[そと]が 暗[くら]___ なります。",
-        "answer": "く",
-        "translation": "When night falls, it gets dark outside."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "くに",
-        "gloss": "doubled connector; combining く and に is not valid before なる"
-      },
-      {
-        "form": "にく",
-        "gloss": "doubled connector; neither order of に+く attaches to なる"
-      },
-      {
-        "form": "で",
-        "gloss": "means/location/te-form particle; does not connect to なる for change of state"
-      },
-      {
-        "form": "だけ",
-        "gloss": "'only'; 大学生だけ なります / 暖かだけ なりました is ungrammatical, as it cannot link the word to なる for change of state"
-      },
-      {
-        "form": "を",
-        "gloss": "object marker; なる is intransitive and takes に/く, not を"
-      },
-      {
-        "form": "い",
-        "gloss": "the plain い-adjective ending; must change to く before なる"
-      },
-      {
-        "form": "な",
-        "gloss": "な-adjective attributive form before nouns; not used directly before なる"
-      },
-      {
-        "form": "だ",
-        "gloss": "copula 'is'; cannot attach before なる in this construction"
-      },
-      {
-        "form": "の",
-        "gloss": "possessive/nominalizer; does not link an adjective to なる"
-      },
-      {
-        "form": "へ",
-        "gloss": "direction particle; unrelated to change-of-state なる"
-      },
-      {
-        "form": "から",
-        "gloss": "'from/because'; a reason/source marker, not the なる connector"
-      },
-      {
-        "form": "が",
-        "gloss": "subject marker; does not connect the state word to なる"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:にする",
-    "level": "N5",
-    "title": "～にする",
-    "meaning": "to decide on / to choose (I'll have ~)",
-    "explanation": "する with に expresses a decision or choice made by the speaker, often when selecting from options such as ordering food or picking an item. It contrasts with なる (natural change) by indicating deliberate choice.",
-    "formation": "Noun + に する",
-    "whyRight": "に する is correct when the speaker actively decides on or selects something; に marks the chosen item and する shows the deliberate choice.",
-    "examples": [
-      {
-        "sentence": "私[わたし]は コーヒー___ します。",
-        "answer": "に",
-        "translation": "I'll have coffee."
-      },
-      {
-        "sentence": "旅行[りょこう]は 京都[きょうと]___ しましょう。",
-        "answer": "に",
-        "translation": "Let's make the trip to Kyoto."
-      },
-      {
-        "sentence": "色[いろ]は 青[あお]___ しました。",
-        "answer": "に",
-        "translation": "I decided on blue for the color."
-      },
-      {
-        "sentence": "今晩[こんばん]の ご飯[はん]は カレー___ します。",
-        "answer": "に",
-        "translation": "I'll make tonight's meal curry."
-      },
-      {
-        "sentence": "会議[かいぎ]は 三時[さんじ]___ します。",
-        "answer": "に",
-        "translation": "We'll set the meeting for three o'clock."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "を",
-        "gloss": "object marker; with する it means 'do X', not 'decide on/choose X'"
-      },
-      {
-        "form": "が",
-        "gloss": "subject marker; does not express choosing something with する"
-      },
-      {
-        "form": "で",
-        "gloss": "means/place marker; not the decision particle for にする"
-      },
-      {
-        "form": "や",
-        "gloss": "'and (partial list)'; コーヒーや します / 青や しました is ungrammatical and cannot mark a single chosen item before する"
-      },
-      {
-        "form": "へ",
-        "gloss": "direction particle; cannot express a choice with する"
-      },
-      {
-        "form": "から",
-        "gloss": "'from/because'; a source or reason, not a selection"
-      },
-      {
-        "form": "まで",
-        "gloss": "'until/up to'; an endpoint, not a chosen option"
-      },
-      {
-        "form": "の",
-        "gloss": "possessive/nominalizer; does not form the にする decision pattern"
-      },
-      {
-        "form": "に なる",
-        "gloss": "'becomes'; describes natural change, not a deliberate choice by the speaker"
-      },
-      {
-        "form": "に した い",
-        "gloss": "'want to choose'; adds desire and changes the meaning from a settled decision"
-      },
-      {
-        "form": "を する",
-        "gloss": "'to do (an activity)'; performs an action rather than selecting an option"
-      },
-      {
-        "form": "が ある",
-        "gloss": "'there is'; expresses existence, not a decision"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:もうました",
-    "level": "N5",
-    "title": "もう～ました",
-    "meaning": "have already done ~ (completion)",
-    "explanation": "もう combined with a past-tense ました verb means an action has 'already' been completed. It emphasizes that the action is finished at the time of speaking.",
-    "formation": "もう + Verb (ました / past polite)",
-    "whyRight": "もう pairs with the affirmative past ました to mean 'already done'; the past polite form is required to show the action is complete.",
-    "examples": [
-      {
-        "context": "友[とも]だちに 昼[ひる]ご飯[はん]に さそわれましたが、もう 食[た]べ 終[お]わって いるので 答[こた]えます。",
-        "sentence": "私[わたし]は もう 昼[ひる]ご飯[はん]を 食[た]べ___。",
-        "answer": "ました",
-        "translation": "I have already eaten lunch."
-      },
-      {
-        "context": "母[はは]に 宿題[しゅくだい]は まだかと 聞[き]かれて、終[お]わった ことを 伝[つた]えます。",
-        "sentence": "宿題[しゅくだい]は もう 終[お]わり___。",
-        "answer": "ました",
-        "translation": "The homework is already finished."
-      },
-      {
-        "context": "友[とも]だちに その 本[ほん]を すすめられましたが、読[よ]み 終[お]わって いるので 言[い]います。",
-        "sentence": "その 本[ほん]は もう 読[よ]み___。",
-        "answer": "ました",
-        "translation": "I have already read that book."
-      },
-      {
-        "context": "駅[えき]に ついた 友[とも]だちに、電車[でんしゃ]が 行[い]って しまった ことを 伝[つた]えます。",
-        "sentence": "電車[でんしゃ]は もう 駅[えき]を 出[で]___。",
-        "answer": "ました",
-        "translation": "The train has already left the station."
-      },
-      {
-        "context": "彼[かれ]を さがして いる 人[ひと]に、彼[かれ]が いない ことを 教[おし]えます。",
-        "sentence": "彼[かれ]は もう 家[いえ]に 帰[かえ]り___。",
-        "answer": "ました",
-        "translation": "He has already gone home."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ます",
-        "gloss": "non-past polite; means a future/habitual action, not something already completed"
-      },
-      {
-        "form": "ません",
-        "gloss": "negative non-past ('won't / no longer'); contradicts the completed 'already done' meaning the translations require"
-      },
-      {
-        "form": "ませんでした",
-        "gloss": "negative past; means 'did not do', contradicting 'already done'"
-      },
-      {
-        "form": "ましょう",
-        "gloss": "'let's'; a suggestion, not a completed past action"
-      },
-      {
-        "form": "ています",
-        "gloss": "ongoing/state; describes continuation, not the simple completion もう～ました conveys"
-      },
-      {
-        "form": "たい",
-        "gloss": "'want to'; expresses desire, not completion"
-      },
-      {
-        "form": "たがる",
-        "gloss": "'(someone) wants to'; third-person desire, not a finished action"
-      },
-      {
-        "form": "なかった",
-        "gloss": "plain negative past; wrong register and negative meaning for もう～ました"
-      },
-      {
-        "form": "ている",
-        "gloss": "plain progressive/state; not the polite past completion form needed"
-      },
-      {
-        "form": "てください",
-        "gloss": "'please do'; a request, not a statement of completion"
-      },
-      {
-        "form": "ました か",
-        "gloss": "polite past question; asks rather than states the completed fact"
-      },
-      {
-        "form": "ます か",
-        "gloss": "polite non-past question; neither past nor a completion statement"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:まだていません",
-    "level": "N5",
-    "title": "まだ～ていません",
-    "meaning": "have not yet (done something)",
-    "explanation": "まだ combined with the て-form plus いません expresses that an action has not yet been completed but is still expected to happen. It contrasts with もう～ました (already done).",
-    "formation": "まだ + Verb (て-form) + いません",
-    "whyRight": "まだ pairs with the negative ～ていません to mean 'not yet done', implying the action is still pending; a plain past negative would not carry the 'not yet, still expected' nuance.",
-    "examples": [
-      {
-        "sentence": "宿題[しゅくだい]は まだ して___。",
-        "answer": "いません",
-        "translation": "I haven't done my homework yet."
-      },
-      {
-        "sentence": "ご飯[はん]を まだ 食[た]べて___。",
-        "answer": "いません",
-        "translation": "I haven't eaten yet."
-      },
-      {
-        "sentence": "彼[かれ]は まだ 来[き]て___。",
-        "answer": "いません",
-        "translation": "He hasn't come yet."
-      },
-      {
-        "sentence": "その本[ほん]を まだ 読[よ]んで___。",
-        "answer": "いません",
-        "translation": "I haven't read that book yet."
-      },
-      {
-        "sentence": "切符[きっぷ]を まだ 買[か]って___。",
-        "answer": "いません",
-        "translation": "I haven't bought the ticket yet."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "くありません",
-        "gloss": "い-adjective polite negative ending; cannot attach to a て-form verb (してくありません is impossible)."
-      },
-      {
-        "form": "ではありません",
-        "gloss": "polite negative copula for nouns/な-adjectives; cannot follow a て-form verb."
-      },
-      {
-        "form": "ありません",
-        "gloss": "bare negative of ある; with intransitive verbs like 来て the てある resultative is impossible, so this does not fit."
-      },
-      {
-        "form": "でした",
-        "gloss": "past copula for nouns; ungrammatical after a て-form verb (してでした is impossible)."
-      },
-      {
-        "form": "いきません",
-        "gloss": "～ていく negative 'won't go and do'; grammatical only with motion nuance, wrong with intransitive 来て and not 'not yet'."
-      },
-      {
-        "form": "おきません",
-        "gloss": "～ておく negative 'will not do in advance'; changes the meaning entirely."
-      },
-      {
-        "form": "みません",
-        "gloss": "～てみる negative 'will not try'; wrong meaning for 'have not yet done'."
-      },
-      {
-        "form": "だった",
-        "gloss": "plain past copula; cannot attach to a て-form verb."
-      },
-      {
-        "form": "なかった",
-        "gloss": "plain past negative auxiliary; gives 'had not been doing', losing the non-past 'not yet, still pending'."
-      },
-      {
-        "form": "しまいました",
-        "gloss": "～てしまう 'did completely'; opposite nuance of completion, not incompletion."
-      },
-      {
-        "form": "くない",
-        "gloss": "い-adjective plain negative; cannot attach to a て-form verb (してくない is impossible)."
-      },
-      {
-        "form": "だろう",
-        "gloss": "presumptive copula 'probably'; cannot attach directly to a て-form verb (してだろう is ungrammatical)."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:が じょうず／へた",
-    "level": "N5",
-    "title": "～が じょうず／へた",
-    "meaning": "to be good at / bad at",
-    "explanation": "上手 (good at) and 下手 (bad at) are な-adjectives describing skill. The thing one is skilled or unskilled at is marked with the particle が, not を.",
-    "formation": "Noun + が + 上手／下手 (です)",
-    "whyRight": "Skill with 上手／下手 takes the subject-marking particle が for the ability/object; を is incorrect because these are stative adjectives, not transitive verbs.",
-    "examples": [
-      {
-        "sentence": "彼女[かのじょ]は 料理[りょうり]___ 上手[じょうず]です。",
-        "answer": "が",
-        "translation": "She is good at cooking."
-      },
-      {
-        "sentence": "私[わたし]は 日本語[にほんご]___ 下手[へた]です。",
-        "answer": "が",
-        "translation": "I am bad at Japanese."
-      },
-      {
-        "sentence": "弟[おとうと]は 歌[うた]___ 上手[じょうず]じゃ ありません。",
-        "answer": "が",
-        "translation": "My younger brother is not good at singing."
-      },
-      {
-        "sentence": "田中[たなか]さんは テニス___ 上手[じょうず]です。",
-        "answer": "が",
-        "translation": "Tanaka is good at tennis."
-      },
-      {
-        "sentence": "母[はは]は 運転[うんてん]___ 下手[へた]です。",
-        "answer": "が",
-        "translation": "My mother is bad at driving."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "を",
-        "gloss": "direct-object particle; 上手／下手 are adjectives and require が, not を."
-      },
-      {
-        "form": "しか",
-        "gloss": "'only'; requires a following negative predicate, so it is ungrammatical with the affirmative 上手です here."
-      },
-      {
-        "form": "に",
-        "gloss": "marks direction/target; wrong for the thing one is skilled at."
-      },
-      {
-        "form": "で",
-        "gloss": "marks means/location; not used to mark the skill object."
-      },
-      {
-        "form": "へ",
-        "gloss": "direction particle 'toward'; irrelevant to skill."
-      },
-      {
-        "form": "と",
-        "gloss": "'with/and'; does not mark the object of skill."
-      },
-      {
-        "form": "の",
-        "gloss": "possessive/noun-linking particle; ungrammatical directly before 上手です here."
-      },
-      {
-        "form": "から",
-        "gloss": "'from/because'; wrong function for marking the skill."
-      },
-      {
-        "form": "ほど",
-        "gloss": "'to the extent of'; needs a comparative frame, ungrammatical as the skill-marking slot here."
-      },
-      {
-        "form": "まで",
-        "gloss": "'up to/even'; reads as 'even cooking' and does not mark the thing one is skilled at."
-      },
-      {
-        "form": "や",
-        "gloss": "non-exhaustive list 'and'; needs multiple nouns and is wrong with a single noun here."
-      },
-      {
-        "form": "より",
-        "gloss": "comparison 'than'; not the skill-object particle."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:が すき／きらい",
-    "level": "N5",
-    "title": "～が すき／きらい",
-    "meaning": "to like / dislike",
-    "explanation": "好き (like) and 嫌い (dislike) are な-adjectives expressing preference. The thing liked or disliked is marked with が, since Japanese treats it grammatically as the subject of the emotion.",
-    "formation": "Noun + が + 好き／嫌い (です)",
-    "whyRight": "Preference adjectives 好き／嫌い take が to mark what is liked/disliked; を is wrong because these are not action verbs but stative adjectives.",
-    "examples": [
-      {
-        "context": "動物[どうぶつ]の 中[なか]で 何[なに]が 好[す]きか 聞[き]かれました。",
-        "sentence": "私[わたし]は 犬[いぬ]___ 好[す]きです。",
-        "answer": "が",
-        "translation": "I like dogs."
-      },
-      {
-        "context": "彼[かれ]は 食[た]べ物[もの]の 好[す]き 嫌[きら]いが 多[おお]いです。",
-        "sentence": "彼[かれ]は 野菜[やさい]___ 嫌[きら]いです。",
-        "answer": "が",
-        "translation": "He dislikes vegetables."
-      },
-      {
-        "context": "妹[いもうと]は いつも 歌[うた]を 歌[うた]って います。",
-        "sentence": "妹[いもうと]は 音楽[おんがく]___ 好[す]きです。",
-        "answer": "が",
-        "translation": "My younger sister likes music."
-      },
-      {
-        "context": "私[わたし]は 朝[あさ]が とても 苦手[にがて]です。",
-        "sentence": "私[わたし]は 朝[あさ]早[はや]く 起[お]きるの___ 嫌[きら]いです。",
-        "answer": "が",
-        "translation": "I dislike getting up early in the morning."
-      },
-      {
-        "context": "子供[こども]は 甘[あま]い 味[あじ]が 大好[だいす]きです。",
-        "sentence": "子供[こども]は お菓子[かし]___ 好[す]きです。",
-        "answer": "が",
-        "translation": "Children like sweets."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "を",
-        "gloss": "direct-object particle; 好き／嫌い are adjectives and require が."
-      },
-      {
-        "form": "しか",
-        "gloss": "'only'; requires a following negative predicate, so it is ungrammatical with the affirmative 好きです here."
-      },
-      {
-        "form": "に",
-        "gloss": "marks target/direction; not used for the object of liking."
-      },
-      {
-        "form": "で",
-        "gloss": "means/location particle; wrong function here."
-      },
-      {
-        "form": "へ",
-        "gloss": "direction 'toward'; irrelevant to preference."
-      },
-      {
-        "form": "と",
-        "gloss": "'with/and'; does not mark what is liked."
-      },
-      {
-        "form": "の",
-        "gloss": "possessive/linking; ungrammatical directly before 好きです here."
-      },
-      {
-        "form": "から",
-        "gloss": "'from/because'; wrong function for marking the thing liked."
-      },
-      {
-        "form": "ほど",
-        "gloss": "'to the extent of'; needs a comparative frame and does not mark the object of liking."
-      },
-      {
-        "form": "まで",
-        "gloss": "'up to/even'; reads as 'even ...' and does not mark what is liked."
-      },
-      {
-        "form": "や",
-        "gloss": "list 'and'; requires multiple nouns and is wrong with a single noun here."
-      },
-      {
-        "form": "より",
-        "gloss": "comparison 'than'; not the preference-object particle."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:が わかる",
-    "level": "N5",
-    "title": "～が わかる",
-    "meaning": "to understand / to know",
-    "explanation": "分かる is an intransitive verb meaning 'to be understood/clear'. Because it is intransitive, the thing understood is marked with が rather than を.",
-    "formation": "Noun + が + 分かる",
-    "whyRight": "分かる is intransitive, so what is understood takes が as its grammatical subject; を is incorrect since 分かる does not take a direct object.",
-    "examples": [
-      {
-        "context": "私[わたし]は 英語[えいご]を 三年[さんねん] 習[なら]いました。",
-        "sentence": "私[わたし]は 英語[えいご]___ 分[わ]かります。",
-        "answer": "が",
-        "translation": "I understand English."
-      },
-      {
-        "context": "先生[せんせい]が 黒板[こくばん]に 新[あたら]しい 字[じ]を 書[か]きました。",
-        "sentence": "この 漢字[かんじ]___ 分[わ]かりますか。",
-        "answer": "が",
-        "translation": "Do you understand this kanji?"
-      },
-      {
-        "context": "私[わたし]も 前[まえ]に 同[おな]じ 経験[けいけん]を しました。",
-        "sentence": "彼[かれ]の 気持[きも]ち___ よく 分[わ]かります。",
-        "answer": "が",
-        "translation": "I understand his feelings well."
-      },
-      {
-        "context": "初[はじ]めての 町[まち]に 来[き]ました。",
-        "sentence": "道[みち]___ 分[わ]からないので 地図[ちず]を 見[み]ます。",
-        "answer": "が",
-        "translation": "Since I don't know the way, I look at the map."
-      },
-      {
-        "context": "この 文[ぶん]は とても 難[むずか]しいです。",
-        "sentence": "意味[いみ]___ 全[ぜん]ぜん 分[わ]かりません。",
-        "answer": "が",
-        "translation": "I don't understand the meaning at all."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "を",
-        "gloss": "direct-object particle; 分かる is intransitive and takes が, not を."
-      },
-      {
-        "form": "ほど",
-        "gloss": "'to the extent of'; needs a comparative frame, ungrammatical as the object-marking slot here."
-      },
-      {
-        "form": "に",
-        "gloss": "target/direction particle; wrong for the thing understood."
-      },
-      {
-        "form": "で",
-        "gloss": "means/location particle; wrong function."
-      },
-      {
-        "form": "へ",
-        "gloss": "direction 'toward'; irrelevant."
-      },
-      {
-        "form": "と",
-        "gloss": "'with/and'; does not mark the understood content."
-      },
-      {
-        "form": "の",
-        "gloss": "possessive/linking; ungrammatical before 分かる here."
-      },
-      {
-        "form": "から",
-        "gloss": "'from/because'; wrong function."
-      },
-      {
-        "form": "まで",
-        "gloss": "'up to/until'; reads as 'even ...' and does not mark the understood content."
-      },
-      {
-        "form": "か",
-        "gloss": "alternative particle 'or'; needs listed alternatives, ungrammatical marking a single understood object."
-      },
-      {
-        "form": "や",
-        "gloss": "list 'and'; needs multiple nouns and is wrong with a single noun here."
-      },
-      {
-        "form": "より",
-        "gloss": "comparison 'than'; not the correct particle."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:が できる",
-    "level": "N5",
-    "title": "～が できる",
-    "meaning": "to be able to do / can",
-    "explanation": "できる expresses ability or possibility. The skill, language, or activity one can do is marked with が, since できる is the potential/intransitive counterpart of する.",
-    "formation": "Noun + が + できる",
-    "whyRight": "できる marks its object with が because it is a potential verb expressing ability; を is incorrect as できる does not take a direct object.",
-    "examples": [
-      {
-        "context": "私[わたし]は 昔[むかし] 中国[ちゅうごく]に 住[す]んで いました。",
-        "sentence": "私[わたし]は 中国語[ちゅうごくご]___ できます。",
-        "answer": "が",
-        "translation": "I can speak Chinese."
-      },
-      {
-        "context": "彼女[かのじょ]は 車[くるま]の 免許[めんきょ]を 持[も]って います。",
-        "sentence": "彼女[かのじょ]は 運転[うんてん]___ できますか。",
-        "answer": "が",
-        "translation": "Can she drive?"
-      },
-      {
-        "context": "この お店[みせ]は 電話[でんわ]も インターネットも 使[つか]えます。",
-        "sentence": "ここで 予約[よやく]___ できます。",
-        "answer": "が",
-        "translation": "You can make a reservation here."
-      },
-      {
-        "context": "弟[おとうと]は まだ 学校[がっこう]に 行[い]って いません。",
-        "sentence": "弟[おとうと]は まだ 漢字[かんじ]___ できません。",
-        "answer": "が",
-        "translation": "My younger brother can't do kanji yet."
-      },
-      {
-        "context": "この 仕事[しごと]は 量[りょう]が とても 多[おお]いです。",
-        "sentence": "明日[あした]までに 仕事[しごと]___ できますか。",
-        "answer": "が",
-        "translation": "Can you finish the work by tomorrow?"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "を",
-        "gloss": "direct-object particle; できる is a potential verb and takes が, not を."
-      },
-      {
-        "form": "ほど",
-        "gloss": "'to the extent of'; needs a comparative frame, ungrammatical as the ability-marking slot here."
-      },
-      {
-        "form": "に",
-        "gloss": "target/direction particle; wrong for the thing one can do."
-      },
-      {
-        "form": "で",
-        "gloss": "means/location particle; wrong function for the ability object."
-      },
-      {
-        "form": "へ",
-        "gloss": "direction 'toward'; irrelevant."
-      },
-      {
-        "form": "と",
-        "gloss": "'with/and'; does not mark the ability object."
-      },
-      {
-        "form": "の",
-        "gloss": "possessive/linking; ungrammatical before できる here."
-      },
-      {
-        "form": "から",
-        "gloss": "'from/because'; wrong function."
-      },
-      {
-        "form": "まで",
-        "gloss": "'up to/until'; reads as 'even ...' and does not mark the ability object."
-      },
-      {
-        "form": "か",
-        "gloss": "alternative particle 'or'; needs listed alternatives, ungrammatical marking a single ability object."
-      },
-      {
-        "form": "や",
-        "gloss": "list 'and'; requires multiple nouns and is wrong with a single noun here."
-      },
-      {
-        "form": "より",
-        "gloss": "comparison 'than'; not the correct particle."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:一緒に",
-    "level": "N5",
-    "title": "一緒に",
-    "meaning": "together (with)",
-    "explanation": "一緒に means 'together' and is used adverbially before a verb. The person you do something together with is marked by the particle と.",
-    "formation": "(Person + と) + 一緒に + Verb",
-    "whyRight": "一緒に is the correct adverb for 'together'; the companion takes と ('with'), and 一緒に modifies the following verb.",
-    "examples": [
-      {
-        "sentence": "友[とも]だちと ___ 映画[えいが]を 見[み]ました。",
-        "answer": "一緒に",
-        "translation": "I watched a movie together with my friend."
-      },
-      {
-        "sentence": "家族[かぞく]と ___ 旅行[りょこう]に 行[い]きます。",
-        "answer": "一緒に",
-        "translation": "I will go on a trip together with my family."
-      },
-      {
-        "sentence": "私[わたし]と ___ 昼[ひる]ご飯[はん]を 食[た]べませんか。",
-        "answer": "一緒に",
-        "translation": "Won't you eat lunch together with me?"
-      },
-      {
-        "sentence": "彼[かれ]と ___ 学校[がっこう]へ 行[い]きました。",
-        "answer": "一緒に",
-        "translation": "I went to school together with him."
-      },
-      {
-        "sentence": "みんなと ___ 歌[うた]を 歌[うた]いましょう。",
-        "answer": "一緒に",
-        "translation": "Let's sing songs together with everyone."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "一緒",
-        "gloss": "noun form without に; cannot directly modify a verb adverbially (一緒映画を見ました is ungrammatical)."
-      },
-      {
-        "form": "一人で",
-        "gloss": "'alone/by oneself'; contradicts the companion marked by と, giving an unnatural 'alone with my friend' reading."
-      },
-      {
-        "form": "だから",
-        "gloss": "conjunction 'so/therefore'; cannot stand as an adverb between と and the verb."
-      },
-      {
-        "form": "全部",
-        "gloss": "'all'; quantity word, ungrammatical in this adverbial slot before the verb."
-      },
-      {
-        "form": "ぜんぶで",
-        "gloss": "'in total'; counts amounts, not togetherness, and is unnatural here."
-      },
-      {
-        "form": "みんな",
-        "gloss": "'everyone'; a bare noun, ungrammatical in the adverbial 'together' slot here."
-      },
-      {
-        "form": "そして",
-        "gloss": "conjunction 'and then'; connects sentences, ungrammatical mid-clause after と."
-      },
-      {
-        "form": "しかし",
-        "gloss": "conjunction 'however'; ungrammatical in this mid-clause adverbial slot."
-      },
-      {
-        "form": "たち",
-        "gloss": "pluralizing suffix, not a standalone adverb; ungrammatical here."
-      },
-      {
-        "form": "こと",
-        "gloss": "nominalizer/noun 'thing'; cannot fill the adverbial 'together' slot before the verb."
-      },
-      {
-        "form": "一緒で",
-        "gloss": "predicative 一緒だ form with で; used as a predicate, not adverbially before a verb (一緒で見ました is unnatural)."
-      },
-      {
-        "form": "とき",
-        "gloss": "'time/when'; a temporal noun, ungrammatical as the adverb 'together' here."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:どうして／なぜ",
-    "level": "N5",
-    "title": "どうして／なぜ",
-    "meaning": "why",
-    "explanation": "どうして and なぜ both ask 'why', requesting a reason. なぜ is somewhat more formal/written, while どうして is common in everyday speech; the answer is typically given with ～から.",
-    "formation": "どうして／なぜ + clause + か",
-    "whyRight": "どうして／なぜ are the interrogatives for asking a reason ('why'); other question words like どこ or いつ ask place or time, not reason.",
-    "examples": [
-      {
-        "context": "先生[せんせい]が あなたの 休[やす]んだ 理由[りゆう]を 知[し]りたがって います。",
-        "sentence": "___ 学校[がっこう]を 休[やす]みましたか。",
-        "answer": "どうして",
-        "translation": "Why did you take the day off from school?"
-      },
-      {
-        "sentence": "___ そんなに 怒[おこ]って いるのですか。",
-        "answer": "なぜ",
-        "translation": "Why are you so angry?"
-      },
-      {
-        "context": "パーティーには クラスの みんなが 来[き]ました。",
-        "sentence": "___ 彼[かれ]は 来[こ]なかったのですか。",
-        "answer": "どうして",
-        "translation": "Why didn't he come?"
-      },
-      {
-        "context": "あなたの 国[くに]では 英語[えいご]を 話[はな]す 人[ひと]が 多[おお]いですね。",
-        "sentence": "___ 日本語[にほんご]を 勉強[べんきょう]して いますか。",
-        "answer": "どうして",
-        "translation": "Why are you studying Japanese?"
-      },
-      {
-        "context": "青[あお]い 色[いろ]には 理由[りゆう]が あるそうです。",
-        "sentence": "___ 空[そら]は 青[あお]いのですか。",
-        "answer": "なぜ",
-        "translation": "Why is the sky blue?"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "どこ",
-        "gloss": "'where'; asks place, not reason."
-      },
-      {
-        "form": "いつ",
-        "gloss": "'when'; asks time, not reason."
-      },
-      {
-        "form": "だれ",
-        "gloss": "'who'; asks a person, not reason."
-      },
-      {
-        "form": "なに",
-        "gloss": "'what'; asks a thing, not reason."
-      },
-      {
-        "form": "どう",
-        "gloss": "'how/what way'; asks manner or state, not the reason 'why'."
-      },
-      {
-        "form": "どの",
-        "gloss": "'which' (+ noun); a selection word, not 'why'."
-      },
-      {
-        "form": "どれ",
-        "gloss": "'which one'; selection among items, not reason."
-      },
-      {
-        "form": "どんな",
-        "gloss": "'what kind of'; asks type, not reason."
-      },
-      {
-        "form": "いくら",
-        "gloss": "'how much'; asks price/amount, not reason."
-      },
-      {
-        "form": "いくつ",
-        "gloss": "'how many/how old'; asks quantity, not reason."
-      },
-      {
-        "form": "どうやって",
-        "gloss": "'how/by what means'; asks method, not the reason."
-      },
-      {
-        "form": "どちら",
-        "gloss": "'which (of two)/where (polite)'; not 'why'."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:なに・なん (what)",
-    "level": "N5",
-    "title": "なに・なん (what)",
-    "meaning": "what",
-    "explanation": "何 is the question word 'what'. It is read なに on its own and before most particles, but read なん before counters and before sounds like t/d/n (e.g. 何ですか, 何時, 何人).",
-    "formation": "何 (なに／なん) + particle/counter",
-    "whyRight": "何 is read なん before counters and certain consonants (です, と, の sometimes, 時, 人, etc.), while elsewhere it is なに; the reading depends on the following sound.",
-    "examples": [
-      {
-        "context": "机[つくえ]の 上[うえ]に 見[み]たことのない 物[もの]が あります。",
-        "sentence": "これは ___ ですか。",
-        "answer": "なん",
-        "translation": "What is this?"
-      },
-      {
-        "context": "お腹[なか]が すきました。",
-        "sentence": "昼[ひる]ご飯[はん]に ___ を 食[た]べますか。",
-        "answer": "なに",
-        "translation": "What will you eat for lunch?"
-      },
-      {
-        "sentence": "今[いま] ___ 時[じ]ですか。",
-        "answer": "なん",
-        "translation": "What time is it now?"
-      },
-      {
-        "context": "今[いま]から 趣味[しゅみ]の 話[はなし]を しましょう。",
-        "sentence": "あなたは ___ が 好[す]きですか。",
-        "answer": "なに",
-        "translation": "What do you like?"
-      },
-      {
-        "sentence": "教室[きょうしつ]に ___ 人[にん] いますか。",
-        "answer": "なん",
-        "translation": "How many people are in the classroom?"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "なに (before です)",
-        "gloss": "wrong reading; before です 何 is read なん (なんですか), not なにですか."
-      },
-      {
-        "form": "なん (before を)",
-        "gloss": "wrong reading; before particle を 何 is read なに, not なん."
-      },
-      {
-        "form": "なに (before 時)",
-        "gloss": "wrong reading; before the counter 時 it is なんじ, not なにじ."
-      },
-      {
-        "form": "なん (before が)",
-        "gloss": "wrong reading; before particle が 何 is read なに, not なん."
-      },
-      {
-        "form": "なに (before 人)",
-        "gloss": "wrong reading; with the counter 人 it is なんにん, not なににん."
-      },
-      {
-        "form": "だれ",
-        "gloss": "'who'; asks a person, not 'what'."
-      },
-      {
-        "form": "どこ",
-        "gloss": "'where'; asks place, not 'what'."
-      },
-      {
-        "form": "いつ",
-        "gloss": "'when'; asks time point, not 'what'."
-      },
-      {
-        "form": "どれ",
-        "gloss": "'which one'; selection, not the open question 'what'."
-      },
-      {
-        "form": "どの",
-        "gloss": "'which' (+ noun); a modifier, not standalone 'what'."
-      },
-      {
-        "form": "どう",
-        "gloss": "'how'; asks manner, not 'what'."
-      },
-      {
-        "form": "なんで",
-        "gloss": "casual 'why'; asks reason, not 'what'."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:だれ",
-    "level": "N5",
-    "title": "だれ",
-    "meaning": "who",
-    "explanation": "だれ is the question word used to ask about a person's identity. It functions like a noun and combines with particles such as が, を, に, and の to ask 'who' in different grammatical roles.",
-    "formation": "だれ + particle (が/を/に/の/と...) + rest of question",
-    "whyRight": "だれ is the correct interrogative for asking about an unknown person; other question words ask about things, time, place, or manner, not people.",
-    "examples": [
-      {
-        "context": "遠[とお]くに 知[し]らない 男[おとこ]の 人[ひと]が 立[た]って います。",
-        "sentence": "あの 人[ひと]は ___ ですか。",
-        "answer": "だれ",
-        "translation": "Who is that person?"
-      },
-      {
-        "context": "玄関[げんかん]の ベルが 鳴[な]りました。",
-        "sentence": "___ が 来[き]ましたか。",
-        "answer": "だれ",
-        "translation": "Who came?"
-      },
-      {
-        "context": "教室[きょうしつ]に 本[ほん]が 一冊[いっさつ] 忘[わす]れて ありました。",
-        "sentence": "これは ___ の 本[ほん]ですか。",
-        "answer": "だれ",
-        "translation": "Whose book is this?"
-      },
-      {
-        "sentence": "昨日[きのう] ___ と 話[はな]しましたか。",
-        "answer": "だれ",
-        "translation": "Who did you talk with yesterday?"
-      },
-      {
-        "sentence": "教室[きょうしつ]に ___ も いません。",
-        "answer": "だれ",
-        "translation": "There is no one in the classroom."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "なに",
-        "gloss": "means 'what'; asks about things, not people"
-      },
-      {
-        "form": "いつ",
-        "gloss": "means 'when'; asks about time, not a person"
-      },
-      {
-        "form": "どこ",
-        "gloss": "means 'where'; asks about place, not a person"
-      },
-      {
-        "form": "どれ",
-        "gloss": "means 'which one'; selects an object, not a person"
-      },
-      {
-        "form": "どう",
-        "gloss": "means 'how'; asks about manner/state, not identity"
-      },
-      {
-        "form": "なぜ",
-        "gloss": "means 'why'; asks for a reason, not a person"
-      },
-      {
-        "form": "いくら",
-        "gloss": "means 'how much'; asks about price/amount, not a person"
-      },
-      {
-        "form": "どんな",
-        "gloss": "means 'what kind of'; modifies a noun, cannot stand as 'who'"
-      },
-      {
-        "form": "どうやって",
-        "gloss": "means 'how/by what means'; asks about method, not the identity of a person"
-      },
-      {
-        "form": "いくつ",
-        "gloss": "means 'how many/how old'; asks about quantity, not a person"
-      },
-      {
-        "form": "どうして",
-        "gloss": "means 'why'; asks a reason, not the identity of a person"
-      },
-      {
-        "form": "どれくらい",
-        "gloss": "means 'about how much/how long'; asks an amount, not a person"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:いつ",
-    "level": "N5",
-    "title": "いつ",
-    "meaning": "when",
-    "explanation": "いつ is the question word used to ask about a point in time. It does not normally take the particle に when it stands alone, and it can combine with から, まで, and も to form related expressions.",
-    "formation": "いつ + (から/まで/も) + rest of question",
-    "whyRight": "いつ is the correct interrogative for asking about time; the distractors ask about people, places, manner, or amount instead.",
-    "examples": [
-      {
-        "context": "来月[らいげつ] あなたの お祝[いわ]いの パーティーを ひらきたいです。",
-        "sentence": "誕生日[たんじょうび]は ___ ですか。",
-        "answer": "いつ",
-        "translation": "When is your birthday?"
-      },
-      {
-        "context": "あなたは もう 日本[にほん]の 生活[せいかつ]に 慣[な]れましたか。",
-        "sentence": "___ 日本[にほん]へ 来[き]ましたか。",
-        "answer": "いつ",
-        "translation": "When did you come to Japan?"
-      },
-      {
-        "context": "テストは 毎年[まいとし] 春[はる]の どこかの 日[ひ]に あります。",
-        "sentence": "試験[しけん]は ___ から 始[はじ]まりますか。",
-        "answer": "いつ",
-        "translation": "When does the exam start?"
-      },
-      {
-        "context": "彼[かれ]は 長[なが]い 出張[しゅっちょう]で 外国[がいこく]に 行[い]って います。",
-        "sentence": "彼[かれ]は ___ 帰[かえ]りますか。",
-        "answer": "いつ",
-        "translation": "When is he going home?"
-      },
-      {
-        "context": "私[わたし]は 一日中[いちにちじゅう] 家[いえ]に います。",
-        "sentence": "___ でも 電話[でんわ]してください。",
-        "answer": "いつ",
-        "translation": "Please call me anytime."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "どこ",
-        "gloss": "means 'where'; asks about place, not time"
-      },
-      {
-        "form": "だれ",
-        "gloss": "means 'who'; asks about a person, not time"
-      },
-      {
-        "form": "なに",
-        "gloss": "means 'what'; asks about a thing, not time"
-      },
-      {
-        "form": "どう",
-        "gloss": "means 'how'; asks about manner, not time"
-      },
-      {
-        "form": "なぜ",
-        "gloss": "means 'why'; asks for a reason, not time"
-      },
-      {
-        "form": "いくら",
-        "gloss": "means 'how much'; asks about price, not time"
-      },
-      {
-        "form": "いくつ",
-        "gloss": "means 'how many'; asks about quantity, not time"
-      },
-      {
-        "form": "どれ",
-        "gloss": "means 'which one'; selects an object, not a time"
-      },
-      {
-        "form": "どんな",
-        "gloss": "means 'what kind of'; modifies a noun, not a time word"
-      },
-      {
-        "form": "なんじ",
-        "gloss": "means 'what time'; only a clock time, too narrow for general 'when'"
-      },
-      {
-        "form": "いつか",
-        "gloss": "means 'someday'; an indefinite, not a question word"
-      },
-      {
-        "form": "なんにち",
-        "gloss": "means 'what day/how many days'; asks a date number, not general 'when'"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:いくら",
-    "level": "N5",
-    "title": "いくら",
-    "meaning": "how much",
-    "explanation": "いくら is the question word used to ask about price or an uncountable amount. It is most often used for cost, and with でも it forms 'no matter how much'.",
-    "formation": "Noun + は + いくら + ですか / いくら + も/でも",
-    "whyRight": "いくら specifically asks the price or amount of something; the distractors ask about count, time, manner, or identity rather than how much.",
-    "examples": [
-      {
-        "context": "すてきな 時計[とけい]ですね。買[か]いたいので 値段[ねだん]を 教[おし]えてください。",
-        "sentence": "この 時計[とけい]は ___ ですか。",
-        "answer": "いくら",
-        "translation": "How much is this watch?"
-      },
-      {
-        "context": "買[か]い物[もの]が 終[お]わりました。お 金[かね]を 払[はら]いたいです。",
-        "sentence": "全部[ぜんぶ]で ___ ですか。",
-        "answer": "いくら",
-        "translation": "How much is it altogether?"
-      },
-      {
-        "context": "電車[でんしゃ]に 乗[の]る 前[まえ]に、料金[りょうきん]を 知[し]りたいです。",
-        "sentence": "切符[きっぷ]は ___ かかりますか。",
-        "answer": "いくら",
-        "translation": "How much does the ticket cost?"
-      },
-      {
-        "context": "この アパートを 借[か]りたいので、家賃[やちん]を 聞[き]きます。",
-        "sentence": "この 部屋[へや]は 一[いっ]か月[げつ] ___ ですか。",
-        "answer": "いくら",
-        "translation": "How much is this room per month?"
-      },
-      {
-        "context": "私[わたし]は たくさん ごはんを 食[た]べます。でも、体[からだ]は 変[か]わりません。",
-        "sentence": "___ 食[た]べても 太[ふと]りません。",
-        "answer": "いくら",
-        "translation": "No matter how much I eat, I don't gain weight."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "いくつ",
-        "gloss": "means 'how many'; counts discrete items, not a price"
-      },
-      {
-        "form": "なんこ",
-        "gloss": "means 'how many (pieces)'; a counter question, not price"
-      },
-      {
-        "form": "どちら",
-        "gloss": "means 'which (of two)/where'; selects an option, not a price"
-      },
-      {
-        "form": "なに",
-        "gloss": "means 'what'; asks about a thing, not an amount"
-      },
-      {
-        "form": "だれ",
-        "gloss": "means 'who'; asks about a person, not amount"
-      },
-      {
-        "form": "いつ",
-        "gloss": "means 'when'; asks about time, not amount"
-      },
-      {
-        "form": "どこ",
-        "gloss": "means 'where'; asks about place, not amount"
-      },
-      {
-        "form": "どう",
-        "gloss": "means 'how'; asks about manner, not price"
-      },
-      {
-        "form": "どんな",
-        "gloss": "means 'what kind of'; modifies a noun, not an amount"
-      },
-      {
-        "form": "なんで",
-        "gloss": "means 'why/by what means'; not asking a price"
-      },
-      {
-        "form": "なんにん",
-        "gloss": "means 'how many people'; counts people, not money"
-      },
-      {
-        "form": "いくらか",
-        "gloss": "means 'some amount'; an indefinite, not a question word"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:いくつ",
-    "level": "N5",
-    "title": "いくつ",
-    "meaning": "how many / how old",
-    "explanation": "いくつ asks the number of countable things and, with the polite お, asks a person's age (おいくつ). It is used when there is no specific counter or for general counting.",
-    "formation": "Noun + は + いくつ + ですか / おいくつ (age)",
-    "whyRight": "いくつ asks a count of items or an age; the distractors ask about price, time, identity, or manner instead of a quantity.",
-    "examples": [
-      {
-        "context": "店[みせ]で りんごを 選[えら]んでいます。数[かず]を 決[き]めたいです。",
-        "sentence": "りんごを ___ 買[か]いますか。",
-        "answer": "いくつ",
-        "translation": "How many apples will you buy?"
-      },
-      {
-        "sentence": "箱[はこ]の 中[なか]に たまごが ___ ありますか。",
-        "answer": "いくつ",
-        "translation": "How many eggs are in the box?"
-      },
-      {
-        "context": "かわいい お 子[こ]さんですね。年[とし]を 聞[き]いても いいですか。",
-        "sentence": "お 子[こ]さんは ___ ですか。",
-        "answer": "いくつ",
-        "translation": "How old is your child?"
-      },
-      {
-        "sentence": "質問[しつもん]が ___ ありますか。",
-        "answer": "いくつ",
-        "translation": "How many questions are there?"
-      },
-      {
-        "sentence": "この ケーキを ___ に 切[き]りますか。",
-        "answer": "いくつ",
-        "translation": "Into how many pieces will you cut this cake?"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "いくら",
-        "gloss": "means 'how much (price)'; asks cost, not a count"
-      },
-      {
-        "form": "どちら",
-        "gloss": "means 'which (of two)'; selects an option, not a count or age"
-      },
-      {
-        "form": "だれ",
-        "gloss": "means 'who'; asks about a person, not a number"
-      },
-      {
-        "form": "いつ",
-        "gloss": "means 'when'; asks about time, not a count"
-      },
-      {
-        "form": "どこ",
-        "gloss": "means 'where'; asks about place, not a count"
-      },
-      {
-        "form": "なに",
-        "gloss": "means 'what'; asks about a thing, not a quantity"
-      },
-      {
-        "form": "どう",
-        "gloss": "means 'how'; asks about manner, not quantity"
-      },
-      {
-        "form": "どれ",
-        "gloss": "means 'which one'; selects an item, does not count them"
-      },
-      {
-        "form": "どんな",
-        "gloss": "means 'what kind of'; describes type, not number"
-      },
-      {
-        "form": "なぜ",
-        "gloss": "means 'why'; asks a reason, not a count"
-      },
-      {
-        "form": "どうやって",
-        "gloss": "means 'by what means/how'; asks a method, not a count"
-      },
-      {
-        "form": "いくつか",
-        "gloss": "means 'a few/several'; an indefinite, not a question word"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:どう",
-    "level": "N5",
-    "title": "どう",
-    "meaning": "how",
-    "explanation": "どう asks about the manner, method, or state of something. It is often used in どうですか ('how is it?') and どうやって ('by what means'), and is an adverb-type question word.",
-    "formation": "どう + verb / どう + ですか / どうやって + verb",
-    "whyRight": "どう asks how something is done or how something is; the distractors ask about identity, time, place, or quantity rather than manner or state.",
-    "examples": [
-      {
-        "sentence": "日本[にほん]の 生活[せいかつ]は ___ ですか。",
-        "answer": "どう",
-        "translation": "How is life in Japan?"
-      },
-      {
-        "sentence": "この 漢字[かんじ]は ___ 読[よ]みますか。",
-        "answer": "どう",
-        "translation": "How do you read this kanji?"
-      },
-      {
-        "context": "のどが かわきましたね。何[なに]か 飲[の]み物[もの]は いかがですか。",
-        "sentence": "コーヒーは ___ ですか。",
-        "answer": "どう",
-        "translation": "How about some coffee?"
-      },
-      {
-        "context": "駅[えき]は 遠[とお]いです。行[い]き方[かた]を 教[おし]えてください。",
-        "sentence": "駅[えき]まで ___ 行[い]きますか。",
-        "answer": "どう",
-        "translation": "How do you get to the station?"
-      },
-      {
-        "context": "月曜日[げつようび]に なりました。楽[たの]しい 二[ふつ]か日[か]でしたか。",
-        "sentence": "週末[しゅうまつ]は ___ でしたか。",
-        "answer": "どう",
-        "translation": "How was your weekend?"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "なに",
-        "gloss": "means 'what'; asks about a thing, not manner"
-      },
-      {
-        "form": "だれ",
-        "gloss": "means 'who'; asks about a person, not manner"
-      },
-      {
-        "form": "いつ",
-        "gloss": "means 'when'; asks about time, not manner"
-      },
-      {
-        "form": "どこ",
-        "gloss": "means 'where'; asks about place, not manner"
-      },
-      {
-        "form": "いくら",
-        "gloss": "means 'how much'; asks about price, not manner"
-      },
-      {
-        "form": "いくつ",
-        "gloss": "means 'how many'; asks about count, not manner"
-      },
-      {
-        "form": "なぜ",
-        "gloss": "means 'why'; asks a reason, not how/manner"
-      },
-      {
-        "form": "どれ",
-        "gloss": "means 'which one'; selects an item, not a manner"
-      },
-      {
-        "form": "どんな",
-        "gloss": "means 'what kind of'; must modify a noun, cannot stand alone as 'how'"
-      },
-      {
-        "form": "どちら",
-        "gloss": "means 'which/where'; chooses between options, not manner"
-      },
-      {
-        "form": "どうか",
-        "gloss": "means 'please/whether'; cannot stand as the predicate 'how' in どうですか/どう読みますか"
-      },
-      {
-        "form": "どうして",
-        "gloss": "means 'why'; asks a reason, not the manner/state of something"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:どんな",
-    "level": "N5",
-    "title": "どんな",
-    "meaning": "what kind of",
-    "explanation": "どんな asks about the type, nature, or characteristics of something. It is a pre-noun adjectival (連体詞) and must be followed directly by a noun, never used on its own.",
-    "formation": "どんな + noun + (particle) + rest of question",
-    "whyRight": "どんな attaches directly to a noun to ask what kind of thing it is; the distractors either cannot modify a noun this way or ask about identity, time, manner, or amount.",
-    "examples": [
-      {
-        "sentence": "___ 音楽[おんがく]が 好[す]きですか。",
-        "answer": "どんな",
-        "translation": "What kind of music do you like?"
-      },
-      {
-        "sentence": "あの 人[ひと]は ___ 人[ひと]ですか。",
-        "answer": "どんな",
-        "translation": "What kind of person is that?"
-      },
-      {
-        "sentence": "___ 映画[えいが]を 見[み]ましたか。",
-        "answer": "どんな",
-        "translation": "What kind of movie did you watch?"
-      },
-      {
-        "sentence": "___ 仕事[しごと]を したいですか。",
-        "answer": "どんな",
-        "translation": "What kind of work do you want to do?"
-      },
-      {
-        "sentence": "京都[きょうと]は ___ 町[まち]ですか。",
-        "answer": "どんな",
-        "translation": "What kind of town is Kyoto?"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "どう",
-        "gloss": "means 'how'; an adverb, cannot directly modify the following noun"
-      },
-      {
-        "form": "なに",
-        "gloss": "means 'what'; asks an identity, not the type, and needs の to modify a noun"
-      },
-      {
-        "form": "だれ",
-        "gloss": "means 'who'; asks about a person's identity, not a kind"
-      },
-      {
-        "form": "いつ",
-        "gloss": "means 'when'; asks about time, not a kind"
-      },
-      {
-        "form": "どこ",
-        "gloss": "means 'where'; asks about place, not a kind"
-      },
-      {
-        "form": "どれ",
-        "gloss": "means 'which one'; selects from a set, does not describe a type"
-      },
-      {
-        "form": "どんなに",
-        "gloss": "means 'however much'; an adverb, cannot directly modify the following noun"
-      },
-      {
-        "form": "いくら",
-        "gloss": "means 'how much'; asks price, not a kind"
-      },
-      {
-        "form": "いくつ",
-        "gloss": "means 'how many'; asks a count, not a kind"
-      },
-      {
-        "form": "なぜ",
-        "gloss": "means 'why'; asks a reason, not a kind"
-      },
-      {
-        "form": "どのくらい",
-        "gloss": "means 'how much/how long'; an adverbial amount question, cannot directly modify the following noun"
-      },
-      {
-        "form": "どちら",
-        "gloss": "means 'which (of two)'; chooses an option, not the type of a noun"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:から (from)",
-    "level": "N5",
-    "title": "～から (from)",
-    "meaning": "from (a starting point in time or place)",
-    "explanation": "から marks the starting point of an action or range, indicating where or when something begins. It can be used for both time and place.",
-    "formation": "Noun (time/place) + から",
-    "whyRight": "から marks the origin or starting point; it answers 'from when' or 'from where' an action begins.",
-    "examples": [
-      {
-        "context": "授業[じゅぎょう]は 九時[くじ]に 始[はじ]まって、十時[じゅうじ]に 終[お]わります。",
-        "sentence": "授業[じゅぎょう]は九時[くじ]___始[はじ]まります。",
-        "answer": "から",
-        "translation": "Class starts from nine o'clock."
-      },
-      {
-        "context": "私[わたし]は 東京[とうきょう]で 生[う]まれました。国[くに]を 出[で]て この 町[まち]に 来[き]ました。",
-        "sentence": "日本[にほん]___来[き]ました。",
-        "answer": "から",
-        "translation": "I came from Japan."
-      },
-      {
-        "context": "銀行[ぎんこう]は 朝[あさ]九時[くじ]に 開[あ]いて、午後[ごご]三時[さんじ]に 閉[し]まります。",
-        "sentence": "銀行[ぎんこう]は午前[ごぜん]九時[くじ]___開[あ]きます。",
-        "answer": "から",
-        "translation": "The bank opens from nine in the morning."
-      },
-      {
-        "context": "郵便受[ゆうびんう]けに 手紙[てがみ]が 入[はい]っていました。送[おく]ったのは 友達[ともだち]です。",
-        "sentence": "この手紙[てがみ]は友達[ともだち]___来[き]ました。",
-        "answer": "から",
-        "translation": "This letter came from my friend."
-      },
-      {
-        "context": "夏休[なつやす]みは 来週[らいしゅう] 始[はじ]まって、九月[くがつ]まで 続[つづ]きます。",
-        "sentence": "夏休[なつやす]みは来週[らいしゅう]___です。",
-        "answer": "から",
-        "translation": "Summer vacation is from next week."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "まで",
-        "gloss": "means 'until/to' (an end point), but here a starting point is needed"
-      },
-      {
-        "form": "に",
-        "gloss": "marks a specific point in time, not a 'from' starting range"
-      },
-      {
-        "form": "で",
-        "gloss": "marks place of action or means, not an origin point"
-      },
-      {
-        "form": "へ",
-        "gloss": "indicates direction toward, not from a source"
-      },
-      {
-        "form": "を",
-        "gloss": "marks a direct object, not a starting point"
-      },
-      {
-        "form": "と",
-        "gloss": "means 'and/with', not a starting point"
-      },
-      {
-        "form": "より",
-        "gloss": "more formal 'from/than'; unnatural in everyday time/place start here"
-      },
-      {
-        "form": "が",
-        "gloss": "marks the subject, not a starting point"
-      },
-      {
-        "form": "は",
-        "gloss": "topic marker, does not express 'from'"
-      },
-      {
-        "form": "も",
-        "gloss": "means 'also/too', not a starting point"
-      },
-      {
-        "form": "ね",
-        "gloss": "sentence-ending particle, not a starting point marker"
-      },
-      {
-        "form": "の",
-        "gloss": "possessive/linking particle, cannot mark an origin point"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:まで (until/to)",
-    "level": "N5",
-    "title": "～まで (until/to)",
-    "meaning": "until / up to / as far as (an end point)",
-    "explanation": "まで marks the end point or limit of an action or range in time or place. It indicates where or when something stops or reaches its limit.",
-    "formation": "Noun (time/place) + まで",
-    "whyRight": "まで marks the ending point or limit; it answers 'until when' or 'how far' an action continues.",
-    "examples": [
-      {
-        "context": "仕事[しごと]は 朝[あさ]九時[くじ]に 始[はじ]まります。夕方[ゆうがた]に 終[お]わります。",
-        "sentence": "仕事[しごと]は五時[ごじ]___です。",
-        "answer": "まで",
-        "translation": "Work is until five o'clock."
-      },
-      {
-        "context": "家[いえ]を 出[で]ました。バスに 乗[の]らないで、駅[えき]に 着[つ]く 前[まえ]は ずっと 歩[ある]きます。",
-        "sentence": "駅[えき]___歩[ある]きます。",
-        "answer": "まで",
-        "translation": "I will walk to the station."
-      },
-      {
-        "context": "昨日[きのう]は 夜[よる] おそくまで 起[お]きていました。試験[しけん]の 勉強[べんきょう]を していました。",
-        "sentence": "昨日[きのう]は十二時[じゅうにじ]___勉強[べんきょう]しました。",
-        "answer": "まで",
-        "translation": "Yesterday I studied until twelve o'clock."
-      },
-      {
-        "context": "この電車[でんしゃ]は 大阪[おおさか]を 出[で]て、東京[とうきょう]が 終[お]わりの 駅[えき]です。",
-        "sentence": "この電車[でんしゃ]は東京[とうきょう]___行[い]きます。",
-        "answer": "まで",
-        "translation": "This train goes as far as Tokyo."
-      },
-      {
-        "context": "今日[きょう]は 木曜日[もくようび]です。あさって 会[あ]いましょう。それまで 少[すこ]し 時間[じかん]が かかります。",
-        "sentence": "金曜日[きんようび]___待[ま]ってください。",
-        "answer": "まで",
-        "translation": "Please wait until Friday."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "から",
-        "gloss": "means 'from' (a starting point), but here an end point is needed"
-      },
-      {
-        "form": "に",
-        "gloss": "marks a single point in time, not a limit/end of a range"
-      },
-      {
-        "form": "で",
-        "gloss": "marks place of action or means, not an end point"
-      },
-      {
-        "form": "へ",
-        "gloss": "shows direction toward, but lacks the 'as far as/limit' nuance of まで"
-      },
-      {
-        "form": "を",
-        "gloss": "marks a direct object, not an end point"
-      },
-      {
-        "form": "までに",
-        "gloss": "means 'by (a deadline)', not 'until/up to' a continuous limit"
-      },
-      {
-        "form": "より",
-        "gloss": "means 'than/from', not an end point"
-      },
-      {
-        "form": "と",
-        "gloss": "means 'and/with', not an end point"
-      },
-      {
-        "form": "は",
-        "gloss": "topic marker, does not express 'until'"
-      },
-      {
-        "form": "も",
-        "gloss": "means 'also/too', not an end point"
-      },
-      {
-        "form": "の",
-        "gloss": "possessive/linking particle, cannot mark a limit"
-      },
-      {
-        "form": "ながら",
-        "gloss": "means 'while doing', attaches to verb stems, not a noun end point"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:からまで",
-    "level": "N5",
-    "title": "～から～まで",
-    "meaning": "from ... to/until ... (a complete range)",
-    "explanation": "から and まで are used together to express a full range with both a starting point and an ending point, in time or place. から marks the start and まで marks the end.",
-    "formation": "Noun + から + Noun + まで",
-    "whyRight": "In a 'from A to B' range, から is paired with まで to close the span; the blank needs まで to mark the end after から marks the start.",
-    "examples": [
-      {
-        "sentence": "九時[くじ]から五時[ごじ]___働[はたら]きます。",
-        "answer": "まで",
-        "translation": "I work from nine to five."
-      },
-      {
-        "sentence": "月曜日[げつようび]___金曜日[きんようび]まで学校[がっこう]があります。",
-        "answer": "から",
-        "translation": "There is school from Monday to Friday."
-      },
-      {
-        "sentence": "家[いえ]から駅[えき]___十分[じゅっぷん]かかります。",
-        "answer": "まで",
-        "translation": "It takes ten minutes from home to the station."
-      },
-      {
-        "sentence": "夏[なつ]から冬[ふゆ]___ここに住[す]みました。",
-        "answer": "まで",
-        "translation": "I lived here from summer until winter."
-      },
-      {
-        "sentence": "東京[とうきょう]___大阪[おおさか]まで新幹線[しんかんせん]で行[い]きます。",
-        "answer": "から",
-        "translation": "I go from Tokyo to Osaka by bullet train."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "に",
-        "gloss": "marks a single point, but a range needs paired から～まで"
-      },
-      {
-        "form": "で",
-        "gloss": "marks place/means of action, not a range end or start"
-      },
-      {
-        "form": "へ",
-        "gloss": "shows direction toward, not the end point of a から range"
-      },
-      {
-        "form": "を",
-        "gloss": "marks a direct object, not part of a range"
-      },
-      {
-        "form": "より",
-        "gloss": "means 'than/from'; does not pair with から to close a range"
-      },
-      {
-        "form": "と",
-        "gloss": "means 'and/with', not a range marker"
-      },
-      {
-        "form": "は",
-        "gloss": "topic marker, does not form a range"
-      },
-      {
-        "form": "も",
-        "gloss": "means 'also/too', not a range marker"
-      },
-      {
-        "form": "までに",
-        "gloss": "means 'by (a deadline)', not the continuous 'to' of a range"
-      },
-      {
-        "form": "ので",
-        "gloss": "means 'because', a reason connector, not a range marker"
-      },
-      {
-        "form": "の",
-        "gloss": "possessive/linking particle, cannot mark a range boundary"
-      },
-      {
-        "form": "ば",
-        "gloss": "conditional 'if', not a range marker"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:が あります",
-    "level": "N5",
-    "title": "～が あります",
-    "meaning": "there is / to have (inanimate things)",
-    "explanation": "あります expresses the existence or possession of inanimate things such as objects, plants, or events. The thing that exists is marked with が.",
-    "formation": "Noun (inanimate) + が + あります",
-    "whyRight": "あります is used for inanimate (non-living, non-moving) things; the subject of existence is marked with が.",
-    "examples": [
-      {
-        "sentence": "机[つくえ]の上[うえ]に本[ほん]が___。",
-        "answer": "あります",
-        "translation": "There is a book on the desk."
-      },
-      {
-        "sentence": "明日[あした]試験[しけん]が___。",
-        "answer": "あります",
-        "translation": "There is an exam tomorrow."
-      },
-      {
-        "sentence": "駅[えき]の前[まえ]に銀行[ぎんこう]が___。",
-        "answer": "あります",
-        "translation": "There is a bank in front of the station."
-      },
-      {
-        "sentence": "時間[じかん]が___か。",
-        "answer": "あります",
-        "translation": "Do you have time?"
-      },
-      {
-        "sentence": "部屋[へや]にテレビが___。",
-        "answer": "あります",
-        "translation": "There is a television in the room."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "います",
-        "gloss": "used for living/animate things (people, animals), not inanimate objects"
-      },
-      {
-        "form": "あって",
-        "gloss": "te-form of ある; cannot end this sentence on its own"
-      },
-      {
-        "form": "わかります",
-        "gloss": "means 'to understand', not 'to exist'; wrong meaning here"
-      },
-      {
-        "form": "みます",
-        "gloss": "means 'to look at', not existence; wrong meaning here"
-      },
-      {
-        "form": "いました",
-        "gloss": "past form of います for living things; wrong category for these inanimate subjects"
-      },
-      {
-        "form": "いきます",
-        "gloss": "means 'to go', not 'to exist'; wrong meaning here"
-      },
-      {
-        "form": "あるです",
-        "gloss": "ungrammatical; ある does not take です directly"
-      },
-      {
-        "form": "なります",
-        "gloss": "means 'to become', not 'to exist'"
-      },
-      {
-        "form": "します",
-        "gloss": "means 'to do', not existence"
-      },
-      {
-        "form": "いません",
-        "gloss": "negative of います for living things; wrong category for inanimate subjects"
-      },
-      {
-        "form": "あれます",
-        "gloss": "not a valid conjugation of ある"
-      },
-      {
-        "form": "いる",
-        "gloss": "plain existence verb for living things; wrong category for inanimate subjects"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:が います",
-    "level": "N5",
-    "title": "～が います",
-    "meaning": "there is / to have (animate beings)",
-    "explanation": "います expresses the existence or presence of living, animate beings such as people and animals. The being that exists is marked with が.",
-    "formation": "Noun (animate) + が + います",
-    "whyRight": "います is used for living, animate beings (people, animals); the subject of existence is marked with が.",
-    "examples": [
-      {
-        "sentence": "公園[こうえん]に子供[こども]が___。",
-        "answer": "います",
-        "translation": "There are children in the park."
-      },
-      {
-        "sentence": "私[わたし]には兄[あに]が___。",
-        "answer": "います",
-        "translation": "I have an older brother."
-      },
-      {
-        "sentence": "庭[にわ]に猫[ねこ]が___。",
-        "answer": "います",
-        "translation": "There is a cat in the garden."
-      },
-      {
-        "sentence": "教室[きょうしつ]に先生[せんせい]が___か。",
-        "answer": "います",
-        "translation": "Is the teacher in the classroom?"
-      },
-      {
-        "sentence": "あそこに犬[いぬ]が___。",
-        "answer": "います",
-        "translation": "There is a dog over there."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "あります",
-        "gloss": "used for inanimate things, not living beings like people or animals"
-      },
-      {
-        "form": "いて",
-        "gloss": "te-form of いる; cannot end this sentence on its own"
-      },
-      {
-        "form": "わかります",
-        "gloss": "means 'to understand', not 'to exist'; wrong meaning here"
-      },
-      {
-        "form": "みます",
-        "gloss": "means 'to look at', not existence; wrong meaning here"
-      },
-      {
-        "form": "ありました",
-        "gloss": "past form of あります for inanimate things; wrong category for these animate subjects"
-      },
-      {
-        "form": "いきます",
-        "gloss": "means 'to go', not 'to exist'; wrong meaning here"
-      },
-      {
-        "form": "いるです",
-        "gloss": "ungrammatical; いる does not take です directly"
-      },
-      {
-        "form": "なります",
-        "gloss": "means 'to become', not 'to exist'"
-      },
-      {
-        "form": "します",
-        "gloss": "means 'to do', not existence"
-      },
-      {
-        "form": "ありません",
-        "gloss": "negative of あります for inanimate things; wrong category for these animate subjects"
-      },
-      {
-        "form": "いれます",
-        "gloss": "potential-like form, not the existence いる; does not fit here"
-      },
-      {
-        "form": "ある",
-        "gloss": "plain existence verb for inanimate things; wrong category for these animate subjects"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:に が あります／います",
-    "level": "N5",
-    "title": "～に ～が あります／います",
-    "meaning": "in/at (place), there is (thing/being)",
-    "explanation": "This pattern states where something exists. The place is marked with に, the thing or being with が, and the sentence ends with あります (inanimate) or います (animate). The focus is on what exists at that place.",
-    "formation": "Place + に + Noun + が + あります／います",
-    "whyRight": "In the 'place + に + thing + が + exists' pattern, the location takes に; the blank here is the location particle に.",
-    "examples": [
-      {
-        "sentence": "テーブルの上[うえ]___りんごがあります。",
-        "answer": "に",
-        "translation": "There is an apple on the table."
-      },
-      {
-        "sentence": "公園[こうえん]___犬[いぬ]がいます。",
-        "answer": "に",
-        "translation": "There is a dog in the park."
-      },
-      {
-        "sentence": "かばんの中[なか]に本[ほん]___あります。",
-        "answer": "が",
-        "translation": "There is a book in the bag."
-      },
-      {
-        "sentence": "教室[きょうしつ]に学生[がくせい]が___。",
-        "answer": "います",
-        "translation": "There are students in the classroom."
-      },
-      {
-        "sentence": "冷蔵庫[れいぞうこ]の中[なか]に牛乳[ぎゅうにゅう]が___。",
-        "answer": "あります",
-        "translation": "There is milk in the refrigerator."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "で",
-        "gloss": "marks place of an action, not a place of existence (which takes に)"
-      },
-      {
-        "form": "へ",
-        "gloss": "shows direction toward, not a location of existence"
-      },
-      {
-        "form": "を",
-        "gloss": "marks a direct object, not the existence subject or location"
-      },
-      {
-        "form": "から",
-        "gloss": "means 'from', not a location of existence"
-      },
-      {
-        "form": "まで",
-        "gloss": "means 'until/to', not a location of existence"
-      },
-      {
-        "form": "たべます",
-        "gloss": "means 'to eat'; a transitive action verb, not a location particle or existence verb"
-      },
-      {
-        "form": "いきます",
-        "gloss": "means 'to go'; a movement verb, not a location particle or existence verb"
-      },
-      {
-        "form": "と",
-        "gloss": "means 'and/with', not a location or existence marker"
-      },
-      {
-        "form": "の",
-        "gloss": "possessive/linking particle, not a location or subject marker"
-      },
-      {
-        "form": "します",
-        "gloss": "means 'to do', not 'to exist'; wrong meaning for the existence verb slot"
-      },
-      {
-        "form": "みます",
-        "gloss": "means 'to look at', not existence; wrong meaning for the verb slot"
-      },
-      {
-        "form": "より",
-        "gloss": "means 'than/from', not a location or existence marker"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:は に あります／います",
-    "level": "N5",
-    "title": "～は ～に あります／います",
-    "meaning": "(thing/being) is located in/at (place)",
-    "explanation": "This pattern states the location of a known thing or being. The topic (the thing or being) is marked with は, the place with に, and the sentence ends with あります or います. The focus is on where the known item is.",
-    "formation": "Noun + は + Place + に + あります／います",
-    "whyRight": "When the existing item is the known topic, it takes は and its location takes に; the blank here is the location particle に.",
-    "examples": [
-      {
-        "sentence": "猫[ねこ]はベッドの上[うえ]___います。",
-        "answer": "に",
-        "translation": "The cat is on the bed."
-      },
-      {
-        "sentence": "トイレはあそこ___あります。",
-        "answer": "に",
-        "translation": "The toilet is over there."
-      },
-      {
-        "sentence": "先生[せんせい]___教室[きょうしつ]にいます。",
-        "answer": "は",
-        "translation": "The teacher is in the classroom."
-      },
-      {
-        "sentence": "私[わたし]の本[ほん]は机[つくえ]の上[うえ]に___。",
-        "answer": "あります",
-        "translation": "My book is on the desk."
-      },
-      {
-        "sentence": "田中[たなか]さんは今[いま]事務所[じむしょ]に___。",
-        "answer": "います",
-        "translation": "Mr. Tanaka is in the office now."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "で",
-        "gloss": "marks place of an action, not a place of existence (which takes に)"
-      },
-      {
-        "form": "へ",
-        "gloss": "shows direction toward, not a location of existence"
-      },
-      {
-        "form": "を",
-        "gloss": "marks a direct object, not a location or topic marker"
-      },
-      {
-        "form": "から",
-        "gloss": "means 'from', not a location of existence"
-      },
-      {
-        "form": "まで",
-        "gloss": "means 'until/to', not a location of existence"
-      },
-      {
-        "form": "よみます",
-        "gloss": "means 'to read'; an action verb, not a location/topic particle or existence verb"
-      },
-      {
-        "form": "かいます",
-        "gloss": "means 'to buy'; an action verb, not a location/topic particle or existence verb"
-      },
-      {
-        "form": "と",
-        "gloss": "means 'and/with', not a location or topic marker"
-      },
-      {
-        "form": "の",
-        "gloss": "possessive/linking particle, not a location or topic marker"
-      },
-      {
-        "form": "します",
-        "gloss": "means 'to do', not 'to exist'; wrong meaning for the existence verb slot"
-      },
-      {
-        "form": "みます",
-        "gloss": "means 'to look at', not existence; wrong meaning for the verb slot"
-      },
-      {
-        "form": "より",
-        "gloss": "means 'than/from', not a location or topic marker"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:形容詞 (い-adjective) い",
-    "level": "N5",
-    "title": "形容詞 (い-adjective) ～い",
-    "meaning": "i-adjective ending in い (describes nouns and states)",
-    "explanation": "い-adjectives end in い and can directly describe a noun or end a sentence. In their dictionary (non-past, affirmative) form they keep the final い, as in 高[たか]い (expensive/tall) or 大[おお]きい (big).",
-    "formation": "Stem + い (e.g. 高[たか] + い → 高い)",
-    "whyRight": "An い-adjective in its plain non-past affirmative form keeps its final い; the blank needs the い ending to complete the adjective.",
-    "examples": [
-      {
-        "context": "この本[ほん]の値段[ねだん]を調[しら]べました。",
-        "sentence": "この本[ほん]は高[たか]___です。",
-        "answer": "い",
-        "translation": "This book is expensive."
-      },
-      {
-        "sentence": "富士山[ふじさん]はとても大[おお]き___です。",
-        "answer": "い",
-        "translation": "Mt. Fuji is very big."
-      },
-      {
-        "sentence": "今日[きょう]は天気[てんき]が___です。",
-        "answer": "いい",
-        "translation": "The weather is good today."
-      },
-      {
-        "sentence": "新[あたら]し___車[くるま]を買[か]いました。",
-        "answer": "い",
-        "translation": "I bought a new car."
-      },
-      {
-        "context": "この料理[りょうり]をもう一口[ひとくち]食[た]べてみました。",
-        "sentence": "この料理[りょうり]はおいし___です。",
-        "answer": "い",
-        "translation": "This dish is delicious."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "な",
-        "gloss": "the な-adjective connector; い-adjectives modify nouns with い, not な"
-      },
-      {
-        "form": "だ",
-        "gloss": "copula for nouns/な-adjectives; い-adjectives do not take だ in plain form"
-      },
-      {
-        "form": "くて",
-        "gloss": "te-form ending for joining clauses; ungrammatical directly before です here"
-      },
-      {
-        "form": "く",
-        "gloss": "adverbial form (e.g. 高く), not the plain adjective ending い"
-      },
-      {
-        "form": "さ",
-        "gloss": "nominalizing suffix (高さ = height); turns the adjective into a noun, wrong for this slot"
-      },
-      {
-        "form": "ければ",
-        "gloss": "conditional ending 'if...'; ungrammatical directly before です here"
-      },
-      {
-        "form": "の",
-        "gloss": "linking particle for nouns, not an い-adjective ending"
-      },
-      {
-        "form": "に",
-        "gloss": "particle/な-adjective adverbial marker, not an い-adjective ending"
-      },
-      {
-        "form": "がって",
-        "gloss": "te-form of the suffix -がる ('show signs of'); not the plain adjective ending and does not fit before です"
-      },
-      {
-        "form": "る",
-        "gloss": "a verb ending, not an い-adjective ending"
-      },
-      {
-        "form": "そう",
-        "gloss": "means 'looks/seems' based on appearance; changes the meaning to a guess, not a stated fact"
-      },
-      {
-        "form": "すぎる",
-        "gloss": "means 'too much'; verb-like suffix that does not take です directly here"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:形容詞 くない",
-    "level": "N5",
-    "title": "形容詞 ～くない",
-    "meaning": "negative form of i-adjectives (is not ...)",
-    "explanation": "To make an i-adjective negative, drop the final い and add くない. This expresses that something is not a certain quality.",
-    "formation": "i-adjective (drop い) + くない",
-    "whyRight": "The negative non-past of an i-adjective is formed by replacing い with くない, so 高い becomes 高くない.",
-    "examples": [
-      {
-        "context": "この本[ほん]は五百円[ごひゃくえん]です。",
-        "sentence": "この本[ほん]は高[たか]___です。",
-        "answer": "くない",
-        "translation": "This book is not expensive."
-      },
-      {
-        "context": "外[そと]はとても暖[あたた]かいです。",
-        "sentence": "今日[きょう]は寒[さむ]___ですね。",
-        "answer": "くない",
-        "translation": "It's not cold today, is it?"
-      },
-      {
-        "context": "私[わたし]は辛[から]い物[もの]が食[た]べられません。",
-        "sentence": "この料理[りょうり]は辛[から]___から、大丈夫[だいじょうぶ]です。",
-        "answer": "くない",
-        "translation": "This dish isn't spicy, so it's fine."
-      },
-      {
-        "context": "あの店[みせ]は五十年[ごじゅうねん]前[まえ]からあります。",
-        "sentence": "あの店[みせ]は新[あたら]し___です。",
-        "answer": "くない",
-        "translation": "That shop is not new."
-      },
-      {
-        "context": "私[わたし]の部屋[へや]はとても小[ちい]さいです。",
-        "sentence": "私[わたし]の部屋[へや]は広[ひろ]___です。",
-        "answer": "くない",
-        "translation": "My room is not spacious."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "い",
-        "gloss": "plain affirmative ending; means 'is', not the negative needed here"
-      },
-      {
-        "form": "じゃない",
-        "gloss": "negative for nouns/na-adjectives, wrong for i-adjectives"
-      },
-      {
-        "form": "ではない",
-        "gloss": "negative for nouns/na-adjectives, not used with i-adjective stems"
-      },
-      {
-        "form": "くなかった",
-        "gloss": "past negative ('was not'), wrong tense for present"
-      },
-      {
-        "form": "かった",
-        "gloss": "past affirmative ('was'), wrong tense and not negative"
-      },
-      {
-        "form": "くて",
-        "gloss": "te-form for linking clauses, not a negative"
-      },
-      {
-        "form": "く",
-        "gloss": "adverbial form; incomplete, not a negative predicate"
-      },
-      {
-        "form": "ない",
-        "gloss": "attaches to verbs/nouns, not directly to i-adjective stem"
-      },
-      {
-        "form": "くないだ",
-        "gloss": "ungrammatical; だ is not used after くない"
-      },
-      {
-        "form": "いない",
-        "gloss": "not a valid i-adjective negative form"
-      },
-      {
-        "form": "くなくて",
-        "gloss": "negative te-form for linking, not a sentence-final negative"
-      },
-      {
-        "form": "じゃなかった",
-        "gloss": "past negative for nouns/na-adjectives, wrong category and tense"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:形容詞 かった",
-    "level": "N5",
-    "title": "形容詞 ～かった",
-    "meaning": "past affirmative form of i-adjectives (was ...)",
-    "explanation": "To express the past tense of an i-adjective, drop the final い and add かった. This says something was a certain quality.",
-    "formation": "i-adjective (drop い) + かった",
-    "whyRight": "The past affirmative of an i-adjective replaces い with かった, so 楽しい becomes 楽しかった.",
-    "examples": [
-      {
-        "context": "昨日[きのう]見[み]た映画[えいが]は最高[さいこう]でした。",
-        "sentence": "昨日[きのう]の映画[えいが]はとても面白[おもしろ]___です。",
-        "answer": "かった",
-        "translation": "Yesterday's movie was very interesting."
-      },
-      {
-        "context": "今年[ことし]の夏[なつ]は毎日[まいにち]エアコンを使[つか]いました。",
-        "sentence": "夏[なつ]はとても暑[あつ]___です。",
-        "answer": "かった",
-        "translation": "Summer was very hot."
-      },
-      {
-        "context": "先週[せんしゅう]京都[きょうと]へ旅行[りょこう]に行[い]って、また行[い]きたいと思[おも]いました。",
-        "sentence": "旅行[りょこう]は楽[たの]し___です。",
-        "answer": "かった",
-        "translation": "The trip was fun."
-      },
-      {
-        "context": "昨日[きのう]数学[すうがく]のテストがありましたが、全然[ぜんぜん]答[こた]えられませんでした。",
-        "sentence": "テストは難[むずか]し___です。",
-        "answer": "かった",
-        "translation": "The test was difficult."
-      },
-      {
-        "context": "去年[きょねん]は雪[ゆき]がたくさん降[ふ]りました。",
-        "sentence": "去年[きょねん]の冬[ふゆ]は寒[さむ]___です。",
-        "answer": "かった",
-        "translation": "Last winter was cold."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "い",
-        "gloss": "present affirmative; wrong tense for a past statement"
-      },
-      {
-        "form": "くない",
-        "gloss": "present negative ('is not'), not past affirmative"
-      },
-      {
-        "form": "くなかった",
-        "gloss": "past negative ('was not'), opposite polarity"
-      },
-      {
-        "form": "でした",
-        "gloss": "past copula for nouns/na-adjectives, not used after i-adjective stem"
-      },
-      {
-        "form": "だった",
-        "gloss": "plain past copula for nouns/na-adjectives, wrong category"
-      },
-      {
-        "form": "かったです",
-        "gloss": "already includes です; would duplicate the です in the sentence"
-      },
-      {
-        "form": "くて",
-        "gloss": "te-form for linking, not a past tense"
-      },
-      {
-        "form": "かっただ",
-        "gloss": "ungrammatical; だ cannot follow かった"
-      },
-      {
-        "form": "いでした",
-        "gloss": "ungrammatical mixing of i-adjective and でした"
-      },
-      {
-        "form": "く",
-        "gloss": "adverbial form; not a past predicate"
-      },
-      {
-        "form": "かったじゃない",
-        "gloss": "ungrammatical combination; not a standard form"
-      },
-      {
-        "form": "だったです",
-        "gloss": "ungrammatical; だった already past, plus wrong category"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:形容詞 くなかった",
-    "level": "N5",
-    "title": "形容詞 ～くなかった",
-    "meaning": "past negative form of i-adjectives (was not ...)",
-    "explanation": "To make the past negative of an i-adjective, drop the final い and add くなかった. This says something was not a certain quality.",
-    "formation": "i-adjective (drop い) + くなかった",
-    "whyRight": "The past negative of an i-adjective takes the negative stem くな and adds かった, so 高い becomes 高くなかった.",
-    "examples": [
-      {
-        "context": "昨日[きのう]は上着[うわぎ]がいらないくらいの天気[てんき]でした。",
-        "sentence": "昨日[きのう]は寒[さむ]___です。",
-        "answer": "くなかった",
-        "translation": "It was not cold yesterday."
-      },
-      {
-        "context": "先週[せんしゅう]、その映画[えいが]を見[み]ました。",
-        "sentence": "その映画[えいが]はあまり面白[おもしろ]___です。",
-        "answer": "くなかった",
-        "translation": "That movie was not very interesting."
-      },
-      {
-        "context": "予約[よやく]したホテルは一泊[いっぱく]三千円[さんぜんえん]でした。",
-        "sentence": "ホテルは高[たか]___から、よかったです。",
-        "answer": "くなかった",
-        "translation": "The hotel was not expensive, so it was good."
-      },
-      {
-        "context": "試験[しけん]の問題[もんだい]は簡単[かんたん]に解[と]けました。",
-        "sentence": "試験[しけん]は思[おも]ったより難[むずか]し___です。",
-        "answer": "くなかった",
-        "translation": "The exam was not as hard as I thought."
-      },
-      {
-        "context": "旅行[りょこう]の間[あいだ]、ずっと晴[は]れていました。",
-        "sentence": "天気[てんき]は悪[わる]___です。",
-        "answer": "くなかった",
-        "translation": "The weather was not bad."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "かった",
-        "gloss": "past affirmative ('was'), wrong polarity"
-      },
-      {
-        "form": "くない",
-        "gloss": "present negative ('is not'), wrong tense"
-      },
-      {
-        "form": "い",
-        "gloss": "present affirmative; wrong tense and polarity"
-      },
-      {
-        "form": "じゃなかった",
-        "gloss": "past negative for nouns/na-adjectives, wrong category"
-      },
-      {
-        "form": "ではなかった",
-        "gloss": "past negative for nouns/na-adjectives, not used with i-adjectives"
-      },
-      {
-        "form": "くなかっただ",
-        "gloss": "ungrammatical; だ cannot follow くなかった"
-      },
-      {
-        "form": "くなくて",
-        "gloss": "negative te-form for linking, not a past predicate"
-      },
-      {
-        "form": "くありません",
-        "gloss": "present polite negative; wrong tense (not past)"
-      },
-      {
-        "form": "なかった",
-        "gloss": "verb-style past negative; cannot attach directly to i-adjective stem"
-      },
-      {
-        "form": "くなかったです",
-        "gloss": "already includes です; would duplicate the です in the sentence"
-      },
-      {
-        "form": "くなる",
-        "gloss": "means 'to become', a change-of-state form, not a negative"
-      },
-      {
-        "form": "でした",
-        "gloss": "past copula for nouns/na-adjectives, wrong category and polarity"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:形容動詞 (な-adjective) な",
-    "level": "N5",
-    "title": "形容動詞 (な-adjective) ～な",
-    "meaning": "na-adjective attached to a noun (modifying form)",
-    "explanation": "When a na-adjective directly modifies a following noun, it takes な between the adjective and the noun. This is the attributive use of na-adjectives.",
-    "formation": "na-adjective + な + noun",
-    "whyRight": "Na-adjectives require な before a noun they modify, so 静か becomes 静かな when describing 部屋.",
-    "examples": [
-      {
-        "sentence": "ここは静[しず]か___町[まち]です。",
-        "answer": "な",
-        "translation": "This is a quiet town."
-      },
-      {
-        "sentence": "彼[かれ]は親切[しんせつ]___人[ひと]です。",
-        "answer": "な",
-        "translation": "He is a kind person."
-      },
-      {
-        "sentence": "これは便利[べんり]___道具[どうぐ]ですね。",
-        "answer": "な",
-        "translation": "This is a convenient tool, isn't it?"
-      },
-      {
-        "sentence": "有名[ゆうめい]___歌手[かしゅ]に会[あ]いました。",
-        "answer": "な",
-        "translation": "I met a famous singer."
-      },
-      {
-        "sentence": "彼女[かのじょ]は元気[げんき]___子[こ]です。",
-        "answer": "な",
-        "translation": "She is a cheerful child."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "の",
-        "gloss": "links nouns to nouns; na-adjectives use な, not の, before a noun"
-      },
-      {
-        "form": "だ",
-        "gloss": "sentence-final copula; cannot connect a na-adjective to a following noun"
-      },
-      {
-        "form": "です",
-        "gloss": "polite copula; used at sentence end, not between adjective and noun"
-      },
-      {
-        "form": "に",
-        "gloss": "adverbial particle for na-adjectives, not the attributive form"
-      },
-      {
-        "form": "で",
-        "gloss": "te-form/linking of na-adjectives; not used directly before a modified noun"
-      },
-      {
-        "form": "い",
-        "gloss": "i-adjective ending; na-adjectives do not take い"
-      },
-      {
-        "form": "な + だ",
-        "gloss": "ungrammatical; だ cannot follow the attributive な"
-      },
-      {
-        "form": "だった",
-        "gloss": "plain past copula; a predicate, not a noun-modifying form"
-      },
-      {
-        "form": "じゃない",
-        "gloss": "negative copula; not an attributive connector"
-      },
-      {
-        "form": "なの",
-        "gloss": "explanatory ending, not used to directly modify a noun in this slot"
-      },
-      {
-        "form": "と",
-        "gloss": "quotation/with particle; does not modify a noun like な does"
-      },
-      {
-        "form": "なな",
-        "gloss": "ungrammatical doubling of な"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:じゃない／ではない",
-    "level": "N5",
-    "title": "～じゃない／ではない",
-    "meaning": "negative copula for nouns and na-adjectives (is not ...)",
-    "explanation": "To make a noun or na-adjective negative, use じゃない (casual/spoken) or ではない (more formal/written). Both mean 'is not'.",
-    "formation": "noun / na-adjective + じゃない (or ではない)",
-    "whyRight": "Nouns and na-adjectives form their negative with じゃない/ではない, not with i-adjective negatives, so 学生 becomes 学生じゃない.",
-    "examples": [
-      {
-        "context": "私[わたし]は今[いま]会社[かいしゃ]で働[はたら]いています。",
-        "sentence": "私[わたし]は学生[がくせい]___です。",
-        "answer": "じゃない",
-        "translation": "I am not a student."
-      },
-      {
-        "context": "今[いま]、外[そと]で工事[こうじ]をしています。",
-        "sentence": "この部屋[へや]は静[しず]か___です。",
-        "answer": "じゃない",
-        "translation": "This room is not quiet."
-      },
-      {
-        "context": "彼[かれ]は今[いま]、大学[だいがく]の学生[がくせい]です。",
-        "sentence": "彼[かれ]は先生[せんせい]___と思[おも]います。",
-        "answer": "ではない",
-        "translation": "I think he is not a teacher."
-      },
-      {
-        "context": "ここは本[ほん]を売[う]っている店[みせ]です。",
-        "sentence": "ここは図書館[としょかん]___です。",
-        "answer": "じゃない",
-        "translation": "This is not a library."
-      },
-      {
-        "context": "みんなこの料理[りょうり]を知[し]りません。",
-        "sentence": "あの料理[りょうり]は有名[ゆうめい]___です。",
-        "answer": "じゃない",
-        "translation": "That dish is not famous."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "くない",
-        "gloss": "negative for i-adjectives, wrong for nouns/na-adjectives"
-      },
-      {
-        "form": "だ",
-        "gloss": "affirmative copula ('is'), opposite meaning"
-      },
-      {
-        "form": "です",
-        "gloss": "affirmative polite copula, not a negative"
-      },
-      {
-        "form": "じゃなかった",
-        "gloss": "past negative ('was not'), wrong tense for present"
-      },
-      {
-        "form": "ではなかった",
-        "gloss": "past negative ('was not'), wrong tense for present"
-      },
-      {
-        "form": "じゃないだ",
-        "gloss": "ungrammatical; だ cannot follow じゃない"
-      },
-      {
-        "form": "ない",
-        "gloss": "bare verb-style negative; cannot directly negate a noun this way"
-      },
-      {
-        "form": "くなかった",
-        "gloss": "past negative for i-adjectives, wrong category and tense"
-      },
-      {
-        "form": "な",
-        "gloss": "attributive connector for na-adjectives, not a negative"
-      },
-      {
-        "form": "じゃありません",
-        "gloss": "polite negative; would not fit before です in the sentence"
-      },
-      {
-        "form": "だった",
-        "gloss": "past affirmative copula, opposite polarity and wrong tense"
-      },
-      {
-        "form": "ではないだ",
-        "gloss": "ungrammatical; だ cannot follow ではない"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:でした",
-    "level": "N5",
-    "title": "～でした",
-    "meaning": "past affirmative polite copula for nouns and na-adjectives (was ...)",
-    "explanation": "To say a noun or na-adjective was true in the past politely, use でした. It is the past form of です.",
-    "formation": "noun / na-adjective + でした",
-    "whyRight": "The polite past affirmative of the copula for nouns and na-adjectives is でした, so 学生です becomes 学生でした.",
-    "examples": [
-      {
-        "context": "だから会社[かいしゃ]へ行[い]きませんでした。",
-        "sentence": "昨日[きのう]は休[やす]み___。",
-        "answer": "でした",
-        "translation": "Yesterday was a day off."
-      },
-      {
-        "context": "多[おお]くの人[ひと]が彼[かれ]の歌[うた]を知[し]っていました。",
-        "sentence": "あの人[ひと]は昔[むかし]有名[ゆうめい]な歌手[かしゅ]___。",
-        "answer": "でした",
-        "translation": "That person was a famous singer in the past."
-      },
-      {
-        "context": "人[ひと]も車[くるま]もほとんどいませんでした。",
-        "sentence": "その時[とき]、町[まち]はとても静[しず]か___。",
-        "answer": "でした",
-        "translation": "At that time, the town was very quiet."
-      },
-      {
-        "context": "今年[ことし]から彼[かれ]は会社[かいしゃ]で働[はたら]いています。",
-        "sentence": "去年[きょねん]彼[かれ]は学生[がくせい]___。",
-        "answer": "でした",
-        "translation": "Last year he was a student."
-      },
-      {
-        "context": "今[いま]は弟[おとうと]がそれを持[も]っています。",
-        "sentence": "昔[むかし]、それは私[わたし]の本[ほん]___。",
-        "answer": "でした",
-        "translation": "Long ago, that was my book."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "です",
-        "gloss": "present affirmative copula; wrong tense for a past statement"
-      },
-      {
-        "form": "だ",
-        "gloss": "present plain copula ('is'); wrong tense for a past statement"
-      },
-      {
-        "form": "じゃなかった",
-        "gloss": "past negative ('was not'), opposite polarity"
-      },
-      {
-        "form": "ではありませんでした",
-        "gloss": "polite past negative, opposite polarity"
-      },
-      {
-        "form": "かった",
-        "gloss": "i-adjective past ending; cannot attach to a noun"
-      },
-      {
-        "form": "くなかった",
-        "gloss": "i-adjective past negative; wrong category and polarity"
-      },
-      {
-        "form": "でしただ",
-        "gloss": "ungrammatical; だ cannot follow でした"
-      },
-      {
-        "form": "でしょう",
-        "gloss": "conjecture ('probably'), not a past statement"
-      },
-      {
-        "form": "ました",
-        "gloss": "polite past for verbs; cannot attach to a noun"
-      },
-      {
-        "form": "だろう",
-        "gloss": "plain conjecture ('probably'); not a past affirmative statement"
-      },
-      {
-        "form": "じゃない",
-        "gloss": "present negative copula, wrong tense and polarity"
-      },
-      {
-        "form": "でした + だ",
-        "gloss": "ungrammatical addition of だ after でした"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:じゃなかった",
-    "level": "N5",
-    "title": "～じゃなかった",
-    "meaning": "past negative copula for nouns and na-adjectives (was not ...)",
-    "explanation": "To say a noun or na-adjective was not true in the past, use じゃなかった (casual) or ではなかった (more formal). It is the past form of じゃない.",
-    "formation": "noun / na-adjective + じゃなかった (or ではなかった)",
-    "whyRight": "The past negative of the copula for nouns and na-adjectives is じゃなかった, so 学生じゃない becomes 学生じゃなかった.",
-    "examples": [
-      {
-        "sentence": "昨日[きのう]は休[やす]み___です。",
-        "answer": "じゃなかった",
-        "translation": "Yesterday was not a day off."
-      },
-      {
-        "context": "昔[むかし]、その店[みせ]に行[い]きました。",
-        "sentence": "あの店[みせ]はあまり有名[ゆうめい]___です。",
-        "answer": "じゃなかった",
-        "translation": "That shop was not very famous."
-      },
-      {
-        "sentence": "彼[かれ]はその時[とき]先生[せんせい]___です。",
-        "answer": "じゃなかった",
-        "translation": "He was not a teacher at that time."
-      },
-      {
-        "context": "きのうホテルに泊[と]まりました。",
-        "sentence": "部屋[へや]は静[しず]か___です。",
-        "answer": "じゃなかった",
-        "translation": "The room was not quiet."
-      },
-      {
-        "context": "きのう傘[かさ]をまちがえて持[も]って帰[かえ]りました。",
-        "sentence": "それは私[わたし]の傘[かさ]___です。",
-        "answer": "じゃなかった",
-        "translation": "That was not my umbrella."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "じゃない",
-        "gloss": "present negative ('is not'), wrong tense"
-      },
-      {
-        "form": "でした",
-        "gloss": "past affirmative ('was'), opposite polarity"
-      },
-      {
-        "form": "だった",
-        "gloss": "past affirmative plain copula, opposite polarity"
-      },
-      {
-        "form": "です",
-        "gloss": "present affirmative copula, wrong tense and polarity"
-      },
-      {
-        "form": "くなかった",
-        "gloss": "i-adjective past negative; wrong category for a noun"
-      },
-      {
-        "form": "かった",
-        "gloss": "i-adjective past affirmative; cannot attach to a noun"
-      },
-      {
-        "form": "じゃなかっただ",
-        "gloss": "ungrammatical; だ cannot follow じゃなかった"
-      },
-      {
-        "form": "なかった",
-        "gloss": "bare verb-style past negative; does not negate a noun this way"
-      },
-      {
-        "form": "じゃありませんでした",
-        "gloss": "polite past negative; would not fit before です in the sentence"
-      },
-      {
-        "form": "ではない",
-        "gloss": "present negative copula, wrong tense"
-      },
-      {
-        "form": "じゃなくて",
-        "gloss": "negative te-form for linking, not a sentence-final past predicate"
-      },
-      {
-        "form": "じゃなかったです",
-        "gloss": "already includes です; would duplicate the です in the sentence"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:動詞 ます形",
-    "level": "N5",
-    "title": "動詞 ます形",
-    "meaning": "polite non-past affirmative verb form (-masu form)",
-    "explanation": "The ます form is the polite present/future affirmative of a verb. It is made by attaching ます to the verb stem (the i-form for godan verbs, the stem for ichidan verbs).",
-    "formation": "Verb (stem / ます-stem) + ます",
-    "whyRight": "Polite non-past affirmative verbs end in ます attached to the verb stem, so 食べる becomes 食べます and 飲む becomes 飲みます.",
-    "examples": [
-      {
-        "context": "私[わたし]の朝[あさ]の習慣[しゅうかん]をお話[はな]しします。",
-        "sentence": "毎朝[まいあさ]コーヒーを飲[の]み___。",
-        "answer": "ます",
-        "translation": "I drink coffee every morning."
-      },
-      {
-        "context": "友達[ともだち]と会[あ]う約束[やくそく]をしました。",
-        "sentence": "明日[あした]友達[ともだち]に会[あ]い___。",
-        "answer": "ます",
-        "translation": "I will meet a friend tomorrow."
-      },
-      {
-        "context": "私[わたし]は高校生[こうこうせい]です。",
-        "sentence": "私[わたし]は毎日[まいにち]学校[がっこう]へ行[い]き___。",
-        "answer": "ます",
-        "translation": "I go to school every day."
-      },
-      {
-        "context": "読書[どくしょ]が私[わたし]の趣味[しゅみ]です。",
-        "sentence": "夜[よる]に本[ほん]を読[よ]み___。",
-        "answer": "ます",
-        "translation": "I read a book at night."
-      },
-      {
-        "context": "私[わたし]は毎朝[まいあさ]早[はや]く起[お]きます。",
-        "sentence": "朝[あさ]ご飯[はん]を食[た]べ___。",
-        "answer": "ます",
-        "translation": "I eat breakfast."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ました",
-        "gloss": "polite past affirmative ('did'); wrong tense for present/future"
-      },
-      {
-        "form": "ません",
-        "gloss": "polite present negative ('do not'); opposite polarity"
-      },
-      {
-        "form": "ませんでした",
-        "gloss": "polite past negative; wrong tense and polarity"
-      },
-      {
-        "form": "ましょう",
-        "gloss": "volitional ('let's'); not a plain statement"
-      },
-      {
-        "form": "ます + だ",
-        "gloss": "ungrammatical; だ cannot follow ます"
-      },
-      {
-        "form": "る",
-        "gloss": "plain dictionary form ending; not polite, and wrong for godan stems"
-      },
-      {
-        "form": "ない",
-        "gloss": "plain present negative; opposite polarity and not polite"
-      },
-      {
-        "form": "て",
-        "gloss": "te-form for linking/requests, not a polite sentence-final form"
-      },
-      {
-        "form": "たい",
-        "gloss": "expresses desire ('want to'), changes the meaning"
-      },
-      {
-        "form": "ますです",
-        "gloss": "ungrammatical; です cannot follow ます"
-      },
-      {
-        "form": "た",
-        "gloss": "plain past ending; wrong tense and not polite"
-      },
-      {
-        "form": "ませ",
-        "gloss": "incomplete imperative-style fragment, not the full polite form"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:ません",
-    "level": "N5",
-    "title": "～ません",
-    "meaning": "do not / will not (polite negative, non-past)",
-    "explanation": "The polite negative form of a verb in the non-past tense, used to say that someone does not or will not do something. It is the negative counterpart of ～ます.",
-    "formation": "Verb (ます-stem) + ません",
-    "whyRight": "～ません is the correct polite non-past negative ending; it negates a present habit or future action without indicating past tense.",
-    "examples": [
-      {
-        "context": "私[わたし]はベジタリアンです。",
-        "sentence": "私[わたし]は肉[にく]を食[た]べ___。",
-        "answer": "ません",
-        "translation": "I do not eat meat."
-      },
-      {
-        "context": "今日[きょう]は日曜日[にちようび]です。",
-        "sentence": "今日[きょう]は学校[がっこう]へ行[い]き___。",
-        "answer": "ません",
-        "translation": "I will not go to school today."
-      },
-      {
-        "context": "彼[かれ]は体[からだ]が弱[よわ]いです。",
-        "sentence": "彼[かれ]はお酒[さけ]を飲[の]み___。",
-        "answer": "ません",
-        "translation": "He does not drink alcohol."
-      },
-      {
-        "context": "明日[あした]は休[やす]みです。",
-        "sentence": "明日[あした]は働[はたら]き___。",
-        "answer": "ません",
-        "translation": "I will not work tomorrow."
-      },
-      {
-        "context": "妹[いもうと]は勉強[べんきょう]が好[す]きです。",
-        "sentence": "妹[いもうと]はテレビを見[み]___。",
-        "answer": "ません",
-        "translation": "My little sister does not watch TV."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ます",
-        "gloss": "polite affirmative; means 'do', not the required negative"
-      },
-      {
-        "form": "ましょう",
-        "gloss": "volitional 'let's do'; not a negative statement"
-      },
-      {
-        "form": "ませんか",
-        "gloss": "negative question/invitation; the sentence is a plain statement, not a question"
-      },
-      {
-        "form": "ました",
-        "gloss": "polite past affirmative 'did'; wrong tense and polarity"
-      },
-      {
-        "form": "たい",
-        "gloss": "expresses desire 'want to'; not a negation"
-      },
-      {
-        "form": "たがる",
-        "gloss": "expresses a third person's apparent desire 'shows signs of wanting'; not a negation of the action"
-      },
-      {
-        "form": "なかった",
-        "gloss": "plain past negative; expresses the past, but these sentences are non-past"
-      },
-      {
-        "form": "ましょうか",
-        "gloss": "offering/suggesting 'shall I'; not a negative statement"
-      },
-      {
-        "form": "たくない",
-        "gloss": "'don't want to'; expresses desire, not simple negation"
-      },
-      {
-        "form": "ませんでした",
-        "gloss": "polite past negative 'did not'; wrong tense for a present/future statement"
-      },
-      {
-        "form": "ています",
-        "gloss": "progressive 'is doing'; affirmative, not negative"
-      },
-      {
-        "form": "ません。",
-        "gloss": "includes punctuation in the token; the answer token itself should be ません"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:ました",
-    "level": "N5",
-    "title": "～ました",
-    "meaning": "did / completed (polite past affirmative)",
-    "explanation": "The polite past affirmative form of a verb, used to state that an action was completed or happened in the past. It is the past form of ～ます.",
-    "formation": "Verb (ます-stem) + ました",
-    "whyRight": "～ました correctly expresses a completed past action in polite speech, matching past-time expressions in the sentence.",
-    "examples": [
-      {
-        "context": "その映画[えいが]はとても面白[おもしろ]かったです。",
-        "sentence": "昨日[きのう]、映画[えいが]を見[み]___。",
-        "answer": "ました",
-        "translation": "I watched a movie yesterday."
-      },
-      {
-        "context": "今[いま]はお腹[なか]がいっぱいです。",
-        "sentence": "今朝[けさ]、朝[あさ]ご飯[はん]を食[た]べ___。",
-        "answer": "ました",
-        "translation": "I ate breakfast this morning."
-      },
-      {
-        "context": "きれいなお寺[てら]をたくさん見[み]ました。",
-        "sentence": "先週[せんしゅう]、京都[きょうと]へ行[い]き___。",
-        "answer": "ました",
-        "translation": "I went to Kyoto last week."
-      },
-      {
-        "sentence": "もう宿題[しゅくだい]を終[お]わり___。",
-        "answer": "ました",
-        "translation": "I have already finished my homework."
-      },
-      {
-        "context": "その手紙[てがみ]をもうポストに入[い]れました。",
-        "sentence": "昨日[きのう]、友[とも]だちに手紙[てがみ]を書[か]き___。",
-        "answer": "ました",
-        "translation": "I wrote a letter to my friend yesterday."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ます",
-        "gloss": "polite non-past; cannot express the completed past action"
-      },
-      {
-        "form": "ませんでした",
-        "gloss": "polite past negative 'did not'; wrong polarity"
-      },
-      {
-        "form": "ましょう",
-        "gloss": "volitional 'let's'; not a past statement"
-      },
-      {
-        "form": "ながら",
-        "gloss": "'while doing' connective; joins to another clause and leaves the sentence unfinished, not a past statement"
-      },
-      {
-        "form": "ています",
-        "gloss": "progressive present; not a simple past action"
-      },
-      {
-        "form": "たい",
-        "gloss": "desire 'want to'; not a past action"
-      },
-      {
-        "form": "ましたか",
-        "gloss": "polite past question; the sentence is a statement, not a question"
-      },
-      {
-        "form": "ていました",
-        "gloss": "past progressive 'was doing'; overstates an ongoing action"
-      },
-      {
-        "form": "ましょうか",
-        "gloss": "offer 'shall I'; not a past statement"
-      },
-      {
-        "form": "ませんか",
-        "gloss": "negative invitation; wrong meaning and not past"
-      },
-      {
-        "form": "たくなかった",
-        "gloss": "'did not want to'; expresses desire, not the action itself"
-      },
-      {
-        "form": "なかった",
-        "gloss": "plain past negative; wrong polarity and register"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:ませんでした",
-    "level": "N5",
-    "title": "～ませんでした",
-    "meaning": "did not (polite past negative)",
-    "explanation": "The polite past negative form of a verb, used to say that an action did not happen or was not done in the past. It combines ～ません with でした.",
-    "formation": "Verb (ます-stem) + ませんでした",
-    "whyRight": "～ませんでした is the correct polite past negative, expressing that the action did not occur in the past.",
-    "examples": [
-      {
-        "sentence": "昨日[きのう]は何[なに]も食[た]べ___。",
-        "answer": "ませんでした",
-        "translation": "I did not eat anything yesterday."
-      },
-      {
-        "sentence": "雨[あめ]が降[ふ]っていたので、出[で]かけ___。",
-        "answer": "ませんでした",
-        "translation": "Because it was raining, I did not go out."
-      },
-      {
-        "context": "昨日[きのう]、大切[たいせつ]な会議[かいぎ]がありました。",
-        "sentence": "彼[かれ]は会議[かいぎ]に来[き]___。",
-        "answer": "ませんでした",
-        "translation": "He did not come to the meeting."
-      },
-      {
-        "context": "先週[せんしゅう]、ずっと病気[びょうき]でした。",
-        "sentence": "先週[せんしゅう]は仕事[しごと]をし___。",
-        "answer": "ませんでした",
-        "translation": "I did not work last week."
-      },
-      {
-        "context": "となりの部屋[へや]がとてもうるさかったです。",
-        "sentence": "昨夜[ゆうべ]はよく眠[ねむ]れ___。",
-        "answer": "ませんでした",
-        "translation": "I could not sleep well last night."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ました",
-        "gloss": "polite past affirmative 'did'; wrong polarity"
-      },
-      {
-        "form": "ません",
-        "gloss": "polite non-past negative; correct polarity but non-past, while these sentences are past"
-      },
-      {
-        "form": "ます",
-        "gloss": "polite non-past affirmative; wrong polarity and non-past, while these sentences are past"
-      },
-      {
-        "form": "ましょうか",
-        "gloss": "offer 'shall I/we?'; proposes an action rather than stating it did not happen"
-      },
-      {
-        "form": "ませんです",
-        "gloss": "ungrammatical; ません cannot be followed by です in this way"
-      },
-      {
-        "form": "ませんか",
-        "gloss": "negative invitation; not a past statement"
-      },
-      {
-        "form": "ましょう",
-        "gloss": "volitional 'let's'; not negative or past"
-      },
-      {
-        "form": "たくなかった",
-        "gloss": "'did not want to'; expresses desire, not the action"
-      },
-      {
-        "form": "ませんでしたか",
-        "gloss": "polite past negative question; the sentence is a statement"
-      },
-      {
-        "form": "ないでした",
-        "gloss": "ungrammatical form; ない does not combine with でした this way"
-      },
-      {
-        "form": "ませんでした。",
-        "gloss": "includes punctuation in the token; answer should be just ませんでした"
-      },
-      {
-        "form": "ていました",
-        "gloss": "past progressive affirmative; wrong polarity"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:ませんか",
-    "level": "N5",
-    "title": "～ませんか",
-    "meaning": "won't you...? / would you like to...? (polite invitation)",
-    "explanation": "A polite way to invite someone to do something or to make a suggestion, literally 'won't you do...?'. It softens the request by phrasing it as a negative question.",
-    "formation": "Verb (ます-stem) + ませんか",
-    "whyRight": "～ませんか correctly frames an invitation or suggestion as a polite negative question, inviting the listener to join in.",
-    "examples": [
-      {
-        "sentence": "一緒[いっしょ]に昼[ひる]ご飯[はん]を食[た]べ___。",
-        "answer": "ませんか",
-        "translation": "Won't you eat lunch together with me?"
-      },
-      {
-        "sentence": "今度[こんど]の週末[しゅうまつ]、映画[えいが]を見[み]に行[い]き___。",
-        "answer": "ませんか",
-        "translation": "Would you like to go see a movie this weekend?"
-      },
-      {
-        "sentence": "少[すこ]し休[やす]み___。",
-        "answer": "ませんか",
-        "translation": "Won't you take a little rest?"
-      },
-      {
-        "sentence": "お茶[ちゃ]を飲[の]み___。",
-        "answer": "ませんか",
-        "translation": "Would you like to have some tea?"
-      },
-      {
-        "sentence": "今晩[こんばん]、私[わたし]の家[いえ]に来[き]___。",
-        "answer": "ませんか",
-        "translation": "Won't you come to my house tonight?"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ますか",
-        "gloss": "neutral polite question 'do you...?'; asks a fact rather than inviting"
-      },
-      {
-        "form": "ないでください",
-        "gloss": "'please do not do'; a negative request, the opposite of inviting someone to join"
-      },
-      {
-        "form": "たがっています",
-        "gloss": "'shows signs of wanting to' (a third person's desire); not an invitation to the listener"
-      },
-      {
-        "form": "ません",
-        "gloss": "plain polite negative statement; lacks the question particle to invite"
-      },
-      {
-        "form": "ました",
-        "gloss": "polite past; wrong tense and not an invitation"
-      },
-      {
-        "form": "たいですか",
-        "gloss": "asks 'do you want to?'; can be blunt and is not the standard invitation form"
-      },
-      {
-        "form": "ませんでしたか",
-        "gloss": "polite past negative question; refers to the past, not an invitation"
-      },
-      {
-        "form": "ますか。",
-        "gloss": "neutral fact-question plus a stray period; asks whether you do something rather than inviting you to"
-      },
-      {
-        "form": "ましたか",
-        "gloss": "polite past question 'did you...?'; asks about a completed past act rather than inviting someone now"
-      },
-      {
-        "form": "たい",
-        "gloss": "expresses your own desire; does not invite the listener"
-      },
-      {
-        "form": "なさい",
-        "gloss": "gentle command form 'do it'; an order, not a polite invitation"
-      },
-      {
-        "form": "てください",
-        "gloss": "a request/command 'please do'; more forceful than an invitation"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:ましょう",
-    "level": "N5",
-    "title": "～ましょう",
-    "meaning": "let's... (polite volitional)",
-    "explanation": "The polite volitional form, used to suggest doing something together or to express the speaker's willingness, equivalent to 'let's...'. It is the polite form of the plain volitional.",
-    "formation": "Verb (ます-stem) + ましょう",
-    "whyRight": "～ましょう correctly expresses a polite suggestion or invitation to do something together, matching contexts where the speaker proposes a shared action.",
-    "examples": [
-      {
-        "context": "もう夜[よる]の十時[じゅうじ]ですね。",
-        "sentence": "そろそろ帰[かえ]り___。",
-        "answer": "ましょう",
-        "translation": "Let's head home soon."
-      },
-      {
-        "context": "来週[らいしゅう]、二人[ふたり]で試験[しけん]を受[う]けます。",
-        "sentence": "一緒[いっしょ]に勉強[べんきょう]し___。",
-        "answer": "ましょう",
-        "translation": "Let's study together."
-      },
-      {
-        "context": "わあ、この景色[けしき]はとてもきれいですね。",
-        "sentence": "ここで写真[しゃしん]を撮[と]り___。",
-        "answer": "ましょう",
-        "translation": "Let's take a photo here."
-      },
-      {
-        "context": "では、また明日[あした]ですね。",
-        "sentence": "明日[あした]の朝[あさ]、駅[えき]で会[あ]い___。",
-        "answer": "ましょう",
-        "translation": "Let's meet at the station tomorrow morning."
-      },
-      {
-        "context": "みんなもう眠[ねむ]そうですね。",
-        "sentence": "もう遅[おそ]いから寝[ね]___。",
-        "answer": "ましょう",
-        "translation": "It's late, so let's go to bed."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ます",
-        "gloss": "polite non-past statement; states an action rather than suggesting 'let's'"
-      },
-      {
-        "form": "ませんか",
-        "gloss": "invitation question 'won't you?'; softer and phrased as a question"
-      },
-      {
-        "form": "ましょうか",
-        "gloss": "'shall we/I?'; asks for agreement rather than directly proposing"
-      },
-      {
-        "form": "ました",
-        "gloss": "polite past 'did'; wrong tense and not a suggestion"
-      },
-      {
-        "form": "たい",
-        "gloss": "expresses personal desire; not a shared suggestion"
-      },
-      {
-        "form": "ません",
-        "gloss": "polite negative; opposite of the proposed action"
-      },
-      {
-        "form": "ながら",
-        "gloss": "'while doing' connective; links to another clause and leaves the sentence unfinished, not a suggestion"
-      },
-      {
-        "form": "ませんでした",
-        "gloss": "polite past negative; wrong tense and polarity"
-      },
-      {
-        "form": "てください",
-        "gloss": "request 'please do'; commands the listener rather than suggesting together"
-      },
-      {
-        "form": "たくない",
-        "gloss": "'don't want to'; expresses reluctance, not a suggestion"
-      },
-      {
-        "form": "ましょう。",
-        "gloss": "includes punctuation in the token; answer should be just ましょう"
-      },
-      {
-        "form": "ましたか",
-        "gloss": "polite past question; not a suggestion"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N5:ましょうか",
-    "level": "N5",
-    "title": "～ましょうか",
-    "meaning": "shall I / shall we...? (polite offer or suggestion)",
-    "explanation": "Used to offer to do something for someone or to suggest doing something together while seeking the listener's agreement, equivalent to 'shall I...?' or 'shall we...?'. It adds the question particle か to ～ましょう.",
-    "formation": "Verb (ます-stem) + ましょうか",
-    "whyRight": "～ましょうか correctly offers help or proposes an action while asking for the listener's confirmation, fitting contexts where the speaker checks willingness.",
-    "examples": [
-      {
-        "context": "荷物[にもつ]が重[おも]そうですね。",
-        "sentence": "荷物[にもつ]を持[も]ち___。",
-        "answer": "ましょうか",
-        "translation": "Shall I carry your luggage?"
-      },
-      {
-        "context": "この部屋[へや]は少[すこ]し暑[あつ]いですね。",
-        "sentence": "窓[まど]を開[あ]け___。",
-        "answer": "ましょうか",
-        "translation": "Shall I open the window?"
-      },
-      {
-        "context": "みなさん、もう集[あつ]まりましたね。",
-        "sentence": "そろそろ始[はじ]め___。",
-        "answer": "ましょうか",
-        "translation": "Shall we get started soon?"
-      },
-      {
-        "context": "駅[えき]まで歩[ある]くのは大変[たいへん]ですね。",
-        "sentence": "タクシーを呼[よ]び___。",
-        "answer": "ましょうか",
-        "translation": "Shall I call a taxi?"
-      },
-      {
-        "context": "もう寝[ね]る時間[じかん]ですね。",
-        "sentence": "電気[でんき]を消[け]し___。",
-        "answer": "ましょうか",
-        "translation": "Shall I turn off the light?"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ましょう",
-        "gloss": "'let's'; directly proposes without asking for agreement"
-      },
-      {
-        "form": "ませんか",
-        "gloss": "invitation 'won't you?'; invites the listener rather than offering to do it yourself"
-      },
-      {
-        "form": "ますか",
-        "gloss": "neutral question 'do you...?'; asks a fact, not an offer"
-      },
-      {
-        "form": "ます",
-        "gloss": "polite statement; not an offer or question"
-      },
-      {
-        "form": "ました",
-        "gloss": "polite past; wrong tense and not an offer"
-      },
-      {
-        "form": "たいですか",
-        "gloss": "'do you want to?'; asks the listener's desire, not offering help"
-      },
-      {
-        "form": "ません",
-        "gloss": "polite negative statement; not an offer"
-      },
-      {
-        "form": "てもいいですか",
-        "gloss": "'may I?'; asks permission rather than offering"
-      },
-      {
-        "form": "ましょうか。",
-        "gloss": "includes punctuation in the token; answer should be just ましょうか"
-      },
-      {
-        "form": "ましたか",
-        "gloss": "polite past question 'did you...?'; asks about a completed past act rather than offering to do something"
-      },
-      {
-        "form": "ませんでしたか",
-        "gloss": "polite past negative question; wrong tense, not an offer"
-      },
-      {
-        "form": "てください",
-        "gloss": "request 'please do'; commands rather than offering"
-      }
-    ]
-  },
-  {
     "id": "grammar:N5:たい",
     "level": "N5",
     "title": "～たい",
@@ -17974,30 +12330,35 @@ export const N5_GRAMMAR: Grammar[] = [
     "examples": [
       {
         "context": "私[わたし]は日本[にほん]の文化[ぶんか]が大好[だいす]きです。",
+        "contextTranslation": "I love Japanese culture.",
         "sentence": "日本[にほん]へ行[い]き___です。",
         "answer": "たい",
         "translation": "I want to go to Japan."
       },
       {
         "context": "外[そと]はとても暑[あつ]くて、のどがからからです。",
+        "contextTranslation": "It's very hot outside and my throat is parched.",
         "sentence": "冷[つめ]たい水[みず]が飲[の]み___。",
         "answer": "たい",
         "translation": "I want to drink cold water."
       },
       {
         "context": "平日[へいじつ]は仕事[しごと]でとても疲[つか]れます。",
+        "contextTranslation": "I get very tired from work on weekdays.",
         "sentence": "週末[しゅうまつ]はゆっくり休[やす]み___です。",
         "answer": "たい",
         "translation": "I want to rest leisurely on the weekend."
       },
       {
         "context": "今[いま]の車[くるま]はもう古[ふる]くなりました。",
+        "contextTranslation": "My current car has gotten old.",
         "sentence": "新[あたら]しい車[くるま]を買[か]い___。",
         "answer": "たい",
         "translation": "I want to buy a new car."
       },
       {
         "context": "日本語[にほんご]の勉強[べんきょう]はとても楽[たの]しいです。",
+        "contextTranslation": "Studying Japanese is a lot of fun.",
         "sentence": "もっと日本語[にほんご]を勉強[べんきょう]し___です。",
         "answer": "たい",
         "translation": "I want to study Japanese more."
@@ -18065,30 +12426,35 @@ export const N5_GRAMMAR: Grammar[] = [
     "examples": [
       {
         "context": "今日[きょう]は体[からだ]の調子[ちょうし]がよくありません。",
+        "contextTranslation": "I'm not feeling well today.",
         "sentence": "今日[きょう]は何[なに]もし___。",
         "answer": "たくない",
         "translation": "I don't want to do anything today."
       },
       {
         "context": "あの店[みせ]の店員[てんいん]はとても失礼[しつれい]でした。",
+        "contextTranslation": "The clerk at that shop was very rude.",
         "sentence": "もうあの店[みせ]へは行[い]き___。",
         "answer": "たくない",
         "translation": "I don't want to go to that shop anymore."
       },
       {
         "context": "この薬[くすり]は本当[ほんとう]に苦[にが]いです。",
+        "contextTranslation": "This medicine is really bitter.",
         "sentence": "苦[にが]い薬[くすり]は飲[の]み___です。",
         "answer": "たくない",
         "translation": "I don't want to take bitter medicine."
       },
       {
         "context": "パーティーはまだまだ楽[たの]しいです。",
+        "contextTranslation": "The party is still a lot of fun.",
         "sentence": "まだ家[いえ]に帰[かえ]り___。",
         "answer": "たくない",
         "translation": "I don't want to go home yet."
       },
       {
         "context": "彼[かれ]とけんかをして、とても怒[おこ]っています。",
+        "contextTranslation": "I had a fight with him and I'm very angry.",
         "sentence": "彼[かれ]とはもう話[はな]し___です。",
         "answer": "たくない",
         "translation": "I don't want to talk with him anymore."
@@ -18672,18 +13038,21 @@ export const N5_GRAMMAR: Grammar[] = [
     "examples": [
       {
         "context": "今日[きょう]は日曜日[にちようび]です。",
+        "contextTranslation": "Today is Sunday.",
         "sentence": "今日[きょう]は学校[がっこう]へ行[い]___。",
         "answer": "かない",
         "translation": "I will not go to school today."
       },
       {
         "context": "私[わたし]は朝[あさ]、時間[じかん]がありません。",
+        "contextTranslation": "I don't have time in the morning.",
         "sentence": "朝[あさ]ご飯[はん]を食[た]べ___。",
         "answer": "ない",
         "translation": "I do not eat breakfast."
       },
       {
         "context": "彼[かれ]はお酒[さけ]が嫌[きら]いです。",
+        "contextTranslation": "He dislikes alcohol.",
         "sentence": "彼[かれ]はお酒[さけ]を飲[の]___。",
         "answer": "まない",
         "translation": "He does not drink alcohol."
@@ -18695,6 +13064,7 @@ export const N5_GRAMMAR: Grammar[] = [
       },
       {
         "context": "妹[いもうと]はベジタリアンです。",
+        "contextTranslation": "My younger sister is a vegetarian.",
         "sentence": "妹[いもうと]は肉[にく]を食[た]べ___。",
         "answer": "ない",
         "translation": "My younger sister does not eat meat."
@@ -18767,6 +13137,7 @@ export const N5_GRAMMAR: Grammar[] = [
       },
       {
         "context": "今朝[けさ]、私[わたし]は早[はや]く起[お]きました。",
+        "contextTranslation": "This morning I woke up early.",
         "sentence": "朝[あさ]パンを食[た]べ___。",
         "answer": "た",
         "translation": "I ate bread in the morning."
@@ -18778,12 +13149,14 @@ export const N5_GRAMMAR: Grammar[] = [
       },
       {
         "context": "昨日[きのう]は一日中[いちにちじゅう]家[いえ]にいました。",
+        "contextTranslation": "Yesterday I was home all day.",
         "sentence": "本[ほん]をたくさん読[よ]___。",
         "answer": "んだ",
         "translation": "I read a lot of books."
       },
       {
         "context": "昨日[きのう]の夜[よる]、私[わたし]は勉強[べんきょう]しました。",
+        "contextTranslation": "Last night I studied.",
         "sentence": "宿題[しゅくだい]を___。",
         "answer": "した",
         "translation": "I did my homework."
@@ -19181,6 +13554,5830 @@ export const N5_GRAMMAR: Grammar[] = [
       {
         "form": "ました",
         "gloss": "polite past ending; it cannot link a clause to a following action the way 前に does"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:あとで",
+    "level": "N5",
+    "title": "～あとで",
+    "meaning": "after (doing something)",
+    "explanation": "This indicates that an action takes place after another action is completed. The clause before あとで happens first.",
+    "formation": "Verb (た-form) / Noun + の + あとで",
+    "whyRight": "Before あとで a verb must be in the plain past (た-form) to show completion, and a noun connects with の; the dictionary form cannot precede あとで.",
+    "examples": [
+      {
+        "sentence": "晩[ばん]ご飯[はん]を食[た]べた___散歩[さんぽ]します。",
+        "answer": "あとで",
+        "translation": "I take a walk after eating dinner."
+      },
+      {
+        "sentence": "授業[じゅぎょう]の___友[とも]だちと遊[あそ]びます。",
+        "answer": "あとで",
+        "translation": "I hang out with friends after class."
+      },
+      {
+        "sentence": "宿題[しゅくだい]を___あとでテレビを見[み]ます。",
+        "answer": "した",
+        "translation": "I watch TV after doing my homework."
+      },
+      {
+        "sentence": "お風呂[ふろ]に入[はい]った___ビールを飲[の]みます。",
+        "answer": "あとで",
+        "translation": "I drink beer after taking a bath."
+      },
+      {
+        "sentence": "仕事[しごと]の___買[か]い物[もの]をします。",
+        "answer": "あとで",
+        "translation": "I go shopping after work."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "あとを",
+        "gloss": "を marks a direct object; 後を is ungrammatical as the temporal connector あとで"
+      },
+      {
+        "form": "あとへ",
+        "gloss": "へ marks direction; 後へ cannot link a completed action to a following one as あとで does"
+      },
+      {
+        "form": "ながら",
+        "gloss": "ながら attaches to the ます-stem; it cannot follow a past verb or 〜の to mean 'after'"
+      },
+      {
+        "form": "する",
+        "gloss": "dictionary form; あとで requires the past form した to show completion"
+      },
+      {
+        "form": "して",
+        "gloss": "て-form; should be the past form した before あとで"
+      },
+      {
+        "form": "仕事あとで",
+        "gloss": "missing の; a noun must connect as 仕事のあとで"
+      },
+      {
+        "form": "するの",
+        "gloss": "nominalizer の attached to する; it does not complete the temporal connector あとで"
+      },
+      {
+        "form": "しても",
+        "gloss": "ても means 'even if'; it is concessive and does not link a completed prior action"
+      },
+      {
+        "form": "までに",
+        "gloss": "means 'by (a deadline)'; a time limit, not 'after doing'"
+      },
+      {
+        "form": "あとごろ",
+        "gloss": "ごろ attaches only to clock times; 後ごろ is not a valid temporal connector here"
+      },
+      {
+        "form": "てから",
+        "gloss": "also 'after doing' but attaches differently (て-form); does not fit the あとで slot here"
+      },
+      {
+        "form": "入る",
+        "gloss": "dictionary form; before あとで the verb needs the past form 入った"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:てから",
+    "level": "N5",
+    "title": "～てから",
+    "meaning": "after doing / since doing (sequential, emphasizing order)",
+    "explanation": "This connects two actions to show that the second happens after the first is completed, emphasizing the sequence. It can also mean 'since' a starting point in time.",
+    "formation": "Verb (て-form) + から",
+    "whyRight": "から in this meaning attaches to the て-form of the verb to express 'after doing'; attaching it to plain forms would change the meaning to 'because'.",
+    "examples": [
+      {
+        "sentence": "手[て]を洗[あら]って___ご飯[はん]を食[た]べます。",
+        "answer": "から",
+        "translation": "I eat after washing my hands."
+      },
+      {
+        "sentence": "宿題[しゅくだい]を___から遊[あそ]びます。",
+        "answer": "して",
+        "translation": "I play after doing my homework."
+      },
+      {
+        "sentence": "日本[にほん]に来[き]て___三年[さんねん]になります。",
+        "answer": "から",
+        "translation": "It has been three years since I came to Japan."
+      },
+      {
+        "sentence": "お金[かね]を___から買[か]い物[もの]に行[い]きます。",
+        "answer": "おろして",
+        "translation": "I go shopping after withdrawing money."
+      },
+      {
+        "sentence": "薬[くすり]を飲[の]んで___寝[ね]ます。",
+        "answer": "から",
+        "translation": "I go to sleep after taking medicine."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "まえに",
+        "gloss": "means 'before'; reverses the sequence expressed by てから"
+      },
+      {
+        "form": "あとで",
+        "gloss": "also 'after' but pairs with the past form, not the て-form slot here"
+      },
+      {
+        "form": "ながら",
+        "gloss": "means 'while'; simultaneity rather than ordered sequence"
+      },
+      {
+        "form": "し",
+        "gloss": "bare ます-stem of する; it cannot precede から, which here needs the て-form して"
+      },
+      {
+        "form": "しよう",
+        "gloss": "volitional form; it cannot precede から in the て-form sequence pattern"
+      },
+      {
+        "form": "おろし",
+        "gloss": "bare ます-stem; it cannot precede から, which here needs the て-form おろして"
+      },
+      {
+        "form": "おろそう",
+        "gloss": "volitional form; it cannot precede から in the て-form sequence pattern"
+      },
+      {
+        "form": "ので",
+        "gloss": "means 'because'; gives a reason, not a sequence of actions"
+      },
+      {
+        "form": "けれど",
+        "gloss": "means 'but/although'; a contrast, not 'after doing'"
+      },
+      {
+        "form": "たら",
+        "gloss": "conditional 'if/when'; not the simple completed-sequence てから"
+      },
+      {
+        "form": "までに",
+        "gloss": "means 'by (a deadline)'; a time limit, not 'after doing'"
+      },
+      {
+        "form": "とき",
+        "gloss": "means 'when'; marks a moment rather than ordered completion"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:とき",
+    "level": "N5",
+    "title": "～とき",
+    "meaning": "when / at the time of",
+    "explanation": "This sets the time frame in which something happens. The tense of the verb before とき shows whether the action is ongoing/about to happen (non-past) or already completed (past) relative to the main clause.",
+    "formation": "Verb (plain) / い-adj + とき; な-adj + な + とき; Noun + の + とき",
+    "whyRight": "Different parts of speech connect to とき in fixed ways (verb/い-adjective plain, な-adjective with な, noun with の), and the chosen tense must match the intended timing relative to the main action.",
+    "examples": [
+      {
+        "context": "私[わたし]はいつも国[くに]の空港[くうこう]でお土産[みやげ]を買[か]います。",
+        "contextTranslation": "I always buy souvenirs at the airport in my country.",
+        "sentence": "国[くに]へ帰[かえ]る___お土産[みやげ]を買[か]います。",
+        "answer": "とき",
+        "translation": "When I go back to my country, I buy souvenirs."
+      },
+      {
+        "sentence": "子[こ]どもの___よくこの公園[こうえん]で遊[あそ]びました。",
+        "answer": "とき",
+        "translation": "When I was a child, I often played in this park."
+      },
+      {
+        "sentence": "暇[ひま]な___本[ほん]を読[よ]みます。",
+        "answer": "とき",
+        "translation": "When I have free time, I read books."
+      },
+      {
+        "sentence": "日本[にほん]へ___とき、写真[しゃしん]をたくさん撮[と]りました。",
+        "answer": "行[い]った",
+        "translation": "When I went to Japan, I took many photos."
+      },
+      {
+        "sentence": "わからない___先生[せんせい]に聞[き]きます。",
+        "answer": "とき",
+        "translation": "When I don't understand, I ask the teacher."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "へ",
+        "gloss": "へ is a directional particle; it cannot link a clause to a main action to mean 'when'"
+      },
+      {
+        "form": "あとで",
+        "gloss": "means 'after'; specifies later sequence, not the time frame of とき"
+      },
+      {
+        "form": "ながら",
+        "gloss": "means 'while'; ties two simultaneous actions by one subject, not a general time frame"
+      },
+      {
+        "form": "ところ",
+        "gloss": "means 'place/moment about to'; different nuance from the general 'when' of とき"
+      },
+      {
+        "form": "を",
+        "gloss": "を marks a direct object; it cannot serve as the time-frame word とき"
+      },
+      {
+        "form": "行きます",
+        "gloss": "polite ます-form; the plain form is required before とき (and the visit is completed)"
+      },
+      {
+        "form": "行って",
+        "gloss": "て-form; does not connect directly to とき"
+      },
+      {
+        "form": "暇の",
+        "gloss": "暇 is a な-adjective, so it should be 暇な before とき, not 暇の"
+      },
+      {
+        "form": "子どもとき",
+        "gloss": "missing の; a noun must connect as 子どものとき"
+      },
+      {
+        "form": "です",
+        "gloss": "the copula です ends the clause, so a following main action cannot attach as it does after とき"
+      },
+      {
+        "form": "までに",
+        "gloss": "means 'by (a deadline)'; a time limit, not the moment 'when'"
+      },
+      {
+        "form": "でも",
+        "gloss": "means 'but/even'; it cannot attach to a plain verb or 〜の to mark the time frame 'when'"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:辞書形 (dictionary form)",
+    "level": "N5",
+    "title": "辞書形 (dictionary form)",
+    "meaning": "the plain non-past (dictionary) form of a verb",
+    "explanation": "The dictionary form is the basic, citation form of a verb as listed in dictionaries. It is the plain, non-past affirmative form and serves as the base for many grammar patterns such as ことができる and 前に.",
+    "formation": "Group 1: -u ending (e.g., 飲む); Group 2: -る (e.g., 食べる); Irregular: する, 来る (くる)",
+    "whyRight": "The dictionary form is the plain non-past affirmative; converting from the polite ます-form means removing ます and restoring the dictionary ending (e.g., 飲みます to 飲む).",
+    "examples": [
+      {
+        "sentence": "「飲[の]みます」の辞書形[じしょけい]は「___」です。",
+        "answer": "飲[の]む",
+        "translation": "The dictionary form of 'nomimasu' is 'nomu'."
+      },
+      {
+        "sentence": "私[わたし]は日本語[にほんご]を話[はな]す___ができます。",
+        "answer": "こと",
+        "translation": "I can speak Japanese."
+      },
+      {
+        "sentence": "「食[た]べます」の辞書形[じしょけい]は「___」です。",
+        "answer": "食[た]べる",
+        "translation": "The dictionary form of 'tabemasu' is 'taberu'."
+      },
+      {
+        "sentence": "ここでたばこを___ことができますか。",
+        "answer": "吸[す]う",
+        "translation": "Can I smoke here?"
+      },
+      {
+        "sentence": "「します」の辞書形[じしょけい]は「___」です。",
+        "answer": "する",
+        "translation": "The dictionary form of 'shimasu' is 'suru'."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "飲みます",
+        "gloss": "polite ます-form, not the plain dictionary form requested"
+      },
+      {
+        "form": "飲んで",
+        "gloss": "て-form, not the dictionary form"
+      },
+      {
+        "form": "飲んだ",
+        "gloss": "plain past form, not the non-past dictionary form"
+      },
+      {
+        "form": "食べます",
+        "gloss": "polite ます-form, not the dictionary form 食べる"
+      },
+      {
+        "form": "食べて",
+        "gloss": "て-form, not the dictionary form"
+      },
+      {
+        "form": "もの",
+        "gloss": "もの means 'thing/object'; the potential pattern uses こと before ができます"
+      },
+      {
+        "form": "の",
+        "gloss": "nominalizer の; the fixed pattern here is ことができる, which requires こと"
+      },
+      {
+        "form": "吸います",
+        "gloss": "polite ます-form; ことができる needs the dictionary form 吸う"
+      },
+      {
+        "form": "吸って",
+        "gloss": "て-form; before ことができる the verb must be the dictionary form 吸う"
+      },
+      {
+        "form": "しる",
+        "gloss": "incorrect; する is irregular and does not become しる"
+      },
+      {
+        "form": "すりる",
+        "gloss": "not a real form; the dictionary form of します is simply する"
+      },
+      {
+        "form": "した",
+        "gloss": "plain past form; the dictionary form of します is する, not した"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:ことができる",
+    "level": "N5",
+    "title": "～ことができる",
+    "meaning": "can do / be able to do",
+    "explanation": "This pattern expresses ability or possibility. It attaches to the dictionary form of a verb to say that someone can do something.",
+    "formation": "Verb (dictionary form) + ことができる",
+    "whyRight": "After a noun-modifying dictionary-form verb plus こと, the verb する becomes できる to express ability, so できる is the correct form.",
+    "examples": [
+      {
+        "context": "私[わたし]は今[いま]、少[すこ]し日本語[にほんご]がわかります。",
+        "contextTranslation": "Right now, I understand a little Japanese.",
+        "sentence": "私[わたし]は日本語[にほんご]を話[はな]すことが___。",
+        "answer": "できます",
+        "translation": "I can speak Japanese."
+      },
+      {
+        "context": "彼[かれ]は先月[せんげつ]、運転免許[うんてんめんきょ]を取[と]りました。",
+        "contextTranslation": "He got his driver's license last month.",
+        "sentence": "彼[かれ]は車[くるま]を運転[うんてん]することが___。",
+        "answer": "できます",
+        "translation": "He can drive a car."
+      },
+      {
+        "context": "すみません、係[かかり]の人[ひと]に質問[しつもん]があります。",
+        "contextTranslation": "Excuse me, I have a question for the person in charge.",
+        "sentence": "ここで写真[しゃしん]を撮[と]ることが___か。",
+        "answer": "できます",
+        "translation": "Can I take photos here?"
+      },
+      {
+        "sentence": "子供[こども]の時[とき]は泳[およ]ぐことが___でした。",
+        "answer": "できません",
+        "translation": "When I was a child, I couldn't swim."
+      },
+      {
+        "sentence": "漢字[かんじ]を書[か]くことが___ようになりました。",
+        "answer": "できる",
+        "translation": "I have become able to write kanji."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "します",
+        "gloss": "'do' — ことが requires できる (potential), not the plain verb する"
+      },
+      {
+        "form": "しました",
+        "gloss": "polite past 'did' — ことが requires the potential できる, not the plain verb する"
+      },
+      {
+        "form": "なります",
+        "gloss": "'become' — does not express ability after ことが"
+      },
+      {
+        "form": "います",
+        "gloss": "'exist (animate)' — wrong; ability needs できる"
+      },
+      {
+        "form": "できた",
+        "gloss": "plain past 'was able' — past tense contradicts the present-time context and translation 'can'"
+      },
+      {
+        "form": "だできます",
+        "gloss": "ungrammatical garbled form"
+      },
+      {
+        "form": "するできます",
+        "gloss": "ungrammatical; する and できる cannot stack like this"
+      },
+      {
+        "form": "できるです",
+        "gloss": "ungrammatical; the verb できる cannot take です directly"
+      },
+      {
+        "form": "やります",
+        "gloss": "'do (casual)' — replaces the verb, does not form the potential pattern"
+      },
+      {
+        "form": "もできます",
+        "gloss": "adds an extra particle も that does not belong here"
+      },
+      {
+        "form": "ができます",
+        "gloss": "doubles the particle が which already appears in the sentence"
+      },
+      {
+        "form": "できないでした",
+        "gloss": "incorrect negative-past conjugation; should be できませんでした"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:でしょう",
+    "level": "N5",
+    "title": "～でしょう",
+    "meaning": "probably / I think (conjecture)",
+    "explanation": "This expresses a guess or probability about something the speaker is not certain of. It can also seek agreement when said with rising intonation.",
+    "formation": "Noun / な-adjective / Verb (plain form) / い-adjective + でしょう",
+    "whyRight": "To state a polite conjecture about a future or uncertain event, でしょう follows the plain form, making it the correct choice.",
+    "examples": [
+      {
+        "context": "空[そら]が暗[くら]くなってきました。",
+        "contextTranslation": "The sky has started to get dark.",
+        "sentence": "明日[あした]は雨[あめ]が降[ふ]る___。",
+        "answer": "でしょう",
+        "translation": "It will probably rain tomorrow."
+      },
+      {
+        "context": "もう約束[やくそく]の時間[じかん]です。",
+        "contextTranslation": "It's already the time we agreed on.",
+        "sentence": "彼[かれ]はもうすぐ来[く]る___。",
+        "answer": "でしょう",
+        "translation": "He will probably come soon."
+      },
+      {
+        "context": "このテストは大学生[だいがくせい]のためのテストです。",
+        "contextTranslation": "This test is a test for university students.",
+        "sentence": "この問題[もんだい]は難[むずか]しい___。",
+        "answer": "でしょう",
+        "translation": "This problem is probably difficult."
+      },
+      {
+        "context": "彼女[かのじょ]はまだ若[わか]いです。",
+        "contextTranslation": "She is still young.",
+        "sentence": "彼女[かのじょ]は学生[がくせい]___。",
+        "answer": "でしょう",
+        "translation": "She is probably a student."
+      },
+      {
+        "context": "今度[こんど]の土曜日[どようび]は仕事[しごと]がありませんね。",
+        "contextTranslation": "You don't have work this coming Saturday, right?",
+        "sentence": "週末[しゅうまつ]は暇[ひま]___ね。",
+        "answer": "でしょう",
+        "translation": "You'll probably be free this weekend, right?"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "だです",
+        "gloss": "ungrammatical; the copula だ and です cannot combine, and this is not a conjecture"
+      },
+      {
+        "form": "ます",
+        "gloss": "polite verb ending — cannot attach to a plain-form verb to mean 'probably'"
+      },
+      {
+        "form": "だろうです",
+        "gloss": "ungrammatical; だろう and です cannot combine"
+      },
+      {
+        "form": "ました",
+        "gloss": "polite past — wrong tense and not a conjecture"
+      },
+      {
+        "form": "でした",
+        "gloss": "polite past 'was' — past tense, not a guess about the present or future"
+      },
+      {
+        "form": "ですか",
+        "gloss": "a direct question, not a probability statement"
+      },
+      {
+        "form": "でしょうか",
+        "gloss": "asks 'I wonder' — a question, but the context sets up an assertion, not an inquiry"
+      },
+      {
+        "form": "らしい",
+        "gloss": "'it seems / I hear' — based on outside report; the context gives the speaker's own guess, so でしょう fits"
+      },
+      {
+        "form": "そうです",
+        "gloss": "'I hear (hearsay)' after a plain form; the context is the speaker's own observation, not hearsay"
+      },
+      {
+        "form": "だでしょう",
+        "gloss": "ungrammatical; the plain copula だ cannot precede でしょう (a plain-form verb/noun connects directly)"
+      },
+      {
+        "form": "ません",
+        "gloss": "polite negative verb ending — not a conjecture form"
+      },
+      {
+        "form": "でしょうだ",
+        "gloss": "ungrammatical; だ cannot follow でしょう"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:と思います",
+    "level": "N5",
+    "title": "～と思います",
+    "meaning": "I think that ...",
+    "explanation": "Used to express the speaker's opinion or thought. The content of the thought comes in plain form before と思います.",
+    "formation": "Plain form (sentence) + と思います",
+    "whyRight": "An opinion is quoted with the particle と followed by 思います ('think'), so 思います completes the pattern correctly.",
+    "examples": [
+      {
+        "context": "今[いま]、空[そら]がとてもきれいです。",
+        "contextTranslation": "Right now, the sky is very beautiful.",
+        "sentence": "明日[あした]は晴[は]れると___。",
+        "answer": "思います",
+        "translation": "I think it will be sunny tomorrow."
+      },
+      {
+        "context": "この映画[えいが]のポスターを見[み]ました。",
+        "contextTranslation": "I saw the poster for this movie.",
+        "sentence": "この映画[えいが]は面白[おもしろ]いと___。",
+        "answer": "思います",
+        "translation": "I think this movie is interesting."
+      },
+      {
+        "context": "彼[かれ]はとても忙[いそが]しい人[ひと]です。",
+        "contextTranslation": "He is a very busy person.",
+        "sentence": "彼[かれ]は来[こ]ないと___。",
+        "answer": "思います",
+        "translation": "I think he won't come."
+      },
+      {
+        "context": "私[わたし]は毎日[まいにち]日本語[にほんご]を勉強[べんきょう]しています。",
+        "contextTranslation": "I study Japanese every day.",
+        "sentence": "日本語[にほんご]の勉強[べんきょう]は大切[たいせつ]だと___。",
+        "answer": "思います",
+        "translation": "I think studying Japanese is important."
+      },
+      {
+        "context": "彼女[かのじょ]は今日[きょう]、笑顔[えがお]で会社[かいしゃ]に来[き]ました。",
+        "contextTranslation": "She came to the office with a smile today.",
+        "sentence": "彼女[かのじょ]は元気[げんき]だと___。",
+        "answer": "思います",
+        "translation": "I think she is well."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "言[い]います",
+        "gloss": "'say' — quotes outward speech; the context marks this as the speaker's own opinion, not a report"
+      },
+      {
+        "form": "聞[き]きます",
+        "gloss": "'listen/ask' — wrong verb for expressing an opinion"
+      },
+      {
+        "form": "見[み]ます",
+        "gloss": "'see' — does not express a thought"
+      },
+      {
+        "form": "思[おも]って",
+        "gloss": "te-form — incomplete, cannot end the sentence politely here"
+      },
+      {
+        "form": "思[おも]いますです",
+        "gloss": "ungrammatical; です cannot follow the polite verb 思います"
+      },
+      {
+        "form": "考[かんが]える",
+        "gloss": "'consider' plain form — wrong politeness level for this polite context, and 思う suits a personal impression"
+      },
+      {
+        "form": "知[し]ります",
+        "gloss": "'come to know' — not used to state an opinion"
+      },
+      {
+        "form": "おもいです",
+        "gloss": "ungrammatical; 思い is a noun stem that cannot take です like this"
+      },
+      {
+        "form": "思[おも]いましょう",
+        "gloss": "volitional 'let's think' — wrong meaning; opinions are not stated as a suggestion"
+      },
+      {
+        "form": "思[おも]いません",
+        "gloss": "negative 'don't think' — the context supports the stated opinion, so the affirmative 思います fits"
+      },
+      {
+        "form": "思[おも]いなさい",
+        "gloss": "command form 'think!' — an order, not a statement of one's own opinion"
+      },
+      {
+        "form": "話[はな]します",
+        "gloss": "'speak/talk' — does not pair with quotative と to mean 'think'"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:と言いました",
+    "level": "N5",
+    "title": "～と言いました",
+    "meaning": "(someone) said that ...",
+    "explanation": "Used to report or quote what someone said. The quoted content in plain form is followed by と and the past tense of 言う.",
+    "formation": "Plain form (sentence) + と言いました",
+    "whyRight": "A direct or indirect quote is marked by と and reported with the past tense 言いました ('said'), so 言いました is correct.",
+    "examples": [
+      {
+        "context": "今日[きょう]、学校[がっこう]で先生[せんせい]の話[はなし]を聞[き]きました。",
+        "contextTranslation": "Today, I listened to the teacher's talk at school.",
+        "sentence": "先生[せんせい]は明日[あした]試験[しけん]があると___。",
+        "answer": "言いました",
+        "translation": "The teacher said there is an exam tomorrow."
+      },
+      {
+        "context": "昨日[きのう]、彼[かれ]と電話[でんわ]で話[はな]しました。",
+        "contextTranslation": "Yesterday, I talked with him on the phone.",
+        "sentence": "彼[かれ]は来週[らいしゅう]来[く]ると___。",
+        "answer": "言いました",
+        "translation": "He said he will come next week."
+      },
+      {
+        "context": "今朝[けさ]、母[はは]は私[わたし]に電話[でんわ]をかけてきました。",
+        "contextTranslation": "This morning, my mother called me.",
+        "sentence": "母[はは]は早[はや]く帰[かえ]りなさいと___。",
+        "answer": "言いました",
+        "translation": "My mother said to come home early."
+      },
+      {
+        "context": "きのう、田中[たなか]さんに会[あ]って話[はな]しました。",
+        "contextTranslation": "Yesterday, I met Mr. Tanaka and talked with him.",
+        "sentence": "田中[たなか]さんは日本[にほん]へ行[い]くと___。",
+        "answer": "言いました",
+        "translation": "Mr. Tanaka said he is going to Japan."
+      },
+      {
+        "context": "彼女[かのじょ]は私[わたし]が作[つく]った料理[りょうり]を全部[ぜんぶ]食[た]べました。",
+        "contextTranslation": "She ate all of the food I made.",
+        "sentence": "彼女[かのじょ]はおいしいと___。",
+        "answer": "言いました",
+        "translation": "She said it was delicious."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "言[い]って",
+        "gloss": "te-form — incomplete; cannot end the reporting sentence on its own"
+      },
+      {
+        "form": "言[い]いなさい",
+        "gloss": "command 'say it!' — an order to someone, not a report of what was already said"
+      },
+      {
+        "form": "言[い]いましょう",
+        "gloss": "volitional 'let's say' — a suggestion, not a past report"
+      },
+      {
+        "form": "言[い]わせました",
+        "gloss": "causative 'made (someone) say' — wrong meaning; the subject simply said it"
+      },
+      {
+        "form": "言[い]いたいです",
+        "gloss": "'want to say' — expresses desire, not a completed report"
+      },
+      {
+        "form": "言[い]えました",
+        "gloss": "potential past 'was able to say' — ability, not the act of reporting a statement"
+      },
+      {
+        "form": "言[い]いません",
+        "gloss": "non-past negative 'does not say' — wrong tense and meaning for these past reports"
+      },
+      {
+        "form": "言[い]いませんでした",
+        "gloss": "'did not say' — the context shows the person did say it, so the affirmative 言いました fits"
+      },
+      {
+        "form": "言[い]った",
+        "gloss": "plain past — correct meaning but wrong polite level for this polite context"
+      },
+      {
+        "form": "言[い]ったり",
+        "gloss": "-tari listing form — implies 'do things like saying'; ungrammatical alone here"
+      },
+      {
+        "form": "言[い]いそうです",
+        "gloss": "'looks about to say' — appearance/conjecture, not a report of past speech"
+      },
+      {
+        "form": "言[い]いましたです",
+        "gloss": "ungrammatical; です cannot follow the polite past 言いました"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:が、 (but)",
+    "level": "N5",
+    "title": "～が、 (but)",
+    "meaning": "but / however (contrast)",
+    "explanation": "The particle が joins two clauses and shows contrast, like 'but'. It comes at the end of the first clause before introducing a contrasting idea.",
+    "formation": "Clause 1 (です/ます form) + が、 + Clause 2",
+    "whyRight": "To connect two contrasting clauses politely, が follows the first clause, making it the correct conjunctive particle.",
+    "examples": [
+      {
+        "sentence": "この店[みせ]は安[やす]いです___、おいしくないです。",
+        "answer": "が",
+        "translation": "This shop is cheap, but it's not tasty.",
+        "context": "安[やす]い店[みせ]はたいていおいしいです。",
+        "contextTranslation": "Cheap shops are usually tasty."
+      },
+      {
+        "sentence": "日本語[にほんご]は難[むずか]しいです___、面白[おもしろ]いです。",
+        "answer": "が",
+        "translation": "Japanese is difficult, but interesting.",
+        "context": "難[むずか]しい勉強[べんきょう]はつまらないと思[おも]う人[ひと]が多[おお]いです。",
+        "contextTranslation": "Many people think that difficult studies are boring."
+      },
+      {
+        "sentence": "昨日[きのう]は雨[あめ]でした___、今日[きょう]は晴[は]れです。",
+        "answer": "が",
+        "translation": "It rained yesterday, but today it's sunny."
+      },
+      {
+        "sentence": "彼[かれ]は来[き]ました___、彼女[かのじょ]は来[き]ませんでした。",
+        "answer": "が",
+        "translation": "He came, but she didn't.",
+        "context": "二人[ふたり]はいつも一緒[いっしょ]に来[き]ます。",
+        "contextTranslation": "The two of them always come together."
+      },
+      {
+        "sentence": "すみません___、トイレはどこですか。",
+        "answer": "が",
+        "translation": "Excuse me, but where is the toilet?"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "から",
+        "gloss": "'because' — gives a reason; the second clause here contrasts rather than follows from the first"
+      },
+      {
+        "form": "ので",
+        "gloss": "'because' — also requires plain form (です→な), and states a cause rather than contrast"
+      },
+      {
+        "form": "と",
+        "gloss": "'and/with' — cannot attach after です here, and does not show 'but'"
+      },
+      {
+        "form": "は",
+        "gloss": "topic particle — does not connect contrasting clauses"
+      },
+      {
+        "form": "を",
+        "gloss": "object particle — grammatically impossible after です here"
+      },
+      {
+        "form": "に",
+        "gloss": "location/time particle — cannot mean 'but'"
+      },
+      {
+        "form": "だ",
+        "gloss": "plain copula 'is' — cannot attach after です and does not connect clauses"
+      },
+      {
+        "form": "でも",
+        "gloss": "'but' as a sentence starter; placed after です mid-sentence here it is incorrect"
+      },
+      {
+        "form": "そして",
+        "gloss": "'and then' — a sentence-initial connective; cannot attach after です mid-clause"
+      },
+      {
+        "form": "ね",
+        "gloss": "sentence-final particle for agreement, not a clause connector"
+      },
+      {
+        "form": "よ",
+        "gloss": "emphatic sentence-final particle, not a contrastive conjunction"
+      },
+      {
+        "form": "も",
+        "gloss": "'also' — does not express contrast between clauses"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:から、 (because)",
+    "level": "N5",
+    "title": "～から、 (because)",
+    "meaning": "because / since (subjective reason)",
+    "explanation": "から states a reason or cause, often a subjective one. The reason clause comes before から, and the result follows.",
+    "formation": "Clause (plain or polite form) + から、 + result",
+    "whyRight": "To give a reason clearly attributed by the speaker, から attaches to the reason clause, so から is the correct choice.",
+    "examples": [
+      {
+        "sentence": "時間[じかん]がない___、急[いそ]ぎましょう。",
+        "answer": "から",
+        "translation": "Because there's no time, let's hurry."
+      },
+      {
+        "sentence": "明日[あした]は休[やす]みだ___、出[で]かけます。",
+        "answer": "から",
+        "translation": "Because tomorrow is a holiday, I'll go out."
+      },
+      {
+        "sentence": "おなかがすいた___、ご飯[はん]を食[た]べます。",
+        "answer": "から",
+        "translation": "Because I'm hungry, I'll eat."
+      },
+      {
+        "sentence": "寒[さむ]い___、窓[まど]を閉[し]めてください。",
+        "answer": "から",
+        "translation": "Because it's cold, please close the window."
+      },
+      {
+        "sentence": "危[あぶ]ない___、ここで遊[あそ]ばないでください。",
+        "answer": "から",
+        "translation": "Because it's dangerous, please don't play here."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "が",
+        "gloss": "'but' — would reverse the sense; these clauses give a reason for the result, not a contrast"
+      },
+      {
+        "form": "けど",
+        "gloss": "'but' (casual) — contrast, not cause; clashes with the reason→result link here"
+      },
+      {
+        "form": "まで",
+        "gloss": "'until' — marks an endpoint, not a reason"
+      },
+      {
+        "form": "ながら",
+        "gloss": "'while doing' — attaches to verb stems, not to these clauses, and means simultaneity"
+      },
+      {
+        "form": "のに",
+        "gloss": "'even though' — concessive, opposite of giving a supporting reason"
+      },
+      {
+        "form": "ために",
+        "gloss": "'in order to / due to' — needs different connection (noun+の/plain verb) and a distinct nuance"
+      },
+      {
+        "form": "でも",
+        "gloss": "'but/even' — does not introduce a reason"
+      },
+      {
+        "form": "を",
+        "gloss": "object particle — cannot attach to a verb/adjective clause to mean 'because'"
+      },
+      {
+        "form": "より",
+        "gloss": "'than/from' — comparison or origin, not cause"
+      },
+      {
+        "form": "ても",
+        "gloss": "'even if' — concessive condition, not a reason"
+      },
+      {
+        "form": "ね",
+        "gloss": "sentence-final particle, not a reason connector"
+      },
+      {
+        "form": "だから",
+        "gloss": "sentence-initial 'therefore'; cannot attach after だ/い-adjective inside the clause here"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:ので",
+    "level": "N5",
+    "title": "～ので",
+    "meaning": "because / since (objective reason)",
+    "explanation": "ので gives a reason or cause in a softer, more objective way than から. It connects to the plain form, with な added after nouns and な-adjectives.",
+    "formation": "Verb / い-adjective (plain) + ので; Noun / な-adjective + な + ので",
+    "whyRight": "To state a reason politely and objectively, ので follows the clause (with な after a な-adjective or noun), making ので correct here.",
+    "examples": [
+      {
+        "sentence": "雨[あめ]が降[ふ]っている___、出[で]かけません。",
+        "answer": "ので",
+        "translation": "Because it's raining, I won't go out."
+      },
+      {
+        "sentence": "頭[あたま]が痛[いた]い___、休[やす]みます。",
+        "answer": "ので",
+        "translation": "Because I have a headache, I'll rest."
+      },
+      {
+        "sentence": "電車[でんしゃ]が遅[おく]れた___、遅刻[ちこく]しました。",
+        "answer": "ので",
+        "translation": "Because the train was late, I was late."
+      },
+      {
+        "sentence": "明日[あした]は試験[しけん]な___、勉強[べんきょう]します。",
+        "answer": "ので",
+        "translation": "Because there is an exam tomorrow, I'll study."
+      },
+      {
+        "sentence": "ここは静[しず]かな___、よく眠[ねむ]れます。",
+        "answer": "ので",
+        "translation": "Because it's quiet here, I can sleep well."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "のに",
+        "gloss": "'even though' — concessive, opposite of giving a reason"
+      },
+      {
+        "form": "だので",
+        "gloss": "ungrammatical; after a noun/な-adjective it should be な + ので, not だ"
+      },
+      {
+        "form": "ながら",
+        "gloss": "'while doing' — attaches to verb stems, not these clauses; means simultaneity"
+      },
+      {
+        "form": "まで",
+        "gloss": "'until' — endpoint of time/space, not a reason"
+      },
+      {
+        "form": "ために",
+        "gloss": "'due to / in order to' — connects differently (noun+の) and carries a distinct, more formal nuance"
+      },
+      {
+        "form": "けど",
+        "gloss": "'but' (casual) — contrast, not a reason"
+      },
+      {
+        "form": "ても",
+        "gloss": "'even if' — concessive condition, not a reason"
+      },
+      {
+        "form": "より",
+        "gloss": "'than/from' — comparison or starting point, not cause"
+      },
+      {
+        "form": "ですので",
+        "gloss": "ungrammatical inside the clause here; cannot insert です before ので mid-sentence"
+      },
+      {
+        "form": "なので",
+        "gloss": "after い-adjectives/plain verbs (examples 1-3) this is ungrammatical, and after the な already shown it doubles な"
+      },
+      {
+        "form": "を",
+        "gloss": "object particle — cannot attach to these clauses to mean 'because'"
+      },
+      {
+        "form": "そので",
+        "gloss": "not a word; no such connective exists in Japanese"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:が ほしい",
+    "level": "N5",
+    "title": "～が ほしい",
+    "meaning": "to want (a thing)",
+    "explanation": "Expresses the speaker's desire for an object. The desired noun is marked with が, and ほしい is an い-adjective meaning 'wanted'.",
+    "formation": "Noun + が + ほしい",
+    "whyRight": "The thing one wants is marked by が, and the い-adjective ほしい expresses the desire, so ほしい is the correct word.",
+    "examples": [
+      {
+        "sentence": "新[あたら]しい車[くるま]が___です。",
+        "answer": "ほしい",
+        "translation": "I want a new car.",
+        "context": "今[いま]の車[くるま]はもう古[ふる]いです。",
+        "contextTranslation": "My current car is already old."
+      },
+      {
+        "sentence": "もっと時間[じかん]が___。",
+        "answer": "ほしい",
+        "translation": "I want more time.",
+        "context": "仕事[しごと]が多[おお]くて、毎日[まいにち]とても忙[いそが]しいです。",
+        "contextTranslation": "I have a lot of work, so I'm very busy every day."
+      },
+      {
+        "sentence": "私[わたし]は犬[いぬ]が___です。",
+        "answer": "ほしい",
+        "translation": "I want a dog.",
+        "context": "私[わたし]の家[いえ]にはペットが一[いっ]匹[ぴき]もいません。",
+        "contextTranslation": "There are no pets at all in my house."
+      },
+      {
+        "sentence": "冷[つめ]たい水[みず]が___。",
+        "answer": "ほしい",
+        "translation": "I want some cold water.",
+        "context": "今日[きょう]はとても暑[あつ]くて、のどがかわきました。",
+        "contextTranslation": "Today is very hot, and I've gotten thirsty."
+      },
+      {
+        "sentence": "誕生日[たんじょうび]に何[なに]が___ですか。",
+        "answer": "ほしい",
+        "translation": "What do you want for your birthday?"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "たい",
+        "gloss": "'want to (do)' — attaches to verb stems, not to a noun marked with が"
+      },
+      {
+        "form": "ください",
+        "gloss": "'please give' — a request; also cannot be followed by です as in examples 1, 3 and 5"
+      },
+      {
+        "form": "ほしいません",
+        "gloss": "ungrammatical; the い-adjective ほしい cannot conjugate with the verb ending ません"
+      },
+      {
+        "form": "ほしくて",
+        "gloss": "te-form — incomplete; cannot end the sentence"
+      },
+      {
+        "form": "あります",
+        "gloss": "'there is' — states existence, not desire; also cannot precede です in examples 1, 3, 5"
+      },
+      {
+        "form": "います",
+        "gloss": "'exist (animate)' — existence, not wanting; cannot precede です here"
+      },
+      {
+        "form": "ほしいだ",
+        "gloss": "ungrammatical; an い-adjective cannot take だ directly"
+      },
+      {
+        "form": "ほしがる",
+        "gloss": "'(third person) shows wanting' — used for others' observed desire, plain form mismatching the polite です here"
+      },
+      {
+        "form": "ほしければ",
+        "gloss": "conditional 'if (one) wants' — incomplete and changes the meaning to a condition"
+      },
+      {
+        "form": "ほしそう",
+        "gloss": "'looks like (they) want' — appearance about someone else, not a direct statement of one's own desire"
+      },
+      {
+        "form": "ほしいだろう",
+        "gloss": "plain conjecture 'probably wants'; wrong politeness for です sentences and adds uncertainty"
+      },
+      {
+        "form": "ほしくなる",
+        "gloss": "'come to want'; describes a change of state, not the present desire stated here"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:より",
+    "level": "N5",
+    "title": "～より",
+    "meaning": "than (comparison)",
+    "explanation": "The particle より marks the standard you are comparing against, equivalent to English \"than\". The thing that is more is usually marked with は or のほうが.",
+    "formation": "Noun + より + (adjective/comparison)",
+    "whyRight": "より directly follows the noun being used as the baseline of comparison to express \"than\".",
+    "examples": [
+      {
+        "sentence": "電車[でんしゃ]は車[くるま]___速[はや]いです。",
+        "answer": "より",
+        "translation": "The train is faster than the car."
+      },
+      {
+        "sentence": "今日[きょう]は昨日[きのう]___寒[さむ]いです。",
+        "answer": "より",
+        "translation": "Today is colder than yesterday."
+      },
+      {
+        "sentence": "弟[おとうと]は私[わたし]___背[せ]が高[たか]いです。",
+        "answer": "より",
+        "translation": "My younger brother is taller than me."
+      },
+      {
+        "sentence": "この本[ほん]はあの本[ほん]___面白[おもしろ]いです。",
+        "answer": "より",
+        "translation": "This book is more interesting than that book."
+      },
+      {
+        "sentence": "飛行機[ひこうき]は船[ふね]___高[たか]いです。",
+        "answer": "より",
+        "translation": "Planes are more expensive than ships."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "から",
+        "gloss": "'from/because'; marks a starting point or reason, not a comparison standard"
+      },
+      {
+        "form": "まで",
+        "gloss": "'until/to'; marks an endpoint, not a comparison"
+      },
+      {
+        "form": "のほうが",
+        "gloss": "marks the side that is more, not the baseline being compared against"
+      },
+      {
+        "form": "ほど",
+        "gloss": "used in negative comparisons (Aほど〜ない), not in these plain affirmative comparisons"
+      },
+      {
+        "form": "とき",
+        "gloss": "'when'; a time noun, unrelated to comparison"
+      },
+      {
+        "form": "でも",
+        "gloss": "'even/but'; does not express 'than'"
+      },
+      {
+        "form": "しか",
+        "gloss": "'only' with a negative; not a comparison particle"
+      },
+      {
+        "form": "だけ",
+        "gloss": "'only/just'; limits a quantity, not a comparison"
+      },
+      {
+        "form": "ぐらい",
+        "gloss": "'about/approximately'; an estimate, not a comparison standard"
+      },
+      {
+        "form": "ごろ",
+        "gloss": "'around (a time)'; used with time points, not comparison"
+      },
+      {
+        "form": "ながら",
+        "gloss": "'while doing'; a verb suffix, ungrammatical after a noun here"
+      },
+      {
+        "form": "について",
+        "gloss": "'about/concerning'; introduces a topic, not a comparison"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:のほうが",
+    "level": "N5",
+    "title": "～のほうが",
+    "meaning": "the side that is more (in a comparison)",
+    "explanation": "のほうが marks the item that ranks higher in a comparison, often paired with より to mark the other item. ほう literally means \"side/direction\".",
+    "formation": "Noun + のほうが (＋ Noun + より) + adjective",
+    "whyRight": "のほうが points to the noun that is greater in the comparison, the natural partner of より.",
+    "examples": [
+      {
+        "sentence": "コーヒー___お茶[ちゃ]より好[す]きです。",
+        "answer": "のほうが",
+        "translation": "I like coffee more than tea."
+      },
+      {
+        "sentence": "電車[でんしゃ]___バスより速[はや]いです。",
+        "answer": "のほうが",
+        "translation": "The train is faster than the bus."
+      },
+      {
+        "sentence": "夏[なつ]___冬[ふゆ]より好[す]きです。",
+        "answer": "のほうが",
+        "translation": "I like summer more than winter."
+      },
+      {
+        "sentence": "この店[みせ]___あの店[みせ]より安[やす]いです。",
+        "answer": "のほうが",
+        "translation": "This shop is cheaper than that shop."
+      },
+      {
+        "sentence": "犬[いぬ]___猫[ねこ]より大[おお]きいです。",
+        "answer": "のほうが",
+        "translation": "Dogs are bigger than cats."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "より",
+        "gloss": "marks the baseline being compared against; here it would clash with the より already in the sentence"
+      },
+      {
+        "form": "のほうを",
+        "gloss": "を marks an object; the comparison subject here needs が, not を"
+      },
+      {
+        "form": "のほうに",
+        "gloss": "に marks a direction/target, not the higher-ranked comparison subject"
+      },
+      {
+        "form": "のほうで",
+        "gloss": "で marks means/location; wrong particle for the compared subject"
+      },
+      {
+        "form": "から",
+        "gloss": "'from/because'; not a comparison marker"
+      },
+      {
+        "form": "まで",
+        "gloss": "'until'; marks an endpoint, not the greater item"
+      },
+      {
+        "form": "だけ",
+        "gloss": "'only'; limits, does not mark the higher side of a comparison"
+      },
+      {
+        "form": "しか",
+        "gloss": "'only' with negative; not a comparison phrase"
+      },
+      {
+        "form": "ぐらい",
+        "gloss": "'about'; an estimate, not the greater item"
+      },
+      {
+        "form": "でも",
+        "gloss": "'even/but'; does not mark the preferred side"
+      },
+      {
+        "form": "のほうがいい",
+        "gloss": "'had better'; a full advice phrase, not just the comparison subject marker"
+      },
+      {
+        "form": "について",
+        "gloss": "'about'; introduces a topic, not a comparison"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:ほうがいい",
+    "level": "N5",
+    "title": "～ほうがいい",
+    "meaning": "had better / it is better to",
+    "explanation": "ほうがいい gives advice or a recommendation. With past-tense verbs (たほうがいい) it suggests doing something; with ないほうがいい it suggests not doing something.",
+    "formation": "Verb (た-form) + ほうがいい / Verb (ない-form) + ほうがいい",
+    "whyRight": "ほうがいい attaches to the た-form (or ない-form) of a verb to recommend that course of action.",
+    "examples": [
+      {
+        "sentence": "薬[くすり]を飲[の]んだ___です。",
+        "answer": "ほうがいい",
+        "translation": "You had better take medicine."
+      },
+      {
+        "sentence": "早[はや]く寝[ね]た___ですよ。",
+        "answer": "ほうがいい",
+        "translation": "You should go to bed early."
+      },
+      {
+        "sentence": "タバコは吸[す]わない___です。",
+        "answer": "ほうがいい",
+        "translation": "You had better not smoke."
+      },
+      {
+        "sentence": "傘[かさ]を持[も]って行[い]った___です。",
+        "answer": "ほうがいい",
+        "translation": "You had better take an umbrella."
+      },
+      {
+        "sentence": "野菜[やさい]をたくさん食[た]べた___ですよ。",
+        "answer": "ほうがいい",
+        "translation": "You should eat lots of vegetables."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "たいです",
+        "gloss": "\"want to\"; attaches to a verb masu-stem, so it is ungrammatical after the た／ない-form in the blank"
+      },
+      {
+        "form": "ことができる",
+        "gloss": "\"can do\"; takes the dictionary form, so 飲んだことができる is ungrammatical here"
+      },
+      {
+        "form": "なければならない",
+        "gloss": "\"must\"; built on the ない-stem, so 飲んだなければならない is ungrammatical in this slot"
+      },
+      {
+        "form": "のほうが",
+        "gloss": "comparison subject marker; needs a second item to compare and cannot close the sentence with です here"
+      },
+      {
+        "form": "より",
+        "gloss": "\"than\"; a comparison particle, ungrammatical right after the た-form in this blank"
+      },
+      {
+        "form": "ながら",
+        "gloss": "\"while doing\"; attaches to a verb masu-stem, so 飲んだながら is ungrammatical"
+      },
+      {
+        "form": "ほうがいかった",
+        "gloss": "not a valid form; いい conjugates to よかった, so this spelling is simply wrong"
+      },
+      {
+        "form": "なさい",
+        "gloss": "polite command suffix; attaches to a verb masu-stem, so 飲んだなさい is ungrammatical"
+      },
+      {
+        "form": "やすいです",
+        "gloss": "\"easy to\"; attaches to a verb masu-stem, so 飲んだやすいです is ungrammatical"
+      },
+      {
+        "form": "ましょう",
+        "gloss": "volitional suffix; attaches to a verb masu-stem, so 飲んだましょう is ungrammatical"
+      },
+      {
+        "form": "すぎます",
+        "gloss": "\"too much\"; attaches to a verb masu-stem, so 飲んだすぎます is ungrammatical"
+      },
+      {
+        "form": "にくいです",
+        "gloss": "\"hard to\"; attaches to a verb masu-stem, so 飲んだにくいです is ungrammatical"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:でも",
+    "level": "N5",
+    "title": "～でも",
+    "meaning": "or something (counter-suggestion / soft suggestion)",
+    "explanation": "When attached to a noun, でも softens a suggestion by presenting one option as a casual example, like \"…or something\". It implies other options are also fine.",
+    "formation": "Noun + でも (＋ suggestion)",
+    "whyRight": "でも follows a noun to offer it as one easygoing possibility among others, the soft-suggestion usage.",
+    "examples": [
+      {
+        "sentence": "お茶[ちゃ]___飲[の]みませんか。",
+        "answer": "でも",
+        "translation": "Would you like to drink some tea or something?"
+      },
+      {
+        "sentence": "映画[えいが]___見[み]に行[い]きましょう。",
+        "answer": "でも",
+        "translation": "Let's go see a movie or something."
+      },
+      {
+        "sentence": "週末[しゅうまつ]に公園[こうえん]___散歩[さんぽ]しませんか。",
+        "answer": "でも",
+        "translation": "How about a walk in the park or somewhere this weekend?"
+      },
+      {
+        "sentence": "コーヒー___いかがですか。",
+        "answer": "でも",
+        "translation": "How about some coffee or something?"
+      },
+      {
+        "sentence": "音楽[おんがく]___聞[き]きましょうか。",
+        "answer": "でも",
+        "translation": "Shall we listen to some music or something?"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "より",
+        "gloss": "\"than\"; a comparison particle that needs a second item, so お茶より飲みませんか is incomplete and ungrammatical"
+      },
+      {
+        "form": "のほうが",
+        "gloss": "comparison subject marker; needs something to compare against, leaving these sentences incomplete"
+      },
+      {
+        "form": "ごろ",
+        "gloss": "\"around (a time)\"; attaches only to time points, so お茶ごろ is ungrammatical"
+      },
+      {
+        "form": "について",
+        "gloss": "\"about (a topic)\"; cannot precede 飲む／散歩する here, so お茶について飲みませんか is ungrammatical"
+      },
+      {
+        "form": "ながら",
+        "gloss": "\"while doing\"; attaches to a verb masu-stem, so this bare noun + ながら is ungrammatical"
+      },
+      {
+        "form": "しか",
+        "gloss": "\"only\"; requires a negative predicate, so it breaks the volitional ましょう and いかが sentences"
+      },
+      {
+        "form": "ほど",
+        "gloss": "\"to the extent of\"; needs a comparison or degree, so お茶ほど飲みませんか is unnatural here"
+      },
+      {
+        "form": "や",
+        "gloss": "\"and (listing)\"; needs a second noun to list, so お茶や飲みませんか is ungrammatical"
+      },
+      {
+        "form": "たい",
+        "gloss": "\"want to\"; attaches to a verb masu-stem, so it is ungrammatical after a bare noun"
+      },
+      {
+        "form": "なさい",
+        "gloss": "polite command suffix; attaches to a verb masu-stem, ungrammatical after a noun like お茶"
+      },
+      {
+        "form": "ましょう",
+        "gloss": "volitional suffix; attaches to a verb masu-stem, ungrammatical after a bare noun"
+      },
+      {
+        "form": "と",
+        "gloss": "\"with/and\"; needs another noun to pair with, so お茶と飲みませんか is incomplete and ungrammatical"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:しかない",
+    "level": "N5",
+    "title": "～しか～ない",
+    "meaning": "only / nothing but (with negative)",
+    "explanation": "しか always pairs with a negative verb to mean \"only\", carrying a nuance of \"not as much/many as hoped\". It replaces particles like を or が.",
+    "formation": "Noun + しか + Verb (negative)",
+    "whyRight": "しか is the only particle here because the sentence ends in a negative verb, producing the \"only…\" meaning.",
+    "examples": [
+      {
+        "sentence": "百円[ひゃくえん]___ありません。",
+        "answer": "しか",
+        "translation": "I only have a hundred yen.",
+        "context": "財布[さいふ]の中[なか]を見[み]ました。",
+        "contextTranslation": "I looked inside my wallet."
+      },
+      {
+        "sentence": "日本語[にほんご]___話[はな]せません。",
+        "answer": "しか",
+        "translation": "I can only speak Japanese.",
+        "context": "私[わたし]は 英語[えいご]も 中国語[ちゅうごくご]も 話[はな]せません。",
+        "contextTranslation": "I can't speak English or Chinese."
+      },
+      {
+        "sentence": "一人[ひとり]___来[き]ませんでした。",
+        "answer": "しか",
+        "translation": "Only one person came.",
+        "context": "パーティーに たくさん 人[ひと]を 呼[よ]びましたが、",
+        "contextTranslation": "I invited a lot of people to the party, but"
+      },
+      {
+        "sentence": "水[みず]___飲[の]みません。",
+        "answer": "しか",
+        "translation": "I drink only water.",
+        "context": "彼[かれ]は お酒[さけ]も ジュースも 飲[の]みません。",
+        "contextTranslation": "He doesn't drink alcohol or juice."
+      },
+      {
+        "sentence": "少[すこ]し___食[た]べませんでした。",
+        "answer": "しか",
+        "translation": "I ate only a little.",
+        "context": "今日[きょう]は おなかが 痛[いた]くて、",
+        "contextTranslation": "Today my stomach hurt, so"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "だけ",
+        "gloss": "\"only\"; with a negative it reads \"only X is not …\" (e.g. 百円だけありません = only the 100 yen is missing), which is not the intended \"I have only 100 yen\""
+      },
+      {
+        "form": "ばかり",
+        "gloss": "\"nothing but\"; normally takes an affirmative verb, so with these negative endings it is unnatural"
+      },
+      {
+        "form": "まで",
+        "gloss": "\"until/even\"; marks an endpoint or extreme, not the restrictive \"only\" meaning required"
+      },
+      {
+        "form": "より",
+        "gloss": "\"than\"; a comparison particle needing a second item, so 百円よりありません is ungrammatical"
+      },
+      {
+        "form": "ぐらい",
+        "gloss": "\"about\"; an approximation, not the restrictive \"only\" the sentence needs"
+      },
+      {
+        "form": "ごろ",
+        "gloss": "\"around (a time)\"; used only with time points, so 百円ごろ is ungrammatical"
+      },
+      {
+        "form": "から",
+        "gloss": "\"from/because\"; marks a source or reason, not \"only\""
+      },
+      {
+        "form": "のほうが",
+        "gloss": "comparison subject marker; needs a second item, leaving these sentences incomplete"
+      },
+      {
+        "form": "ほど",
+        "gloss": "\"to the extent\"; a degree/comparison marker, not the restrictive \"only\""
+      },
+      {
+        "form": "について",
+        "gloss": "\"about (a topic)\"; cannot precede ある／飲む here, so 百円について is ungrammatical"
+      },
+      {
+        "form": "しかない",
+        "gloss": "the full predicate phrase; only the particle slot is blank, so inserting it doubles the verb and is ungrammatical"
+      },
+      {
+        "form": "へ",
+        "gloss": "direction particle for destinations; ungrammatical after 百円／水／一人 before these verbs"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:だけ",
+    "level": "N5",
+    "title": "～だけ",
+    "meaning": "only / just",
+    "explanation": "だけ limits a noun or amount to \"only\" that and is used with affirmative verbs. Unlike しか, it carries no negative nuance and does not require a negative verb.",
+    "formation": "Noun + だけ / Verb (plain) + だけ",
+    "whyRight": "だけ restricts the noun to \"only\" it while the verb stays affirmative, the standard non-negative \"only\".",
+    "examples": [
+      {
+        "sentence": "これ___ください。",
+        "answer": "だけ",
+        "translation": "Just this one, please."
+      },
+      {
+        "sentence": "私[わたし]___知[し]っています。",
+        "answer": "だけ",
+        "translation": "Only I know."
+      },
+      {
+        "sentence": "少[すこ]し___食[た]べました。",
+        "answer": "だけ",
+        "translation": "I ate only a little."
+      },
+      {
+        "sentence": "彼[かれ]は水[みず]___飲[の]みます。",
+        "answer": "だけ",
+        "translation": "He drinks only water."
+      },
+      {
+        "sentence": "一回[いっかい]___聞[き]きました。",
+        "answer": "だけ",
+        "translation": "I listened only once."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "しか",
+        "gloss": "\"only\" but requires a negative verb; these sentences use affirmative verbs, so しか is ungrammatical here"
+      },
+      {
+        "form": "より",
+        "gloss": "\"than\"; a comparison particle needing a second item, so これよりください is incomplete"
+      },
+      {
+        "form": "のほうが",
+        "gloss": "comparison subject marker; needs something to compare against, leaving the sentence incomplete"
+      },
+      {
+        "form": "ごろ",
+        "gloss": "\"around (a time)\"; used only with time points, so これごろ／一回ごろ is ungrammatical"
+      },
+      {
+        "form": "から",
+        "gloss": "\"from/because\"; marks a source or reason, not the restrictive \"only\" meaning"
+      },
+      {
+        "form": "ほど",
+        "gloss": "\"to the extent\"; a degree marker, ungrammatical after 少し (少しほど食べました) here"
+      },
+      {
+        "form": "について",
+        "gloss": "\"about (a topic)\"; cannot precede ください／飲む here, so これについてください is ungrammatical"
+      },
+      {
+        "form": "ながら",
+        "gloss": "\"while doing\"; attaches to a verb masu-stem, ungrammatical in these noun slots"
+      },
+      {
+        "form": "へ",
+        "gloss": "direction particle for destinations; ungrammatical after これ／私／水 before these verbs"
+      },
+      {
+        "form": "や",
+        "gloss": "\"and (listing)\"; needs a second noun to list, so これやください is ungrammatical"
+      },
+      {
+        "form": "なさい",
+        "gloss": "polite command suffix; attaches to a verb masu-stem, ungrammatical after these nouns"
+      },
+      {
+        "form": "たい",
+        "gloss": "\"want to\"; attaches to a verb masu-stem, ungrammatical after a bare noun like これ"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:ぐらい／くらい",
+    "level": "N5",
+    "title": "～ぐらい／くらい",
+    "meaning": "about / approximately (quantity)",
+    "explanation": "ぐらい (or くらい) attaches to a quantity, number, or duration to express an approximate amount, like \"about\". For approximate points in time, use ごろ instead.",
+    "formation": "Number/quantity + ぐらい／くらい",
+    "whyRight": "ぐらい follows an amount or duration to mark it as approximate, the correct choice for quantities (not time points).",
+    "examples": [
+      {
+        "sentence": "三十分[さんじゅっぷん]___待[ま]ちました。",
+        "answer": "ぐらい",
+        "translation": "I waited about thirty minutes."
+      },
+      {
+        "sentence": "千円[せんえん]___かかりました。",
+        "answer": "ぐらい",
+        "translation": "It cost about a thousand yen."
+      },
+      {
+        "sentence": "十人[じゅうにん]___来[き]ました。",
+        "answer": "ぐらい",
+        "translation": "About ten people came."
+      },
+      {
+        "sentence": "三日[みっか]___かかります。",
+        "answer": "ぐらい",
+        "translation": "It takes about three days."
+      },
+      {
+        "sentence": "二[に]キロ___歩[ある]きました。",
+        "answer": "ぐらい",
+        "translation": "I walked about two kilometers."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ごろ",
+        "gloss": "\"around (a time)\"; used only with points in time, not durations or quantities like 三十分／千円"
+      },
+      {
+        "form": "しか",
+        "gloss": "\"only\" with a negative; these verbs are affirmative, so 三十分しか待ちました is ungrammatical"
+      },
+      {
+        "form": "より",
+        "gloss": "\"than\"; a comparison particle needing a second item, so 三十分より待ちました is incomplete"
+      },
+      {
+        "form": "から",
+        "gloss": "\"from/because\"; marks a starting point or reason, not an approximate amount"
+      },
+      {
+        "form": "のほうが",
+        "gloss": "comparison subject marker; needs something to compare against, leaving the sentence incomplete"
+      },
+      {
+        "form": "へ",
+        "gloss": "direction particle for destinations; ungrammatical after a duration or distance like 三十分／二キロ"
+      },
+      {
+        "form": "について",
+        "gloss": "\"about (a topic)\"; concerns subject matter, ungrammatical after a quantity here"
+      },
+      {
+        "form": "とき",
+        "gloss": "\"when\"; a time noun that needs の (三十分のとき), ungrammatical bare in this slot"
+      },
+      {
+        "form": "ながら",
+        "gloss": "\"while doing\"; attaches to a verb masu-stem, ungrammatical after a quantity"
+      },
+      {
+        "form": "や",
+        "gloss": "\"and (listing)\"; needs a second noun to list, so 三十分や待ちました is ungrammatical"
+      },
+      {
+        "form": "なさい",
+        "gloss": "polite command suffix; attaches to a verb masu-stem, ungrammatical after a quantity"
+      },
+      {
+        "form": "たい",
+        "gloss": "\"want to\"; attaches to a verb masu-stem, ungrammatical after a quantity like 三十分"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:ごろ",
+    "level": "N5",
+    "title": "～ごろ",
+    "meaning": "around / about (a point in time)",
+    "explanation": "ごろ attaches to a specific point in time (a clock time, month, year) to mean \"around\" that time. Use ぐらい for approximate amounts or durations instead.",
+    "formation": "Time point + ごろ",
+    "whyRight": "ごろ marks an approximate point in time, the correct approximation word for clock times and dates (not durations).",
+    "examples": [
+      {
+        "sentence": "三時[さんじ]___家[いえ]に帰[かえ]ります。",
+        "answer": "ごろ",
+        "translation": "I'll go home around three o'clock."
+      },
+      {
+        "sentence": "毎朝[まいあさ]七時[しちじ]___起[お]きます。",
+        "answer": "ごろ",
+        "translation": "I get up around seven every morning."
+      },
+      {
+        "sentence": "十二月[じゅうにがつ]___雪[ゆき]が降[ふ]ります。",
+        "answer": "ごろ",
+        "translation": "It snows around December."
+      },
+      {
+        "sentence": "昼[ひる]___電話[でんわ]します。",
+        "answer": "ごろ",
+        "translation": "I'll call around noon."
+      },
+      {
+        "sentence": "夜[よる]十時[じゅうじ]___寝[ね]ます。",
+        "answer": "ごろ",
+        "translation": "I go to bed around ten at night."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ずつ",
+        "gloss": "\"each/apiece\"; a distributive marker for quantities, ungrammatical with a single time point like 三時"
+      },
+      {
+        "form": "しか",
+        "gloss": "\"only\" with a negative; these verbs are affirmative, so 三時しか帰ります is ungrammatical"
+      },
+      {
+        "form": "のほうが",
+        "gloss": "comparison subject marker; needs something to compare against, leaving the sentence incomplete"
+      },
+      {
+        "form": "ほど",
+        "gloss": "\"to the extent\"; a degree marker, ungrammatical after a clock time like 三時 here"
+      },
+      {
+        "form": "について",
+        "gloss": "\"about (a topic)\"; concerns subject matter, ungrammatical after a time point"
+      },
+      {
+        "form": "ばかり",
+        "gloss": "\"only/just\"; expresses restriction or recency, not an approximate time, and is unnatural after 三時 here"
+      },
+      {
+        "form": "ながら",
+        "gloss": "\"while doing\"; attaches to a verb masu-stem, ungrammatical after a time point"
+      },
+      {
+        "form": "や",
+        "gloss": "\"and (listing)\"; needs a second noun to list, so 三時や帰ります is ungrammatical"
+      },
+      {
+        "form": "なさい",
+        "gloss": "polite command suffix; attaches to a verb masu-stem, ungrammatical after a time point"
+      },
+      {
+        "form": "たい",
+        "gloss": "\"want to\"; attaches to a verb masu-stem, ungrammatical after a time point like 三時"
+      },
+      {
+        "form": "ましょう",
+        "gloss": "volitional suffix; attaches to a verb masu-stem, ungrammatical after a time point"
+      },
+      {
+        "form": "へ",
+        "gloss": "direction particle for destinations; ungrammatical after a time point such as 三時／昼"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:ずつ",
+    "level": "N5",
+    "title": "～ずつ",
+    "meaning": "each / at a time / apiece / by (in increments)",
+    "explanation": "Attached to a quantity, ～ずつ expresses that something is distributed equally or done in fixed increments, such as 'one each' or 'little by little'. It follows numbers, counters, or quantity words.",
+    "formation": "Quantity / Counter + ずつ",
+    "whyRight": "ずつ is the correct particle to express an equal share or a repeated fixed amount ('one each', 'a little at a time'); it attaches directly after the quantity word.",
+    "examples": [
+      {
+        "sentence": "みんなに 一[ひと]つ___ あげます。",
+        "answer": "ずつ",
+        "translation": "I will give one to each person."
+      },
+      {
+        "sentence": "毎日[まいにち] 少[すこ]し___ 日本語[にほんご]を 勉強[べんきょう]します。",
+        "answer": "ずつ",
+        "translation": "I study Japanese a little every day."
+      },
+      {
+        "sentence": "学生[がくせい]は 三人[さんにん]___ グループを 作[つく]りました。",
+        "answer": "ずつ",
+        "translation": "The students made groups of three each.",
+        "context": "先生[せんせい]は クラスを 同[おな]じ 人数[にんずう]の グループに 分[わ]けました。",
+        "contextTranslation": "The teacher divided the class into groups with the same number of people."
+      },
+      {
+        "sentence": "りんごを 二[ふた]つ___ 買[か]いました。",
+        "answer": "ずつ",
+        "translation": "I bought two apples each.",
+        "context": "家族[かぞく]の 一人[ひとり]一人[ひとり]の ために、",
+        "contextTranslation": "For each member of my family,"
+      },
+      {
+        "sentence": "病気[びょうき]は 少[すこ]し___ よく なって います。",
+        "answer": "ずつ",
+        "translation": "The illness is getting better little by little."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "たい",
+        "gloss": "\"want to\"; attaches to a verb masu-stem, so 一つたい / 少したい is ungrammatical in this quantity slot"
+      },
+      {
+        "form": "ごろ",
+        "gloss": "'about (a time)'; attaches only to time points, so 一つごろ / 三人ごろ is ungrammatical"
+      },
+      {
+        "form": "が",
+        "gloss": "subject marker; 一つが あげます / 少しが 勉強します is ungrammatical in these sentences"
+      },
+      {
+        "form": "など",
+        "gloss": "'etc.'; requires a listing context, so 三人など グループ / 少しなど 勉強 is unnatural here"
+      },
+      {
+        "form": "しか",
+        "gloss": "'only'; requires a negative predicate, but あげます・買いました・なっています are all affirmative, so it is ungrammatical"
+      },
+      {
+        "form": "も",
+        "gloss": "'even/also'; 一つも・少しも force a following negative, so with the affirmative verbs here it is ungrammatical"
+      },
+      {
+        "form": "から",
+        "gloss": "'from/because'; 少しから 勉強します / 二つから 買いました is ungrammatical as a quantity modifier"
+      },
+      {
+        "form": "へ",
+        "gloss": "direction particle; cannot attach to a counted quantity such as 一つ/少し before these verbs"
+      },
+      {
+        "form": "とか",
+        "gloss": "'and the like'; informal listing particle, unnatural after a single quantity like 一つ/二つ here"
+      },
+      {
+        "form": "の",
+        "gloss": "possessive/nominalizer; 一つの あげます / 少しの 勉強します is ungrammatical in this slot"
+      },
+      {
+        "form": "より",
+        "gloss": "'than/from'; needs a comparison, so 二つより 買いました / 少しより is ungrammatical here"
+      },
+      {
+        "form": "こそ",
+        "gloss": "emphatic 'precisely'; 一つこそ あげます / 少しこそ is unnatural and does not express an equal share"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:ね",
+    "level": "N5",
+    "title": "～ね",
+    "meaning": "sentence-final particle seeking agreement / confirmation (right? / isn't it?)",
+    "explanation": "The particle ね is placed at the end of a sentence to seek the listener's agreement or to confirm shared understanding, similar to 'right?' or 'isn't it?'. It also softens statements.",
+    "formation": "Sentence + ね",
+    "whyRight": "ね is used when the speaker expects the listener to share or agree with the same feeling or information, so it fits a confirmation-seeking, empathetic context.",
+    "examples": [
+      {
+        "sentence": "今日[きょう]は いい 天気[てんき]です___。",
+        "answer": "ね",
+        "translation": "It's nice weather today, isn't it?",
+        "context": "空[そら]を 見[み]ながら 友[とも]だちと 話[はな]して います。",
+        "contextTranslation": "I'm talking with a friend while looking at the sky."
+      },
+      {
+        "sentence": "この ケーキは おいしいです___。",
+        "answer": "ね",
+        "translation": "This cake is delicious, isn't it?",
+        "context": "友[とも]だちと 一緒[いっしょ]に 同[おな]じ ケーキを 食[た]べて います。",
+        "contextTranslation": "I'm eating the same cake together with a friend."
+      },
+      {
+        "sentence": "あなたも 行[い]きます___。",
+        "answer": "ね",
+        "translation": "You're going too, right?",
+        "context": "みんなで パーティーに 行[い]く 話[はなし]を して います。",
+        "contextTranslation": "We're talking about everyone going to the party together."
+      },
+      {
+        "sentence": "もう 遅[おそ]いから、 帰[かえ]りましょう___。",
+        "answer": "ね",
+        "translation": "It's late, so let's go home, okay?",
+        "context": "友[とも]だちと 一緒[いっしょ]に 時計[とけい]を 見[み]て います。",
+        "contextTranslation": "I'm looking at the clock together with a friend."
+      },
+      {
+        "sentence": "田中[たなか]さんは 親切[しんせつ]な 人[ひと]です___。",
+        "answer": "ね",
+        "translation": "Mr. Tanaka is a kind person, isn't he?",
+        "context": "二人[ふたり]とも 田中[たなか]さんを よく 知[し]って います。",
+        "contextTranslation": "Both of us know Mr. Tanaka well."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "よ",
+        "gloss": "'I tell you'; asserts new info to the listener rather than seeking agreement"
+      },
+      {
+        "form": "か",
+        "gloss": "question marker; turns the sentence into a plain question, not a shared confirmation"
+      },
+      {
+        "form": "な",
+        "gloss": "rough/masculine self-directed particle or prohibition; not polite agreement-seeking"
+      },
+      {
+        "form": "わ",
+        "gloss": "feminine softening particle; expresses the speaker's own feeling, not shared agreement"
+      },
+      {
+        "form": "ぞ",
+        "gloss": "masculine forceful assertion; normally follows plain forms and emphasizes one's own statement, not agreement"
+      },
+      {
+        "form": "ぜ",
+        "gloss": "casual masculine emphasis; normally follows plain forms and asserts, not seeking agreement"
+      },
+      {
+        "form": "の",
+        "gloss": "explanatory/soft question ending; takes plain forms (天気なの) and does not seek the listener's agreement"
+      },
+      {
+        "form": "さ",
+        "gloss": "casual assertive filler; does not attach to polite です／ます here and emphasizes one's own view"
+      },
+      {
+        "form": "もん",
+        "gloss": "casual reason 'because'; gives a justification, not agreement"
+      },
+      {
+        "form": "かな",
+        "gloss": "'I wonder'; expresses self-doubt, not seeking the listener's agreement"
+      },
+      {
+        "form": "って",
+        "gloss": "quoting/topic marker; reports speech as hearsay, not a confirmation particle"
+      },
+      {
+        "form": "けど",
+        "gloss": "'but/although'; a connective that leaves the sentence hanging, not a sentence-final 'right?'"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:よ",
+    "level": "N5",
+    "title": "～よ",
+    "meaning": "sentence-final particle asserting / informing (you know / I tell you)",
+    "explanation": "The particle よ is added to the end of a sentence to assert information, give emphasis, or inform the listener of something they may not know. It conveys the speaker's confidence in what is said.",
+    "formation": "Sentence + よ",
+    "whyRight": "よ is correct when the speaker is telling the listener something new or asserting a point with confidence, rather than seeking agreement.",
+    "examples": [
+      {
+        "context": "まだ その 映画[えいが]を 見[み]て いない 友[とも]だちに 教[おし]えます。",
+        "contextTranslation": "I'm telling a friend who hasn't seen the movie yet.",
+        "sentence": "その 映画[えいが]は とても 面白[おもしろ]いです___。",
+        "answer": "よ",
+        "translation": "That movie is very interesting, you know."
+      },
+      {
+        "context": "駅[えき]に 走[はし]って きた 人[ひと]に 知[し]らせます。",
+        "contextTranslation": "I'm letting a person who came running to the station know.",
+        "sentence": "電車[でんしゃ]は もう 出[で]ました___。",
+        "answer": "よ",
+        "translation": "The train has already left, I tell you."
+      },
+      {
+        "context": "前[まえ]を 見[み]て いない 友[とも]だちに 大[おお]きな 声[こえ]で 言[い]います。",
+        "contextTranslation": "I shout to a friend who isn't looking ahead.",
+        "sentence": "危[あぶ]ない___！ 気[き]を つけて。",
+        "answer": "よ",
+        "translation": "It's dangerous! Be careful."
+      },
+      {
+        "context": "重[おも]い 荷物[にもつ]を 持[も]って いる 人[ひと]に 言[い]います。",
+        "contextTranslation": "I say to a person carrying heavy luggage.",
+        "sentence": "私[わたし]が 手伝[てつだ]います___。",
+        "answer": "よ",
+        "translation": "I'll help you, you know."
+      },
+      {
+        "context": "銀行[ぎんこう]を さがして いる 人[ひと]に 場所[ばしょ]を 教[おし]えます。",
+        "contextTranslation": "I tell a person who is looking for a bank where it is.",
+        "sentence": "あそこに 銀行[ぎんこう]が あります___。",
+        "answer": "よ",
+        "translation": "There's a bank over there, you know."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "を",
+        "gloss": "object marker; ungrammatical placed at the end of these complete sentences after です/ます"
+      },
+      {
+        "form": "か",
+        "gloss": "question marker; would make it a question, not an assertion"
+      },
+      {
+        "form": "な",
+        "gloss": "self-directed/rough particle; does not inform the listener politely"
+      },
+      {
+        "form": "わ",
+        "gloss": "feminine soft feeling; not the assertive informing nuance of よ"
+      },
+      {
+        "form": "の",
+        "gloss": "explanatory or soft question ending; not a confident assertion to the listener"
+      },
+      {
+        "form": "ぞ",
+        "gloss": "rough masculine assertion; too forceful and casual for polite speech"
+      },
+      {
+        "form": "ぜ",
+        "gloss": "casual masculine emphasis; not appropriate in polite です/ます sentences"
+      },
+      {
+        "form": "さ",
+        "gloss": "casual filler emphasis; weaker and informal, not the standard informing よ"
+      },
+      {
+        "form": "かな",
+        "gloss": "'I wonder'; expresses uncertainty, opposite of asserting information"
+      },
+      {
+        "form": "でしょう",
+        "gloss": "'probably/right?'; expresses conjecture or seeks agreement, not direct assertion"
+      },
+      {
+        "form": "もの",
+        "gloss": "casual reason marker; explains a cause, not informing news"
+      },
+      {
+        "form": "って",
+        "gloss": "quotation/hearsay marker; reports something, not the speaker's own assertion"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:でしょう？",
+    "level": "N5",
+    "title": "～でしょう？",
+    "meaning": "right? / isn't it? (seeking confirmation with rising intonation)",
+    "explanation": "When でしょう is said with rising intonation, it asks the listener to confirm something the speaker believes to be true, similar to 'right?' or 'don't you think?'. It is the polite confirmation form.",
+    "formation": "Noun / な-adjective + でしょう？ ; い-adjective / Verb (plain) + でしょう？",
+    "whyRight": "でしょう with a question mark seeks the listener's confirmation of a presumed fact, fitting contexts where the speaker is fairly sure and wants agreement.",
+    "examples": [
+      {
+        "context": "相手[あいて]の 若[わか]い 様子[ようす]を 見[み]て、たぶん そうだと 思[おも]いながら 確[たし]かめます。",
+        "contextTranslation": "Seeing how young the other person looks, I check while thinking it's probably so.",
+        "sentence": "あなたは 学生[がくせい]___？",
+        "answer": "でしょう",
+        "translation": "You're a student, right?"
+      },
+      {
+        "context": "自分[じぶん]も その 問題[もんだい]を やって みて、相手[あいて]も 同[おな]じだと 思[おも]って 言[い]います。",
+        "contextTranslation": "Having tried the problem myself, I say it thinking the other person feels the same.",
+        "sentence": "この 問題[もんだい]は 難[むずか]しい___？",
+        "answer": "でしょう",
+        "translation": "This problem is hard, isn't it?"
+      },
+      {
+        "context": "相手[あいて]が 来[く]ると 前[まえ]に 聞[き]いたので、もう 一度[いちど] 確[たし]かめます。",
+        "contextTranslation": "Since I heard earlier that they were coming, I check once more.",
+        "sentence": "明日[あした] 来[く]る___？",
+        "answer": "でしょう",
+        "translation": "You're coming tomorrow, right?"
+      },
+      {
+        "context": "みんなが よく 知[し]って いる 店[みせ]だと 思[おも]って 相手[あいて]に 言[い]います。",
+        "contextTranslation": "Thinking it's a shop everyone knows well, I say it to the other person.",
+        "sentence": "あの 店[みせ]は 有名[ゆうめい]___？",
+        "answer": "でしょう",
+        "translation": "That shop is famous, isn't it?"
+      },
+      {
+        "context": "自分[じぶん]も 昨日[きのう] 同[おな]じ 試験[しけん]を 受[う]けたので、相手[あいて]に 同意[どうい]を 求[もと]めます。",
+        "contextTranslation": "Since I took the same exam yesterday too, I seek the other person's agreement.",
+        "sentence": "昨日[きのう]の 試験[しけん]は 大変[たいへん]だった___？",
+        "answer": "でしょう",
+        "translation": "Yesterday's exam was tough, wasn't it?"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "です",
+        "gloss": "plain assertion; states a fact but does not seek confirmation"
+      },
+      {
+        "form": "ですか",
+        "gloss": "neutral question; asks for unknown info, not confirming a presumed fact"
+      },
+      {
+        "form": "ます",
+        "gloss": "polite verb ending; an assertion, not a confirmation-seeking form"
+      },
+      {
+        "form": "だった",
+        "gloss": "plain past copula; means a past state and is ungrammatical after the い-adjective 難しい (would need 難しかった)"
+      },
+      {
+        "form": "ました",
+        "gloss": "polite past; states a completed action, not seeking 'right?'"
+      },
+      {
+        "form": "ですね",
+        "gloss": "seeks soft agreement but is a statement+ね, not the conjecture form でしょう"
+      },
+      {
+        "form": "でした",
+        "gloss": "polite past of です; reports a past state, not confirmation"
+      },
+      {
+        "form": "かもしれません",
+        "gloss": "'might be'; expresses possibility, weaker than presumed confirmation"
+      },
+      {
+        "form": "そうです",
+        "gloss": "'it seems/I heard'; reports appearance or hearsay, not seeking agreement"
+      },
+      {
+        "form": "らしい",
+        "gloss": "'seems/apparently'; inference from evidence, not direct confirmation"
+      },
+      {
+        "form": "ましょう",
+        "gloss": "'let's'; a suggestion/volition, unrelated to confirming a fact"
+      },
+      {
+        "form": "でしょうか",
+        "gloss": "polite wondering question; expresses the speaker's doubt rather than seeking the listener's agreement"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:数量詞 (counters)",
+    "level": "N5",
+    "title": "数量詞 (counters)",
+    "meaning": "counting words / counters for quantities of things, people, and objects",
+    "explanation": "Japanese uses specific counter suffixes depending on what is being counted (e.g., 人[にん] for people, 枚[まい] for flat things, 本[ほん] for long objects, つ for general items). The number plus counter forms a quantity expression.",
+    "formation": "Number + appropriate Counter (人 / 枚 / 本 / 冊 / 匹 / つ etc.)",
+    "whyRight": "The correct counter must match the type of object being counted; choosing the counter that agrees with the noun's category makes the quantity expression grammatical.",
+    "examples": [
+      {
+        "sentence": "教室[きょうしつ]に 学生[がくせい]が 五[ご]___ います。",
+        "answer": "人",
+        "translation": "There are five students in the classroom."
+      },
+      {
+        "sentence": "切手[きって]を 三[さん]___ ください。",
+        "answer": "枚",
+        "translation": "Please give me three stamps."
+      },
+      {
+        "sentence": "机[つくえ]の 上[うえ]に 鉛筆[えんぴつ]が 二[に]___ あります。",
+        "answer": "本",
+        "translation": "There are two pencils on the desk."
+      },
+      {
+        "sentence": "図書館[としょかん]で 本[ほん]を 四[よん]___ 借[か]りました。",
+        "answer": "冊",
+        "translation": "I borrowed four books at the library."
+      },
+      {
+        "sentence": "りんごを 一[ひと]___ 食[た]べました。",
+        "answer": "つ",
+        "translation": "I ate one apple."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "円",
+        "gloss": "counter for yen (money); counts currency amounts, not people, stamps, pencils, books, or apples"
+      },
+      {
+        "form": "台",
+        "gloss": "counter for machines/vehicles; wrong for people, paper, or fruit"
+      },
+      {
+        "form": "匹",
+        "gloss": "counter for small animals; not for people or inanimate objects here"
+      },
+      {
+        "form": "杯",
+        "gloss": "counter for cupfuls/glassfuls; wrong for solid countable items"
+      },
+      {
+        "form": "回",
+        "gloss": "counter for times/occurrences; counts actions, not objects"
+      },
+      {
+        "form": "階",
+        "gloss": "counter for building floors; not for people or items"
+      },
+      {
+        "form": "歳",
+        "gloss": "counter for age in years; counts age, not objects or people quantity"
+      },
+      {
+        "form": "番",
+        "gloss": "ordinal/number-in-series counter; indicates order, not a count of things"
+      },
+      {
+        "form": "度",
+        "gloss": "counter for degrees/times; not a counter for tangible objects"
+      },
+      {
+        "form": "頭",
+        "gloss": "counter for large animals; inappropriate for people or stationery"
+      },
+      {
+        "form": "軒",
+        "gloss": "counter for houses/shops; wrong for the items counted here"
+      },
+      {
+        "form": "羽",
+        "gloss": "counter for birds/rabbits; not for people or objects in these sentences"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:に なる／く なる",
+    "level": "N5",
+    "title": "～に なる／～く なる",
+    "meaning": "to become ~ (change of state)",
+    "explanation": "なる expresses a natural change into a new state. With nouns and な-adjectives it takes に before なる; with い-adjectives, the final い changes to く before なる.",
+    "formation": "Noun / な-adjective + に なる ; い-adjective (drop い → く) + なる",
+    "whyRight": "Because the word before なる is an い-adjective or な-adjective/noun, the correct connector (く for い-adjectives, に for nouns/な-adjectives) must be used to express becoming that state.",
+    "examples": [
+      {
+        "sentence": "春[はる]に なって、 暖[あたた]か___ なりました。",
+        "answer": "く",
+        "translation": "Spring came and it became warm."
+      },
+      {
+        "sentence": "弟[おとうと]は 来年[らいねん] 大学生[だいがくせい]___ なります。",
+        "answer": "に",
+        "translation": "My younger brother will become a university student next year."
+      },
+      {
+        "sentence": "薬[くすり]を 飲[の]んで、 元気[げんき]___ なりました。",
+        "answer": "に",
+        "translation": "I took the medicine and became well."
+      },
+      {
+        "sentence": "毎日[まいにち] 練習[れんしゅう]して、 日本語[にほんご]が 上手[じょうず]___ なりました。",
+        "answer": "に",
+        "translation": "I practiced every day and became good at Japanese."
+      },
+      {
+        "sentence": "夜[よる]に なると、 外[そと]が 暗[くら]___ なります。",
+        "answer": "く",
+        "translation": "When night falls, it gets dark outside."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "くに",
+        "gloss": "doubled connector; combining く and に is not valid before なる"
+      },
+      {
+        "form": "にく",
+        "gloss": "doubled connector; neither order of に+く attaches to なる"
+      },
+      {
+        "form": "で",
+        "gloss": "means/location/te-form particle; does not connect to なる for change of state"
+      },
+      {
+        "form": "だけ",
+        "gloss": "'only'; 大学生だけ なります / 暖かだけ なりました is ungrammatical, as it cannot link the word to なる for change of state"
+      },
+      {
+        "form": "を",
+        "gloss": "object marker; なる is intransitive and takes に/く, not を"
+      },
+      {
+        "form": "い",
+        "gloss": "the plain い-adjective ending; must change to く before なる"
+      },
+      {
+        "form": "な",
+        "gloss": "な-adjective attributive form before nouns; not used directly before なる"
+      },
+      {
+        "form": "だ",
+        "gloss": "copula 'is'; cannot attach before なる in this construction"
+      },
+      {
+        "form": "の",
+        "gloss": "possessive/nominalizer; does not link an adjective to なる"
+      },
+      {
+        "form": "へ",
+        "gloss": "direction particle; unrelated to change-of-state なる"
+      },
+      {
+        "form": "から",
+        "gloss": "'from/because'; a reason/source marker, not the なる connector"
+      },
+      {
+        "form": "が",
+        "gloss": "subject marker; does not connect the state word to なる"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:にする",
+    "level": "N5",
+    "title": "～にする",
+    "meaning": "to decide on / to choose (I'll have ~)",
+    "explanation": "する with に expresses a decision or choice made by the speaker, often when selecting from options such as ordering food or picking an item. It contrasts with なる (natural change) by indicating deliberate choice.",
+    "formation": "Noun + に する",
+    "whyRight": "に する is correct when the speaker actively decides on or selects something; に marks the chosen item and する shows the deliberate choice.",
+    "examples": [
+      {
+        "sentence": "私[わたし]は コーヒー___ します。",
+        "answer": "に",
+        "translation": "I'll have coffee."
+      },
+      {
+        "sentence": "旅行[りょこう]は 京都[きょうと]___ しましょう。",
+        "answer": "に",
+        "translation": "Let's make the trip to Kyoto."
+      },
+      {
+        "sentence": "色[いろ]は 青[あお]___ しました。",
+        "answer": "に",
+        "translation": "I decided on blue for the color."
+      },
+      {
+        "sentence": "今晩[こんばん]の ご飯[はん]は カレー___ します。",
+        "answer": "に",
+        "translation": "I'll make tonight's meal curry."
+      },
+      {
+        "sentence": "会議[かいぎ]は 三時[さんじ]___ します。",
+        "answer": "に",
+        "translation": "We'll set the meeting for three o'clock."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "を",
+        "gloss": "object marker; with する it means 'do X', not 'decide on/choose X'"
+      },
+      {
+        "form": "が",
+        "gloss": "subject marker; does not express choosing something with する"
+      },
+      {
+        "form": "で",
+        "gloss": "means/place marker; not the decision particle for にする"
+      },
+      {
+        "form": "や",
+        "gloss": "'and (partial list)'; コーヒーや します / 青や しました is ungrammatical and cannot mark a single chosen item before する"
+      },
+      {
+        "form": "へ",
+        "gloss": "direction particle; cannot express a choice with する"
+      },
+      {
+        "form": "から",
+        "gloss": "'from/because'; a source or reason, not a selection"
+      },
+      {
+        "form": "まで",
+        "gloss": "'until/up to'; an endpoint, not a chosen option"
+      },
+      {
+        "form": "の",
+        "gloss": "possessive/nominalizer; does not form the にする decision pattern"
+      },
+      {
+        "form": "に なる",
+        "gloss": "'becomes'; describes natural change, not a deliberate choice by the speaker"
+      },
+      {
+        "form": "に した い",
+        "gloss": "'want to choose'; adds desire and changes the meaning from a settled decision"
+      },
+      {
+        "form": "を する",
+        "gloss": "'to do (an activity)'; performs an action rather than selecting an option"
+      },
+      {
+        "form": "が ある",
+        "gloss": "'there is'; expresses existence, not a decision"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:もうました",
+    "level": "N5",
+    "title": "もう～ました",
+    "meaning": "have already done ~ (completion)",
+    "explanation": "もう combined with a past-tense ました verb means an action has 'already' been completed. It emphasizes that the action is finished at the time of speaking.",
+    "formation": "もう + Verb (ました / past polite)",
+    "whyRight": "もう pairs with the affirmative past ました to mean 'already done'; the past polite form is required to show the action is complete.",
+    "examples": [
+      {
+        "context": "友[とも]だちに 昼[ひる]ご飯[はん]に さそわれましたが、もう 食[た]べ 終[お]わって いるので 答[こた]えます。",
+        "contextTranslation": "A friend invited me to lunch, but I answer since I have already finished eating.",
+        "sentence": "私[わたし]は もう 昼[ひる]ご飯[はん]を 食[た]べ___。",
+        "answer": "ました",
+        "translation": "I have already eaten lunch."
+      },
+      {
+        "context": "母[はは]に 宿題[しゅくだい]は まだかと 聞[き]かれて、終[お]わった ことを 伝[つた]えます。",
+        "contextTranslation": "My mother asks if the homework isn't done yet, and I tell her that it's finished.",
+        "sentence": "宿題[しゅくだい]は もう 終[お]わり___。",
+        "answer": "ました",
+        "translation": "The homework is already finished."
+      },
+      {
+        "context": "友[とも]だちに その 本[ほん]を すすめられましたが、読[よ]み 終[お]わって いるので 言[い]います。",
+        "contextTranslation": "A friend recommended that book to me, but I say that I have already finished reading it.",
+        "sentence": "その 本[ほん]は もう 読[よ]み___。",
+        "answer": "ました",
+        "translation": "I have already read that book."
+      },
+      {
+        "context": "駅[えき]に ついた 友[とも]だちに、電車[でんしゃ]が 行[い]って しまった ことを 伝[つた]えます。",
+        "contextTranslation": "I tell a friend who has arrived at the station that the train has already left.",
+        "sentence": "電車[でんしゃ]は もう 駅[えき]を 出[で]___。",
+        "answer": "ました",
+        "translation": "The train has already left the station."
+      },
+      {
+        "context": "彼[かれ]を さがして いる 人[ひと]に、彼[かれ]が いない ことを 教[おし]えます。",
+        "contextTranslation": "I tell someone who is looking for him that he isn't here.",
+        "sentence": "彼[かれ]は もう 家[いえ]に 帰[かえ]り___。",
+        "answer": "ました",
+        "translation": "He has already gone home."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ます",
+        "gloss": "non-past polite; means a future/habitual action, not something already completed"
+      },
+      {
+        "form": "ません",
+        "gloss": "negative non-past ('won't / no longer'); contradicts the completed 'already done' meaning the translations require"
+      },
+      {
+        "form": "ませんでした",
+        "gloss": "negative past; means 'did not do', contradicting 'already done'"
+      },
+      {
+        "form": "ましょう",
+        "gloss": "'let's'; a suggestion, not a completed past action"
+      },
+      {
+        "form": "ています",
+        "gloss": "ongoing/state; describes continuation, not the simple completion もう～ました conveys"
+      },
+      {
+        "form": "たい",
+        "gloss": "'want to'; expresses desire, not completion"
+      },
+      {
+        "form": "たがる",
+        "gloss": "'(someone) wants to'; third-person desire, not a finished action"
+      },
+      {
+        "form": "なかった",
+        "gloss": "plain negative past; wrong register and negative meaning for もう～ました"
+      },
+      {
+        "form": "ている",
+        "gloss": "plain progressive/state; not the polite past completion form needed"
+      },
+      {
+        "form": "てください",
+        "gloss": "'please do'; a request, not a statement of completion"
+      },
+      {
+        "form": "ました か",
+        "gloss": "polite past question; asks rather than states the completed fact"
+      },
+      {
+        "form": "ます か",
+        "gloss": "polite non-past question; neither past nor a completion statement"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:まだていません",
+    "level": "N5",
+    "title": "まだ～ていません",
+    "meaning": "have not yet (done something)",
+    "explanation": "まだ combined with the て-form plus いません expresses that an action has not yet been completed but is still expected to happen. It contrasts with もう～ました (already done).",
+    "formation": "まだ + Verb (て-form) + いません",
+    "whyRight": "まだ pairs with the negative ～ていません to mean 'not yet done', implying the action is still pending; a plain past negative would not carry the 'not yet, still expected' nuance.",
+    "examples": [
+      {
+        "sentence": "宿題[しゅくだい]は まだ して___。",
+        "answer": "いません",
+        "translation": "I haven't done my homework yet."
+      },
+      {
+        "sentence": "ご飯[はん]を まだ 食[た]べて___。",
+        "answer": "いません",
+        "translation": "I haven't eaten yet."
+      },
+      {
+        "sentence": "彼[かれ]は まだ 来[き]て___。",
+        "answer": "いません",
+        "translation": "He hasn't come yet."
+      },
+      {
+        "sentence": "その本[ほん]を まだ 読[よ]んで___。",
+        "answer": "いません",
+        "translation": "I haven't read that book yet."
+      },
+      {
+        "sentence": "切符[きっぷ]を まだ 買[か]って___。",
+        "answer": "いません",
+        "translation": "I haven't bought the ticket yet."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "くありません",
+        "gloss": "い-adjective polite negative ending; cannot attach to a て-form verb (してくありません is impossible)."
+      },
+      {
+        "form": "ではありません",
+        "gloss": "polite negative copula for nouns/な-adjectives; cannot follow a て-form verb."
+      },
+      {
+        "form": "ありません",
+        "gloss": "bare negative of ある; with intransitive verbs like 来て the てある resultative is impossible, so this does not fit."
+      },
+      {
+        "form": "でした",
+        "gloss": "past copula for nouns; ungrammatical after a て-form verb (してでした is impossible)."
+      },
+      {
+        "form": "いきません",
+        "gloss": "～ていく negative 'won't go and do'; grammatical only with motion nuance, wrong with intransitive 来て and not 'not yet'."
+      },
+      {
+        "form": "おきません",
+        "gloss": "～ておく negative 'will not do in advance'; changes the meaning entirely."
+      },
+      {
+        "form": "みません",
+        "gloss": "～てみる negative 'will not try'; wrong meaning for 'have not yet done'."
+      },
+      {
+        "form": "だった",
+        "gloss": "plain past copula; cannot attach to a て-form verb."
+      },
+      {
+        "form": "なかった",
+        "gloss": "plain past negative auxiliary; gives 'had not been doing', losing the non-past 'not yet, still pending'."
+      },
+      {
+        "form": "しまいました",
+        "gloss": "～てしまう 'did completely'; opposite nuance of completion, not incompletion."
+      },
+      {
+        "form": "くない",
+        "gloss": "い-adjective plain negative; cannot attach to a て-form verb (してくない is impossible)."
+      },
+      {
+        "form": "だろう",
+        "gloss": "presumptive copula 'probably'; cannot attach directly to a て-form verb (してだろう is ungrammatical)."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:が じょうず／へた",
+    "level": "N5",
+    "title": "～が じょうず／へた",
+    "meaning": "to be good at / bad at",
+    "explanation": "上手 (good at) and 下手 (bad at) are な-adjectives describing skill. The thing one is skilled or unskilled at is marked with the particle が, not を.",
+    "formation": "Noun + が + 上手／下手 (です)",
+    "whyRight": "Skill with 上手／下手 takes the subject-marking particle が for the ability/object; を is incorrect because these are stative adjectives, not transitive verbs.",
+    "examples": [
+      {
+        "sentence": "彼女[かのじょ]は 料理[りょうり]___ 上手[じょうず]です。",
+        "answer": "が",
+        "translation": "She is good at cooking."
+      },
+      {
+        "sentence": "私[わたし]は 日本語[にほんご]___ 下手[へた]です。",
+        "answer": "が",
+        "translation": "I am bad at Japanese."
+      },
+      {
+        "sentence": "弟[おとうと]は 歌[うた]___ 上手[じょうず]じゃ ありません。",
+        "answer": "が",
+        "translation": "My younger brother is not good at singing."
+      },
+      {
+        "sentence": "田中[たなか]さんは テニス___ 上手[じょうず]です。",
+        "answer": "が",
+        "translation": "Tanaka is good at tennis."
+      },
+      {
+        "sentence": "母[はは]は 運転[うんてん]___ 下手[へた]です。",
+        "answer": "が",
+        "translation": "My mother is bad at driving."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "を",
+        "gloss": "direct-object particle; 上手／下手 are adjectives and require が, not を."
+      },
+      {
+        "form": "しか",
+        "gloss": "'only'; requires a following negative predicate, so it is ungrammatical with the affirmative 上手です here."
+      },
+      {
+        "form": "に",
+        "gloss": "marks direction/target; wrong for the thing one is skilled at."
+      },
+      {
+        "form": "で",
+        "gloss": "marks means/location; not used to mark the skill object."
+      },
+      {
+        "form": "へ",
+        "gloss": "direction particle 'toward'; irrelevant to skill."
+      },
+      {
+        "form": "と",
+        "gloss": "'with/and'; does not mark the object of skill."
+      },
+      {
+        "form": "の",
+        "gloss": "possessive/noun-linking particle; ungrammatical directly before 上手です here."
+      },
+      {
+        "form": "から",
+        "gloss": "'from/because'; wrong function for marking the skill."
+      },
+      {
+        "form": "ほど",
+        "gloss": "'to the extent of'; needs a comparative frame, ungrammatical as the skill-marking slot here."
+      },
+      {
+        "form": "まで",
+        "gloss": "'up to/even'; reads as 'even cooking' and does not mark the thing one is skilled at."
+      },
+      {
+        "form": "や",
+        "gloss": "non-exhaustive list 'and'; needs multiple nouns and is wrong with a single noun here."
+      },
+      {
+        "form": "より",
+        "gloss": "comparison 'than'; not the skill-object particle."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:が すき／きらい",
+    "level": "N5",
+    "title": "～が すき／きらい",
+    "meaning": "to like / dislike",
+    "explanation": "好き (like) and 嫌い (dislike) are な-adjectives expressing preference. The thing liked or disliked is marked with が, since Japanese treats it grammatically as the subject of the emotion.",
+    "formation": "Noun + が + 好き／嫌い (です)",
+    "whyRight": "Preference adjectives 好き／嫌い take が to mark what is liked/disliked; を is wrong because these are not action verbs but stative adjectives.",
+    "examples": [
+      {
+        "context": "動物[どうぶつ]の 中[なか]で 何[なに]が 好[す]きか 聞[き]かれました。",
+        "contextTranslation": "I was asked which animal I like the most.",
+        "sentence": "私[わたし]は 犬[いぬ]___ 好[す]きです。",
+        "answer": "が",
+        "translation": "I like dogs."
+      },
+      {
+        "context": "彼[かれ]は 食[た]べ物[もの]の 好[す]き 嫌[きら]いが 多[おお]いです。",
+        "contextTranslation": "He is very picky about food.",
+        "sentence": "彼[かれ]は 野菜[やさい]___ 嫌[きら]いです。",
+        "answer": "が",
+        "translation": "He dislikes vegetables."
+      },
+      {
+        "context": "妹[いもうと]は いつも 歌[うた]を 歌[うた]って います。",
+        "contextTranslation": "My younger sister is always singing.",
+        "sentence": "妹[いもうと]は 音楽[おんがく]___ 好[す]きです。",
+        "answer": "が",
+        "translation": "My younger sister likes music."
+      },
+      {
+        "context": "私[わたし]は 朝[あさ]が とても 苦手[にがて]です。",
+        "contextTranslation": "I am really not a morning person.",
+        "sentence": "私[わたし]は 朝[あさ]早[はや]く 起[お]きるの___ 嫌[きら]いです。",
+        "answer": "が",
+        "translation": "I dislike getting up early in the morning."
+      },
+      {
+        "context": "子供[こども]は 甘[あま]い 味[あじ]が 大好[だいす]きです。",
+        "contextTranslation": "Children love sweet flavors.",
+        "sentence": "子供[こども]は お菓子[かし]___ 好[す]きです。",
+        "answer": "が",
+        "translation": "Children like sweets."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "を",
+        "gloss": "direct-object particle; 好き／嫌い are adjectives and require が."
+      },
+      {
+        "form": "しか",
+        "gloss": "'only'; requires a following negative predicate, so it is ungrammatical with the affirmative 好きです here."
+      },
+      {
+        "form": "に",
+        "gloss": "marks target/direction; not used for the object of liking."
+      },
+      {
+        "form": "で",
+        "gloss": "means/location particle; wrong function here."
+      },
+      {
+        "form": "へ",
+        "gloss": "direction 'toward'; irrelevant to preference."
+      },
+      {
+        "form": "と",
+        "gloss": "'with/and'; does not mark what is liked."
+      },
+      {
+        "form": "の",
+        "gloss": "possessive/linking; ungrammatical directly before 好きです here."
+      },
+      {
+        "form": "から",
+        "gloss": "'from/because'; wrong function for marking the thing liked."
+      },
+      {
+        "form": "ほど",
+        "gloss": "'to the extent of'; needs a comparative frame and does not mark the object of liking."
+      },
+      {
+        "form": "まで",
+        "gloss": "'up to/even'; reads as 'even ...' and does not mark what is liked."
+      },
+      {
+        "form": "や",
+        "gloss": "list 'and'; requires multiple nouns and is wrong with a single noun here."
+      },
+      {
+        "form": "より",
+        "gloss": "comparison 'than'; not the preference-object particle."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:が わかる",
+    "level": "N5",
+    "title": "～が わかる",
+    "meaning": "to understand / to know",
+    "explanation": "分かる is an intransitive verb meaning 'to be understood/clear'. Because it is intransitive, the thing understood is marked with が rather than を.",
+    "formation": "Noun + が + 分かる",
+    "whyRight": "分かる is intransitive, so what is understood takes が as its grammatical subject; を is incorrect since 分かる does not take a direct object.",
+    "examples": [
+      {
+        "context": "私[わたし]は 英語[えいご]を 三年[さんねん] 習[なら]いました。",
+        "contextTranslation": "I studied English for three years.",
+        "sentence": "私[わたし]は 英語[えいご]___ 分[わ]かります。",
+        "answer": "が",
+        "translation": "I understand English."
+      },
+      {
+        "context": "先生[せんせい]が 黒板[こくばん]に 新[あたら]しい 字[じ]を 書[か]きました。",
+        "contextTranslation": "The teacher wrote a new character on the blackboard.",
+        "sentence": "この 漢字[かんじ]___ 分[わ]かりますか。",
+        "answer": "が",
+        "translation": "Do you understand this kanji?"
+      },
+      {
+        "context": "私[わたし]も 前[まえ]に 同[おな]じ 経験[けいけん]を しました。",
+        "contextTranslation": "I had the same experience before too.",
+        "sentence": "彼[かれ]の 気持[きも]ち___ よく 分[わ]かります。",
+        "answer": "が",
+        "translation": "I understand his feelings well."
+      },
+      {
+        "context": "初[はじ]めての 町[まち]に 来[き]ました。",
+        "contextTranslation": "I have come to a town for the first time.",
+        "sentence": "道[みち]___ 分[わ]からないので 地図[ちず]を 見[み]ます。",
+        "answer": "が",
+        "translation": "Since I don't know the way, I look at the map."
+      },
+      {
+        "context": "この 文[ぶん]は とても 難[むずか]しいです。",
+        "contextTranslation": "This sentence is very difficult.",
+        "sentence": "意味[いみ]___ 全[ぜん]ぜん 分[わ]かりません。",
+        "answer": "が",
+        "translation": "I don't understand the meaning at all."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "を",
+        "gloss": "direct-object particle; 分かる is intransitive and takes が, not を."
+      },
+      {
+        "form": "ほど",
+        "gloss": "'to the extent of'; needs a comparative frame, ungrammatical as the object-marking slot here."
+      },
+      {
+        "form": "に",
+        "gloss": "target/direction particle; wrong for the thing understood."
+      },
+      {
+        "form": "で",
+        "gloss": "means/location particle; wrong function."
+      },
+      {
+        "form": "へ",
+        "gloss": "direction 'toward'; irrelevant."
+      },
+      {
+        "form": "と",
+        "gloss": "'with/and'; does not mark the understood content."
+      },
+      {
+        "form": "の",
+        "gloss": "possessive/linking; ungrammatical before 分かる here."
+      },
+      {
+        "form": "から",
+        "gloss": "'from/because'; wrong function."
+      },
+      {
+        "form": "まで",
+        "gloss": "'up to/until'; reads as 'even ...' and does not mark the understood content."
+      },
+      {
+        "form": "か",
+        "gloss": "alternative particle 'or'; needs listed alternatives, ungrammatical marking a single understood object."
+      },
+      {
+        "form": "や",
+        "gloss": "list 'and'; needs multiple nouns and is wrong with a single noun here."
+      },
+      {
+        "form": "より",
+        "gloss": "comparison 'than'; not the correct particle."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:が できる",
+    "level": "N5",
+    "title": "～が できる",
+    "meaning": "to be able to do / can",
+    "explanation": "できる expresses ability or possibility. The skill, language, or activity one can do is marked with が, since できる is the potential/intransitive counterpart of する.",
+    "formation": "Noun + が + できる",
+    "whyRight": "できる marks its object with が because it is a potential verb expressing ability; を is incorrect as できる does not take a direct object.",
+    "examples": [
+      {
+        "context": "私[わたし]は 昔[むかし] 中国[ちゅうごく]に 住[す]んで いました。",
+        "contextTranslation": "I used to live in China a long time ago.",
+        "sentence": "私[わたし]は 中国語[ちゅうごくご]___ できます。",
+        "answer": "が",
+        "translation": "I can speak Chinese."
+      },
+      {
+        "context": "彼女[かのじょ]は 車[くるま]の 免許[めんきょ]を 持[も]って います。",
+        "contextTranslation": "She has a driver's license.",
+        "sentence": "彼女[かのじょ]は 運転[うんてん]___ できますか。",
+        "answer": "が",
+        "translation": "Can she drive?"
+      },
+      {
+        "context": "この お店[みせ]は 電話[でんわ]も インターネットも 使[つか]えます。",
+        "contextTranslation": "This shop can be used by both phone and internet.",
+        "sentence": "ここで 予約[よやく]___ できます。",
+        "answer": "が",
+        "translation": "You can make a reservation here."
+      },
+      {
+        "context": "弟[おとうと]は まだ 学校[がっこう]に 行[い]って いません。",
+        "contextTranslation": "My younger brother doesn't go to school yet.",
+        "sentence": "弟[おとうと]は まだ 漢字[かんじ]___ できません。",
+        "answer": "が",
+        "translation": "My younger brother can't do kanji yet."
+      },
+      {
+        "context": "この 仕事[しごと]は 量[りょう]が とても 多[おお]いです。",
+        "contextTranslation": "There is a very large amount of this work.",
+        "sentence": "明日[あした]までに 仕事[しごと]___ できますか。",
+        "answer": "が",
+        "translation": "Can you finish the work by tomorrow?"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "を",
+        "gloss": "direct-object particle; できる is a potential verb and takes が, not を."
+      },
+      {
+        "form": "ほど",
+        "gloss": "'to the extent of'; needs a comparative frame, ungrammatical as the ability-marking slot here."
+      },
+      {
+        "form": "に",
+        "gloss": "target/direction particle; wrong for the thing one can do."
+      },
+      {
+        "form": "で",
+        "gloss": "means/location particle; wrong function for the ability object."
+      },
+      {
+        "form": "へ",
+        "gloss": "direction 'toward'; irrelevant."
+      },
+      {
+        "form": "と",
+        "gloss": "'with/and'; does not mark the ability object."
+      },
+      {
+        "form": "の",
+        "gloss": "possessive/linking; ungrammatical before できる here."
+      },
+      {
+        "form": "から",
+        "gloss": "'from/because'; wrong function."
+      },
+      {
+        "form": "まで",
+        "gloss": "'up to/until'; reads as 'even ...' and does not mark the ability object."
+      },
+      {
+        "form": "か",
+        "gloss": "alternative particle 'or'; needs listed alternatives, ungrammatical marking a single ability object."
+      },
+      {
+        "form": "や",
+        "gloss": "list 'and'; requires multiple nouns and is wrong with a single noun here."
+      },
+      {
+        "form": "より",
+        "gloss": "comparison 'than'; not the correct particle."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:一緒に",
+    "level": "N5",
+    "title": "一緒に",
+    "meaning": "together (with)",
+    "explanation": "一緒に means 'together' and is used adverbially before a verb. The person you do something together with is marked by the particle と.",
+    "formation": "(Person + と) + 一緒に + Verb",
+    "whyRight": "一緒に is the correct adverb for 'together'; the companion takes と ('with'), and 一緒に modifies the following verb.",
+    "examples": [
+      {
+        "sentence": "友[とも]だちと ___ 映画[えいが]を 見[み]ました。",
+        "answer": "一緒に",
+        "translation": "I watched a movie together with my friend."
+      },
+      {
+        "sentence": "家族[かぞく]と ___ 旅行[りょこう]に 行[い]きます。",
+        "answer": "一緒に",
+        "translation": "I will go on a trip together with my family."
+      },
+      {
+        "sentence": "私[わたし]と ___ 昼[ひる]ご飯[はん]を 食[た]べませんか。",
+        "answer": "一緒に",
+        "translation": "Won't you eat lunch together with me?"
+      },
+      {
+        "sentence": "彼[かれ]と ___ 学校[がっこう]へ 行[い]きました。",
+        "answer": "一緒に",
+        "translation": "I went to school together with him."
+      },
+      {
+        "sentence": "みんなと ___ 歌[うた]を 歌[うた]いましょう。",
+        "answer": "一緒に",
+        "translation": "Let's sing songs together with everyone."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "一緒",
+        "gloss": "noun form without に; cannot directly modify a verb adverbially (一緒映画を見ました is ungrammatical)."
+      },
+      {
+        "form": "一人で",
+        "gloss": "'alone/by oneself'; contradicts the companion marked by と, giving an unnatural 'alone with my friend' reading."
+      },
+      {
+        "form": "だから",
+        "gloss": "conjunction 'so/therefore'; cannot stand as an adverb between と and the verb."
+      },
+      {
+        "form": "全部",
+        "gloss": "'all'; quantity word, ungrammatical in this adverbial slot before the verb."
+      },
+      {
+        "form": "ぜんぶで",
+        "gloss": "'in total'; counts amounts, not togetherness, and is unnatural here."
+      },
+      {
+        "form": "みんな",
+        "gloss": "'everyone'; a bare noun, ungrammatical in the adverbial 'together' slot here."
+      },
+      {
+        "form": "そして",
+        "gloss": "conjunction 'and then'; connects sentences, ungrammatical mid-clause after と."
+      },
+      {
+        "form": "しかし",
+        "gloss": "conjunction 'however'; ungrammatical in this mid-clause adverbial slot."
+      },
+      {
+        "form": "たち",
+        "gloss": "pluralizing suffix, not a standalone adverb; ungrammatical here."
+      },
+      {
+        "form": "こと",
+        "gloss": "nominalizer/noun 'thing'; cannot fill the adverbial 'together' slot before the verb."
+      },
+      {
+        "form": "一緒で",
+        "gloss": "predicative 一緒だ form with で; used as a predicate, not adverbially before a verb (一緒で見ました is unnatural)."
+      },
+      {
+        "form": "とき",
+        "gloss": "'time/when'; a temporal noun, ungrammatical as the adverb 'together' here."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:どうして／なぜ",
+    "level": "N5",
+    "title": "どうして／なぜ",
+    "meaning": "why",
+    "explanation": "どうして and なぜ both ask 'why', requesting a reason. なぜ is somewhat more formal/written, while どうして is common in everyday speech; the answer is typically given with ～から.",
+    "formation": "どうして／なぜ + clause + か",
+    "whyRight": "どうして／なぜ are the interrogatives for asking a reason ('why'); other question words like どこ or いつ ask place or time, not reason.",
+    "examples": [
+      {
+        "context": "先生[せんせい]が あなたの 休[やす]んだ 理由[りゆう]を 知[し]りたがって います。",
+        "contextTranslation": "The teacher wants to know the reason you were absent.",
+        "sentence": "___ 学校[がっこう]を 休[やす]みましたか。",
+        "answer": "どうして",
+        "translation": "Why did you take the day off from school?"
+      },
+      {
+        "sentence": "___ そんなに 怒[おこ]って いるのですか。",
+        "answer": "なぜ",
+        "translation": "Why are you so angry?"
+      },
+      {
+        "context": "パーティーには クラスの みんなが 来[き]ました。",
+        "contextTranslation": "Everyone in the class came to the party.",
+        "sentence": "___ 彼[かれ]は 来[こ]なかったのですか。",
+        "answer": "どうして",
+        "translation": "Why didn't he come?"
+      },
+      {
+        "context": "あなたの 国[くに]では 英語[えいご]を 話[はな]す 人[ひと]が 多[おお]いですね。",
+        "contextTranslation": "In your country there are a lot of people who speak English.",
+        "sentence": "___ 日本語[にほんご]を 勉強[べんきょう]して いますか。",
+        "answer": "どうして",
+        "translation": "Why are you studying Japanese?"
+      },
+      {
+        "context": "青[あお]い 色[いろ]には 理由[りゆう]が あるそうです。",
+        "contextTranslation": "They say there is a reason for the blue color.",
+        "sentence": "___ 空[そら]は 青[あお]いのですか。",
+        "answer": "なぜ",
+        "translation": "Why is the sky blue?"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "どこ",
+        "gloss": "'where'; asks place, not reason."
+      },
+      {
+        "form": "いつ",
+        "gloss": "'when'; asks time, not reason."
+      },
+      {
+        "form": "だれ",
+        "gloss": "'who'; asks a person, not reason."
+      },
+      {
+        "form": "なに",
+        "gloss": "'what'; asks a thing, not reason."
+      },
+      {
+        "form": "どう",
+        "gloss": "'how/what way'; asks manner or state, not the reason 'why'."
+      },
+      {
+        "form": "どの",
+        "gloss": "'which' (+ noun); a selection word, not 'why'."
+      },
+      {
+        "form": "どれ",
+        "gloss": "'which one'; selection among items, not reason."
+      },
+      {
+        "form": "どんな",
+        "gloss": "'what kind of'; asks type, not reason."
+      },
+      {
+        "form": "いくら",
+        "gloss": "'how much'; asks price/amount, not reason."
+      },
+      {
+        "form": "いくつ",
+        "gloss": "'how many/how old'; asks quantity, not reason."
+      },
+      {
+        "form": "どうやって",
+        "gloss": "'how/by what means'; asks method, not the reason."
+      },
+      {
+        "form": "どちら",
+        "gloss": "'which (of two)/where (polite)'; not 'why'."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:なに・なん (what)",
+    "level": "N5",
+    "title": "なに・なん (what)",
+    "meaning": "what",
+    "explanation": "何 is the question word 'what'. It is read なに on its own and before most particles, but read なん before counters and before sounds like t/d/n (e.g. 何ですか, 何時, 何人).",
+    "formation": "何 (なに／なん) + particle/counter",
+    "whyRight": "何 is read なん before counters and certain consonants (です, と, の sometimes, 時, 人, etc.), while elsewhere it is なに; the reading depends on the following sound.",
+    "examples": [
+      {
+        "context": "机[つくえ]の 上[うえ]に 見[み]たことのない 物[もの]が あります。",
+        "contextTranslation": "There is something I've never seen before on the desk.",
+        "sentence": "これは ___ ですか。",
+        "answer": "なん",
+        "translation": "What is this?"
+      },
+      {
+        "context": "お腹[なか]が すきました。",
+        "contextTranslation": "I've gotten hungry.",
+        "sentence": "昼[ひる]ご飯[はん]に ___ を 食[た]べますか。",
+        "answer": "なに",
+        "translation": "What will you eat for lunch?"
+      },
+      {
+        "sentence": "今[いま] ___ 時[じ]ですか。",
+        "answer": "なん",
+        "translation": "What time is it now?"
+      },
+      {
+        "context": "今[いま]から 趣味[しゅみ]の 話[はなし]を しましょう。",
+        "contextTranslation": "Let's talk about hobbies now.",
+        "sentence": "あなたは ___ が 好[す]きですか。",
+        "answer": "なに",
+        "translation": "What do you like?"
+      },
+      {
+        "sentence": "教室[きょうしつ]に ___ 人[にん] いますか。",
+        "answer": "なん",
+        "translation": "How many people are in the classroom?"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "なに (before です)",
+        "gloss": "wrong reading; before です 何 is read なん (なんですか), not なにですか."
+      },
+      {
+        "form": "なん (before を)",
+        "gloss": "wrong reading; before particle を 何 is read なに, not なん."
+      },
+      {
+        "form": "なに (before 時)",
+        "gloss": "wrong reading; before the counter 時 it is なんじ, not なにじ."
+      },
+      {
+        "form": "なん (before が)",
+        "gloss": "wrong reading; before particle が 何 is read なに, not なん."
+      },
+      {
+        "form": "なに (before 人)",
+        "gloss": "wrong reading; with the counter 人 it is なんにん, not なににん."
+      },
+      {
+        "form": "だれ",
+        "gloss": "'who'; asks a person, not 'what'."
+      },
+      {
+        "form": "どこ",
+        "gloss": "'where'; asks place, not 'what'."
+      },
+      {
+        "form": "いつ",
+        "gloss": "'when'; asks time point, not 'what'."
+      },
+      {
+        "form": "どれ",
+        "gloss": "'which one'; selection, not the open question 'what'."
+      },
+      {
+        "form": "どの",
+        "gloss": "'which' (+ noun); a modifier, not standalone 'what'."
+      },
+      {
+        "form": "どう",
+        "gloss": "'how'; asks manner, not 'what'."
+      },
+      {
+        "form": "なんで",
+        "gloss": "casual 'why'; asks reason, not 'what'."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:だれ",
+    "level": "N5",
+    "title": "だれ",
+    "meaning": "who",
+    "explanation": "だれ is the question word used to ask about a person's identity. It functions like a noun and combines with particles such as が, を, に, and の to ask 'who' in different grammatical roles.",
+    "formation": "だれ + particle (が/を/に/の/と...) + rest of question",
+    "whyRight": "だれ is the correct interrogative for asking about an unknown person; other question words ask about things, time, place, or manner, not people.",
+    "examples": [
+      {
+        "context": "遠[とお]くに 知[し]らない 男[おとこ]の 人[ひと]が 立[た]って います。",
+        "contextTranslation": "A man I don't know is standing in the distance.",
+        "sentence": "あの 人[ひと]は ___ ですか。",
+        "answer": "だれ",
+        "translation": "Who is that person?"
+      },
+      {
+        "context": "玄関[げんかん]の ベルが 鳴[な]りました。",
+        "contextTranslation": "The front door bell rang.",
+        "sentence": "___ が 来[き]ましたか。",
+        "answer": "だれ",
+        "translation": "Who came?"
+      },
+      {
+        "context": "教室[きょうしつ]に 本[ほん]が 一冊[いっさつ] 忘[わす]れて ありました。",
+        "contextTranslation": "A book was left behind in the classroom.",
+        "sentence": "これは ___ の 本[ほん]ですか。",
+        "answer": "だれ",
+        "translation": "Whose book is this?"
+      },
+      {
+        "sentence": "昨日[きのう] ___ と 話[はな]しましたか。",
+        "answer": "だれ",
+        "translation": "Who did you talk with yesterday?"
+      },
+      {
+        "sentence": "教室[きょうしつ]に ___ も いません。",
+        "answer": "だれ",
+        "translation": "There is no one in the classroom."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "なに",
+        "gloss": "means 'what'; asks about things, not people"
+      },
+      {
+        "form": "いつ",
+        "gloss": "means 'when'; asks about time, not a person"
+      },
+      {
+        "form": "どこ",
+        "gloss": "means 'where'; asks about place, not a person"
+      },
+      {
+        "form": "どれ",
+        "gloss": "means 'which one'; selects an object, not a person"
+      },
+      {
+        "form": "どう",
+        "gloss": "means 'how'; asks about manner/state, not identity"
+      },
+      {
+        "form": "なぜ",
+        "gloss": "means 'why'; asks for a reason, not a person"
+      },
+      {
+        "form": "いくら",
+        "gloss": "means 'how much'; asks about price/amount, not a person"
+      },
+      {
+        "form": "どんな",
+        "gloss": "means 'what kind of'; modifies a noun, cannot stand as 'who'"
+      },
+      {
+        "form": "どうやって",
+        "gloss": "means 'how/by what means'; asks about method, not the identity of a person"
+      },
+      {
+        "form": "いくつ",
+        "gloss": "means 'how many/how old'; asks about quantity, not a person"
+      },
+      {
+        "form": "どうして",
+        "gloss": "means 'why'; asks a reason, not the identity of a person"
+      },
+      {
+        "form": "どれくらい",
+        "gloss": "means 'about how much/how long'; asks an amount, not a person"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:いつ",
+    "level": "N5",
+    "title": "いつ",
+    "meaning": "when",
+    "explanation": "いつ is the question word used to ask about a point in time. It does not normally take the particle に when it stands alone, and it can combine with から, まで, and も to form related expressions.",
+    "formation": "いつ + (から/まで/も) + rest of question",
+    "whyRight": "いつ is the correct interrogative for asking about time; the distractors ask about people, places, manner, or amount instead.",
+    "examples": [
+      {
+        "context": "来月[らいげつ] あなたの お祝[いわ]いの パーティーを ひらきたいです。",
+        "contextTranslation": "I want to hold a party to celebrate you next month.",
+        "sentence": "誕生日[たんじょうび]は ___ ですか。",
+        "answer": "いつ",
+        "translation": "When is your birthday?"
+      },
+      {
+        "context": "あなたは もう 日本[にほん]の 生活[せいかつ]に 慣[な]れましたか。",
+        "contextTranslation": "Have you already gotten used to life in Japan?",
+        "sentence": "___ 日本[にほん]へ 来[き]ましたか。",
+        "answer": "いつ",
+        "translation": "When did you come to Japan?"
+      },
+      {
+        "context": "テストは 毎年[まいとし] 春[はる]の どこかの 日[ひ]に あります。",
+        "contextTranslation": "The test is held on some day in spring every year.",
+        "sentence": "試験[しけん]は ___ から 始[はじ]まりますか。",
+        "answer": "いつ",
+        "translation": "When does the exam start?"
+      },
+      {
+        "context": "彼[かれ]は 長[なが]い 出張[しゅっちょう]で 外国[がいこく]に 行[い]って います。",
+        "contextTranslation": "He has gone abroad on a long business trip.",
+        "sentence": "彼[かれ]は ___ 帰[かえ]りますか。",
+        "answer": "いつ",
+        "translation": "When is he going home?"
+      },
+      {
+        "context": "私[わたし]は 一日中[いちにちじゅう] 家[いえ]に います。",
+        "contextTranslation": "I'm at home all day long.",
+        "sentence": "___ でも 電話[でんわ]してください。",
+        "answer": "いつ",
+        "translation": "Please call me anytime."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "どこ",
+        "gloss": "means 'where'; asks about place, not time"
+      },
+      {
+        "form": "だれ",
+        "gloss": "means 'who'; asks about a person, not time"
+      },
+      {
+        "form": "なに",
+        "gloss": "means 'what'; asks about a thing, not time"
+      },
+      {
+        "form": "どう",
+        "gloss": "means 'how'; asks about manner, not time"
+      },
+      {
+        "form": "なぜ",
+        "gloss": "means 'why'; asks for a reason, not time"
+      },
+      {
+        "form": "いくら",
+        "gloss": "means 'how much'; asks about price, not time"
+      },
+      {
+        "form": "いくつ",
+        "gloss": "means 'how many'; asks about quantity, not time"
+      },
+      {
+        "form": "どれ",
+        "gloss": "means 'which one'; selects an object, not a time"
+      },
+      {
+        "form": "どんな",
+        "gloss": "means 'what kind of'; modifies a noun, not a time word"
+      },
+      {
+        "form": "なんじ",
+        "gloss": "means 'what time'; only a clock time, too narrow for general 'when'"
+      },
+      {
+        "form": "いつか",
+        "gloss": "means 'someday'; an indefinite, not a question word"
+      },
+      {
+        "form": "なんにち",
+        "gloss": "means 'what day/how many days'; asks a date number, not general 'when'"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:いくら",
+    "level": "N5",
+    "title": "いくら",
+    "meaning": "how much",
+    "explanation": "いくら is the question word used to ask about price or an uncountable amount. It is most often used for cost, and with でも it forms 'no matter how much'.",
+    "formation": "Noun + は + いくら + ですか / いくら + も/でも",
+    "whyRight": "いくら specifically asks the price or amount of something; the distractors ask about count, time, manner, or identity rather than how much.",
+    "examples": [
+      {
+        "context": "すてきな 時計[とけい]ですね。買[か]いたいので 値段[ねだん]を 教[おし]えてください。",
+        "contextTranslation": "That's a lovely watch. I'd like to buy it, so please tell me the price.",
+        "sentence": "この 時計[とけい]は ___ ですか。",
+        "answer": "いくら",
+        "translation": "How much is this watch?"
+      },
+      {
+        "context": "買[か]い物[もの]が 終[お]わりました。お 金[かね]を 払[はら]いたいです。",
+        "contextTranslation": "I've finished shopping. I'd like to pay.",
+        "sentence": "全部[ぜんぶ]で ___ ですか。",
+        "answer": "いくら",
+        "translation": "How much is it altogether?"
+      },
+      {
+        "context": "電車[でんしゃ]に 乗[の]る 前[まえ]に、料金[りょうきん]を 知[し]りたいです。",
+        "contextTranslation": "Before I get on the train, I want to know the fare.",
+        "sentence": "切符[きっぷ]は ___ かかりますか。",
+        "answer": "いくら",
+        "translation": "How much does the ticket cost?"
+      },
+      {
+        "context": "この アパートを 借[か]りたいので、家賃[やちん]を 聞[き]きます。",
+        "contextTranslation": "I want to rent this apartment, so I'll ask about the rent.",
+        "sentence": "この 部屋[へや]は 一[いっ]か月[げつ] ___ ですか。",
+        "answer": "いくら",
+        "translation": "How much is this room per month?"
+      },
+      {
+        "context": "私[わたし]は たくさん ごはんを 食[た]べます。でも、体[からだ]は 変[か]わりません。",
+        "contextTranslation": "I eat a lot of food. But my body doesn't change.",
+        "sentence": "___ 食[た]べても 太[ふと]りません。",
+        "answer": "いくら",
+        "translation": "No matter how much I eat, I don't gain weight."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "いくつ",
+        "gloss": "means 'how many'; counts discrete items, not a price"
+      },
+      {
+        "form": "なんこ",
+        "gloss": "means 'how many (pieces)'; a counter question, not price"
+      },
+      {
+        "form": "どちら",
+        "gloss": "means 'which (of two)/where'; selects an option, not a price"
+      },
+      {
+        "form": "なに",
+        "gloss": "means 'what'; asks about a thing, not an amount"
+      },
+      {
+        "form": "だれ",
+        "gloss": "means 'who'; asks about a person, not amount"
+      },
+      {
+        "form": "いつ",
+        "gloss": "means 'when'; asks about time, not amount"
+      },
+      {
+        "form": "どこ",
+        "gloss": "means 'where'; asks about place, not amount"
+      },
+      {
+        "form": "どう",
+        "gloss": "means 'how'; asks about manner, not price"
+      },
+      {
+        "form": "どんな",
+        "gloss": "means 'what kind of'; modifies a noun, not an amount"
+      },
+      {
+        "form": "なんで",
+        "gloss": "means 'why/by what means'; not asking a price"
+      },
+      {
+        "form": "なんにん",
+        "gloss": "means 'how many people'; counts people, not money"
+      },
+      {
+        "form": "いくらか",
+        "gloss": "means 'some amount'; an indefinite, not a question word"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:いくつ",
+    "level": "N5",
+    "title": "いくつ",
+    "meaning": "how many / how old",
+    "explanation": "いくつ asks the number of countable things and, with the polite お, asks a person's age (おいくつ). It is used when there is no specific counter or for general counting.",
+    "formation": "Noun + は + いくつ + ですか / おいくつ (age)",
+    "whyRight": "いくつ asks a count of items or an age; the distractors ask about price, time, identity, or manner instead of a quantity.",
+    "examples": [
+      {
+        "context": "店[みせ]で りんごを 選[えら]んでいます。数[かず]を 決[き]めたいです。",
+        "contextTranslation": "I'm choosing apples at the store. I want to decide how many.",
+        "sentence": "りんごを ___ 買[か]いますか。",
+        "answer": "いくつ",
+        "translation": "How many apples will you buy?"
+      },
+      {
+        "sentence": "箱[はこ]の 中[なか]に たまごが ___ ありますか。",
+        "answer": "いくつ",
+        "translation": "How many eggs are in the box?"
+      },
+      {
+        "context": "かわいい お 子[こ]さんですね。年[とし]を 聞[き]いても いいですか。",
+        "contextTranslation": "What a cute child. May I ask their age?",
+        "sentence": "お 子[こ]さんは ___ ですか。",
+        "answer": "いくつ",
+        "translation": "How old is your child?"
+      },
+      {
+        "sentence": "質問[しつもん]が ___ ありますか。",
+        "answer": "いくつ",
+        "translation": "How many questions are there?"
+      },
+      {
+        "sentence": "この ケーキを ___ に 切[き]りますか。",
+        "answer": "いくつ",
+        "translation": "Into how many pieces will you cut this cake?"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "いくら",
+        "gloss": "means 'how much (price)'; asks cost, not a count"
+      },
+      {
+        "form": "どちら",
+        "gloss": "means 'which (of two)'; selects an option, not a count or age"
+      },
+      {
+        "form": "だれ",
+        "gloss": "means 'who'; asks about a person, not a number"
+      },
+      {
+        "form": "いつ",
+        "gloss": "means 'when'; asks about time, not a count"
+      },
+      {
+        "form": "どこ",
+        "gloss": "means 'where'; asks about place, not a count"
+      },
+      {
+        "form": "なに",
+        "gloss": "means 'what'; asks about a thing, not a quantity"
+      },
+      {
+        "form": "どう",
+        "gloss": "means 'how'; asks about manner, not quantity"
+      },
+      {
+        "form": "どれ",
+        "gloss": "means 'which one'; selects an item, does not count them"
+      },
+      {
+        "form": "どんな",
+        "gloss": "means 'what kind of'; describes type, not number"
+      },
+      {
+        "form": "なぜ",
+        "gloss": "means 'why'; asks a reason, not a count"
+      },
+      {
+        "form": "どうやって",
+        "gloss": "means 'by what means/how'; asks a method, not a count"
+      },
+      {
+        "form": "いくつか",
+        "gloss": "means 'a few/several'; an indefinite, not a question word"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:どう",
+    "level": "N5",
+    "title": "どう",
+    "meaning": "how",
+    "explanation": "どう asks about the manner, method, or state of something. It is often used in どうですか ('how is it?') and どうやって ('by what means'), and is an adverb-type question word.",
+    "formation": "どう + verb / どう + ですか / どうやって + verb",
+    "whyRight": "どう asks how something is done or how something is; the distractors ask about identity, time, place, or quantity rather than manner or state.",
+    "examples": [
+      {
+        "sentence": "日本[にほん]の 生活[せいかつ]は ___ ですか。",
+        "answer": "どう",
+        "translation": "How is life in Japan?"
+      },
+      {
+        "sentence": "この 漢字[かんじ]は ___ 読[よ]みますか。",
+        "answer": "どう",
+        "translation": "How do you read this kanji?"
+      },
+      {
+        "context": "のどが かわきましたね。何[なに]か 飲[の]み物[もの]は いかがですか。",
+        "contextTranslation": "You're thirsty, aren't you? How about something to drink?",
+        "sentence": "コーヒーは ___ ですか。",
+        "answer": "どう",
+        "translation": "How about some coffee?"
+      },
+      {
+        "context": "駅[えき]は 遠[とお]いです。行[い]き方[かた]を 教[おし]えてください。",
+        "contextTranslation": "The station is far. Please tell me how to get there.",
+        "sentence": "駅[えき]まで ___ 行[い]きますか。",
+        "answer": "どう",
+        "translation": "How do you get to the station?"
+      },
+      {
+        "context": "月曜日[げつようび]に なりました。楽[たの]しい 二[ふつ]か日[か]でしたか。",
+        "contextTranslation": "It's Monday now. Did you have a fun two days?",
+        "sentence": "週末[しゅうまつ]は ___ でしたか。",
+        "answer": "どう",
+        "translation": "How was your weekend?"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "なに",
+        "gloss": "means 'what'; asks about a thing, not manner"
+      },
+      {
+        "form": "だれ",
+        "gloss": "means 'who'; asks about a person, not manner"
+      },
+      {
+        "form": "いつ",
+        "gloss": "means 'when'; asks about time, not manner"
+      },
+      {
+        "form": "どこ",
+        "gloss": "means 'where'; asks about place, not manner"
+      },
+      {
+        "form": "いくら",
+        "gloss": "means 'how much'; asks about price, not manner"
+      },
+      {
+        "form": "いくつ",
+        "gloss": "means 'how many'; asks about count, not manner"
+      },
+      {
+        "form": "なぜ",
+        "gloss": "means 'why'; asks a reason, not how/manner"
+      },
+      {
+        "form": "どれ",
+        "gloss": "means 'which one'; selects an item, not a manner"
+      },
+      {
+        "form": "どんな",
+        "gloss": "means 'what kind of'; must modify a noun, cannot stand alone as 'how'"
+      },
+      {
+        "form": "どちら",
+        "gloss": "means 'which/where'; chooses between options, not manner"
+      },
+      {
+        "form": "どうか",
+        "gloss": "means 'please/whether'; cannot stand as the predicate 'how' in どうですか/どう読みますか"
+      },
+      {
+        "form": "どうして",
+        "gloss": "means 'why'; asks a reason, not the manner/state of something"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:どんな",
+    "level": "N5",
+    "title": "どんな",
+    "meaning": "what kind of",
+    "explanation": "どんな asks about the type, nature, or characteristics of something. It is a pre-noun adjectival (連体詞) and must be followed directly by a noun, never used on its own.",
+    "formation": "どんな + noun + (particle) + rest of question",
+    "whyRight": "どんな attaches directly to a noun to ask what kind of thing it is; the distractors either cannot modify a noun this way or ask about identity, time, manner, or amount.",
+    "examples": [
+      {
+        "sentence": "___ 音楽[おんがく]が 好[す]きですか。",
+        "answer": "どんな",
+        "translation": "What kind of music do you like?"
+      },
+      {
+        "sentence": "あの 人[ひと]は ___ 人[ひと]ですか。",
+        "answer": "どんな",
+        "translation": "What kind of person is that?"
+      },
+      {
+        "sentence": "___ 映画[えいが]を 見[み]ましたか。",
+        "answer": "どんな",
+        "translation": "What kind of movie did you watch?"
+      },
+      {
+        "sentence": "___ 仕事[しごと]を したいですか。",
+        "answer": "どんな",
+        "translation": "What kind of work do you want to do?"
+      },
+      {
+        "sentence": "京都[きょうと]は ___ 町[まち]ですか。",
+        "answer": "どんな",
+        "translation": "What kind of town is Kyoto?"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "どう",
+        "gloss": "means 'how'; an adverb, cannot directly modify the following noun"
+      },
+      {
+        "form": "なに",
+        "gloss": "means 'what'; asks an identity, not the type, and needs の to modify a noun"
+      },
+      {
+        "form": "だれ",
+        "gloss": "means 'who'; asks about a person's identity, not a kind"
+      },
+      {
+        "form": "いつ",
+        "gloss": "means 'when'; asks about time, not a kind"
+      },
+      {
+        "form": "どこ",
+        "gloss": "means 'where'; asks about place, not a kind"
+      },
+      {
+        "form": "どれ",
+        "gloss": "means 'which one'; selects from a set, does not describe a type"
+      },
+      {
+        "form": "どんなに",
+        "gloss": "means 'however much'; an adverb, cannot directly modify the following noun"
+      },
+      {
+        "form": "いくら",
+        "gloss": "means 'how much'; asks price, not a kind"
+      },
+      {
+        "form": "いくつ",
+        "gloss": "means 'how many'; asks a count, not a kind"
+      },
+      {
+        "form": "なぜ",
+        "gloss": "means 'why'; asks a reason, not a kind"
+      },
+      {
+        "form": "どのくらい",
+        "gloss": "means 'how much/how long'; an adverbial amount question, cannot directly modify the following noun"
+      },
+      {
+        "form": "どちら",
+        "gloss": "means 'which (of two)'; chooses an option, not the type of a noun"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:から (from)",
+    "level": "N5",
+    "title": "～から (from)",
+    "meaning": "from (a starting point in time or place)",
+    "explanation": "から marks the starting point of an action or range, indicating where or when something begins. It can be used for both time and place.",
+    "formation": "Noun (time/place) + から",
+    "whyRight": "から marks the origin or starting point; it answers 'from when' or 'from where' an action begins.",
+    "examples": [
+      {
+        "context": "授業[じゅぎょう]は 九時[くじ]に 始[はじ]まって、十時[じゅうじ]に 終[お]わります。",
+        "contextTranslation": "Class starts at nine o'clock and ends at ten o'clock.",
+        "sentence": "授業[じゅぎょう]は九時[くじ]___始[はじ]まります。",
+        "answer": "から",
+        "translation": "Class starts from nine o'clock."
+      },
+      {
+        "context": "私[わたし]は 東京[とうきょう]で 生[う]まれました。国[くに]を 出[で]て この 町[まち]に 来[き]ました。",
+        "contextTranslation": "I was born in Tokyo. I left my country and came to this town.",
+        "sentence": "日本[にほん]___来[き]ました。",
+        "answer": "から",
+        "translation": "I came from Japan."
+      },
+      {
+        "context": "銀行[ぎんこう]は 朝[あさ]九時[くじ]に 開[あ]いて、午後[ごご]三時[さんじ]に 閉[し]まります。",
+        "contextTranslation": "The bank opens at nine in the morning and closes at three in the afternoon.",
+        "sentence": "銀行[ぎんこう]は午前[ごぜん]九時[くじ]___開[あ]きます。",
+        "answer": "から",
+        "translation": "The bank opens from nine in the morning."
+      },
+      {
+        "context": "郵便受[ゆうびんう]けに 手紙[てがみ]が 入[はい]っていました。送[おく]ったのは 友達[ともだち]です。",
+        "contextTranslation": "There was a letter in the mailbox. The one who sent it is my friend.",
+        "sentence": "この手紙[てがみ]は友達[ともだち]___来[き]ました。",
+        "answer": "から",
+        "translation": "This letter came from my friend."
+      },
+      {
+        "context": "夏休[なつやす]みは 来週[らいしゅう] 始[はじ]まって、九月[くがつ]まで 続[つづ]きます。",
+        "contextTranslation": "Summer vacation starts next week and continues until September.",
+        "sentence": "夏休[なつやす]みは来週[らいしゅう]___です。",
+        "answer": "から",
+        "translation": "Summer vacation is from next week."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "まで",
+        "gloss": "means 'until/to' (an end point), but here a starting point is needed"
+      },
+      {
+        "form": "に",
+        "gloss": "marks a specific point in time, not a 'from' starting range"
+      },
+      {
+        "form": "で",
+        "gloss": "marks place of action or means, not an origin point"
+      },
+      {
+        "form": "へ",
+        "gloss": "indicates direction toward, not from a source"
+      },
+      {
+        "form": "を",
+        "gloss": "marks a direct object, not a starting point"
+      },
+      {
+        "form": "と",
+        "gloss": "means 'and/with', not a starting point"
+      },
+      {
+        "form": "より",
+        "gloss": "more formal 'from/than'; unnatural in everyday time/place start here"
+      },
+      {
+        "form": "が",
+        "gloss": "marks the subject, not a starting point"
+      },
+      {
+        "form": "は",
+        "gloss": "topic marker, does not express 'from'"
+      },
+      {
+        "form": "も",
+        "gloss": "means 'also/too', not a starting point"
+      },
+      {
+        "form": "ね",
+        "gloss": "sentence-ending particle, not a starting point marker"
+      },
+      {
+        "form": "の",
+        "gloss": "possessive/linking particle, cannot mark an origin point"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:まで (until/to)",
+    "level": "N5",
+    "title": "～まで (until/to)",
+    "meaning": "until / up to / as far as (an end point)",
+    "explanation": "まで marks the end point or limit of an action or range in time or place. It indicates where or when something stops or reaches its limit.",
+    "formation": "Noun (time/place) + まで",
+    "whyRight": "まで marks the ending point or limit; it answers 'until when' or 'how far' an action continues.",
+    "examples": [
+      {
+        "context": "仕事[しごと]は 朝[あさ]九時[くじ]に 始[はじ]まります。夕方[ゆうがた]に 終[お]わります。",
+        "contextTranslation": "Work starts at nine in the morning. It ends in the evening.",
+        "sentence": "仕事[しごと]は五時[ごじ]___です。",
+        "answer": "まで",
+        "translation": "Work is until five o'clock."
+      },
+      {
+        "context": "家[いえ]を 出[で]ました。バスに 乗[の]らないで、駅[えき]に 着[つ]く 前[まえ]は ずっと 歩[ある]きます。",
+        "contextTranslation": "I left home. I won't take the bus; I'll walk the whole way until I reach the station.",
+        "sentence": "駅[えき]___歩[ある]きます。",
+        "answer": "まで",
+        "translation": "I will walk to the station."
+      },
+      {
+        "context": "昨日[きのう]は 夜[よる] おそくまで 起[お]きていました。試験[しけん]の 勉強[べんきょう]を していました。",
+        "contextTranslation": "Yesterday I stayed up until late at night. I was studying for the exam.",
+        "sentence": "昨日[きのう]は十二時[じゅうにじ]___勉強[べんきょう]しました。",
+        "answer": "まで",
+        "translation": "Yesterday I studied until twelve o'clock."
+      },
+      {
+        "context": "この電車[でんしゃ]は 大阪[おおさか]を 出[で]て、東京[とうきょう]が 終[お]わりの 駅[えき]です。",
+        "contextTranslation": "This train departs from Osaka, and Tokyo is the final station.",
+        "sentence": "この電車[でんしゃ]は東京[とうきょう]___行[い]きます。",
+        "answer": "まで",
+        "translation": "This train goes as far as Tokyo."
+      },
+      {
+        "context": "今日[きょう]は 木曜日[もくようび]です。あさって 会[あ]いましょう。それまで 少[すこ]し 時間[じかん]が かかります。",
+        "contextTranslation": "Today is Thursday. Let's meet the day after tomorrow. It will take a little time until then.",
+        "sentence": "金曜日[きんようび]___待[ま]ってください。",
+        "answer": "まで",
+        "translation": "Please wait until Friday."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "から",
+        "gloss": "means 'from' (a starting point), but here an end point is needed"
+      },
+      {
+        "form": "に",
+        "gloss": "marks a single point in time, not a limit/end of a range"
+      },
+      {
+        "form": "で",
+        "gloss": "marks place of action or means, not an end point"
+      },
+      {
+        "form": "へ",
+        "gloss": "shows direction toward, but lacks the 'as far as/limit' nuance of まで"
+      },
+      {
+        "form": "を",
+        "gloss": "marks a direct object, not an end point"
+      },
+      {
+        "form": "までに",
+        "gloss": "means 'by (a deadline)', not 'until/up to' a continuous limit"
+      },
+      {
+        "form": "より",
+        "gloss": "means 'than/from', not an end point"
+      },
+      {
+        "form": "と",
+        "gloss": "means 'and/with', not an end point"
+      },
+      {
+        "form": "は",
+        "gloss": "topic marker, does not express 'until'"
+      },
+      {
+        "form": "も",
+        "gloss": "means 'also/too', not an end point"
+      },
+      {
+        "form": "の",
+        "gloss": "possessive/linking particle, cannot mark a limit"
+      },
+      {
+        "form": "ながら",
+        "gloss": "means 'while doing', attaches to verb stems, not a noun end point"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:からまで",
+    "level": "N5",
+    "title": "～から～まで",
+    "meaning": "from ... to/until ... (a complete range)",
+    "explanation": "から and まで are used together to express a full range with both a starting point and an ending point, in time or place. から marks the start and まで marks the end.",
+    "formation": "Noun + から + Noun + まで",
+    "whyRight": "In a 'from A to B' range, から is paired with まで to close the span; the blank needs まで to mark the end after から marks the start.",
+    "examples": [
+      {
+        "sentence": "九時[くじ]から五時[ごじ]___働[はたら]きます。",
+        "answer": "まで",
+        "translation": "I work from nine to five."
+      },
+      {
+        "sentence": "月曜日[げつようび]___金曜日[きんようび]まで学校[がっこう]があります。",
+        "answer": "から",
+        "translation": "There is school from Monday to Friday."
+      },
+      {
+        "sentence": "家[いえ]から駅[えき]___十分[じゅっぷん]かかります。",
+        "answer": "まで",
+        "translation": "It takes ten minutes from home to the station."
+      },
+      {
+        "sentence": "夏[なつ]から冬[ふゆ]___ここに住[す]みました。",
+        "answer": "まで",
+        "translation": "I lived here from summer until winter."
+      },
+      {
+        "sentence": "東京[とうきょう]___大阪[おおさか]まで新幹線[しんかんせん]で行[い]きます。",
+        "answer": "から",
+        "translation": "I go from Tokyo to Osaka by bullet train."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "に",
+        "gloss": "marks a single point, but a range needs paired から～まで"
+      },
+      {
+        "form": "で",
+        "gloss": "marks place/means of action, not a range end or start"
+      },
+      {
+        "form": "へ",
+        "gloss": "shows direction toward, not the end point of a から range"
+      },
+      {
+        "form": "を",
+        "gloss": "marks a direct object, not part of a range"
+      },
+      {
+        "form": "より",
+        "gloss": "means 'than/from'; does not pair with から to close a range"
+      },
+      {
+        "form": "と",
+        "gloss": "means 'and/with', not a range marker"
+      },
+      {
+        "form": "は",
+        "gloss": "topic marker, does not form a range"
+      },
+      {
+        "form": "も",
+        "gloss": "means 'also/too', not a range marker"
+      },
+      {
+        "form": "までに",
+        "gloss": "means 'by (a deadline)', not the continuous 'to' of a range"
+      },
+      {
+        "form": "ので",
+        "gloss": "means 'because', a reason connector, not a range marker"
+      },
+      {
+        "form": "の",
+        "gloss": "possessive/linking particle, cannot mark a range boundary"
+      },
+      {
+        "form": "ば",
+        "gloss": "conditional 'if', not a range marker"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:が あります",
+    "level": "N5",
+    "title": "～が あります",
+    "meaning": "there is / to have (inanimate things)",
+    "explanation": "あります expresses the existence or possession of inanimate things such as objects, plants, or events. The thing that exists is marked with が.",
+    "formation": "Noun (inanimate) + が + あります",
+    "whyRight": "あります is used for inanimate (non-living, non-moving) things; the subject of existence is marked with が.",
+    "examples": [
+      {
+        "sentence": "机[つくえ]の上[うえ]に本[ほん]が___。",
+        "answer": "あります",
+        "translation": "There is a book on the desk."
+      },
+      {
+        "sentence": "明日[あした]試験[しけん]が___。",
+        "answer": "あります",
+        "translation": "There is an exam tomorrow."
+      },
+      {
+        "sentence": "駅[えき]の前[まえ]に銀行[ぎんこう]が___。",
+        "answer": "あります",
+        "translation": "There is a bank in front of the station."
+      },
+      {
+        "sentence": "時間[じかん]が___か。",
+        "answer": "あります",
+        "translation": "Do you have time?"
+      },
+      {
+        "sentence": "部屋[へや]にテレビが___。",
+        "answer": "あります",
+        "translation": "There is a television in the room."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "います",
+        "gloss": "used for living/animate things (people, animals), not inanimate objects"
+      },
+      {
+        "form": "あって",
+        "gloss": "te-form of ある; cannot end this sentence on its own"
+      },
+      {
+        "form": "わかります",
+        "gloss": "means 'to understand', not 'to exist'; wrong meaning here"
+      },
+      {
+        "form": "みます",
+        "gloss": "means 'to look at', not existence; wrong meaning here"
+      },
+      {
+        "form": "いました",
+        "gloss": "past form of います for living things; wrong category for these inanimate subjects"
+      },
+      {
+        "form": "いきます",
+        "gloss": "means 'to go', not 'to exist'; wrong meaning here"
+      },
+      {
+        "form": "あるです",
+        "gloss": "ungrammatical; ある does not take です directly"
+      },
+      {
+        "form": "なります",
+        "gloss": "means 'to become', not 'to exist'"
+      },
+      {
+        "form": "します",
+        "gloss": "means 'to do', not existence"
+      },
+      {
+        "form": "いません",
+        "gloss": "negative of います for living things; wrong category for inanimate subjects"
+      },
+      {
+        "form": "あれます",
+        "gloss": "not a valid conjugation of ある"
+      },
+      {
+        "form": "いる",
+        "gloss": "plain existence verb for living things; wrong category for inanimate subjects"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:が います",
+    "level": "N5",
+    "title": "～が います",
+    "meaning": "there is / to have (animate beings)",
+    "explanation": "います expresses the existence or presence of living, animate beings such as people and animals. The being that exists is marked with が.",
+    "formation": "Noun (animate) + が + います",
+    "whyRight": "います is used for living, animate beings (people, animals); the subject of existence is marked with が.",
+    "examples": [
+      {
+        "sentence": "公園[こうえん]に子供[こども]が___。",
+        "answer": "います",
+        "translation": "There are children in the park."
+      },
+      {
+        "sentence": "私[わたし]には兄[あに]が___。",
+        "answer": "います",
+        "translation": "I have an older brother."
+      },
+      {
+        "sentence": "庭[にわ]に猫[ねこ]が___。",
+        "answer": "います",
+        "translation": "There is a cat in the garden."
+      },
+      {
+        "sentence": "教室[きょうしつ]に先生[せんせい]が___か。",
+        "answer": "います",
+        "translation": "Is the teacher in the classroom?"
+      },
+      {
+        "sentence": "あそこに犬[いぬ]が___。",
+        "answer": "います",
+        "translation": "There is a dog over there."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "あります",
+        "gloss": "used for inanimate things, not living beings like people or animals"
+      },
+      {
+        "form": "いて",
+        "gloss": "te-form of いる; cannot end this sentence on its own"
+      },
+      {
+        "form": "わかります",
+        "gloss": "means 'to understand', not 'to exist'; wrong meaning here"
+      },
+      {
+        "form": "みます",
+        "gloss": "means 'to look at', not existence; wrong meaning here"
+      },
+      {
+        "form": "ありました",
+        "gloss": "past form of あります for inanimate things; wrong category for these animate subjects"
+      },
+      {
+        "form": "いきます",
+        "gloss": "means 'to go', not 'to exist'; wrong meaning here"
+      },
+      {
+        "form": "いるです",
+        "gloss": "ungrammatical; いる does not take です directly"
+      },
+      {
+        "form": "なります",
+        "gloss": "means 'to become', not 'to exist'"
+      },
+      {
+        "form": "します",
+        "gloss": "means 'to do', not existence"
+      },
+      {
+        "form": "ありません",
+        "gloss": "negative of あります for inanimate things; wrong category for these animate subjects"
+      },
+      {
+        "form": "いれます",
+        "gloss": "potential-like form, not the existence いる; does not fit here"
+      },
+      {
+        "form": "ある",
+        "gloss": "plain existence verb for inanimate things; wrong category for these animate subjects"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:に が あります／います",
+    "level": "N5",
+    "title": "～に ～が あります／います",
+    "meaning": "in/at (place), there is (thing/being)",
+    "explanation": "This pattern states where something exists. The place is marked with に, the thing or being with が, and the sentence ends with あります (inanimate) or います (animate). The focus is on what exists at that place.",
+    "formation": "Place + に + Noun + が + あります／います",
+    "whyRight": "In the 'place + に + thing + が + exists' pattern, the location takes に; the blank here is the location particle に.",
+    "examples": [
+      {
+        "sentence": "テーブルの上[うえ]___りんごがあります。",
+        "answer": "に",
+        "translation": "There is an apple on the table."
+      },
+      {
+        "sentence": "公園[こうえん]___犬[いぬ]がいます。",
+        "answer": "に",
+        "translation": "There is a dog in the park."
+      },
+      {
+        "sentence": "かばんの中[なか]に本[ほん]___あります。",
+        "answer": "が",
+        "translation": "There is a book in the bag."
+      },
+      {
+        "sentence": "教室[きょうしつ]に学生[がくせい]が___。",
+        "answer": "います",
+        "translation": "There are students in the classroom."
+      },
+      {
+        "sentence": "冷蔵庫[れいぞうこ]の中[なか]に牛乳[ぎゅうにゅう]が___。",
+        "answer": "あります",
+        "translation": "There is milk in the refrigerator."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "で",
+        "gloss": "marks place of an action, not a place of existence (which takes に)"
+      },
+      {
+        "form": "へ",
+        "gloss": "shows direction toward, not a location of existence"
+      },
+      {
+        "form": "を",
+        "gloss": "marks a direct object, not the existence subject or location"
+      },
+      {
+        "form": "から",
+        "gloss": "means 'from', not a location of existence"
+      },
+      {
+        "form": "まで",
+        "gloss": "means 'until/to', not a location of existence"
+      },
+      {
+        "form": "たべます",
+        "gloss": "means 'to eat'; a transitive action verb, not a location particle or existence verb"
+      },
+      {
+        "form": "いきます",
+        "gloss": "means 'to go'; a movement verb, not a location particle or existence verb"
+      },
+      {
+        "form": "と",
+        "gloss": "means 'and/with', not a location or existence marker"
+      },
+      {
+        "form": "の",
+        "gloss": "possessive/linking particle, not a location or subject marker"
+      },
+      {
+        "form": "します",
+        "gloss": "means 'to do', not 'to exist'; wrong meaning for the existence verb slot"
+      },
+      {
+        "form": "みます",
+        "gloss": "means 'to look at', not existence; wrong meaning for the verb slot"
+      },
+      {
+        "form": "より",
+        "gloss": "means 'than/from', not a location or existence marker"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:は に あります／います",
+    "level": "N5",
+    "title": "～は ～に あります／います",
+    "meaning": "(thing/being) is located in/at (place)",
+    "explanation": "This pattern states the location of a known thing or being. The topic (the thing or being) is marked with は, the place with に, and the sentence ends with あります or います. The focus is on where the known item is.",
+    "formation": "Noun + は + Place + に + あります／います",
+    "whyRight": "When the existing item is the known topic, it takes は and its location takes に; the blank here is the location particle に.",
+    "examples": [
+      {
+        "sentence": "猫[ねこ]はベッドの上[うえ]___います。",
+        "answer": "に",
+        "translation": "The cat is on the bed."
+      },
+      {
+        "sentence": "トイレはあそこ___あります。",
+        "answer": "に",
+        "translation": "The toilet is over there."
+      },
+      {
+        "sentence": "先生[せんせい]___教室[きょうしつ]にいます。",
+        "answer": "は",
+        "translation": "The teacher is in the classroom."
+      },
+      {
+        "sentence": "私[わたし]の本[ほん]は机[つくえ]の上[うえ]に___。",
+        "answer": "あります",
+        "translation": "My book is on the desk."
+      },
+      {
+        "sentence": "田中[たなか]さんは今[いま]事務所[じむしょ]に___。",
+        "answer": "います",
+        "translation": "Mr. Tanaka is in the office now."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "で",
+        "gloss": "marks place of an action, not a place of existence (which takes に)"
+      },
+      {
+        "form": "へ",
+        "gloss": "shows direction toward, not a location of existence"
+      },
+      {
+        "form": "を",
+        "gloss": "marks a direct object, not a location or topic marker"
+      },
+      {
+        "form": "から",
+        "gloss": "means 'from', not a location of existence"
+      },
+      {
+        "form": "まで",
+        "gloss": "means 'until/to', not a location of existence"
+      },
+      {
+        "form": "よみます",
+        "gloss": "means 'to read'; an action verb, not a location/topic particle or existence verb"
+      },
+      {
+        "form": "かいます",
+        "gloss": "means 'to buy'; an action verb, not a location/topic particle or existence verb"
+      },
+      {
+        "form": "と",
+        "gloss": "means 'and/with', not a location or topic marker"
+      },
+      {
+        "form": "の",
+        "gloss": "possessive/linking particle, not a location or topic marker"
+      },
+      {
+        "form": "します",
+        "gloss": "means 'to do', not 'to exist'; wrong meaning for the existence verb slot"
+      },
+      {
+        "form": "みます",
+        "gloss": "means 'to look at', not existence; wrong meaning for the verb slot"
+      },
+      {
+        "form": "より",
+        "gloss": "means 'than/from', not a location or topic marker"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:形容詞 (い-adjective) い",
+    "level": "N5",
+    "title": "形容詞 (い-adjective) ～い",
+    "meaning": "i-adjective ending in い (describes nouns and states)",
+    "explanation": "い-adjectives end in い and can directly describe a noun or end a sentence. In their dictionary (non-past, affirmative) form they keep the final い, as in 高[たか]い (expensive/tall) or 大[おお]きい (big).",
+    "formation": "Stem + い (e.g. 高[たか] + い → 高い)",
+    "whyRight": "An い-adjective in its plain non-past affirmative form keeps its final い; the blank needs the い ending to complete the adjective.",
+    "examples": [
+      {
+        "context": "この本[ほん]の値段[ねだん]を調[しら]べました。",
+        "contextTranslation": "I checked the price of this book.",
+        "sentence": "この本[ほん]は高[たか]___です。",
+        "answer": "い",
+        "translation": "This book is expensive."
+      },
+      {
+        "sentence": "富士山[ふじさん]はとても大[おお]き___です。",
+        "answer": "い",
+        "translation": "Mt. Fuji is very big."
+      },
+      {
+        "sentence": "今日[きょう]は天気[てんき]が___です。",
+        "answer": "いい",
+        "translation": "The weather is good today."
+      },
+      {
+        "sentence": "新[あたら]し___車[くるま]を買[か]いました。",
+        "answer": "い",
+        "translation": "I bought a new car."
+      },
+      {
+        "context": "この料理[りょうり]をもう一口[ひとくち]食[た]べてみました。",
+        "contextTranslation": "I tried another bite of this dish.",
+        "sentence": "この料理[りょうり]はおいし___です。",
+        "answer": "い",
+        "translation": "This dish is delicious."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "な",
+        "gloss": "the な-adjective connector; い-adjectives modify nouns with い, not な"
+      },
+      {
+        "form": "だ",
+        "gloss": "copula for nouns/な-adjectives; い-adjectives do not take だ in plain form"
+      },
+      {
+        "form": "くて",
+        "gloss": "te-form ending for joining clauses; ungrammatical directly before です here"
+      },
+      {
+        "form": "く",
+        "gloss": "adverbial form (e.g. 高く), not the plain adjective ending い"
+      },
+      {
+        "form": "さ",
+        "gloss": "nominalizing suffix (高さ = height); turns the adjective into a noun, wrong for this slot"
+      },
+      {
+        "form": "ければ",
+        "gloss": "conditional ending 'if...'; ungrammatical directly before です here"
+      },
+      {
+        "form": "の",
+        "gloss": "linking particle for nouns, not an い-adjective ending"
+      },
+      {
+        "form": "に",
+        "gloss": "particle/な-adjective adverbial marker, not an い-adjective ending"
+      },
+      {
+        "form": "がって",
+        "gloss": "te-form of the suffix -がる ('show signs of'); not the plain adjective ending and does not fit before です"
+      },
+      {
+        "form": "る",
+        "gloss": "a verb ending, not an い-adjective ending"
+      },
+      {
+        "form": "そう",
+        "gloss": "means 'looks/seems' based on appearance; changes the meaning to a guess, not a stated fact"
+      },
+      {
+        "form": "すぎる",
+        "gloss": "means 'too much'; verb-like suffix that does not take です directly here"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:形容詞 くない",
+    "level": "N5",
+    "title": "形容詞 ～くない",
+    "meaning": "negative form of i-adjectives (is not ...)",
+    "explanation": "To make an i-adjective negative, drop the final い and add くない. This expresses that something is not a certain quality.",
+    "formation": "i-adjective (drop い) + くない",
+    "whyRight": "The negative non-past of an i-adjective is formed by replacing い with くない, so 高い becomes 高くない.",
+    "examples": [
+      {
+        "context": "この本[ほん]は五百円[ごひゃくえん]です。",
+        "contextTranslation": "This book is 500 yen.",
+        "sentence": "この本[ほん]は高[たか]___です。",
+        "answer": "くない",
+        "translation": "This book is not expensive."
+      },
+      {
+        "context": "外[そと]はとても暖[あたた]かいです。",
+        "contextTranslation": "It's very warm outside.",
+        "sentence": "今日[きょう]は寒[さむ]___ですね。",
+        "answer": "くない",
+        "translation": "It's not cold today, is it?"
+      },
+      {
+        "context": "私[わたし]は辛[から]い物[もの]が食[た]べられません。",
+        "contextTranslation": "I can't eat spicy food.",
+        "sentence": "この料理[りょうり]は辛[から]___から、大丈夫[だいじょうぶ]です。",
+        "answer": "くない",
+        "translation": "This dish isn't spicy, so it's fine."
+      },
+      {
+        "context": "あの店[みせ]は五十年[ごじゅうねん]前[まえ]からあります。",
+        "contextTranslation": "That shop has been around for fifty years.",
+        "sentence": "あの店[みせ]は新[あたら]し___です。",
+        "answer": "くない",
+        "translation": "That shop is not new."
+      },
+      {
+        "context": "私[わたし]の部屋[へや]はとても小[ちい]さいです。",
+        "contextTranslation": "My room is very small.",
+        "sentence": "私[わたし]の部屋[へや]は広[ひろ]___です。",
+        "answer": "くない",
+        "translation": "My room is not spacious."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "い",
+        "gloss": "plain affirmative ending; means 'is', not the negative needed here"
+      },
+      {
+        "form": "じゃない",
+        "gloss": "negative for nouns/na-adjectives, wrong for i-adjectives"
+      },
+      {
+        "form": "ではない",
+        "gloss": "negative for nouns/na-adjectives, not used with i-adjective stems"
+      },
+      {
+        "form": "くなかった",
+        "gloss": "past negative ('was not'), wrong tense for present"
+      },
+      {
+        "form": "かった",
+        "gloss": "past affirmative ('was'), wrong tense and not negative"
+      },
+      {
+        "form": "くて",
+        "gloss": "te-form for linking clauses, not a negative"
+      },
+      {
+        "form": "く",
+        "gloss": "adverbial form; incomplete, not a negative predicate"
+      },
+      {
+        "form": "ない",
+        "gloss": "attaches to verbs/nouns, not directly to i-adjective stem"
+      },
+      {
+        "form": "くないだ",
+        "gloss": "ungrammatical; だ is not used after くない"
+      },
+      {
+        "form": "いない",
+        "gloss": "not a valid i-adjective negative form"
+      },
+      {
+        "form": "くなくて",
+        "gloss": "negative te-form for linking, not a sentence-final negative"
+      },
+      {
+        "form": "じゃなかった",
+        "gloss": "past negative for nouns/na-adjectives, wrong category and tense"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:形容詞 かった",
+    "level": "N5",
+    "title": "形容詞 ～かった",
+    "meaning": "past affirmative form of i-adjectives (was ...)",
+    "explanation": "To express the past tense of an i-adjective, drop the final い and add かった. This says something was a certain quality.",
+    "formation": "i-adjective (drop い) + かった",
+    "whyRight": "The past affirmative of an i-adjective replaces い with かった, so 楽しい becomes 楽しかった.",
+    "examples": [
+      {
+        "context": "昨日[きのう]見[み]た映画[えいが]は最高[さいこう]でした。",
+        "contextTranslation": "The movie I watched yesterday was the best.",
+        "sentence": "昨日[きのう]の映画[えいが]はとても面白[おもしろ]___です。",
+        "answer": "かった",
+        "translation": "Yesterday's movie was very interesting."
+      },
+      {
+        "context": "今年[ことし]の夏[なつ]は毎日[まいにち]エアコンを使[つか]いました。",
+        "contextTranslation": "This summer I used the air conditioner every day.",
+        "sentence": "夏[なつ]はとても暑[あつ]___です。",
+        "answer": "かった",
+        "translation": "Summer was very hot."
+      },
+      {
+        "context": "先週[せんしゅう]京都[きょうと]へ旅行[りょこう]に行[い]って、また行[い]きたいと思[おも]いました。",
+        "contextTranslation": "Last week I went on a trip to Kyoto and thought I'd like to go again.",
+        "sentence": "旅行[りょこう]は楽[たの]し___です。",
+        "answer": "かった",
+        "translation": "The trip was fun."
+      },
+      {
+        "context": "昨日[きのう]数学[すうがく]のテストがありましたが、全然[ぜんぜん]答[こた]えられませんでした。",
+        "contextTranslation": "There was a math test yesterday, but I couldn't answer at all.",
+        "sentence": "テストは難[むずか]し___です。",
+        "answer": "かった",
+        "translation": "The test was difficult."
+      },
+      {
+        "context": "去年[きょねん]は雪[ゆき]がたくさん降[ふ]りました。",
+        "contextTranslation": "Last year it snowed a lot.",
+        "sentence": "去年[きょねん]の冬[ふゆ]は寒[さむ]___です。",
+        "answer": "かった",
+        "translation": "Last winter was cold."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "い",
+        "gloss": "present affirmative; wrong tense for a past statement"
+      },
+      {
+        "form": "くない",
+        "gloss": "present negative ('is not'), not past affirmative"
+      },
+      {
+        "form": "くなかった",
+        "gloss": "past negative ('was not'), opposite polarity"
+      },
+      {
+        "form": "でした",
+        "gloss": "past copula for nouns/na-adjectives, not used after i-adjective stem"
+      },
+      {
+        "form": "だった",
+        "gloss": "plain past copula for nouns/na-adjectives, wrong category"
+      },
+      {
+        "form": "かったです",
+        "gloss": "already includes です; would duplicate the です in the sentence"
+      },
+      {
+        "form": "くて",
+        "gloss": "te-form for linking, not a past tense"
+      },
+      {
+        "form": "かっただ",
+        "gloss": "ungrammatical; だ cannot follow かった"
+      },
+      {
+        "form": "いでした",
+        "gloss": "ungrammatical mixing of i-adjective and でした"
+      },
+      {
+        "form": "く",
+        "gloss": "adverbial form; not a past predicate"
+      },
+      {
+        "form": "かったじゃない",
+        "gloss": "ungrammatical combination; not a standard form"
+      },
+      {
+        "form": "だったです",
+        "gloss": "ungrammatical; だった already past, plus wrong category"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:形容詞 くなかった",
+    "level": "N5",
+    "title": "形容詞 ～くなかった",
+    "meaning": "past negative form of i-adjectives (was not ...)",
+    "explanation": "To make the past negative of an i-adjective, drop the final い and add くなかった. This says something was not a certain quality.",
+    "formation": "i-adjective (drop い) + くなかった",
+    "whyRight": "The past negative of an i-adjective takes the negative stem くな and adds かった, so 高い becomes 高くなかった.",
+    "examples": [
+      {
+        "context": "昨日[きのう]は上着[うわぎ]がいらないくらいの天気[てんき]でした。",
+        "contextTranslation": "Yesterday the weather was such that you didn't need a jacket.",
+        "sentence": "昨日[きのう]は寒[さむ]___です。",
+        "answer": "くなかった",
+        "translation": "It was not cold yesterday."
+      },
+      {
+        "context": "先週[せんしゅう]、その映画[えいが]を見[み]ました。",
+        "contextTranslation": "I watched that movie last week.",
+        "sentence": "その映画[えいが]はあまり面白[おもしろ]___です。",
+        "answer": "くなかった",
+        "translation": "That movie was not very interesting."
+      },
+      {
+        "context": "予約[よやく]したホテルは一泊[いっぱく]三千円[さんぜんえん]でした。",
+        "contextTranslation": "The hotel I booked was 3,000 yen a night.",
+        "sentence": "ホテルは高[たか]___から、よかったです。",
+        "answer": "くなかった",
+        "translation": "The hotel was not expensive, so it was good."
+      },
+      {
+        "context": "試験[しけん]の問題[もんだい]は簡単[かんたん]に解[と]けました。",
+        "contextTranslation": "I was able to solve the exam questions easily.",
+        "sentence": "試験[しけん]は思[おも]ったより難[むずか]し___です。",
+        "answer": "くなかった",
+        "translation": "The exam was not as hard as I thought."
+      },
+      {
+        "context": "旅行[りょこう]の間[あいだ]、ずっと晴[は]れていました。",
+        "contextTranslation": "It was sunny the whole time during the trip.",
+        "sentence": "天気[てんき]は悪[わる]___です。",
+        "answer": "くなかった",
+        "translation": "The weather was not bad."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "かった",
+        "gloss": "past affirmative ('was'), wrong polarity"
+      },
+      {
+        "form": "くない",
+        "gloss": "present negative ('is not'), wrong tense"
+      },
+      {
+        "form": "い",
+        "gloss": "present affirmative; wrong tense and polarity"
+      },
+      {
+        "form": "じゃなかった",
+        "gloss": "past negative for nouns/na-adjectives, wrong category"
+      },
+      {
+        "form": "ではなかった",
+        "gloss": "past negative for nouns/na-adjectives, not used with i-adjectives"
+      },
+      {
+        "form": "くなかっただ",
+        "gloss": "ungrammatical; だ cannot follow くなかった"
+      },
+      {
+        "form": "くなくて",
+        "gloss": "negative te-form for linking, not a past predicate"
+      },
+      {
+        "form": "くありません",
+        "gloss": "present polite negative; wrong tense (not past)"
+      },
+      {
+        "form": "なかった",
+        "gloss": "verb-style past negative; cannot attach directly to i-adjective stem"
+      },
+      {
+        "form": "くなかったです",
+        "gloss": "already includes です; would duplicate the です in the sentence"
+      },
+      {
+        "form": "くなる",
+        "gloss": "means 'to become', a change-of-state form, not a negative"
+      },
+      {
+        "form": "でした",
+        "gloss": "past copula for nouns/na-adjectives, wrong category and polarity"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:形容動詞 (な-adjective) な",
+    "level": "N5",
+    "title": "形容動詞 (な-adjective) ～な",
+    "meaning": "na-adjective attached to a noun (modifying form)",
+    "explanation": "When a na-adjective directly modifies a following noun, it takes な between the adjective and the noun. This is the attributive use of na-adjectives.",
+    "formation": "na-adjective + な + noun",
+    "whyRight": "Na-adjectives require な before a noun they modify, so 静か becomes 静かな when describing 部屋.",
+    "examples": [
+      {
+        "sentence": "ここは静[しず]か___町[まち]です。",
+        "answer": "な",
+        "translation": "This is a quiet town."
+      },
+      {
+        "sentence": "彼[かれ]は親切[しんせつ]___人[ひと]です。",
+        "answer": "な",
+        "translation": "He is a kind person."
+      },
+      {
+        "sentence": "これは便利[べんり]___道具[どうぐ]ですね。",
+        "answer": "な",
+        "translation": "This is a convenient tool, isn't it?"
+      },
+      {
+        "sentence": "有名[ゆうめい]___歌手[かしゅ]に会[あ]いました。",
+        "answer": "な",
+        "translation": "I met a famous singer."
+      },
+      {
+        "sentence": "彼女[かのじょ]は元気[げんき]___子[こ]です。",
+        "answer": "な",
+        "translation": "She is a cheerful child."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "の",
+        "gloss": "links nouns to nouns; na-adjectives use な, not の, before a noun"
+      },
+      {
+        "form": "だ",
+        "gloss": "sentence-final copula; cannot connect a na-adjective to a following noun"
+      },
+      {
+        "form": "です",
+        "gloss": "polite copula; used at sentence end, not between adjective and noun"
+      },
+      {
+        "form": "に",
+        "gloss": "adverbial particle for na-adjectives, not the attributive form"
+      },
+      {
+        "form": "で",
+        "gloss": "te-form/linking of na-adjectives; not used directly before a modified noun"
+      },
+      {
+        "form": "い",
+        "gloss": "i-adjective ending; na-adjectives do not take い"
+      },
+      {
+        "form": "な + だ",
+        "gloss": "ungrammatical; だ cannot follow the attributive な"
+      },
+      {
+        "form": "だった",
+        "gloss": "plain past copula; a predicate, not a noun-modifying form"
+      },
+      {
+        "form": "じゃない",
+        "gloss": "negative copula; not an attributive connector"
+      },
+      {
+        "form": "なの",
+        "gloss": "explanatory ending, not used to directly modify a noun in this slot"
+      },
+      {
+        "form": "と",
+        "gloss": "quotation/with particle; does not modify a noun like な does"
+      },
+      {
+        "form": "なな",
+        "gloss": "ungrammatical doubling of な"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:じゃない／ではない",
+    "level": "N5",
+    "title": "～じゃない／ではない",
+    "meaning": "negative copula for nouns and na-adjectives (is not ...)",
+    "explanation": "To make a noun or na-adjective negative, use じゃない (casual/spoken) or ではない (more formal/written). Both mean 'is not'.",
+    "formation": "noun / na-adjective + じゃない (or ではない)",
+    "whyRight": "Nouns and na-adjectives form their negative with じゃない/ではない, not with i-adjective negatives, so 学生 becomes 学生じゃない.",
+    "examples": [
+      {
+        "context": "私[わたし]は今[いま]会社[かいしゃ]で働[はたら]いています。",
+        "contextTranslation": "I currently work at a company.",
+        "sentence": "私[わたし]は学生[がくせい]___です。",
+        "answer": "じゃない",
+        "translation": "I am not a student."
+      },
+      {
+        "context": "今[いま]、外[そと]で工事[こうじ]をしています。",
+        "contextTranslation": "Construction is going on outside right now.",
+        "sentence": "この部屋[へや]は静[しず]か___です。",
+        "answer": "じゃない",
+        "translation": "This room is not quiet."
+      },
+      {
+        "context": "彼[かれ]は今[いま]、大学[だいがく]の学生[がくせい]です。",
+        "contextTranslation": "He is currently a university student.",
+        "sentence": "彼[かれ]は先生[せんせい]___と思[おも]います。",
+        "answer": "ではない",
+        "translation": "I think he is not a teacher."
+      },
+      {
+        "context": "ここは本[ほん]を売[う]っている店[みせ]です。",
+        "contextTranslation": "This is a shop that sells books.",
+        "sentence": "ここは図書館[としょかん]___です。",
+        "answer": "じゃない",
+        "translation": "This is not a library."
+      },
+      {
+        "context": "みんなこの料理[りょうり]を知[し]りません。",
+        "contextTranslation": "Nobody knows this dish.",
+        "sentence": "あの料理[りょうり]は有名[ゆうめい]___です。",
+        "answer": "じゃない",
+        "translation": "That dish is not famous."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "くない",
+        "gloss": "negative for i-adjectives, wrong for nouns/na-adjectives"
+      },
+      {
+        "form": "だ",
+        "gloss": "affirmative copula ('is'), opposite meaning"
+      },
+      {
+        "form": "です",
+        "gloss": "affirmative polite copula, not a negative"
+      },
+      {
+        "form": "じゃなかった",
+        "gloss": "past negative ('was not'), wrong tense for present"
+      },
+      {
+        "form": "ではなかった",
+        "gloss": "past negative ('was not'), wrong tense for present"
+      },
+      {
+        "form": "じゃないだ",
+        "gloss": "ungrammatical; だ cannot follow じゃない"
+      },
+      {
+        "form": "ない",
+        "gloss": "bare verb-style negative; cannot directly negate a noun this way"
+      },
+      {
+        "form": "くなかった",
+        "gloss": "past negative for i-adjectives, wrong category and tense"
+      },
+      {
+        "form": "な",
+        "gloss": "attributive connector for na-adjectives, not a negative"
+      },
+      {
+        "form": "じゃありません",
+        "gloss": "polite negative; would not fit before です in the sentence"
+      },
+      {
+        "form": "だった",
+        "gloss": "past affirmative copula, opposite polarity and wrong tense"
+      },
+      {
+        "form": "ではないだ",
+        "gloss": "ungrammatical; だ cannot follow ではない"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:でした",
+    "level": "N5",
+    "title": "～でした",
+    "meaning": "past affirmative polite copula for nouns and na-adjectives (was ...)",
+    "explanation": "To say a noun or na-adjective was true in the past politely, use でした. It is the past form of です.",
+    "formation": "noun / na-adjective + でした",
+    "whyRight": "The polite past affirmative of the copula for nouns and na-adjectives is でした, so 学生です becomes 学生でした.",
+    "examples": [
+      {
+        "context": "だから会社[かいしゃ]へ行[い]きませんでした。",
+        "contextTranslation": "So I didn't go to work.",
+        "sentence": "昨日[きのう]は休[やす]み___。",
+        "answer": "でした",
+        "translation": "Yesterday was a day off."
+      },
+      {
+        "context": "多[おお]くの人[ひと]が彼[かれ]の歌[うた]を知[し]っていました。",
+        "contextTranslation": "Many people knew his songs.",
+        "sentence": "あの人[ひと]は昔[むかし]有名[ゆうめい]な歌手[かしゅ]___。",
+        "answer": "でした",
+        "translation": "That person was a famous singer in the past."
+      },
+      {
+        "context": "人[ひと]も車[くるま]もほとんどいませんでした。",
+        "contextTranslation": "There were hardly any people or cars.",
+        "sentence": "その時[とき]、町[まち]はとても静[しず]か___。",
+        "answer": "でした",
+        "translation": "At that time, the town was very quiet."
+      },
+      {
+        "context": "今年[ことし]から彼[かれ]は会社[かいしゃ]で働[はたら]いています。",
+        "contextTranslation": "Starting this year, he works at a company.",
+        "sentence": "去年[きょねん]彼[かれ]は学生[がくせい]___。",
+        "answer": "でした",
+        "translation": "Last year he was a student."
+      },
+      {
+        "context": "今[いま]は弟[おとうと]がそれを持[も]っています。",
+        "contextTranslation": "Right now my younger brother has it.",
+        "sentence": "昔[むかし]、それは私[わたし]の本[ほん]___。",
+        "answer": "でした",
+        "translation": "Long ago, that was my book."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "です",
+        "gloss": "present affirmative copula; wrong tense for a past statement"
+      },
+      {
+        "form": "だ",
+        "gloss": "present plain copula ('is'); wrong tense for a past statement"
+      },
+      {
+        "form": "じゃなかった",
+        "gloss": "past negative ('was not'), opposite polarity"
+      },
+      {
+        "form": "ではありませんでした",
+        "gloss": "polite past negative, opposite polarity"
+      },
+      {
+        "form": "かった",
+        "gloss": "i-adjective past ending; cannot attach to a noun"
+      },
+      {
+        "form": "くなかった",
+        "gloss": "i-adjective past negative; wrong category and polarity"
+      },
+      {
+        "form": "でしただ",
+        "gloss": "ungrammatical; だ cannot follow でした"
+      },
+      {
+        "form": "でしょう",
+        "gloss": "conjecture ('probably'), not a past statement"
+      },
+      {
+        "form": "ました",
+        "gloss": "polite past for verbs; cannot attach to a noun"
+      },
+      {
+        "form": "だろう",
+        "gloss": "plain conjecture ('probably'); not a past affirmative statement"
+      },
+      {
+        "form": "じゃない",
+        "gloss": "present negative copula, wrong tense and polarity"
+      },
+      {
+        "form": "でした + だ",
+        "gloss": "ungrammatical addition of だ after でした"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:じゃなかった",
+    "level": "N5",
+    "title": "～じゃなかった",
+    "meaning": "past negative copula for nouns and na-adjectives (was not ...)",
+    "explanation": "To say a noun or na-adjective was not true in the past, use じゃなかった (casual) or ではなかった (more formal). It is the past form of じゃない.",
+    "formation": "noun / na-adjective + じゃなかった (or ではなかった)",
+    "whyRight": "The past negative of the copula for nouns and na-adjectives is じゃなかった, so 学生じゃない becomes 学生じゃなかった.",
+    "examples": [
+      {
+        "sentence": "昨日[きのう]は休[やす]み___です。",
+        "answer": "じゃなかった",
+        "translation": "Yesterday was not a day off."
+      },
+      {
+        "context": "昔[むかし]、その店[みせ]に行[い]きました。",
+        "contextTranslation": "A long time ago, I went to that shop.",
+        "sentence": "あの店[みせ]はあまり有名[ゆうめい]___です。",
+        "answer": "じゃなかった",
+        "translation": "That shop was not very famous."
+      },
+      {
+        "sentence": "彼[かれ]はその時[とき]先生[せんせい]___です。",
+        "answer": "じゃなかった",
+        "translation": "He was not a teacher at that time."
+      },
+      {
+        "context": "きのうホテルに泊[と]まりました。",
+        "contextTranslation": "I stayed at a hotel yesterday.",
+        "sentence": "部屋[へや]は静[しず]か___です。",
+        "answer": "じゃなかった",
+        "translation": "The room was not quiet."
+      },
+      {
+        "context": "きのう傘[かさ]をまちがえて持[も]って帰[かえ]りました。",
+        "contextTranslation": "Yesterday I took the wrong umbrella home by mistake.",
+        "sentence": "それは私[わたし]の傘[かさ]___です。",
+        "answer": "じゃなかった",
+        "translation": "That was not my umbrella."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "じゃない",
+        "gloss": "present negative ('is not'), wrong tense"
+      },
+      {
+        "form": "でした",
+        "gloss": "past affirmative ('was'), opposite polarity"
+      },
+      {
+        "form": "だった",
+        "gloss": "past affirmative plain copula, opposite polarity"
+      },
+      {
+        "form": "です",
+        "gloss": "present affirmative copula, wrong tense and polarity"
+      },
+      {
+        "form": "くなかった",
+        "gloss": "i-adjective past negative; wrong category for a noun"
+      },
+      {
+        "form": "かった",
+        "gloss": "i-adjective past affirmative; cannot attach to a noun"
+      },
+      {
+        "form": "じゃなかっただ",
+        "gloss": "ungrammatical; だ cannot follow じゃなかった"
+      },
+      {
+        "form": "なかった",
+        "gloss": "bare verb-style past negative; does not negate a noun this way"
+      },
+      {
+        "form": "じゃありませんでした",
+        "gloss": "polite past negative; would not fit before です in the sentence"
+      },
+      {
+        "form": "ではない",
+        "gloss": "present negative copula, wrong tense"
+      },
+      {
+        "form": "じゃなくて",
+        "gloss": "negative te-form for linking, not a sentence-final past predicate"
+      },
+      {
+        "form": "じゃなかったです",
+        "gloss": "already includes です; would duplicate the です in the sentence"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:動詞 ます形",
+    "level": "N5",
+    "title": "動詞 ます形",
+    "meaning": "polite non-past affirmative verb form (-masu form)",
+    "explanation": "The ます form is the polite present/future affirmative of a verb. It is made by attaching ます to the verb stem (the i-form for godan verbs, the stem for ichidan verbs).",
+    "formation": "Verb (stem / ます-stem) + ます",
+    "whyRight": "Polite non-past affirmative verbs end in ます attached to the verb stem, so 食べる becomes 食べます and 飲む becomes 飲みます.",
+    "examples": [
+      {
+        "context": "私[わたし]の朝[あさ]の習慣[しゅうかん]をお話[はな]しします。",
+        "contextTranslation": "Let me tell you about my morning routine.",
+        "sentence": "毎朝[まいあさ]コーヒーを飲[の]み___。",
+        "answer": "ます",
+        "translation": "I drink coffee every morning."
+      },
+      {
+        "context": "友達[ともだち]と会[あ]う約束[やくそく]をしました。",
+        "contextTranslation": "I made a promise to meet a friend.",
+        "sentence": "明日[あした]友達[ともだち]に会[あ]い___。",
+        "answer": "ます",
+        "translation": "I will meet a friend tomorrow."
+      },
+      {
+        "context": "私[わたし]は高校生[こうこうせい]です。",
+        "contextTranslation": "I am a high school student.",
+        "sentence": "私[わたし]は毎日[まいにち]学校[がっこう]へ行[い]き___。",
+        "answer": "ます",
+        "translation": "I go to school every day."
+      },
+      {
+        "context": "読書[どくしょ]が私[わたし]の趣味[しゅみ]です。",
+        "contextTranslation": "Reading is my hobby.",
+        "sentence": "夜[よる]に本[ほん]を読[よ]み___。",
+        "answer": "ます",
+        "translation": "I read a book at night."
+      },
+      {
+        "context": "私[わたし]は毎朝[まいあさ]早[はや]く起[お]きます。",
+        "contextTranslation": "I wake up early every morning.",
+        "sentence": "朝[あさ]ご飯[はん]を食[た]べ___。",
+        "answer": "ます",
+        "translation": "I eat breakfast."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ました",
+        "gloss": "polite past affirmative ('did'); wrong tense for present/future"
+      },
+      {
+        "form": "ません",
+        "gloss": "polite present negative ('do not'); opposite polarity"
+      },
+      {
+        "form": "ませんでした",
+        "gloss": "polite past negative; wrong tense and polarity"
+      },
+      {
+        "form": "ましょう",
+        "gloss": "volitional ('let's'); not a plain statement"
+      },
+      {
+        "form": "ます + だ",
+        "gloss": "ungrammatical; だ cannot follow ます"
+      },
+      {
+        "form": "る",
+        "gloss": "plain dictionary form ending; not polite, and wrong for godan stems"
+      },
+      {
+        "form": "ない",
+        "gloss": "plain present negative; opposite polarity and not polite"
+      },
+      {
+        "form": "て",
+        "gloss": "te-form for linking/requests, not a polite sentence-final form"
+      },
+      {
+        "form": "たい",
+        "gloss": "expresses desire ('want to'), changes the meaning"
+      },
+      {
+        "form": "ますです",
+        "gloss": "ungrammatical; です cannot follow ます"
+      },
+      {
+        "form": "た",
+        "gloss": "plain past ending; wrong tense and not polite"
+      },
+      {
+        "form": "ませ",
+        "gloss": "incomplete imperative-style fragment, not the full polite form"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:ません",
+    "level": "N5",
+    "title": "～ません",
+    "meaning": "do not / will not (polite negative, non-past)",
+    "explanation": "The polite negative form of a verb in the non-past tense, used to say that someone does not or will not do something. It is the negative counterpart of ～ます.",
+    "formation": "Verb (ます-stem) + ません",
+    "whyRight": "～ません is the correct polite non-past negative ending; it negates a present habit or future action without indicating past tense.",
+    "examples": [
+      {
+        "context": "私[わたし]はベジタリアンです。",
+        "contextTranslation": "I am a vegetarian.",
+        "sentence": "私[わたし]は肉[にく]を食[た]べ___。",
+        "answer": "ません",
+        "translation": "I do not eat meat."
+      },
+      {
+        "context": "今日[きょう]は日曜日[にちようび]です。",
+        "contextTranslation": "Today is Sunday.",
+        "sentence": "今日[きょう]は学校[がっこう]へ行[い]き___。",
+        "answer": "ません",
+        "translation": "I will not go to school today."
+      },
+      {
+        "context": "彼[かれ]は体[からだ]が弱[よわ]いです。",
+        "contextTranslation": "He has a weak constitution.",
+        "sentence": "彼[かれ]はお酒[さけ]を飲[の]み___。",
+        "answer": "ません",
+        "translation": "He does not drink alcohol."
+      },
+      {
+        "context": "明日[あした]は休[やす]みです。",
+        "contextTranslation": "Tomorrow is a day off.",
+        "sentence": "明日[あした]は働[はたら]き___。",
+        "answer": "ません",
+        "translation": "I will not work tomorrow."
+      },
+      {
+        "context": "妹[いもうと]は勉強[べんきょう]が好[す]きです。",
+        "contextTranslation": "My little sister likes studying.",
+        "sentence": "妹[いもうと]はテレビを見[み]___。",
+        "answer": "ません",
+        "translation": "My little sister does not watch TV."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ます",
+        "gloss": "polite affirmative; means 'do', not the required negative"
+      },
+      {
+        "form": "ましょう",
+        "gloss": "volitional 'let's do'; not a negative statement"
+      },
+      {
+        "form": "ませんか",
+        "gloss": "negative question/invitation; the sentence is a plain statement, not a question"
+      },
+      {
+        "form": "ました",
+        "gloss": "polite past affirmative 'did'; wrong tense and polarity"
+      },
+      {
+        "form": "たい",
+        "gloss": "expresses desire 'want to'; not a negation"
+      },
+      {
+        "form": "たがる",
+        "gloss": "expresses a third person's apparent desire 'shows signs of wanting'; not a negation of the action"
+      },
+      {
+        "form": "なかった",
+        "gloss": "plain past negative; expresses the past, but these sentences are non-past"
+      },
+      {
+        "form": "ましょうか",
+        "gloss": "offering/suggesting 'shall I'; not a negative statement"
+      },
+      {
+        "form": "たくない",
+        "gloss": "'don't want to'; expresses desire, not simple negation"
+      },
+      {
+        "form": "ませんでした",
+        "gloss": "polite past negative 'did not'; wrong tense for a present/future statement"
+      },
+      {
+        "form": "ています",
+        "gloss": "progressive 'is doing'; affirmative, not negative"
+      },
+      {
+        "form": "ません。",
+        "gloss": "includes punctuation in the token; the answer token itself should be ません"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:ました",
+    "level": "N5",
+    "title": "～ました",
+    "meaning": "did / completed (polite past affirmative)",
+    "explanation": "The polite past affirmative form of a verb, used to state that an action was completed or happened in the past. It is the past form of ～ます.",
+    "formation": "Verb (ます-stem) + ました",
+    "whyRight": "～ました correctly expresses a completed past action in polite speech, matching past-time expressions in the sentence.",
+    "examples": [
+      {
+        "context": "その映画[えいが]はとても面白[おもしろ]かったです。",
+        "contextTranslation": "That movie was very interesting.",
+        "sentence": "昨日[きのう]、映画[えいが]を見[み]___。",
+        "answer": "ました",
+        "translation": "I watched a movie yesterday."
+      },
+      {
+        "context": "今[いま]はお腹[なか]がいっぱいです。",
+        "contextTranslation": "I am full right now.",
+        "sentence": "今朝[けさ]、朝[あさ]ご飯[はん]を食[た]べ___。",
+        "answer": "ました",
+        "translation": "I ate breakfast this morning."
+      },
+      {
+        "context": "きれいなお寺[てら]をたくさん見[み]ました。",
+        "contextTranslation": "I saw many beautiful temples.",
+        "sentence": "先週[せんしゅう]、京都[きょうと]へ行[い]き___。",
+        "answer": "ました",
+        "translation": "I went to Kyoto last week."
+      },
+      {
+        "sentence": "もう宿題[しゅくだい]を終[お]わり___。",
+        "answer": "ました",
+        "translation": "I have already finished my homework."
+      },
+      {
+        "context": "その手紙[てがみ]をもうポストに入[い]れました。",
+        "contextTranslation": "I already put that letter in the mailbox.",
+        "sentence": "昨日[きのう]、友[とも]だちに手紙[てがみ]を書[か]き___。",
+        "answer": "ました",
+        "translation": "I wrote a letter to my friend yesterday."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ます",
+        "gloss": "polite non-past; cannot express the completed past action"
+      },
+      {
+        "form": "ませんでした",
+        "gloss": "polite past negative 'did not'; wrong polarity"
+      },
+      {
+        "form": "ましょう",
+        "gloss": "volitional 'let's'; not a past statement"
+      },
+      {
+        "form": "ながら",
+        "gloss": "'while doing' connective; joins to another clause and leaves the sentence unfinished, not a past statement"
+      },
+      {
+        "form": "ています",
+        "gloss": "progressive present; not a simple past action"
+      },
+      {
+        "form": "たい",
+        "gloss": "desire 'want to'; not a past action"
+      },
+      {
+        "form": "ましたか",
+        "gloss": "polite past question; the sentence is a statement, not a question"
+      },
+      {
+        "form": "ていました",
+        "gloss": "past progressive 'was doing'; overstates an ongoing action"
+      },
+      {
+        "form": "ましょうか",
+        "gloss": "offer 'shall I'; not a past statement"
+      },
+      {
+        "form": "ませんか",
+        "gloss": "negative invitation; wrong meaning and not past"
+      },
+      {
+        "form": "たくなかった",
+        "gloss": "'did not want to'; expresses desire, not the action itself"
+      },
+      {
+        "form": "なかった",
+        "gloss": "plain past negative; wrong polarity and register"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:ませんでした",
+    "level": "N5",
+    "title": "～ませんでした",
+    "meaning": "did not (polite past negative)",
+    "explanation": "The polite past negative form of a verb, used to say that an action did not happen or was not done in the past. It combines ～ません with でした.",
+    "formation": "Verb (ます-stem) + ませんでした",
+    "whyRight": "～ませんでした is the correct polite past negative, expressing that the action did not occur in the past.",
+    "examples": [
+      {
+        "sentence": "昨日[きのう]は何[なに]も食[た]べ___。",
+        "answer": "ませんでした",
+        "translation": "I did not eat anything yesterday."
+      },
+      {
+        "sentence": "雨[あめ]が降[ふ]っていたので、出[で]かけ___。",
+        "answer": "ませんでした",
+        "translation": "Because it was raining, I did not go out."
+      },
+      {
+        "context": "昨日[きのう]、大切[たいせつ]な会議[かいぎ]がありました。",
+        "contextTranslation": "There was an important meeting yesterday.",
+        "sentence": "彼[かれ]は会議[かいぎ]に来[き]___。",
+        "answer": "ませんでした",
+        "translation": "He did not come to the meeting."
+      },
+      {
+        "context": "先週[せんしゅう]、ずっと病気[びょうき]でした。",
+        "contextTranslation": "I was sick the whole of last week.",
+        "sentence": "先週[せんしゅう]は仕事[しごと]をし___。",
+        "answer": "ませんでした",
+        "translation": "I did not work last week."
+      },
+      {
+        "context": "となりの部屋[へや]がとてもうるさかったです。",
+        "contextTranslation": "The room next door was very noisy.",
+        "sentence": "昨夜[ゆうべ]はよく眠[ねむ]れ___。",
+        "answer": "ませんでした",
+        "translation": "I could not sleep well last night."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ました",
+        "gloss": "polite past affirmative 'did'; wrong polarity"
+      },
+      {
+        "form": "ません",
+        "gloss": "polite non-past negative; correct polarity but non-past, while these sentences are past"
+      },
+      {
+        "form": "ます",
+        "gloss": "polite non-past affirmative; wrong polarity and non-past, while these sentences are past"
+      },
+      {
+        "form": "ましょうか",
+        "gloss": "offer 'shall I/we?'; proposes an action rather than stating it did not happen"
+      },
+      {
+        "form": "ませんです",
+        "gloss": "ungrammatical; ません cannot be followed by です in this way"
+      },
+      {
+        "form": "ませんか",
+        "gloss": "negative invitation; not a past statement"
+      },
+      {
+        "form": "ましょう",
+        "gloss": "volitional 'let's'; not negative or past"
+      },
+      {
+        "form": "たくなかった",
+        "gloss": "'did not want to'; expresses desire, not the action"
+      },
+      {
+        "form": "ませんでしたか",
+        "gloss": "polite past negative question; the sentence is a statement"
+      },
+      {
+        "form": "ないでした",
+        "gloss": "ungrammatical form; ない does not combine with でした this way"
+      },
+      {
+        "form": "ませんでした。",
+        "gloss": "includes punctuation in the token; answer should be just ませんでした"
+      },
+      {
+        "form": "ていました",
+        "gloss": "past progressive affirmative; wrong polarity"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:ませんか",
+    "level": "N5",
+    "title": "～ませんか",
+    "meaning": "won't you...? / would you like to...? (polite invitation)",
+    "explanation": "A polite way to invite someone to do something or to make a suggestion, literally 'won't you do...?'. It softens the request by phrasing it as a negative question.",
+    "formation": "Verb (ます-stem) + ませんか",
+    "whyRight": "～ませんか correctly frames an invitation or suggestion as a polite negative question, inviting the listener to join in.",
+    "examples": [
+      {
+        "sentence": "一緒[いっしょ]に昼[ひる]ご飯[はん]を食[た]べ___。",
+        "answer": "ませんか",
+        "translation": "Won't you eat lunch together with me?"
+      },
+      {
+        "sentence": "今度[こんど]の週末[しゅうまつ]、映画[えいが]を見[み]に行[い]き___。",
+        "answer": "ませんか",
+        "translation": "Would you like to go see a movie this weekend?"
+      },
+      {
+        "sentence": "少[すこ]し休[やす]み___。",
+        "answer": "ませんか",
+        "translation": "Won't you take a little rest?"
+      },
+      {
+        "sentence": "お茶[ちゃ]を飲[の]み___。",
+        "answer": "ませんか",
+        "translation": "Would you like to have some tea?"
+      },
+      {
+        "sentence": "今晩[こんばん]、私[わたし]の家[いえ]に来[き]___。",
+        "answer": "ませんか",
+        "translation": "Won't you come to my house tonight?"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ますか",
+        "gloss": "neutral polite question 'do you...?'; asks a fact rather than inviting"
+      },
+      {
+        "form": "ないでください",
+        "gloss": "'please do not do'; a negative request, the opposite of inviting someone to join"
+      },
+      {
+        "form": "たがっています",
+        "gloss": "'shows signs of wanting to' (a third person's desire); not an invitation to the listener"
+      },
+      {
+        "form": "ません",
+        "gloss": "plain polite negative statement; lacks the question particle to invite"
+      },
+      {
+        "form": "ました",
+        "gloss": "polite past; wrong tense and not an invitation"
+      },
+      {
+        "form": "たいですか",
+        "gloss": "asks 'do you want to?'; can be blunt and is not the standard invitation form"
+      },
+      {
+        "form": "ませんでしたか",
+        "gloss": "polite past negative question; refers to the past, not an invitation"
+      },
+      {
+        "form": "ますか。",
+        "gloss": "neutral fact-question plus a stray period; asks whether you do something rather than inviting you to"
+      },
+      {
+        "form": "ましたか",
+        "gloss": "polite past question 'did you...?'; asks about a completed past act rather than inviting someone now"
+      },
+      {
+        "form": "たい",
+        "gloss": "expresses your own desire; does not invite the listener"
+      },
+      {
+        "form": "なさい",
+        "gloss": "gentle command form 'do it'; an order, not a polite invitation"
+      },
+      {
+        "form": "てください",
+        "gloss": "a request/command 'please do'; more forceful than an invitation"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:ましょう",
+    "level": "N5",
+    "title": "～ましょう",
+    "meaning": "let's... (polite volitional)",
+    "explanation": "The polite volitional form, used to suggest doing something together or to express the speaker's willingness, equivalent to 'let's...'. It is the polite form of the plain volitional.",
+    "formation": "Verb (ます-stem) + ましょう",
+    "whyRight": "～ましょう correctly expresses a polite suggestion or invitation to do something together, matching contexts where the speaker proposes a shared action.",
+    "examples": [
+      {
+        "context": "もう夜[よる]の十時[じゅうじ]ですね。",
+        "contextTranslation": "It's already ten o'clock at night.",
+        "sentence": "そろそろ帰[かえ]り___。",
+        "answer": "ましょう",
+        "translation": "Let's head home soon."
+      },
+      {
+        "context": "来週[らいしゅう]、二人[ふたり]で試験[しけん]を受[う]けます。",
+        "contextTranslation": "Next week the two of us will take an exam.",
+        "sentence": "一緒[いっしょ]に勉強[べんきょう]し___。",
+        "answer": "ましょう",
+        "translation": "Let's study together."
+      },
+      {
+        "context": "わあ、この景色[けしき]はとてもきれいですね。",
+        "contextTranslation": "Wow, this scenery is really beautiful.",
+        "sentence": "ここで写真[しゃしん]を撮[と]り___。",
+        "answer": "ましょう",
+        "translation": "Let's take a photo here."
+      },
+      {
+        "context": "では、また明日[あした]ですね。",
+        "contextTranslation": "Well then, see you again tomorrow.",
+        "sentence": "明日[あした]の朝[あさ]、駅[えき]で会[あ]い___。",
+        "answer": "ましょう",
+        "translation": "Let's meet at the station tomorrow morning."
+      },
+      {
+        "context": "みんなもう眠[ねむ]そうですね。",
+        "contextTranslation": "Everyone looks sleepy already.",
+        "sentence": "もう遅[おそ]いから寝[ね]___。",
+        "answer": "ましょう",
+        "translation": "It's late, so let's go to bed."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ます",
+        "gloss": "polite non-past statement; states an action rather than suggesting 'let's'"
+      },
+      {
+        "form": "ませんか",
+        "gloss": "invitation question 'won't you?'; softer and phrased as a question"
+      },
+      {
+        "form": "ましょうか",
+        "gloss": "'shall we/I?'; asks for agreement rather than directly proposing"
+      },
+      {
+        "form": "ました",
+        "gloss": "polite past 'did'; wrong tense and not a suggestion"
+      },
+      {
+        "form": "たい",
+        "gloss": "expresses personal desire; not a shared suggestion"
+      },
+      {
+        "form": "ません",
+        "gloss": "polite negative; opposite of the proposed action"
+      },
+      {
+        "form": "ながら",
+        "gloss": "'while doing' connective; links to another clause and leaves the sentence unfinished, not a suggestion"
+      },
+      {
+        "form": "ませんでした",
+        "gloss": "polite past negative; wrong tense and polarity"
+      },
+      {
+        "form": "てください",
+        "gloss": "request 'please do'; commands the listener rather than suggesting together"
+      },
+      {
+        "form": "たくない",
+        "gloss": "'don't want to'; expresses reluctance, not a suggestion"
+      },
+      {
+        "form": "ましょう。",
+        "gloss": "includes punctuation in the token; answer should be just ましょう"
+      },
+      {
+        "form": "ましたか",
+        "gloss": "polite past question; not a suggestion"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N5:ましょうか",
+    "level": "N5",
+    "title": "～ましょうか",
+    "meaning": "shall I / shall we...? (polite offer or suggestion)",
+    "explanation": "Used to offer to do something for someone or to suggest doing something together while seeking the listener's agreement, equivalent to 'shall I...?' or 'shall we...?'. It adds the question particle か to ～ましょう.",
+    "formation": "Verb (ます-stem) + ましょうか",
+    "whyRight": "～ましょうか correctly offers help or proposes an action while asking for the listener's confirmation, fitting contexts where the speaker checks willingness.",
+    "examples": [
+      {
+        "context": "荷物[にもつ]が重[おも]そうですね。",
+        "contextTranslation": "Your luggage looks heavy.",
+        "sentence": "荷物[にもつ]を持[も]ち___。",
+        "answer": "ましょうか",
+        "translation": "Shall I carry your luggage?"
+      },
+      {
+        "context": "この部屋[へや]は少[すこ]し暑[あつ]いですね。",
+        "contextTranslation": "This room is a little hot.",
+        "sentence": "窓[まど]を開[あ]け___。",
+        "answer": "ましょうか",
+        "translation": "Shall I open the window?"
+      },
+      {
+        "context": "みなさん、もう集[あつ]まりましたね。",
+        "contextTranslation": "Everyone has gathered now.",
+        "sentence": "そろそろ始[はじ]め___。",
+        "answer": "ましょうか",
+        "translation": "Shall we get started soon?"
+      },
+      {
+        "context": "駅[えき]まで歩[ある]くのは大変[たいへん]ですね。",
+        "contextTranslation": "Walking all the way to the station is tough.",
+        "sentence": "タクシーを呼[よ]び___。",
+        "answer": "ましょうか",
+        "translation": "Shall I call a taxi?"
+      },
+      {
+        "context": "もう寝[ね]る時間[じかん]ですね。",
+        "contextTranslation": "It's already time to sleep.",
+        "sentence": "電気[でんき]を消[け]し___。",
+        "answer": "ましょうか",
+        "translation": "Shall I turn off the light?"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ましょう",
+        "gloss": "'let's'; directly proposes without asking for agreement"
+      },
+      {
+        "form": "ませんか",
+        "gloss": "invitation 'won't you?'; invites the listener rather than offering to do it yourself"
+      },
+      {
+        "form": "ますか",
+        "gloss": "neutral question 'do you...?'; asks a fact, not an offer"
+      },
+      {
+        "form": "ます",
+        "gloss": "polite statement; not an offer or question"
+      },
+      {
+        "form": "ました",
+        "gloss": "polite past; wrong tense and not an offer"
+      },
+      {
+        "form": "たいですか",
+        "gloss": "'do you want to?'; asks the listener's desire, not offering help"
+      },
+      {
+        "form": "ません",
+        "gloss": "polite negative statement; not an offer"
+      },
+      {
+        "form": "てもいいですか",
+        "gloss": "'may I?'; asks permission rather than offering"
+      },
+      {
+        "form": "ましょうか。",
+        "gloss": "includes punctuation in the token; answer should be just ましょうか"
+      },
+      {
+        "form": "ましたか",
+        "gloss": "polite past question 'did you...?'; asks about a completed past act rather than offering to do something"
+      },
+      {
+        "form": "ませんでしたか",
+        "gloss": "polite past negative question; wrong tense, not an offer"
+      },
+      {
+        "form": "てください",
+        "gloss": "request 'please do'; commands rather than offering"
       }
     ]
   }

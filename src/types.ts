@@ -32,6 +32,8 @@ export interface GrammarExample {
   // the only correct choice (disambiguates otherwise-plausible distractors).
   // Furigana markup allowed; no blank.
   context?: string
+  // English translation of `context`, shown in the post-answer explanation.
+  contextTranslation?: string
   // The sentence is rendered with `___` standing in for `answer`.
   // Kanji carry inline furigana markup: 漢字[かんじ]. Furigana is stripped in the
   // quiz prompt and rendered as ruby in the post-answer explanation.

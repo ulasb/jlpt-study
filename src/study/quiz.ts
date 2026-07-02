@@ -171,9 +171,15 @@ export function buildGrammarQuestion(item: Grammar): Question {
   const options = shuffle([correct, ...wrong.map((d) => d.form)])
 
   const filled = example.sentence.replace('___', example.answer)
+  const contextBlocks: RevealBlock[] = example.context
+    ? [
+        { kind: 'sentence', text: example.context },
+        ...(example.contextTranslation ? [{ kind: 'trans', text: example.contextTranslation } as RevealBlock] : []),
+      ]
+    : []
   const reveal: RevealBlock[] = [
     { kind: 'trans', text: `${item.title} — ${item.meaning}` },
-    ...(example.context ? [{ kind: 'sentence', text: example.context } as RevealBlock] : []),
+    ...contextBlocks,
     { kind: 'sentence', text: filled },
     { kind: 'trans', text: example.translation },
     { kind: 'note', ok: true, form: correct, text: item.whyRight },

@@ -22179,7 +22179,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "夏休[なつやす]みの___、毎日[まいにち]泳[およ]ぎに行[い]った。",
         "answer": "あいだ",
         "translation": "During the summer vacation, I went swimming every day.",
-        "context": "私[わたし]は泳[およ]ぐのが大好[だいす]きで、一日[いちにち]も休[やす]まなかった。"
+        "context": "私[わたし]は泳[およ]ぐのが大好[だいす]きで、一日[いちにち]も休[やす]まなかった。",
+        "contextTranslation": "I love swimming, and I didn't take a single day off."
       },
       {
         "sentence": "電車[でんしゃ]に乗[の]っている___、ずっと音楽[おんがく]を聞[き]いていた。",
@@ -22190,13 +22191,15 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "赤[あか]ちゃんが寝[ね]ている___、静[しず]かにしていてください。",
         "answer": "あいだ",
         "translation": "While the baby is sleeping, please stay quiet.",
-        "context": "赤[あか]ちゃんは今[いま]から二時間[にじかん]ぐらい昼寝[ひるね]をします。"
+        "context": "赤[あか]ちゃんは今[いま]から二時間[にじかん]ぐらい昼寝[ひるね]をします。",
+        "contextTranslation": "The baby is going to nap for about two hours from now."
       },
       {
         "sentence": "若[わか]い___、いろいろなことに挑戦[ちょうせん]し続[つづ]けた。",
         "answer": "あいだ",
         "translation": "While I was young, I kept challenging myself with many things.",
-        "context": "二十代[にじゅうだい]の十年間[じゅうねんかん]は、本当[ほんとう]に元気[げんき]だった。"
+        "context": "二十代[にじゅうだい]の十年間[じゅうねんかん]は、本当[ほんとう]に元気[げんき]だった。",
+        "contextTranslation": "Throughout the ten years of my twenties, I was truly full of energy."
       }
     ],
     "distractorPool": [
@@ -22268,25 +22271,29 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "夏休[なつやす]みの___、北海道[ほっかいどう]へ旅行[りょこう]に行[い]った。",
         "answer": "あいだに",
         "translation": "During the summer vacation, I took a trip to Hokkaido.",
-        "context": "長[なが]い休[やす]みの中[なか]で、一度[いちど]だけ遠[とお]くへ出[で]かけた。"
+        "context": "長[なが]い休[やす]みの中[なか]で、一度[いちど]だけ遠[とお]くへ出[で]かけた。",
+        "contextTranslation": "During the long break, I went somewhere far away just once."
       },
       {
         "sentence": "先生[せんせい]が来[こ]ない___、宿題[しゅくだい]を終[お]わらせよう。",
         "answer": "あいだに",
         "translation": "Let's finish the homework while the teacher isn't here.",
-        "context": "今日[きょう]、先生[せんせい]は病気[びょうき]で一日中[いちにちじゅう]学校[がっこう]を休[やす]んでいる。"
+        "context": "今日[きょう]、先生[せんせい]は病気[びょうき]で一日中[いちにちじゅう]学校[がっこう]を休[やす]んでいる。",
+        "contextTranslation": "Today the teacher is out sick and away from school all day."
       },
       {
         "sentence": "赤[あか]ちゃんが寝[ね]ている___、家事[かじ]を済[す]ませた。",
         "answer": "あいだに",
         "translation": "While the baby was sleeping, I got the housework done.",
-        "context": "今朝[けさ]は赤[あか]ちゃんがぐっすり眠[ねむ]ってくれた。"
+        "context": "今朝[けさ]は赤[あか]ちゃんがぐっすり眠[ねむ]ってくれた。",
+        "contextTranslation": "This morning the baby slept soundly for me."
       },
       {
         "sentence": "授業[じゅぎょう]の___、彼[かれ]はこっそり手紙[てがみ]を書[か]いた。",
         "answer": "あいだに",
         "translation": "During class, he secretly wrote a letter.",
-        "context": "先生[せんせい]が黒板[こくばん]に字[じ]を書[か]いていた一瞬[いっしゅん]のことだった。"
+        "context": "先生[せんせい]が黒板[こくばん]に字[じ]を書[か]いていた一瞬[いっしゅん]のことだった。",
+        "contextTranslation": "It happened in the instant the teacher was writing on the blackboard."
       }
     ],
     "distractorPool": [
@@ -22444,7 +22451,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "学生[がくせい]である___、勉強[べんきょう]するのは当然[とうぜん]だ。",
         "answer": "以上",
         "translation": "Since you are a student, it's only natural to study.",
-        "context": "自分[じぶん]でこの学校[がっこう]に入[はい]ると決[き]めたのだ。"
+        "context": "自分[じぶん]でこの学校[がっこう]に入[はい]ると決[き]めたのだ。",
+        "contextTranslation": "You decided to enter this school yourself."
       },
       {
         "sentence": "引[ひ]き受[う]けた___は、最後[さいご]まで責任[せきにん]を持[も]つ。",
@@ -22455,7 +22463,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "日本[にほん]に住[す]む___、日本語[にほんご]を覚[おぼ]えたほうがいい。",
         "answer": "以上",
         "translation": "Since you live in Japan, you'd better learn Japanese.",
-        "context": "来月[らいげつ]から日本[にほん]で暮[く]らすことが正式[せいしき]に決[き]まった。"
+        "context": "来月[らいげつ]から日本[にほん]で暮[く]らすことが正式[せいしき]に決[き]まった。",
+        "contextTranslation": "It's now officially settled that I'll be living in Japan starting next month."
       },
       {
         "sentence": "試合[しあい]に出[で]る___は、勝[か]ちたいと思[おも]う。",
@@ -22527,31 +22536,36 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "兄[あに]は活発[かっぱつ]な___、弟[おとうと]はとても静[しず]かだ。",
         "answer": "一方で",
         "translation": "While the older brother is lively, the younger one is very quiet.",
-        "context": "うちには対照的[たいしょうてき]な性格[せいかく]の兄弟[きょうだい]がいる。"
+        "context": "うちには対照的[たいしょうてき]な性格[せいかく]の兄弟[きょうだい]がいる。",
+        "contextTranslation": "In my family there are two brothers with contrasting personalities."
       },
       {
         "sentence": "都市[とし]の人口[じんこう]が増[ふ]える___、農村[のうそん]の人口[じんこう]は減[へ]っている。",
         "answer": "一方で",
         "translation": "While the urban population grows, the rural population is shrinking.",
-        "context": "都市[とし]と農村[のうそん]では、まったく違[ちが]う人口[じんこう]の問題[もんだい]が起[お]きている。"
+        "context": "都市[とし]と農村[のうそん]では、まったく違[ちが]う人口[じんこう]の問題[もんだい]が起[お]きている。",
+        "contextTranslation": "Completely different population problems are occurring in the cities and in the countryside."
       },
       {
         "sentence": "彼[かれ]は仕事[しごと]に厳[きび]しい___、家[いえ]ではとても優[やさ]しい。",
         "answer": "一方で",
         "translation": "He is strict at work, while at home he is very kind.",
-        "context": "彼[かれ]には職場[しょくば]と家庭[かてい]で二[ふた]つの顔[かお]がある。"
+        "context": "彼[かれ]には職場[しょくば]と家庭[かてい]で二[ふた]つの顔[かお]がある。",
+        "contextTranslation": "He has two faces, one at work and one at home."
       },
       {
         "sentence": "この薬[くすり]はよく効[き]く___、副作用[ふくさよう]も強[つよ]い。",
         "answer": "一方で",
         "translation": "This medicine is effective, but on the other hand it has strong side effects.",
-        "context": "この薬[くすり]には、はっきりした長所[ちょうしょ]と短所[たんしょ]がある。"
+        "context": "この薬[くすり]には、はっきりした長所[ちょうしょ]と短所[たんしょ]がある。",
+        "contextTranslation": "This medicine has clear advantages and disadvantages."
       },
       {
         "sentence": "収入[しゅうにゅう]は増[ふ]えている___、支出[ししゅつ]も増[ふ]えている。",
         "answer": "一方で",
         "translation": "While income is rising, expenses are rising too.",
-        "context": "給料[きゅうりょう]は上[あ]がったのに、生活[せいかつ]は少[すこ]しも楽[らく]にならない。"
+        "context": "給料[きゅうりょう]は上[あ]がったのに、生活[せいかつ]は少[すこ]しも楽[らく]にならない。",
+        "contextTranslation": "Even though my salary went up, life hasn't gotten any easier at all."
       }
     ],
     "distractorPool": [
@@ -22618,13 +22632,15 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "温[あたた]かい___、どうぞ召[め]し上[あ]がってください。",
         "answer": "うちに",
         "translation": "Please eat it while it's still warm.",
-        "context": "この料理[りょうり]は冷[さ]めると味[あじ]が落[お]ちてしまいます。"
+        "context": "この料理[りょうり]は冷[さ]めると味[あじ]が落[お]ちてしまいます。",
+        "contextTranslation": "This dish loses its flavor once it gets cold."
       },
       {
         "sentence": "明[あか]るい___、家[いえ]に帰[かえ]りましょう。",
         "answer": "うちに",
         "translation": "Let's go home while it's still light out.",
-        "context": "もうすぐ日[ひ]が暮[く]れて、あたりが暗[くら]くなる。"
+        "context": "もうすぐ日[ひ]が暮[く]れて、あたりが暗[くら]くなる。",
+        "contextTranslation": "The sun will set soon and it'll get dark around us."
       },
       {
         "sentence": "忘[わす]れない___、メモしておこう。",
@@ -22635,13 +22651,15 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "若[わか]い___、いろいろな経験[けいけん]をしたほうがいい。",
         "answer": "うちに",
         "translation": "You should have many experiences while you're young.",
-        "context": "年[とし]を取[と]ると、新[あたら]しいことを始[はじ]めるのが難[むずか]しくなる。"
+        "context": "年[とし]を取[と]ると、新[あたら]しいことを始[はじ]めるのが難[むずか]しくなる。",
+        "contextTranslation": "As you get older, it becomes harder to start new things."
       },
       {
         "sentence": "雨[あめ]が降[ふ]らない___、洗濯物[せんたくもの]を取[と]り込[こ]もう。",
         "answer": "うちに",
         "translation": "Let's bring in the laundry before it rains.",
-        "context": "空[そら]がだんだん暗[くら]くなって、今[いま]にも降[ふ]り出[だ]しそうだ。"
+        "context": "空[そら]がだんだん暗[くら]くなって、今[いま]にも降[ふ]り出[だ]しそうだ。",
+        "contextTranslation": "The sky is gradually getting darker and it looks like it could start raining any moment."
       }
     ],
     "distractorPool": [
@@ -22708,13 +22726,15 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "この店[みせ]は安[やす]い___、料理[りょうり]もおいしい。",
         "answer": "うえに",
         "translation": "This restaurant is cheap, and on top of that the food is delicious.",
-        "context": "この店[みせ]には、いいところがたくさんある。"
+        "context": "この店[みせ]には、いいところがたくさんある。",
+        "contextTranslation": "This restaurant has a lot of good points."
       },
       {
         "sentence": "彼[かれ]は頭[あたま]がいい___、性格[せいかく]もいい。",
         "answer": "うえに",
         "translation": "He is smart, and on top of that has a good personality.",
-        "context": "彼[かれ]がみんなから好[す]かれる理由[りゆう]は、いくつもある。"
+        "context": "彼[かれ]がみんなから好[す]かれる理由[りゆう]は、いくつもある。",
+        "contextTranslation": "There are several reasons why everyone likes him."
       },
       {
         "sentence": "今日[きょう]は道[みち]が込[こ]んでいた___、雨[あめ]まで降[ふ]ってきた。",
@@ -22730,7 +22750,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "彼女[かのじょ]は仕事[しごと]ができる___、誰[だれ]にでも親切[しんせつ]だ。",
         "answer": "うえに",
         "translation": "She is good at her job, and on top of that is kind to everyone.",
-        "context": "彼女[かのじょ]が職場[しょくば]で人気[にんき]があるのには、わけがある。"
+        "context": "彼女[かのじょ]が職場[しょくば]で人気[にんき]があるのには、わけがある。",
+        "contextTranslation": "There's a reason she's popular at the workplace."
       }
     ],
     "distractorPool": [
@@ -22812,7 +22833,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "仕事[しごと]を進[すす]める___、最[もっと]も大切[たいせつ]なのは協力[きょうりょく]だ。",
         "answer": "うえで",
         "translation": "In carrying out the work, what matters most is cooperation.",
-        "context": "チームで作業[さぎょう]を進[すす]めていくとき、いろいろな要素[ようそ]が関係[かんけい]してくる。"
+        "context": "チームで作業[さぎょう]を進[すす]めていくとき、いろいろな要素[ようそ]が関係[かんけい]してくる。",
+        "contextTranslation": "When you advance the work as a team, various factors come into play."
       },
       {
         "sentence": "申込書[もうしこみしょ]に記入[きにゅう]した___、窓口[まどぐち]に出[だ]してください。",
@@ -23071,7 +23093,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "景気[けいき]が悪化[あっか]する___があると言[い]われている。",
         "answer": "おそれ",
         "translation": "It is said that there is a risk the economy will worsen.",
-        "context": "政府[せいふ]は来月[らいげつ]の経済[けいざい]について新[あたら]しい予測[よそく]を発表[はっぴょう]した。"
+        "context": "政府[せいふ]は来月[らいげつ]の経済[けいざい]について新[あたら]しい予測[よそく]を発表[はっぴょう]した。",
+        "contextTranslation": "The government announced a new forecast for next month's economy."
       },
       {
         "sentence": "津波[つなみ]が来[く]る___があるので、避難[ひなん]してください。",
@@ -23143,7 +23166,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "このケーキは弟[おとうと]が食[た]べ___だ。",
         "answer": "かけ",
         "translation": "This cake is half-eaten by my little brother.",
-        "context": "弟[おとうと]はおやつの途中[とちゅう]でどこかへ行[い]ってしまった。"
+        "context": "弟[おとうと]はおやつの途中[とちゅう]でどこかへ行[い]ってしまった。",
+        "contextTranslation": "My little brother wandered off somewhere in the middle of his snack."
       },
       {
         "sentence": "机[つくえ]の上[うえ]の手紙[てがみ]は書[か]き___だ。",
@@ -23562,5592 +23586,6 @@ export const N3_GRAMMAR: Grammar[] = [
     ]
   },
   {
-    "id": "grammar:N3:っけ",
-    "level": "N3",
-    "title": "～っけ",
-    "meaning": "what was it again? / I'm trying to recall (confirming uncertain memory)",
-    "explanation": "～っけ is a sentence-final particle used in casual speech when the speaker is trying to recall or confirm something they have forgotten or are unsure about, often asking oneself or the listener.",
-    "formation": "Plain form (verb/adj) + っけ / Noun・な-adj + だ(った) + っけ",
-    "whyRight": "～っけ is the casual ending used to confirm or retrieve half-forgotten information, matching the 'what was it again?' tone of the example.",
-    "examples": [
-      {
-        "sentence": "あれ、会議[かいぎ]は何時[なんじ]からだ___。",
-        "answer": "っけ",
-        "translation": "Huh, what time was the meeting again?"
-      },
-      {
-        "sentence": "君[きみ]の誕生日[たんじょうび]は明日[あした]だった___。",
-        "answer": "っけ",
-        "translation": "Your birthday was tomorrow, right? (I forget)",
-        "context": "あれ、日付[ひづけ]を間違[まちが]えたかもしれない。"
-      },
-      {
-        "sentence": "この映画[えいが]、前[まえ]に見[み]た___。",
-        "answer": "っけ",
-        "translation": "Did I watch this movie before? (trying to recall)",
-        "context": "うーん、なんだか見覚[みおぼ]えがあるような気[き]がする。"
-      },
-      {
-        "sentence": "彼[かれ]の名前[なまえ]、何[なん]て言[い]った___。",
-        "answer": "っけ",
-        "translation": "What was his name again?"
-      },
-      {
-        "sentence": "鍵[かぎ]はどこに置[お]いた___。",
-        "answer": "っけ",
-        "translation": "Where did I put the keys again?"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "まい",
-        "gloss": "negative conjecture 'surely won't'; attaches to dictionary form (行くまい), so 見たまい / だったまい is ungrammatical in these past/だ slots"
-      },
-      {
-        "form": "ません",
-        "gloss": "polite negative verb ending; cannot attach to plain だ or plain past (見たません・だません are ungrammatical) in these casual slots"
-      },
-      {
-        "form": "でしょう",
-        "gloss": "'probably/right?'; cannot follow だ (会議は何時からだでしょう is ungrammatical) and is conjecture, not a memory check"
-      },
-      {
-        "form": "ください",
-        "gloss": "'please do'; a request ending that cannot attach to だ or plain past here and gives a command, not a recall question"
-      },
-      {
-        "form": "じゃん",
-        "gloss": "'isn't it!'; asserts something obvious, opposite of forgotten"
-      },
-      {
-        "form": "もん",
-        "gloss": "'because'; gives a reason, not a recall question"
-      },
-      {
-        "form": "わ",
-        "gloss": "soft assertive ending; states feeling, not a memory query"
-      },
-      {
-        "form": "なあ",
-        "gloss": "'I wish/exclamation'; expresses emotion, not recalling facts"
-      },
-      {
-        "form": "ぞ",
-        "gloss": "strong assertive masculine ending; emphasizes a statement, not a question"
-      },
-      {
-        "form": "とか",
-        "gloss": "'or something'; vague listing, not a recall confirmation"
-      },
-      {
-        "form": "けど",
-        "gloss": "'but/though'; conjunction softener, not a memory-check ending"
-      },
-      {
-        "form": "っけな",
-        "gloss": "combined form; redundant here and would create an unnatural double ending after だ"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:っこない",
-    "level": "N3",
-    "title": "～っこない",
-    "meaning": "there's no way / couldn't possibly (strong casual denial of possibility)",
-    "explanation": "～っこない is a casual, emphatic expression meaning that something is absolutely impossible or will definitely not happen. It is a colloquial equivalent of ～はずがない / ～わけがない.",
-    "formation": "Verb (ます-stem) + っこない",
-    "whyRight": "～っこない attaches to the verb stem to strongly and casually deny that something could possibly happen, fitting the 'no way it could' meaning.",
-    "examples": [
-      {
-        "sentence": "そんな難[むずか]しい問題[もんだい]、私[わたし]に解[と]け___。",
-        "answer": "っこない",
-        "translation": "There's no way I could solve such a hard problem."
-      },
-      {
-        "sentence": "一日[いちにち]でこの本[ほん]を全部[ぜんぶ]読[よ]め___よ。",
-        "answer": "っこない",
-        "translation": "There's no way you can read this whole book in one day."
-      },
-      {
-        "sentence": "彼[かれ]がそんな嘘[うそ]をつき___。",
-        "answer": "っこない",
-        "translation": "There's no way he would tell such a lie.",
-        "context": "彼[かれ]はとても正直[しょうじき]な人[ひと]だ。"
-      },
-      {
-        "sentence": "宝[たから]くじなんて当[あ]たり___から、買[か]わない。",
-        "answer": "っこない",
-        "translation": "There's no way the lottery will win, so I won't buy it."
-      },
-      {
-        "sentence": "今[いま]から走[はし]っても間[ま]に合[あ]い___よ。",
-        "answer": "っこない",
-        "translation": "Even if we run now, there's no way we'll make it in time."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "かねない",
-        "gloss": "'might well (negatively)'; expresses possibility, the opposite of impossibility"
-      },
-      {
-        "form": "がたい",
-        "gloss": "'hard to'; difficult but not impossible, and more literary"
-      },
-      {
-        "form": "づらい",
-        "gloss": "'hard to do'; physical/psychological difficulty, not denial of possibility"
-      },
-      {
-        "form": "にくい",
-        "gloss": "'hard to do'; difficulty, not 'no way it happens'"
-      },
-      {
-        "form": "ようがない",
-        "gloss": "'no way to (do)'; means lacking a method, slightly different from denying the event itself"
-      },
-      {
-        "form": "わけだ",
-        "gloss": "'that's why/it follows'; draws a conclusion, not a denial"
-      },
-      {
-        "form": "ことない",
-        "gloss": "'no need to / never'; either advice or non-occurrence, not impossibility"
-      },
-      {
-        "form": "っぽい",
-        "gloss": "'-ish'; resemblance suffix, unrelated"
-      },
-      {
-        "form": "得[え]る",
-        "gloss": "'can/possible'; affirms possibility, opposite meaning"
-      },
-      {
-        "form": "かもしれない",
-        "gloss": "'might'; tentative possibility, opposite of strong denial"
-      },
-      {
-        "form": "に違[ちが]いない",
-        "gloss": "'must be'; strong affirmation, opposite of impossibility"
-      },
-      {
-        "form": "っこなくない",
-        "gloss": "double-negative oddity; would mean 'not impossible', wrong and unnatural here"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:っぱなし",
-    "level": "N3",
-    "title": "～っぱなし",
-    "meaning": "leaving (something) as it is / doing continuously without stopping",
-    "explanation": "～っぱなし indicates that an action is left in a state it should not be (e.g., leaving something on/open), or that an action continues without interruption. It often carries a critical or negative nuance for the first usage.",
-    "formation": "Verb (ます-stem) + っぱなし",
-    "whyRight": "～っぱなし attaches to the verb stem to show a state was left unchanged or an action continued without stopping, matching the 'left it on' nuance here.",
-    "examples": [
-      {
-        "sentence": "電気[でんき]をつけ___で寝[ね]てしまった。",
-        "answer": "っぱなし",
-        "translation": "I fell asleep with the lights left on."
-      },
-      {
-        "sentence": "窓[まど]を開[あ]け___にしないでください。",
-        "answer": "っぱなし",
-        "translation": "Please don't leave the window open."
-      },
-      {
-        "sentence": "新幹線[しんかんせん]で東京[とうきょう]まで立[た]ち___だった。",
-        "answer": "っぱなし",
-        "translation": "I had to stand the whole way to Tokyo on the bullet train."
-      },
-      {
-        "sentence": "水[みず]を出[だ]し___にして歯[は]を磨[みが]くのはもったいない。",
-        "answer": "っぱなし",
-        "translation": "It's wasteful to brush your teeth with the water left running."
-      },
-      {
-        "sentence": "弟[おとうと]はいつも本[ほん]を借[か]り___で返[かえ]さない。",
-        "answer": "っぱなし",
-        "translation": "My little brother always borrows books and leaves them unreturned."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "つつ",
-        "gloss": "'while (simultaneously)'; an adverbial that cannot take で／に／だった (つけつつで is ungrammatical) and means doing two things at once, not leaving a state"
-      },
-      {
-        "form": "つづける",
-        "gloss": "'continue to'; expresses continuation but lacks the negative 'left undone' nuance and conjugates differently"
-      },
-      {
-        "form": "きり",
-        "gloss": "'only/since then'; can mean 'left as is' (寝たきり) but follows た-form, not stem"
-      },
-      {
-        "form": "ながら",
-        "gloss": "'while'; simultaneous actions, not a left-as-is state"
-      },
-      {
-        "form": "がち",
-        "gloss": "'tend to'; a tendency, not a continuing/left state"
-      },
-      {
-        "form": "っきり",
-        "gloss": "'only/just'; limitation, not 'leaving on'"
-      },
-      {
-        "form": "だらけ",
-        "gloss": "'covered in'; noun suffix for abundance, unrelated to a left action"
-      },
-      {
-        "form": "ぎみ",
-        "gloss": "'a touch of'; slight tendency, unrelated"
-      },
-      {
-        "form": "かけ",
-        "gloss": "'half-done'; an action started but not finished, different from leaving a completed action's result"
-      },
-      {
-        "form": "づらい",
-        "gloss": "'hard to'; difficulty, unrelated"
-      },
-      {
-        "form": "っぱなしの",
-        "gloss": "prenominal form; would need a following noun, wrong before で/だった here"
-      },
-      {
-        "form": "ばかり",
-        "gloss": "'just/only'; recentness or exclusivity, not a left-as-is state"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:っぽい",
-    "level": "N3",
-    "title": "～っぽい",
-    "meaning": "-ish / -like / tends to (has a quality or tendency)",
-    "explanation": "～っぽい attaches to nouns, verb stems, or adjectives to mean something resembles or has the quality/tendency of that thing. It conjugates like an い-adjective.",
-    "formation": "Noun / Verb (ます-stem) / Adj-stem + っぽい",
-    "whyRight": "～っぽい expresses resemblance to or a strong tendency toward the base word, fitting the 'has the quality of' meaning in the example.",
-    "examples": [
-      {
-        "sentence": "この水[みず]は白[しろ]___色[いろ]をしている。",
-        "answer": "っぽい",
-        "translation": "This water has a whitish color."
-      },
-      {
-        "sentence": "彼[かれ]は最近[さいきん]、すぐ怒[おこ]り___なった。",
-        "answer": "っぽく",
-        "translation": "He has become quick-tempered lately."
-      },
-      {
-        "sentence": "そんな子供[こども]___ことを言[い]わないで。",
-        "answer": "っぽい",
-        "translation": "Don't say such childish things.",
-        "context": "君[きみ]はもう大人[おとな]なんだから、"
-      },
-      {
-        "sentence": "彼女[かのじょ]は忘[わす]れ___ので、よくメモを取[と]る。",
-        "answer": "っぽい",
-        "translation": "She is forgetful, so she often takes notes."
-      },
-      {
-        "sentence": "この服[ふく]は安[やす]___見[み]えるが、実[じつ]は高[たか]い。",
-        "answer": "っぽく",
-        "translation": "These clothes look cheap, but they're actually expensive."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "らしい",
-        "gloss": "'typical of / seems'; for behaving as one ideally should or hearsay, not a surface resemblance/tendency"
-      },
-      {
-        "form": "みたい",
-        "gloss": "'like/seems'; resemblance but a separate construction that doesn't conjugate as ～っぽい does in these slots"
-      },
-      {
-        "form": "そう",
-        "gloss": "'looks like'; appearance based on direct impression, different nuance and conjugation"
-      },
-      {
-        "form": "がち",
-        "gloss": "'tend to'; a tendency but usually negative/frequency, and conjugates as a noun"
-      },
-      {
-        "form": "ぎみ",
-        "gloss": "'a touch of'; slight tendency, attaches differently and is milder"
-      },
-      {
-        "form": "ふう",
-        "gloss": "'-style'; a manner/style, follows な, not the same as -ish quality"
-      },
-      {
-        "form": "っぷり",
-        "gloss": "'the manner/way of doing'; attaches to a stem to describe how an action is done (飲みっぷり), not a resemblance or -ish quality"
-      },
-      {
-        "form": "だらけ",
-        "gloss": "'covered in'; abundance, not resemblance"
-      },
-      {
-        "form": "げ",
-        "gloss": "'-looking (feeling)'; shows an outward feeling, attaches to emotion stems, narrower"
-      },
-      {
-        "form": "っぽさ",
-        "gloss": "the nominalized form; a noun meaning '-ishness', cannot fill the adjective slots here"
-      },
-      {
-        "form": "らしく",
-        "gloss": "adverbial of らしい; 'in a manner befitting', wrong nuance for these tendency/resemblance slots"
-      },
-      {
-        "form": "ようだ",
-        "gloss": "'seems/like'; conjecture or resemblance via a separate grammar, doesn't fit the い-adjective slots"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:つもりだ",
-    "level": "N3",
-    "title": "～つもりだ",
-    "meaning": "intend to / plan to (also: convinced one is/did, even if not)",
-    "explanation": "～つもりだ expresses the speaker's intention or plan to do something. With past/state forms it can also mean being convinced that something is the case even when it may not be true.",
-    "formation": "Verb (dictionary form) + つもりだ / Verb (ない-form) + つもりだ",
-    "whyRight": "～つもりだ states a firm personal intention to carry out the verb's action, matching the 'I plan to' meaning of the example.",
-    "examples": [
-      {
-        "sentence": "来年[らいねん]、日本[にほん]へ留学[りゅうがく]する___です。",
-        "answer": "つもり",
-        "translation": "I intend to study abroad in Japan next year.",
-        "context": "私[わたし]はもう決心[けっしん]した。"
-      },
-      {
-        "sentence": "もうタバコは吸[す]わない___だ。",
-        "answer": "つもり",
-        "translation": "I intend not to smoke anymore."
-      },
-      {
-        "sentence": "週末[しゅうまつ]は家[いえ]でゆっくり休[やす]む___です。",
-        "answer": "つもり",
-        "translation": "I plan to relax at home this weekend.",
-        "context": "今週[こんしゅう]は忙[いそが]しかったので、予定[よてい]を何[なに]も入[い]れなかった。"
-      },
-      {
-        "sentence": "ちゃんと説明[せつめい]した___だったが、伝[つた]わっていなかった。",
-        "answer": "つもり",
-        "translation": "I was sure I had explained properly, but it hadn't gotten through."
-      },
-      {
-        "sentence": "彼[かれ]は来[こ]ない___らしいよ。",
-        "answer": "つもり",
-        "translation": "It seems he intends not to come."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ながら",
-        "gloss": "'while (simultaneously)'; needs a verb stem and cannot take です／だ (するながらです is ungrammatical), and means doing two things at once, not intending"
-      },
-      {
-        "form": "まま",
-        "gloss": "'as it is / unchanged'; 留学するままです・説明したままだった means a state left unchanged, the wrong meaning and unnatural as the predicate here"
-      },
-      {
-        "form": "ところ",
-        "gloss": "'about to / in the middle of'; a stage of action, not an intention"
-      },
-      {
-        "form": "ことにする",
-        "gloss": "'decide to'; a decision, related but a different construction that doesn't fit the slot"
-      },
-      {
-        "form": "ようとおもう",
-        "gloss": "'think I'll'; intention but a separate volitional construction, won't fit the する___です slot"
-      },
-      {
-        "form": "べき",
-        "gloss": "'should (ought to)'; obligation/advice, not intention"
-      },
-      {
-        "form": "わけ",
-        "gloss": "'reason/it follows'; explanation, not intention"
-      },
-      {
-        "form": "みこみ",
-        "gloss": "'prospect/likelihood'; a forecast, not a personal plan"
-      },
-      {
-        "form": "だろう",
-        "gloss": "'probably'; conjecture, not intention"
-      },
-      {
-        "form": "らしい",
-        "gloss": "'seems/typical'; hearsay or typicality, not the speaker's intention"
-      },
-      {
-        "form": "つもりの",
-        "gloss": "prenominal form; would need a following noun, wrong before です/だ here"
-      },
-      {
-        "form": "ため",
-        "gloss": "'for the purpose of'; purpose, not a stated intention to act"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:て以来",
-    "level": "N3",
-    "title": "～て以来",
-    "meaning": "ever since / since (a past event, continuing to now)",
-    "explanation": "～て以来 indicates that ever since a certain past event occurred, a state or situation has continued up to the present. It is used for one-time past events, not repeated daily actions.",
-    "formation": "Verb (て-form) + 以来[いらい] / Noun + 以来[いらい]",
-    "whyRight": "～て以来 marks a past starting point after which a situation has continued unchanged until now, matching the 'ever since' meaning of the example.",
-    "examples": [
-      {
-        "sentence": "日本[にほん]に来[き]て___、一度[いちど]も国[くに]に帰[かえ]っていない。",
-        "answer": "以来",
-        "translation": "Ever since I came to Japan, I haven't returned home even once."
-      },
-      {
-        "sentence": "彼[かれ]とは卒業[そつぎょう]して___、会[あ]っていない。",
-        "answer": "以来",
-        "translation": "I haven't met him since we graduated."
-      },
-      {
-        "sentence": "大[おお]きな地震[じしん]を経験[けいけん]して___、防災[ぼうさい]を意識[いしき]するようになった。",
-        "answer": "以来",
-        "translation": "Ever since experiencing the big earthquake, I've become conscious of disaster prevention."
-      },
-      {
-        "sentence": "あの事件[じけん]___、町[まち]の様子[ようす]がすっかり変[か]わった。",
-        "answer": "以来",
-        "translation": "Ever since that incident, the town's appearance has completely changed."
-      },
-      {
-        "sentence": "禁煙[きんえん]を始[はじ]めて___、体調[たいちょう]がとても良[よ]い。",
-        "answer": "以来",
-        "translation": "Ever since I started quitting smoking, my health has been very good."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "しだい",
-        "gloss": "'as soon as / depending on'; attaches to the verb stem (来しだい) so 来てしだい is ungrammatical, and it points to a future trigger, the opposite of 'ever since'"
-      },
-      {
-        "form": "あと",
-        "gloss": "'after'; refers to a point after an event, not a continuous span up to the present"
-      },
-      {
-        "form": "うちに",
-        "gloss": "'while/before'; a window of time, opposite of a starting point"
-      },
-      {
-        "form": "あいだ",
-        "gloss": "'during'; a span between two points, not 'ever since'"
-      },
-      {
-        "form": "まえに",
-        "gloss": "'before'; prior to an event, opposite direction"
-      },
-      {
-        "form": "がてら",
-        "gloss": "'while also / on the way to'; attaches to a stem/noun to combine two purposes, unrelated to a past starting point"
-      },
-      {
-        "form": "とき",
-        "gloss": "'when'; a point/occasion, not a continuing-since span"
-      },
-      {
-        "form": "じてん",
-        "gloss": "'at the point of'; marks a moment, not the ongoing 'since' span"
-      },
-      {
-        "form": "ばかり",
-        "gloss": "'just (did)'; recentness, not 'ever since up to now'"
-      },
-      {
-        "form": "とちゅう",
-        "gloss": "'midway'; in the middle, unrelated to a starting point"
-      },
-      {
-        "form": "いらいの",
-        "gloss": "prenominal form; would need a following noun, wrong before a comma/clause here"
-      },
-      {
-        "form": "ながら",
-        "gloss": "'while'; simultaneous action, unrelated to a past starting point"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:ているところ",
-    "level": "N3",
-    "title": "～ているところ",
-    "meaning": "to be in the middle of doing something",
-    "explanation": "This expression indicates that an action is currently in progress at this very moment. It emphasizes the ongoing stage of an activity.",
-    "formation": "Verb (て-form) + いる + ところ",
-    "whyRight": "～ているところ attaches to the て-form + いる to mean 'right now in the middle of doing,' which fits a present, ongoing action.",
-    "examples": [
-      {
-        "sentence": "今[いま]、宿題[しゅくだい]をして___です。",
-        "answer": "いるところ",
-        "translation": "I'm in the middle of doing my homework right now."
-      },
-      {
-        "sentence": "母[はは]は今[いま]、料理[りょうり]を作[つく]って___だ。",
-        "answer": "いるところ",
-        "translation": "My mother is in the middle of cooking right now."
-      },
-      {
-        "sentence": "ちょうど出[で]かけようとして___に電話[でんわ]が鳴[な]った。",
-        "answer": "いるところ",
-        "translation": "The phone rang just as I was about to leave."
-      },
-      {
-        "sentence": "今[いま]、その問題[もんだい]について調[しら]べて___です。",
-        "answer": "いるところ",
-        "translation": "I'm currently in the middle of looking into that problem."
-      },
-      {
-        "sentence": "彼[かれ]は今[いま]、会議[かいぎ]の準備[じゅんび]をして___だ。",
-        "answer": "いるところ",
-        "translation": "He is in the middle of preparing for the meeting now."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "いたところ",
-        "gloss": "'was just doing' (past progressive); wrong for an action happening right now"
-      },
-      {
-        "form": "あるところ",
-        "gloss": "uses ある instead of いる; ungrammatical with this て-form for ongoing action"
-      },
-      {
-        "form": "いくところ",
-        "gloss": "'about to go'; expresses motion, not being in the middle of the stated action"
-      },
-      {
-        "form": "おくところ",
-        "gloss": "confuses ～ておく (preparation) with ～ている; not 'in progress'"
-      },
-      {
-        "form": "しまうところ",
-        "gloss": "implies on the verge of finishing/regret, not simply ongoing"
-      },
-      {
-        "form": "いるところだった",
-        "gloss": "'was just about to / on the verge of'; expresses a past near-miss, clashing with 今 'right now'"
-      },
-      {
-        "form": "いたとき",
-        "gloss": "'when (I) was'; とき marks time, not 'in the middle of'"
-      },
-      {
-        "form": "いるばかり",
-        "gloss": "～ばかり means 'just did/only'; wrong nuance for ongoing action"
-      },
-      {
-        "form": "いるあいだ",
-        "gloss": "'during the time that'; needs a second clause and shifts meaning"
-      },
-      {
-        "form": "いるはず",
-        "gloss": "'should be'; expresses expectation, not present progression"
-      },
-      {
-        "form": "いるよう",
-        "gloss": "'seems to be'; adds conjecture not present in the sentence"
-      },
-      {
-        "form": "おいたところ",
-        "gloss": "～ておく past form; expresses completed preparation, not present action"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:てからでないと",
-    "level": "N3",
-    "title": "～てからでないと",
-    "meaning": "unless/until you first do; not without doing first",
-    "explanation": "This expresses that the second action cannot happen unless the first action is completed beforehand. The first action is a necessary precondition.",
-    "formation": "Verb (て-form) + からでないと (+ negative/impossible result)",
-    "whyRight": "～てからでないと marks the first action as a prerequisite, so without completing it the result clause (often negative) cannot occur.",
-    "examples": [
-      {
-        "sentence": "予約[よやく]をして___、入[はい]れません。",
-        "answer": "からでないと",
-        "translation": "Unless you make a reservation first, you can't get in."
-      },
-      {
-        "sentence": "手[て]を洗[あら]って___、食[た]べてはいけない。",
-        "answer": "からでないと",
-        "translation": "You must not eat unless you wash your hands first."
-      },
-      {
-        "sentence": "実物[じつぶつ]を見[み]て___、買[か]うかどうか決[き]められない。",
-        "answer": "からでないと",
-        "translation": "I can't decide whether to buy it without seeing the real thing first."
-      },
-      {
-        "sentence": "上司[じょうし]に相談[そうだん]して___、返事[へんじ]ができません。",
-        "answer": "からでないと",
-        "translation": "I can't give an answer unless I consult my boss first."
-      },
-      {
-        "sentence": "薬[くすり]を飲[の]んで___、運転[うんてん]してはいけない。",
-        "answer": "からでないと",
-        "translation": "You must not drive unless you take your medicine first."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "からといって",
-        "gloss": "'just because'; introduces a reason that doesn't justify a conclusion, not a prerequisite"
-      },
-      {
-        "form": "からには",
-        "gloss": "'now that / since'; expresses determination given a fact, not a precondition for impossibility"
-      },
-      {
-        "form": "からこそ",
-        "gloss": "'precisely because'; emphasizes a reason, not a required first step"
-      },
-      {
-        "form": "からでは",
-        "gloss": "incomplete/incorrect; lacks the negative ない needed for this pattern"
-      },
-      {
-        "form": "からして",
-        "gloss": "'judging from / even'; gives an example or basis, not a condition"
-      },
-      {
-        "form": "てからは",
-        "gloss": "'ever since'; marks a time boundary, not a necessary condition"
-      },
-      {
-        "form": "てからも",
-        "gloss": "'even after'; concessive, not a prerequisite that blocks the result"
-      },
-      {
-        "form": "てばかり",
-        "gloss": "'always doing'; expresses repetition/excess, unrelated to preconditions"
-      },
-      {
-        "form": "おいてから",
-        "gloss": "～ておいてから 'after doing in advance, then'; sequences two affirmative actions and does not license the negative-possibility result clause"
-      },
-      {
-        "form": "からといえば",
-        "gloss": "'speaking of'; topic shift, not a condition for impossibility"
-      },
-      {
-        "form": "からあとで",
-        "gloss": "'after, later'; merely sequences events in time and does not establish the first as a precondition blocking the result"
-      },
-      {
-        "form": "ところで",
-        "gloss": "'even if'; concessive expressing futility, not a precondition"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:てしかたがない",
-    "level": "N3",
-    "title": "～てしかたがない",
-    "meaning": "can't help feeling; extremely; unbearably",
-    "explanation": "This expresses that a feeling or sensation is so strong that the speaker cannot control or bear it. It is commonly used with emotions and physical sensations.",
-    "formation": "Verb (て-form) / い-adj (-くて) / な-adj (-で) + しかたがない",
-    "whyRight": "～てしかたがない attaches to the て-form of an emotion/sensation verb to mean the feeling is uncontrollably strong, matching 'can't help but feel.'",
-    "examples": [
-      {
-        "sentence": "新[あたら]しいゲームがやりたくて___。",
-        "answer": "しかたがない",
-        "translation": "I want to play the new game so badly I can't stand it."
-      },
-      {
-        "sentence": "結果[けっか]が気[き]になって___。",
-        "answer": "しかたがない",
-        "translation": "I can't help worrying about the results."
-      },
-      {
-        "sentence": "夏[なつ]の暑[あつ]さで、汗[あせ]が出[で]て___。",
-        "answer": "しかたがない",
-        "translation": "Because of the summer heat, I can't stop sweating."
-      },
-      {
-        "sentence": "故郷[こきょう]の家族[かぞく]に会[あ]いたくて___。",
-        "answer": "しかたがない",
-        "translation": "I miss my family back home so much I can't bear it."
-      },
-      {
-        "sentence": "朝[あさ]からずっと眠[ねむ]くて___。",
-        "answer": "しかたがない",
-        "translation": "I've been unbearably sleepy since this morning."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "しかたがある",
-        "gloss": "affirmative 'there is a way'; reverses the meaning and breaks the idiom"
-      },
-      {
-        "form": "しかたがした",
-        "gloss": "ungrammatical mash-up of しかた + した; not a real predicate and cannot complete the idiom"
-      },
-      {
-        "form": "しようがある",
-        "gloss": "affirmative form; not used for the 'unbearable feeling' pattern"
-      },
-      {
-        "form": "しまった",
-        "gloss": "～てしまう regret form; expresses completion/regret, not an intense feeling"
-      },
-      {
-        "form": "たまる",
-        "gloss": "non-negative; the pattern requires たまらない, so this is incorrect"
-      },
-      {
-        "form": "しかたがあった",
-        "gloss": "affirmative past 'there was a way'; reverses the idiom's negative polarity and breaks the meaning"
-      },
-      {
-        "form": "ようがない",
-        "gloss": "～ようがない attaches to the ます-stem (やりようがない) to mean 'there is no way to do'; it cannot attach to the て/くて-form here and expresses inability to act, not an overwhelming feeling"
-      },
-      {
-        "form": "かまわない",
-        "gloss": "'don't mind'; expresses permission/indifference, not overwhelming feeling"
-      },
-      {
-        "form": "ほかない",
-        "gloss": "'have no choice but'; expresses necessity, not strong emotion"
-      },
-      {
-        "form": "ちがいない",
-        "gloss": "'must be (certain)'; expresses certainty, not uncontrollable feeling"
-      },
-      {
-        "form": "わけがない",
-        "gloss": "'there's no way'; expresses impossibility, not intense emotion"
-      },
-      {
-        "form": "しかたがなくて",
-        "gloss": "て-form continuation; cannot end the sentence as the answer requires"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:てしまう",
-    "level": "N3",
-    "title": "～てしまう",
-    "meaning": "to do completely / to do by accident or with regret",
-    "explanation": "This expresses either the complete finishing of an action or a sense of regret that something undesirable happened. The nuance depends on context.",
-    "formation": "Verb (て-form) + しまう",
-    "whyRight": "～てしまう attaches to the て-form to show completion or unintended/regrettable result, which fits the accidental or finished-action context.",
-    "examples": [
-      {
-        "context": "あっ、大変[たいへん]だ。",
-        "sentence": "財布[さいふ]を家[いえ]に忘[わす]れて___。",
-        "answer": "しまった",
-        "translation": "I left my wallet at home (oops)."
-      },
-      {
-        "sentence": "面白[おもしろ]すぎて、本[ほん]を一日[いちにち]で読[よ]んで___。",
-        "answer": "しまった",
-        "translation": "It was so interesting that I finished reading the book in one day."
-      },
-      {
-        "context": "はっと目[め]が覚[さ]めた。",
-        "sentence": "電車[でんしゃ]の中[なか]で寝[ね]て、駅[えき]を乗[の]り過[す]ごして___。",
-        "answer": "しまった",
-        "translation": "I fell asleep on the train and ended up missing my stop."
-      },
-      {
-        "context": "手[て]が滑[すべ]った。",
-        "sentence": "大事[だいじ]な皿[さら]を落[お]として割[わ]って___。",
-        "answer": "しまった",
-        "translation": "I dropped and broke an important plate (regrettably)."
-      },
-      {
-        "context": "たった今[いま]、宿題[しゅくだい]が終[お]わった。",
-        "sentence": "宿題[しゅくだい]は全部[ぜんぶ]やって___から、遊[あそ]べる。",
-        "answer": "しまった",
-        "translation": "I've finished all my homework completely, so I can play."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "しまう",
-        "gloss": "non-past dictionary form; the contexts describe a completed past event needing past tense"
-      },
-      {
-        "form": "おいた",
-        "gloss": "～ておく 'do in advance'; expresses preparation, not completion/regret"
-      },
-      {
-        "form": "あった",
-        "gloss": "～てある 'is left in a state'; describes a resultant state, not the act of finishing/regret"
-      },
-      {
-        "form": "いた",
-        "gloss": "～ている past progressive; means 'was doing,' not 'ended up doing'"
-      },
-      {
-        "form": "みた",
-        "gloss": "～てみる 'try doing'; expresses an attempt, not completion or accident"
-      },
-      {
-        "form": "くれた",
-        "gloss": "～てくれる 'did for me'; a giving/receiving favor, wrong nuance"
-      },
-      {
-        "form": "しまえ",
-        "gloss": "imperative 'finish it!'; a command, not a past statement"
-      },
-      {
-        "form": "しまおう",
-        "gloss": "volitional 'let's finish'; expresses intention, not a completed regrettable act"
-      },
-      {
-        "form": "ちゃう",
-        "gloss": "ちゃう already absorbs the て of てしまう (忘れちゃう), so appending it after the sentence's existing て (忘れて___) yields the ungrammatical 忘れてちゃう"
-      },
-      {
-        "form": "しまいそう",
-        "gloss": "'about to end up'; expresses likelihood, not an action that already happened"
-      },
-      {
-        "form": "しまわない",
-        "gloss": "negative 'won't finish'; reverses the completed-action meaning"
-      },
-      {
-        "form": "いった",
-        "gloss": "～ていく 'go on doing'; expresses continuation away, not completion/regret"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:てしようがない",
-    "level": "N3",
-    "title": "～てしようがない",
-    "meaning": "can't help feeling; unbearably; extremely",
-    "explanation": "This is a slightly more formal variant of ～てしかたがない, expressing that a feeling or sensation is uncontrollably strong. It conveys that the speaker cannot bear or suppress the emotion.",
-    "formation": "Verb (て-form) / い-adj (-くて) / な-adj (-で) + しようがない",
-    "whyRight": "～てしようがない joins the て-form of a feeling/sensation word to mean the emotion is overwhelming and uncontrollable, matching 'can't help but.'",
-    "examples": [
-      {
-        "sentence": "試験[しけん]の結果[けっか]が心配[しんぱい]で___。",
-        "answer": "しようがない",
-        "translation": "I can't help worrying about the exam results."
-      },
-      {
-        "sentence": "彼[かれ]の態度[たいど]に腹[はら]が立[た]って___。",
-        "answer": "しようがない",
-        "translation": "I can't help getting angry at his attitude."
-      },
-      {
-        "sentence": "新[あたら]しいパソコンが欲[ほ]しくて___。",
-        "answer": "しようがない",
-        "translation": "I want a new computer so badly I can't stand it."
-      },
-      {
-        "sentence": "隣[となり]の工事[こうじ]の音[おと]がうるさくて___。",
-        "answer": "しようがない",
-        "translation": "The construction noise next door is unbearably loud."
-      },
-      {
-        "sentence": "ふるさとが恋[こい]しくて___。",
-        "answer": "しようがない",
-        "translation": "I miss my hometown so much I can't bear it."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "しようがある",
-        "gloss": "affirmative 'there is a way'; reverses the idiom's meaning"
-      },
-      {
-        "form": "しょうがある",
-        "gloss": "affirmative casual variant; still reverses the meaning incorrectly"
-      },
-      {
-        "form": "しかたがある",
-        "gloss": "affirmative 'there is a way'; breaks the negative idiom"
-      },
-      {
-        "form": "べきだ",
-        "gloss": "～べきだ attaches to the dictionary form (心配するべき), not the て/で-form, so it is ungrammatical here and means 'ought to,' not an overwhelming feeling"
-      },
-      {
-        "form": "たまる",
-        "gloss": "non-negative; the related pattern needs たまらない, so this is wrong"
-      },
-      {
-        "form": "しまう",
-        "gloss": "～てしまう completion/regret; not used for overwhelming feeling"
-      },
-      {
-        "form": "かまわない",
-        "gloss": "'don't mind'; expresses indifference, not an uncontrollable feeling"
-      },
-      {
-        "form": "ほかない",
-        "gloss": "'have no choice but'; expresses necessity, not strong emotion"
-      },
-      {
-        "form": "ちがいない",
-        "gloss": "'must be'; expresses certainty, not feeling"
-      },
-      {
-        "form": "しようがなくて",
-        "gloss": "て-form; cannot serve as the sentence-ending answer here"
-      },
-      {
-        "form": "わけがない",
-        "gloss": "'no way that'; expresses impossibility, not intense feeling"
-      },
-      {
-        "form": "ようがない",
-        "gloss": "'there is no way to' after ます-stem; a different pattern meaning inability to act"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:てたまらない",
-    "level": "N3",
-    "title": "～てたまらない",
-    "meaning": "unbearably; can't stand it; extremely",
-    "explanation": "This expresses that a physical sensation or emotion is so intense that it is unbearable. It is often used with adjectives and emotion verbs to emphasize an overwhelming feeling.",
-    "formation": "Verb (て-form) / い-adj (-くて) / な-adj (-で) + たまらない",
-    "whyRight": "～てたまらない joins the て-form of a sensation/emotion word to mean the feeling is unbearable, which fits the strong-sensation context.",
-    "examples": [
-      {
-        "sentence": "暑[あつ]い日[ひ]に運動[うんどう]して、喉[のど]が渇[かわ]いて___。",
-        "answer": "たまらない",
-        "translation": "After exercising on a hot day, I'm unbearably thirsty."
-      },
-      {
-        "sentence": "好[す]きな歌手[かしゅ]に会[あ]えて、嬉[うれ]しくて___。",
-        "answer": "たまらない",
-        "translation": "I got to meet my favorite singer, and I'm so happy I can't stand it."
-      },
-      {
-        "sentence": "足[あし]をぶつけて、痛[いた]くて___。",
-        "answer": "たまらない",
-        "translation": "I hit my leg, and it hurts unbearably."
-      },
-      {
-        "sentence": "試合[しあい]の結果[けっか]が気[き]になって___。",
-        "answer": "たまらない",
-        "translation": "I can't stop wondering about the game's result."
-      },
-      {
-        "sentence": "一人[ひとり]で住[す]んでいると、寂[さび]しくて___。",
-        "answer": "たまらない",
-        "translation": "Living alone, I feel unbearably lonely."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "たまる",
-        "gloss": "affirmative 'accumulates'; the idiom requires the negative たまらない"
-      },
-      {
-        "form": "しだいだ",
-        "gloss": "～次第だ attaches to a ます-stem or noun and means 'depends on / as soon as'; it cannot attach to the て/くて-form and does not express an unbearable feeling"
-      },
-      {
-        "form": "たまった",
-        "gloss": "affirmative past 'accumulated'; loses the negative ない the idiom requires and changes the meaning to literal piling-up"
-      },
-      {
-        "form": "たまるものか",
-        "gloss": "rhetorical 'as if it would accumulate'; an affirmative-stem retort that does not express an unbearable sensation"
-      },
-      {
-        "form": "しまう",
-        "gloss": "～てしまう completion/regret; not an expression of unbearable feeling"
-      },
-      {
-        "form": "たまらなくて",
-        "gloss": "て-form; cannot end the sentence as the answer requires"
-      },
-      {
-        "form": "かまわない",
-        "gloss": "'don't mind'; expresses indifference, not intensity"
-      },
-      {
-        "form": "たえない",
-        "gloss": "～にたえない attaches to nouns/ます-stem; wrong connection and nuance here"
-      },
-      {
-        "form": "ちがいない",
-        "gloss": "'must be certain'; expresses certainty, not feeling"
-      },
-      {
-        "form": "ほかない",
-        "gloss": "'no choice but'; expresses necessity, not emotion"
-      },
-      {
-        "form": "わけがない",
-        "gloss": "'no way'; expresses impossibility, not unbearable sensation"
-      },
-      {
-        "form": "たまらず",
-        "gloss": "'unable to bear, (so)' — adverbial mid-sentence form; cannot stand as the final predicate"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:てならない",
-    "level": "N3",
-    "title": "～てならない",
-    "meaning": "can't help feeling; can't stop feeling; extremely",
-    "explanation": "This expresses a spontaneous, uncontrollable feeling or sensation that the speaker cannot suppress. It often pairs with emotion or thought verbs and has a slightly literary tone.",
-    "formation": "Verb (て-form) / い-adj (-くて) / な-adj (-で) + ならない",
-    "whyRight": "～てならない joins the て-form of a spontaneous-feeling word to mean the emotion arises uncontrollably, matching 'can't help feeling.'",
-    "examples": [
-      {
-        "sentence": "亡[な]くなった祖母[そぼ]のことが思[おも]い出[だ]されて___。",
-        "answer": "ならない",
-        "translation": "I can't help recalling my late grandmother."
-      },
-      {
-        "sentence": "明日[あした]の発表[はっぴょう]のことが心配[しんぱい]で___。",
-        "answer": "ならない",
-        "translation": "I can't help worrying about tomorrow's presentation."
-      },
-      {
-        "sentence": "彼[かれ]が嘘[うそ]をついている気[き]がして___。",
-        "answer": "ならない",
-        "translation": "I can't shake the feeling that he is lying."
-      },
-      {
-        "sentence": "故郷[こきょう]のことが懐[なつ]かしくて___。",
-        "answer": "ならない",
-        "translation": "I feel unbearably nostalgic for my hometown."
-      },
-      {
-        "sentence": "なぜ失敗[しっぱい]したのか、残念[ざんねん]で___。",
-        "answer": "ならない",
-        "translation": "I can't help feeling regretful about why it failed."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "なる",
-        "gloss": "affirmative 'becomes'; the idiom requires the negative ならない"
-      },
-      {
-        "form": "かねない",
-        "gloss": "～かねない attaches to the ます-stem (なりかねない) and means 'might (undesirably) happen'; it cannot attach to the て/で-form and does not express an uncontrollable feeling"
-      },
-      {
-        "form": "なった",
-        "gloss": "affirmative past 'became'; drops the negative ない the idiom requires and merely states a change occurred"
-      },
-      {
-        "form": "なるものか",
-        "gloss": "rhetorical 'as if it would become'; an affirmative-stem retort, not the negative spontaneous-feeling predicate"
-      },
-      {
-        "form": "しまう",
-        "gloss": "～てしまう completion/regret; not an uncontrollable-feeling expression"
-      },
-      {
-        "form": "ならなくて",
-        "gloss": "て-form; cannot serve as the sentence-ending answer"
-      },
-      {
-        "form": "ならず",
-        "gloss": "negative adverbial 'without becoming'; cannot end the sentence as the predicate"
-      },
-      {
-        "form": "かまわない",
-        "gloss": "'don't mind'; expresses indifference, not spontaneous feeling"
-      },
-      {
-        "form": "ちがいない",
-        "gloss": "'must be'; expresses certainty, not feeling"
-      },
-      {
-        "form": "ほかならない",
-        "gloss": "'is nothing but'; an emphatic identity expression, not 'can't help feeling'"
-      },
-      {
-        "form": "ばならない",
-        "gloss": "part of なければならない 'must'; expresses obligation, not feeling"
-      },
-      {
-        "form": "わけがない",
-        "gloss": "'no way'; expresses impossibility, not uncontrollable emotion"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:てはじめて",
-    "level": "N3",
-    "title": "～てはじめて",
-    "meaning": "only after doing; not until doing",
-    "explanation": "This expresses that something becomes realized, understood, or possible only after a certain action or experience occurs. The first action is the trigger for the realization in the second clause.",
-    "formation": "Verb (て-form) + はじめて",
-    "whyRight": "～てはじめて attaches to the て-form to mean 'only after doing this for the first time,' which fits a realization that depends on a prior experience.",
-    "examples": [
-      {
-        "sentence": "親[おや]になって___、親[おや]の苦労[くろう]が分[わ]かった。",
-        "answer": "はじめて",
-        "translation": "Only after becoming a parent did I understand my parents' hardships."
-      },
-      {
-        "sentence": "病気[びょうき]になって___、健康[けんこう]の大切[たいせつ]さに気[き]づいた。",
-        "answer": "はじめて",
-        "translation": "It was only after getting sick that I realized the importance of health."
-      },
-      {
-        "sentence": "海外[かいがい]で生活[せいかつ]して___、日本[にほん]の良[よ]さが分[わ]かった。",
-        "answer": "はじめて",
-        "translation": "Only after living abroad did I understand the good points of Japan."
-      },
-      {
-        "sentence": "失[うしな]って___、その人[ひと]の大切[たいせつ]さが分[わ]かるものだ。",
-        "answer": "はじめて",
-        "translation": "It is only after losing someone that you realize how precious they were."
-      },
-      {
-        "sentence": "実際[じっさい]に体験[たいけん]して___、その難[むずか]しさが理解[りかい]できた。",
-        "answer": "はじめて",
-        "translation": "Only after actually experiencing it did I understand its difficulty."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "はじめる",
-        "gloss": "～はじめる 'begin to'; attaches to ます-stem and means starting an action, not 'only after'"
-      },
-      {
-        "form": "はじめに",
-        "gloss": "'at first / firstly'; an adverb listing order, not the realization trigger pattern"
-      },
-      {
-        "form": "からこそ",
-        "gloss": "'precisely because'; emphasizes a reason, not 'only after experiencing'"
-      },
-      {
-        "form": "からには",
-        "gloss": "'now that'; expresses determination from a fact, not a trigger for realization"
-      },
-      {
-        "form": "とたん",
-        "gloss": "～たとたん 'the moment that'; needs た-form and stresses immediacy, not first-time realization"
-      },
-      {
-        "form": "うえで",
-        "gloss": "～たうえで 'after doing (then)'; sequence of actions, lacks the 'for the first time' realization nuance"
-      },
-      {
-        "form": "いらい",
-        "gloss": "～て以来 'ever since'; marks a starting point in time, not a realization trigger"
-      },
-      {
-        "form": "かぎり",
-        "gloss": "'as long as / to the extent'; a limit/condition, not 'only after'"
-      },
-      {
-        "form": "ばかり",
-        "gloss": "'just did'; marks recency, not a precondition for realization"
-      },
-      {
-        "form": "あいだに",
-        "gloss": "'while / during'; a time span, not the after-experience realization pattern"
-      },
-      {
-        "form": "はじめた",
-        "gloss": "past of はじめる 'began'; an action start in the past, not the 'only after' connector"
-      },
-      {
-        "form": "うちに",
-        "gloss": "'while / before it changes'; a window of time, not 'only after experiencing'"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:てほしい",
-    "level": "N3",
-    "title": "～てほしい",
-    "meaning": "to want someone (else) to do something",
-    "explanation": "Used to express that the speaker wants another person to perform an action. The subject of the action is someone other than the speaker, often marked with に.",
-    "formation": "Verb (て-form) + ほしい",
-    "whyRight": "～てほしい expresses a desire directed at another person's action, which matches a request or wish aimed at someone else.",
-    "examples": [
-      {
-        "sentence": "もっと私[わたし]の話[はなし]を聞[き]いて___。",
-        "answer": "ほしい",
-        "translation": "I want you to listen to what I have to say more."
-      },
-      {
-        "sentence": "明日[あした]は早[はや]く来[き]て___。",
-        "answer": "ほしい",
-        "translation": "I want you to come early tomorrow."
-      },
-      {
-        "sentence": "彼[かれ]に本当[ほんとう]のことを話[はな]して___。",
-        "answer": "ほしい",
-        "translation": "I want him to tell the truth."
-      },
-      {
-        "sentence": "子[こ]どもには元気[げんき]に育[そだ]って___。",
-        "answer": "ほしい",
-        "translation": "I want my child to grow up healthy."
-      },
-      {
-        "sentence": "もう少[すこ]し静[しず]かにして___です。",
-        "answer": "ほしい",
-        "translation": "I want you to be a bit quieter."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "たい",
-        "gloss": "expresses the speaker's own desire to do the action, not a wish for someone else to act"
-      },
-      {
-        "form": "ほしがる",
-        "gloss": "describes a third person's desire as observed, not a direct first-person wish"
-      },
-      {
-        "form": "べきだ",
-        "gloss": "～べきだ attaches to the plain dictionary form (聞くべき), not the て-form, so it is ungrammatical here"
-      },
-      {
-        "form": "そうだ",
-        "gloss": "hearsay/appearance ～そうだ attaches to the plain or stem form (聞くそうだ／聞きそう), not the て-form, ungrammatical here"
-      },
-      {
-        "form": "たがる",
-        "gloss": "shows a third party appears to want to do something, wrong subject focus"
-      },
-      {
-        "form": "ほしくて",
-        "gloss": "te-form continuation, leaves the sentence grammatically incomplete here"
-      },
-      {
-        "form": "ほしいだ",
-        "gloss": "incorrect; ほしい is an i-adjective and does not take だ"
-      },
-      {
-        "form": "あげたい",
-        "gloss": "means wanting to do something for someone, wrong direction of action"
-      },
-      {
-        "form": "ほしさ",
-        "gloss": "ほしさ is a noun (nominalized form) and cannot serve as the sentence-ending predicate after the て-form"
-      },
-      {
-        "form": "なさい",
-        "gloss": "a command form telling someone to do it, not a wish"
-      },
-      {
-        "form": "てある",
-        "gloss": "indicates a resulting state from a deliberate action, unrelated meaning"
-      },
-      {
-        "form": "らしい",
-        "gloss": "expresses hearsay/seeming, not a desire for someone to act"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:てみせる",
-    "level": "N3",
-    "title": "～てみせる",
-    "meaning": "to show/demonstrate by doing; to do something with determination",
-    "explanation": "Used either to literally show someone how to do something, or to express the speaker's strong resolve to accomplish something.",
-    "formation": "Verb (て-form) + みせる",
-    "whyRight": "～てみせる conveys demonstrating an action or a firm determination to achieve it, which fits a context of resolve or showing.",
-    "examples": [
-      {
-        "context": "みんなは私[わたし]には無理[むり]だと言[い]う。",
-        "sentence": "今度[こんど]こそ試験[しけん]に合格[ごうかく]して___。",
-        "answer": "みせる",
-        "translation": "This time I will definitely pass the exam (I'll show them)."
-      },
-      {
-        "context": "学生[がくせい]たちが書[か]き方[かた]を知[し]らなかったので、",
-        "sentence": "先生[せんせい]が正[ただ]しい書[か]き方[かた]をやって___た。",
-        "answer": "みせ",
-        "translation": "The teacher demonstrated the correct way to write."
-      },
-      {
-        "context": "絶対[ぜったい]にあきらめない。",
-        "sentence": "必[かなら]ず優勝[ゆうしょう]して___から、応援[おうえん]してね。",
-        "answer": "みせる",
-        "translation": "I'll definitely win the championship, so cheer me on."
-      },
-      {
-        "context": "子[こ]どもが泳[およ]ぎ方[かた]が分[わ]からなかった。",
-        "sentence": "母[はは]は子[こ]どもに泳[およ]ぎ方[かた]を泳[およ]いで___た。",
-        "answer": "みせ",
-        "translation": "The mother showed her child how to swim by swimming."
-      },
-      {
-        "context": "どんなに大変[たいへん]でも、",
-        "sentence": "いつか自分[じぶん]の店[みせ]を持[も]って___と決[き]めている。",
-        "answer": "みせる",
-        "translation": "I've resolved that someday I will have my own shop (I'll make it happen)."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "みる",
-        "gloss": "～てみる means to try doing something, not to demonstrate or show resolve"
-      },
-      {
-        "form": "みえる",
-        "gloss": "means to be visible/can see, an intransitive perception verb, wrong meaning"
-      },
-      {
-        "form": "みせられる",
-        "gloss": "passive/potential of みせる, changes the meaning and does not fit a plain resolve statement"
-      },
-      {
-        "form": "しまう",
-        "gloss": "indicates completion or regret, not demonstration or determination"
-      },
-      {
-        "form": "おく",
-        "gloss": "means to do in advance for a purpose, unrelated to showing"
-      },
-      {
-        "form": "みた",
-        "gloss": "past of ～てみる (tried), wrong grammar point and tense focus"
-      },
-      {
-        "form": "みせて",
-        "gloss": "te-form leaves the determination sentence incomplete"
-      },
-      {
-        "form": "ある",
-        "gloss": "～てある shows a prepared state, not an act of demonstrating"
-      },
-      {
-        "form": "いく",
-        "gloss": "～ていく shows change over time or moving away, unrelated"
-      },
-      {
-        "form": "くる",
-        "gloss": "～てくる shows change toward now or approaching, unrelated"
-      },
-      {
-        "form": "みせろ",
-        "gloss": "imperative command to show, not a first-person statement of resolve"
-      },
-      {
-        "form": "みせます",
-        "gloss": "examples 2 and 4 need the masu-stem みせ before た; みせます cannot attach to た, so it does not fit those slots"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:とか",
-    "level": "N3",
-    "title": "～とか",
-    "meaning": "things like ~ / I heard that ~ (vague listing or hearsay)",
-    "explanation": "Used to list examples non-exhaustively (like the casual version of や), or to report hearsay vaguely. It softens statements and suggests there may be other things or that the speaker is unsure.",
-    "formation": "Noun + とか (+ Noun + とか); Plain form + とか (hearsay)",
-    "whyRight": "とか marks loose, example-style listing or vague hearsay, which fits when the speaker is giving non-exhaustive examples or uncertain reports rather than a definitive or complete statement.",
-    "examples": [
-      {
-        "sentence": "週末[しゅうまつ]は映画[えいが]を見[み]る___、買[か]い物[もの]をする___します。",
-        "answer": "とか",
-        "translation": "On weekends I do things like watch movies and go shopping."
-      },
-      {
-        "sentence": "彼[かれ]は来週[らいしゅう]アメリカに行[い]く___言[い]っていました。",
-        "answer": "とか",
-        "translation": "He said something like he's going to America next week."
-      },
-      {
-        "sentence": "りんご___みかん___、果物[くだもの]をたくさん買[か]いました。",
-        "answer": "とか",
-        "translation": "I bought lots of fruit, like apples and oranges."
-      },
-      {
-        "sentence": "彼女[かのじょ]はもう結婚[けっこん]した___いう噂[うわさ]を聞[き]きました。",
-        "answer": "とか",
-        "translation": "I heard a rumor that she got married or something."
-      },
-      {
-        "sentence": "暇[ひま]な時[とき]は音楽[おんがく]を聞[き]く___本[ほん]を読[よ]む___しています。",
-        "answer": "とか",
-        "translation": "When I'm free I do things like listen to music and read books."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "など",
-        "gloss": "'and so on'; more formal/written listing, doesn't carry the casual hearsay nuance of とか"
-      },
-      {
-        "form": "たり",
-        "gloss": "needs the た-stem (見たり) and the structure differs; raw たり doesn't attach to dictionary form like this"
-      },
-      {
-        "form": "し",
-        "gloss": "lists reasons/parallel facts, not non-exhaustive examples"
-      },
-      {
-        "form": "から",
-        "gloss": "means 'because'; gives a reason, not a list of examples"
-      },
-      {
-        "form": "ので",
-        "gloss": "means 'because/since'; states a reason, not examples"
-      },
-      {
-        "form": "こそ",
-        "gloss": "emphasis particle 'precisely'; can't connect a list and gives 'X こそ Y こそ します' which is ungrammatical"
-      },
-      {
-        "form": "さえ",
-        "gloss": "means 'even'; an additive limiting particle, can't link list items and yields ungrammatical 'X さえ Y さえ'"
-      },
-      {
-        "form": "ても",
-        "gloss": "means 'even if'; concessive, not listing"
-      },
-      {
-        "form": "けど",
-        "gloss": "means 'but'; contrast, not listing or hearsay"
-      },
-      {
-        "form": "のに",
-        "gloss": "means 'although'; expresses unexpected contrast, not listing"
-      },
-      {
-        "form": "より",
-        "gloss": "means 'than'; comparison particle, can't list examples or report hearsay"
-      },
-      {
-        "form": "ながら",
-        "gloss": "means 'while doing'; simultaneous action, not listing examples"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:どころか",
-    "level": "N3",
-    "title": "～どころか",
-    "meaning": "far from ~ / let alone ~ / on the contrary",
-    "explanation": "Used to deny an expected idea and present something opposite or even more extreme. It emphasizes that reality is far from what was assumed, often surpassing or contradicting expectations.",
-    "formation": "Noun + どころか; Plain form (い-adj/Verb) + どころか; な-adj + な/である + どころか",
-    "whyRight": "どころか sharply rejects the preceding assumption and asserts the opposite or a stronger reality, which is exactly what is needed when the situation contradicts what was expected.",
-    "examples": [
-      {
-        "sentence": "彼[かれ]はお金[かね]を貯[た]める___、借金[しゃっきん]ばかり増[ふ]えている。",
-        "answer": "どころか",
-        "translation": "Far from saving money, his debt just keeps increasing.",
-        "context": "彼[かれ]はお金[かね]を全[まった]く節約[せつやく]しようとしない。"
-      },
-      {
-        "sentence": "薬[くすり]を飲[の]んだら、よくなる___、もっと悪[わる]くなった。",
-        "answer": "どころか",
-        "translation": "After taking the medicine, far from getting better, it got worse."
-      },
-      {
-        "sentence": "あの店[みせ]は安[やす]い___、近[ちか]くのどこよりも高[たか]い。",
-        "answer": "どころか",
-        "translation": "Far from being cheap, that shop is more expensive than anywhere nearby."
-      },
-      {
-        "sentence": "彼女[かのじょ]は漢字[かんじ]___、ひらがなも読[よ]めない。",
-        "answer": "どころか",
-        "translation": "Far from kanji, she can't even read hiragana."
-      },
-      {
-        "sentence": "休[やす]める___、仕事[しごと]がどんどん増[ふ]えてきた。",
-        "answer": "どころか",
-        "translation": "Far from being able to rest, the work just kept piling up.",
-        "context": "最近[さいきん]、仕事[しごと]がとても忙[いそが]しい。"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "にあたって",
-        "gloss": "means 'on the occasion of'; marks a timing/situation for an action, not a contradiction of an expectation"
-      },
-      {
-        "form": "において",
-        "gloss": "means 'in/at (a field)'; a formal noun-attaching particle, so it cannot follow verbs/adjectives here and gives no 'far from' reversal"
-      },
-      {
-        "form": "として",
-        "gloss": "means 'as'; role/capacity marker, unrelated to contradiction"
-      },
-      {
-        "form": "ところで",
-        "gloss": "means 'even if/by the way'; not a contrastive reversal of expectation"
-      },
-      {
-        "form": "ところに",
-        "gloss": "marks a moment of intrusion; not contradiction"
-      },
-      {
-        "form": "わけではない",
-        "gloss": "partial negation 'it's not that'; doesn't express the extreme opposite"
-      },
-      {
-        "form": "に対して",
-        "gloss": "means 'in contrast to'; neutral comparison, not denial of an assumption"
-      },
-      {
-        "form": "くせに",
-        "gloss": "means 'despite'; blaming concession, not the 'far from' reversal"
-      },
-      {
-        "form": "のに",
-        "gloss": "means 'although'; concessive contrast, weaker than the strong reversal of どころか"
-      },
-      {
-        "form": "といっても",
-        "gloss": "means 'although you say'; qualifies a statement, not a flat contradiction"
-      },
-      {
-        "form": "にしては",
-        "gloss": "means 'considering'; judgment relative to expectation, not denial"
-      },
-      {
-        "form": "ものの",
-        "gloss": "means 'although'; concessive, doesn't present the opposite extreme"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:ところだ",
-    "level": "N3",
-    "title": "～ところだ",
-    "meaning": "be about to / be in the middle of / have just done",
-    "explanation": "Expresses the temporal stage of an action depending on the verb form: dictionary form means 'about to', ている form means 'in the middle of', and た form means 'just finished'.",
-    "formation": "Verb (dictionary) + ところだ; Verb (ている) + ところだ; Verb (た) + ところだ",
-    "whyRight": "ところだ pins the action to a precise temporal phase, so it is correct whenever the speaker is locating an event right before, during, or just after it happens.",
-    "examples": [
-      {
-        "sentence": "今[いま]から出[で]かける___です。",
-        "answer": "ところ",
-        "translation": "I'm just about to go out now.",
-        "context": "友[とも]だちに「今[いま]何[なに]をしているの」と聞[き]かれた。"
-      },
-      {
-        "sentence": "今[いま]ちょうど昼[ひる]ごはんを食[た]べている___です。",
-        "answer": "ところ",
-        "translation": "I'm right in the middle of eating lunch now."
-      },
-      {
-        "sentence": "たった今[いま]駅[えき]に着[つ]いた___です。",
-        "answer": "ところ",
-        "translation": "I just arrived at the station this very moment.",
-        "context": "電話[でんわ]で「今[いま]どこにいるの」と聞[き]かれた。"
-      },
-      {
-        "sentence": "ちょうど電話[でんわ]しようとしていた___だった。",
-        "answer": "ところ",
-        "translation": "I was just about to call you."
-      },
-      {
-        "sentence": "宿題[しゅくだい]は今[いま]終[お]わった___です。",
-        "answer": "ところ",
-        "translation": "I just finished my homework now.",
-        "context": "宿題[しゅくだい]はとても大変[たいへん]だったが、やっと全部[ぜんぶ]できた。"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "きり",
-        "gloss": "means 'only/since (V-た + きり)'; expresses that nothing has happened since the action, not the moment-locating 'just/about to' sense"
-      },
-      {
-        "form": "つもり",
-        "gloss": "means 'intend to'; expresses intention, not the precise time-stage"
-      },
-      {
-        "form": "はず",
-        "gloss": "means 'should/expected'; expectation, not temporal phase"
-      },
-      {
-        "form": "予定[よてい]",
-        "gloss": "means 'scheduled plan'; a planned event, not the immediate moment"
-      },
-      {
-        "form": "とき",
-        "gloss": "means 'when'; general time, not the pinpoint 'about to/just' nuance"
-      },
-      {
-        "form": "ばかりだ",
-        "gloss": "with the wrong base means 'just keeps -ing'; not the moment-locating sense"
-      },
-      {
-        "form": "わけ",
-        "gloss": "means 'reason/conclusion'; not temporal"
-      },
-      {
-        "form": "ため",
-        "gloss": "means 'for the purpose of'; not temporal staging"
-      },
-      {
-        "form": "うち",
-        "gloss": "means 'while/before'; a duration, not the exact stage"
-      },
-      {
-        "form": "ながら",
-        "gloss": "means 'while doing'; needs the verb masu-stem and can't form the noun ところ that だ attaches to, so '食べているながらです' is ungrammatical"
-      },
-      {
-        "form": "ようとする",
-        "gloss": "means 'try to'; verb phrase, not the noun ところ that だ attaches to"
-      },
-      {
-        "form": "ところに",
-        "gloss": "needs a following intruding clause; the sentence here ends with だ, so に is ungrammatical"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:ところに",
-    "level": "N3",
-    "title": "～ところに",
-    "meaning": "right at the moment when ~ (something else happens)",
-    "explanation": "Indicates that at the very moment of one situation, another event (often an intrusion or interruption) occurs. The second clause typically arrives unexpectedly into the first situation.",
-    "formation": "Verb (ている/た) + ところに; い-adj + ところに; Noun + の + ところに",
-    "whyRight": "ところに sets up a precise moment into which a new event breaks, so it is correct when an action lands right as another situation is unfolding, often as an interruption.",
-    "examples": [
-      {
-        "sentence": "出[で]かけようとしている___、電話[でんわ]がかかってきた。",
-        "answer": "ところに",
-        "translation": "Right as I was about to leave, the phone rang."
-      },
-      {
-        "sentence": "寝[ね]ている___、地震[じしん]が起[お]きた。",
-        "answer": "ところに",
-        "translation": "Right while I was sleeping, an earthquake struck."
-      },
-      {
-        "sentence": "困[こま]っている___、友[とも]だちが来[き]て助[たす]けてくれた。",
-        "answer": "ところに",
-        "translation": "Just when I was in trouble, my friend came and helped me."
-      },
-      {
-        "sentence": "宿題[しゅくだい]をしている___、母[はは]が部屋[へや]に入[はい]ってきた。",
-        "answer": "ところに",
-        "translation": "Right while I was doing homework, my mother came into the room."
-      },
-      {
-        "sentence": "ちょうど家[いえ]を出[で]た___、雨[あめ]が降[ふ]り出[だ]した。",
-        "answer": "ところに",
-        "translation": "Right when I left the house, it started to rain."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ところで",
-        "gloss": "means 'even if/by the way'; doesn't mark an intruding event at that moment"
-      },
-      {
-        "form": "ところを",
-        "gloss": "marks the object scene that is acted upon (e.g. seen/caught); needs a transitive intrusion, different focus"
-      },
-      {
-        "form": "ところが",
-        "gloss": "means 'however'; a contrastive conjunction, not a temporal point of intrusion"
-      },
-      {
-        "form": "において",
-        "gloss": "means 'in/at (a field)'; a formal noun-attaching particle, ungrammatical after these verb clauses and not a moment of intrusion"
-      },
-      {
-        "form": "にあたって",
-        "gloss": "means 'on the occasion of'; marks a timing for a deliberate action, not an event intruding into an ongoing scene"
-      },
-      {
-        "form": "かわりに",
-        "gloss": "means 'instead of/in exchange for'; expresses substitution, so 'しているかわりに地震が起きた' is unnatural and wrong in meaning"
-      },
-      {
-        "form": "をはじめ",
-        "gloss": "means 'starting with'; a noun-listing pattern (Noun + をはじめ), ungrammatical after these verb clauses"
-      },
-      {
-        "form": "ながら",
-        "gloss": "means 'while doing'; same-subject simultaneous action, not an intruding event"
-      },
-      {
-        "form": "から",
-        "gloss": "means 'because/after'; not a moment of intrusion"
-      },
-      {
-        "form": "ために",
-        "gloss": "means 'in order to/because'; purpose or cause, not timing"
-      },
-      {
-        "form": "やいなや",
-        "gloss": "means 'as soon as'; attaches to dictionary form (V-るやいなや) so it can't follow the ている/た scenes here, and stresses an immediate next action rather than an event intruding into an ongoing situation"
-      },
-      {
-        "form": "ばかりに",
-        "gloss": "means 'simply because'; cause with bad result, not temporal intrusion"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:ところへ",
-    "level": "N3",
-    "title": "～ところへ",
-    "meaning": "right at the moment when ~ (someone/something arrives)",
-    "explanation": "Similar to ところに but emphasizes the arrival or coming of a person or thing into an ongoing situation. The second clause usually involves movement toward the scene.",
-    "formation": "Verb (ている/た) + ところへ; Noun + の + ところへ",
-    "whyRight": "ところへ highlights an arrival breaking into a situation at that very moment, so it fits when the following clause is a coming/arriving action directed into the scene.",
-    "examples": [
-      {
-        "sentence": "けんかをしている___、先生[せんせい]がやってきた。",
-        "answer": "ところへ",
-        "translation": "Right while we were fighting, the teacher came over."
-      },
-      {
-        "sentence": "話[はなし]をしている___、課長[かちょう]が入[はい]ってきた。",
-        "answer": "ところへ",
-        "translation": "Just as we were talking, the section chief came in."
-      },
-      {
-        "sentence": "出[で]かけようとしている___、お客[きゃく]さんが来[き]た。",
-        "answer": "ところへ",
-        "translation": "Right as I was about to go out, a guest arrived."
-      },
-      {
-        "sentence": "道[みち]に迷[まよ]っている___、親切[しんせつ]な人[ひと]が声[こえ]をかけてくれた。",
-        "answer": "ところへ",
-        "translation": "Just as I was lost, a kind person came up and spoke to me."
-      },
-      {
-        "sentence": "ごはんを作[つく]っている___、友[とも]だちが遊[あそ]びに来[き]た。",
-        "answer": "ところへ",
-        "translation": "Right while I was cooking, a friend came over to hang out."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "とたんに",
-        "gloss": "means 'the instant'; needs V-た (V-たとたんに) so it can't follow the ている/ようとしている scenes here"
-      },
-      {
-        "form": "ところで",
-        "gloss": "means 'even if/by the way'; not an arrival into the scene at that moment"
-      },
-      {
-        "form": "ところが",
-        "gloss": "means 'however'; contrastive conjunction, not arrival timing"
-      },
-      {
-        "form": "において",
-        "gloss": "means 'in/at (a field)'; a formal noun-attaching particle, ungrammatical after these verb clauses and not an arrival into the scene"
-      },
-      {
-        "form": "うちへ",
-        "gloss": "うち + へ is not a fixed grammar pattern here; doesn't express the moment of arrival"
-      },
-      {
-        "form": "あいだへ",
-        "gloss": "not a valid pattern; あいだ marks a span and doesn't take へ in this meaning"
-      },
-      {
-        "form": "ときへ",
-        "gloss": "とき + へ is ungrammatical; とき marks time but doesn't combine with へ this way"
-      },
-      {
-        "form": "ながら",
-        "gloss": "means 'while doing'; same-subject simultaneous action, not an arrival"
-      },
-      {
-        "form": "から",
-        "gloss": "means 'because/after'; not the moment of arrival"
-      },
-      {
-        "form": "ために",
-        "gloss": "means 'in order to/because'; purpose or cause, not arrival timing"
-      },
-      {
-        "form": "までに",
-        "gloss": "means 'by (a deadline)'; a time limit, not a moment of arrival"
-      },
-      {
-        "form": "ばかりに",
-        "gloss": "means 'simply because'; cause with bad result, not arrival timing"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:ところを",
-    "level": "N3",
-    "title": "～ところを",
-    "meaning": "(catch/see/help) someone right when ~ / although it's a time when ~",
-    "explanation": "Marks a scene or moment as the object of an action—often someone is seen, caught, or helped right in that state. In set polite phrases it also means 'although it is a time when (you are busy, etc.)'.",
-    "formation": "Verb (dictionary/ている/た) + ところを; い-adj + ところを; Noun + の + ところを",
-    "whyRight": "ところを presents the very scene/moment as the direct object of the main verb (saw, caught, helped, disturbed), so it is correct when an action targets someone caught in that state or situation.",
-    "examples": [
-      {
-        "sentence": "タバコを吸[す]っている___、先生[せんせい]に見[み]つかった。",
-        "answer": "ところを",
-        "translation": "I was caught by the teacher right while I was smoking."
-      },
-      {
-        "sentence": "泥棒[どろぼう]が逃[に]げる___、警察[けいさつ]が捕[つか]まえた。",
-        "answer": "ところを",
-        "translation": "The police caught the thief right as he was escaping."
-      },
-      {
-        "sentence": "お忙[いそが]しい___、ありがとうございます。",
-        "answer": "ところを",
-        "translation": "Thank you, even though you're busy."
-      },
-      {
-        "sentence": "二人[ふたり]で歩[ある]いている___、友[とも]だちに見[み]られた。",
-        "answer": "ところを",
-        "translation": "My friend saw us right while the two of us were walking together."
-      },
-      {
-        "sentence": "寝[ね]ている___、起[お]こされてしまった。",
-        "answer": "ところを",
-        "translation": "I was woken up right while I was sleeping."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ところに",
-        "gloss": "marks a moment of intrusion, but here the main verb acts on the scene as an object, so を is needed"
-      },
-      {
-        "form": "ところへ",
-        "gloss": "marks arrival into a scene; doesn't fit verbs like 'caught/saw' that take the scene as object"
-      },
-      {
-        "form": "ところで",
-        "gloss": "means 'even if/by the way'; not the object-scene marker"
-      },
-      {
-        "form": "ところが",
-        "gloss": "means 'however'; contrastive conjunction, not an object scene"
-      },
-      {
-        "form": "ときを",
-        "gloss": "とき + を is unnatural here; とき lacks the 'caught in the act' scene nuance"
-      },
-      {
-        "form": "あいだを",
-        "gloss": "marks a span; doesn't present the instant-scene as the object of being caught"
-      },
-      {
-        "form": "うちを",
-        "gloss": "うち + を is ungrammatical in this 'caught in the act' sense"
-      },
-      {
-        "form": "とたんを",
-        "gloss": "ungrammatical; とたん expresses an instant result and doesn't take を"
-      },
-      {
-        "form": "から",
-        "gloss": "means 'because/after'; not the object-scene marker"
-      },
-      {
-        "form": "において",
-        "gloss": "means 'in/at (a field)'; a formal noun-attaching particle, ungrammatical after these clauses and not the object-scene marker"
-      },
-      {
-        "form": "ながら",
-        "gloss": "means 'while doing'; simultaneous action of the same subject, not the caught scene"
-      },
-      {
-        "form": "ために",
-        "gloss": "means 'in order to/because'; purpose or cause, not the object-scene marker"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:として",
-    "level": "N3",
-    "title": "～として",
-    "meaning": "as ~ / in the role/capacity of ~",
-    "explanation": "Indicates the status, role, capacity, or qualification in which someone or something acts or is regarded. It links a person/thing to the function they perform.",
-    "formation": "Noun + として",
-    "whyRight": "として assigns a role or capacity to the noun, so it is correct when the sentence describes acting in, or being regarded in, a particular position or function.",
-    "examples": [
-      {
-        "sentence": "彼[かれ]は医者[いしゃ]___この町[まち]で働[はたら]いている。",
-        "answer": "として",
-        "translation": "He works in this town as a doctor.",
-        "context": "彼[かれ]は医学部[いがくぶ]を卒業[そつぎょう]した。"
-      },
-      {
-        "sentence": "留学生[りゅうがくせい]___日本[にほん]に来[き]ました。",
-        "answer": "として",
-        "translation": "I came to Japan as an exchange student.",
-        "context": "私[わたし]は日本[にほん]の大学[だいがく]で勉強[べんきょう]することになった。"
-      },
-      {
-        "sentence": "この建物[たてもの]は美術館[びじゅつかん]___使[つか]われている。",
-        "answer": "として",
-        "translation": "This building is used as an art museum.",
-        "context": "この古[ふる]い建物[たてもの]の中[なか]には、有名[ゆうめい]な絵[え]がたくさん展示[てんじ]されている。"
-      },
-      {
-        "sentence": "彼女[かのじょ]は通訳[つうやく]___会議[かいぎ]に参加[さんか]した。",
-        "answer": "として",
-        "translation": "She took part in the meeting as an interpreter.",
-        "context": "彼女[かのじょ]は英語[えいご]と日本語[にほんご]の両方[りょうほう]が上手[じょうず]に話[はな]せる。"
-      },
-      {
-        "sentence": "趣味[しゅみ]___写真[しゃしん]を撮[と]っています。",
-        "answer": "として",
-        "translation": "I take photos as a hobby.",
-        "context": "私[わたし]は写真[しゃしん]をとるのが大好[だいす]きだ。"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "としても",
-        "gloss": "means 'even as/even if'; adds a concessive nuance not intended in a plain role statement"
-      },
-      {
-        "form": "にして",
-        "gloss": "means 'even (at this stage)'; not a role/capacity marker"
-      },
-      {
-        "form": "について",
-        "gloss": "means 'about/concerning'; a topic marker, not a role"
-      },
-      {
-        "form": "に対して",
-        "gloss": "means 'toward/in contrast to'; direction or contrast, not a capacity"
-      },
-      {
-        "form": "によって",
-        "gloss": "means 'by means of/depending on'; agent or cause, not a role"
-      },
-      {
-        "form": "にとって",
-        "gloss": "means 'for (someone's viewpoint)'; perspective, not a role one acts in"
-      },
-      {
-        "form": "とすると",
-        "gloss": "means 'if we suppose'; a hypothetical, not a role marker"
-      },
-      {
-        "form": "のために",
-        "gloss": "means 'for the sake of'; marks a beneficiary/purpose, giving a different meaning than acting in a role"
-      },
-      {
-        "form": "のように",
-        "gloss": "means 'like/as if'; resemblance, not an actual official role"
-      },
-      {
-        "form": "みたいに",
-        "gloss": "means 'like'; casual resemblance, not a genuine capacity"
-      },
-      {
-        "form": "だけ",
-        "gloss": "means 'only'; limitation, not a role"
-      },
-      {
-        "form": "ばかり",
-        "gloss": "means 'only/just'; emphasis on amount, not a role"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:としても",
-    "level": "N3",
-    "title": "～としても",
-    "meaning": "even if ~ / even supposing that ~",
-    "explanation": "Expresses a hypothetical concession: even granting that something is true, the result in the main clause still holds. It combines supposition (とする) with the concessive ても.",
-    "formation": "Plain form + としても; Noun/な-adj (+ だ optional) + としても",
-    "whyRight": "としても sets up a hypothetical and concedes it while asserting the outcome is unchanged, so it is correct when the sentence means 'even supposing X, still Y'.",
-    "examples": [
-      {
-        "sentence": "雨[あめ]が降[ふ]った___、試合[しあい]は行[おこな]われます。",
-        "answer": "としても",
-        "translation": "Even if it rains, the match will be held.",
-        "context": "明日[あした]は大切[たいせつ]な試合[しあい]の日[ひ]だ。"
-      },
-      {
-        "sentence": "たとえ高[たか]い___、私[わたし]はこの車[くるま]を買[か]いたい。",
-        "answer": "としても",
-        "translation": "Even if it's expensive, I want to buy this car."
-      },
-      {
-        "sentence": "彼[かれ]が来[こ]ない___、会議[かいぎ]は始[はじ]めます。",
-        "answer": "としても",
-        "translation": "Even if he doesn't come, we'll start the meeting.",
-        "context": "彼[かれ]はまだ会社[かいしゃ]に来[き]ていない。"
-      },
-      {
-        "sentence": "本当[ほんとう]___、信[しん]じられない話[はなし]だ。",
-        "answer": "としても",
-        "translation": "Even if it's true, it's an unbelievable story.",
-        "context": "この話[はなし]はとても信[しん]じにくい。"
-      },
-      {
-        "sentence": "急[いそ]いで行[い]った___、もう間[ま]に合[あ]わないだろう。",
-        "answer": "としても",
-        "translation": "Even if I hurry, I probably won't make it in time.",
-        "context": "電車[でんしゃ]の出発[しゅっぱつ]までもう時間[じかん]がない。"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "として",
-        "gloss": "means 'as (a role)'; lacks the concessive 'even if' meaning"
-      },
-      {
-        "form": "とすると",
-        "gloss": "means 'if we suppose'; a neutral hypothetical without the concessive 'even' nuance"
-      },
-      {
-        "form": "とすれば",
-        "gloss": "means 'supposing that'; a conditional conclusion, not a concession"
-      },
-      {
-        "form": "といっても",
-        "gloss": "means 'although you say'; qualifies a prior statement, not a hypothetical concession"
-      },
-      {
-        "form": "からといって",
-        "gloss": "means 'just because'; denies a conclusion drawn from a reason, different structure"
-      },
-      {
-        "form": "ところで",
-        "gloss": "means 'even if (it's futile)'; concessive but attaches to V-た and stresses pointlessness"
-      },
-      {
-        "form": "からこそ",
-        "gloss": "means 'precisely because'; emphasizes a reason, the opposite of conceding 'even if' the outcome holds anyway"
-      },
-      {
-        "form": "ても",
-        "gloss": "means 'even if'; close in meaning but needs the て-form (降っても), not attached this way"
-      },
-      {
-        "form": "のに",
-        "gloss": "means 'although'; states a real contrast, not a hypothesis"
-      },
-      {
-        "form": "ながらも",
-        "gloss": "means 'although'; concessive with real facts, not a supposition"
-      },
-      {
-        "form": "ものの",
-        "gloss": "means 'although'; concedes a real fact, not a hypothetical 'even if'"
-      },
-      {
-        "form": "くせに",
-        "gloss": "means 'despite'; blaming concession about real facts, not a supposition"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:てみる",
-    "level": "N3",
-    "title": "～てみる",
-    "meaning": "to try doing something (to see what happens)",
-    "explanation": "Used to express attempting or trying out an action to see the result or experience it. It implies a tentative, exploratory attempt.",
-    "formation": "Verb (て-form) + みる",
-    "whyRight": "～てみる marks an action done on a trial basis to see how it turns out, fitting contexts of experimenting or sampling.",
-    "examples": [
-      {
-        "context": "評判[ひょうばん]がいいと聞[き]いたので、どんな味[あじ]か気[き]になる。",
-        "sentence": "新[あたら]しいレストランで食[た]べて___たい。",
-        "answer": "み",
-        "translation": "I want to try eating at the new restaurant."
-      },
-      {
-        "context": "この色[いろ]が自分[じぶん]に似合[にあ]うかどうか気[き]になる。",
-        "sentence": "この服[ふく]を着[き]て___もいいですか。",
-        "answer": "み",
-        "translation": "May I try putting on this outfit?"
-      },
-      {
-        "context": "自分[じぶん]では考[かんが]えてもどうしても答[こた]えが出[で]ない。",
-        "sentence": "わからないから、先生[せんせい]に聞[き]いて___。",
-        "answer": "みる",
-        "translation": "Since I don't understand, I'll try asking the teacher."
-      },
-      {
-        "context": "自信[じしん]はないが、とりあえず一度[いちど]だけ挑戦[ちょうせん]しよう。",
-        "sentence": "難[むずか]しそうだけど、一度[いちど]やって___。",
-        "answer": "みる",
-        "translation": "It looks hard, but I'll give it a try once."
-      },
-      {
-        "context": "まだ一度[いちど]も京都[きょうと]に行[い]ったことがない。",
-        "sentence": "京都[きょうと]に行[い]って___たいと思[おも]っています。",
-        "answer": "み",
-        "translation": "I'm thinking I'd like to try going to Kyoto."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "みせる",
-        "gloss": "means to demonstrate or show determination, not a trial attempt"
-      },
-      {
-        "form": "みえる",
-        "gloss": "means to be visible, a perception verb, wrong meaning"
-      },
-      {
-        "form": "しまう",
-        "gloss": "indicates completion or accidental action, not trying"
-      },
-      {
-        "form": "おく",
-        "gloss": "means to do something in advance, not a trial"
-      },
-      {
-        "form": "ある",
-        "gloss": "～てある shows a prepared resulting state, unrelated to trying"
-      },
-      {
-        "form": "みなければ",
-        "gloss": "negative conditional 'if (one) does not try'; ungrammatical before たい/もいい and contradicts the intention to try in these sentences"
-      },
-      {
-        "form": "みて",
-        "gloss": "te-form leaves a plain-ending sentence incomplete"
-      },
-      {
-        "form": "いく",
-        "gloss": "～ていく shows progression away or over time, not an attempt"
-      },
-      {
-        "form": "くる",
-        "gloss": "～てくる shows approach or change toward present, not an attempt"
-      },
-      {
-        "form": "みろ",
-        "gloss": "imperative; wrong register and not the trial nuance intended"
-      },
-      {
-        "form": "みない",
-        "gloss": "negative; contradicts the intention to try expressed in these sentences"
-      },
-      {
-        "form": "みよう",
-        "gloss": "volitional 'let's try', does not fit slots followed by たい or もいい"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:ても",
-    "level": "N3",
-    "title": "～ても",
-    "meaning": "even if / even though",
-    "explanation": "Used to express a concession: a result holds regardless of the preceding condition or action. The second clause is unaffected by the first.",
-    "formation": "Verb (て-form) + も / い-adjective (くて) + も / な-adjective・Noun + でも",
-    "whyRight": "～ても sets up a concessive condition meaning 'even if', where the outcome remains the same despite the stated circumstance.",
-    "examples": [
-      {
-        "context": "天気予報[てんきよほう]では午後[ごご]から雨[あめ]になると言[い]っている。",
-        "sentence": "雨[あめ]が降[ふ]っ___、試合[しあい]は行[おこな]われます。",
-        "answer": "ても",
-        "translation": "Even if it rains, the match will be held."
-      },
-      {
-        "sentence": "いくら高[たか]く___、これは買[か]いたい。",
-        "answer": "ても",
-        "translation": "No matter how expensive it is, I want to buy this."
-      },
-      {
-        "sentence": "彼[かれ]に何度[なんど]頼[たの]ん___、聞[き]いてくれない。",
-        "answer": "でも",
-        "translation": "No matter how many times I ask him, he won't listen."
-      },
-      {
-        "context": "早[はや]く治[なお]るだろうと思[おも]っていた。",
-        "sentence": "薬[くすり]を飲[の]ん___、熱[ねつ]が下[さ]がらなかった。",
-        "answer": "でも",
-        "translation": "Even though I took the medicine, the fever didn't go down."
-      },
-      {
-        "sentence": "急[いそ]い___、もう間[ま]に合[あ]わないだろう。",
-        "answer": "でも",
-        "translation": "Even if we hurry, we probably won't make it in time."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "たら",
-        "gloss": "means 'if/when' a condition is met, not a concession 'even if'"
-      },
-      {
-        "form": "ば",
-        "gloss": "conditional 'if', expresses a normal condition rather than concession"
-      },
-      {
-        "form": "と",
-        "gloss": "conditional 'whenever/if', implies a natural consequence, not 'even if'"
-      },
-      {
-        "form": "から",
-        "gloss": "means 'because', gives a reason, opposite of a concessive"
-      },
-      {
-        "form": "ので",
-        "gloss": "means 'because/since', states a cause, not 'even though'"
-      },
-      {
-        "form": "のに",
-        "gloss": "means 'although' but attaches to the plain form, not the te-form slot here"
-      },
-      {
-        "form": "ては",
-        "gloss": "warns against an undesirable action, different concession nuance"
-      },
-      {
-        "form": "ながら",
-        "gloss": "means 'while doing' simultaneously, not concessive 'even if'"
-      },
-      {
-        "form": "ために",
-        "gloss": "expresses purpose 'in order to', unrelated meaning"
-      },
-      {
-        "form": "けど",
-        "gloss": "means 'but' connecting clauses, attaches to plain forms, not the te-stem here"
-      },
-      {
-        "form": "て",
-        "gloss": "plain te-form without も loses the 'even if' concessive meaning"
-      },
-      {
-        "form": "ことも",
-        "gloss": "not a concessive connective; does not produce the 'even if' meaning required here"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:てもかまわない",
-    "level": "N3",
-    "title": "～てもかまわない",
-    "meaning": "it's okay even if / I don't mind if",
-    "explanation": "Used to grant permission or indicate that something is acceptable. It expresses that the speaker has no objection to the stated action or situation.",
-    "formation": "Verb (て-form) + もかまわない / い-adj (くて) + もかまわない / な-adj・Noun + でもかまわない",
-    "whyRight": "～てもかまわない states that an action is permissible or that one does not mind, fitting contexts of giving permission.",
-    "examples": [
-      {
-        "context": "この美術館[びじゅつかん]では撮影[さつえい]が許可[きょか]されている。",
-        "sentence": "ここで写真[しゃしん]を撮[と]っても___。",
-        "answer": "かまわない",
-        "translation": "You may take photos here (I don't mind)."
-      },
-      {
-        "context": "今日[きょう]の作業[さぎょう]はもう終[お]わったので問題[もんだい]ない。",
-        "sentence": "疲[つか]れたら、先[さき]に帰[かえ]っても___よ。",
-        "answer": "かまわない",
-        "translation": "If you're tired, you can go home first."
-      },
-      {
-        "sentence": "値段[ねだん]は少[すこ]し高[たか]くても___。",
-        "answer": "かまわない",
-        "translation": "It's fine even if the price is a little high."
-      },
-      {
-        "context": "家賃[やちん]が安[やす]ければ、それで私[わたし]は満足[まんぞく]だ。",
-        "sentence": "部屋[へや]が狭[せま]くても私[わたし]は___。",
-        "answer": "かまわない",
-        "translation": "I don't mind even if the room is small."
-      },
-      {
-        "context": "私[わたし]が熱[ねつ]で欠席[けっせき]したいと伝[つた]えたところ、",
-        "sentence": "明日[あした]は来[こ]なくても___と先生[せんせい]が言[い]った。",
-        "answer": "かまわない",
-        "translation": "The teacher said it's fine even if I don't come tomorrow."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "いけない",
-        "gloss": "～てはいけない means it is forbidden, the opposite of giving permission"
-      },
-      {
-        "form": "ならない",
-        "gloss": "～てはならない means must not, prohibition opposite of permission"
-      },
-      {
-        "form": "だめだ",
-        "gloss": "～てはだめだ means it's no good/not allowed, opposite meaning"
-      },
-      {
-        "form": "ください",
-        "gloss": "a request to do something, not a statement of permission"
-      },
-      {
-        "form": "ほしい",
-        "gloss": "expresses wanting someone to act, not granting permission"
-      },
-      {
-        "form": "かまう",
-        "gloss": "affirmative 'to mind/care', reverses the permissive meaning needed"
-      },
-      {
-        "form": "こまる",
-        "gloss": "～ても困る means it's troubling/unwelcome, the opposite of the granted-permission meaning intended"
-      },
-      {
-        "form": "かまわなくて",
-        "gloss": "te-form leaves the sentence grammatically incomplete"
-      },
-      {
-        "form": "かまわず",
-        "gloss": "～ず is a continuative form; it leaves the sentence grammatically incomplete and cannot end these sentences"
-      },
-      {
-        "form": "しまう",
-        "gloss": "indicates completion or regret, unrelated to permission"
-      },
-      {
-        "form": "もいい",
-        "gloss": "the も is already in the sentence (撮っても___), so inserting もいい yields 撮っても+もいい with a doubled も, which is ungrammatical"
-      },
-      {
-        "form": "わけだ",
-        "gloss": "expresses a logical conclusion 'no wonder', unrelated meaning"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:てもらう",
-    "level": "N3",
-    "title": "～てもらう",
-    "meaning": "to have/get someone to do something (for one's benefit)",
-    "explanation": "Used when the subject receives a favor or action done by another person. The doer of the action is usually marked with に, and the action benefits the subject.",
-    "formation": "Verb (て-form) + もらう",
-    "whyRight": "～てもらう expresses receiving a beneficial action from someone, fitting contexts where the speaker gets help or a favor.",
-    "examples": [
-      {
-        "context": "一人[ひとり]では宿題[しゅくだい]が終[お]わらず、とても困[こま]っていた。",
-        "sentence": "友[とも]だちに宿題[しゅくだい]を手伝[てつだ]って___た。",
-        "answer": "もらっ",
-        "translation": "I had my friend help me with my homework."
-      },
-      {
-        "context": "私[わたし]の書[か]いた作文[さくぶん]には、まだ間違[まちが]いがたくさんある。",
-        "sentence": "先生[せんせい]に作文[さくぶん]を直[なお]して___たい。",
-        "answer": "もらい",
-        "translation": "I want to have the teacher correct my essay."
-      },
-      {
-        "sentence": "病院[びょういん]で医者[いしゃ]に診[み]て___。",
-        "answer": "もらう",
-        "translation": "I'll have the doctor examine me at the hospital."
-      },
-      {
-        "context": "荷物[にもつ]が重[おも]くて、一人[ひとり]で駅[えき]まで行[い]けなかった。",
-        "sentence": "兄[あに]に駅[えき]まで送[おく]って___た。",
-        "answer": "もらっ",
-        "translation": "I had my older brother give me a ride to the station."
-      },
-      {
-        "sentence": "店員[てんいん]に道[みち]を教[おし]えて___。",
-        "answer": "もらう",
-        "translation": "I'll have the store clerk tell me the way."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "あげる",
-        "gloss": "means to do something for someone else (giving), wrong direction of benefit"
-      },
-      {
-        "form": "くれる",
-        "gloss": "means someone does something for me, but the subject/marking differs from もらう"
-      },
-      {
-        "form": "やる",
-        "gloss": "means to do for an inferior/animal/plant, giving direction, wrong here"
-      },
-      {
-        "form": "いただく",
-        "gloss": "humble form of もらう but does not fit slots needing the plain stem もらっ/もらい"
-      },
-      {
-        "form": "くださる",
-        "gloss": "honorific of くれる; giving direction with different marking, not もらう"
-      },
-      {
-        "form": "もらって",
-        "gloss": "te-form leaves a plain-ending sentence incomplete"
-      },
-      {
-        "form": "もらえる",
-        "gloss": "potential 'can receive'; changes meaning and does not fit the た/たい slots needing the stem"
-      },
-      {
-        "form": "しまう",
-        "gloss": "indicates completion or regret, not receiving a favor"
-      },
-      {
-        "form": "おく",
-        "gloss": "means to do in advance, unrelated to receiving an action"
-      },
-      {
-        "form": "みる",
-        "gloss": "～てみる means to try doing, not receiving a favor"
-      },
-      {
-        "form": "ほしい",
-        "gloss": "expresses wanting someone to act, a different construction from receiving"
-      },
-      {
-        "form": "ある",
-        "gloss": "～てある marks a prepared resultant state and takes no benefactor, so it does not express receiving a favor and is wrong with the に-marked agent here"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:どおり（に）",
-    "level": "N3",
-    "title": "～どおり（に）",
-    "meaning": "just as / in accordance with (attached to nouns)",
-    "explanation": "Attached directly to a noun (often as a suffix), it means something happens exactly as that noun indicates. The reading becomes どおり after a noun.",
-    "formation": "Noun + どおり（に）",
-    "whyRight": "～どおり attaches to a noun to mean 'exactly as that noun', so it is correct after a noun rather than a verb.",
-    "examples": [
-      {
-        "sentence": "予定[よてい]___に仕事[しごと]が進[すす]んでいる。",
-        "answer": "どおり",
-        "translation": "The work is progressing just as planned."
-      },
-      {
-        "sentence": "説明書[せつめいしょ]___に組[く]み立[た]ててください。",
-        "answer": "どおり",
-        "translation": "Please assemble it according to the instructions."
-      },
-      {
-        "sentence": "時間[じかん]___に電車[でんしゃ]が来[き]た。",
-        "answer": "どおり",
-        "translation": "The train came right on time (just as scheduled)."
-      },
-      {
-        "sentence": "計画[けいかく]___に旅行[りょこう]ができて満足[まんぞく]だ。",
-        "answer": "どおり",
-        "translation": "I'm satisfied that the trip went exactly as planned."
-      },
-      {
-        "sentence": "希望[きぼう]___の会社[かいしゃ]に就職[しゅうしょく]できた。",
-        "answer": "どおり",
-        "translation": "I was able to get a job at the company I had hoped for."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "とおり",
-        "gloss": "the same word but read とおり when standing alone after a verb; after a noun the rendaku reading どおり is required"
-      },
-      {
-        "form": "ように",
-        "gloss": "means 'like/as', a comparison, but does not carry the 'exactly as specified' nuance of どおり"
-      },
-      {
-        "form": "みたいに",
-        "gloss": "casual 'like', a resemblance, not 'in accordance with'"
-      },
-      {
-        "form": "ばかり",
-        "gloss": "means 'only/just (amount)', unrelated meaning"
-      },
-      {
-        "form": "ながら",
-        "gloss": "means 'while doing', simultaneity, not 'according to'"
-      },
-      {
-        "form": "らしく",
-        "gloss": "means 'typical of/seemingly', not 'exactly as'"
-      },
-      {
-        "form": "なりに",
-        "gloss": "means 'in one's own way', a different nuance from 'as specified'"
-      },
-      {
-        "form": "どおりで",
-        "gloss": "wrong form; the connective uses どおり（に）, and どおりで is not standard here"
-      },
-      {
-        "form": "について",
-        "gloss": "means 'concerning/about', unrelated meaning"
-      },
-      {
-        "form": "にとって",
-        "gloss": "means 'for/from the standpoint of', unrelated meaning"
-      },
-      {
-        "form": "とおりに",
-        "gloss": "uses the standalone reading; after a plain noun the suffixed どおり is correct, not とおりに"
-      },
-      {
-        "form": "のように",
-        "gloss": "means 'like ~', comparison, lacks the 'in accordance with' meaning"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:とおりに",
-    "level": "N3",
-    "title": "～とおりに",
-    "meaning": "just as / in the way that (attached to verbs)",
-    "explanation": "Attached to a verb (plain present or past) or to the plain word とおり, it means doing something exactly in the manner indicated. After a verb the reading stays とおり.",
-    "formation": "Verb (plain/past) + とおり（に） / Noun + の + とおり（に）",
-    "whyRight": "～とおりに follows a verb to mean 'exactly in the way that', so it is correct after a verb form rather than the noun-suffix どおり.",
-    "examples": [
-      {
-        "sentence": "私[わたし]が言[い]う___にやってください。",
-        "answer": "とおり",
-        "translation": "Please do it just as I say."
-      },
-      {
-        "sentence": "先生[せんせい]が教[おし]えてくれた___に書[か]いた。",
-        "answer": "とおり",
-        "translation": "I wrote it just as the teacher taught me."
-      },
-      {
-        "sentence": "思[おも]った___に試験[しけん]は難[むずか]しかった。",
-        "answer": "とおり",
-        "translation": "Just as I thought, the exam was difficult."
-      },
-      {
-        "sentence": "矢印[やじるし]が示[しめ]す___に進[すす]んでください。",
-        "answer": "とおり",
-        "translation": "Please proceed just as the arrow indicates."
-      },
-      {
-        "sentence": "見[み]た___に絵[え]を描[か]いてみた。",
-        "answer": "とおり",
-        "translation": "I tried drawing the picture just as I saw it."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "どおり",
-        "gloss": "the rendaku reading used when suffixed directly to a noun; after a verb the reading is とおり"
-      },
-      {
-        "form": "みたいに",
-        "gloss": "casual 'like', a resemblance, not 'in the exact way that'"
-      },
-      {
-        "form": "ながら",
-        "gloss": "means 'while doing', simultaneity, wrong meaning"
-      },
-      {
-        "form": "ばかり",
-        "gloss": "means 'just/only', unrelated meaning"
-      },
-      {
-        "form": "ところ",
-        "gloss": "means 'place/just about to', not 'in the way that'"
-      },
-      {
-        "form": "ところで",
-        "gloss": "～たところで is a concessive 'even if', attaches to the past form, and is ungrammatical before に here; it does not mean 'in the way that'"
-      },
-      {
-        "form": "とおりで",
-        "gloss": "non-standard connective; the manner adverbial uses とおりに/とおり, not とおりで"
-      },
-      {
-        "form": "について",
-        "gloss": "means 'concerning', unrelated meaning"
-      },
-      {
-        "form": "によって",
-        "gloss": "means 'depending on/by means of', not 'just as'"
-      },
-      {
-        "form": "らしく",
-        "gloss": "means 'typical of/seemingly', not 'exactly as'"
-      },
-      {
-        "form": "なりに",
-        "gloss": "means 'in one's own way', different from following instructions exactly"
-      },
-      {
-        "form": "べく",
-        "gloss": "stiff written form meaning 'in order to'; expresses purpose, not the manner 'exactly as', and does not attach naturally in these slots"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:とともに",
-    "level": "N3",
-    "title": "～とともに",
-    "meaning": "together with / at the same time as / along with",
-    "explanation": "Expresses that two actions or changes happen simultaneously, or that something is done together with someone or something. Often shows that as one thing changes, another changes along with it.",
-    "formation": "Verb (dictionary form) / Noun + とともに",
-    "whyRight": "とともに links a change or action that occurs simultaneously with another, making it the correct connective for 'as/along with'.",
-    "examples": [
-      {
-        "sentence": "年[とし]を取[と]る___、体力[たいりょく]が落[お]ちてきた。",
-        "answer": "とともに",
-        "translation": "As I get older, my physical strength has declined."
-      },
-      {
-        "sentence": "彼[かれ]は家族[かぞく]___、海外[かいがい]へ引[ひ]っ越[こ]した。",
-        "answer": "とともに",
-        "translation": "He moved abroad together with his family."
-      },
-      {
-        "sentence": "技術[ぎじゅつ]の進歩[しんぽ]___、生活[せいかつ]は便利[べんり]になった。",
-        "answer": "とともに",
-        "translation": "Along with technological progress, life has become convenient."
-      },
-      {
-        "sentence": "卒業[そつぎょう]する___、新[あたら]しい生活[せいかつ]が始[はじ]まる。",
-        "answer": "とともに",
-        "translation": "Upon graduating, a new life begins at the same time."
-      },
-      {
-        "sentence": "気温[きおん]が上[あ]がる___、桜[さくら]が咲[さ]き始[はじ]めた。",
-        "answer": "とともに",
-        "translation": "As the temperature rose, the cherry blossoms began to bloom."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "とおりに",
-        "gloss": "'just as'; expresses doing as instructed, not simultaneous change."
-      },
-      {
-        "form": "について",
-        "gloss": "'about/concerning'; marks a topic, not simultaneity."
-      },
-      {
-        "form": "ことなく",
-        "gloss": "'without doing'; needs a negative-of-action meaning, but the blank links simultaneous change, so it does not fit."
-      },
-      {
-        "form": "とともにして",
-        "gloss": "incorrect conjugation; とともに takes no して."
-      },
-      {
-        "form": "にとって",
-        "gloss": "'for/from the standpoint of'; expresses viewpoint, not togetherness."
-      },
-      {
-        "form": "ばかりで",
-        "gloss": "'nothing but/only'; expresses restriction, not simultaneous change or accompaniment."
-      },
-      {
-        "form": "ながら",
-        "gloss": "'while'; used for simultaneous actions by one subject, not for parallel changes."
-      },
-      {
-        "form": "とともである",
-        "gloss": "ungrammatical predicate form; not a valid connective."
-      },
-      {
-        "form": "に対[たい]して",
-        "gloss": "'toward/in contrast to'; marks an object or contrast, not togetherness."
-      },
-      {
-        "form": "うちに",
-        "gloss": "'while/before'; expresses doing within a period, not change happening along with another."
-      },
-      {
-        "form": "ばかりに",
-        "gloss": "'simply because'; expresses an unfortunate cause, not simultaneity."
-      },
-      {
-        "form": "ともに",
-        "gloss": "missing と; needs the particle と to connect to the preceding word here."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:ないことには",
-    "level": "N3",
-    "title": "～ないことには",
-    "meaning": "unless / without doing (something, nothing can happen)",
-    "explanation": "Indicates that unless a certain condition is met, the result expressed in the second clause cannot be achieved. The second clause is usually negative or expresses impossibility.",
-    "formation": "Verb (ない-form) / Noun + で + ないことには",
-    "whyRight": "ないことには sets up a necessary precondition, meaning 'unless this is done, the following cannot happen', which fits the negative-result pattern.",
-    "examples": [
-      {
-        "sentence": "実際[じっさい]に見[み]てみ___、良[よ]し悪[あ]しは分[わ]からない。",
-        "answer": "ないことには",
-        "translation": "Unless I actually look at it, I can't tell if it's good or bad."
-      },
-      {
-        "sentence": "予約[よやく]し___、その店[みせ]には入[はい]れない。",
-        "answer": "ないことには",
-        "translation": "Unless you make a reservation, you can't get into that restaurant."
-      },
-      {
-        "sentence": "やってみ___、できるかどうか分[わ]からないよ。",
-        "answer": "ないことには",
-        "translation": "Unless you try, you won't know if you can do it."
-      },
-      {
-        "sentence": "お金[かね]が___、旅行[りょこう]には行[い]けない。",
-        "answer": "ないことには",
-        "translation": "Without money, you can't go on a trip."
-      },
-      {
-        "sentence": "原因[げんいん]を調[しら]べ___、解決[かいけつ]できない。",
-        "answer": "ないことには",
-        "translation": "Unless we investigate the cause, we can't solve it."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ないことはない",
-        "gloss": "'it's not that one can't'; expresses partial possibility, opposite nuance."
-      },
-      {
-        "form": "ないうちに",
-        "gloss": "'before it happens'; expresses timing, not a necessary condition."
-      },
-      {
-        "form": "ないように",
-        "gloss": "'so as not to'; expresses purpose of avoidance, not a precondition."
-      },
-      {
-        "form": "ないものか",
-        "gloss": "rhetorical wish 'isn't there some way not to'; it is a sentence-ending exclamation and cannot set up the conditional clause the blank needs."
-      },
-      {
-        "form": "ないことだ",
-        "gloss": "'one should not'; sentence-final advice that cannot connect to the following 'can't...' clause, so the sentence becomes ungrammatical."
-      },
-      {
-        "form": "ないのに",
-        "gloss": "'even though not'; expresses contrast, not condition."
-      },
-      {
-        "form": "ないことに",
-        "gloss": "missing は; the set phrase requires ことには."
-      },
-      {
-        "form": "ないことから",
-        "gloss": "'from the fact that not'; states a basis for judgment, not a condition."
-      },
-      {
-        "form": "ないわけには",
-        "gloss": "'cannot avoid doing'; expresses unavoidable obligation, different meaning."
-      },
-      {
-        "form": "ないとか",
-        "gloss": "colloquial 'or not / something like not'; a vague listing/hearsay ending, not a conditional, so it cannot link to the 'can't...' result."
-      },
-      {
-        "form": "ないばかりか",
-        "gloss": "'not only not'; adds emphasis on addition, not condition."
-      },
-      {
-        "form": "ないにしても",
-        "gloss": "'even if not'; concessive, not conditional precondition."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:ないことはない",
-    "level": "N3",
-    "title": "～ないことはない",
-    "meaning": "it's not that one can't / it's possible (reluctantly or with reservation)",
-    "explanation": "A double negative expressing that something is possible, though often with hesitation, reservation, or under certain conditions. It softens an affirmation.",
-    "formation": "Verb (ない-form) / い-adjective (くない) / な-adjective・Noun (でない) + ことはない",
-    "whyRight": "ないことはない is a double-negative construction meaning 'it's not that... cannot', conveying reluctant possibility, which matches the hedged affirmative context.",
-    "examples": [
-      {
-        "sentence": "辛[から]い物[もの]は食[た]べられ___が、あまり好[す]きではない。",
-        "answer": "ないことはない",
-        "translation": "It's not that I can't eat spicy food, but I don't really like it."
-      },
-      {
-        "sentence": "急[いそ]げば間[ま]に合[あ]わ___が、走[はし]らなければならない。",
-        "answer": "ないことはない",
-        "translation": "It's not that we can't make it if we hurry, but we'd have to run."
-      },
-      {
-        "sentence": "その仕事[しごと]、私[わたし]にもでき___。",
-        "answer": "ないことはない",
-        "translation": "It's not that I can't do that job (I probably can).",
-        "context": "そんなに難[むずか]しい仕事[しごと]ではない。"
-      },
-      {
-        "sentence": "値段[ねだん]が高[たか]いが、買[か]え___。",
-        "answer": "ないことはない",
-        "translation": "The price is high, but it's not that I can't buy it."
-      },
-      {
-        "sentence": "彼[かれ]の気持[きも]ちが分[わ]から___が、賛成[さんせい]はできない。",
-        "answer": "ないことはない",
-        "translation": "It's not that I don't understand his feelings, but I can't agree."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ないことには",
-        "gloss": "'unless'; sets a precondition with negative result, opposite function."
-      },
-      {
-        "form": "ないわけがない",
-        "gloss": "'there's no way it isn't'; expresses strong certainty, too strong here."
-      },
-      {
-        "form": "ないはずがない",
-        "gloss": "'it can't be that not'; strong logical certainty, not reluctant possibility."
-      },
-      {
-        "form": "ないことだ",
-        "gloss": "'one should not'; gives advice, not possibility."
-      },
-      {
-        "form": "ないものだ",
-        "gloss": "'one just doesn't'; expresses a general truth, not reluctant possibility."
-      },
-      {
-        "form": "ないわけにはいかない",
-        "gloss": "'cannot avoid doing'; expresses obligation, different meaning."
-      },
-      {
-        "form": "ないでください",
-        "gloss": "'please do not'; a request form, which cannot attach mid-sentence before が and gives no possibility meaning."
-      },
-      {
-        "form": "ないこともなく",
-        "gloss": "mid-sentence continuative 'while not entirely un-...'; it cannot stand before が or end the clause (その仕事、私にもできないこともなく。is ungrammatical), so it does not fit these blanks."
-      },
-      {
-        "form": "ないことか",
-        "gloss": "exclamatory 'how (much)...'; emotional emphasis, not possibility."
-      },
-      {
-        "form": "ないことになる",
-        "gloss": "'it turns out that not'; expresses a resulting conclusion, not possibility."
-      },
-      {
-        "form": "ないつもりだ",
-        "gloss": "'intend not to'; expresses intention, which clashes with the ability verbs (食べられ/でき) and the hedged-possibility meaning here."
-      },
-      {
-        "form": "ないでおこう",
-        "gloss": "volitional 'let's not do'; a sentence-ending volitional that cannot attach before が (食べられないでおこうが is ungrammatical) and expresses a decision, not reluctant possibility."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:ながら（も）",
-    "level": "N3",
-    "title": "～ながら（も）",
-    "meaning": "although / even though / despite (while still)",
-    "explanation": "Expresses a contrast or contradiction, similar to 'although' or 'even though'. Despite the first situation being true, the second clause holds, often unexpectedly.",
-    "formation": "Verb (ます-stem) / い-adjective / な-adjective・Noun + ながら（も）",
-    "whyRight": "ながら（も） in this concessive usage means 'although/even though', linking two contrasting facts, which fits the unexpected-contrast context.",
-    "examples": [
-      {
-        "sentence": "狭[せま]い___、自分[じぶん]の部屋[へや]を持[も]てて嬉[うれ]しい。",
-        "answer": "ながらも",
-        "translation": "Although it's small, I'm happy to have my own room."
-      },
-      {
-        "sentence": "残念[ざんねん]___、今回[こんかい]はお断[ことわ]りします。",
-        "answer": "ながらも",
-        "translation": "Although it's regrettable, I must decline this time."
-      },
-      {
-        "sentence": "知[し]ってい___、彼[かれ]は何[なに]も言[い]わなかった。",
-        "answer": "ながらも",
-        "translation": "Even though he knew, he said nothing."
-      },
-      {
-        "sentence": "彼女[かのじょ]は子供[こども]___、しっかりしている。",
-        "answer": "ながらも",
-        "translation": "Although she is a child, she is very dependable."
-      },
-      {
-        "sentence": "貧[まず]しい___、彼[かれ]は人[ひと]に親切[しんせつ]だった。",
-        "answer": "ながらも",
-        "translation": "Despite being poor, he was kind to people."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "つつ",
-        "gloss": "literary 'while'; attaches only to a verb ます-stem (e.g. 知りつつ), so it cannot follow the adjectives/noun (狭い, 残念, 子供, 貧しい) in these blanks."
-      },
-      {
-        "form": "つつも",
-        "gloss": "near-synonym 'while/although' but more formal/literary; attaches to verb stem only (知りつつも), mismatched with the い-adjectives/な-adjective/noun here."
-      },
-      {
-        "form": "べく",
-        "gloss": "'in order to'; attaches to a verb dictionary form (知るべく) and expresses purpose, so it cannot follow these adjectives/noun and gives the wrong meaning."
-      },
-      {
-        "form": "がてら",
-        "gloss": "'while also / on the way to'; attaches to a noun or verb ます-stem and combines two actions, not concession, so it does not fit these blanks."
-      },
-      {
-        "form": "かたわら",
-        "gloss": "'while mainly doing (as a sideline)'; attaches to a noun or verb dictionary form and means doing two things in parallel, not 'although'."
-      },
-      {
-        "form": "どころか",
-        "gloss": "'far from / let alone'; reverses expectation for emphasis (狭いどころか = far from small), which contradicts the concessive meaning wanted here."
-      },
-      {
-        "form": "ながらに",
-        "gloss": "'while remaining in a state'; fixed expression (e.g. 涙ながらに), not general concession."
-      },
-      {
-        "form": "つつある",
-        "gloss": "'in the process of'; expresses ongoing change, not concession."
-      },
-      {
-        "form": "ながらで",
-        "gloss": "ungrammatical combination; ながら does not take で here."
-      },
-      {
-        "form": "ものなら",
-        "gloss": "'if it were possible to'; a conditional attaching to volitional/dictionary forms, not a concessive suffix, so it gives the wrong meaning."
-      },
-      {
-        "form": "ながらにして",
-        "gloss": "'while staying'; fixed phrase meaning effortless staying-in-place, not concession."
-      },
-      {
-        "form": "つも",
-        "gloss": "not a valid form; meaningless fragment."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:など",
-    "level": "N3",
-    "title": "～など",
-    "meaning": "such things as / and so on / things like (often with a dismissive or humble nuance)",
-    "explanation": "Gives an example among others ('such as, etc.'), or expresses a dismissive, humble, or surprised attitude toward the noun it follows. The nuance depends on context.",
-    "formation": "Noun / Verb (plain form) / Phrase + など",
-    "whyRight": "など marks the preceding item as an example among others, or adds a dismissive/humble tone, which fits the listing or downplaying context.",
-    "examples": [
-      {
-        "sentence": "週末[しゅうまつ]は映画[えいが]を見[み]たり、買[か]い物[もの]___したりする。",
-        "answer": "など",
-        "translation": "On weekends I do things like watch movies and go shopping."
-      },
-      {
-        "sentence": "私[わたし]___に、そんな大[おお]きな仕事[しごと]はできません。",
-        "answer": "など",
-        "translation": "Someone like me could never do such a big job."
-      },
-      {
-        "sentence": "冗談[じょうだん]___言[い]っている場合[ばあい]ではない。",
-        "answer": "など",
-        "translation": "This is no time to be saying things like jokes.",
-        "context": "火事[かじ]で建物[たてもの]から急[いそ]いで逃[に]げなければならない。"
-      },
-      {
-        "sentence": "机[つくえ]の上[うえ]には本[ほん]やノート___が置[お]いてある。",
-        "answer": "など",
-        "translation": "On the desk there are things like books and notebooks.",
-        "context": "机[つくえ]の上[うえ]はいろいろな物[もの]で散[ち]らかっている。"
-      },
-      {
-        "sentence": "彼[かれ]の言[い]うこと___、信[しん]じられない。",
-        "answer": "など",
-        "translation": "I can't believe things like what he says."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ばかりに",
-        "gloss": "'simply because'; marks a cause with an unfortunate result and attaches to a plain form, so it cannot mark an example or a dismissive tone here."
-      },
-      {
-        "form": "だけ",
-        "gloss": "'only'; exclusive limitation, not exemplification."
-      },
-      {
-        "form": "しか",
-        "gloss": "'only' (with negative); restrictive, not listing examples."
-      },
-      {
-        "form": "こそ",
-        "gloss": "'precisely/exactly'; emphasizes, opposite of dismissive など."
-      },
-      {
-        "form": "まで",
-        "gloss": "'even/up to'; marks an extreme, not exemplification."
-      },
-      {
-        "form": "さえ",
-        "gloss": "'even'; marks an extreme example, different nuance from など."
-      },
-      {
-        "form": "ながら",
-        "gloss": "'while'; a conjunctive, not a listing particle."
-      },
-      {
-        "form": "として",
-        "gloss": "'as'; marks a role or capacity, not examples."
-      },
-      {
-        "form": "について",
-        "gloss": "'about'; marks a topic, not exemplification."
-      },
-      {
-        "form": "ところ",
-        "gloss": "'place/point'; a noun, not a listing particle."
-      },
-      {
-        "form": "くらい",
-        "gloss": "'about/to the extent'; expresses degree, not 'such as/etc.'"
-      },
-      {
-        "form": "ずつ",
-        "gloss": "'each/apiece'; distributes a quantity evenly and cannot mark examples or a dismissive tone, so it does not fit these blanks."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:において",
-    "level": "N3",
-    "title": "～において",
-    "meaning": "in / at / on / regarding (formal indication of place, time, or situation)",
-    "explanation": "A formal expression indicating the place, time, scene, or field where something takes place or applies. Equivalent to で but used in written or formal contexts.",
-    "formation": "Noun + において",
-    "whyRight": "において formally marks the place, time, or domain in which something occurs, fitting the written/formal locational or situational context.",
-    "examples": [
-      {
-        "sentence": "会議[かいぎ]は本社[ほんしゃ]___行[おこな]われる。",
-        "answer": "において",
-        "translation": "The meeting will be held at the head office.",
-        "context": "来週[らいしゅう]の会議[かいぎ]の場所[ばしょ]が決[き]まった。"
-      },
-      {
-        "sentence": "現代[げんだい]社会[しゃかい]___、情報[じょうほう]は非常[ひじょう]に重要[じゅうよう]だ。",
-        "answer": "において",
-        "translation": "In modern society, information is extremely important."
-      },
-      {
-        "sentence": "この分野[ぶんや]___、彼[かれ]は第一人者[だいいちにんしゃ]だ。",
-        "answer": "において",
-        "translation": "In this field, he is the leading authority."
-      },
-      {
-        "sentence": "今回[こんかい]の大会[たいかい]___、彼[かれ]は新[あたら]しい記録[きろく]を出[だ]した。",
-        "answer": "において",
-        "translation": "At this tournament, he set a new record."
-      },
-      {
-        "sentence": "実験[じっけん]___、温度[おんど]の管理[かんり]が大切[たいせつ]だ。",
-        "answer": "において",
-        "translation": "In the experiment, temperature control is important."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "における",
-        "gloss": "noun-modifying form 'in/at the...'; must precede a noun, but here it precedes a verb/comma."
-      },
-      {
-        "form": "をもとに",
-        "gloss": "'based on'; marks a basis or source, not the place, time, or domain of an event."
-      },
-      {
-        "form": "について",
-        "gloss": "'about/concerning'; marks a topic, not the scene of an event."
-      },
-      {
-        "form": "に対[たい]して",
-        "gloss": "'toward/against'; marks a target or contrast, not location."
-      },
-      {
-        "form": "につれて",
-        "gloss": "'as / along with'; marks proportional change over time, not a place or domain."
-      },
-      {
-        "form": "によって",
-        "gloss": "'by means of/depending on'; marks means or agent, not location."
-      },
-      {
-        "form": "にわたって",
-        "gloss": "'over/throughout'; marks extent of range or period, not a point/domain."
-      },
-      {
-        "form": "をめぐって",
-        "gloss": "'concerning/over (a dispute)'; marks a subject of contention, not a scene."
-      },
-      {
-        "form": "を除[のぞ]いて",
-        "gloss": "'excluding / except'; marks an exception, not the place or domain of an event."
-      },
-      {
-        "form": "に関[かん]して",
-        "gloss": "'regarding'; marks a topic, not the location/domain of an event."
-      },
-      {
-        "form": "のもとで",
-        "gloss": "'under (the guidance/condition of)'; marks supervision or condition, not a scene."
-      },
-      {
-        "form": "を通[とお]して",
-        "gloss": "'through/throughout'; marks a medium or duration, not a fixed place or domain."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:における",
-    "level": "N3",
-    "title": "～における",
-    "meaning": "in / at / on / regarding (formal, modifying a noun)",
-    "explanation": "The noun-modifying form of において. Used to formally indicate the place, time, or field that relates to the following noun.",
-    "formation": "Noun + における + Noun",
-    "whyRight": "における is the attributive form of において, used directly before a noun to mean 'the ... in/at ...', which fits a noun-modifying formal context.",
-    "examples": [
-      {
-        "sentence": "日本[にほん]___教育[きょういく]制度[せいど]について研究[けんきゅう]している。",
-        "answer": "における",
-        "translation": "I am researching the education system in Japan.",
-        "context": "私[わたし]は世界[せかい]の学校[がっこう]の仕組[しく]みを国[くに]ごとに調[しら]べている。"
-      },
-      {
-        "sentence": "職場[しょくば]___人間[にんげん]関係[かんけい]に悩[なや]んでいる。",
-        "answer": "における",
-        "translation": "I'm troubled by human relationships at the workplace."
-      },
-      {
-        "sentence": "現代[げんだい]___科学[かがく]技術[ぎじゅつ]の発展[はってん]は著[いちじる]しい。",
-        "answer": "における",
-        "translation": "The development of science and technology in modern times is remarkable.",
-        "context": "昔[むかし]と比[くら]べて、技術[ぎじゅつ]の進歩[しんぽ]の速[はや]さは大[おお]きく変[か]わった。"
-      },
-      {
-        "sentence": "会議[かいぎ]___彼[かれ]の発言[はつげん]は重[おも]かった。",
-        "answer": "における",
-        "translation": "His remarks at the meeting carried weight.",
-        "context": "昨日[きのう]、社内[しゃない]で重要[じゅうよう]な話[はな]し合[あ]いが開[ひら]かれた。"
-      },
-      {
-        "sentence": "この地域[ちいき]___農業[のうぎょう]の役割[やくわり]は大[おお]きい。",
-        "answer": "における",
-        "translation": "The role of agriculture in this region is large.",
-        "context": "この地方[ちほう]は昔[むかし]から農業[のうぎょう]が盛[さか]んな場所[ばしょ]だ。"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "において",
-        "gloss": "the adverbial form; used before verbs/clauses, but here a noun follows so における is needed."
-      },
-      {
-        "form": "についての",
-        "gloss": "'about the...'; marks a topic modifier, not the place/domain of something."
-      },
-      {
-        "form": "にとっての",
-        "gloss": "'for the...'; expresses viewpoint modifier, not location/domain."
-      },
-      {
-        "form": "に対[たい]する",
-        "gloss": "'toward/against the...'; marks a target modifier, not location."
-      },
-      {
-        "form": "に関[かん]する",
-        "gloss": "'regarding the...'; marks a topic modifier, not the scene/domain."
-      },
-      {
-        "form": "による",
-        "gloss": "'due to/by the...'; marks cause or means modifier, not location."
-      },
-      {
-        "form": "にわたる",
-        "gloss": "'spanning the...'; marks extent of a range, not a point/domain."
-      },
-      {
-        "form": "をめぐる",
-        "gloss": "'surrounding/over the...'; marks a subject of dispute, not a scene."
-      },
-      {
-        "form": "のための",
-        "gloss": "'for the sake of'; marks purpose, not location/domain."
-      },
-      {
-        "form": "にあたっての",
-        "gloss": "'on the occasion of'; marks a special occasion modifier, not a general place."
-      },
-      {
-        "form": "を通[とお]しての",
-        "gloss": "'through the...'; marks a medium modifier, not a fixed place or domain."
-      },
-      {
-        "form": "向[む]けの",
-        "gloss": "'aimed at/intended for'; marks a target audience, not the place or domain something belongs to, so it gives the wrong meaning here."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:にかけては",
-    "level": "N3",
-    "title": "～にかけては",
-    "meaning": "when it comes to / as far as ... is concerned (one excels)",
-    "explanation": "Indicates that with regard to a particular skill, ability, or area, someone or something is superior or excels. The following clause is usually praise or a positive evaluation.",
-    "formation": "Noun + にかけては",
-    "whyRight": "にかけては singles out a field of ability and is followed by praise of excellence, fitting the 'no one beats X at Y' context.",
-    "examples": [
-      {
-        "sentence": "料理[りょうり]___、母[はは]は誰[だれ]にも負[ま]けない。",
-        "answer": "にかけては",
-        "translation": "When it comes to cooking, my mother loses to no one."
-      },
-      {
-        "sentence": "走[はし]る速[はや]さ___、彼[かれ]はクラスで一番[いちばん]だ。",
-        "answer": "にかけては",
-        "translation": "As far as running speed goes, he is the best in the class."
-      },
-      {
-        "sentence": "数学[すうがく]___、彼女[かのじょ]の右[みぎ]に出[で]る者[もの]はいない。",
-        "answer": "にかけては",
-        "translation": "When it comes to mathematics, no one can surpass her."
-      },
-      {
-        "sentence": "記憶力[きおくりょく]___、祖父[そふ]は若者[わかもの]にも劣[おと]らない。",
-        "answer": "にかけては",
-        "translation": "When it comes to memory, my grandfather is not inferior even to young people."
-      },
-      {
-        "sentence": "歌[うた]のうまさ___、彼[かれ]の右[みぎ]に出[で]る人[ひと]はいない。",
-        "answer": "にかけては",
-        "translation": "When it comes to singing skill, no one is better than him."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "にかわって",
-        "gloss": "'instead of/on behalf of'; marks substitution or representation, not an area of skill, so it gives the wrong meaning before the praise clause."
-      },
-      {
-        "form": "をめぐって",
-        "gloss": "'over/concerning (a dispute)'; marks a subject of contention, not a field one excels in, so it does not fit the 'no one beats X' frame."
-      },
-      {
-        "form": "にとっては",
-        "gloss": "'for/from the standpoint of'; expresses viewpoint, not an area of excellence."
-      },
-      {
-        "form": "に対[たい]しては",
-        "gloss": "'toward/against'; marks a target or contrast, not a skill domain."
-      },
-      {
-        "form": "にかけて",
-        "gloss": "without は it means 'over a span (from...to)'; a different time/range usage."
-      },
-      {
-        "form": "にわたっては",
-        "gloss": "'spanning over'; marks extent of a period or range, not excellence."
-      },
-      {
-        "form": "にかんしては",
-        "gloss": "'regarding'; marks a topic, not a field of superiority with praise."
-      },
-      {
-        "form": "をかけては",
-        "gloss": "wrong particle を; the expression requires に."
-      },
-      {
-        "form": "にあたっては",
-        "gloss": "'on the occasion of'; marks a special occasion, not a skill area."
-      },
-      {
-        "form": "によっては",
-        "gloss": "'depending on'; expresses variation by case, not excellence."
-      },
-      {
-        "form": "にかけても",
-        "gloss": "wrong particle も; alters meaning toward 'even risking', not the area-of-excellence sense."
-      },
-      {
-        "form": "にかぎっては",
-        "gloss": "'only in the case of'; expresses exception/limitation, not superiority in a field."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:にかわって",
-    "level": "N3",
-    "title": "～にかわって",
-    "meaning": "instead of / on behalf of / in place of",
-    "explanation": "Indicates that someone or something acts in place of, or as a replacement for, another. Often used when one person does an action on behalf of another, or when one thing replaces another.",
-    "formation": "Noun + にかわって (or にかわり)",
-    "whyRight": "にかわって attaches directly to a noun and expresses 'in place of / on behalf of,' which fits a substitution or representation context.",
-    "examples": [
-      {
-        "sentence": "病気[びょうき]の社長[しゃちょう]___、副社長[ふくしゃちょう]が挨拶[あいさつ]をした。",
-        "answer": "にかわって",
-        "translation": "On behalf of the sick president, the vice president gave the greeting."
-      },
-      {
-        "sentence": "母[はは]___、私[わたし]が会議[かいぎ]に出席[しゅっせき]します。",
-        "answer": "にかわって",
-        "translation": "I will attend the meeting in place of my mother."
-      },
-      {
-        "sentence": "最近[さいきん]は現金[げんきん]___、電子[でんし]マネーが使[つか]われている。",
-        "answer": "にかわって",
-        "translation": "Recently, electronic money is being used instead of cash."
-      },
-      {
-        "sentence": "けがをした選手[せんしゅ]___、別[べつ]の選手[せんしゅ]が出場[しゅつじょう]した。",
-        "answer": "にかわって",
-        "translation": "In place of the injured player, another player took part."
-      },
-      {
-        "sentence": "首相[しゅしょう]___、外務[がいむ]大臣[だいじん]が会談[かいだん]に臨[のぞ]んだ。",
-        "answer": "にかわって",
-        "translation": "On behalf of the prime minister, the foreign minister attended the talks."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "にむかって",
-        "gloss": "'toward / facing,' marks a direction or target, not acting in place of someone"
-      },
-      {
-        "form": "にかぎって",
-        "gloss": "'only / of all things,' expresses exception, not substitution"
-      },
-      {
-        "form": "にとって",
-        "gloss": "'for / from the standpoint of,' marks perspective, not replacement"
-      },
-      {
-        "form": "について",
-        "gloss": "'about / concerning,' marks topic, not substitution"
-      },
-      {
-        "form": "にかんして",
-        "gloss": "'regarding,' marks subject matter, not acting in place of someone"
-      },
-      {
-        "form": "にくわえて",
-        "gloss": "'in addition to,' adds something rather than replacing it"
-      },
-      {
-        "form": "にくらべて",
-        "gloss": "'compared to,' makes a comparison, not a substitution"
-      },
-      {
-        "form": "によって",
-        "gloss": "'by means of / depending on,' marks agent or cause, not replacement"
-      },
-      {
-        "form": "にたいして",
-        "gloss": "'toward / in contrast to,' marks a target or contrast, not standing in for"
-      },
-      {
-        "form": "にあたって",
-        "gloss": "'on the occasion of,' marks a special occasion for an action, not acting in place of someone"
-      },
-      {
-        "form": "にかわられて",
-        "gloss": "passive 'be replaced by,' wrong voice and meaning for the blank"
-      },
-      {
-        "form": "にかわっても",
-        "gloss": "adds concessive 'even if replaced,' changing the meaning unnecessarily"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:に関して",
-    "level": "N3",
-    "title": "～に関して",
-    "meaning": "regarding / concerning / about",
-    "explanation": "Used to indicate the subject or matter that an action, discussion, or thought relates to. It is a more formal equivalent of について and is common in written or academic Japanese.",
-    "formation": "Noun + に関[かん]して (or に関する before a noun)",
-    "whyRight": "に関して follows a noun to mark the topic being addressed, fitting contexts of investigation, discussion, or inquiry about a subject.",
-    "examples": [
-      {
-        "sentence": "この事件[じけん]___、詳[くわ]しく調[しら]べる必要[ひつよう]がある。",
-        "answer": "に関して",
-        "translation": "Regarding this incident, we need to investigate in detail."
-      },
-      {
-        "sentence": "環境[かんきょう]問題[もんだい]___、多[おお]くの議論[ぎろん]が行[おこな]われた。",
-        "answer": "に関して",
-        "translation": "Concerning environmental issues, much discussion took place."
-      },
-      {
-        "sentence": "新[あたら]しい制度[せいど]___、質問[しつもん]はありますか。",
-        "answer": "に関して",
-        "translation": "Do you have any questions regarding the new system?"
-      },
-      {
-        "sentence": "日本[にほん]の歴史[れきし]___、彼[かれ]はとても詳[くわ]しい。",
-        "answer": "に関して",
-        "translation": "He is very knowledgeable about Japanese history."
-      },
-      {
-        "sentence": "個人[こじん]情報[じょうほう]の取[と]り扱[あつか]い___、説明[せつめい]を受[う]けた。",
-        "answer": "に関して",
-        "translation": "I received an explanation concerning the handling of personal information."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "に関する",
-        "gloss": "'concerning' but is the noun-modifying form, so it cannot end the clause as in these sentences"
-      },
-      {
-        "form": "にかわって",
-        "gloss": "'in place of,' expresses substitution, not topic"
-      },
-      {
-        "form": "にくわえて",
-        "gloss": "'in addition to,' adds an item rather than marking a subject"
-      },
-      {
-        "form": "にくらべて",
-        "gloss": "'compared to,' makes a comparison, not topic marking"
-      },
-      {
-        "form": "にしては",
-        "gloss": "'for / considering,' expresses unexpected contrast, not a topic"
-      },
-      {
-        "form": "にしても",
-        "gloss": "'even if / even so,' concessive, not topic marking"
-      },
-      {
-        "form": "にしたがって",
-        "gloss": "'in accordance with / as,' marks change or rule, not topic"
-      },
-      {
-        "form": "にきまっている",
-        "gloss": "'must surely be,' expresses certainty, not topic"
-      },
-      {
-        "form": "にとって",
-        "gloss": "'for / to,' marks viewpoint, slightly different from naming a topic of discussion"
-      },
-      {
-        "form": "において",
-        "gloss": "'in / at,' marks location or situation, not the subject matter"
-      },
-      {
-        "form": "にかぎって",
-        "gloss": "'only / of all things,' expresses exception or emphasis, not the topic being discussed"
-      },
-      {
-        "form": "によって",
-        "gloss": "'by means of / depending on,' marks an agent or cause, not the subject matter"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:に決まっている",
-    "level": "N3",
-    "title": "～に決まっている",
-    "meaning": "must surely be / I'm sure / it's bound to be",
-    "explanation": "Expresses the speaker's strong conviction or certainty that something is the case, based on reasoning or common sense. It conveys 'there's no doubt' rather than a logical guarantee.",
-    "formation": "Verb/i-adjective (plain) / na-adjective / Noun + に決[き]まっている",
-    "whyRight": "に決まっている attaches to a plain-form predicate or noun to assert the speaker's firm certainty, fitting contexts of confident conclusions.",
-    "examples": [
-      {
-        "sentence": "こんなに勉強[べんきょう]したのだから、合格[ごうかく]する___。",
-        "answer": "に決まっている",
-        "translation": "Since I studied this much, I'm sure to pass."
-      },
-      {
-        "sentence": "あの店[みせ]の料理[りょうり]は、おいしい___。",
-        "answer": "に決まっている",
-        "translation": "The food at that restaurant must surely be delicious.",
-        "context": "あの店[みせ]はいつも行列[ぎょうれつ]ができるほど有名[ゆうめい]だ。"
-      },
-      {
-        "sentence": "夜[よる]中[なか]に電話[でんわ]するなんて、迷惑[めいわく]___。",
-        "answer": "に決まっている",
-        "translation": "Calling in the middle of the night is bound to be a nuisance.",
-        "context": "常識[じょうしき]で考[かんが]えればすぐわかることだ。"
-      },
-      {
-        "sentence": "彼[かれ]が犯人[はんにん]___と、みんなが信[しん]じている。",
-        "answer": "に決まっている",
-        "translation": "Everyone believes that he must be the culprit."
-      },
-      {
-        "sentence": "そんな高[たか]い時計[とけい]、本物[ほんもの]___。",
-        "answer": "に決まっている",
-        "translation": "Such an expensive watch is surely genuine.",
-        "context": "それは有名[ゆうめい]なブランドの店[みせ]で正[ただ]しく買[か]ったものだ。"
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "に決めている",
-        "gloss": "'have decided on,' expresses a personal decision, not certainty about a fact"
-      },
-      {
-        "form": "に決まった",
-        "gloss": "'was decided,' a completed decision event, not the speaker's conviction"
-      },
-      {
-        "form": "に決められている",
-        "gloss": "passive 'is decided/determined by someone,' wrong voice and meaning, not the speaker's certainty"
-      },
-      {
-        "form": "かもしれない",
-        "gloss": "'might be,' expresses possibility, the opposite of firm certainty"
-      },
-      {
-        "form": "はずがない",
-        "gloss": "'cannot possibly be,' negates likelihood instead of asserting it"
-      },
-      {
-        "form": "にすぎない",
-        "gloss": "'is nothing more than,' downplays rather than asserts certainty"
-      },
-      {
-        "form": "に決まっていない",
-        "gloss": "negates the pattern to 'is not certain to,' contradicting the intended meaning"
-      },
-      {
-        "form": "が決まっている",
-        "gloss": "uses the wrong particle が; the certainty pattern requires に, so 'おいしいが決まっている' is ungrammatical"
-      },
-      {
-        "form": "に決まろう",
-        "gloss": "volitional 'let's decide,' a misconjugation that cannot follow a plain predicate as in these blanks"
-      },
-      {
-        "form": "に関している",
-        "gloss": "not a real expression; confuses に関して with the target"
-      },
-      {
-        "form": "に決めてある",
-        "gloss": "'has been decided in advance,' a prepared decision, not certainty"
-      },
-      {
-        "form": "と決まっている",
-        "gloss": "'is fixed/established as a rule,' refers to set rules, not the speaker's confident guess"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:に比べて",
-    "level": "N3",
-    "title": "～に比べて",
-    "meaning": "compared to / in comparison with",
-    "explanation": "Used to compare two things, indicating that one stands out relative to a baseline. The noun before に比べて is the standard against which the comparison is made.",
-    "formation": "Noun + に比[くら]べて (or に比べ)",
-    "whyRight": "に比べて follows a noun to set up an explicit comparison, fitting sentences that contrast amounts, qualities, or situations.",
-    "examples": [
-      {
-        "sentence": "去年[きょねん]___、今年[ことし]は雨[あめ]が多[おお]い。",
-        "answer": "に比べて",
-        "translation": "Compared to last year, there is a lot of rain this year."
-      },
-      {
-        "sentence": "都会[とかい]___、田舎[いなか]は物価[ぶっか]が安[やす]い。",
-        "answer": "に比べて",
-        "translation": "Compared to the city, prices are cheaper in the countryside."
-      },
-      {
-        "sentence": "兄[あに]___、弟[おとうと]はおとなしい性格[せいかく]だ。",
-        "answer": "に比べて",
-        "translation": "Compared to his older brother, the younger brother has a quiet personality."
-      },
-      {
-        "sentence": "以前[いぜん]___、この町[まち]はずいぶん発展[はってん]した。",
-        "answer": "に比べて",
-        "translation": "Compared to before, this town has developed considerably."
-      },
-      {
-        "sentence": "電車[でんしゃ]___、バスは時間[じかん]がかかる。",
-        "answer": "に比べて",
-        "translation": "Compared to the train, the bus takes more time."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "にむかって",
-        "gloss": "'toward,' marks a direction, not a standard for comparison"
-      },
-      {
-        "form": "にくわえて",
-        "gloss": "'in addition to,' adds rather than compares"
-      },
-      {
-        "form": "にかわって",
-        "gloss": "'in place of,' substitution, not comparison"
-      },
-      {
-        "form": "にかんして",
-        "gloss": "'regarding,' marks a topic, not a comparison standard"
-      },
-      {
-        "form": "について",
-        "gloss": "'about / concerning,' marks a topic, not a standard for comparison"
-      },
-      {
-        "form": "にしては",
-        "gloss": "'considering / for,' expresses something unexpected, not direct comparison"
-      },
-      {
-        "form": "にしたがって",
-        "gloss": "'as / in accordance with,' marks proportional change, not comparison of two things"
-      },
-      {
-        "form": "にかぎって",
-        "gloss": "'only / of all things,' expresses exception, not a measured comparison"
-      },
-      {
-        "form": "にあたって",
-        "gloss": "'on the occasion of,' marks a special occasion for an action, not a comparison"
-      },
-      {
-        "form": "にきまっている",
-        "gloss": "'must surely be,' expresses certainty, not a comparison of two things"
-      },
-      {
-        "form": "ほど",
-        "gloss": "'as much as,' a degree comparison particle, not the に比べて pattern"
-      },
-      {
-        "form": "にくらべられて",
-        "gloss": "passive 'being compared,' wrong voice for the blank"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:に加えて",
-    "level": "N3",
-    "title": "～に加えて",
-    "meaning": "in addition to / on top of / besides",
-    "explanation": "Indicates that one thing is added to another, often emphasizing accumulation. The first item already exists, and a further item or factor is added to it.",
-    "formation": "Noun + に加[くわ]えて",
-    "whyRight": "に加えて attaches to a noun to add a further element to an existing one, fitting contexts where factors or items accumulate.",
-    "examples": [
-      {
-        "sentence": "強[つよ]い風[かぜ]___、激[はげ]しい雨[あめ]も降[ふ]り始[はじ]めた。",
-        "answer": "に加えて",
-        "translation": "In addition to the strong wind, heavy rain also began to fall."
-      },
-      {
-        "sentence": "彼[かれ]は英語[えいご]___、フランス語[ご]も話[はな]せる。",
-        "answer": "に加えて",
-        "translation": "In addition to English, he can also speak French."
-      },
-      {
-        "sentence": "授業料[じゅぎょうりょう]___、教科書[きょうかしょ]代[だい]もかかる。",
-        "answer": "に加えて",
-        "translation": "On top of tuition, textbook fees are also incurred."
-      },
-      {
-        "sentence": "彼女[かのじょ]は才能[さいのう]___、努力[どりょく]も惜[お]しまない。",
-        "answer": "に加えて",
-        "translation": "In addition to talent, she does not spare effort either."
-      },
-      {
-        "sentence": "交通[こうつう]の便[べん]___、家賃[やちん]も安[やす]いので人気[にんき]だ。",
-        "answer": "に加えて",
-        "translation": "In addition to the good transport access, the rent is cheap, so it's popular."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "について",
-        "gloss": "'about / concerning,' marks a topic, not a further item added on"
-      },
-      {
-        "form": "にくらべて",
-        "gloss": "'compared to,' makes a comparison rather than adding"
-      },
-      {
-        "form": "にかわって",
-        "gloss": "'in place of,' replaces rather than adds"
-      },
-      {
-        "form": "にかんして",
-        "gloss": "'regarding,' marks a topic, not addition"
-      },
-      {
-        "form": "にしたがって",
-        "gloss": "'as / in accordance with,' marks change or rule, not addition"
-      },
-      {
-        "form": "にしては",
-        "gloss": "'considering,' unexpected contrast, not addition"
-      },
-      {
-        "form": "にしても",
-        "gloss": "'even if,' concessive, not addition"
-      },
-      {
-        "form": "に加えられて",
-        "gloss": "passive 'being added,' wrong voice for the blank"
-      },
-      {
-        "form": "をくわえて",
-        "gloss": "'adding ~ (to something)' uses を for the object added, but here the existing item takes に, so this particle is wrong"
-      },
-      {
-        "form": "にとって",
-        "gloss": "'for / from the standpoint of,' marks a viewpoint, not a further item added on"
-      },
-      {
-        "form": "にさいして",
-        "gloss": "'on the occasion of,' marks a special occasion for an action, not the cumulative 'in addition to'"
-      },
-      {
-        "form": "に加えると",
-        "gloss": "'if you add,' conditional ending, not the て-form requested"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:にしたがって",
-    "level": "N3",
-    "title": "～にしたがって",
-    "meaning": "as / in accordance with / following",
-    "explanation": "Has two main uses: (1) to express that as one thing changes, another changes proportionally ('as ~'), and (2) to mean 'in accordance with / following' a rule, instruction, or guide.",
-    "formation": "Verb (dictionary form) / Noun + にしたがって (に従って)",
-    "whyRight": "にしたがって links a change or a rule to a corresponding action or change, fitting contexts of proportional change or compliance.",
-    "examples": [
-      {
-        "sentence": "年[とし]を取[と]る___、記憶力[きおくりょく]が落[お]ちてきた。",
-        "answer": "にしたがって",
-        "translation": "As I grow older, my memory has declined."
-      },
-      {
-        "sentence": "山[やま]を登[のぼ]る___、空気[くうき]が薄[うす]くなる。",
-        "answer": "にしたがって",
-        "translation": "As you climb the mountain, the air becomes thinner."
-      },
-      {
-        "sentence": "係員[かかりいん]の指示[しじ]___、避難[ひなん]してください。",
-        "answer": "にしたがって",
-        "translation": "Please evacuate in accordance with the staff's instructions."
-      },
-      {
-        "sentence": "経済[けいざい]が発展[はってん]する___、生活[せいかつ]が豊[ゆた]かになった。",
-        "answer": "にしたがって",
-        "translation": "As the economy develops, life has become more affluent."
-      },
-      {
-        "sentence": "規則[きそく]___、書類[しょるい]を提出[ていしゅつ]した。",
-        "answer": "にしたがって",
-        "translation": "I submitted the documents in accordance with the rules."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "にさいして",
-        "gloss": "'on the occasion of,' marks a one-time event for an action, not proportional change or rule-following"
-      },
-      {
-        "form": "にわたって",
-        "gloss": "'over / throughout (a span),' marks extent of time or space and needs a noun span, so it cannot join a dictionary-form verb of change or a rule"
-      },
-      {
-        "form": "をめぐって",
-        "gloss": "'concerning / over (a dispute),' marks a topic of contention, not proportional change or compliance"
-      },
-      {
-        "form": "にかんして",
-        "gloss": "'regarding,' marks a topic, not change or compliance"
-      },
-      {
-        "form": "にくわえて",
-        "gloss": "'in addition to,' adds an item, not proportional change"
-      },
-      {
-        "form": "にくらべて",
-        "gloss": "'compared to,' a comparison, not change or rule following"
-      },
-      {
-        "form": "にしては",
-        "gloss": "'considering,' unexpected contrast, not compliance or change"
-      },
-      {
-        "form": "にしても",
-        "gloss": "'even if,' concessive, not change or rule"
-      },
-      {
-        "form": "にしたがわず",
-        "gloss": "'without following,' negative, contradicting the intended compliance"
-      },
-      {
-        "form": "にしたがおう",
-        "gloss": "volitional 'let's follow,' wrong form for the blank"
-      },
-      {
-        "form": "にしたがったら",
-        "gloss": "'if you follow,' conditional ending, not the て-form requested"
-      },
-      {
-        "form": "をしたがって",
-        "gloss": "uses the wrong particle を; the object of compliance takes に, so this is ungrammatical"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:にしては",
-    "level": "N3",
-    "title": "～にしては",
-    "meaning": "for / considering / despite being",
-    "explanation": "Expresses that something is unexpected or surprising given the standard implied by the preceding noun or clause. The result differs from what one would normally expect.",
-    "formation": "Verb/Noun (plain) + にしては",
-    "whyRight": "にしては sets a standard and then states a result that deviates from expectation, fitting sentences where the outcome is surprising relative to that standard.",
-    "examples": [
-      {
-        "sentence": "彼[かれ]は初心者[しょしんしゃ]___、なかなか上手[じょうず]だ。",
-        "answer": "にしては",
-        "translation": "For a beginner, he is quite skilled."
-      },
-      {
-        "sentence": "今日[きょう]は冬[ふゆ]___、暖[あたた]かい。",
-        "answer": "にしては",
-        "translation": "For winter, it's warm today."
-      },
-      {
-        "sentence": "値段[ねだん]が安[やす]い___、品質[ひんしつ]がいい。",
-        "answer": "にしては",
-        "translation": "Considering the price is cheap, the quality is good.",
-        "context": "この製品[せいひん]は他[ほか]の商品[しょうひん]よりずっと値段[ねだん]が安[やす]い。"
-      },
-      {
-        "sentence": "子供[こども]が描[か]いた絵[え]___、とてもよくできている。",
-        "answer": "にしては",
-        "translation": "For a picture drawn by a child, it's very well done."
-      },
-      {
-        "sentence": "彼女[かのじょ]は日本[にほん]に来[き]たばかり___、日本語[にほんご]が上手[じょうず]だ。",
-        "answer": "にしては",
-        "translation": "Considering she just arrived in Japan, her Japanese is good."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "について",
-        "gloss": "'about / concerning,' marks a topic, not an unexpected result against a standard"
-      },
-      {
-        "form": "にしても",
-        "gloss": "'even if / even so,' concessive over a possibility, different from contrasting an actual standard"
-      },
-      {
-        "form": "にしたら",
-        "gloss": "'from the standpoint of,' marks a viewpoint, not an unexpected outcome"
-      },
-      {
-        "form": "のもとで",
-        "gloss": "'under (the guidance/condition of),' marks the circumstances an action occurs in, not an unexpected result against a standard"
-      },
-      {
-        "form": "にくらべて",
-        "gloss": "'compared to,' a direct comparison, not surprise against a standard"
-      },
-      {
-        "form": "にかんして",
-        "gloss": "'regarding,' marks a topic, not unexpectedness"
-      },
-      {
-        "form": "にくわえて",
-        "gloss": "'in addition to,' adds an item, not contrast"
-      },
-      {
-        "form": "にかわって",
-        "gloss": "'in place of,' substitution, not contrast"
-      },
-      {
-        "form": "にしたがって",
-        "gloss": "'as / following,' proportional change or compliance, not surprise"
-      },
-      {
-        "form": "にきまっている",
-        "gloss": "'must surely be,' certainty, not unexpected contrast"
-      },
-      {
-        "form": "にしてみれば",
-        "gloss": "'from ~'s perspective,' a viewpoint expression, not contrast against a standard"
-      },
-      {
-        "form": "にあたって",
-        "gloss": "'on the occasion of,' marks a special occasion for an action, not an unexpected result against a standard"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:にしても",
-    "level": "N3",
-    "title": "～にしても",
-    "meaning": "even if / even though / even so",
-    "explanation": "Used to concede a point or assumption while stating that the conclusion still holds. It can also mean 'whether ~ or ~' when paired, and conveys 'even granting that ~.'",
-    "formation": "Verb/i-adjective (plain) / Noun / na-adjective + にしても",
-    "whyRight": "にしても concedes a hypothetical or actual situation and then presents a contrasting or limiting statement, fitting concessive contexts.",
-    "examples": [
-      {
-        "sentence": "いくら忙[いそが]しい___、連絡[れんらく]くらいはするべきだ。",
-        "answer": "にしても",
-        "translation": "Even if you're busy, you should at least make contact."
-      },
-      {
-        "sentence": "冗談[じょうだん]___、言[い]っていいことと悪[わる]いことがある。",
-        "answer": "にしても",
-        "translation": "Even as a joke, there are things you should and shouldn't say.",
-        "context": "人[ひと]を深[ふか]く傷[きず]つけるようなことを笑[わら]いながら言[い]う人[ひと]がいる。"
-      },
-      {
-        "sentence": "新[あたら]しい仕事[しごと]___、もう少[すこ]し考[かんが]えたほうがいい。",
-        "answer": "にしても",
-        "translation": "Even if you take the new job, you'd better think it over a little more.",
-        "context": "その仕事[しごと]は今[いま]の仕事[しごと]より給料[きゅうりょう]が高[たか]いらしい。でも、すぐに決[き]めてはいけない。"
-      },
-      {
-        "sentence": "高[たか]い___、これは買[か]う価値[かち]がある。",
-        "answer": "にしても",
-        "translation": "Even if it's expensive, this is worth buying."
-      },
-      {
-        "sentence": "知[し]らなかった___、責任[せきにん]がないわけではない。",
-        "answer": "にしても",
-        "translation": "Even if you didn't know, it doesn't mean you have no responsibility."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "にしては",
-        "gloss": "'considering / for,' contrasts an actual standard, not a conceded hypothetical"
-      },
-      {
-        "form": "にとって",
-        "gloss": "'for / from the standpoint of,' marks a viewpoint and attaches to nouns, ungrammatical after the い-adjectives here and not concessive"
-      },
-      {
-        "form": "について",
-        "gloss": "'about / concerning,' marks a topic, not a conceded point"
-      },
-      {
-        "form": "によって",
-        "gloss": "'by means of / depending on,' marks an agent or cause, not concession"
-      },
-      {
-        "form": "にあたって",
-        "gloss": "'on the occasion of,' marks a one-time event for an action, not concession"
-      },
-      {
-        "form": "にしたがって",
-        "gloss": "'as / following,' proportional change or compliance, not concession"
-      },
-      {
-        "form": "にくらべて",
-        "gloss": "'compared to,' a comparison, not concession"
-      },
-      {
-        "form": "にくわえて",
-        "gloss": "'in addition to,' adds an item, not concession"
-      },
-      {
-        "form": "にかんして",
-        "gloss": "'regarding,' marks a topic, not concession"
-      },
-      {
-        "form": "にきまっている",
-        "gloss": "'must surely be,' certainty, not concession"
-      },
-      {
-        "form": "にかわって",
-        "gloss": "'in place of,' substitution, not concession"
-      },
-      {
-        "form": "にしても、にしても",
-        "gloss": "an awkward doubled fragment, not a single valid token for the blank"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:にしろ",
-    "level": "N3",
-    "title": "～にしろ",
-    "meaning": "even if / whether ... or / no matter",
-    "explanation": "Used to indicate that regardless of the case or option, the same conclusion applies. Often appears in pairs (Aにしろ Bにしろ) to mean 'whether A or B'.",
-    "formation": "Noun / Verb (plain) / な-adjective (である) / い-adjective + にしろ",
-    "whyRight": "にしろ attaches to the plain form and expresses 'even if / no matter' while granting the supposed point; here it concedes the situation before stating the speaker's view.",
-    "examples": [
-      {
-        "sentence": "理由[りゆう]がある___、嘘[うそ]をつくのはよくない。",
-        "answer": "にしろ",
-        "translation": "Even if there is a reason, lying is not good."
-      },
-      {
-        "sentence": "行[い]く___行[い]かない___、早[はや]めに連絡[れんらく]してください。",
-        "answer": "にしろ",
-        "translation": "Whether you go or not, please contact me early."
-      },
-      {
-        "sentence": "冗談[じょうだん]だった___、その言[い]い方[かた]はひどい。",
-        "answer": "にしろ",
-        "translation": "Even if it was a joke, that way of saying it is terrible."
-      },
-      {
-        "sentence": "学生[がくせい]___社会人[しゃかいじん]___、時間[じかん]は守[まも]るべきだ。",
-        "answer": "にしろ",
-        "translation": "Whether a student or a working adult, one should keep to schedules."
-      },
-      {
-        "sentence": "どんなに忙[いそが]しい___、食事[しょくじ]はきちんととった方[ほう]がいい。",
-        "answer": "にしろ",
-        "translation": "No matter how busy you are, you should eat properly."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "にして",
-        "gloss": "'at/for (a time/stage)'; does not express concession 'even if'."
-      },
-      {
-        "form": "にしては",
-        "gloss": "'considering / for (a standard)'; expresses contrast with expectation, not 'even if'."
-      },
-      {
-        "form": "にあたって",
-        "gloss": "'on the occasion of / when doing'; marks a special juncture, not concession 'even if'."
-      },
-      {
-        "form": "にすると",
-        "gloss": "'if you make it into'; conditional of する, not concession."
-      },
-      {
-        "form": "にしろう",
-        "gloss": "ungrammatical volitional-looking blend; not a real conjugation here."
-      },
-      {
-        "form": "にしない",
-        "gloss": "negative of にする 'not decide on'; wrong meaning."
-      },
-      {
-        "form": "としろ",
-        "gloss": "imperative-like blend; not standard concessive grammar."
-      },
-      {
-        "form": "にあろ",
-        "gloss": "not a word; invalid form."
-      },
-      {
-        "form": "ですら",
-        "gloss": "'even'; emphasizes an extreme example, not 'even if (concession)'."
-      },
-      {
-        "form": "からには",
-        "gloss": "'now that / since'; states a basis, not concession."
-      },
-      {
-        "form": "につけ",
-        "gloss": "'every time / whether'; pairs differently and means 'whenever'."
-      },
-      {
-        "form": "にしたら",
-        "gloss": "'from the standpoint of / if'; viewpoint-conditional, not 'even if' concession."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:にせよ",
-    "level": "N3",
-    "title": "～にせよ",
-    "meaning": "even if / whether ... or / no matter",
-    "explanation": "A slightly more formal/written equivalent of にしろ. Concedes a point regardless of which case is true, often in paired form Aにせよ Bにせよ.",
-    "formation": "Noun / Verb (plain) / な-adjective (である) / い-adjective + にせよ",
-    "whyRight": "にせよ is the formal concessive form meaning 'even if / whether'; it fits when granting a hypothetical before drawing a conclusion in writing or formal speech.",
-    "examples": [
-      {
-        "sentence": "失敗[しっぱい]した___、挑戦[ちょうせん]したこと自体[じたい]は立派[りっぱ]だ。",
-        "answer": "にせよ",
-        "translation": "Even if you failed, the very act of trying is admirable."
-      },
-      {
-        "sentence": "賛成[さんせい]する___反対[はんたい]する___、意見[いけん]を述[の]べてほしい。",
-        "answer": "にせよ",
-        "translation": "Whether you agree or oppose, I want you to state your opinion."
-      },
-      {
-        "sentence": "理由[りゆう]がどうである___、無断[むだん]欠勤[けっきん]は許[ゆる]されない。",
-        "answer": "にせよ",
-        "translation": "Whatever the reason may be, an unexcused absence is not permitted."
-      },
-      {
-        "sentence": "高[たか]い___安[やす]い___、品質[ひんしつ]をよく確[たし]かめるべきだ。",
-        "answer": "にせよ",
-        "translation": "Whether expensive or cheap, you should check the quality well."
-      },
-      {
-        "sentence": "いずれ帰国[きこく]する___、今[いま]は勉強[べんきょう]に集中[しゅうちゅう]したい。",
-        "answer": "にせよ",
-        "translation": "Even though I will return home eventually, for now I want to focus on studying."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "にあたって",
-        "gloss": "'on the occasion of / when doing'; marks a special juncture, not concession 'even if'."
-      },
-      {
-        "form": "にして",
-        "gloss": "'at/for (a time)'; not concessive."
-      },
-      {
-        "form": "にしては",
-        "gloss": "'considering / for'; expresses contrast with a standard, not 'even if'."
-      },
-      {
-        "form": "にすれば",
-        "gloss": "'from the standpoint of / if one does'; not concession."
-      },
-      {
-        "form": "にせる",
-        "gloss": "not a valid form; nonsensical here."
-      },
-      {
-        "form": "にせない",
-        "gloss": "ungrammatical negative; not a real expression."
-      },
-      {
-        "form": "とせよ",
-        "gloss": "'let it be that'; assumption-setting, not 'even if' concession."
-      },
-      {
-        "form": "ばかりに",
-        "gloss": "'simply because (with a bad result)'; states a regrettable cause, not concession 'even if'."
-      },
-      {
-        "form": "にしよう",
-        "gloss": "volitional 'let's decide on'; wrong meaning and form."
-      },
-      {
-        "form": "ですら",
-        "gloss": "'even'; emphasis particle, not concessive 'even if'."
-      },
-      {
-        "form": "からといって",
-        "gloss": "'just because'; introduces an unwarranted reason, not concession."
-      },
-      {
-        "form": "にあって",
-        "gloss": "'in (a situation/era)'; locative-temporal, not concession."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:に対して",
-    "level": "N3",
-    "title": "～に対して",
-    "meaning": "toward / regarding / in contrast to",
-    "explanation": "Indicates the target or object of an action or attitude ('toward / to'), or sets up a contrast between two things ('whereas / in contrast to').",
-    "formation": "Noun + に対して",
-    "whyRight": "に対して marks the noun as the target/direction of the action or attitude; it is correct when the verb is directed at that person or thing.",
-    "examples": [
-      {
-        "sentence": "先生[せんせい]___失礼[しつれい]な態度[たいど]をとってはいけない。",
-        "answer": "に対して",
-        "translation": "You must not take a rude attitude toward the teacher."
-      },
-      {
-        "context": "うちの兄弟[きょうだい]は性格[せいかく]が正反対[せいはんたい]だ。",
-        "sentence": "兄[あに]は静[しず]かなの___、弟[おとうと]はとてもにぎやかだ。",
-        "answer": "に対して",
-        "translation": "Whereas my older brother is quiet, my younger brother is very lively."
-      },
-      {
-        "context": "店員[てんいん]は接客[せっきゃく]の基本[きほん]を守[まも]っている。",
-        "sentence": "お客様[きゃくさま]___丁寧[ていねい]な言葉[ことば]で話[はな]す。",
-        "answer": "に対して",
-        "translation": "I speak in polite words toward customers."
-      },
-      {
-        "context": "会議[かいぎ]で社員[しゃいん]から質問[しつもん]が出[で]た。",
-        "sentence": "この質問[しつもん]___明確[めいかく]な答[こた]えを出[だ]してください。",
-        "answer": "に対して",
-        "translation": "Please give a clear answer to this question."
-      },
-      {
-        "context": "都会[とかい]と田舎[いなか]では人[ひと]の流[なが]れが逆[ぎゃく]だ。",
-        "sentence": "都会[とかい]の人口[じんこう]が増[ふ]えるの___、田舎[いなか]は減[へ]り続[つづ]けている。",
-        "answer": "に対して",
-        "translation": "In contrast to the rising urban population, the countryside keeps declining."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "について",
-        "gloss": "'about (a topic)'; marks subject matter, not the target of an action/attitude."
-      },
-      {
-        "form": "にとって",
-        "gloss": "'for / from the viewpoint of'; expresses evaluation standpoint, not direction toward."
-      },
-      {
-        "form": "に関して",
-        "gloss": "'regarding (a topic)'; topic marker, not a directed-action target."
-      },
-      {
-        "form": "にかけて",
-        "gloss": "'over a range / toward (time/place)'; not an action target."
-      },
-      {
-        "form": "に向[む]けて",
-        "gloss": "'aimed at (a goal/event)'; goal-directed, not attitude toward a person."
-      },
-      {
-        "form": "に対する",
-        "gloss": "noun-modifying form 'toward'; used before a noun, not before a verb as here."
-      },
-      {
-        "form": "によって",
-        "gloss": "'by / depending on'; agent/cause marker, wrong meaning."
-      },
-      {
-        "form": "に従[したが]って",
-        "gloss": "'in accordance with / as'; not directed action toward."
-      },
-      {
-        "form": "にして",
-        "gloss": "'at/for (a stage)'; not the target of an attitude."
-      },
-      {
-        "form": "に比[くら]べて",
-        "gloss": "'compared to'; comparison of degree only, lacks the opposed-contrast/directed-attitude sense."
-      },
-      {
-        "form": "にあたって",
-        "gloss": "'on the occasion of'; marks a special juncture, not the target/direction of an attitude."
-      },
-      {
-        "form": "について対して",
-        "gloss": "ungrammatical blend of two phrases; invalid."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:に違いない",
-    "level": "N3",
-    "title": "～に違いない",
-    "meaning": "must be / there is no doubt that",
-    "explanation": "Expresses the speaker's strong conviction or near-certain conjecture based on evidence: 'it must be the case that'.",
-    "formation": "Noun / な-adjective + に違いない; Verb (plain) / い-adjective + に違いない",
-    "whyRight": "に違いない conveys a confident inference ('must be'); it fits when the speaker draws a strong conclusion from circumstances rather than stating a plain fact.",
-    "examples": [
-      {
-        "context": "彼[かれ]は毎晩[まいばん]十時[じゅうじ]には必[かなら]ず寝[ね]る。",
-        "sentence": "電気[でんき]が消[き]えているから、彼[かれ]はもう寝[ね]た___。",
-        "answer": "に違いない",
-        "translation": "The lights are off, so he must have already gone to sleep."
-      },
-      {
-        "context": "みんながあの人[ひと]にサインを求[もと]めている。",
-        "sentence": "あの人[ひと]は有名[ゆうめい]な俳優[はいゆう]___。",
-        "answer": "に違いない",
-        "translation": "That person must be a famous actor."
-      },
-      {
-        "context": "この店[みせ]は昼[ひる]も夜[よる]もいつも満席[まんせき]だ。",
-        "sentence": "こんなに行列[ぎょうれつ]ができているなら、おいしい___。",
-        "answer": "に違いない",
-        "translation": "If there's such a long line, it must be delicious."
-      },
-      {
-        "context": "彼女[かのじょ]はずっとこの試験[しけん]のために頑張[がんば]ってきた。",
-        "sentence": "彼女[かのじょ]は試験[しけん]に合格[ごうかく]して、うれしい___。",
-        "answer": "に違いない",
-        "translation": "She passed the exam, so she must be happy."
-      },
-      {
-        "context": "この独特[どくとく]な字[じ]は田中[たなか]さんしか書[か]けない。",
-        "sentence": "この字[じ]を書[か]いたのは田中[たなか]さん___。",
-        "answer": "に違いない",
-        "translation": "The one who wrote these characters must be Tanaka."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "に違いある",
-        "gloss": "ungrammatical; the expression is fixed as に違いない (negative form)."
-      },
-      {
-        "form": "かもしれない",
-        "gloss": "'might be'; expresses weak possibility, far less certain than 'must be'."
-      },
-      {
-        "form": "はずがない",
-        "gloss": "'cannot possibly be'; opposite certainty (denial), wrong here."
-      },
-      {
-        "form": "に決[き]める",
-        "gloss": "'decide on'; an action of deciding, not an inference."
-      },
-      {
-        "form": "に違いなかった",
-        "gloss": "past 'must have been'; tense does not fit these present-conviction sentences."
-      },
-      {
-        "form": "そうだ",
-        "gloss": "'I heard / it seems'; hearsay or appearance, not firm conviction."
-      },
-      {
-        "form": "らしい",
-        "gloss": "'seems / apparently'; weaker evidential, not strong certainty."
-      },
-      {
-        "form": "わけがない",
-        "gloss": "'there's no way'; strong denial, opposite of the intended meaning."
-      },
-      {
-        "form": "に過[す]ぎない",
-        "gloss": "'is nothing more than'; limiting phrase, unrelated meaning."
-      },
-      {
-        "form": "ということだ",
-        "gloss": "'it means / I hear'; explanation or hearsay, not conviction."
-      },
-      {
-        "form": "べきだ",
-        "gloss": "'should'; obligation, not inference."
-      },
-      {
-        "form": "に違くない",
-        "gloss": "incorrect colloquial conjugation; not standard grammar."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:について",
-    "level": "N3",
-    "title": "～について",
-    "meaning": "about / concerning / regarding",
-    "explanation": "Marks the topic or subject matter that an action (speaking, writing, thinking, researching) is directed at.",
-    "formation": "Noun + について",
-    "whyRight": "について marks the noun as the topic of discussion or investigation; it fits when the following verb (talk, write, research, think) concerns that subject.",
-    "examples": [
-      {
-        "sentence": "日本[にほん]の文化[ぶんか]___レポートを書[か]きました。",
-        "answer": "について",
-        "translation": "I wrote a report about Japanese culture."
-      },
-      {
-        "sentence": "この問題[もんだい]___みんなで話[はな]し合[あ]いましょう。",
-        "answer": "について",
-        "translation": "Let's discuss this problem together."
-      },
-      {
-        "sentence": "環境[かんきょう]問題[もんだい]___詳[くわ]しく調[しら]べている。",
-        "answer": "について",
-        "translation": "I am researching environmental issues in detail."
-      },
-      {
-        "sentence": "新[あたら]しい計画[けいかく]___説明[せつめい]を聞[き]いた。",
-        "answer": "について",
-        "translation": "I heard an explanation about the new plan."
-      },
-      {
-        "sentence": "彼[かれ]の意見[いけん]___私[わたし]は何[なに]も知[し]らない。",
-        "answer": "について",
-        "translation": "I don't know anything about his opinion."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "につき",
-        "gloss": "'per / due to'; formal 'per unit' or 'because of', not 'about a topic'."
-      },
-      {
-        "form": "に対して",
-        "gloss": "'toward / against'; target of an attitude or contrast, not topic of discussion."
-      },
-      {
-        "form": "にとって",
-        "gloss": "'for / from the standpoint of'; evaluation viewpoint, not subject matter."
-      },
-      {
-        "form": "によって",
-        "gloss": "'by / depending on'; agent or cause, wrong meaning."
-      },
-      {
-        "form": "につれて",
-        "gloss": "'as ... changes'; proportional change, not a topic marker."
-      },
-      {
-        "form": "についての",
-        "gloss": "noun-modifying form; used before a noun, not before a verb as here."
-      },
-      {
-        "form": "について話",
-        "gloss": "incomplete fragment, not a valid connective token."
-      },
-      {
-        "form": "に関[かん]する",
-        "gloss": "noun-modifying 'concerning'; must precede a noun, not a verb here."
-      },
-      {
-        "form": "をめぐって",
-        "gloss": "'concerning (a disputed matter)'; implies controversy, narrower than plain 'about'."
-      },
-      {
-        "form": "において",
-        "gloss": "'in / at (a place/situation)'; locative, not topic of discussion."
-      },
-      {
-        "form": "にかけて",
-        "gloss": "'over a range'; spatial/temporal span, not subject matter."
-      },
-      {
-        "form": "にあたって",
-        "gloss": "'on the occasion of'; marks a special juncture, not the topic of discussion."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:につき",
-    "level": "N3",
-    "title": "～につき",
-    "meaning": "per / due to (formal)",
-    "explanation": "A formal expression with two uses: 'per' (a unit/amount), and 'because of / due to' (stating a reason, common on signs and notices).",
-    "formation": "Noun + につき",
-    "whyRight": "につき either distributes a quantity 'per (unit)' or gives a formal reason 'due to'; it fits where a rate per item or a notice-style reason is expressed.",
-    "examples": [
-      {
-        "sentence": "一人[ひとり]___二[ふた]つまでお取[と]りください。",
-        "answer": "につき",
-        "translation": "Please take up to two per person."
-      },
-      {
-        "sentence": "本日[ほんじつ]は祝日[しゅくじつ]___、休業[きゅうぎょう]いたします。",
-        "answer": "につき",
-        "translation": "Due to today being a holiday, we are closed."
-      },
-      {
-        "sentence": "工事中[こうじちゅう]___、通行[つうこう]できません。",
-        "answer": "につき",
-        "translation": "Due to construction, you cannot pass."
-      },
-      {
-        "sentence": "この商品[しょうひん]は一個[いっこ]百円[ひゃくえん]___販売[はんばい]しています。",
-        "answer": "につき",
-        "translation": "This product is sold at 100 yen per item."
-      },
-      {
-        "sentence": "雨天[うてん]___、試合[しあい]は中止[ちゅうし]となりました。",
-        "answer": "につき",
-        "translation": "Due to rain, the match has been canceled."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "について",
-        "gloss": "'about (a topic)'; subject-matter marker, not 'per' or 'due to'."
-      },
-      {
-        "form": "によって",
-        "gloss": "'by / depending on'; agent or variation, not formal 'per/due to'."
-      },
-      {
-        "form": "ごとに",
-        "gloss": "'every / each'; distributes over each unit but not the formal 'per' of につき, and cannot mean 'due to'."
-      },
-      {
-        "form": "として",
-        "gloss": "'as (a role/capacity)'; identifies a role, cannot mean 'per' or 'due to'."
-      },
-      {
-        "form": "に対して",
-        "gloss": "'toward / against'; directed attitude or contrast, not 'per/due to'."
-      },
-      {
-        "form": "につけ",
-        "gloss": "'whenever / every time'; recurring-occasion phrase, wrong meaning."
-      },
-      {
-        "form": "につれて",
-        "gloss": "'as ... changes'; proportional change, not 'per/due to'."
-      },
-      {
-        "form": "にして",
-        "gloss": "'at/for (a stage)'; emphatic time/condition marker, cannot mean 'per' or 'due to'."
-      },
-      {
-        "form": "にて",
-        "gloss": "'at / by means of (formal)'; place/means marker, not 'per/due to'."
-      },
-      {
-        "form": "くらい",
-        "gloss": "'about / approximately'; rough estimate of degree, cannot mean 'per' or 'due to'."
-      },
-      {
-        "form": "に応[おう]じて",
-        "gloss": "'depending on / in response to'; varies with a condition, cannot mean 'per (unit)' or notice-style 'due to'."
-      },
-      {
-        "form": "とともに",
-        "gloss": "'together with / as'; accompaniment or change, not 'per/due to'."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:につれて",
-    "level": "N3",
-    "title": "～につれて",
-    "meaning": "as ... (changes), accordingly",
-    "explanation": "Indicates that as one thing changes, another thing changes along with it proportionally. Both clauses describe gradual, parallel change.",
-    "formation": "Verb (dictionary form) / Noun + につれて",
-    "whyRight": "につれて links two changing situations so that the second follows along with the first; it fits when both sides express gradual, proportional change.",
-    "examples": [
-      {
-        "context": "年齢[ねんれい]が上[あ]がるほど筋肉[きんにく]は弱[よわ]くなる。",
-        "sentence": "年[とし]を取[と]る___、体力[たいりょく]が落[お]ちてくる。",
-        "answer": "につれて",
-        "translation": "As one gets older, one's physical strength declines."
-      },
-      {
-        "context": "高[たか]い所[ところ]に行[い]くほど酸素[さんそ]は少[すく]なくなる。",
-        "sentence": "山[やま]を登[のぼ]る___、空気[くうき]が薄[うす]くなった。",
-        "answer": "につれて",
-        "translation": "As we climbed the mountain, the air grew thinner."
-      },
-      {
-        "context": "傷[きず]は時間[じかん]とともに少[すこ]しずつ回復[かいふく]していく。",
-        "sentence": "時間[じかん]がたつ___、傷[きず]の痛[いた]みは和[やわ]らいだ。",
-        "answer": "につれて",
-        "translation": "As time passed, the pain of the wound eased."
-      },
-      {
-        "context": "この都市[とし]は経済[けいざい]も人口[じんこう]も同[おな]じように伸[の]びてきた。",
-        "sentence": "都市[とし]の発展[はってん]___、人口[じんこう]も増[ふ]えた。",
-        "answer": "につれて",
-        "translation": "As the city developed, its population also increased."
-      },
-      {
-        "context": "仕事[しごと]は慣[な]れれば慣[な]れるほど面白[おもしろ]くなる。",
-        "sentence": "経験[けいけん]を積[つ]む___、仕事[しごと]が楽[たの]しくなってきた。",
-        "answer": "につれて",
-        "translation": "As I gained experience, the work became more enjoyable."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "について",
-        "gloss": "'about (a topic)'; subject marker, not proportional change."
-      },
-      {
-        "form": "につき",
-        "gloss": "'per / due to'; rate or reason, not parallel change."
-      },
-      {
-        "form": "にとって",
-        "gloss": "'for / from the standpoint of'; viewpoint, not change-with."
-      },
-      {
-        "form": "にしては",
-        "gloss": "'considering / for (a standard)'; contrast with expectation, not gradual proportional change."
-      },
-      {
-        "form": "からといって",
-        "gloss": "'just because'; introduces an unwarranted reason, not parallel change."
-      },
-      {
-        "form": "において",
-        "gloss": "'in / at (a place/situation)'; locative, not one change driving another."
-      },
-      {
-        "form": "につけて",
-        "gloss": "'whenever (emotion)'; recurring trigger, not gradual proportional change."
-      },
-      {
-        "form": "によって",
-        "gloss": "'by / depending on'; cause or variation, not the parallel proportional co-change framed here."
-      },
-      {
-        "form": "に対して",
-        "gloss": "'toward / in contrast'; not proportional change."
-      },
-      {
-        "form": "ながら",
-        "gloss": "'while (simultaneous)'; concurrent action, not one change driving another."
-      },
-      {
-        "form": "うちに",
-        "gloss": "'while / before'; a bounded time window in which something happens, not the proportional 'the more ... the more' co-change framed here."
-      },
-      {
-        "form": "につれた",
-        "gloss": "incorrect past-tense form; the connective stays につれて here."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:にとって",
-    "level": "N3",
-    "title": "～にとって",
-    "meaning": "for / to / from the standpoint of",
-    "explanation": "Presents the person or group from whose viewpoint or position something is evaluated or judged: 'for X / to X'.",
-    "formation": "Noun + にとって",
-    "whyRight": "にとって sets the standpoint from which an evaluation is made; it fits when the predicate is a judgment (important, difficult, valuable) seen from that person's perspective.",
-    "examples": [
-      {
-        "sentence": "私[わたし]___家族[かぞく]が一番[いちばん]大切[たいせつ]だ。",
-        "answer": "にとって",
-        "translation": "For me, family is the most important."
-      },
-      {
-        "sentence": "子供[こども]___遊[あそ]びは大事[だいじ]な学[まな]びだ。",
-        "answer": "にとって",
-        "translation": "For children, play is important learning."
-      },
-      {
-        "sentence": "外国人[がいこくじん]___日本語[にほんご]の漢字[かんじ]は難[むずか]しい。",
-        "answer": "にとって",
-        "translation": "For foreigners, Japanese kanji are difficult."
-      },
-      {
-        "sentence": "会社[かいしゃ]___優秀[ゆうしゅう]な人材[じんざい]は宝[たから]だ。",
-        "answer": "にとって",
-        "translation": "For a company, excellent talent is a treasure."
-      },
-      {
-        "sentence": "彼[かれ]___その知[し]らせは大[おお]きな衝撃[しょうげき]だった。",
-        "answer": "にとって",
-        "translation": "For him, that news was a big shock."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "について",
-        "gloss": "'about (a topic)'; subject matter, not a viewpoint of evaluation."
-      },
-      {
-        "form": "に対して",
-        "gloss": "'toward / against'; target of an attitude, not the evaluating standpoint."
-      },
-      {
-        "form": "によって",
-        "gloss": "'by / depending on'; agent or variation, not viewpoint."
-      },
-      {
-        "form": "にとっての",
-        "gloss": "noun-modifying form 'for'; used before a noun, not before an adjective predicate as here."
-      },
-      {
-        "form": "として",
-        "gloss": "'as (a role)'; identifies a capacity, not the standpoint of evaluation."
-      },
-      {
-        "form": "につき",
-        "gloss": "'per / due to'; rate or reason, wrong meaning."
-      },
-      {
-        "form": "につれて",
-        "gloss": "'as ... changes'; proportional change, not viewpoint."
-      },
-      {
-        "form": "にかけては",
-        "gloss": "'when it comes to (a skill)'; field of expertise, not general evaluative standpoint."
-      },
-      {
-        "form": "にあって",
-        "gloss": "'in / at (a situation/era)'; locative-temporal, not a person's evaluating standpoint."
-      },
-      {
-        "form": "において",
-        "gloss": "'in / at (a place/field)'; locative, not a person's viewpoint."
-      },
-      {
-        "form": "に関[かん]して",
-        "gloss": "'regarding (a topic)'; topic marker, not evaluating standpoint."
-      },
-      {
-        "form": "にあたって",
-        "gloss": "'on the occasion of'; marks a special juncture, not a person's evaluating standpoint."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:にともなって",
-    "level": "N3",
-    "title": "～にともなって",
-    "meaning": "along with / accompanying / as ~ changes",
-    "explanation": "Indicates that as one thing changes or progresses, another thing changes along with it. The two events occur in parallel, with one driving the other.",
-    "formation": "Noun + にともなって / Verb (dictionary form) + のにともなって",
-    "whyRight": "にともなって links a gradual change to an accompanying change; it expresses parallel progression rather than a one-time cause or a simple means.",
-    "examples": [
-      {
-        "context": "都市[とし]では人[ひと]が増[ふ]えると同時[どうじ]に色々[いろいろ]な問題[もんだい]も起[お]きる。",
-        "sentence": "人口[じんこう]の増加[ぞうか]に___、住宅[じゅうたく]が不足[ふそく]している。",
-        "answer": "ともなって",
-        "translation": "Along with the population increase, housing is in short supply."
-      },
-      {
-        "context": "体[からだ]の変化[へんか]は年齢[ねんれい]と並行[へいこう]して進[すす]む。",
-        "sentence": "年[とし]を取[と]ることに___、体力[たいりょく]が落[お]ちてきた。",
-        "answer": "ともなって",
-        "translation": "As I get older, my physical strength has declined."
-      },
-      {
-        "context": "経済[けいざい]と暮[く]らしは一緒[いっしょ]に良[よ]くなっていった。",
-        "sentence": "経済[けいざい]の発展[はってん]に___、生活[せいかつ]が豊[ゆた]かになった。",
-        "answer": "ともなって",
-        "translation": "Along with economic development, life has become more affluent."
-      },
-      {
-        "context": "地球[ちきゅう]では気温[きおん]と海面[かいめん]が同[おな]じように変化[へんか]している。",
-        "sentence": "気温[きおん]の上昇[じょうしょう]に___、海面[かいめん]も上[あ]がっている。",
-        "answer": "ともなって",
-        "translation": "Along with rising temperatures, sea levels are also rising."
-      },
-      {
-        "context": "新[あたら]しい技術[ぎじゅつ]が広[ひろ]がると、生活[せいかつ]も同[おな]じように変[か]わっていく。",
-        "sentence": "技術[ぎじゅつ]の進歩[しんぽ]に___、生活[せいかつ]が便利[べんり]になった。",
-        "answer": "ともなって",
-        "translation": "Along with technological progress, life has become more convenient."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ともなう",
-        "gloss": "plain dictionary form; needs a following noun and cannot end this mid-sentence adverbial clause"
-      },
-      {
-        "form": "ともない",
-        "gloss": "negative/stem-like form; ungrammatical after に and gives no 'accompanying' adverbial reading"
-      },
-      {
-        "form": "とともない",
-        "gloss": "not a valid grammatical form"
-      },
-      {
-        "form": "ともなった",
-        "gloss": "past plain form; cannot stand as the adverbial connector linking the two clauses"
-      },
-      {
-        "form": "よって",
-        "gloss": "に+よって marks direct means or cause, not the simultaneous parallel co-change the sentence frames"
-      },
-      {
-        "form": "おいて",
-        "gloss": "に+おいて marks place or domain ('in/at'), not an accompanying change"
-      },
-      {
-        "form": "とって",
-        "gloss": "に+とって marks a viewpoint ('for'), not parallel progression"
-      },
-      {
-        "form": "ついて",
-        "gloss": "に+ついて introduces a topic ('about'), not a co-occurring change"
-      },
-      {
-        "form": "たいして",
-        "gloss": "に+たいして marks a target or contrast, not accompaniment"
-      },
-      {
-        "form": "かんして",
-        "gloss": "に+かんして is a topic marker ('regarding'), not parallel change"
-      },
-      {
-        "form": "くらべて",
-        "gloss": "に+くらべて is comparison ('compared to'), not an accompanying change"
-      },
-      {
-        "form": "あたって",
-        "gloss": "に+あたって marks the occasion of a one-time event, not gradual co-change"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:によって",
-    "level": "N3",
-    "title": "～によって",
-    "meaning": "by means of / depending on / due to / by (agent)",
-    "explanation": "A versatile expression marking the means, cause, agent (in passive sentences), or a variable on which something depends. Context determines which sense applies.",
-    "formation": "Noun + によって",
-    "whyRight": "によって attaches to a noun to mark the means, cause, agent, or determining factor; it is the standard form for these relationships.",
-    "examples": [
-      {
-        "sentence": "話[はな]し合[あ]いに___、問題[もんだい]を解決[かいけつ]した。",
-        "answer": "よって",
-        "translation": "We solved the problem through discussion."
-      },
-      {
-        "sentence": "この絵[え]は有名[ゆうめい]な画家[がか]に___描[えが]かれた。",
-        "answer": "よって",
-        "translation": "This painting was painted by a famous artist."
-      },
-      {
-        "sentence": "人[ひと]に___考[かんが]え方[かた]が違[ちが]う。",
-        "answer": "よって",
-        "translation": "Ways of thinking differ depending on the person."
-      },
-      {
-        "sentence": "地震[じしん]に___多[おお]くの建物[たてもの]が壊[こわ]れた。",
-        "answer": "よって",
-        "translation": "Many buildings were destroyed due to the earthquake."
-      },
-      {
-        "sentence": "天気[てんき]に___予定[よてい]を変[か]えるかもしれない。",
-        "answer": "よって",
-        "translation": "We may change our plans depending on the weather."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "よる",
-        "gloss": "attributive form; needs a following noun and cannot end this adverbial clause (e.g. the passive 描かれた cannot follow よる)"
-      },
-      {
-        "form": "よると",
-        "gloss": "に+よると ('according to') marks a source of reported info and needs a hearsay ending, which these sentences lack"
-      },
-      {
-        "form": "よれば",
-        "gloss": "に+よれば ('according to') cites an information source, not the means/agent/cause needed here"
-      },
-      {
-        "form": "ついて",
-        "gloss": "に+ついて introduces a topic ('about'), not means or agent"
-      },
-      {
-        "form": "とって",
-        "gloss": "に+とって marks a viewpoint ('for'), not means or cause"
-      },
-      {
-        "form": "おいて",
-        "gloss": "に+おいて marks place or domain ('in/at'), not means or agent"
-      },
-      {
-        "form": "たいして",
-        "gloss": "に+たいして marks a target ('toward/against'), not means"
-      },
-      {
-        "form": "かんして",
-        "gloss": "に+かんして is a topic marker ('regarding'), not means or agent"
-      },
-      {
-        "form": "ともなって",
-        "gloss": "に+ともなって marks parallel co-change, not means, cause, or agent"
-      },
-      {
-        "form": "くらべて",
-        "gloss": "に+くらべて is comparison ('compared to'), not means or cause"
-      },
-      {
-        "form": "かけて",
-        "gloss": "に+かけて marks a range or span, not means or agent"
-      },
-      {
-        "form": "そって",
-        "gloss": "に+そって means 'along/in line with' a guideline or path, not means, agent, or cause"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:による",
-    "level": "N3",
-    "title": "～による",
-    "meaning": "due to / caused by / based on (modifying a noun)",
-    "explanation": "The noun-modifying form of によって. It attaches to a noun and modifies the noun that follows, expressing cause, means, basis, or agent.",
-    "formation": "Noun + による + Noun",
-    "whyRight": "による is the attributive form used to modify a following noun; it links a cause/means/basis to the noun it describes.",
-    "examples": [
-      {
-        "sentence": "不注意[ふちゅうい]に___事故[じこ]が増[ふ]えている。",
-        "answer": "よる",
-        "translation": "Accidents caused by carelessness are increasing."
-      },
-      {
-        "sentence": "地震[じしん]に___被害[ひがい]は大[おお]きかった。",
-        "answer": "よる",
-        "translation": "The damage caused by the earthquake was great."
-      },
-      {
-        "sentence": "専門家[せんもんか]に___調査[ちょうさ]が行[おこな]われた。",
-        "answer": "よる",
-        "translation": "An investigation conducted by experts was carried out.",
-        "context": "大学[だいがく]の研究者[けんきゅうしゃ]たちが集[あつ]まって、水[みず]の安全[あんぜん]を調[しら]べた。"
-      },
-      {
-        "sentence": "台風[たいふう]に___洪水[こうずい]で道[みち]が通[とお]れない。",
-        "answer": "よる",
-        "translation": "The road is impassable due to flooding caused by the typhoon."
-      },
-      {
-        "sentence": "火[ひ]の不始末[ふしまつ]に___火事[かじ]が起[お]きた。",
-        "answer": "よる",
-        "translation": "A fire broke out due to carelessness with flames."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "よって",
-        "gloss": "adverbial te-form; cannot directly attach to and modify the following noun (事故, 被害, etc.)"
-      },
-      {
-        "form": "よると",
-        "gloss": "'according to' form; introduces reported speech, cannot modify the plain noun that follows"
-      },
-      {
-        "form": "よれば",
-        "gloss": "conditional 'according to' form; cites an information source and cannot modify the following noun"
-      },
-      {
-        "form": "ついての",
-        "gloss": "に+ついての ('about the') is a topic modifier, not a 'caused by' cause modifier"
-      },
-      {
-        "form": "とっての",
-        "gloss": "に+とっての ('for') marks a viewpoint, not the cause of the following noun"
-      },
-      {
-        "form": "おける",
-        "gloss": "に+おける ('in/at') marks place or domain, not cause"
-      },
-      {
-        "form": "はんした",
-        "gloss": "に+はんした ('contrary to') marks opposition, not the cause of the following noun"
-      },
-      {
-        "form": "たいする",
-        "gloss": "に+たいする ('toward/against') marks a target, not cause"
-      },
-      {
-        "form": "かんする",
-        "gloss": "に+かんする ('regarding') marks a topic, not cause"
-      },
-      {
-        "form": "そった",
-        "gloss": "に+そった ('in line with') marks conformity to a guideline, not cause"
-      },
-      {
-        "form": "くらべた",
-        "gloss": "に+くらべた ('compared with') marks comparison, not cause"
-      },
-      {
-        "form": "むけた",
-        "gloss": "に+むけた ('aimed at') marks a target/destination, not the cause of the following noun"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:によると",
-    "level": "N3",
-    "title": "～によると",
-    "meaning": "according to (a source of information)",
-    "explanation": "Used to indicate the source of information being reported. It is typically paired with a hearsay ending such as そうだ or らしい at the end of the sentence.",
-    "formation": "Noun + によると (often with ～そうだ / ～らしい at sentence end)",
-    "whyRight": "によると marks the source of reported information and pairs naturally with hearsay endings; it is the correct form for citing where information came from.",
-    "examples": [
-      {
-        "sentence": "天気[てんき]予報[よほう]に___、明日[あした]は雨[あめ]だそうだ。",
-        "answer": "よると",
-        "translation": "According to the weather forecast, it will rain tomorrow."
-      },
-      {
-        "sentence": "新聞[しんぶん]に___、来月[らいげつ]から値段[ねだん]が上[あ]がるらしい。",
-        "answer": "よると",
-        "translation": "According to the newspaper, prices will rise from next month."
-      },
-      {
-        "sentence": "友達[ともだち]の話[はなし]に___、あの店[みせ]は閉[し]まったそうだ。",
-        "answer": "よると",
-        "translation": "According to my friend, that shop has closed."
-      },
-      {
-        "sentence": "ニュースに___、事故[じこ]の原因[げんいん]はまだ分[わ]からないそうだ。",
-        "answer": "よると",
-        "translation": "According to the news, the cause of the accident is still unknown."
-      },
-      {
-        "sentence": "先生[せんせい]の説明[せつめい]に___、試験[しけん]は来週[らいしゅう]だそうだ。",
-        "answer": "よると",
-        "translation": "According to the teacher's explanation, the exam is next week."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "よって",
-        "gloss": "に+よって marks means or cause; it does not introduce the source of the reported (だそうだ/らしい) information"
-      },
-      {
-        "form": "よる",
-        "gloss": "attributive form; modifies a following noun and cannot precede the comma + reported clause"
-      },
-      {
-        "form": "ついて",
-        "gloss": "に+ついて introduces a topic ('about'), not the source of hearsay"
-      },
-      {
-        "form": "とって",
-        "gloss": "に+とって marks a viewpoint ('for'), not a source of information"
-      },
-      {
-        "form": "たいして",
-        "gloss": "に+たいして marks a target or contrast, not a source"
-      },
-      {
-        "form": "おいて",
-        "gloss": "に+おいて marks place or domain, not a source of information"
-      },
-      {
-        "form": "かんして",
-        "gloss": "に+かんして is a topic marker ('regarding'), not a citation of source"
-      },
-      {
-        "form": "くらべて",
-        "gloss": "に+くらべて is comparison ('compared to'), not a source"
-      },
-      {
-        "form": "ともなって",
-        "gloss": "に+ともなって marks parallel change, not the source of reported information"
-      },
-      {
-        "form": "かけて",
-        "gloss": "に+かけて marks a range or span, not a source"
-      },
-      {
-        "form": "そって",
-        "gloss": "に+そって means 'in line with', not citing where information came from"
-      },
-      {
-        "form": "むけて",
-        "gloss": "に+むけて ('aimed at') marks a target, not a source of information"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:にわたって",
-    "level": "N3",
-    "title": "～にわたって",
-    "meaning": "over / throughout / across (a span of time, space, or scope)",
-    "explanation": "Indicates that an action or state extends over an entire range, whether a period of time, a geographical area, or a number of items. Emphasizes the breadth of the span.",
-    "formation": "Noun (period / range / scope) + にわたって",
-    "whyRight": "にわたって expresses that something spans an entire extent of time or space; it is the standard form for emphasizing a continuous, wide range.",
-    "examples": [
-      {
-        "sentence": "工事[こうじ]は三[さん]年[ねん]に___続[つづ]いた。",
-        "answer": "わたって",
-        "translation": "The construction continued over three years."
-      },
-      {
-        "sentence": "台風[たいふう]は広[ひろ]い範囲[はんい]に___被害[ひがい]を与[あた]えた。",
-        "answer": "わたって",
-        "translation": "The typhoon caused damage over a wide area."
-      },
-      {
-        "sentence": "会議[かいぎ]は五[ご]時間[じかん]に___行[おこな]われた。",
-        "answer": "わたって",
-        "translation": "The meeting was held over five hours."
-      },
-      {
-        "sentence": "調査[ちょうさ]は十[じゅっ]回[かい]に___実施[じっし]された。",
-        "answer": "わたって",
-        "translation": "The survey was carried out across ten sessions."
-      },
-      {
-        "sentence": "彼[かれ]は長年[ながねん]に___この研究[けんきゅう]を続[つづ]けてきた。",
-        "answer": "わたって",
-        "translation": "He has continued this research over many years."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "わたる",
-        "gloss": "attributive form; needs a following noun and cannot end this adverbial clause before 続いた/行われた"
-      },
-      {
-        "form": "わたった",
-        "gloss": "past plain form; cannot serve as the adverbial connector linking 'over the span' to the main verb"
-      },
-      {
-        "form": "むけて",
-        "gloss": "に+むけて ('aimed at') marks a target or destination, not a span of time or space over which something extends"
-      },
-      {
-        "form": "ついて",
-        "gloss": "に+ついて introduces a topic ('about'), not a span of time or space"
-      },
-      {
-        "form": "ともなって",
-        "gloss": "に+ともなって marks parallel change, not extent over a range"
-      },
-      {
-        "form": "よって",
-        "gloss": "に+よって marks means or cause, not a span"
-      },
-      {
-        "form": "おいて",
-        "gloss": "に+おいて marks a single place/time point ('in/at'), not a continuous span"
-      },
-      {
-        "form": "とって",
-        "gloss": "に+とって marks a viewpoint ('for'), not a span"
-      },
-      {
-        "form": "たいして",
-        "gloss": "に+たいして marks a target or contrast, not a span"
-      },
-      {
-        "form": "くらべて",
-        "gloss": "に+くらべて is comparison ('compared to'), not a span"
-      },
-      {
-        "form": "そって",
-        "gloss": "に+そって means 'along (a line/guideline)', not spanning an entire extent"
-      },
-      {
-        "form": "かんして",
-        "gloss": "に+かんして is a topic marker ('regarding'), not a span"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:のみならず",
-    "level": "N3",
-    "title": "～のみならず",
-    "meaning": "not only ~ but also",
-    "explanation": "A formal expression meaning 'not only X but also Y,' adding a further point. It is more literary than だけでなく and often pairs with も in the second clause.",
-    "formation": "Noun + のみならず / Verb・i-adjective (plain) + のみならず / な-adjective + である + のみならず",
-    "whyRight": "のみならず is the formal 'not only ~ but also' connector adding an additional element; it fits written and formal contexts where だけでなく would be casual.",
-    "examples": [
-      {
-        "sentence": "彼[かれ]は英語[えいご]___、フランス語[ご]も話[はな]せる。",
-        "answer": "のみならず",
-        "translation": "He can speak not only English but also French."
-      },
-      {
-        "sentence": "この薬[くすり]は大人[おとな]___、子供[こども]にも効[き]く。",
-        "answer": "のみならず",
-        "translation": "This medicine works not only on adults but also on children."
-      },
-      {
-        "sentence": "彼女[かのじょ]は歌[うた]がうまい___、踊[おど]りも上手[じょうず]だ。",
-        "answer": "のみならず",
-        "translation": "She is good not only at singing but also at dancing."
-      },
-      {
-        "sentence": "この問題[もんだい]は日本[にほん]___、世界[せかい]中[じゅう]で起[お]きている。",
-        "answer": "のみならず",
-        "translation": "This problem is occurring not only in Japan but all over the world."
-      },
-      {
-        "sentence": "彼[かれ]は遅刻[ちこく]した___、宿題[しゅくだい]も忘[わす]れた。",
-        "answer": "のみならず",
-        "translation": "He not only came late but also forgot his homework."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "のみ",
-        "gloss": "'only'; limits to one thing and contradicts the 'but also' addition (clashes with the も in the second clause)"
-      },
-      {
-        "form": "だけで",
-        "gloss": "'just with / only by'; restrictive, does not carry the additive 'but also' that も requires"
-      },
-      {
-        "form": "だけしか",
-        "gloss": "'nothing but'; demands a negative predicate and excludes the second item, opposite of the additive meaning"
-      },
-      {
-        "form": "ばかりで",
-        "gloss": "'doing nothing but'; restrictive/negative nuance, not the additive 'not only ~ but also'"
-      },
-      {
-        "form": "について",
-        "gloss": "'about'; a topic marker that cannot connect the two clauses additively"
-      },
-      {
-        "form": "にとって",
-        "gloss": "'for / from the viewpoint of'; marks a perspective, not addition"
-      },
-      {
-        "form": "において",
-        "gloss": "'in / at'; place or domain, not addition"
-      },
-      {
-        "form": "ながら",
-        "gloss": "'while / although'; simultaneity or concession, not 'not only ~ but also'"
-      },
-      {
-        "form": "として",
-        "gloss": "'as (a role)'; identifies a role, not addition"
-      },
-      {
-        "form": "にすぎず",
-        "gloss": "'being no more than'; downgrades to a mere minimum, the opposite of adding a further point"
-      },
-      {
-        "form": "を問[と]わず",
-        "gloss": "'regardless of'; dismisses the item rather than adding a second one"
-      },
-      {
-        "form": "はおろか",
-        "gloss": "'let alone'; needs a negative/extreme predicate and the second item to be more extreme, which these neutral additive sentences do not provide"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:の代わりに",
-    "level": "N3",
-    "title": "～の代わりに",
-    "meaning": "instead of / in place of / in exchange for",
-    "explanation": "Indicates that one thing substitutes for or takes the place of another, or that something is given in exchange. Can attach to nouns or verbs.",
-    "formation": "Noun + の代[か]わりに / Verb (dictionary form) + 代[か]わりに",
-    "whyRight": "代わりに expresses substitution or exchange, marking that one thing is done or used in place of another; it is the standard form for 'instead of.'",
-    "examples": [
-      {
-        "sentence": "今日[きょう]は社長[しゃちょう]の___、私[わたし]が会議[かいぎ]に出[で]ます。",
-        "answer": "代[か]わりに",
-        "translation": "Today I will attend the meeting instead of the company president.",
-        "context": "社長[しゃちょう]は急[きゅう]な出張[しゅっちょう]で会社[かいしゃ]に来[こ]られなくなった。"
-      },
-      {
-        "sentence": "バターの___、オリーブ油[ゆ]を使[つか]った。",
-        "answer": "代[か]わりに",
-        "translation": "I used olive oil instead of butter."
-      },
-      {
-        "sentence": "手伝[てつだ]ってもらう___、昼[ひる]ご飯[はん]をおごるよ。",
-        "answer": "代[か]わりに",
-        "translation": "In exchange for your help, I'll treat you to lunch.",
-        "context": "お礼[れい]にお金[かね]は払[はら]えないんだ。"
-      },
-      {
-        "sentence": "電車[でんしゃ]の___、バスで行[い]くことにした。",
-        "answer": "代[か]わりに",
-        "translation": "I decided to go by bus instead of by train."
-      },
-      {
-        "sentence": "現金[げんきん]の___、カードで支払[しはら]った。",
-        "answer": "代[か]わりに",
-        "translation": "I paid by card instead of cash."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ために",
-        "gloss": "の+ために is 'for the sake of / because of'; purpose or reason, not substitution"
-      },
-      {
-        "form": "ように",
-        "gloss": "'so that / like'; purpose or manner, not substitution"
-      },
-      {
-        "form": "ついでに",
-        "gloss": "'while at it / on the occasion of'; an added action, not a replacement"
-      },
-      {
-        "form": "おかげで",
-        "gloss": "の+おかげで is 'thanks to'; positive cause, not substitution"
-      },
-      {
-        "form": "せいで",
-        "gloss": "の+せいで is 'because of (negative)'; blame, not substitution"
-      },
-      {
-        "form": "とおりに",
-        "gloss": "'just as / according to'; following a model, not substitution"
-      },
-      {
-        "form": "うえに",
-        "gloss": "の+うえに is 'on top of / in addition'; addition, not replacement"
-      },
-      {
-        "form": "かわって",
-        "gloss": "verb te-form 'changing'; not the set noun-modifying substitution form 代わりに"
-      },
-      {
-        "form": "もとに",
-        "gloss": "の+もとに is 'based on / under'; basis, not substitution"
-      },
-      {
-        "form": "について",
-        "gloss": "'about'; a topic marker, not substitution"
-      },
-      {
-        "form": "にとって",
-        "gloss": "'for / from the viewpoint of'; perspective, not substitution"
-      },
-      {
-        "form": "あいだに",
-        "gloss": "の+あいだに is 'during'; a span of time, not a replacement"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:ばほど",
-    "level": "N3",
-    "title": "～ば～ほど",
-    "meaning": "the more ~, the more ~",
-    "explanation": "Expresses that as one thing increases or progresses, another correspondingly increases. The same verb or adjective is repeated, first in its conditional ば-form and then before ほど.",
-    "formation": "Verb (ば-form) + Verb (dict) + ほど / い-adj (ければ) + い-adj + ほど / な-adj (なら / であれば) + な-adj + な + ほど",
-    "whyRight": "The ～ば～ほど pattern pairs a conditional ば-form with ほど to express proportional increase; ほど is the correct second element completing the correlation.",
-    "examples": [
-      {
-        "sentence": "練習[れんしゅう]すればする___、上手[じょうず]になる。",
-        "answer": "ほど",
-        "translation": "The more you practice, the better you get."
-      },
-      {
-        "sentence": "考[かんが]えれば考[かんが]える___、分[わ]からなくなる。",
-        "answer": "ほど",
-        "translation": "The more I think, the less I understand."
-      },
-      {
-        "sentence": "値段[ねだん]が高[たか]ければ高[たか]い___、品質[ひんしつ]がいいとは限[かぎ]らない。",
-        "answer": "ほど",
-        "translation": "The more expensive something is, the better the quality is not necessarily."
-      },
-      {
-        "sentence": "この本[ほん]は読[よ]めば読[よ]む___、面白[おもしろ]くなる。",
-        "answer": "ほど",
-        "translation": "The more you read this book, the more interesting it gets."
-      },
-      {
-        "sentence": "説明[せつめい]が簡単[かんたん]であれば簡単[かんたん]な___、理解[りかい]しやすい。",
-        "answer": "ほど",
-        "translation": "The simpler the explanation, the easier it is to understand."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "さえ",
-        "gloss": "focus particle 'even'; ungrammatical after the repeated dictionary-form verb and does not complete the ば～ほど proportional correlation"
-      },
-      {
-        "form": "くらい",
-        "gloss": "'about / to the extent of'; expresses a degree estimate, not the correlating increase"
-      },
-      {
-        "form": "ばかり",
-        "gloss": "'only / just'; limitation, not proportional increase"
-      },
-      {
-        "form": "より",
-        "gloss": "'than'; comparison, not the paired ば～ほど correlation"
-      },
-      {
-        "form": "ながら",
-        "gloss": "'while'; simultaneity, and ungrammatical after the repeated dictionary form here"
-      },
-      {
-        "form": "とおり",
-        "gloss": "'just as'; following a model, not proportional increase"
-      },
-      {
-        "form": "ところ",
-        "gloss": "'place / moment'; a point or situation, not the correlative degree marker"
-      },
-      {
-        "form": "まま",
-        "gloss": "'as it is / unchanged'; an unchanged state, the opposite of progressive increase"
-      },
-      {
-        "form": "うちに",
-        "gloss": "'while / before'; a window of time, not proportional increase"
-      },
-      {
-        "form": "かわりに",
-        "gloss": "'instead of'; substitution, ungrammatical and unrelated to the ば～ほど correlation"
-      },
-      {
-        "form": "として",
-        "gloss": "'as (a role)'; identifies a role, not degree"
-      },
-      {
-        "form": "ほうが",
-        "gloss": "'the option of'; preference/comparison, not the proportional ほど ending"
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:ばかりか",
-    "level": "N3",
-    "title": "～ばかりか",
-    "meaning": "not only ... but also",
-    "explanation": "Used to add a second, often more surprising fact to the first. It emphasizes that the situation goes beyond what was first stated.",
-    "formation": "Noun / Verb (plain) / い-adjective (plain) / な-adjective (な or である) + ばかりか",
-    "whyRight": "ばかりか connects two related facts where the second exceeds the first, fitting an 'on top of that' addition.",
-    "examples": [
-      {
-        "sentence": "彼[かれ]は英語[えいご]___、フランス語[ご]も話[はな]せる。",
-        "answer": "ばかりか",
-        "translation": "He can speak not only English but also French.",
-        "context": "彼[かれ]は英語[えいご]がとても得意[とくい]だ。"
-      },
-      {
-        "sentence": "その店[みせ]は値段[ねだん]が高[たか]い___、味[あじ]もよくない。",
-        "answer": "ばかりか",
-        "translation": "That shop is not only expensive but also tastes bad."
-      },
-      {
-        "sentence": "彼女[かのじょ]は仕事[しごと]ができる___、人柄[ひとがら]もいい。",
-        "answer": "ばかりか",
-        "translation": "She is not only good at her job but also has a great personality."
-      },
-      {
-        "sentence": "雨[あめ]が降[ふ]る___、風[かぜ]まで強[つよ]くなってきた。",
-        "answer": "ばかりか",
-        "translation": "Not only is it raining, but the wind has gotten stronger too."
-      },
-      {
-        "sentence": "彼[かれ]は約束[やくそく]を忘[わす]れた___、謝[あやま]りもしなかった。",
-        "answer": "ばかりか",
-        "translation": "He not only forgot the promise but didn't even apologize."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ばかりで",
-        "gloss": "'only doing'; describes a limited state, not an additive 'not only A but also B'."
-      },
-      {
-        "form": "ばかりに",
-        "gloss": "'just because'; introduces a regrettable cause, not an addition."
-      },
-      {
-        "form": "ばかりだ",
-        "gloss": "'only keeps ...ing'; expresses one-directional change, not addition."
-      },
-      {
-        "form": "だけしか",
-        "gloss": "'only'; limits to a single thing, opposite of adding another."
-      },
-      {
-        "form": "からこそ",
-        "gloss": "'precisely because'; emphasizes a reason, not an addition."
-      },
-      {
-        "form": "ところで",
-        "gloss": "'even if'; concessive, does not add a surprising second fact."
-      },
-      {
-        "form": "ばかりだから",
-        "gloss": "ungrammatical fusion; not a standard additive connector."
-      },
-      {
-        "form": "とおりに",
-        "gloss": "'just as'; expresses conformity, unrelated to addition."
-      },
-      {
-        "form": "わりに",
-        "gloss": "'considering'; contrast of expectation, not a 'not only' addition."
-      },
-      {
-        "form": "にもかかわらず",
-        "gloss": "'despite'; concessive contrast, not addition."
-      },
-      {
-        "form": "ばかりも",
-        "gloss": "incorrect form; ばかり does not combine with も this way here."
-      },
-      {
-        "form": "どころか",
-        "gloss": "'far from'; reverses expectations rather than simply adding."
-      }
-    ]
-  },
-  {
-    "id": "grammar:N3:ばかりだ",
-    "level": "N3",
-    "title": "～ばかりだ",
-    "meaning": "to only keep getting ... / nothing left but to ...",
-    "explanation": "Attached to a verb's dictionary form, it shows a situation changing in one direction continuously, often negatively. After て-form it can mean 'just did'.",
-    "formation": "Verb (dictionary form) + ばかりだ",
-    "whyRight": "ばかりだ expresses a one-directional ongoing change, matching a trend that keeps progressing.",
-    "examples": [
-      {
-        "sentence": "景気[けいき]は悪[わる]くなる___。",
-        "answer": "ばかりだ",
-        "translation": "The economy just keeps getting worse.",
-        "context": "不景気[ふけいき]がもう何[なん]年[ねん]も続[つづ]いている。"
-      },
-      {
-        "sentence": "彼[かれ]の病気[びょうき]は悪化[あっか]する___。",
-        "answer": "ばかりだ",
-        "translation": "His illness only continues to worsen.",
-        "context": "毎日[まいにち]治療[ちりょう]を続[つづ]けているのに、少[すこ]しもよくならない。"
-      },
-      {
-        "sentence": "準備[じゅんび]は終[お]わった。あとは出発[しゅっぱつ]する___。",
-        "answer": "ばかりだ",
-        "translation": "Preparations are done. All that's left is to depart."
-      },
-      {
-        "sentence": "物価[ぶっか]は上[あ]がる___で、生活[せいかつ]が苦[くる]しい。",
-        "answer": "ばかり",
-        "translation": "Prices just keep rising, and life is hard."
-      },
-      {
-        "sentence": "返事[へんじ]を待[ま]つ___で、何[なに]もできない。",
-        "answer": "ばかり",
-        "translation": "I can only keep waiting for a reply and can do nothing."
-      }
-    ],
-    "distractorPool": [
-      {
-        "form": "ばかりか",
-        "gloss": "'not only'; additive connector, not a one-directional trend."
-      },
-      {
-        "form": "ところだ",
-        "gloss": "'about to / just did'; marks a point in time, not continuous change."
-      },
-      {
-        "form": "つもりだ",
-        "gloss": "'intend to'; expresses intention, not an ongoing trend."
-      },
-      {
-        "form": "ばかりに",
-        "gloss": "'just because'; regrettable cause, not continuous change."
-      },
-      {
-        "form": "わけだ",
-        "gloss": "'no wonder / that means'; explanatory, not a directional trend."
-      },
-      {
-        "form": "ものだ",
-        "gloss": "'used to / should'; general truth or recollection, not this trend."
-      },
-      {
-        "form": "がちだ",
-        "gloss": "'tend to'; attaches to a ます-stem/noun, so 「悪くなるがちだ」is ungrammatical after a dictionary-form verb."
-      },
-      {
-        "form": "ことだ",
-        "gloss": "'should'; advice, not a description of ongoing change."
-      },
-      {
-        "form": "わけがない",
-        "gloss": "'there's no way'; flatly denies the change, the opposite of a worsening trend."
-      },
-      {
-        "form": "はずだ",
-        "gloss": "'should be'; expectation, not continuous trend."
-      },
-      {
-        "form": "ものなら",
-        "gloss": "'if it were to'; sets up a conditional that needs a following clause, leaving the sentence incomplete."
-      },
-      {
-        "form": "ぐらいだ",
-        "gloss": "'to the extent of'; expresses degree, not directional change."
-      }
-    ]
-  },
-  {
     "id": "grammar:N3:ばかりでなく",
     "level": "N3",
     "title": "～ばかりでなく",
@@ -29244,6 +23682,7 @@ export const N3_GRAMMAR: Grammar[] = [
     "examples": [
       {
         "context": "その日[ひ]は早[はや]めに家[いえ]を出[で]たので、時間[じかん]には十分[じゅうぶん]余裕[よゆう]があった。",
+        "contextTranslation": "That day I left home early, so I had plenty of time to spare.",
         "sentence": "道[みち]を間違[まちが]えた___、約束[やくそく]に遅[おく]れた。",
         "answer": "ばかりに",
         "translation": "Just because I took the wrong road, I was late for the appointment."
@@ -29685,12 +24124,14 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "人[ひと]を傷[きず]つける言葉[ことば]を、彼[かれ]は平気[へいき]で口[くち]にした。",
+        "contextTranslation": "He casually said words that hurt people.",
         "sentence": "そんなことは言[い]う___ではない。",
         "answer": "べき",
         "translation": "You shouldn't say such a thing."
       },
       {
         "context": "今[いま]では、あのとき黙[だま]っていたことを深[ふか]く後悔[こうかい]している。",
+        "contextTranslation": "Now I deeply regret having stayed silent back then.",
         "sentence": "彼[かれ]に本当[ほんとう]のことを話[はな]す___だった。",
         "answer": "べき",
         "translation": "I should have told him the truth."
@@ -29773,6 +24214,7 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "昨日[きのう]、階段[かいだん]で転[ころ]んで足[あし]を強[つよ]く打[う]った。",
+        "contextTranslation": "Yesterday I fell on the stairs and hit my leg hard.",
         "sentence": "足[あし]が痛[いた]くて歩[ある]けない___だった。",
         "answer": "ほど",
         "translation": "My leg hurt to the extent that I couldn't walk."
@@ -29852,7 +24294,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "今年[ことし]の冬[ふゆ]は去年[きょねん]___寒[さむ]くない。",
         "answer": "ほど",
         "translation": "This winter is not as cold as last year.",
-        "context": "去年[きょねん]の冬[ふゆ]はとても寒[さむ]かった。"
+        "context": "去年[きょねん]の冬[ふゆ]はとても寒[さむ]かった。",
+        "contextTranslation": "Last winter was very cold."
       },
       {
         "sentence": "東京[とうきょう]___人[ひと]が多[おお]い町[まち]はない。",
@@ -29863,7 +24306,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "数学[すうがく]は思[おも]っていた___難[むずか]しくなかった。",
         "answer": "ほど",
         "translation": "Math was not as difficult as I had thought.",
-        "context": "試験[しけん]の前[まえ]は難[むずか]しいだろうと心配[しんぱい]していた。"
+        "context": "試験[しけん]の前[まえ]は難[むずか]しいだろうと心配[しんぱい]していた。",
+        "contextTranslation": "Before the exam, I was worried it would be difficult."
       },
       {
         "sentence": "母[はは]の料理[りょうり]___おいしいものはない。",
@@ -29874,7 +24318,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "今日[きょう]は昨日[きのう]___忙[いそが]しくない。",
         "answer": "ほど",
         "translation": "Today is not as busy as yesterday.",
-        "context": "昨日[きのう]はとても忙[いそが]しかった。"
+        "context": "昨日[きのう]はとても忙[いそが]しかった。",
+        "contextTranslation": "Yesterday was very busy."
       }
     ],
     "distractorPool": [
@@ -30113,7 +24558,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "この本[ほん]は初心者[しょしんしゃ]___だ。",
         "answer": "向き",
         "translation": "This book is suitable for beginners.",
-        "context": "特別[とくべつ]に作[つく]られたわけではないが、内容[ないよう]がやさしい。"
+        "context": "特別[とくべつ]に作[つく]られたわけではないが、内容[ないよう]がやさしい。",
+        "contextTranslation": "It wasn't made especially for them, but the content is easy."
       },
       {
         "sentence": "南[みなみ]___の部屋[へや]は明[あか]るくて暖[あたた]かい。",
@@ -30124,19 +24570,22 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "この仕事[しごと]は彼[かれ]___ではない。",
         "answer": "向き",
         "translation": "This job is not suited to him.",
-        "context": "彼[かれ]は細[こま]かい作業[さぎょう]がとても苦手[にがて]だ。"
+        "context": "彼[かれ]は細[こま]かい作業[さぎょう]がとても苦手[にがて]だ。",
+        "contextTranslation": "He is very bad at detailed work."
       },
       {
         "sentence": "あっさりした味[あじ]で、お年寄[としよ]り___だ。",
         "answer": "向き",
         "translation": "It has a light flavor, well suited for elderly people.",
-        "context": "この料理[りょうり]は特[とく]に誰[だれ]かのために作[つく]ったのではない。"
+        "context": "この料理[りょうり]は特[とく]に誰[だれ]かのために作[つく]ったのではない。",
+        "contextTranslation": "This dish wasn't made especially for anyone in particular."
       },
       {
         "sentence": "この服[ふく]は夏[なつ]___のデザインだ。",
         "answer": "向き",
         "translation": "These clothes have a design suited for summer.",
-        "context": "生地[きじ]がうすくて風通[かぜとお]しがいい。"
+        "context": "生地[きじ]がうすくて風通[かぜとお]しがいい。",
+        "contextTranslation": "The fabric is thin and breathable."
       }
     ],
     "distractorPool": [
@@ -30203,7 +24652,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "これは子供[こども]___の番組[ばんぐみ]だ。",
         "answer": "向け",
         "translation": "This is a program made for children.",
-        "context": "子供[こども]の教育[きょういく]のために特別[とくべつ]に作[つく]られた。"
+        "context": "子供[こども]の教育[きょういく]のために特別[とくべつ]に作[つく]られた。",
+        "contextTranslation": "It was made especially for children's education."
       },
       {
         "sentence": "この商品[しょうひん]は海外[かいがい]___に作[つく]られた。",
@@ -30214,13 +24664,15 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "初心者[しょしんしゃ]___の教科書[きょうかしょ]を買[か]った。",
         "answer": "向け",
         "translation": "I bought a textbook designed for beginners.",
-        "context": "やさしく学[まな]べるように工夫[くふう]して作[つく]られている。"
+        "context": "やさしく学[まな]べるように工夫[くふう]して作[つく]られている。",
+        "contextTranslation": "It's designed so that you can learn easily."
       },
       {
         "sentence": "この雑誌[ざっし]は若[わか]い女性[じょせい]___だ。",
         "answer": "向け",
         "translation": "This magazine is aimed at young women.",
-        "context": "流行[りゅうこう]のファッションを特集[とくしゅう]して作[つく]られている。"
+        "context": "流行[りゅうこう]のファッションを特集[とくしゅう]して作[つく]られている。",
+        "contextTranslation": "It's made featuring the latest fashion trends."
       },
       {
         "sentence": "輸出[ゆしゅつ]___の車[くるま]を生産[せいさん]している。",
@@ -30479,7 +24931,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "目上[めうえ]の人[ひと]には敬語[けいご]を使[つか]う___。",
         "answer": "ものだ",
         "translation": "One should use polite language with one's superiors.",
-        "context": "これは日本[にほん]では当[あ]たり前[まえ]の習慣[しゅうかん]だ。"
+        "context": "これは日本[にほん]では当[あ]たり前[まえ]の習慣[しゅうかん]だ。",
+        "contextTranslation": "This is a matter-of-course custom in Japan."
       },
       {
         "sentence": "人[ひと]の気持[きも]ちはなかなか分[わ]からない___。",
@@ -30549,12 +25002,14 @@ export const N3_GRAMMAR: Grammar[] = [
     "examples": [
       {
         "context": "野菜[やさい]はあまり好[す]きではありませんが、頑張[がんば]っています。",
+        "contextTranslation": "I don't really like vegetables, but I'm trying my best.",
         "sentence": "毎日[まいにち]野菜[やさい]を食[た]べる___しています。",
         "answer": "ように",
         "translation": "I make an effort to eat vegetables every day."
       },
       {
         "context": "お酒[さけ]をやめるのは難[むずか]しいですが、努力[どりょく]しています。",
+        "contextTranslation": "Quitting drinking is hard, but I'm making an effort.",
         "sentence": "健康[けんこう]のために、お酒[さけ]を飲[の]まない___します。",
         "answer": "ように",
         "translation": "For my health, I try not to drink alcohol."
@@ -30566,12 +25021,14 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "夜[よる]遅[おそ]くまで起[お]きているのはよくないと分[わ]かっているので、頑張[がんば]っています。",
+        "contextTranslation": "I know staying up late at night is bad for me, so I'm making an effort.",
         "sentence": "これからは早[はや]く寝[ね]る___します。",
         "answer": "ように",
         "translation": "From now on I'll try to go to bed early."
       },
       {
         "context": "私[わたし]は忘[わす]れっぽいので、いつも気[き]をつけています。",
+        "contextTranslation": "I'm forgetful, so I'm always careful.",
         "sentence": "忘[わす]れないように、メモを取[と]る___しています。",
         "answer": "ように",
         "translation": "So I don't forget, I make a point of taking notes."
@@ -30649,6 +25106,7 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "子供[こども]が少[すこ]しずつ成長[せいちょう]しています。",
+        "contextTranslation": "My child is growing little by little.",
         "sentence": "最近[さいきん]、子供[こども]が一人[ひとり]で起[お]きる___なりました。",
         "answer": "ように",
         "translation": "Recently my child has started getting up on their own."
@@ -31254,6 +25712,7 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "値段[ねだん]が安[やす]かった___、たくさん買[か]ってしまった。",
         "answer": "ものだから",
         "context": "本当[ほんとう]は一[ひと]つだけ買[か]うつもりだった。",
+        "contextTranslation": "I had actually intended to buy just one.",
         "translation": "Since it was cheap, I ended up buying a lot."
       },
       {
@@ -31508,6 +25967,7 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "先生[せんせい]の説明[せつめい]はとても分[わ]かり___。",
         "answer": "やすい",
         "context": "この先生[せんせい]の授業[じゅぎょう]は学生[がくせい]から評判[ひょうばん]がいい。",
+        "contextTranslation": "This teacher's classes have a good reputation among students.",
         "translation": "The teacher's explanation is very easy to understand."
       },
       {
@@ -31519,6 +25979,7 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "白[しろ]いシャツは汚[よご]れが目立[めだ]ち___。",
         "answer": "やすい",
         "context": "少[すこ]しでも食[た]べ物[もの]をこぼすと、白[しろ]い服[ふく]ではすぐに気[き]づかれてしまう。",
+        "contextTranslation": "If you spill even a little food, it's noticed right away on white clothes.",
         "translation": "Dirt shows up easily on white shirts."
       },
       {
@@ -31596,6 +26057,7 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "壊[こわ]れ方[かた]がひどすぎて、直[なお]し___。",
         "answer": "ようがない",
         "context": "この製品[せいひん]はもう古[ふる]くて、交換[こうかん]する部品[ぶひん]がどこにも手[て]に入[はい]らない。",
+        "contextTranslation": "This product is already old, and replacement parts can't be found anywhere.",
         "translation": "It's broken so badly that there's no way to fix it."
       },
       {
@@ -31853,18 +26315,21 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "理科[りか]の授業[じゅぎょう]で、先生[せんせい]が太陽系[たいようけい]の仕組[し く]みを説明[せつめい]した。",
+        "contextTranslation": "In science class, the teacher explained how the solar system works.",
         "sentence": "地球[ちきゅう]は太陽[たいよう]___回[まわ]っている。",
         "answer": "を中心[ちゅうしん]に",
         "translation": "The Earth revolves around the sun."
       },
       {
         "context": "開発[かいはつ]チームが集[あつ]まり、他[ほか]の話題[わだい]には触[ふ]れず、ただ一[ひと]つのことだけを議題[ぎだい]にした。",
+        "contextTranslation": "The development team gathered and, without touching on any other topics, made just one thing the agenda.",
         "sentence": "今回[こんかい]の会議[かいぎ]では新製品[しんせいひん]___話[はな]し合[あ]った。",
         "answer": "を中心[ちゅうしん]に",
         "translation": "In this meeting we discussed mainly the new product."
       },
       {
         "context": "バラバラだった選手[せんしゅ]たちも、リーダーである彼[かれ]の存在[そんざい]によって一[ひと]つになった。",
+        "contextTranslation": "The players, who had been scattered, became one thanks to the presence of him as their leader.",
         "sentence": "彼[かれ]___チームがまとまった。",
         "answer": "を中心[ちゅうしん]に",
         "translation": "The team came together with him at the center."
@@ -31939,7 +26404,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "昔[むかし]は遠[とお]くの国[くに]の人[ひと]と話[はな]すのは大変[たいへん]だったが、今[いま]は便利[べんり]な道具[どうぐ]がある。",
         "sentence": "インターネット___世界中[せかいじゅう]の人[ひと]と連絡[れんらく]できる。",
         "answer": "を通[つう]じて",
-        "translation": "Through the internet, you can contact people all over the world."
+        "translation": "Through the internet, you can contact people all over the world.",
+        "contextTranslation": "In the old days it was hard to talk with people in faraway countries, but now we have convenient tools."
       },
       {
         "sentence": "友人[ゆうじん]___彼女[かのじょ]と知[し]り合[あ]った。",
@@ -31955,7 +26421,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "新聞[しんぶん]も読[よ]まず、家[いえ]で夜[よる]のニュース番組[ばんぐみ]をぼんやり見[み]ていたときだった。",
         "sentence": "テレビ___その事件[じけん]を知[し]った。",
         "answer": "を通[つう]じて",
-        "translation": "I learned of that incident through the television."
+        "translation": "I learned of that incident through the television.",
+        "contextTranslation": "I wasn't reading the newspaper either; it was when I was absentmindedly watching the evening news at home."
       },
       {
         "sentence": "大使館[たいしかん]___ビザを申請[しんせい]した。",
@@ -32027,7 +26494,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "ただ本[ほん]を読[よ]んで学[まな]ぶのではなく、実際[じっさい]に人[ひと]の役[やく]に立[た]つ活動[かつどう]に参加[さんか]した。",
         "sentence": "ボランティア活動[かつどう]___多[おお]くのことを学[まな]んだ。",
         "answer": "を通[とお]して",
-        "translation": "I learned many things through volunteer activities."
+        "translation": "I learned many things through volunteer activities.",
+        "contextTranslation": "Rather than just learning from books, I took part in activities that were actually helpful to people."
       },
       {
         "sentence": "通訳[つうやく]___お互[たが]いの考[かんが]えを伝[つた]えた。",
@@ -32038,7 +26506,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "人[ひと]は本[ほん]で読[よ]んだ知識[ちしき]だけでなく、自分[じぶん]で体験[たいけん]したことから多[おお]くを学[まな]ぶ。",
         "sentence": "経験[けいけん]___人[ひと]は成長[せいちょう]する。",
         "answer": "を通[とお]して",
-        "translation": "People grow through experience."
+        "translation": "People grow through experience.",
+        "contextTranslation": "People learn a lot not only from knowledge read in books, but also from things they experience themselves."
       },
       {
         "sentence": "この本[ほん]___日本[にほん]の文化[ぶんか]を理解[りかい]した。",
@@ -32120,7 +26589,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "その日[ひ]は特別[とくべつ]なパーティーで、一番[いちばん]えらい人[ひと]から新人[しんじん]まで、会社[かいしゃ]の全員[ぜんいん]が顔[かお]をそろえた。",
         "sentence": "社長[しゃちょう]___全社員[ぜんしゃいん]がそのパーティーに出席[しゅっせき]した。",
         "answer": "をはじめ",
-        "translation": "Everyone from the president on down attended the party."
+        "translation": "Everyone from the president on down attended the party.",
+        "contextTranslation": "That day was a special party, and everyone in the company, from the most senior person down to the newcomers, gathered together."
       },
       {
         "sentence": "日本[にほん]では東京[とうきょう]___大[おお]きな都市[とし]が多[おお]い。",
@@ -32136,7 +26606,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "運動会[うんどうかい]の日[ひ]、その学校[がっこう]で働[はたら]く先生[せんせい]たちが大勢[おおぜい]集[あつ]まった。",
         "sentence": "校長[こうちょう]先生[せんせい]___多[おお]くの先生[せんせい]が見[み]に来[き]た。",
         "answer": "をはじめ",
-        "translation": "Many teachers, starting with the principal, came to watch."
+        "translation": "Many teachers, starting with the principal, came to watch.",
+        "contextTranslation": "On the day of the sports festival, many of the teachers who work at that school gathered."
       }
     ],
     "distractorPool": [
@@ -32213,7 +26684,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "事件[じけん]の現場[げんば]にいた彼[かれ]が話[はな]した内容[ないよう]が、唯一[ゆいいつ]の資料[しりょう]だった。",
         "sentence": "彼[かれ]の話[はなし]___報告書[ほうこくしょ]を書[か]いた。",
         "answer": "をもとに",
-        "translation": "I wrote the report based on his account."
+        "translation": "I wrote the report based on his account.",
+        "contextTranslation": "What he, who had been at the scene of the incident, told us was the only source of information."
       },
       {
         "sentence": "この小説[しょうせつ]は古[ふる]い伝説[でんせつ]___書[か]かれている。",
@@ -32290,31 +26762,36 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "「ねえ、田中[たなか]さんの部屋[へや]の電気[でんき]が消[き]えているよ。」と友[とも]だちが言[い]った。",
         "sentence": "彼[かれ]はもう家[いえ]に帰[かえ]った___？",
         "answer": "んじゃない",
-        "translation": "He's already gone home, hasn't he?"
+        "translation": "He's already gone home, hasn't he?",
+        "contextTranslation": "\"Hey, the light in Tanaka's room is off,\" my friend said."
       },
       {
         "context": "服[ふく]を選[えら]んでいる友[とも]だちを見[み]て、正直[しょうじき]な感想[かんそう]を伝[つた]えた。",
         "sentence": "その服[ふく]、君[きみ]には少[すこ]し大[おお]きい___？",
         "answer": "んじゃない",
-        "translation": "Those clothes are a bit big for you, aren't they?"
+        "translation": "Those clothes are a bit big for you, aren't they?",
+        "contextTranslation": "Watching my friend picking out clothes, I gave my honest opinion."
       },
       {
         "context": "すぐに出発[しゅっぱつ]しようとする友[とも]だちに、私[わたし]はそっと自分[じぶん]の意見[いけん]を言[い]った。",
         "sentence": "もう少[すこ]し待[ま]ったほうがいい___？",
         "answer": "んじゃない",
-        "translation": "Wouldn't it be better to wait a little longer?"
+        "translation": "Wouldn't it be better to wait a little longer?",
+        "contextTranslation": "To my friend who was about to set off right away, I quietly offered my opinion."
       },
       {
         "context": "空[そら]を見上[みあ]げると黒[くろ]い雲[くも]が広[ひろ]がっていて、私[わたし]は自分[じぶん]の予想[よそう]を口[くち]にした。",
         "sentence": "明日[あした]は雨[あめ]が降[ふ]る___かな。",
         "answer": "んじゃない",
-        "translation": "I think it might rain tomorrow."
+        "translation": "I think it might rain tomorrow.",
+        "contextTranslation": "When I looked up at the sky, dark clouds had spread out, and I voiced my prediction."
       },
       {
         "context": "数学[すうがく]の宿題[しゅくだい]を一緒[いっしょ]に解[と]きながら、私[わたし]は自分[じぶん]の考[かんが]えを言[い]ってみた。",
         "sentence": "この問題[もんだい]、答[こた]えは三[さん]___？",
         "answer": "なんじゃない",
-        "translation": "For this problem, isn't the answer three?"
+        "translation": "For this problem, isn't the answer three?",
+        "contextTranslation": "While working through the math homework together, I tried voicing my own idea."
       }
     ],
     "distractorPool": [
@@ -32381,31 +26858,36 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "昨日[きのう]、田中[たなか]さん本人[ほんにん]から聞[き]いた話[はなし]を、私[わたし]は友[とも]だちに伝[つた]えた。",
         "sentence": "田中[たなか]さんは来月[らいげつ]結婚[けっこん]する___。",
         "answer": "んだって",
-        "translation": "I heard Tanaka is getting married next month."
+        "translation": "I heard Tanaka is getting married next month.",
+        "contextTranslation": "Yesterday I passed on to my friend what I had heard directly from Tanaka himself."
       },
       {
         "context": "その店[みせ]に行[い]ったことのある同僚[どうりょう]が、味[あじ]について教[おし]えてくれた。",
         "sentence": "あの店[みせ]のラーメンはとてもおいしい___。",
         "answer": "んだって",
-        "translation": "They say the ramen at that shop is really delicious."
+        "translation": "They say the ramen at that shop is really delicious.",
+        "contextTranslation": "A colleague who had been to that shop told me about the taste."
       },
       {
         "context": "さっき先生[せんせい]から連絡[れんらく]があったと、クラスの友[とも]だちが教[おし]えてくれた。",
         "sentence": "明日[あした]の試験[しけん]は中止[ちゅうし]になった___。",
         "answer": "んだって",
-        "translation": "I heard tomorrow's exam has been canceled."
+        "translation": "I heard tomorrow's exam has been canceled.",
+        "contextTranslation": "A classmate told me that there had just been word from the teacher."
       },
       {
         "context": "彼[かれ]の予定[よてい]について、共通[きょうつう]の友[とも]だちがこう話[はな]していた。",
         "sentence": "彼[かれ]は来週[らいしゅう]アメリカへ行[い]く___。",
         "answer": "んだって",
-        "translation": "I heard he's going to America next week."
+        "translation": "I heard he's going to America next week.",
+        "contextTranslation": "A mutual friend was saying this about his plans."
       },
       {
         "context": "テレビであの人[ひと]を見[み]たとき、母[はは]が私[わたし]にそっと教[おし]えてくれた。",
         "sentence": "あの人[ひと]は有名[ゆうめい]な歌手[かしゅ]___。",
         "answer": "なんだって",
-        "translation": "I heard that person is a famous singer."
+        "translation": "I heard that person is a famous singer.",
+        "contextTranslation": "When I saw that person on TV, my mother quietly told me about them."
       }
     ],
     "distractorPool": [
@@ -32644,31 +27126,36 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "彼[かれ]はまるで何[なに]も知[し]らない___ふるまった。",
         "answer": "かのように",
         "translation": "He behaved as if he knew nothing.",
-        "context": "彼[かれ]は本当[ほんとう]はすべて分[わ]かっていた。"
+        "context": "彼[かれ]は本当[ほんとう]はすべて分[わ]かっていた。",
+        "contextTranslation": "He actually understood everything."
       },
       {
         "sentence": "彼女[かのじょ]は夢[ゆめ]を見[み]ている___目[め]をしていた。",
         "answer": "かのような",
         "translation": "She had eyes as if she were dreaming.",
-        "context": "彼女[かのじょ]は起[お]きているのに、ぼんやりしていた。"
+        "context": "彼女[かのじょ]は起[お]きているのに、ぼんやりしていた。",
+        "contextTranslation": "Even though she was awake, she seemed dazed."
       },
       {
         "sentence": "その町[まち]は時[とき]が止[と]まった___静[しず]かだった。",
         "answer": "かのように",
         "translation": "The town was quiet as if time had stopped.",
-        "context": "実[じつ]は時計[とけい]はちゃんと動[うご]いていた。"
+        "context": "実[じつ]は時計[とけい]はちゃんと動[うご]いていた。",
+        "contextTranslation": "In fact, the clocks were running just fine."
       },
       {
         "sentence": "彼[かれ]はまるで王様[おうさま]である___話[はな]した。",
         "answer": "かのように",
         "translation": "He spoke as if he were a king.",
-        "context": "本当[ほんとう]はただの会社員[かいしゃいん]なのに、えらそうだった。"
+        "context": "本当[ほんとう]はただの会社員[かいしゃいん]なのに、えらそうだった。",
+        "contextTranslation": "Although he was really just an office worker, he acted pompous."
       },
       {
         "sentence": "雪[ゆき]が積[つ]もって、まるで冬[ふゆ]が来[き]た___だ。",
         "answer": "かのよう",
         "translation": "Snow has piled up, as though winter has come.",
-        "context": "まだ秋[あき]なのに、朝[あさ]はとても寒[さむ]かった。"
+        "context": "まだ秋[あき]なのに、朝[あさ]はとても寒[さむ]かった。",
+        "contextTranslation": "Even though it's still autumn, the morning was very cold."
       }
     ],
     "distractorPool": [
@@ -32826,13 +27313,15 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "今[いま]の成績[せいせき]___、合格[ごうかく]は難[むずか]しい。",
         "answer": "からいうと",
         "translation": "Judging from his current grades, passing will be hard.",
-        "context": "彼[かれ]は試験[しけん]までにどのくらい実力[じつりょく]があるか気[き]になる。"
+        "context": "彼[かれ]は試験[しけん]までにどのくらい実力[じつりょく]があるか気[き]になる。",
+        "contextTranslation": "I'm curious how much ability he'll have by the time of the exam."
       },
       {
         "sentence": "値段[ねだん]___、このホテルは安[やす]い方[ほう]だ。",
         "answer": "からいうと",
         "translation": "In terms of price, this hotel is on the cheap side.",
-        "context": "ほかのホテルと比[くら]べてみた。"
+        "context": "ほかのホテルと比[くら]べてみた。",
+        "contextTranslation": "I compared it with other hotels."
       },
       {
         "sentence": "結論[けつろん]___、その計画[けいかく]は失敗[しっぱい]だった。",
@@ -32843,7 +27332,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "彼[かれ]の立場[たちば]___、断[ことわ]るのは当然[とうぜん]だ。",
         "answer": "からいうと",
         "translation": "From his position, refusing is only natural.",
-        "context": "彼[かれ]がその仕事[しごと]を引[ひ]き受[う]けなかった理由[りゆう]を考[かんが]えてみた。"
+        "context": "彼[かれ]がその仕事[しごと]を引[ひ]き受[う]けなかった理由[りゆう]を考[かんが]えてみた。",
+        "contextTranslation": "I thought about the reason he didn't take on that job."
       }
     ],
     "distractorPool": [
@@ -32920,7 +27410,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "この問題[もんだい]は最初[さいしょ]の一問[いちもん]___難[むずか]しい。",
         "answer": "からして",
         "translation": "This test is hard starting from the very first question.",
-        "context": "この試験[しけん]の難[むずか]しさは、全体[ぜんたい]を見[み]なくても想像[そうぞう]がつく。"
+        "context": "この試験[しけん]の難[むずか]しさは、全体[ぜんたい]を見[み]なくても想像[そうぞう]がつく。",
+        "contextTranslation": "You can imagine how hard this exam is without even looking at the whole thing."
       },
       {
         "sentence": "服装[ふくそう]___、彼[かれ]はまじめな人[ひと]だとわかる。",
@@ -32997,31 +27488,36 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "お金[かね]がない___、あきらめてはいけない。",
         "answer": "からといって",
         "translation": "Just because you have no money doesn't mean you should give up.",
-        "context": "お金[かね]がないと、多[おお]くの人[ひと]はすぐに夢[ゆめ]をあきらめてしまう。"
+        "context": "お金[かね]がないと、多[おお]くの人[ひと]はすぐに夢[ゆめ]をあきらめてしまう。",
+        "contextTranslation": "When they have no money, many people quickly give up on their dreams."
       },
       {
         "sentence": "日本[にほん]に住[す]んでいる___、漢字[かんじ]が全部[ぜんぶ]読[よ]めるわけではない。",
         "answer": "からといって",
         "translation": "Just because you live in Japan doesn't mean you can read all kanji.",
-        "context": "日本[にほん]に住[す]んでいれば漢字[かんじ]はすべて読[よ]めると思[おも]う人[ひと]がいる。"
+        "context": "日本[にほん]に住[す]んでいれば漢字[かんじ]はすべて読[よ]めると思[おも]う人[ひと]がいる。",
+        "contextTranslation": "Some people think that if you live in Japan, you can read all the kanji."
       },
       {
         "sentence": "安[やす]い___、品質[ひんしつ]が悪[わる]いとは限[かぎ]らない。",
         "answer": "からといって",
         "translation": "Just because it's cheap doesn't necessarily mean the quality is bad.",
-        "context": "値段[ねだん]が安[やす]い物[もの]は品質[ひんしつ]も悪[わる]いと考[かんが]える人[ひと]が多[おお]い。"
+        "context": "値段[ねだん]が安[やす]い物[もの]は品質[ひんしつ]も悪[わる]いと考[かんが]える人[ひと]が多[おお]い。",
+        "contextTranslation": "Many people think that cheap things must also be of poor quality."
       },
       {
         "sentence": "好[す]きだ___、毎日[まいにち]食[た]べたいわけではない。",
         "answer": "からといって",
         "translation": "Just because I like it doesn't mean I want to eat it every day.",
-        "context": "私[わたし]はチョコレートが大好[だいす]きだ。"
+        "context": "私[わたし]はチョコレートが大好[だいす]きだ。",
+        "contextTranslation": "I love chocolate."
       },
       {
         "sentence": "有名[ゆうめい]だ___、いい会社[かいしゃ]とは言[い]えない。",
         "answer": "からといって",
         "translation": "Just because it's famous doesn't mean it's a good company.",
-        "context": "名前[なまえ]が知[し]られている会社[かいしゃ]なら安心[あんしん]だと思[おも]われがちだ。"
+        "context": "名前[なまえ]が知[し]られている会社[かいしゃ]なら安心[あんしん]だと思[おも]われがちだ。",
+        "contextTranslation": "People tend to assume that a company with a well-known name is safe."
       }
     ],
     "distractorPool": [
@@ -33088,31 +27584,36 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "外国人[がいこくじん]___、日本[にほん]の習慣[しゅうかん]は不思議[ふしぎ]だ。",
         "answer": "から見ると",
         "translation": "From a foreigner's viewpoint, Japanese customs are strange.",
-        "context": "日本[にほん]で暮[く]らし始[はじ]めた人[ひと]の目[め]には、いろいろな物[もの]が新[あたら]しく映[うつ]る。"
+        "context": "日本[にほん]で暮[く]らし始[はじ]めた人[ひと]の目[め]には、いろいろな物[もの]が新[あたら]しく映[うつ]る。",
+        "contextTranslation": "To someone who has just started living in Japan, all sorts of things look new."
       },
       {
         "sentence": "この空[そら]の様子[ようす]___、明日[あした]は晴[は]れるだろう。",
         "answer": "から見ると",
         "translation": "Judging from the look of the sky, tomorrow will be sunny.",
-        "context": "雲[くも]の動[うご]きや色[いろ]をじっくり観察[かんさつ]してみた。"
+        "context": "雲[くも]の動[うご]きや色[いろ]をじっくり観察[かんさつ]してみた。",
+        "contextTranslation": "I carefully observed the movement and color of the clouds."
       },
       {
         "sentence": "親[おや]___、子[こ]どもはいつまでも子[こ]どもだ。",
         "answer": "から見ると",
         "translation": "From a parent's perspective, a child is always a child.",
-        "context": "子[こ]どもが何歳[なんさい]になっても、育[そだ]てた者[もの]の目[め]には幼[おさな]く見[み]える。"
+        "context": "子[こ]どもが何歳[なんさい]になっても、育[そだ]てた者[もの]の目[め]には幼[おさな]く見[み]える。",
+        "contextTranslation": "No matter how old a child gets, they look young in the eyes of the one who raised them."
       },
       {
         "sentence": "成績[せいせき]___、彼[かれ]はよく勉強[べんきょう]している。",
         "answer": "から見ると",
         "translation": "Judging from his grades, he studies hard.",
-        "context": "彼[かれ]のテストの点数[てんすう]を並[なら]べて確[たし]かめてみた。"
+        "context": "彼[かれ]のテストの点数[てんすう]を並[なら]べて確[たし]かめてみた。",
+        "contextTranslation": "I lined up his test scores and checked them."
       },
       {
         "sentence": "専門家[せんもんか]___、この計画[けいかく]には問題[もんだい]がある。",
         "answer": "から見ると",
         "translation": "From an expert's viewpoint, this plan has problems.",
-        "context": "この計画[けいかく]を経験[けいけん]の豊[ゆた]かな人[ひと]に調[しら]べてもらった。"
+        "context": "この計画[けいかく]を経験[けいけん]の豊[ゆた]かな人[ひと]に調[しら]べてもらった。",
+        "contextTranslation": "I had someone with rich experience examine this plan."
       }
     ],
     "distractorPool": [
@@ -33184,25 +27685,29 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "本当[ほんとう]は反対[はんたい]だが、逆[さか]らうことはできない。",
         "sentence": "上司[じょうし]の命令[めいれい]だから、従[したが]わ___。",
         "answer": "ざるをえない",
-        "translation": "Since it's an order from my boss, I have no choice but to obey."
+        "translation": "Since it's an order from my boss, I have no choice but to obey.",
+        "contextTranslation": "I'm actually against it, but I can't defy them."
       },
       {
         "context": "これだけの証拠[しょうこ]を見[み]せられては、もう逃[に]げられない。",
         "sentence": "証拠[しょうこ]がある以上[いじょう]、認[みと]め___。",
         "answer": "ざるをえない",
-        "translation": "Since there's evidence, I have no choice but to admit it."
+        "translation": "Since there's evidence, I have no choice but to admit it.",
+        "contextTranslation": "When shown this much evidence, there's no escaping anymore."
       },
       {
         "context": "タクシーもバスもなく、ほかに帰[かえ]る方法[ほうほう]がなかった。",
         "sentence": "電車[でんしゃ]が止[と]まったので、歩[ある]いて帰[かえ]ら___。",
         "answer": "ざるをえない",
-        "translation": "Since the train stopped, I had no choice but to walk home."
+        "translation": "Since the train stopped, I had no choice but to walk home.",
+        "contextTranslation": "There were no taxis or buses, and no other way to get home."
       },
       {
         "context": "ほかに代[か]わりになる薬[くすり]はなく、飲[の]まなければ命[いのち]に関[かか]わる。",
         "sentence": "値段[ねだん]が高[たか]くても、必要[ひつよう]な薬[くすり]だから買[か]わ___。",
         "answer": "ざるをえない",
-        "translation": "Even though it's expensive, since it's necessary medicine I have no choice but to buy it."
+        "translation": "Even though it's expensive, since it's necessary medicine I have no choice but to buy it.",
+        "contextTranslation": "There is no alternative medicine, and not taking it would be life-threatening."
       }
     ],
     "distractorPool": [
@@ -33373,6 +27878,7 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "彼[かれ]はとても落[お]ち込[こ]んでいて、これ以上[いじょう]傷[きず]つけたくない。",
+        "contextTranslation": "He is very down, and I don't want to hurt him any further.",
         "sentence": "彼[かれ]の気持[きも]ちを考[かんが]えると、本当[ほんとう]のことは言[い]い___。",
         "answer": "かねる",
         "translation": "Considering his feelings, I find it hard to tell the truth."
@@ -33445,6 +27951,7 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "彼[かれ]は思[おも]ったことを何[なん]でもすぐ口[くち]に出[だ]す人[ひと]だ。",
+        "contextTranslation": "He's the kind of person who blurts out whatever he thinks right away.",
         "sentence": "あの人[ひと]なら、そんなひどいことも言[い]い___。",
         "answer": "かねない",
         "translation": "If it's that person, he might well say something that cruel."
@@ -33532,6 +28039,7 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "新[あたら]しい技術[ぎじゅつ]を使[つか]えば、うまくいく可能性[かのうせい]は十分[じゅうぶん]にある。",
+        "contextTranslation": "If we use the new technology, there's a good chance it will work out.",
         "sentence": "この方法[ほうほう]で問題[もんだい]を解決[かいけつ]し___。",
         "answer": "うる",
         "translation": "It is possible to solve the problem with this method."
@@ -33543,6 +28051,7 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "予算[よさん]も人[ひと]も足[た]りていて、必要[ひつよう]な条件[じょうけん]はそろっている。",
+        "contextTranslation": "We have enough budget and people, and all the necessary conditions are in place.",
         "sentence": "その計画[けいかく]は実現[じつげん]し___と思[おも]う。",
         "answer": "うる",
         "translation": "I think that plan is possible to realize."
@@ -33620,12 +28129,14 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "準備[じゅんび]は何[なに]もできておらず、残[のこ]された時間[じかん]もほとんどない。",
+        "contextTranslation": "Nothing is ready, and there's hardly any time left.",
         "sentence": "この状況[じょうきょう]では、成功[せいこう]はあり___。",
         "answer": "えない",
         "translation": "In this situation, success is impossible."
       },
       {
         "context": "あの発言[はつげん]を聞[き]いて、私[わたし]は本当[ほんとう]に腹[はら]が立[た]った。",
+        "contextTranslation": "When I heard that remark, I got really angry.",
         "sentence": "そのような失礼[しつれい]な発言[はつげん]は許[ゆる]し___。",
         "answer": "えない",
         "translation": "Such a rude remark cannot possibly be forgiven."
@@ -33637,6 +28148,7 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "今[いま]の科学[かがく]は、まだそこまで進[すす]んでいない。",
+        "contextTranslation": "Today's science has not yet advanced that far.",
         "sentence": "今[いま]の技術[ぎじゅつ]では、それは実現[じつげん]し___。",
         "answer": "えない",
         "translation": "With current technology, that cannot possibly be realized."
@@ -33704,18 +28216,21 @@ export const N3_GRAMMAR: Grammar[] = [
     "examples": [
       {
         "context": "社長[しゃちょう]は急[きゅう]な用事[ようじ]で会議[かいぎ]に出席[しゅっせき]できなくなった。",
+        "contextTranslation": "The company president couldn't attend the meeting due to urgent business.",
         "sentence": "社長[しゃちょう]の___に、私[わたし]が会議[かいぎ]に出[で]ました。",
         "answer": "かわり",
         "translation": "I attended the meeting instead of the company president."
       },
       {
         "context": "ただで手伝[てつだ]ってもらうのは悪[わる]いと思[おも]っている。",
+        "contextTranslation": "I feel bad about having you help me for free.",
         "sentence": "手伝[てつだ]ってもらう___に、昼[ひる]ごはんをおごります。",
         "answer": "かわり",
         "translation": "In exchange for your help, I'll treat you to lunch."
       },
       {
         "context": "この店[みせ]は値段[ねだん]が安[やす]い分[ぶん]、何[なに]かをがまんする必要[ひつよう]がある。",
+        "contextTranslation": "This shop is cheap, so you have to put up with something in return.",
         "sentence": "この店[みせ]は安[やす]い___に、味[あじ]はあまりよくない。",
         "answer": "かわり",
         "translation": "This shop is cheap, but in exchange the taste isn't very good."
@@ -33727,6 +28242,7 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "私[わたし]は健康[けんこう]のために肉[にく]をやめたが、たんぱく質[しつ]は必要[ひつよう]だ。",
+        "contextTranslation": "I gave up meat for my health, but I still need protein.",
         "sentence": "肉[にく]を食[た]べない___に、魚[さかな]をたくさん食[た]べます。",
         "answer": "かわり",
         "translation": "Instead of eating meat, I eat a lot of fish."
@@ -33794,6 +28310,7 @@ export const N3_GRAMMAR: Grammar[] = [
     "examples": [
       {
         "context": "体重[たいじゅう]が前[まえ]より少[すこ]しだけ増[ふ]えてしまった。",
+        "contextTranslation": "My weight has gone up just a little compared to before.",
         "sentence": "最近[さいきん]ちょっと太[ふと]り___なので、運動[うんどう]を始[はじ]めた。",
         "answer": "気味",
         "translation": "Lately I've been a bit on the heavy side, so I started exercising."
@@ -33881,12 +28398,14 @@ export const N3_GRAMMAR: Grammar[] = [
     "examples": [
       {
         "context": "もう夜[よる]の十時[じゅうじ]を過[す]ぎた。",
+        "contextTranslation": "It's already past ten at night.",
         "sentence": "彼[かれ]は朝[あさ]出[で]かけた___、まだ帰[かえ]って来[こ]ない。",
         "answer": "きり",
         "translation": "He went out in the morning and still hasn't come back."
       },
       {
         "context": "ほかの人[ひと]はいらない。だれにも聞[き]かれたくない。",
+        "contextTranslation": "I don't need anyone else here. I don't want anyone to overhear.",
         "sentence": "二人[ふたり]___で静[しず]かに話[はな]したい。",
         "answer": "きり",
         "translation": "I want to talk quietly just the two of us."
@@ -33898,12 +28417,14 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "財布[さいふ]の中身[なかみ]をすっかり数[かぞ]えてみた。ちょうど千円[せんえん]だった。",
+        "contextTranslation": "I counted everything in my wallet. It came to exactly a thousand yen.",
         "sentence": "財布[さいふ]の中[なか]には千円[せんえん]___しかなかった。",
         "answer": "きり",
         "translation": "There was only a thousand yen in my wallet."
       },
       {
         "context": "もう昼[ひる]過[す]ぎになった。",
+        "contextTranslation": "It's already past noon.",
         "sentence": "彼女[かのじょ]は寝[ね]た___で、ずっと起[お]きてこない。",
         "answer": "きり",
         "translation": "She went to sleep and just stayed that way, not waking up at all."
@@ -34059,7 +28580,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "彼[かれ]の態度[たいど]には本当[ほんとう]に腹[はら]が立[た]つ。",
         "sentence": "彼[かれ]は何[なに]も知[し]らない___、えらそうに話[はな]す。",
         "answer": "くせに",
-        "translation": "Even though he knows nothing, he talks arrogantly."
+        "translation": "Even though he knows nothing, he talks arrogantly.",
+        "contextTranslation": "His attitude really makes me angry."
       },
       {
         "sentence": "子供[こども]の___、大人[おとな]のようなことを言[い]う。",
@@ -34070,19 +28592,22 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "あの人[ひと]のずるいところが本当[ほんとう]に嫌[きら]いだ。",
         "sentence": "自分[じぶん]が悪[わる]い___、謝[あやま]ろうとしない。",
         "answer": "くせに",
-        "translation": "Even though he's the one at fault, he won't apologize."
+        "translation": "Even though he's the one at fault, he won't apologize.",
+        "contextTranslation": "I really hate how sly that person is."
       },
       {
         "context": "弟[おとうと]のむだづかいには、あきれてしまう。",
         "sentence": "お金[かね]がない___、高[たか]い物[もの]ばかり買[か]う。",
         "answer": "くせに",
-        "translation": "Even though he has no money, he keeps buying expensive things."
+        "translation": "Even though he has no money, he keeps buying expensive things.",
+        "contextTranslation": "My little brother's wasteful spending leaves me dumbfounded."
       },
       {
         "context": "彼[かれ]のそんなすなおでないところに、いらいらする。",
         "sentence": "本当[ほんとう]は好[す]きな___、嫌[きら]いだと言[い]っている。",
         "answer": "くせに",
-        "translation": "Even though he really likes it, he says he hates it."
+        "translation": "Even though he really likes it, he says he hates it.",
+        "contextTranslation": "That dishonest side of him irritates me."
       }
     ],
     "distractorPool": [
@@ -34154,13 +28679,15 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "友[とも]だちに駅[えき]までの時間[じかん]を聞[き]かれた。",
         "sentence": "駅[えき]まで歩[ある]いて十分[じゅっぷん]___かかります。",
         "answer": "くらい",
-        "translation": "It takes about ten minutes to walk to the station."
+        "translation": "It takes about ten minutes to walk to the station.",
+        "contextTranslation": "A friend asked me how long it takes to get to the station."
       },
       {
         "context": "あなたはいつも母[はは]に何[なに]でもやってもらっているのね。",
         "sentence": "自分[じぶん]の部屋[へや]___、自分[じぶん]で掃除[そうじ]しなさい。",
         "answer": "くらい",
-        "translation": "At least clean your own room yourself."
+        "translation": "At least clean your own room yourself.",
+        "contextTranslation": "You always have your mother do everything for you, don't you."
       },
       {
         "sentence": "お腹[なか]がすいて、死[し]にそうな___だ。",
@@ -34323,7 +28850,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "今[いま]まで何度[なんど]も試験[しけん]に落[お]ちてきた。",
         "sentence": "今度[こんど]___、絶対[ぜったい]に合格[ごうかく]してみせる。",
         "answer": "こそ",
-        "translation": "This time for sure, I'll definitely pass."
+        "translation": "This time for sure, I'll definitely pass.",
+        "contextTranslation": "I've failed the exam many times up to now."
       },
       {
         "sentence": "「ありがとう。」「いいえ、こちら___ありがとう。」",
@@ -34339,13 +28867,15 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "去年[きょねん]は忙[いそが]しくて、何[なに]もできなかった。",
         "sentence": "今年[ことし]___、新[あたら]しいことに挑戦[ちょうせん]したい。",
         "answer": "こそ",
-        "translation": "This year for sure, I want to take on something new."
+        "translation": "This year for sure, I want to take on something new.",
+        "contextTranslation": "Last year I was busy and couldn't do anything."
       },
       {
         "context": "このチームには優[すぐ]れた人[ひと]が何人[なんにん]もいるが、",
         "sentence": "君[きみ]___、このチームに必要[ひつよう]な人[ひと]だ。",
         "answer": "こそ",
-        "translation": "You are precisely the person this team needs."
+        "translation": "You are precisely the person this team needs.",
+        "contextTranslation": "There are several excellent people on this team, but"
       }
     ],
     "distractorPool": [
@@ -34685,7 +29215,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "context": "医者[いしゃ]に、あなたはたばこの量[りょう]が多[おお]すぎると言[い]われたそうだね。",
         "sentence": "健康[けんこう]のためには、たばこを吸[す]わない___。",
         "answer": "ことだ",
-        "translation": "For your health, you shouldn't smoke."
+        "translation": "For your health, you shouldn't smoke.",
+        "contextTranslation": "I hear the doctor told you that you smoke too much."
       },
       {
         "sentence": "成功[せいこう]したいなら、まず行動[こうどう]する___。",
@@ -35013,30 +29544,35 @@ export const N3_GRAMMAR: Grammar[] = [
     "examples": [
       {
         "context": "うちの会社[かいしゃ]では、以前[いぜん]から社内[しゃない]の規則[きそく]でこう決[き]まっている。",
+        "contextTranslation": "At our company, this has been set by internal rules for a long time.",
         "sentence": "会議[かいぎ]は毎週[まいしゅう]月曜日[げつようび]に開[ひら]かれる___。",
         "answer": "ことになっている",
         "translation": "It is arranged that the meeting is held every Monday."
       },
       {
         "context": "この学校[がっこう]には、昔[むかし]から生徒[せいと]が守[まも]る決[き]まりがある。",
+        "contextTranslation": "This school has rules that students have followed since long ago.",
         "sentence": "この学校[がっこう]では制服[せいふく]を着[き]る___。",
         "answer": "ことになっている",
         "translation": "At this school it is the rule to wear a uniform."
       },
       {
         "context": "私[わたし]の異動[いどう]は、会社[かいしゃ]の予定表[よていひょう]にもう書[か]かれていて、今[いま]もその予定[よてい]のままだ。",
+        "contextTranslation": "My transfer is already written on the company schedule, and that plan still stands.",
         "sentence": "来月[らいげつ]、私[わたし]は大阪[おおさか]へ転勤[てんきん]する___。",
         "answer": "ことになっている",
         "translation": "It has been arranged that I will transfer to Osaka next month."
       },
       {
         "context": "この図書館[としょかん]には、利用[りよう]する人[ひと]が守[まも]る決[き]まりがいくつもある。",
+        "contextTranslation": "This library has several rules that users must follow.",
         "sentence": "図書館[としょかん]の中[なか]では飲食[いんしょく]しない___。",
         "answer": "ことになっている",
         "translation": "The rule is that you do not eat or drink inside the library."
       },
       {
         "context": "この会社[かいしゃ]では、勤務[きんむ]についての規則[きそく]がはっきり決[き]まっている。",
+        "contextTranslation": "At this company, the rules about work are clearly established.",
         "sentence": "新入社員[しんにゅうしゃいん]は朝[あさ]八時[はちじ]に出社[しゅっしゃ]する___。",
         "answer": "ことになっている",
         "translation": "New employees are expected to come to work at 8 a.m."
@@ -35278,25 +29814,29 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "食事[しょくじ]の___に電話[でんわ]がかかってきた。",
         "answer": "最中",
         "translation": "Right in the middle of the meal, a phone call came in.",
-        "context": "家族[かぞく]みんなでおいしく食[た]べ始[はじ]めたばかりだった。"
+        "context": "家族[かぞく]みんなでおいしく食[た]べ始[はじ]めたばかりだった。",
+        "contextTranslation": "The whole family had just started enjoying the meal together."
       },
       {
         "sentence": "会議[かいぎ]をしている___に、急[きゅう]に停電[ていでん]した。",
         "answer": "最中",
         "translation": "Right in the middle of the meeting, the power suddenly went out.",
-        "context": "部長[ぶちょう]が大切[たいせつ]な話[はなし]をしていた。"
+        "context": "部長[ぶちょう]が大切[たいせつ]な話[はなし]をしていた。",
+        "contextTranslation": "The department manager was talking about something important."
       },
       {
         "sentence": "試験[しけん]の___に、おなかが痛[いた]くなった。",
         "answer": "最中",
         "translation": "In the very middle of the exam, my stomach started to hurt.",
-        "context": "問題[もんだい]を半分[はんぶん]ほど解[と]いたところだった。"
+        "context": "問題[もんだい]を半分[はんぶん]ほど解[と]いたところだった。",
+        "contextTranslation": "I had just solved about half of the questions."
       },
       {
         "sentence": "シャワーを浴[あ]びている___に、宅配[たくはい]が来[き]た。",
         "answer": "最中",
         "translation": "Right while I was taking a shower, a delivery arrived.",
-        "context": "体[からだ]を洗[あら]っていて、すぐには出[で]られなかった。"
+        "context": "体[からだ]を洗[あら]っていて、すぐには出[で]られなかった。",
+        "contextTranslation": "I was washing myself, so I couldn't come out right away."
       },
       {
         "sentence": "今[いま]、忙[いそが]しい___なので、後[あと]でかけ直[なお]します。",
@@ -35368,31 +29908,36 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "彼[かれ]は忙[いそが]しくて、食事[しょくじ]をする時間[じかん]___ない。",
         "answer": "さえ",
         "translation": "He is so busy that he doesn't even have time to eat.",
-        "context": "朝[あさ]から夜[よる]までずっと働[はたら]きづめだ。"
+        "context": "朝[あさ]から夜[よる]までずっと働[はたら]きづめだ。",
+        "contextTranslation": "He works nonstop from morning to night."
       },
       {
         "sentence": "そんなことは子供[こども]___知[し]っている。",
         "answer": "さえ",
         "translation": "Even a child knows such a thing.",
-        "context": "それはとても簡単[かんたん]で当[あ]たり前[まえ]のことだ。"
+        "context": "それはとても簡単[かんたん]で当[あ]たり前[まえ]のことだ。",
+        "contextTranslation": "That is very simple and obvious."
       },
       {
         "sentence": "熱[ねつ]が高[たか]くて、水[みず]___飲[の]めなかった。",
         "answer": "さえ",
         "translation": "My fever was so high that I couldn't even drink water.",
-        "context": "のどがはれて、口[くち]に入[い]れるのがつらかった。"
+        "context": "のどがはれて、口[くち]に入[い]れるのがつらかった。",
+        "contextTranslation": "My throat was swollen, so putting anything in my mouth was painful."
       },
       {
         "sentence": "疲[つか]れすぎて、立[た]っていること___できない。",
         "answer": "さえ",
         "translation": "I'm so tired that I can't even stand.",
-        "context": "体[からだ]に力[ちから]が全[まった]く入[はい]らない。"
+        "context": "体[からだ]に力[ちから]が全[まった]く入[はい]らない。",
+        "contextTranslation": "I have no strength in my body at all."
       },
       {
         "sentence": "彼[かれ]は自分[じぶん]の名前[なまえ]___漢字[かんじ]で書[か]けない。",
         "answer": "さえ",
         "translation": "He can't even write his own name in kanji.",
-        "context": "漢字[かんじ]がとても苦手[にがて]で、ほとんど覚[おぼ]えていない。"
+        "context": "漢字[かんじ]がとても苦手[にがて]で、ほとんど覚[おぼ]えていない。",
+        "contextTranslation": "He is very bad at kanji and has hardly memorized any."
       }
     ],
     "distractorPool": [
@@ -35631,7 +30176,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "子供[こども]のころ、毎日[まいにち]ピアノを練習[れんしゅう]___。",
         "answer": "させられた",
         "translation": "When I was a child, I was made to practice piano every day.",
-        "context": "本当[ほんとう]はピアノが大嫌[だいきら]いで、いつも母[はは]にしかられていた。"
+        "context": "本当[ほんとう]はピアノが大嫌[だいきら]いで、いつも母[はは]にしかられていた。",
+        "contextTranslation": "I actually hated the piano and was always being scolded by my mother."
       },
       {
         "sentence": "飲[の]みたくないのに、お酒[さけ]を___。",
@@ -35642,19 +30188,22 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "部長[ぶちょう]に残業[ざんぎょう]を___、疲[つか]れてしまった。",
         "answer": "させられて",
         "translation": "I was made to work overtime by the manager and got exhausted.",
-        "context": "帰[かえ]りたかったのに、部長[ぶちょう]に無理[むり]やり仕事[しごと]を頼[たの]まれた。"
+        "context": "帰[かえ]りたかったのに、部長[ぶちょう]に無理[むり]やり仕事[しごと]を頼[たの]まれた。",
+        "contextTranslation": "I wanted to go home, but the manager forced work on me."
       },
       {
         "sentence": "兄[あに]にいつも荷物[にもつ]を持[も]た___。",
         "answer": "された",
         "translation": "I was always made to carry the luggage by my older brother.",
-        "context": "弟[おとうと]の私[わたし]は、兄[あに]にいつもいやなことを押[お]しつけられていた。"
+        "context": "弟[おとうと]の私[わたし]は、兄[あに]にいつもいやなことを押[お]しつけられていた。",
+        "contextTranslation": "As the younger brother, I was always having unpleasant tasks forced on me by my older brother."
       },
       {
         "sentence": "つまらない映画[えいが]を最後[さいご]まで見[み]___。",
         "answer": "させられた",
         "translation": "I was made to watch the boring movie to the end.",
-        "context": "友[とも]だちに無理[むり]やり映画館[えいがかん]に連[つ]れていかれた。"
+        "context": "友[とも]だちに無理[むり]やり映画館[えいがかん]に連[つ]れていかれた。",
+        "contextTranslation": "My friend dragged me to the movie theater against my will."
       }
     ],
     "distractorPool": [
@@ -35721,7 +30270,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "終電[しゅうでん]を逃[のが]したから、歩[ある]いて帰[かえ]る___。",
         "answer": "しかない",
         "translation": "I missed the last train, so I have no choice but to walk home.",
-        "context": "こんな夜中[よなか]では、タクシーもバスもつかまらない。"
+        "context": "こんな夜中[よなか]では、タクシーもバスもつかまらない。",
+        "contextTranslation": "At this time of night, I can't catch a taxi or a bus."
       },
       {
         "sentence": "ほかに方法[ほうほう]がないなら、やる___。",
@@ -35737,7 +30287,8 @@ export const N3_GRAMMAR: Grammar[] = [
         "sentence": "店[みせ]が閉[し]まっていたので、あきらめる___。",
         "answer": "しかなかった",
         "translation": "The shop was closed, so I had no choice but to give up.",
-        "context": "どうしてもほしい物[もの]があったのに、他[ほか]に売[う]っている店[みせ]も見[み]つからなかった。"
+        "context": "どうしてもほしい物[もの]があったのに、他[ほか]に売[う]っている店[みせ]も見[み]つからなかった。",
+        "contextTranslation": "There was something I really wanted, but I couldn't find any other shop selling it either."
       },
       {
         "sentence": "予約[よやく]が取[と]れなかったので、明日[あした]また来[く]る___ね。",
@@ -36080,6 +30631,7 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "頭[あたま]が痛[いた]かったので薬[くすり]を飲[の]んだが、効[き]いたのかどうかはよく分[わ]からない。",
+        "contextTranslation": "My head hurt so I took some medicine, but I'm not really sure whether it worked.",
         "sentence": "薬[くすり]を飲[の]んだ___、少[すこ]し楽[らく]になった。",
         "answer": "せいか",
         "translation": "Maybe because I took the medicine, I feel a bit better."
@@ -36138,6 +30690,706 @@ export const N3_GRAMMAR: Grammar[] = [
       {
         "form": "わけか",
         "gloss": "'is that why?'; questions a reason rather than tentatively stating one"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:っけ",
+    "level": "N3",
+    "title": "～っけ",
+    "meaning": "what was it again? / I'm trying to recall (confirming uncertain memory)",
+    "explanation": "～っけ is a sentence-final particle used in casual speech when the speaker is trying to recall or confirm something they have forgotten or are unsure about, often asking oneself or the listener.",
+    "formation": "Plain form (verb/adj) + っけ / Noun・な-adj + だ(った) + っけ",
+    "whyRight": "～っけ is the casual ending used to confirm or retrieve half-forgotten information, matching the 'what was it again?' tone of the example.",
+    "examples": [
+      {
+        "sentence": "あれ、会議[かいぎ]は何時[なんじ]からだ___。",
+        "answer": "っけ",
+        "translation": "Huh, what time was the meeting again?"
+      },
+      {
+        "sentence": "君[きみ]の誕生日[たんじょうび]は明日[あした]だった___。",
+        "answer": "っけ",
+        "translation": "Your birthday was tomorrow, right? (I forget)",
+        "context": "あれ、日付[ひづけ]を間違[まちが]えたかもしれない。",
+        "contextTranslation": "Huh, I might have gotten the date wrong."
+      },
+      {
+        "sentence": "この映画[えいが]、前[まえ]に見[み]た___。",
+        "answer": "っけ",
+        "translation": "Did I watch this movie before? (trying to recall)",
+        "context": "うーん、なんだか見覚[みおぼ]えがあるような気[き]がする。",
+        "contextTranslation": "Hmm, somehow I feel like I've seen it before."
+      },
+      {
+        "sentence": "彼[かれ]の名前[なまえ]、何[なん]て言[い]った___。",
+        "answer": "っけ",
+        "translation": "What was his name again?"
+      },
+      {
+        "sentence": "鍵[かぎ]はどこに置[お]いた___。",
+        "answer": "っけ",
+        "translation": "Where did I put the keys again?"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "まい",
+        "gloss": "negative conjecture 'surely won't'; attaches to dictionary form (行くまい), so 見たまい / だったまい is ungrammatical in these past/だ slots"
+      },
+      {
+        "form": "ません",
+        "gloss": "polite negative verb ending; cannot attach to plain だ or plain past (見たません・だません are ungrammatical) in these casual slots"
+      },
+      {
+        "form": "でしょう",
+        "gloss": "'probably/right?'; cannot follow だ (会議は何時からだでしょう is ungrammatical) and is conjecture, not a memory check"
+      },
+      {
+        "form": "ください",
+        "gloss": "'please do'; a request ending that cannot attach to だ or plain past here and gives a command, not a recall question"
+      },
+      {
+        "form": "じゃん",
+        "gloss": "'isn't it!'; asserts something obvious, opposite of forgotten"
+      },
+      {
+        "form": "もん",
+        "gloss": "'because'; gives a reason, not a recall question"
+      },
+      {
+        "form": "わ",
+        "gloss": "soft assertive ending; states feeling, not a memory query"
+      },
+      {
+        "form": "なあ",
+        "gloss": "'I wish/exclamation'; expresses emotion, not recalling facts"
+      },
+      {
+        "form": "ぞ",
+        "gloss": "strong assertive masculine ending; emphasizes a statement, not a question"
+      },
+      {
+        "form": "とか",
+        "gloss": "'or something'; vague listing, not a recall confirmation"
+      },
+      {
+        "form": "けど",
+        "gloss": "'but/though'; conjunction softener, not a memory-check ending"
+      },
+      {
+        "form": "っけな",
+        "gloss": "combined form; redundant here and would create an unnatural double ending after だ"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:っこない",
+    "level": "N3",
+    "title": "～っこない",
+    "meaning": "there's no way / couldn't possibly (strong casual denial of possibility)",
+    "explanation": "～っこない is a casual, emphatic expression meaning that something is absolutely impossible or will definitely not happen. It is a colloquial equivalent of ～はずがない / ～わけがない.",
+    "formation": "Verb (ます-stem) + っこない",
+    "whyRight": "～っこない attaches to the verb stem to strongly and casually deny that something could possibly happen, fitting the 'no way it could' meaning.",
+    "examples": [
+      {
+        "sentence": "そんな難[むずか]しい問題[もんだい]、私[わたし]に解[と]け___。",
+        "answer": "っこない",
+        "translation": "There's no way I could solve such a hard problem."
+      },
+      {
+        "sentence": "一日[いちにち]でこの本[ほん]を全部[ぜんぶ]読[よ]め___よ。",
+        "answer": "っこない",
+        "translation": "There's no way you can read this whole book in one day."
+      },
+      {
+        "sentence": "彼[かれ]がそんな嘘[うそ]をつき___。",
+        "answer": "っこない",
+        "translation": "There's no way he would tell such a lie.",
+        "context": "彼[かれ]はとても正直[しょうじき]な人[ひと]だ。",
+        "contextTranslation": "He's a very honest person."
+      },
+      {
+        "sentence": "宝[たから]くじなんて当[あ]たり___から、買[か]わない。",
+        "answer": "っこない",
+        "translation": "There's no way the lottery will win, so I won't buy it."
+      },
+      {
+        "sentence": "今[いま]から走[はし]っても間[ま]に合[あ]い___よ。",
+        "answer": "っこない",
+        "translation": "Even if we run now, there's no way we'll make it in time."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "かねない",
+        "gloss": "'might well (negatively)'; expresses possibility, the opposite of impossibility"
+      },
+      {
+        "form": "がたい",
+        "gloss": "'hard to'; difficult but not impossible, and more literary"
+      },
+      {
+        "form": "づらい",
+        "gloss": "'hard to do'; physical/psychological difficulty, not denial of possibility"
+      },
+      {
+        "form": "にくい",
+        "gloss": "'hard to do'; difficulty, not 'no way it happens'"
+      },
+      {
+        "form": "ようがない",
+        "gloss": "'no way to (do)'; means lacking a method, slightly different from denying the event itself"
+      },
+      {
+        "form": "わけだ",
+        "gloss": "'that's why/it follows'; draws a conclusion, not a denial"
+      },
+      {
+        "form": "ことない",
+        "gloss": "'no need to / never'; either advice or non-occurrence, not impossibility"
+      },
+      {
+        "form": "っぽい",
+        "gloss": "'-ish'; resemblance suffix, unrelated"
+      },
+      {
+        "form": "得[え]る",
+        "gloss": "'can/possible'; affirms possibility, opposite meaning"
+      },
+      {
+        "form": "かもしれない",
+        "gloss": "'might'; tentative possibility, opposite of strong denial"
+      },
+      {
+        "form": "に違[ちが]いない",
+        "gloss": "'must be'; strong affirmation, opposite of impossibility"
+      },
+      {
+        "form": "っこなくない",
+        "gloss": "double-negative oddity; would mean 'not impossible', wrong and unnatural here"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:っぱなし",
+    "level": "N3",
+    "title": "～っぱなし",
+    "meaning": "leaving (something) as it is / doing continuously without stopping",
+    "explanation": "～っぱなし indicates that an action is left in a state it should not be (e.g., leaving something on/open), or that an action continues without interruption. It often carries a critical or negative nuance for the first usage.",
+    "formation": "Verb (ます-stem) + っぱなし",
+    "whyRight": "～っぱなし attaches to the verb stem to show a state was left unchanged or an action continued without stopping, matching the 'left it on' nuance here.",
+    "examples": [
+      {
+        "sentence": "電気[でんき]をつけ___で寝[ね]てしまった。",
+        "answer": "っぱなし",
+        "translation": "I fell asleep with the lights left on."
+      },
+      {
+        "sentence": "窓[まど]を開[あ]け___にしないでください。",
+        "answer": "っぱなし",
+        "translation": "Please don't leave the window open."
+      },
+      {
+        "sentence": "新幹線[しんかんせん]で東京[とうきょう]まで立[た]ち___だった。",
+        "answer": "っぱなし",
+        "translation": "I had to stand the whole way to Tokyo on the bullet train."
+      },
+      {
+        "sentence": "水[みず]を出[だ]し___にして歯[は]を磨[みが]くのはもったいない。",
+        "answer": "っぱなし",
+        "translation": "It's wasteful to brush your teeth with the water left running."
+      },
+      {
+        "sentence": "弟[おとうと]はいつも本[ほん]を借[か]り___で返[かえ]さない。",
+        "answer": "っぱなし",
+        "translation": "My little brother always borrows books and leaves them unreturned."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "つつ",
+        "gloss": "'while (simultaneously)'; an adverbial that cannot take で／に／だった (つけつつで is ungrammatical) and means doing two things at once, not leaving a state"
+      },
+      {
+        "form": "つづける",
+        "gloss": "'continue to'; expresses continuation but lacks the negative 'left undone' nuance and conjugates differently"
+      },
+      {
+        "form": "きり",
+        "gloss": "'only/since then'; can mean 'left as is' (寝たきり) but follows た-form, not stem"
+      },
+      {
+        "form": "ながら",
+        "gloss": "'while'; simultaneous actions, not a left-as-is state"
+      },
+      {
+        "form": "がち",
+        "gloss": "'tend to'; a tendency, not a continuing/left state"
+      },
+      {
+        "form": "っきり",
+        "gloss": "'only/just'; limitation, not 'leaving on'"
+      },
+      {
+        "form": "だらけ",
+        "gloss": "'covered in'; noun suffix for abundance, unrelated to a left action"
+      },
+      {
+        "form": "ぎみ",
+        "gloss": "'a touch of'; slight tendency, unrelated"
+      },
+      {
+        "form": "かけ",
+        "gloss": "'half-done'; an action started but not finished, different from leaving a completed action's result"
+      },
+      {
+        "form": "づらい",
+        "gloss": "'hard to'; difficulty, unrelated"
+      },
+      {
+        "form": "っぱなしの",
+        "gloss": "prenominal form; would need a following noun, wrong before で/だった here"
+      },
+      {
+        "form": "ばかり",
+        "gloss": "'just/only'; recentness or exclusivity, not a left-as-is state"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:っぽい",
+    "level": "N3",
+    "title": "～っぽい",
+    "meaning": "-ish / -like / tends to (has a quality or tendency)",
+    "explanation": "～っぽい attaches to nouns, verb stems, or adjectives to mean something resembles or has the quality/tendency of that thing. It conjugates like an い-adjective.",
+    "formation": "Noun / Verb (ます-stem) / Adj-stem + っぽい",
+    "whyRight": "～っぽい expresses resemblance to or a strong tendency toward the base word, fitting the 'has the quality of' meaning in the example.",
+    "examples": [
+      {
+        "sentence": "この水[みず]は白[しろ]___色[いろ]をしている。",
+        "answer": "っぽい",
+        "translation": "This water has a whitish color."
+      },
+      {
+        "sentence": "彼[かれ]は最近[さいきん]、すぐ怒[おこ]り___なった。",
+        "answer": "っぽく",
+        "translation": "He has become quick-tempered lately."
+      },
+      {
+        "sentence": "そんな子供[こども]___ことを言[い]わないで。",
+        "answer": "っぽい",
+        "translation": "Don't say such childish things.",
+        "context": "君[きみ]はもう大人[おとな]なんだから、",
+        "contextTranslation": "You're an adult now, so"
+      },
+      {
+        "sentence": "彼女[かのじょ]は忘[わす]れ___ので、よくメモを取[と]る。",
+        "answer": "っぽい",
+        "translation": "She is forgetful, so she often takes notes."
+      },
+      {
+        "sentence": "この服[ふく]は安[やす]___見[み]えるが、実[じつ]は高[たか]い。",
+        "answer": "っぽく",
+        "translation": "These clothes look cheap, but they're actually expensive."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "らしい",
+        "gloss": "'typical of / seems'; for behaving as one ideally should or hearsay, not a surface resemblance/tendency"
+      },
+      {
+        "form": "みたい",
+        "gloss": "'like/seems'; resemblance but a separate construction that doesn't conjugate as ～っぽい does in these slots"
+      },
+      {
+        "form": "そう",
+        "gloss": "'looks like'; appearance based on direct impression, different nuance and conjugation"
+      },
+      {
+        "form": "がち",
+        "gloss": "'tend to'; a tendency but usually negative/frequency, and conjugates as a noun"
+      },
+      {
+        "form": "ぎみ",
+        "gloss": "'a touch of'; slight tendency, attaches differently and is milder"
+      },
+      {
+        "form": "ふう",
+        "gloss": "'-style'; a manner/style, follows な, not the same as -ish quality"
+      },
+      {
+        "form": "っぷり",
+        "gloss": "'the manner/way of doing'; attaches to a stem to describe how an action is done (飲みっぷり), not a resemblance or -ish quality"
+      },
+      {
+        "form": "だらけ",
+        "gloss": "'covered in'; abundance, not resemblance"
+      },
+      {
+        "form": "げ",
+        "gloss": "'-looking (feeling)'; shows an outward feeling, attaches to emotion stems, narrower"
+      },
+      {
+        "form": "っぽさ",
+        "gloss": "the nominalized form; a noun meaning '-ishness', cannot fill the adjective slots here"
+      },
+      {
+        "form": "らしく",
+        "gloss": "adverbial of らしい; 'in a manner befitting', wrong nuance for these tendency/resemblance slots"
+      },
+      {
+        "form": "ようだ",
+        "gloss": "'seems/like'; conjecture or resemblance via a separate grammar, doesn't fit the い-adjective slots"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:つもりだ",
+    "level": "N3",
+    "title": "～つもりだ",
+    "meaning": "intend to / plan to (also: convinced one is/did, even if not)",
+    "explanation": "～つもりだ expresses the speaker's intention or plan to do something. With past/state forms it can also mean being convinced that something is the case even when it may not be true.",
+    "formation": "Verb (dictionary form) + つもりだ / Verb (ない-form) + つもりだ",
+    "whyRight": "～つもりだ states a firm personal intention to carry out the verb's action, matching the 'I plan to' meaning of the example.",
+    "examples": [
+      {
+        "sentence": "来年[らいねん]、日本[にほん]へ留学[りゅうがく]する___です。",
+        "answer": "つもり",
+        "translation": "I intend to study abroad in Japan next year.",
+        "context": "私[わたし]はもう決心[けっしん]した。",
+        "contextTranslation": "I've already made up my mind."
+      },
+      {
+        "sentence": "もうタバコは吸[す]わない___だ。",
+        "answer": "つもり",
+        "translation": "I intend not to smoke anymore."
+      },
+      {
+        "sentence": "週末[しゅうまつ]は家[いえ]でゆっくり休[やす]む___です。",
+        "answer": "つもり",
+        "translation": "I plan to relax at home this weekend.",
+        "context": "今週[こんしゅう]は忙[いそが]しかったので、予定[よてい]を何[なに]も入[い]れなかった。",
+        "contextTranslation": "I was busy this week, so I didn't schedule anything."
+      },
+      {
+        "sentence": "ちゃんと説明[せつめい]した___だったが、伝[つた]わっていなかった。",
+        "answer": "つもり",
+        "translation": "I was sure I had explained properly, but it hadn't gotten through."
+      },
+      {
+        "sentence": "彼[かれ]は来[こ]ない___らしいよ。",
+        "answer": "つもり",
+        "translation": "It seems he intends not to come."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ながら",
+        "gloss": "'while (simultaneously)'; needs a verb stem and cannot take です／だ (するながらです is ungrammatical), and means doing two things at once, not intending"
+      },
+      {
+        "form": "まま",
+        "gloss": "'as it is / unchanged'; 留学するままです・説明したままだった means a state left unchanged, the wrong meaning and unnatural as the predicate here"
+      },
+      {
+        "form": "ところ",
+        "gloss": "'about to / in the middle of'; a stage of action, not an intention"
+      },
+      {
+        "form": "ことにする",
+        "gloss": "'decide to'; a decision, related but a different construction that doesn't fit the slot"
+      },
+      {
+        "form": "ようとおもう",
+        "gloss": "'think I'll'; intention but a separate volitional construction, won't fit the する___です slot"
+      },
+      {
+        "form": "べき",
+        "gloss": "'should (ought to)'; obligation/advice, not intention"
+      },
+      {
+        "form": "わけ",
+        "gloss": "'reason/it follows'; explanation, not intention"
+      },
+      {
+        "form": "みこみ",
+        "gloss": "'prospect/likelihood'; a forecast, not a personal plan"
+      },
+      {
+        "form": "だろう",
+        "gloss": "'probably'; conjecture, not intention"
+      },
+      {
+        "form": "らしい",
+        "gloss": "'seems/typical'; hearsay or typicality, not the speaker's intention"
+      },
+      {
+        "form": "つもりの",
+        "gloss": "prenominal form; would need a following noun, wrong before です/だ here"
+      },
+      {
+        "form": "ため",
+        "gloss": "'for the purpose of'; purpose, not a stated intention to act"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:て以来",
+    "level": "N3",
+    "title": "～て以来",
+    "meaning": "ever since / since (a past event, continuing to now)",
+    "explanation": "～て以来 indicates that ever since a certain past event occurred, a state or situation has continued up to the present. It is used for one-time past events, not repeated daily actions.",
+    "formation": "Verb (て-form) + 以来[いらい] / Noun + 以来[いらい]",
+    "whyRight": "～て以来 marks a past starting point after which a situation has continued unchanged until now, matching the 'ever since' meaning of the example.",
+    "examples": [
+      {
+        "sentence": "日本[にほん]に来[き]て___、一度[いちど]も国[くに]に帰[かえ]っていない。",
+        "answer": "以来",
+        "translation": "Ever since I came to Japan, I haven't returned home even once."
+      },
+      {
+        "sentence": "彼[かれ]とは卒業[そつぎょう]して___、会[あ]っていない。",
+        "answer": "以来",
+        "translation": "I haven't met him since we graduated."
+      },
+      {
+        "sentence": "大[おお]きな地震[じしん]を経験[けいけん]して___、防災[ぼうさい]を意識[いしき]するようになった。",
+        "answer": "以来",
+        "translation": "Ever since experiencing the big earthquake, I've become conscious of disaster prevention."
+      },
+      {
+        "sentence": "あの事件[じけん]___、町[まち]の様子[ようす]がすっかり変[か]わった。",
+        "answer": "以来",
+        "translation": "Ever since that incident, the town's appearance has completely changed."
+      },
+      {
+        "sentence": "禁煙[きんえん]を始[はじ]めて___、体調[たいちょう]がとても良[よ]い。",
+        "answer": "以来",
+        "translation": "Ever since I started quitting smoking, my health has been very good."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "しだい",
+        "gloss": "'as soon as / depending on'; attaches to the verb stem (来しだい) so 来てしだい is ungrammatical, and it points to a future trigger, the opposite of 'ever since'"
+      },
+      {
+        "form": "あと",
+        "gloss": "'after'; refers to a point after an event, not a continuous span up to the present"
+      },
+      {
+        "form": "うちに",
+        "gloss": "'while/before'; a window of time, opposite of a starting point"
+      },
+      {
+        "form": "あいだ",
+        "gloss": "'during'; a span between two points, not 'ever since'"
+      },
+      {
+        "form": "まえに",
+        "gloss": "'before'; prior to an event, opposite direction"
+      },
+      {
+        "form": "がてら",
+        "gloss": "'while also / on the way to'; attaches to a stem/noun to combine two purposes, unrelated to a past starting point"
+      },
+      {
+        "form": "とき",
+        "gloss": "'when'; a point/occasion, not a continuing-since span"
+      },
+      {
+        "form": "じてん",
+        "gloss": "'at the point of'; marks a moment, not the ongoing 'since' span"
+      },
+      {
+        "form": "ばかり",
+        "gloss": "'just (did)'; recentness, not 'ever since up to now'"
+      },
+      {
+        "form": "とちゅう",
+        "gloss": "'midway'; in the middle, unrelated to a starting point"
+      },
+      {
+        "form": "いらいの",
+        "gloss": "prenominal form; would need a following noun, wrong before a comma/clause here"
+      },
+      {
+        "form": "ながら",
+        "gloss": "'while'; simultaneous action, unrelated to a past starting point"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:ているところ",
+    "level": "N3",
+    "title": "～ているところ",
+    "meaning": "to be in the middle of doing something",
+    "explanation": "This expression indicates that an action is currently in progress at this very moment. It emphasizes the ongoing stage of an activity.",
+    "formation": "Verb (て-form) + いる + ところ",
+    "whyRight": "～ているところ attaches to the て-form + いる to mean 'right now in the middle of doing,' which fits a present, ongoing action.",
+    "examples": [
+      {
+        "sentence": "今[いま]、宿題[しゅくだい]をして___です。",
+        "answer": "いるところ",
+        "translation": "I'm in the middle of doing my homework right now."
+      },
+      {
+        "sentence": "母[はは]は今[いま]、料理[りょうり]を作[つく]って___だ。",
+        "answer": "いるところ",
+        "translation": "My mother is in the middle of cooking right now."
+      },
+      {
+        "sentence": "ちょうど出[で]かけようとして___に電話[でんわ]が鳴[な]った。",
+        "answer": "いるところ",
+        "translation": "The phone rang just as I was about to leave."
+      },
+      {
+        "sentence": "今[いま]、その問題[もんだい]について調[しら]べて___です。",
+        "answer": "いるところ",
+        "translation": "I'm currently in the middle of looking into that problem."
+      },
+      {
+        "sentence": "彼[かれ]は今[いま]、会議[かいぎ]の準備[じゅんび]をして___だ。",
+        "answer": "いるところ",
+        "translation": "He is in the middle of preparing for the meeting now."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "いたところ",
+        "gloss": "'was just doing' (past progressive); wrong for an action happening right now"
+      },
+      {
+        "form": "あるところ",
+        "gloss": "uses ある instead of いる; ungrammatical with this て-form for ongoing action"
+      },
+      {
+        "form": "いくところ",
+        "gloss": "'about to go'; expresses motion, not being in the middle of the stated action"
+      },
+      {
+        "form": "おくところ",
+        "gloss": "confuses ～ておく (preparation) with ～ている; not 'in progress'"
+      },
+      {
+        "form": "しまうところ",
+        "gloss": "implies on the verge of finishing/regret, not simply ongoing"
+      },
+      {
+        "form": "いるところだった",
+        "gloss": "'was just about to / on the verge of'; expresses a past near-miss, clashing with 今 'right now'"
+      },
+      {
+        "form": "いたとき",
+        "gloss": "'when (I) was'; とき marks time, not 'in the middle of'"
+      },
+      {
+        "form": "いるばかり",
+        "gloss": "～ばかり means 'just did/only'; wrong nuance for ongoing action"
+      },
+      {
+        "form": "いるあいだ",
+        "gloss": "'during the time that'; needs a second clause and shifts meaning"
+      },
+      {
+        "form": "いるはず",
+        "gloss": "'should be'; expresses expectation, not present progression"
+      },
+      {
+        "form": "いるよう",
+        "gloss": "'seems to be'; adds conjecture not present in the sentence"
+      },
+      {
+        "form": "おいたところ",
+        "gloss": "～ておく past form; expresses completed preparation, not present action"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:てからでないと",
+    "level": "N3",
+    "title": "～てからでないと",
+    "meaning": "unless/until you first do; not without doing first",
+    "explanation": "This expresses that the second action cannot happen unless the first action is completed beforehand. The first action is a necessary precondition.",
+    "formation": "Verb (て-form) + からでないと (+ negative/impossible result)",
+    "whyRight": "～てからでないと marks the first action as a prerequisite, so without completing it the result clause (often negative) cannot occur.",
+    "examples": [
+      {
+        "sentence": "予約[よやく]をして___、入[はい]れません。",
+        "answer": "からでないと",
+        "translation": "Unless you make a reservation first, you can't get in."
+      },
+      {
+        "sentence": "手[て]を洗[あら]って___、食[た]べてはいけない。",
+        "answer": "からでないと",
+        "translation": "You must not eat unless you wash your hands first."
+      },
+      {
+        "sentence": "実物[じつぶつ]を見[み]て___、買[か]うかどうか決[き]められない。",
+        "answer": "からでないと",
+        "translation": "I can't decide whether to buy it without seeing the real thing first."
+      },
+      {
+        "sentence": "上司[じょうし]に相談[そうだん]して___、返事[へんじ]ができません。",
+        "answer": "からでないと",
+        "translation": "I can't give an answer unless I consult my boss first."
+      },
+      {
+        "sentence": "薬[くすり]を飲[の]んで___、運転[うんてん]してはいけない。",
+        "answer": "からでないと",
+        "translation": "You must not drive unless you take your medicine first."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "からといって",
+        "gloss": "'just because'; introduces a reason that doesn't justify a conclusion, not a prerequisite"
+      },
+      {
+        "form": "からには",
+        "gloss": "'now that / since'; expresses determination given a fact, not a precondition for impossibility"
+      },
+      {
+        "form": "からこそ",
+        "gloss": "'precisely because'; emphasizes a reason, not a required first step"
+      },
+      {
+        "form": "からでは",
+        "gloss": "incomplete/incorrect; lacks the negative ない needed for this pattern"
+      },
+      {
+        "form": "からして",
+        "gloss": "'judging from / even'; gives an example or basis, not a condition"
+      },
+      {
+        "form": "てからは",
+        "gloss": "'ever since'; marks a time boundary, not a necessary condition"
+      },
+      {
+        "form": "てからも",
+        "gloss": "'even after'; concessive, not a prerequisite that blocks the result"
+      },
+      {
+        "form": "てばかり",
+        "gloss": "'always doing'; expresses repetition/excess, unrelated to preconditions"
+      },
+      {
+        "form": "おいてから",
+        "gloss": "～ておいてから 'after doing in advance, then'; sequences two affirmative actions and does not license the negative-possibility result clause"
+      },
+      {
+        "form": "からといえば",
+        "gloss": "'speaking of'; topic shift, not a condition for impossibility"
+      },
+      {
+        "form": "からあとで",
+        "gloss": "'after, later'; merely sequences events in time and does not establish the first as a precondition blocking the result"
+      },
+      {
+        "form": "ところで",
+        "gloss": "'even if'; concessive expressing futility, not a precondition"
       }
     ]
   },
@@ -36582,12 +31834,14 @@ export const N3_GRAMMAR: Grammar[] = [
     "examples": [
       {
         "context": "今日[きょう]、手紙[てがみ]を出[だ]さなければならなかった。",
+        "contextTranslation": "Today, I had to mail a letter.",
         "sentence": "買[か]い物[もの]に行[い]く___、郵便局[ゆうびんきょく]にも寄[よ]った。",
         "answer": "ついでに",
         "translation": "While going shopping, I also stopped by the post office."
       },
       {
         "context": "今朝[けさ]は天気[てんき]がよかったので、公園[こうえん]まで歩[ある]いた。",
+        "contextTranslation": "The weather was nice this morning, so I walked to the park.",
         "sentence": "散歩[さんぽ]の___、パンを買[か]ってきた。",
         "answer": "ついでに",
         "translation": "On my walk, I also bought some bread."
@@ -36604,6 +31858,7 @@ export const N3_GRAMMAR: Grammar[] = [
       },
       {
         "context": "昨日[きのう]、母[はは]が忙[いそが]しそうだったので手伝[てつだ]うことにした。",
+        "contextTranslation": "Yesterday, my mother seemed busy, so I decided to help her.",
         "sentence": "掃除[そうじ]を手伝[てつだ]う___、窓[まど]も拭[ふ]いておいた。",
         "answer": "ついでに",
         "translation": "While helping clean, I also wiped the windows."
@@ -36657,6 +31912,4974 @@ export const N3_GRAMMAR: Grammar[] = [
       {
         "form": "がてら",
         "gloss": "'while also'; attaches directly to a noun/stem with no の (散歩がてら), so it is ungrammatical in the 散歩の___ and dictionary-form 行く___ slots given here"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:てしかたがない",
+    "level": "N3",
+    "title": "～てしかたがない",
+    "meaning": "can't help feeling; extremely; unbearably",
+    "explanation": "This expresses that a feeling or sensation is so strong that the speaker cannot control or bear it. It is commonly used with emotions and physical sensations.",
+    "formation": "Verb (て-form) / い-adj (-くて) / な-adj (-で) + しかたがない",
+    "whyRight": "～てしかたがない attaches to the て-form of an emotion/sensation verb to mean the feeling is uncontrollably strong, matching 'can't help but feel.'",
+    "examples": [
+      {
+        "sentence": "新[あたら]しいゲームがやりたくて___。",
+        "answer": "しかたがない",
+        "translation": "I want to play the new game so badly I can't stand it."
+      },
+      {
+        "sentence": "結果[けっか]が気[き]になって___。",
+        "answer": "しかたがない",
+        "translation": "I can't help worrying about the results."
+      },
+      {
+        "sentence": "夏[なつ]の暑[あつ]さで、汗[あせ]が出[で]て___。",
+        "answer": "しかたがない",
+        "translation": "Because of the summer heat, I can't stop sweating."
+      },
+      {
+        "sentence": "故郷[こきょう]の家族[かぞく]に会[あ]いたくて___。",
+        "answer": "しかたがない",
+        "translation": "I miss my family back home so much I can't bear it."
+      },
+      {
+        "sentence": "朝[あさ]からずっと眠[ねむ]くて___。",
+        "answer": "しかたがない",
+        "translation": "I've been unbearably sleepy since this morning."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "しかたがある",
+        "gloss": "affirmative 'there is a way'; reverses the meaning and breaks the idiom"
+      },
+      {
+        "form": "しかたがした",
+        "gloss": "ungrammatical mash-up of しかた + した; not a real predicate and cannot complete the idiom"
+      },
+      {
+        "form": "しようがある",
+        "gloss": "affirmative form; not used for the 'unbearable feeling' pattern"
+      },
+      {
+        "form": "しまった",
+        "gloss": "～てしまう regret form; expresses completion/regret, not an intense feeling"
+      },
+      {
+        "form": "たまる",
+        "gloss": "non-negative; the pattern requires たまらない, so this is incorrect"
+      },
+      {
+        "form": "しかたがあった",
+        "gloss": "affirmative past 'there was a way'; reverses the idiom's negative polarity and breaks the meaning"
+      },
+      {
+        "form": "ようがない",
+        "gloss": "～ようがない attaches to the ます-stem (やりようがない) to mean 'there is no way to do'; it cannot attach to the て/くて-form here and expresses inability to act, not an overwhelming feeling"
+      },
+      {
+        "form": "かまわない",
+        "gloss": "'don't mind'; expresses permission/indifference, not overwhelming feeling"
+      },
+      {
+        "form": "ほかない",
+        "gloss": "'have no choice but'; expresses necessity, not strong emotion"
+      },
+      {
+        "form": "ちがいない",
+        "gloss": "'must be (certain)'; expresses certainty, not uncontrollable feeling"
+      },
+      {
+        "form": "わけがない",
+        "gloss": "'there's no way'; expresses impossibility, not intense emotion"
+      },
+      {
+        "form": "しかたがなくて",
+        "gloss": "て-form continuation; cannot end the sentence as the answer requires"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:てしまう",
+    "level": "N3",
+    "title": "～てしまう",
+    "meaning": "to do completely / to do by accident or with regret",
+    "explanation": "This expresses either the complete finishing of an action or a sense of regret that something undesirable happened. The nuance depends on context.",
+    "formation": "Verb (て-form) + しまう",
+    "whyRight": "～てしまう attaches to the て-form to show completion or unintended/regrettable result, which fits the accidental or finished-action context.",
+    "examples": [
+      {
+        "context": "あっ、大変[たいへん]だ。",
+        "contextTranslation": "Oh no, this is bad.",
+        "sentence": "財布[さいふ]を家[いえ]に忘[わす]れて___。",
+        "answer": "しまった",
+        "translation": "I left my wallet at home (oops)."
+      },
+      {
+        "sentence": "面白[おもしろ]すぎて、本[ほん]を一日[いちにち]で読[よ]んで___。",
+        "answer": "しまった",
+        "translation": "It was so interesting that I finished reading the book in one day."
+      },
+      {
+        "context": "はっと目[め]が覚[さ]めた。",
+        "contextTranslation": "I woke up with a start.",
+        "sentence": "電車[でんしゃ]の中[なか]で寝[ね]て、駅[えき]を乗[の]り過[す]ごして___。",
+        "answer": "しまった",
+        "translation": "I fell asleep on the train and ended up missing my stop."
+      },
+      {
+        "context": "手[て]が滑[すべ]った。",
+        "contextTranslation": "My hand slipped.",
+        "sentence": "大事[だいじ]な皿[さら]を落[お]として割[わ]って___。",
+        "answer": "しまった",
+        "translation": "I dropped and broke an important plate (regrettably)."
+      },
+      {
+        "context": "たった今[いま]、宿題[しゅくだい]が終[お]わった。",
+        "contextTranslation": "I just finished my homework a moment ago.",
+        "sentence": "宿題[しゅくだい]は全部[ぜんぶ]やって___から、遊[あそ]べる。",
+        "answer": "しまった",
+        "translation": "I've finished all my homework completely, so I can play."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "しまう",
+        "gloss": "non-past dictionary form; the contexts describe a completed past event needing past tense"
+      },
+      {
+        "form": "おいた",
+        "gloss": "～ておく 'do in advance'; expresses preparation, not completion/regret"
+      },
+      {
+        "form": "あった",
+        "gloss": "～てある 'is left in a state'; describes a resultant state, not the act of finishing/regret"
+      },
+      {
+        "form": "いた",
+        "gloss": "～ている past progressive; means 'was doing,' not 'ended up doing'"
+      },
+      {
+        "form": "みた",
+        "gloss": "～てみる 'try doing'; expresses an attempt, not completion or accident"
+      },
+      {
+        "form": "くれた",
+        "gloss": "～てくれる 'did for me'; a giving/receiving favor, wrong nuance"
+      },
+      {
+        "form": "しまえ",
+        "gloss": "imperative 'finish it!'; a command, not a past statement"
+      },
+      {
+        "form": "しまおう",
+        "gloss": "volitional 'let's finish'; expresses intention, not a completed regrettable act"
+      },
+      {
+        "form": "ちゃう",
+        "gloss": "ちゃう already absorbs the て of てしまう (忘れちゃう), so appending it after the sentence's existing て (忘れて___) yields the ungrammatical 忘れてちゃう"
+      },
+      {
+        "form": "しまいそう",
+        "gloss": "'about to end up'; expresses likelihood, not an action that already happened"
+      },
+      {
+        "form": "しまわない",
+        "gloss": "negative 'won't finish'; reverses the completed-action meaning"
+      },
+      {
+        "form": "いった",
+        "gloss": "～ていく 'go on doing'; expresses continuation away, not completion/regret"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:てしようがない",
+    "level": "N3",
+    "title": "～てしようがない",
+    "meaning": "can't help feeling; unbearably; extremely",
+    "explanation": "This is a slightly more formal variant of ～てしかたがない, expressing that a feeling or sensation is uncontrollably strong. It conveys that the speaker cannot bear or suppress the emotion.",
+    "formation": "Verb (て-form) / い-adj (-くて) / な-adj (-で) + しようがない",
+    "whyRight": "～てしようがない joins the て-form of a feeling/sensation word to mean the emotion is overwhelming and uncontrollable, matching 'can't help but.'",
+    "examples": [
+      {
+        "sentence": "試験[しけん]の結果[けっか]が心配[しんぱい]で___。",
+        "answer": "しようがない",
+        "translation": "I can't help worrying about the exam results."
+      },
+      {
+        "sentence": "彼[かれ]の態度[たいど]に腹[はら]が立[た]って___。",
+        "answer": "しようがない",
+        "translation": "I can't help getting angry at his attitude."
+      },
+      {
+        "sentence": "新[あたら]しいパソコンが欲[ほ]しくて___。",
+        "answer": "しようがない",
+        "translation": "I want a new computer so badly I can't stand it."
+      },
+      {
+        "sentence": "隣[となり]の工事[こうじ]の音[おと]がうるさくて___。",
+        "answer": "しようがない",
+        "translation": "The construction noise next door is unbearably loud."
+      },
+      {
+        "sentence": "ふるさとが恋[こい]しくて___。",
+        "answer": "しようがない",
+        "translation": "I miss my hometown so much I can't bear it."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "しようがある",
+        "gloss": "affirmative 'there is a way'; reverses the idiom's meaning"
+      },
+      {
+        "form": "しょうがある",
+        "gloss": "affirmative casual variant; still reverses the meaning incorrectly"
+      },
+      {
+        "form": "しかたがある",
+        "gloss": "affirmative 'there is a way'; breaks the negative idiom"
+      },
+      {
+        "form": "べきだ",
+        "gloss": "～べきだ attaches to the dictionary form (心配するべき), not the て/で-form, so it is ungrammatical here and means 'ought to,' not an overwhelming feeling"
+      },
+      {
+        "form": "たまる",
+        "gloss": "non-negative; the related pattern needs たまらない, so this is wrong"
+      },
+      {
+        "form": "しまう",
+        "gloss": "～てしまう completion/regret; not used for overwhelming feeling"
+      },
+      {
+        "form": "かまわない",
+        "gloss": "'don't mind'; expresses indifference, not an uncontrollable feeling"
+      },
+      {
+        "form": "ほかない",
+        "gloss": "'have no choice but'; expresses necessity, not strong emotion"
+      },
+      {
+        "form": "ちがいない",
+        "gloss": "'must be'; expresses certainty, not feeling"
+      },
+      {
+        "form": "しようがなくて",
+        "gloss": "て-form; cannot serve as the sentence-ending answer here"
+      },
+      {
+        "form": "わけがない",
+        "gloss": "'no way that'; expresses impossibility, not intense feeling"
+      },
+      {
+        "form": "ようがない",
+        "gloss": "'there is no way to' after ます-stem; a different pattern meaning inability to act"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:てたまらない",
+    "level": "N3",
+    "title": "～てたまらない",
+    "meaning": "unbearably; can't stand it; extremely",
+    "explanation": "This expresses that a physical sensation or emotion is so intense that it is unbearable. It is often used with adjectives and emotion verbs to emphasize an overwhelming feeling.",
+    "formation": "Verb (て-form) / い-adj (-くて) / な-adj (-で) + たまらない",
+    "whyRight": "～てたまらない joins the て-form of a sensation/emotion word to mean the feeling is unbearable, which fits the strong-sensation context.",
+    "examples": [
+      {
+        "sentence": "暑[あつ]い日[ひ]に運動[うんどう]して、喉[のど]が渇[かわ]いて___。",
+        "answer": "たまらない",
+        "translation": "After exercising on a hot day, I'm unbearably thirsty."
+      },
+      {
+        "sentence": "好[す]きな歌手[かしゅ]に会[あ]えて、嬉[うれ]しくて___。",
+        "answer": "たまらない",
+        "translation": "I got to meet my favorite singer, and I'm so happy I can't stand it."
+      },
+      {
+        "sentence": "足[あし]をぶつけて、痛[いた]くて___。",
+        "answer": "たまらない",
+        "translation": "I hit my leg, and it hurts unbearably."
+      },
+      {
+        "sentence": "試合[しあい]の結果[けっか]が気[き]になって___。",
+        "answer": "たまらない",
+        "translation": "I can't stop wondering about the game's result."
+      },
+      {
+        "sentence": "一人[ひとり]で住[す]んでいると、寂[さび]しくて___。",
+        "answer": "たまらない",
+        "translation": "Living alone, I feel unbearably lonely."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "たまる",
+        "gloss": "affirmative 'accumulates'; the idiom requires the negative たまらない"
+      },
+      {
+        "form": "しだいだ",
+        "gloss": "～次第だ attaches to a ます-stem or noun and means 'depends on / as soon as'; it cannot attach to the て/くて-form and does not express an unbearable feeling"
+      },
+      {
+        "form": "たまった",
+        "gloss": "affirmative past 'accumulated'; loses the negative ない the idiom requires and changes the meaning to literal piling-up"
+      },
+      {
+        "form": "たまるものか",
+        "gloss": "rhetorical 'as if it would accumulate'; an affirmative-stem retort that does not express an unbearable sensation"
+      },
+      {
+        "form": "しまう",
+        "gloss": "～てしまう completion/regret; not an expression of unbearable feeling"
+      },
+      {
+        "form": "たまらなくて",
+        "gloss": "て-form; cannot end the sentence as the answer requires"
+      },
+      {
+        "form": "かまわない",
+        "gloss": "'don't mind'; expresses indifference, not intensity"
+      },
+      {
+        "form": "たえない",
+        "gloss": "～にたえない attaches to nouns/ます-stem; wrong connection and nuance here"
+      },
+      {
+        "form": "ちがいない",
+        "gloss": "'must be certain'; expresses certainty, not feeling"
+      },
+      {
+        "form": "ほかない",
+        "gloss": "'no choice but'; expresses necessity, not emotion"
+      },
+      {
+        "form": "わけがない",
+        "gloss": "'no way'; expresses impossibility, not unbearable sensation"
+      },
+      {
+        "form": "たまらず",
+        "gloss": "'unable to bear, (so)' — adverbial mid-sentence form; cannot stand as the final predicate"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:てならない",
+    "level": "N3",
+    "title": "～てならない",
+    "meaning": "can't help feeling; can't stop feeling; extremely",
+    "explanation": "This expresses a spontaneous, uncontrollable feeling or sensation that the speaker cannot suppress. It often pairs with emotion or thought verbs and has a slightly literary tone.",
+    "formation": "Verb (て-form) / い-adj (-くて) / な-adj (-で) + ならない",
+    "whyRight": "～てならない joins the て-form of a spontaneous-feeling word to mean the emotion arises uncontrollably, matching 'can't help feeling.'",
+    "examples": [
+      {
+        "sentence": "亡[な]くなった祖母[そぼ]のことが思[おも]い出[だ]されて___。",
+        "answer": "ならない",
+        "translation": "I can't help recalling my late grandmother."
+      },
+      {
+        "sentence": "明日[あした]の発表[はっぴょう]のことが心配[しんぱい]で___。",
+        "answer": "ならない",
+        "translation": "I can't help worrying about tomorrow's presentation."
+      },
+      {
+        "sentence": "彼[かれ]が嘘[うそ]をついている気[き]がして___。",
+        "answer": "ならない",
+        "translation": "I can't shake the feeling that he is lying."
+      },
+      {
+        "sentence": "故郷[こきょう]のことが懐[なつ]かしくて___。",
+        "answer": "ならない",
+        "translation": "I feel unbearably nostalgic for my hometown."
+      },
+      {
+        "sentence": "なぜ失敗[しっぱい]したのか、残念[ざんねん]で___。",
+        "answer": "ならない",
+        "translation": "I can't help feeling regretful about why it failed."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "なる",
+        "gloss": "affirmative 'becomes'; the idiom requires the negative ならない"
+      },
+      {
+        "form": "かねない",
+        "gloss": "～かねない attaches to the ます-stem (なりかねない) and means 'might (undesirably) happen'; it cannot attach to the て/で-form and does not express an uncontrollable feeling"
+      },
+      {
+        "form": "なった",
+        "gloss": "affirmative past 'became'; drops the negative ない the idiom requires and merely states a change occurred"
+      },
+      {
+        "form": "なるものか",
+        "gloss": "rhetorical 'as if it would become'; an affirmative-stem retort, not the negative spontaneous-feeling predicate"
+      },
+      {
+        "form": "しまう",
+        "gloss": "～てしまう completion/regret; not an uncontrollable-feeling expression"
+      },
+      {
+        "form": "ならなくて",
+        "gloss": "て-form; cannot serve as the sentence-ending answer"
+      },
+      {
+        "form": "ならず",
+        "gloss": "negative adverbial 'without becoming'; cannot end the sentence as the predicate"
+      },
+      {
+        "form": "かまわない",
+        "gloss": "'don't mind'; expresses indifference, not spontaneous feeling"
+      },
+      {
+        "form": "ちがいない",
+        "gloss": "'must be'; expresses certainty, not feeling"
+      },
+      {
+        "form": "ほかならない",
+        "gloss": "'is nothing but'; an emphatic identity expression, not 'can't help feeling'"
+      },
+      {
+        "form": "ばならない",
+        "gloss": "part of なければならない 'must'; expresses obligation, not feeling"
+      },
+      {
+        "form": "わけがない",
+        "gloss": "'no way'; expresses impossibility, not uncontrollable emotion"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:てはじめて",
+    "level": "N3",
+    "title": "～てはじめて",
+    "meaning": "only after doing; not until doing",
+    "explanation": "This expresses that something becomes realized, understood, or possible only after a certain action or experience occurs. The first action is the trigger for the realization in the second clause.",
+    "formation": "Verb (て-form) + はじめて",
+    "whyRight": "～てはじめて attaches to the て-form to mean 'only after doing this for the first time,' which fits a realization that depends on a prior experience.",
+    "examples": [
+      {
+        "sentence": "親[おや]になって___、親[おや]の苦労[くろう]が分[わ]かった。",
+        "answer": "はじめて",
+        "translation": "Only after becoming a parent did I understand my parents' hardships."
+      },
+      {
+        "sentence": "病気[びょうき]になって___、健康[けんこう]の大切[たいせつ]さに気[き]づいた。",
+        "answer": "はじめて",
+        "translation": "It was only after getting sick that I realized the importance of health."
+      },
+      {
+        "sentence": "海外[かいがい]で生活[せいかつ]して___、日本[にほん]の良[よ]さが分[わ]かった。",
+        "answer": "はじめて",
+        "translation": "Only after living abroad did I understand the good points of Japan."
+      },
+      {
+        "sentence": "失[うしな]って___、その人[ひと]の大切[たいせつ]さが分[わ]かるものだ。",
+        "answer": "はじめて",
+        "translation": "It is only after losing someone that you realize how precious they were."
+      },
+      {
+        "sentence": "実際[じっさい]に体験[たいけん]して___、その難[むずか]しさが理解[りかい]できた。",
+        "answer": "はじめて",
+        "translation": "Only after actually experiencing it did I understand its difficulty."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "はじめる",
+        "gloss": "～はじめる 'begin to'; attaches to ます-stem and means starting an action, not 'only after'"
+      },
+      {
+        "form": "はじめに",
+        "gloss": "'at first / firstly'; an adverb listing order, not the realization trigger pattern"
+      },
+      {
+        "form": "からこそ",
+        "gloss": "'precisely because'; emphasizes a reason, not 'only after experiencing'"
+      },
+      {
+        "form": "からには",
+        "gloss": "'now that'; expresses determination from a fact, not a trigger for realization"
+      },
+      {
+        "form": "とたん",
+        "gloss": "～たとたん 'the moment that'; needs た-form and stresses immediacy, not first-time realization"
+      },
+      {
+        "form": "うえで",
+        "gloss": "～たうえで 'after doing (then)'; sequence of actions, lacks the 'for the first time' realization nuance"
+      },
+      {
+        "form": "いらい",
+        "gloss": "～て以来 'ever since'; marks a starting point in time, not a realization trigger"
+      },
+      {
+        "form": "かぎり",
+        "gloss": "'as long as / to the extent'; a limit/condition, not 'only after'"
+      },
+      {
+        "form": "ばかり",
+        "gloss": "'just did'; marks recency, not a precondition for realization"
+      },
+      {
+        "form": "あいだに",
+        "gloss": "'while / during'; a time span, not the after-experience realization pattern"
+      },
+      {
+        "form": "はじめた",
+        "gloss": "past of はじめる 'began'; an action start in the past, not the 'only after' connector"
+      },
+      {
+        "form": "うちに",
+        "gloss": "'while / before it changes'; a window of time, not 'only after experiencing'"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:てほしい",
+    "level": "N3",
+    "title": "～てほしい",
+    "meaning": "to want someone (else) to do something",
+    "explanation": "Used to express that the speaker wants another person to perform an action. The subject of the action is someone other than the speaker, often marked with に.",
+    "formation": "Verb (て-form) + ほしい",
+    "whyRight": "～てほしい expresses a desire directed at another person's action, which matches a request or wish aimed at someone else.",
+    "examples": [
+      {
+        "sentence": "もっと私[わたし]の話[はなし]を聞[き]いて___。",
+        "answer": "ほしい",
+        "translation": "I want you to listen to what I have to say more."
+      },
+      {
+        "sentence": "明日[あした]は早[はや]く来[き]て___。",
+        "answer": "ほしい",
+        "translation": "I want you to come early tomorrow."
+      },
+      {
+        "sentence": "彼[かれ]に本当[ほんとう]のことを話[はな]して___。",
+        "answer": "ほしい",
+        "translation": "I want him to tell the truth."
+      },
+      {
+        "sentence": "子[こ]どもには元気[げんき]に育[そだ]って___。",
+        "answer": "ほしい",
+        "translation": "I want my child to grow up healthy."
+      },
+      {
+        "sentence": "もう少[すこ]し静[しず]かにして___です。",
+        "answer": "ほしい",
+        "translation": "I want you to be a bit quieter."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "たい",
+        "gloss": "expresses the speaker's own desire to do the action, not a wish for someone else to act"
+      },
+      {
+        "form": "ほしがる",
+        "gloss": "describes a third person's desire as observed, not a direct first-person wish"
+      },
+      {
+        "form": "べきだ",
+        "gloss": "～べきだ attaches to the plain dictionary form (聞くべき), not the て-form, so it is ungrammatical here"
+      },
+      {
+        "form": "そうだ",
+        "gloss": "hearsay/appearance ～そうだ attaches to the plain or stem form (聞くそうだ／聞きそう), not the て-form, ungrammatical here"
+      },
+      {
+        "form": "たがる",
+        "gloss": "shows a third party appears to want to do something, wrong subject focus"
+      },
+      {
+        "form": "ほしくて",
+        "gloss": "te-form continuation, leaves the sentence grammatically incomplete here"
+      },
+      {
+        "form": "ほしいだ",
+        "gloss": "incorrect; ほしい is an i-adjective and does not take だ"
+      },
+      {
+        "form": "あげたい",
+        "gloss": "means wanting to do something for someone, wrong direction of action"
+      },
+      {
+        "form": "ほしさ",
+        "gloss": "ほしさ is a noun (nominalized form) and cannot serve as the sentence-ending predicate after the て-form"
+      },
+      {
+        "form": "なさい",
+        "gloss": "a command form telling someone to do it, not a wish"
+      },
+      {
+        "form": "てある",
+        "gloss": "indicates a resulting state from a deliberate action, unrelated meaning"
+      },
+      {
+        "form": "らしい",
+        "gloss": "expresses hearsay/seeming, not a desire for someone to act"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:てみせる",
+    "level": "N3",
+    "title": "～てみせる",
+    "meaning": "to show/demonstrate by doing; to do something with determination",
+    "explanation": "Used either to literally show someone how to do something, or to express the speaker's strong resolve to accomplish something.",
+    "formation": "Verb (て-form) + みせる",
+    "whyRight": "～てみせる conveys demonstrating an action or a firm determination to achieve it, which fits a context of resolve or showing.",
+    "examples": [
+      {
+        "context": "みんなは私[わたし]には無理[むり]だと言[い]う。",
+        "contextTranslation": "Everyone says it's impossible for me.",
+        "sentence": "今度[こんど]こそ試験[しけん]に合格[ごうかく]して___。",
+        "answer": "みせる",
+        "translation": "This time I will definitely pass the exam (I'll show them)."
+      },
+      {
+        "context": "学生[がくせい]たちが書[か]き方[かた]を知[し]らなかったので、",
+        "contextTranslation": "Since the students didn't know how to write it,",
+        "sentence": "先生[せんせい]が正[ただ]しい書[か]き方[かた]をやって___た。",
+        "answer": "みせ",
+        "translation": "The teacher demonstrated the correct way to write."
+      },
+      {
+        "context": "絶対[ぜったい]にあきらめない。",
+        "contextTranslation": "I will never give up.",
+        "sentence": "必[かなら]ず優勝[ゆうしょう]して___から、応援[おうえん]してね。",
+        "answer": "みせる",
+        "translation": "I'll definitely win the championship, so cheer me on."
+      },
+      {
+        "context": "子[こ]どもが泳[およ]ぎ方[かた]が分[わ]からなかった。",
+        "contextTranslation": "The child didn't know how to swim.",
+        "sentence": "母[はは]は子[こ]どもに泳[およ]ぎ方[かた]を泳[およ]いで___た。",
+        "answer": "みせ",
+        "translation": "The mother showed her child how to swim by swimming."
+      },
+      {
+        "context": "どんなに大変[たいへん]でも、",
+        "contextTranslation": "No matter how hard it is,",
+        "sentence": "いつか自分[じぶん]の店[みせ]を持[も]って___と決[き]めている。",
+        "answer": "みせる",
+        "translation": "I've resolved that someday I will have my own shop (I'll make it happen)."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "みる",
+        "gloss": "～てみる means to try doing something, not to demonstrate or show resolve"
+      },
+      {
+        "form": "みえる",
+        "gloss": "means to be visible/can see, an intransitive perception verb, wrong meaning"
+      },
+      {
+        "form": "みせられる",
+        "gloss": "passive/potential of みせる, changes the meaning and does not fit a plain resolve statement"
+      },
+      {
+        "form": "しまう",
+        "gloss": "indicates completion or regret, not demonstration or determination"
+      },
+      {
+        "form": "おく",
+        "gloss": "means to do in advance for a purpose, unrelated to showing"
+      },
+      {
+        "form": "みた",
+        "gloss": "past of ～てみる (tried), wrong grammar point and tense focus"
+      },
+      {
+        "form": "みせて",
+        "gloss": "te-form leaves the determination sentence incomplete"
+      },
+      {
+        "form": "ある",
+        "gloss": "～てある shows a prepared state, not an act of demonstrating"
+      },
+      {
+        "form": "いく",
+        "gloss": "～ていく shows change over time or moving away, unrelated"
+      },
+      {
+        "form": "くる",
+        "gloss": "～てくる shows change toward now or approaching, unrelated"
+      },
+      {
+        "form": "みせろ",
+        "gloss": "imperative command to show, not a first-person statement of resolve"
+      },
+      {
+        "form": "みせます",
+        "gloss": "examples 2 and 4 need the masu-stem みせ before た; みせます cannot attach to た, so it does not fit those slots"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:とか",
+    "level": "N3",
+    "title": "～とか",
+    "meaning": "things like ~ / I heard that ~ (vague listing or hearsay)",
+    "explanation": "Used to list examples non-exhaustively (like the casual version of や), or to report hearsay vaguely. It softens statements and suggests there may be other things or that the speaker is unsure.",
+    "formation": "Noun + とか (+ Noun + とか); Plain form + とか (hearsay)",
+    "whyRight": "とか marks loose, example-style listing or vague hearsay, which fits when the speaker is giving non-exhaustive examples or uncertain reports rather than a definitive or complete statement.",
+    "examples": [
+      {
+        "sentence": "週末[しゅうまつ]は映画[えいが]を見[み]る___、買[か]い物[もの]をする___します。",
+        "answer": "とか",
+        "translation": "On weekends I do things like watch movies and go shopping."
+      },
+      {
+        "sentence": "彼[かれ]は来週[らいしゅう]アメリカに行[い]く___言[い]っていました。",
+        "answer": "とか",
+        "translation": "He said something like he's going to America next week."
+      },
+      {
+        "sentence": "りんご___みかん___、果物[くだもの]をたくさん買[か]いました。",
+        "answer": "とか",
+        "translation": "I bought lots of fruit, like apples and oranges."
+      },
+      {
+        "sentence": "彼女[かのじょ]はもう結婚[けっこん]した___いう噂[うわさ]を聞[き]きました。",
+        "answer": "とか",
+        "translation": "I heard a rumor that she got married or something."
+      },
+      {
+        "sentence": "暇[ひま]な時[とき]は音楽[おんがく]を聞[き]く___本[ほん]を読[よ]む___しています。",
+        "answer": "とか",
+        "translation": "When I'm free I do things like listen to music and read books."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "など",
+        "gloss": "'and so on'; more formal/written listing, doesn't carry the casual hearsay nuance of とか"
+      },
+      {
+        "form": "たり",
+        "gloss": "needs the た-stem (見たり) and the structure differs; raw たり doesn't attach to dictionary form like this"
+      },
+      {
+        "form": "し",
+        "gloss": "lists reasons/parallel facts, not non-exhaustive examples"
+      },
+      {
+        "form": "から",
+        "gloss": "means 'because'; gives a reason, not a list of examples"
+      },
+      {
+        "form": "ので",
+        "gloss": "means 'because/since'; states a reason, not examples"
+      },
+      {
+        "form": "こそ",
+        "gloss": "emphasis particle 'precisely'; can't connect a list and gives 'X こそ Y こそ します' which is ungrammatical"
+      },
+      {
+        "form": "さえ",
+        "gloss": "means 'even'; an additive limiting particle, can't link list items and yields ungrammatical 'X さえ Y さえ'"
+      },
+      {
+        "form": "ても",
+        "gloss": "means 'even if'; concessive, not listing"
+      },
+      {
+        "form": "けど",
+        "gloss": "means 'but'; contrast, not listing or hearsay"
+      },
+      {
+        "form": "のに",
+        "gloss": "means 'although'; expresses unexpected contrast, not listing"
+      },
+      {
+        "form": "より",
+        "gloss": "means 'than'; comparison particle, can't list examples or report hearsay"
+      },
+      {
+        "form": "ながら",
+        "gloss": "means 'while doing'; simultaneous action, not listing examples"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:どころか",
+    "level": "N3",
+    "title": "～どころか",
+    "meaning": "far from ~ / let alone ~ / on the contrary",
+    "explanation": "Used to deny an expected idea and present something opposite or even more extreme. It emphasizes that reality is far from what was assumed, often surpassing or contradicting expectations.",
+    "formation": "Noun + どころか; Plain form (い-adj/Verb) + どころか; な-adj + な/である + どころか",
+    "whyRight": "どころか sharply rejects the preceding assumption and asserts the opposite or a stronger reality, which is exactly what is needed when the situation contradicts what was expected.",
+    "examples": [
+      {
+        "sentence": "彼[かれ]はお金[かね]を貯[た]める___、借金[しゃっきん]ばかり増[ふ]えている。",
+        "answer": "どころか",
+        "translation": "Far from saving money, his debt just keeps increasing.",
+        "context": "彼[かれ]はお金[かね]を全[まった]く節約[せつやく]しようとしない。",
+        "contextTranslation": "He makes no effort at all to save money."
+      },
+      {
+        "sentence": "薬[くすり]を飲[の]んだら、よくなる___、もっと悪[わる]くなった。",
+        "answer": "どころか",
+        "translation": "After taking the medicine, far from getting better, it got worse."
+      },
+      {
+        "sentence": "あの店[みせ]は安[やす]い___、近[ちか]くのどこよりも高[たか]い。",
+        "answer": "どころか",
+        "translation": "Far from being cheap, that shop is more expensive than anywhere nearby."
+      },
+      {
+        "sentence": "彼女[かのじょ]は漢字[かんじ]___、ひらがなも読[よ]めない。",
+        "answer": "どころか",
+        "translation": "Far from kanji, she can't even read hiragana."
+      },
+      {
+        "sentence": "休[やす]める___、仕事[しごと]がどんどん増[ふ]えてきた。",
+        "answer": "どころか",
+        "translation": "Far from being able to rest, the work just kept piling up.",
+        "context": "最近[さいきん]、仕事[しごと]がとても忙[いそが]しい。",
+        "contextTranslation": "Lately, work has been very busy."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "にあたって",
+        "gloss": "means 'on the occasion of'; marks a timing/situation for an action, not a contradiction of an expectation"
+      },
+      {
+        "form": "において",
+        "gloss": "means 'in/at (a field)'; a formal noun-attaching particle, so it cannot follow verbs/adjectives here and gives no 'far from' reversal"
+      },
+      {
+        "form": "として",
+        "gloss": "means 'as'; role/capacity marker, unrelated to contradiction"
+      },
+      {
+        "form": "ところで",
+        "gloss": "means 'even if/by the way'; not a contrastive reversal of expectation"
+      },
+      {
+        "form": "ところに",
+        "gloss": "marks a moment of intrusion; not contradiction"
+      },
+      {
+        "form": "わけではない",
+        "gloss": "partial negation 'it's not that'; doesn't express the extreme opposite"
+      },
+      {
+        "form": "に対して",
+        "gloss": "means 'in contrast to'; neutral comparison, not denial of an assumption"
+      },
+      {
+        "form": "くせに",
+        "gloss": "means 'despite'; blaming concession, not the 'far from' reversal"
+      },
+      {
+        "form": "のに",
+        "gloss": "means 'although'; concessive contrast, weaker than the strong reversal of どころか"
+      },
+      {
+        "form": "といっても",
+        "gloss": "means 'although you say'; qualifies a statement, not a flat contradiction"
+      },
+      {
+        "form": "にしては",
+        "gloss": "means 'considering'; judgment relative to expectation, not denial"
+      },
+      {
+        "form": "ものの",
+        "gloss": "means 'although'; concessive, doesn't present the opposite extreme"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:ところだ",
+    "level": "N3",
+    "title": "～ところだ",
+    "meaning": "be about to / be in the middle of / have just done",
+    "explanation": "Expresses the temporal stage of an action depending on the verb form: dictionary form means 'about to', ている form means 'in the middle of', and た form means 'just finished'.",
+    "formation": "Verb (dictionary) + ところだ; Verb (ている) + ところだ; Verb (た) + ところだ",
+    "whyRight": "ところだ pins the action to a precise temporal phase, so it is correct whenever the speaker is locating an event right before, during, or just after it happens.",
+    "examples": [
+      {
+        "sentence": "今[いま]から出[で]かける___です。",
+        "answer": "ところ",
+        "translation": "I'm just about to go out now.",
+        "context": "友[とも]だちに「今[いま]何[なに]をしているの」と聞[き]かれた。",
+        "contextTranslation": "A friend asked me, \"What are you doing right now?\""
+      },
+      {
+        "sentence": "今[いま]ちょうど昼[ひる]ごはんを食[た]べている___です。",
+        "answer": "ところ",
+        "translation": "I'm right in the middle of eating lunch now."
+      },
+      {
+        "sentence": "たった今[いま]駅[えき]に着[つ]いた___です。",
+        "answer": "ところ",
+        "translation": "I just arrived at the station this very moment.",
+        "context": "電話[でんわ]で「今[いま]どこにいるの」と聞[き]かれた。",
+        "contextTranslation": "On the phone, I was asked, \"Where are you now?\""
+      },
+      {
+        "sentence": "ちょうど電話[でんわ]しようとしていた___だった。",
+        "answer": "ところ",
+        "translation": "I was just about to call you."
+      },
+      {
+        "sentence": "宿題[しゅくだい]は今[いま]終[お]わった___です。",
+        "answer": "ところ",
+        "translation": "I just finished my homework now.",
+        "context": "宿題[しゅくだい]はとても大変[たいへん]だったが、やっと全部[ぜんぶ]できた。",
+        "contextTranslation": "The homework was really tough, but I finally finished all of it."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "きり",
+        "gloss": "means 'only/since (V-た + きり)'; expresses that nothing has happened since the action, not the moment-locating 'just/about to' sense"
+      },
+      {
+        "form": "つもり",
+        "gloss": "means 'intend to'; expresses intention, not the precise time-stage"
+      },
+      {
+        "form": "はず",
+        "gloss": "means 'should/expected'; expectation, not temporal phase"
+      },
+      {
+        "form": "予定[よてい]",
+        "gloss": "means 'scheduled plan'; a planned event, not the immediate moment"
+      },
+      {
+        "form": "とき",
+        "gloss": "means 'when'; general time, not the pinpoint 'about to/just' nuance"
+      },
+      {
+        "form": "ばかりだ",
+        "gloss": "with the wrong base means 'just keeps -ing'; not the moment-locating sense"
+      },
+      {
+        "form": "わけ",
+        "gloss": "means 'reason/conclusion'; not temporal"
+      },
+      {
+        "form": "ため",
+        "gloss": "means 'for the purpose of'; not temporal staging"
+      },
+      {
+        "form": "うち",
+        "gloss": "means 'while/before'; a duration, not the exact stage"
+      },
+      {
+        "form": "ながら",
+        "gloss": "means 'while doing'; needs the verb masu-stem and can't form the noun ところ that だ attaches to, so '食べているながらです' is ungrammatical"
+      },
+      {
+        "form": "ようとする",
+        "gloss": "means 'try to'; verb phrase, not the noun ところ that だ attaches to"
+      },
+      {
+        "form": "ところに",
+        "gloss": "needs a following intruding clause; the sentence here ends with だ, so に is ungrammatical"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:ところに",
+    "level": "N3",
+    "title": "～ところに",
+    "meaning": "right at the moment when ~ (something else happens)",
+    "explanation": "Indicates that at the very moment of one situation, another event (often an intrusion or interruption) occurs. The second clause typically arrives unexpectedly into the first situation.",
+    "formation": "Verb (ている/た) + ところに; い-adj + ところに; Noun + の + ところに",
+    "whyRight": "ところに sets up a precise moment into which a new event breaks, so it is correct when an action lands right as another situation is unfolding, often as an interruption.",
+    "examples": [
+      {
+        "sentence": "出[で]かけようとしている___、電話[でんわ]がかかってきた。",
+        "answer": "ところに",
+        "translation": "Right as I was about to leave, the phone rang."
+      },
+      {
+        "sentence": "寝[ね]ている___、地震[じしん]が起[お]きた。",
+        "answer": "ところに",
+        "translation": "Right while I was sleeping, an earthquake struck."
+      },
+      {
+        "sentence": "困[こま]っている___、友[とも]だちが来[き]て助[たす]けてくれた。",
+        "answer": "ところに",
+        "translation": "Just when I was in trouble, my friend came and helped me."
+      },
+      {
+        "sentence": "宿題[しゅくだい]をしている___、母[はは]が部屋[へや]に入[はい]ってきた。",
+        "answer": "ところに",
+        "translation": "Right while I was doing homework, my mother came into the room."
+      },
+      {
+        "sentence": "ちょうど家[いえ]を出[で]た___、雨[あめ]が降[ふ]り出[だ]した。",
+        "answer": "ところに",
+        "translation": "Right when I left the house, it started to rain."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ところで",
+        "gloss": "means 'even if/by the way'; doesn't mark an intruding event at that moment"
+      },
+      {
+        "form": "ところを",
+        "gloss": "marks the object scene that is acted upon (e.g. seen/caught); needs a transitive intrusion, different focus"
+      },
+      {
+        "form": "ところが",
+        "gloss": "means 'however'; a contrastive conjunction, not a temporal point of intrusion"
+      },
+      {
+        "form": "において",
+        "gloss": "means 'in/at (a field)'; a formal noun-attaching particle, ungrammatical after these verb clauses and not a moment of intrusion"
+      },
+      {
+        "form": "にあたって",
+        "gloss": "means 'on the occasion of'; marks a timing for a deliberate action, not an event intruding into an ongoing scene"
+      },
+      {
+        "form": "かわりに",
+        "gloss": "means 'instead of/in exchange for'; expresses substitution, so 'しているかわりに地震が起きた' is unnatural and wrong in meaning"
+      },
+      {
+        "form": "をはじめ",
+        "gloss": "means 'starting with'; a noun-listing pattern (Noun + をはじめ), ungrammatical after these verb clauses"
+      },
+      {
+        "form": "ながら",
+        "gloss": "means 'while doing'; same-subject simultaneous action, not an intruding event"
+      },
+      {
+        "form": "から",
+        "gloss": "means 'because/after'; not a moment of intrusion"
+      },
+      {
+        "form": "ために",
+        "gloss": "means 'in order to/because'; purpose or cause, not timing"
+      },
+      {
+        "form": "やいなや",
+        "gloss": "means 'as soon as'; attaches to dictionary form (V-るやいなや) so it can't follow the ている/た scenes here, and stresses an immediate next action rather than an event intruding into an ongoing situation"
+      },
+      {
+        "form": "ばかりに",
+        "gloss": "means 'simply because'; cause with bad result, not temporal intrusion"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:ところへ",
+    "level": "N3",
+    "title": "～ところへ",
+    "meaning": "right at the moment when ~ (someone/something arrives)",
+    "explanation": "Similar to ところに but emphasizes the arrival or coming of a person or thing into an ongoing situation. The second clause usually involves movement toward the scene.",
+    "formation": "Verb (ている/た) + ところへ; Noun + の + ところへ",
+    "whyRight": "ところへ highlights an arrival breaking into a situation at that very moment, so it fits when the following clause is a coming/arriving action directed into the scene.",
+    "examples": [
+      {
+        "sentence": "けんかをしている___、先生[せんせい]がやってきた。",
+        "answer": "ところへ",
+        "translation": "Right while we were fighting, the teacher came over."
+      },
+      {
+        "sentence": "話[はなし]をしている___、課長[かちょう]が入[はい]ってきた。",
+        "answer": "ところへ",
+        "translation": "Just as we were talking, the section chief came in."
+      },
+      {
+        "sentence": "出[で]かけようとしている___、お客[きゃく]さんが来[き]た。",
+        "answer": "ところへ",
+        "translation": "Right as I was about to go out, a guest arrived."
+      },
+      {
+        "sentence": "道[みち]に迷[まよ]っている___、親切[しんせつ]な人[ひと]が声[こえ]をかけてくれた。",
+        "answer": "ところへ",
+        "translation": "Just as I was lost, a kind person came up and spoke to me."
+      },
+      {
+        "sentence": "ごはんを作[つく]っている___、友[とも]だちが遊[あそ]びに来[き]た。",
+        "answer": "ところへ",
+        "translation": "Right while I was cooking, a friend came over to hang out."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "とたんに",
+        "gloss": "means 'the instant'; needs V-た (V-たとたんに) so it can't follow the ている/ようとしている scenes here"
+      },
+      {
+        "form": "ところで",
+        "gloss": "means 'even if/by the way'; not an arrival into the scene at that moment"
+      },
+      {
+        "form": "ところが",
+        "gloss": "means 'however'; contrastive conjunction, not arrival timing"
+      },
+      {
+        "form": "において",
+        "gloss": "means 'in/at (a field)'; a formal noun-attaching particle, ungrammatical after these verb clauses and not an arrival into the scene"
+      },
+      {
+        "form": "うちへ",
+        "gloss": "うち + へ is not a fixed grammar pattern here; doesn't express the moment of arrival"
+      },
+      {
+        "form": "あいだへ",
+        "gloss": "not a valid pattern; あいだ marks a span and doesn't take へ in this meaning"
+      },
+      {
+        "form": "ときへ",
+        "gloss": "とき + へ is ungrammatical; とき marks time but doesn't combine with へ this way"
+      },
+      {
+        "form": "ながら",
+        "gloss": "means 'while doing'; same-subject simultaneous action, not an arrival"
+      },
+      {
+        "form": "から",
+        "gloss": "means 'because/after'; not the moment of arrival"
+      },
+      {
+        "form": "ために",
+        "gloss": "means 'in order to/because'; purpose or cause, not arrival timing"
+      },
+      {
+        "form": "までに",
+        "gloss": "means 'by (a deadline)'; a time limit, not a moment of arrival"
+      },
+      {
+        "form": "ばかりに",
+        "gloss": "means 'simply because'; cause with bad result, not arrival timing"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:ところを",
+    "level": "N3",
+    "title": "～ところを",
+    "meaning": "(catch/see/help) someone right when ~ / although it's a time when ~",
+    "explanation": "Marks a scene or moment as the object of an action—often someone is seen, caught, or helped right in that state. In set polite phrases it also means 'although it is a time when (you are busy, etc.)'.",
+    "formation": "Verb (dictionary/ている/た) + ところを; い-adj + ところを; Noun + の + ところを",
+    "whyRight": "ところを presents the very scene/moment as the direct object of the main verb (saw, caught, helped, disturbed), so it is correct when an action targets someone caught in that state or situation.",
+    "examples": [
+      {
+        "sentence": "タバコを吸[す]っている___、先生[せんせい]に見[み]つかった。",
+        "answer": "ところを",
+        "translation": "I was caught by the teacher right while I was smoking."
+      },
+      {
+        "sentence": "泥棒[どろぼう]が逃[に]げる___、警察[けいさつ]が捕[つか]まえた。",
+        "answer": "ところを",
+        "translation": "The police caught the thief right as he was escaping."
+      },
+      {
+        "sentence": "お忙[いそが]しい___、ありがとうございます。",
+        "answer": "ところを",
+        "translation": "Thank you, even though you're busy."
+      },
+      {
+        "sentence": "二人[ふたり]で歩[ある]いている___、友[とも]だちに見[み]られた。",
+        "answer": "ところを",
+        "translation": "My friend saw us right while the two of us were walking together."
+      },
+      {
+        "sentence": "寝[ね]ている___、起[お]こされてしまった。",
+        "answer": "ところを",
+        "translation": "I was woken up right while I was sleeping."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ところに",
+        "gloss": "marks a moment of intrusion, but here the main verb acts on the scene as an object, so を is needed"
+      },
+      {
+        "form": "ところへ",
+        "gloss": "marks arrival into a scene; doesn't fit verbs like 'caught/saw' that take the scene as object"
+      },
+      {
+        "form": "ところで",
+        "gloss": "means 'even if/by the way'; not the object-scene marker"
+      },
+      {
+        "form": "ところが",
+        "gloss": "means 'however'; contrastive conjunction, not an object scene"
+      },
+      {
+        "form": "ときを",
+        "gloss": "とき + を is unnatural here; とき lacks the 'caught in the act' scene nuance"
+      },
+      {
+        "form": "あいだを",
+        "gloss": "marks a span; doesn't present the instant-scene as the object of being caught"
+      },
+      {
+        "form": "うちを",
+        "gloss": "うち + を is ungrammatical in this 'caught in the act' sense"
+      },
+      {
+        "form": "とたんを",
+        "gloss": "ungrammatical; とたん expresses an instant result and doesn't take を"
+      },
+      {
+        "form": "から",
+        "gloss": "means 'because/after'; not the object-scene marker"
+      },
+      {
+        "form": "において",
+        "gloss": "means 'in/at (a field)'; a formal noun-attaching particle, ungrammatical after these clauses and not the object-scene marker"
+      },
+      {
+        "form": "ながら",
+        "gloss": "means 'while doing'; simultaneous action of the same subject, not the caught scene"
+      },
+      {
+        "form": "ために",
+        "gloss": "means 'in order to/because'; purpose or cause, not the object-scene marker"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:として",
+    "level": "N3",
+    "title": "～として",
+    "meaning": "as ~ / in the role/capacity of ~",
+    "explanation": "Indicates the status, role, capacity, or qualification in which someone or something acts or is regarded. It links a person/thing to the function they perform.",
+    "formation": "Noun + として",
+    "whyRight": "として assigns a role or capacity to the noun, so it is correct when the sentence describes acting in, or being regarded in, a particular position or function.",
+    "examples": [
+      {
+        "sentence": "彼[かれ]は医者[いしゃ]___この町[まち]で働[はたら]いている。",
+        "answer": "として",
+        "translation": "He works in this town as a doctor.",
+        "context": "彼[かれ]は医学部[いがくぶ]を卒業[そつぎょう]した。",
+        "contextTranslation": "He graduated from medical school."
+      },
+      {
+        "sentence": "留学生[りゅうがくせい]___日本[にほん]に来[き]ました。",
+        "answer": "として",
+        "translation": "I came to Japan as an exchange student.",
+        "context": "私[わたし]は日本[にほん]の大学[だいがく]で勉強[べんきょう]することになった。",
+        "contextTranslation": "I ended up going to study at a university in Japan."
+      },
+      {
+        "sentence": "この建物[たてもの]は美術館[びじゅつかん]___使[つか]われている。",
+        "answer": "として",
+        "translation": "This building is used as an art museum.",
+        "context": "この古[ふる]い建物[たてもの]の中[なか]には、有名[ゆうめい]な絵[え]がたくさん展示[てんじ]されている。",
+        "contextTranslation": "Inside this old building, many famous paintings are on display."
+      },
+      {
+        "sentence": "彼女[かのじょ]は通訳[つうやく]___会議[かいぎ]に参加[さんか]した。",
+        "answer": "として",
+        "translation": "She took part in the meeting as an interpreter.",
+        "context": "彼女[かのじょ]は英語[えいご]と日本語[にほんご]の両方[りょうほう]が上手[じょうず]に話[はな]せる。",
+        "contextTranslation": "She can speak both English and Japanese well."
+      },
+      {
+        "sentence": "趣味[しゅみ]___写真[しゃしん]を撮[と]っています。",
+        "answer": "として",
+        "translation": "I take photos as a hobby.",
+        "context": "私[わたし]は写真[しゃしん]をとるのが大好[だいす]きだ。",
+        "contextTranslation": "I love taking photos."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "としても",
+        "gloss": "means 'even as/even if'; adds a concessive nuance not intended in a plain role statement"
+      },
+      {
+        "form": "にして",
+        "gloss": "means 'even (at this stage)'; not a role/capacity marker"
+      },
+      {
+        "form": "について",
+        "gloss": "means 'about/concerning'; a topic marker, not a role"
+      },
+      {
+        "form": "に対して",
+        "gloss": "means 'toward/in contrast to'; direction or contrast, not a capacity"
+      },
+      {
+        "form": "によって",
+        "gloss": "means 'by means of/depending on'; agent or cause, not a role"
+      },
+      {
+        "form": "にとって",
+        "gloss": "means 'for (someone's viewpoint)'; perspective, not a role one acts in"
+      },
+      {
+        "form": "とすると",
+        "gloss": "means 'if we suppose'; a hypothetical, not a role marker"
+      },
+      {
+        "form": "のために",
+        "gloss": "means 'for the sake of'; marks a beneficiary/purpose, giving a different meaning than acting in a role"
+      },
+      {
+        "form": "のように",
+        "gloss": "means 'like/as if'; resemblance, not an actual official role"
+      },
+      {
+        "form": "みたいに",
+        "gloss": "means 'like'; casual resemblance, not a genuine capacity"
+      },
+      {
+        "form": "だけ",
+        "gloss": "means 'only'; limitation, not a role"
+      },
+      {
+        "form": "ばかり",
+        "gloss": "means 'only/just'; emphasis on amount, not a role"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:としても",
+    "level": "N3",
+    "title": "～としても",
+    "meaning": "even if ~ / even supposing that ~",
+    "explanation": "Expresses a hypothetical concession: even granting that something is true, the result in the main clause still holds. It combines supposition (とする) with the concessive ても.",
+    "formation": "Plain form + としても; Noun/な-adj (+ だ optional) + としても",
+    "whyRight": "としても sets up a hypothetical and concedes it while asserting the outcome is unchanged, so it is correct when the sentence means 'even supposing X, still Y'.",
+    "examples": [
+      {
+        "sentence": "雨[あめ]が降[ふ]った___、試合[しあい]は行[おこな]われます。",
+        "answer": "としても",
+        "translation": "Even if it rains, the match will be held.",
+        "context": "明日[あした]は大切[たいせつ]な試合[しあい]の日[ひ]だ。",
+        "contextTranslation": "Tomorrow is the day of an important match."
+      },
+      {
+        "sentence": "たとえ高[たか]い___、私[わたし]はこの車[くるま]を買[か]いたい。",
+        "answer": "としても",
+        "translation": "Even if it's expensive, I want to buy this car."
+      },
+      {
+        "sentence": "彼[かれ]が来[こ]ない___、会議[かいぎ]は始[はじ]めます。",
+        "answer": "としても",
+        "translation": "Even if he doesn't come, we'll start the meeting.",
+        "context": "彼[かれ]はまだ会社[かいしゃ]に来[き]ていない。",
+        "contextTranslation": "He still hasn't come to the office."
+      },
+      {
+        "sentence": "本当[ほんとう]___、信[しん]じられない話[はなし]だ。",
+        "answer": "としても",
+        "translation": "Even if it's true, it's an unbelievable story.",
+        "context": "この話[はなし]はとても信[しん]じにくい。",
+        "contextTranslation": "This story is very hard to believe."
+      },
+      {
+        "sentence": "急[いそ]いで行[い]った___、もう間[ま]に合[あ]わないだろう。",
+        "answer": "としても",
+        "translation": "Even if I hurry, I probably won't make it in time.",
+        "context": "電車[でんしゃ]の出発[しゅっぱつ]までもう時間[じかん]がない。",
+        "contextTranslation": "There's hardly any time left before the train departs."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "として",
+        "gloss": "means 'as (a role)'; lacks the concessive 'even if' meaning"
+      },
+      {
+        "form": "とすると",
+        "gloss": "means 'if we suppose'; a neutral hypothetical without the concessive 'even' nuance"
+      },
+      {
+        "form": "とすれば",
+        "gloss": "means 'supposing that'; a conditional conclusion, not a concession"
+      },
+      {
+        "form": "といっても",
+        "gloss": "means 'although you say'; qualifies a prior statement, not a hypothetical concession"
+      },
+      {
+        "form": "からといって",
+        "gloss": "means 'just because'; denies a conclusion drawn from a reason, different structure"
+      },
+      {
+        "form": "ところで",
+        "gloss": "means 'even if (it's futile)'; concessive but attaches to V-た and stresses pointlessness"
+      },
+      {
+        "form": "からこそ",
+        "gloss": "means 'precisely because'; emphasizes a reason, the opposite of conceding 'even if' the outcome holds anyway"
+      },
+      {
+        "form": "ても",
+        "gloss": "means 'even if'; close in meaning but needs the て-form (降っても), not attached this way"
+      },
+      {
+        "form": "のに",
+        "gloss": "means 'although'; states a real contrast, not a hypothesis"
+      },
+      {
+        "form": "ながらも",
+        "gloss": "means 'although'; concessive with real facts, not a supposition"
+      },
+      {
+        "form": "ものの",
+        "gloss": "means 'although'; concedes a real fact, not a hypothetical 'even if'"
+      },
+      {
+        "form": "くせに",
+        "gloss": "means 'despite'; blaming concession about real facts, not a supposition"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:てみる",
+    "level": "N3",
+    "title": "～てみる",
+    "meaning": "to try doing something (to see what happens)",
+    "explanation": "Used to express attempting or trying out an action to see the result or experience it. It implies a tentative, exploratory attempt.",
+    "formation": "Verb (て-form) + みる",
+    "whyRight": "～てみる marks an action done on a trial basis to see how it turns out, fitting contexts of experimenting or sampling.",
+    "examples": [
+      {
+        "context": "評判[ひょうばん]がいいと聞[き]いたので、どんな味[あじ]か気[き]になる。",
+        "sentence": "新[あたら]しいレストランで食[た]べて___たい。",
+        "answer": "み",
+        "translation": "I want to try eating at the new restaurant.",
+        "contextTranslation": "I heard it has a good reputation, so I'm curious what it tastes like."
+      },
+      {
+        "context": "この色[いろ]が自分[じぶん]に似合[にあ]うかどうか気[き]になる。",
+        "sentence": "この服[ふく]を着[き]て___もいいですか。",
+        "answer": "み",
+        "translation": "May I try putting on this outfit?",
+        "contextTranslation": "I'm wondering whether this color suits me."
+      },
+      {
+        "context": "自分[じぶん]では考[かんが]えてもどうしても答[こた]えが出[で]ない。",
+        "sentence": "わからないから、先生[せんせい]に聞[き]いて___。",
+        "answer": "みる",
+        "translation": "Since I don't understand, I'll try asking the teacher.",
+        "contextTranslation": "No matter how much I think about it myself, I just can't come up with the answer."
+      },
+      {
+        "context": "自信[じしん]はないが、とりあえず一度[いちど]だけ挑戦[ちょうせん]しよう。",
+        "sentence": "難[むずか]しそうだけど、一度[いちど]やって___。",
+        "answer": "みる",
+        "translation": "It looks hard, but I'll give it a try once.",
+        "contextTranslation": "I'm not confident, but for now let me give it a try just once."
+      },
+      {
+        "context": "まだ一度[いちど]も京都[きょうと]に行[い]ったことがない。",
+        "sentence": "京都[きょうと]に行[い]って___たいと思[おも]っています。",
+        "answer": "み",
+        "translation": "I'm thinking I'd like to try going to Kyoto.",
+        "contextTranslation": "I've never been to Kyoto even once."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "みせる",
+        "gloss": "means to demonstrate or show determination, not a trial attempt"
+      },
+      {
+        "form": "みえる",
+        "gloss": "means to be visible, a perception verb, wrong meaning"
+      },
+      {
+        "form": "しまう",
+        "gloss": "indicates completion or accidental action, not trying"
+      },
+      {
+        "form": "おく",
+        "gloss": "means to do something in advance, not a trial"
+      },
+      {
+        "form": "ある",
+        "gloss": "～てある shows a prepared resulting state, unrelated to trying"
+      },
+      {
+        "form": "みなければ",
+        "gloss": "negative conditional 'if (one) does not try'; ungrammatical before たい/もいい and contradicts the intention to try in these sentences"
+      },
+      {
+        "form": "みて",
+        "gloss": "te-form leaves a plain-ending sentence incomplete"
+      },
+      {
+        "form": "いく",
+        "gloss": "～ていく shows progression away or over time, not an attempt"
+      },
+      {
+        "form": "くる",
+        "gloss": "～てくる shows approach or change toward present, not an attempt"
+      },
+      {
+        "form": "みろ",
+        "gloss": "imperative; wrong register and not the trial nuance intended"
+      },
+      {
+        "form": "みない",
+        "gloss": "negative; contradicts the intention to try expressed in these sentences"
+      },
+      {
+        "form": "みよう",
+        "gloss": "volitional 'let's try', does not fit slots followed by たい or もいい"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:ても",
+    "level": "N3",
+    "title": "～ても",
+    "meaning": "even if / even though",
+    "explanation": "Used to express a concession: a result holds regardless of the preceding condition or action. The second clause is unaffected by the first.",
+    "formation": "Verb (て-form) + も / い-adjective (くて) + も / な-adjective・Noun + でも",
+    "whyRight": "～ても sets up a concessive condition meaning 'even if', where the outcome remains the same despite the stated circumstance.",
+    "examples": [
+      {
+        "context": "天気予報[てんきよほう]では午後[ごご]から雨[あめ]になると言[い]っている。",
+        "sentence": "雨[あめ]が降[ふ]っ___、試合[しあい]は行[おこな]われます。",
+        "answer": "ても",
+        "translation": "Even if it rains, the match will be held.",
+        "contextTranslation": "The weather forecast says it will rain from the afternoon."
+      },
+      {
+        "sentence": "いくら高[たか]く___、これは買[か]いたい。",
+        "answer": "ても",
+        "translation": "No matter how expensive it is, I want to buy this."
+      },
+      {
+        "sentence": "彼[かれ]に何度[なんど]頼[たの]ん___、聞[き]いてくれない。",
+        "answer": "でも",
+        "translation": "No matter how many times I ask him, he won't listen."
+      },
+      {
+        "context": "早[はや]く治[なお]るだろうと思[おも]っていた。",
+        "sentence": "薬[くすり]を飲[の]ん___、熱[ねつ]が下[さ]がらなかった。",
+        "answer": "でも",
+        "translation": "Even though I took the medicine, the fever didn't go down.",
+        "contextTranslation": "I thought I would get better quickly."
+      },
+      {
+        "sentence": "急[いそ]い___、もう間[ま]に合[あ]わないだろう。",
+        "answer": "でも",
+        "translation": "Even if we hurry, we probably won't make it in time."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "たら",
+        "gloss": "means 'if/when' a condition is met, not a concession 'even if'"
+      },
+      {
+        "form": "ば",
+        "gloss": "conditional 'if', expresses a normal condition rather than concession"
+      },
+      {
+        "form": "と",
+        "gloss": "conditional 'whenever/if', implies a natural consequence, not 'even if'"
+      },
+      {
+        "form": "から",
+        "gloss": "means 'because', gives a reason, opposite of a concessive"
+      },
+      {
+        "form": "ので",
+        "gloss": "means 'because/since', states a cause, not 'even though'"
+      },
+      {
+        "form": "のに",
+        "gloss": "means 'although' but attaches to the plain form, not the te-form slot here"
+      },
+      {
+        "form": "ては",
+        "gloss": "warns against an undesirable action, different concession nuance"
+      },
+      {
+        "form": "ながら",
+        "gloss": "means 'while doing' simultaneously, not concessive 'even if'"
+      },
+      {
+        "form": "ために",
+        "gloss": "expresses purpose 'in order to', unrelated meaning"
+      },
+      {
+        "form": "けど",
+        "gloss": "means 'but' connecting clauses, attaches to plain forms, not the te-stem here"
+      },
+      {
+        "form": "て",
+        "gloss": "plain te-form without も loses the 'even if' concessive meaning"
+      },
+      {
+        "form": "ことも",
+        "gloss": "not a concessive connective; does not produce the 'even if' meaning required here"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:てもかまわない",
+    "level": "N3",
+    "title": "～てもかまわない",
+    "meaning": "it's okay even if / I don't mind if",
+    "explanation": "Used to grant permission or indicate that something is acceptable. It expresses that the speaker has no objection to the stated action or situation.",
+    "formation": "Verb (て-form) + もかまわない / い-adj (くて) + もかまわない / な-adj・Noun + でもかまわない",
+    "whyRight": "～てもかまわない states that an action is permissible or that one does not mind, fitting contexts of giving permission.",
+    "examples": [
+      {
+        "context": "この美術館[びじゅつかん]では撮影[さつえい]が許可[きょか]されている。",
+        "sentence": "ここで写真[しゃしん]を撮[と]っても___。",
+        "answer": "かまわない",
+        "translation": "You may take photos here (I don't mind).",
+        "contextTranslation": "Photography is permitted in this museum."
+      },
+      {
+        "context": "今日[きょう]の作業[さぎょう]はもう終[お]わったので問題[もんだい]ない。",
+        "sentence": "疲[つか]れたら、先[さき]に帰[かえ]っても___よ。",
+        "answer": "かまわない",
+        "translation": "If you're tired, you can go home first.",
+        "contextTranslation": "Today's work is already finished, so there's no problem."
+      },
+      {
+        "sentence": "値段[ねだん]は少[すこ]し高[たか]くても___。",
+        "answer": "かまわない",
+        "translation": "It's fine even if the price is a little high."
+      },
+      {
+        "context": "家賃[やちん]が安[やす]ければ、それで私[わたし]は満足[まんぞく]だ。",
+        "sentence": "部屋[へや]が狭[せま]くても私[わたし]は___。",
+        "answer": "かまわない",
+        "translation": "I don't mind even if the room is small.",
+        "contextTranslation": "As long as the rent is cheap, I'm satisfied with that."
+      },
+      {
+        "context": "私[わたし]が熱[ねつ]で欠席[けっせき]したいと伝[つた]えたところ、",
+        "sentence": "明日[あした]は来[こ]なくても___と先生[せんせい]が言[い]った。",
+        "answer": "かまわない",
+        "translation": "The teacher said it's fine even if I don't come tomorrow.",
+        "contextTranslation": "When I told them I wanted to be absent because of a fever,"
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "いけない",
+        "gloss": "～てはいけない means it is forbidden, the opposite of giving permission"
+      },
+      {
+        "form": "ならない",
+        "gloss": "～てはならない means must not, prohibition opposite of permission"
+      },
+      {
+        "form": "だめだ",
+        "gloss": "～てはだめだ means it's no good/not allowed, opposite meaning"
+      },
+      {
+        "form": "ください",
+        "gloss": "a request to do something, not a statement of permission"
+      },
+      {
+        "form": "ほしい",
+        "gloss": "expresses wanting someone to act, not granting permission"
+      },
+      {
+        "form": "かまう",
+        "gloss": "affirmative 'to mind/care', reverses the permissive meaning needed"
+      },
+      {
+        "form": "こまる",
+        "gloss": "～ても困る means it's troubling/unwelcome, the opposite of the granted-permission meaning intended"
+      },
+      {
+        "form": "かまわなくて",
+        "gloss": "te-form leaves the sentence grammatically incomplete"
+      },
+      {
+        "form": "かまわず",
+        "gloss": "～ず is a continuative form; it leaves the sentence grammatically incomplete and cannot end these sentences"
+      },
+      {
+        "form": "しまう",
+        "gloss": "indicates completion or regret, unrelated to permission"
+      },
+      {
+        "form": "もいい",
+        "gloss": "the も is already in the sentence (撮っても___), so inserting もいい yields 撮っても+もいい with a doubled も, which is ungrammatical"
+      },
+      {
+        "form": "わけだ",
+        "gloss": "expresses a logical conclusion 'no wonder', unrelated meaning"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:てもらう",
+    "level": "N3",
+    "title": "～てもらう",
+    "meaning": "to have/get someone to do something (for one's benefit)",
+    "explanation": "Used when the subject receives a favor or action done by another person. The doer of the action is usually marked with に, and the action benefits the subject.",
+    "formation": "Verb (て-form) + もらう",
+    "whyRight": "～てもらう expresses receiving a beneficial action from someone, fitting contexts where the speaker gets help or a favor.",
+    "examples": [
+      {
+        "context": "一人[ひとり]では宿題[しゅくだい]が終[お]わらず、とても困[こま]っていた。",
+        "sentence": "友[とも]だちに宿題[しゅくだい]を手伝[てつだ]って___た。",
+        "answer": "もらっ",
+        "translation": "I had my friend help me with my homework.",
+        "contextTranslation": "I couldn't finish my homework on my own and was really stuck."
+      },
+      {
+        "context": "私[わたし]の書[か]いた作文[さくぶん]には、まだ間違[まちが]いがたくさんある。",
+        "sentence": "先生[せんせい]に作文[さくぶん]を直[なお]して___たい。",
+        "answer": "もらい",
+        "translation": "I want to have the teacher correct my essay.",
+        "contextTranslation": "The essay I wrote still has a lot of mistakes."
+      },
+      {
+        "sentence": "病院[びょういん]で医者[いしゃ]に診[み]て___。",
+        "answer": "もらう",
+        "translation": "I'll have the doctor examine me at the hospital."
+      },
+      {
+        "context": "荷物[にもつ]が重[おも]くて、一人[ひとり]で駅[えき]まで行[い]けなかった。",
+        "sentence": "兄[あに]に駅[えき]まで送[おく]って___た。",
+        "answer": "もらっ",
+        "translation": "I had my older brother give me a ride to the station.",
+        "contextTranslation": "My luggage was heavy, and I couldn't make it to the station on my own."
+      },
+      {
+        "sentence": "店員[てんいん]に道[みち]を教[おし]えて___。",
+        "answer": "もらう",
+        "translation": "I'll have the store clerk tell me the way."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "あげる",
+        "gloss": "means to do something for someone else (giving), wrong direction of benefit"
+      },
+      {
+        "form": "くれる",
+        "gloss": "means someone does something for me, but the subject/marking differs from もらう"
+      },
+      {
+        "form": "やる",
+        "gloss": "means to do for an inferior/animal/plant, giving direction, wrong here"
+      },
+      {
+        "form": "いただく",
+        "gloss": "humble form of もらう but does not fit slots needing the plain stem もらっ/もらい"
+      },
+      {
+        "form": "くださる",
+        "gloss": "honorific of くれる; giving direction with different marking, not もらう"
+      },
+      {
+        "form": "もらって",
+        "gloss": "te-form leaves a plain-ending sentence incomplete"
+      },
+      {
+        "form": "もらえる",
+        "gloss": "potential 'can receive'; changes meaning and does not fit the た/たい slots needing the stem"
+      },
+      {
+        "form": "しまう",
+        "gloss": "indicates completion or regret, not receiving a favor"
+      },
+      {
+        "form": "おく",
+        "gloss": "means to do in advance, unrelated to receiving an action"
+      },
+      {
+        "form": "みる",
+        "gloss": "～てみる means to try doing, not receiving a favor"
+      },
+      {
+        "form": "ほしい",
+        "gloss": "expresses wanting someone to act, a different construction from receiving"
+      },
+      {
+        "form": "ある",
+        "gloss": "～てある marks a prepared resultant state and takes no benefactor, so it does not express receiving a favor and is wrong with the に-marked agent here"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:どおり（に）",
+    "level": "N3",
+    "title": "～どおり（に）",
+    "meaning": "just as / in accordance with (attached to nouns)",
+    "explanation": "Attached directly to a noun (often as a suffix), it means something happens exactly as that noun indicates. The reading becomes どおり after a noun.",
+    "formation": "Noun + どおり（に）",
+    "whyRight": "～どおり attaches to a noun to mean 'exactly as that noun', so it is correct after a noun rather than a verb.",
+    "examples": [
+      {
+        "sentence": "予定[よてい]___に仕事[しごと]が進[すす]んでいる。",
+        "answer": "どおり",
+        "translation": "The work is progressing just as planned."
+      },
+      {
+        "sentence": "説明書[せつめいしょ]___に組[く]み立[た]ててください。",
+        "answer": "どおり",
+        "translation": "Please assemble it according to the instructions."
+      },
+      {
+        "sentence": "時間[じかん]___に電車[でんしゃ]が来[き]た。",
+        "answer": "どおり",
+        "translation": "The train came right on time (just as scheduled)."
+      },
+      {
+        "sentence": "計画[けいかく]___に旅行[りょこう]ができて満足[まんぞく]だ。",
+        "answer": "どおり",
+        "translation": "I'm satisfied that the trip went exactly as planned."
+      },
+      {
+        "sentence": "希望[きぼう]___の会社[かいしゃ]に就職[しゅうしょく]できた。",
+        "answer": "どおり",
+        "translation": "I was able to get a job at the company I had hoped for."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "とおり",
+        "gloss": "the same word but read とおり when standing alone after a verb; after a noun the rendaku reading どおり is required"
+      },
+      {
+        "form": "ように",
+        "gloss": "means 'like/as', a comparison, but does not carry the 'exactly as specified' nuance of どおり"
+      },
+      {
+        "form": "みたいに",
+        "gloss": "casual 'like', a resemblance, not 'in accordance with'"
+      },
+      {
+        "form": "ばかり",
+        "gloss": "means 'only/just (amount)', unrelated meaning"
+      },
+      {
+        "form": "ながら",
+        "gloss": "means 'while doing', simultaneity, not 'according to'"
+      },
+      {
+        "form": "らしく",
+        "gloss": "means 'typical of/seemingly', not 'exactly as'"
+      },
+      {
+        "form": "なりに",
+        "gloss": "means 'in one's own way', a different nuance from 'as specified'"
+      },
+      {
+        "form": "どおりで",
+        "gloss": "wrong form; the connective uses どおり（に）, and どおりで is not standard here"
+      },
+      {
+        "form": "について",
+        "gloss": "means 'concerning/about', unrelated meaning"
+      },
+      {
+        "form": "にとって",
+        "gloss": "means 'for/from the standpoint of', unrelated meaning"
+      },
+      {
+        "form": "とおりに",
+        "gloss": "uses the standalone reading; after a plain noun the suffixed どおり is correct, not とおりに"
+      },
+      {
+        "form": "のように",
+        "gloss": "means 'like ~', comparison, lacks the 'in accordance with' meaning"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:とおりに",
+    "level": "N3",
+    "title": "～とおりに",
+    "meaning": "just as / in the way that (attached to verbs)",
+    "explanation": "Attached to a verb (plain present or past) or to the plain word とおり, it means doing something exactly in the manner indicated. After a verb the reading stays とおり.",
+    "formation": "Verb (plain/past) + とおり（に） / Noun + の + とおり（に）",
+    "whyRight": "～とおりに follows a verb to mean 'exactly in the way that', so it is correct after a verb form rather than the noun-suffix どおり.",
+    "examples": [
+      {
+        "sentence": "私[わたし]が言[い]う___にやってください。",
+        "answer": "とおり",
+        "translation": "Please do it just as I say."
+      },
+      {
+        "sentence": "先生[せんせい]が教[おし]えてくれた___に書[か]いた。",
+        "answer": "とおり",
+        "translation": "I wrote it just as the teacher taught me."
+      },
+      {
+        "sentence": "思[おも]った___に試験[しけん]は難[むずか]しかった。",
+        "answer": "とおり",
+        "translation": "Just as I thought, the exam was difficult."
+      },
+      {
+        "sentence": "矢印[やじるし]が示[しめ]す___に進[すす]んでください。",
+        "answer": "とおり",
+        "translation": "Please proceed just as the arrow indicates."
+      },
+      {
+        "sentence": "見[み]た___に絵[え]を描[か]いてみた。",
+        "answer": "とおり",
+        "translation": "I tried drawing the picture just as I saw it."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "どおり",
+        "gloss": "the rendaku reading used when suffixed directly to a noun; after a verb the reading is とおり"
+      },
+      {
+        "form": "みたいに",
+        "gloss": "casual 'like', a resemblance, not 'in the exact way that'"
+      },
+      {
+        "form": "ながら",
+        "gloss": "means 'while doing', simultaneity, wrong meaning"
+      },
+      {
+        "form": "ばかり",
+        "gloss": "means 'just/only', unrelated meaning"
+      },
+      {
+        "form": "ところ",
+        "gloss": "means 'place/just about to', not 'in the way that'"
+      },
+      {
+        "form": "ところで",
+        "gloss": "～たところで is a concessive 'even if', attaches to the past form, and is ungrammatical before に here; it does not mean 'in the way that'"
+      },
+      {
+        "form": "とおりで",
+        "gloss": "non-standard connective; the manner adverbial uses とおりに/とおり, not とおりで"
+      },
+      {
+        "form": "について",
+        "gloss": "means 'concerning', unrelated meaning"
+      },
+      {
+        "form": "によって",
+        "gloss": "means 'depending on/by means of', not 'just as'"
+      },
+      {
+        "form": "らしく",
+        "gloss": "means 'typical of/seemingly', not 'exactly as'"
+      },
+      {
+        "form": "なりに",
+        "gloss": "means 'in one's own way', different from following instructions exactly"
+      },
+      {
+        "form": "べく",
+        "gloss": "stiff written form meaning 'in order to'; expresses purpose, not the manner 'exactly as', and does not attach naturally in these slots"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:とともに",
+    "level": "N3",
+    "title": "～とともに",
+    "meaning": "together with / at the same time as / along with",
+    "explanation": "Expresses that two actions or changes happen simultaneously, or that something is done together with someone or something. Often shows that as one thing changes, another changes along with it.",
+    "formation": "Verb (dictionary form) / Noun + とともに",
+    "whyRight": "とともに links a change or action that occurs simultaneously with another, making it the correct connective for 'as/along with'.",
+    "examples": [
+      {
+        "sentence": "年[とし]を取[と]る___、体力[たいりょく]が落[お]ちてきた。",
+        "answer": "とともに",
+        "translation": "As I get older, my physical strength has declined."
+      },
+      {
+        "sentence": "彼[かれ]は家族[かぞく]___、海外[かいがい]へ引[ひ]っ越[こ]した。",
+        "answer": "とともに",
+        "translation": "He moved abroad together with his family."
+      },
+      {
+        "sentence": "技術[ぎじゅつ]の進歩[しんぽ]___、生活[せいかつ]は便利[べんり]になった。",
+        "answer": "とともに",
+        "translation": "Along with technological progress, life has become convenient."
+      },
+      {
+        "sentence": "卒業[そつぎょう]する___、新[あたら]しい生活[せいかつ]が始[はじ]まる。",
+        "answer": "とともに",
+        "translation": "Upon graduating, a new life begins at the same time."
+      },
+      {
+        "sentence": "気温[きおん]が上[あ]がる___、桜[さくら]が咲[さ]き始[はじ]めた。",
+        "answer": "とともに",
+        "translation": "As the temperature rose, the cherry blossoms began to bloom."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "とおりに",
+        "gloss": "'just as'; expresses doing as instructed, not simultaneous change."
+      },
+      {
+        "form": "について",
+        "gloss": "'about/concerning'; marks a topic, not simultaneity."
+      },
+      {
+        "form": "ことなく",
+        "gloss": "'without doing'; needs a negative-of-action meaning, but the blank links simultaneous change, so it does not fit."
+      },
+      {
+        "form": "とともにして",
+        "gloss": "incorrect conjugation; とともに takes no して."
+      },
+      {
+        "form": "にとって",
+        "gloss": "'for/from the standpoint of'; expresses viewpoint, not togetherness."
+      },
+      {
+        "form": "ばかりで",
+        "gloss": "'nothing but/only'; expresses restriction, not simultaneous change or accompaniment."
+      },
+      {
+        "form": "ながら",
+        "gloss": "'while'; used for simultaneous actions by one subject, not for parallel changes."
+      },
+      {
+        "form": "とともである",
+        "gloss": "ungrammatical predicate form; not a valid connective."
+      },
+      {
+        "form": "に対[たい]して",
+        "gloss": "'toward/in contrast to'; marks an object or contrast, not togetherness."
+      },
+      {
+        "form": "うちに",
+        "gloss": "'while/before'; expresses doing within a period, not change happening along with another."
+      },
+      {
+        "form": "ばかりに",
+        "gloss": "'simply because'; expresses an unfortunate cause, not simultaneity."
+      },
+      {
+        "form": "ともに",
+        "gloss": "missing と; needs the particle と to connect to the preceding word here."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:ないことには",
+    "level": "N3",
+    "title": "～ないことには",
+    "meaning": "unless / without doing (something, nothing can happen)",
+    "explanation": "Indicates that unless a certain condition is met, the result expressed in the second clause cannot be achieved. The second clause is usually negative or expresses impossibility.",
+    "formation": "Verb (ない-form) / Noun + で + ないことには",
+    "whyRight": "ないことには sets up a necessary precondition, meaning 'unless this is done, the following cannot happen', which fits the negative-result pattern.",
+    "examples": [
+      {
+        "sentence": "実際[じっさい]に見[み]てみ___、良[よ]し悪[あ]しは分[わ]からない。",
+        "answer": "ないことには",
+        "translation": "Unless I actually look at it, I can't tell if it's good or bad."
+      },
+      {
+        "sentence": "予約[よやく]し___、その店[みせ]には入[はい]れない。",
+        "answer": "ないことには",
+        "translation": "Unless you make a reservation, you can't get into that restaurant."
+      },
+      {
+        "sentence": "やってみ___、できるかどうか分[わ]からないよ。",
+        "answer": "ないことには",
+        "translation": "Unless you try, you won't know if you can do it."
+      },
+      {
+        "sentence": "お金[かね]が___、旅行[りょこう]には行[い]けない。",
+        "answer": "ないことには",
+        "translation": "Without money, you can't go on a trip."
+      },
+      {
+        "sentence": "原因[げんいん]を調[しら]べ___、解決[かいけつ]できない。",
+        "answer": "ないことには",
+        "translation": "Unless we investigate the cause, we can't solve it."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ないことはない",
+        "gloss": "'it's not that one can't'; expresses partial possibility, opposite nuance."
+      },
+      {
+        "form": "ないうちに",
+        "gloss": "'before it happens'; expresses timing, not a necessary condition."
+      },
+      {
+        "form": "ないように",
+        "gloss": "'so as not to'; expresses purpose of avoidance, not a precondition."
+      },
+      {
+        "form": "ないものか",
+        "gloss": "rhetorical wish 'isn't there some way not to'; it is a sentence-ending exclamation and cannot set up the conditional clause the blank needs."
+      },
+      {
+        "form": "ないことだ",
+        "gloss": "'one should not'; sentence-final advice that cannot connect to the following 'can't...' clause, so the sentence becomes ungrammatical."
+      },
+      {
+        "form": "ないのに",
+        "gloss": "'even though not'; expresses contrast, not condition."
+      },
+      {
+        "form": "ないことに",
+        "gloss": "missing は; the set phrase requires ことには."
+      },
+      {
+        "form": "ないことから",
+        "gloss": "'from the fact that not'; states a basis for judgment, not a condition."
+      },
+      {
+        "form": "ないわけには",
+        "gloss": "'cannot avoid doing'; expresses unavoidable obligation, different meaning."
+      },
+      {
+        "form": "ないとか",
+        "gloss": "colloquial 'or not / something like not'; a vague listing/hearsay ending, not a conditional, so it cannot link to the 'can't...' result."
+      },
+      {
+        "form": "ないばかりか",
+        "gloss": "'not only not'; adds emphasis on addition, not condition."
+      },
+      {
+        "form": "ないにしても",
+        "gloss": "'even if not'; concessive, not conditional precondition."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:ないことはない",
+    "level": "N3",
+    "title": "～ないことはない",
+    "meaning": "it's not that one can't / it's possible (reluctantly or with reservation)",
+    "explanation": "A double negative expressing that something is possible, though often with hesitation, reservation, or under certain conditions. It softens an affirmation.",
+    "formation": "Verb (ない-form) / い-adjective (くない) / な-adjective・Noun (でない) + ことはない",
+    "whyRight": "ないことはない is a double-negative construction meaning 'it's not that... cannot', conveying reluctant possibility, which matches the hedged affirmative context.",
+    "examples": [
+      {
+        "sentence": "辛[から]い物[もの]は食[た]べられ___が、あまり好[す]きではない。",
+        "answer": "ないことはない",
+        "translation": "It's not that I can't eat spicy food, but I don't really like it."
+      },
+      {
+        "sentence": "急[いそ]げば間[ま]に合[あ]わ___が、走[はし]らなければならない。",
+        "answer": "ないことはない",
+        "translation": "It's not that we can't make it if we hurry, but we'd have to run."
+      },
+      {
+        "sentence": "その仕事[しごと]、私[わたし]にもでき___。",
+        "answer": "ないことはない",
+        "translation": "It's not that I can't do that job (I probably can).",
+        "context": "そんなに難[むずか]しい仕事[しごと]ではない。",
+        "contextTranslation": "It's not that difficult a job."
+      },
+      {
+        "sentence": "値段[ねだん]が高[たか]いが、買[か]え___。",
+        "answer": "ないことはない",
+        "translation": "The price is high, but it's not that I can't buy it."
+      },
+      {
+        "sentence": "彼[かれ]の気持[きも]ちが分[わ]から___が、賛成[さんせい]はできない。",
+        "answer": "ないことはない",
+        "translation": "It's not that I don't understand his feelings, but I can't agree."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ないことには",
+        "gloss": "'unless'; sets a precondition with negative result, opposite function."
+      },
+      {
+        "form": "ないわけがない",
+        "gloss": "'there's no way it isn't'; expresses strong certainty, too strong here."
+      },
+      {
+        "form": "ないはずがない",
+        "gloss": "'it can't be that not'; strong logical certainty, not reluctant possibility."
+      },
+      {
+        "form": "ないことだ",
+        "gloss": "'one should not'; gives advice, not possibility."
+      },
+      {
+        "form": "ないものだ",
+        "gloss": "'one just doesn't'; expresses a general truth, not reluctant possibility."
+      },
+      {
+        "form": "ないわけにはいかない",
+        "gloss": "'cannot avoid doing'; expresses obligation, different meaning."
+      },
+      {
+        "form": "ないでください",
+        "gloss": "'please do not'; a request form, which cannot attach mid-sentence before が and gives no possibility meaning."
+      },
+      {
+        "form": "ないこともなく",
+        "gloss": "mid-sentence continuative 'while not entirely un-...'; it cannot stand before が or end the clause (その仕事、私にもできないこともなく。is ungrammatical), so it does not fit these blanks."
+      },
+      {
+        "form": "ないことか",
+        "gloss": "exclamatory 'how (much)...'; emotional emphasis, not possibility."
+      },
+      {
+        "form": "ないことになる",
+        "gloss": "'it turns out that not'; expresses a resulting conclusion, not possibility."
+      },
+      {
+        "form": "ないつもりだ",
+        "gloss": "'intend not to'; expresses intention, which clashes with the ability verbs (食べられ/でき) and the hedged-possibility meaning here."
+      },
+      {
+        "form": "ないでおこう",
+        "gloss": "volitional 'let's not do'; a sentence-ending volitional that cannot attach before が (食べられないでおこうが is ungrammatical) and expresses a decision, not reluctant possibility."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:ながら（も）",
+    "level": "N3",
+    "title": "～ながら（も）",
+    "meaning": "although / even though / despite (while still)",
+    "explanation": "Expresses a contrast or contradiction, similar to 'although' or 'even though'. Despite the first situation being true, the second clause holds, often unexpectedly.",
+    "formation": "Verb (ます-stem) / い-adjective / な-adjective・Noun + ながら（も）",
+    "whyRight": "ながら（も） in this concessive usage means 'although/even though', linking two contrasting facts, which fits the unexpected-contrast context.",
+    "examples": [
+      {
+        "sentence": "狭[せま]い___、自分[じぶん]の部屋[へや]を持[も]てて嬉[うれ]しい。",
+        "answer": "ながらも",
+        "translation": "Although it's small, I'm happy to have my own room."
+      },
+      {
+        "sentence": "残念[ざんねん]___、今回[こんかい]はお断[ことわ]りします。",
+        "answer": "ながらも",
+        "translation": "Although it's regrettable, I must decline this time."
+      },
+      {
+        "sentence": "知[し]ってい___、彼[かれ]は何[なに]も言[い]わなかった。",
+        "answer": "ながらも",
+        "translation": "Even though he knew, he said nothing."
+      },
+      {
+        "sentence": "彼女[かのじょ]は子供[こども]___、しっかりしている。",
+        "answer": "ながらも",
+        "translation": "Although she is a child, she is very dependable."
+      },
+      {
+        "sentence": "貧[まず]しい___、彼[かれ]は人[ひと]に親切[しんせつ]だった。",
+        "answer": "ながらも",
+        "translation": "Despite being poor, he was kind to people."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "つつ",
+        "gloss": "literary 'while'; attaches only to a verb ます-stem (e.g. 知りつつ), so it cannot follow the adjectives/noun (狭い, 残念, 子供, 貧しい) in these blanks."
+      },
+      {
+        "form": "つつも",
+        "gloss": "near-synonym 'while/although' but more formal/literary; attaches to verb stem only (知りつつも), mismatched with the い-adjectives/な-adjective/noun here."
+      },
+      {
+        "form": "べく",
+        "gloss": "'in order to'; attaches to a verb dictionary form (知るべく) and expresses purpose, so it cannot follow these adjectives/noun and gives the wrong meaning."
+      },
+      {
+        "form": "がてら",
+        "gloss": "'while also / on the way to'; attaches to a noun or verb ます-stem and combines two actions, not concession, so it does not fit these blanks."
+      },
+      {
+        "form": "かたわら",
+        "gloss": "'while mainly doing (as a sideline)'; attaches to a noun or verb dictionary form and means doing two things in parallel, not 'although'."
+      },
+      {
+        "form": "どころか",
+        "gloss": "'far from / let alone'; reverses expectation for emphasis (狭いどころか = far from small), which contradicts the concessive meaning wanted here."
+      },
+      {
+        "form": "ながらに",
+        "gloss": "'while remaining in a state'; fixed expression (e.g. 涙ながらに), not general concession."
+      },
+      {
+        "form": "つつある",
+        "gloss": "'in the process of'; expresses ongoing change, not concession."
+      },
+      {
+        "form": "ながらで",
+        "gloss": "ungrammatical combination; ながら does not take で here."
+      },
+      {
+        "form": "ものなら",
+        "gloss": "'if it were possible to'; a conditional attaching to volitional/dictionary forms, not a concessive suffix, so it gives the wrong meaning."
+      },
+      {
+        "form": "ながらにして",
+        "gloss": "'while staying'; fixed phrase meaning effortless staying-in-place, not concession."
+      },
+      {
+        "form": "つも",
+        "gloss": "not a valid form; meaningless fragment."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:など",
+    "level": "N3",
+    "title": "～など",
+    "meaning": "such things as / and so on / things like (often with a dismissive or humble nuance)",
+    "explanation": "Gives an example among others ('such as, etc.'), or expresses a dismissive, humble, or surprised attitude toward the noun it follows. The nuance depends on context.",
+    "formation": "Noun / Verb (plain form) / Phrase + など",
+    "whyRight": "など marks the preceding item as an example among others, or adds a dismissive/humble tone, which fits the listing or downplaying context.",
+    "examples": [
+      {
+        "sentence": "週末[しゅうまつ]は映画[えいが]を見[み]たり、買[か]い物[もの]___したりする。",
+        "answer": "など",
+        "translation": "On weekends I do things like watch movies and go shopping."
+      },
+      {
+        "sentence": "私[わたし]___に、そんな大[おお]きな仕事[しごと]はできません。",
+        "answer": "など",
+        "translation": "Someone like me could never do such a big job."
+      },
+      {
+        "sentence": "冗談[じょうだん]___言[い]っている場合[ばあい]ではない。",
+        "answer": "など",
+        "translation": "This is no time to be saying things like jokes.",
+        "context": "火事[かじ]で建物[たてもの]から急[いそ]いで逃[に]げなければならない。",
+        "contextTranslation": "There's a fire, and we have to hurry and escape from the building."
+      },
+      {
+        "sentence": "机[つくえ]の上[うえ]には本[ほん]やノート___が置[お]いてある。",
+        "answer": "など",
+        "translation": "On the desk there are things like books and notebooks.",
+        "context": "机[つくえ]の上[うえ]はいろいろな物[もの]で散[ち]らかっている。",
+        "contextTranslation": "The desk is cluttered with all sorts of things."
+      },
+      {
+        "sentence": "彼[かれ]の言[い]うこと___、信[しん]じられない。",
+        "answer": "など",
+        "translation": "I can't believe things like what he says."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ばかりに",
+        "gloss": "'simply because'; marks a cause with an unfortunate result and attaches to a plain form, so it cannot mark an example or a dismissive tone here."
+      },
+      {
+        "form": "だけ",
+        "gloss": "'only'; exclusive limitation, not exemplification."
+      },
+      {
+        "form": "しか",
+        "gloss": "'only' (with negative); restrictive, not listing examples."
+      },
+      {
+        "form": "こそ",
+        "gloss": "'precisely/exactly'; emphasizes, opposite of dismissive など."
+      },
+      {
+        "form": "まで",
+        "gloss": "'even/up to'; marks an extreme, not exemplification."
+      },
+      {
+        "form": "さえ",
+        "gloss": "'even'; marks an extreme example, different nuance from など."
+      },
+      {
+        "form": "ながら",
+        "gloss": "'while'; a conjunctive, not a listing particle."
+      },
+      {
+        "form": "として",
+        "gloss": "'as'; marks a role or capacity, not examples."
+      },
+      {
+        "form": "について",
+        "gloss": "'about'; marks a topic, not exemplification."
+      },
+      {
+        "form": "ところ",
+        "gloss": "'place/point'; a noun, not a listing particle."
+      },
+      {
+        "form": "くらい",
+        "gloss": "'about/to the extent'; expresses degree, not 'such as/etc.'"
+      },
+      {
+        "form": "ずつ",
+        "gloss": "'each/apiece'; distributes a quantity evenly and cannot mark examples or a dismissive tone, so it does not fit these blanks."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:において",
+    "level": "N3",
+    "title": "～において",
+    "meaning": "in / at / on / regarding (formal indication of place, time, or situation)",
+    "explanation": "A formal expression indicating the place, time, scene, or field where something takes place or applies. Equivalent to で but used in written or formal contexts.",
+    "formation": "Noun + において",
+    "whyRight": "において formally marks the place, time, or domain in which something occurs, fitting the written/formal locational or situational context.",
+    "examples": [
+      {
+        "sentence": "会議[かいぎ]は本社[ほんしゃ]___行[おこな]われる。",
+        "answer": "において",
+        "translation": "The meeting will be held at the head office.",
+        "context": "来週[らいしゅう]の会議[かいぎ]の場所[ばしょ]が決[き]まった。",
+        "contextTranslation": "The venue for next week's meeting has been decided."
+      },
+      {
+        "sentence": "現代[げんだい]社会[しゃかい]___、情報[じょうほう]は非常[ひじょう]に重要[じゅうよう]だ。",
+        "answer": "において",
+        "translation": "In modern society, information is extremely important."
+      },
+      {
+        "sentence": "この分野[ぶんや]___、彼[かれ]は第一人者[だいいちにんしゃ]だ。",
+        "answer": "において",
+        "translation": "In this field, he is the leading authority."
+      },
+      {
+        "sentence": "今回[こんかい]の大会[たいかい]___、彼[かれ]は新[あたら]しい記録[きろく]を出[だ]した。",
+        "answer": "において",
+        "translation": "At this tournament, he set a new record."
+      },
+      {
+        "sentence": "実験[じっけん]___、温度[おんど]の管理[かんり]が大切[たいせつ]だ。",
+        "answer": "において",
+        "translation": "In the experiment, temperature control is important."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "における",
+        "gloss": "noun-modifying form 'in/at the...'; must precede a noun, but here it precedes a verb/comma."
+      },
+      {
+        "form": "をもとに",
+        "gloss": "'based on'; marks a basis or source, not the place, time, or domain of an event."
+      },
+      {
+        "form": "について",
+        "gloss": "'about/concerning'; marks a topic, not the scene of an event."
+      },
+      {
+        "form": "に対[たい]して",
+        "gloss": "'toward/against'; marks a target or contrast, not location."
+      },
+      {
+        "form": "につれて",
+        "gloss": "'as / along with'; marks proportional change over time, not a place or domain."
+      },
+      {
+        "form": "によって",
+        "gloss": "'by means of/depending on'; marks means or agent, not location."
+      },
+      {
+        "form": "にわたって",
+        "gloss": "'over/throughout'; marks extent of range or period, not a point/domain."
+      },
+      {
+        "form": "をめぐって",
+        "gloss": "'concerning/over (a dispute)'; marks a subject of contention, not a scene."
+      },
+      {
+        "form": "を除[のぞ]いて",
+        "gloss": "'excluding / except'; marks an exception, not the place or domain of an event."
+      },
+      {
+        "form": "に関[かん]して",
+        "gloss": "'regarding'; marks a topic, not the location/domain of an event."
+      },
+      {
+        "form": "のもとで",
+        "gloss": "'under (the guidance/condition of)'; marks supervision or condition, not a scene."
+      },
+      {
+        "form": "を通[とお]して",
+        "gloss": "'through/throughout'; marks a medium or duration, not a fixed place or domain."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:における",
+    "level": "N3",
+    "title": "～における",
+    "meaning": "in / at / on / regarding (formal, modifying a noun)",
+    "explanation": "The noun-modifying form of において. Used to formally indicate the place, time, or field that relates to the following noun.",
+    "formation": "Noun + における + Noun",
+    "whyRight": "における is the attributive form of において, used directly before a noun to mean 'the ... in/at ...', which fits a noun-modifying formal context.",
+    "examples": [
+      {
+        "sentence": "日本[にほん]___教育[きょういく]制度[せいど]について研究[けんきゅう]している。",
+        "answer": "における",
+        "translation": "I am researching the education system in Japan.",
+        "context": "私[わたし]は世界[せかい]の学校[がっこう]の仕組[しく]みを国[くに]ごとに調[しら]べている。",
+        "contextTranslation": "I am researching how schools around the world are organized, country by country."
+      },
+      {
+        "sentence": "職場[しょくば]___人間[にんげん]関係[かんけい]に悩[なや]んでいる。",
+        "answer": "における",
+        "translation": "I'm troubled by human relationships at the workplace."
+      },
+      {
+        "sentence": "現代[げんだい]___科学[かがく]技術[ぎじゅつ]の発展[はってん]は著[いちじる]しい。",
+        "answer": "における",
+        "translation": "The development of science and technology in modern times is remarkable.",
+        "context": "昔[むかし]と比[くら]べて、技術[ぎじゅつ]の進歩[しんぽ]の速[はや]さは大[おお]きく変[か]わった。",
+        "contextTranslation": "Compared to the past, the speed of technological progress has changed greatly."
+      },
+      {
+        "sentence": "会議[かいぎ]___彼[かれ]の発言[はつげん]は重[おも]かった。",
+        "answer": "における",
+        "translation": "His remarks at the meeting carried weight.",
+        "context": "昨日[きのう]、社内[しゃない]で重要[じゅうよう]な話[はな]し合[あ]いが開[ひら]かれた。",
+        "contextTranslation": "Yesterday, an important discussion was held within the company."
+      },
+      {
+        "sentence": "この地域[ちいき]___農業[のうぎょう]の役割[やくわり]は大[おお]きい。",
+        "answer": "における",
+        "translation": "The role of agriculture in this region is large.",
+        "context": "この地方[ちほう]は昔[むかし]から農業[のうぎょう]が盛[さか]んな場所[ばしょ]だ。",
+        "contextTranslation": "This region has been a place where agriculture has thrived since long ago."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "において",
+        "gloss": "the adverbial form; used before verbs/clauses, but here a noun follows so における is needed."
+      },
+      {
+        "form": "についての",
+        "gloss": "'about the...'; marks a topic modifier, not the place/domain of something."
+      },
+      {
+        "form": "にとっての",
+        "gloss": "'for the...'; expresses viewpoint modifier, not location/domain."
+      },
+      {
+        "form": "に対[たい]する",
+        "gloss": "'toward/against the...'; marks a target modifier, not location."
+      },
+      {
+        "form": "に関[かん]する",
+        "gloss": "'regarding the...'; marks a topic modifier, not the scene/domain."
+      },
+      {
+        "form": "による",
+        "gloss": "'due to/by the...'; marks cause or means modifier, not location."
+      },
+      {
+        "form": "にわたる",
+        "gloss": "'spanning the...'; marks extent of a range, not a point/domain."
+      },
+      {
+        "form": "をめぐる",
+        "gloss": "'surrounding/over the...'; marks a subject of dispute, not a scene."
+      },
+      {
+        "form": "のための",
+        "gloss": "'for the sake of'; marks purpose, not location/domain."
+      },
+      {
+        "form": "にあたっての",
+        "gloss": "'on the occasion of'; marks a special occasion modifier, not a general place."
+      },
+      {
+        "form": "を通[とお]しての",
+        "gloss": "'through the...'; marks a medium modifier, not a fixed place or domain."
+      },
+      {
+        "form": "向[む]けの",
+        "gloss": "'aimed at/intended for'; marks a target audience, not the place or domain something belongs to, so it gives the wrong meaning here."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:にかけては",
+    "level": "N3",
+    "title": "～にかけては",
+    "meaning": "when it comes to / as far as ... is concerned (one excels)",
+    "explanation": "Indicates that with regard to a particular skill, ability, or area, someone or something is superior or excels. The following clause is usually praise or a positive evaluation.",
+    "formation": "Noun + にかけては",
+    "whyRight": "にかけては singles out a field of ability and is followed by praise of excellence, fitting the 'no one beats X at Y' context.",
+    "examples": [
+      {
+        "sentence": "料理[りょうり]___、母[はは]は誰[だれ]にも負[ま]けない。",
+        "answer": "にかけては",
+        "translation": "When it comes to cooking, my mother loses to no one."
+      },
+      {
+        "sentence": "走[はし]る速[はや]さ___、彼[かれ]はクラスで一番[いちばん]だ。",
+        "answer": "にかけては",
+        "translation": "As far as running speed goes, he is the best in the class."
+      },
+      {
+        "sentence": "数学[すうがく]___、彼女[かのじょ]の右[みぎ]に出[で]る者[もの]はいない。",
+        "answer": "にかけては",
+        "translation": "When it comes to mathematics, no one can surpass her."
+      },
+      {
+        "sentence": "記憶力[きおくりょく]___、祖父[そふ]は若者[わかもの]にも劣[おと]らない。",
+        "answer": "にかけては",
+        "translation": "When it comes to memory, my grandfather is not inferior even to young people."
+      },
+      {
+        "sentence": "歌[うた]のうまさ___、彼[かれ]の右[みぎ]に出[で]る人[ひと]はいない。",
+        "answer": "にかけては",
+        "translation": "When it comes to singing skill, no one is better than him."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "にかわって",
+        "gloss": "'instead of/on behalf of'; marks substitution or representation, not an area of skill, so it gives the wrong meaning before the praise clause."
+      },
+      {
+        "form": "をめぐって",
+        "gloss": "'over/concerning (a dispute)'; marks a subject of contention, not a field one excels in, so it does not fit the 'no one beats X' frame."
+      },
+      {
+        "form": "にとっては",
+        "gloss": "'for/from the standpoint of'; expresses viewpoint, not an area of excellence."
+      },
+      {
+        "form": "に対[たい]しては",
+        "gloss": "'toward/against'; marks a target or contrast, not a skill domain."
+      },
+      {
+        "form": "にかけて",
+        "gloss": "without は it means 'over a span (from...to)'; a different time/range usage."
+      },
+      {
+        "form": "にわたっては",
+        "gloss": "'spanning over'; marks extent of a period or range, not excellence."
+      },
+      {
+        "form": "にかんしては",
+        "gloss": "'regarding'; marks a topic, not a field of superiority with praise."
+      },
+      {
+        "form": "をかけては",
+        "gloss": "wrong particle を; the expression requires に."
+      },
+      {
+        "form": "にあたっては",
+        "gloss": "'on the occasion of'; marks a special occasion, not a skill area."
+      },
+      {
+        "form": "によっては",
+        "gloss": "'depending on'; expresses variation by case, not excellence."
+      },
+      {
+        "form": "にかけても",
+        "gloss": "wrong particle も; alters meaning toward 'even risking', not the area-of-excellence sense."
+      },
+      {
+        "form": "にかぎっては",
+        "gloss": "'only in the case of'; expresses exception/limitation, not superiority in a field."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:にかわって",
+    "level": "N3",
+    "title": "～にかわって",
+    "meaning": "instead of / on behalf of / in place of",
+    "explanation": "Indicates that someone or something acts in place of, or as a replacement for, another. Often used when one person does an action on behalf of another, or when one thing replaces another.",
+    "formation": "Noun + にかわって (or にかわり)",
+    "whyRight": "にかわって attaches directly to a noun and expresses 'in place of / on behalf of,' which fits a substitution or representation context.",
+    "examples": [
+      {
+        "sentence": "病気[びょうき]の社長[しゃちょう]___、副社長[ふくしゃちょう]が挨拶[あいさつ]をした。",
+        "answer": "にかわって",
+        "translation": "On behalf of the sick president, the vice president gave the greeting."
+      },
+      {
+        "sentence": "母[はは]___、私[わたし]が会議[かいぎ]に出席[しゅっせき]します。",
+        "answer": "にかわって",
+        "translation": "I will attend the meeting in place of my mother."
+      },
+      {
+        "sentence": "最近[さいきん]は現金[げんきん]___、電子[でんし]マネーが使[つか]われている。",
+        "answer": "にかわって",
+        "translation": "Recently, electronic money is being used instead of cash."
+      },
+      {
+        "sentence": "けがをした選手[せんしゅ]___、別[べつ]の選手[せんしゅ]が出場[しゅつじょう]した。",
+        "answer": "にかわって",
+        "translation": "In place of the injured player, another player took part."
+      },
+      {
+        "sentence": "首相[しゅしょう]___、外務[がいむ]大臣[だいじん]が会談[かいだん]に臨[のぞ]んだ。",
+        "answer": "にかわって",
+        "translation": "On behalf of the prime minister, the foreign minister attended the talks."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "にむかって",
+        "gloss": "'toward / facing,' marks a direction or target, not acting in place of someone"
+      },
+      {
+        "form": "にかぎって",
+        "gloss": "'only / of all things,' expresses exception, not substitution"
+      },
+      {
+        "form": "にとって",
+        "gloss": "'for / from the standpoint of,' marks perspective, not replacement"
+      },
+      {
+        "form": "について",
+        "gloss": "'about / concerning,' marks topic, not substitution"
+      },
+      {
+        "form": "にかんして",
+        "gloss": "'regarding,' marks subject matter, not acting in place of someone"
+      },
+      {
+        "form": "にくわえて",
+        "gloss": "'in addition to,' adds something rather than replacing it"
+      },
+      {
+        "form": "にくらべて",
+        "gloss": "'compared to,' makes a comparison, not a substitution"
+      },
+      {
+        "form": "によって",
+        "gloss": "'by means of / depending on,' marks agent or cause, not replacement"
+      },
+      {
+        "form": "にたいして",
+        "gloss": "'toward / in contrast to,' marks a target or contrast, not standing in for"
+      },
+      {
+        "form": "にあたって",
+        "gloss": "'on the occasion of,' marks a special occasion for an action, not acting in place of someone"
+      },
+      {
+        "form": "にかわられて",
+        "gloss": "passive 'be replaced by,' wrong voice and meaning for the blank"
+      },
+      {
+        "form": "にかわっても",
+        "gloss": "adds concessive 'even if replaced,' changing the meaning unnecessarily"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:に関して",
+    "level": "N3",
+    "title": "～に関して",
+    "meaning": "regarding / concerning / about",
+    "explanation": "Used to indicate the subject or matter that an action, discussion, or thought relates to. It is a more formal equivalent of について and is common in written or academic Japanese.",
+    "formation": "Noun + に関[かん]して (or に関する before a noun)",
+    "whyRight": "に関して follows a noun to mark the topic being addressed, fitting contexts of investigation, discussion, or inquiry about a subject.",
+    "examples": [
+      {
+        "sentence": "この事件[じけん]___、詳[くわ]しく調[しら]べる必要[ひつよう]がある。",
+        "answer": "に関して",
+        "translation": "Regarding this incident, we need to investigate in detail."
+      },
+      {
+        "sentence": "環境[かんきょう]問題[もんだい]___、多[おお]くの議論[ぎろん]が行[おこな]われた。",
+        "answer": "に関して",
+        "translation": "Concerning environmental issues, much discussion took place."
+      },
+      {
+        "sentence": "新[あたら]しい制度[せいど]___、質問[しつもん]はありますか。",
+        "answer": "に関して",
+        "translation": "Do you have any questions regarding the new system?"
+      },
+      {
+        "sentence": "日本[にほん]の歴史[れきし]___、彼[かれ]はとても詳[くわ]しい。",
+        "answer": "に関して",
+        "translation": "He is very knowledgeable about Japanese history."
+      },
+      {
+        "sentence": "個人[こじん]情報[じょうほう]の取[と]り扱[あつか]い___、説明[せつめい]を受[う]けた。",
+        "answer": "に関して",
+        "translation": "I received an explanation concerning the handling of personal information."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "に関する",
+        "gloss": "'concerning' but is the noun-modifying form, so it cannot end the clause as in these sentences"
+      },
+      {
+        "form": "にかわって",
+        "gloss": "'in place of,' expresses substitution, not topic"
+      },
+      {
+        "form": "にくわえて",
+        "gloss": "'in addition to,' adds an item rather than marking a subject"
+      },
+      {
+        "form": "にくらべて",
+        "gloss": "'compared to,' makes a comparison, not topic marking"
+      },
+      {
+        "form": "にしては",
+        "gloss": "'for / considering,' expresses unexpected contrast, not a topic"
+      },
+      {
+        "form": "にしても",
+        "gloss": "'even if / even so,' concessive, not topic marking"
+      },
+      {
+        "form": "にしたがって",
+        "gloss": "'in accordance with / as,' marks change or rule, not topic"
+      },
+      {
+        "form": "にきまっている",
+        "gloss": "'must surely be,' expresses certainty, not topic"
+      },
+      {
+        "form": "にとって",
+        "gloss": "'for / to,' marks viewpoint, slightly different from naming a topic of discussion"
+      },
+      {
+        "form": "において",
+        "gloss": "'in / at,' marks location or situation, not the subject matter"
+      },
+      {
+        "form": "にかぎって",
+        "gloss": "'only / of all things,' expresses exception or emphasis, not the topic being discussed"
+      },
+      {
+        "form": "によって",
+        "gloss": "'by means of / depending on,' marks an agent or cause, not the subject matter"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:に決まっている",
+    "level": "N3",
+    "title": "～に決まっている",
+    "meaning": "must surely be / I'm sure / it's bound to be",
+    "explanation": "Expresses the speaker's strong conviction or certainty that something is the case, based on reasoning or common sense. It conveys 'there's no doubt' rather than a logical guarantee.",
+    "formation": "Verb/i-adjective (plain) / na-adjective / Noun + に決[き]まっている",
+    "whyRight": "に決まっている attaches to a plain-form predicate or noun to assert the speaker's firm certainty, fitting contexts of confident conclusions.",
+    "examples": [
+      {
+        "sentence": "こんなに勉強[べんきょう]したのだから、合格[ごうかく]する___。",
+        "answer": "に決まっている",
+        "translation": "Since I studied this much, I'm sure to pass."
+      },
+      {
+        "sentence": "あの店[みせ]の料理[りょうり]は、おいしい___。",
+        "answer": "に決まっている",
+        "translation": "The food at that restaurant must surely be delicious.",
+        "context": "あの店[みせ]はいつも行列[ぎょうれつ]ができるほど有名[ゆうめい]だ。",
+        "contextTranslation": "That restaurant is so famous that there's always a line."
+      },
+      {
+        "sentence": "夜[よる]中[なか]に電話[でんわ]するなんて、迷惑[めいわく]___。",
+        "answer": "に決まっている",
+        "translation": "Calling in the middle of the night is bound to be a nuisance.",
+        "context": "常識[じょうしき]で考[かんが]えればすぐわかることだ。",
+        "contextTranslation": "It's something you'd understand right away if you use common sense."
+      },
+      {
+        "sentence": "彼[かれ]が犯人[はんにん]___と、みんなが信[しん]じている。",
+        "answer": "に決まっている",
+        "translation": "Everyone believes that he must be the culprit."
+      },
+      {
+        "sentence": "そんな高[たか]い時計[とけい]、本物[ほんもの]___。",
+        "answer": "に決まっている",
+        "translation": "Such an expensive watch is surely genuine.",
+        "context": "それは有名[ゆうめい]なブランドの店[みせ]で正[ただ]しく買[か]ったものだ。",
+        "contextTranslation": "It was bought properly at a famous brand's store."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "に決めている",
+        "gloss": "'have decided on,' expresses a personal decision, not certainty about a fact"
+      },
+      {
+        "form": "に決まった",
+        "gloss": "'was decided,' a completed decision event, not the speaker's conviction"
+      },
+      {
+        "form": "に決められている",
+        "gloss": "passive 'is decided/determined by someone,' wrong voice and meaning, not the speaker's certainty"
+      },
+      {
+        "form": "かもしれない",
+        "gloss": "'might be,' expresses possibility, the opposite of firm certainty"
+      },
+      {
+        "form": "はずがない",
+        "gloss": "'cannot possibly be,' negates likelihood instead of asserting it"
+      },
+      {
+        "form": "にすぎない",
+        "gloss": "'is nothing more than,' downplays rather than asserts certainty"
+      },
+      {
+        "form": "に決まっていない",
+        "gloss": "negates the pattern to 'is not certain to,' contradicting the intended meaning"
+      },
+      {
+        "form": "が決まっている",
+        "gloss": "uses the wrong particle が; the certainty pattern requires に, so 'おいしいが決まっている' is ungrammatical"
+      },
+      {
+        "form": "に決まろう",
+        "gloss": "volitional 'let's decide,' a misconjugation that cannot follow a plain predicate as in these blanks"
+      },
+      {
+        "form": "に関している",
+        "gloss": "not a real expression; confuses に関して with the target"
+      },
+      {
+        "form": "に決めてある",
+        "gloss": "'has been decided in advance,' a prepared decision, not certainty"
+      },
+      {
+        "form": "と決まっている",
+        "gloss": "'is fixed/established as a rule,' refers to set rules, not the speaker's confident guess"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:に比べて",
+    "level": "N3",
+    "title": "～に比べて",
+    "meaning": "compared to / in comparison with",
+    "explanation": "Used to compare two things, indicating that one stands out relative to a baseline. The noun before に比べて is the standard against which the comparison is made.",
+    "formation": "Noun + に比[くら]べて (or に比べ)",
+    "whyRight": "に比べて follows a noun to set up an explicit comparison, fitting sentences that contrast amounts, qualities, or situations.",
+    "examples": [
+      {
+        "sentence": "去年[きょねん]___、今年[ことし]は雨[あめ]が多[おお]い。",
+        "answer": "に比べて",
+        "translation": "Compared to last year, there is a lot of rain this year."
+      },
+      {
+        "sentence": "都会[とかい]___、田舎[いなか]は物価[ぶっか]が安[やす]い。",
+        "answer": "に比べて",
+        "translation": "Compared to the city, prices are cheaper in the countryside."
+      },
+      {
+        "sentence": "兄[あに]___、弟[おとうと]はおとなしい性格[せいかく]だ。",
+        "answer": "に比べて",
+        "translation": "Compared to his older brother, the younger brother has a quiet personality."
+      },
+      {
+        "sentence": "以前[いぜん]___、この町[まち]はずいぶん発展[はってん]した。",
+        "answer": "に比べて",
+        "translation": "Compared to before, this town has developed considerably."
+      },
+      {
+        "sentence": "電車[でんしゃ]___、バスは時間[じかん]がかかる。",
+        "answer": "に比べて",
+        "translation": "Compared to the train, the bus takes more time."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "にむかって",
+        "gloss": "'toward,' marks a direction, not a standard for comparison"
+      },
+      {
+        "form": "にくわえて",
+        "gloss": "'in addition to,' adds rather than compares"
+      },
+      {
+        "form": "にかわって",
+        "gloss": "'in place of,' substitution, not comparison"
+      },
+      {
+        "form": "にかんして",
+        "gloss": "'regarding,' marks a topic, not a comparison standard"
+      },
+      {
+        "form": "について",
+        "gloss": "'about / concerning,' marks a topic, not a standard for comparison"
+      },
+      {
+        "form": "にしては",
+        "gloss": "'considering / for,' expresses something unexpected, not direct comparison"
+      },
+      {
+        "form": "にしたがって",
+        "gloss": "'as / in accordance with,' marks proportional change, not comparison of two things"
+      },
+      {
+        "form": "にかぎって",
+        "gloss": "'only / of all things,' expresses exception, not a measured comparison"
+      },
+      {
+        "form": "にあたって",
+        "gloss": "'on the occasion of,' marks a special occasion for an action, not a comparison"
+      },
+      {
+        "form": "にきまっている",
+        "gloss": "'must surely be,' expresses certainty, not a comparison of two things"
+      },
+      {
+        "form": "ほど",
+        "gloss": "'as much as,' a degree comparison particle, not the に比べて pattern"
+      },
+      {
+        "form": "にくらべられて",
+        "gloss": "passive 'being compared,' wrong voice for the blank"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:に加えて",
+    "level": "N3",
+    "title": "～に加えて",
+    "meaning": "in addition to / on top of / besides",
+    "explanation": "Indicates that one thing is added to another, often emphasizing accumulation. The first item already exists, and a further item or factor is added to it.",
+    "formation": "Noun + に加[くわ]えて",
+    "whyRight": "に加えて attaches to a noun to add a further element to an existing one, fitting contexts where factors or items accumulate.",
+    "examples": [
+      {
+        "sentence": "強[つよ]い風[かぜ]___、激[はげ]しい雨[あめ]も降[ふ]り始[はじ]めた。",
+        "answer": "に加えて",
+        "translation": "In addition to the strong wind, heavy rain also began to fall."
+      },
+      {
+        "sentence": "彼[かれ]は英語[えいご]___、フランス語[ご]も話[はな]せる。",
+        "answer": "に加えて",
+        "translation": "In addition to English, he can also speak French."
+      },
+      {
+        "sentence": "授業料[じゅぎょうりょう]___、教科書[きょうかしょ]代[だい]もかかる。",
+        "answer": "に加えて",
+        "translation": "On top of tuition, textbook fees are also incurred."
+      },
+      {
+        "sentence": "彼女[かのじょ]は才能[さいのう]___、努力[どりょく]も惜[お]しまない。",
+        "answer": "に加えて",
+        "translation": "In addition to talent, she does not spare effort either."
+      },
+      {
+        "sentence": "交通[こうつう]の便[べん]___、家賃[やちん]も安[やす]いので人気[にんき]だ。",
+        "answer": "に加えて",
+        "translation": "In addition to the good transport access, the rent is cheap, so it's popular."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "について",
+        "gloss": "'about / concerning,' marks a topic, not a further item added on"
+      },
+      {
+        "form": "にくらべて",
+        "gloss": "'compared to,' makes a comparison rather than adding"
+      },
+      {
+        "form": "にかわって",
+        "gloss": "'in place of,' replaces rather than adds"
+      },
+      {
+        "form": "にかんして",
+        "gloss": "'regarding,' marks a topic, not addition"
+      },
+      {
+        "form": "にしたがって",
+        "gloss": "'as / in accordance with,' marks change or rule, not addition"
+      },
+      {
+        "form": "にしては",
+        "gloss": "'considering,' unexpected contrast, not addition"
+      },
+      {
+        "form": "にしても",
+        "gloss": "'even if,' concessive, not addition"
+      },
+      {
+        "form": "に加えられて",
+        "gloss": "passive 'being added,' wrong voice for the blank"
+      },
+      {
+        "form": "をくわえて",
+        "gloss": "'adding ~ (to something)' uses を for the object added, but here the existing item takes に, so this particle is wrong"
+      },
+      {
+        "form": "にとって",
+        "gloss": "'for / from the standpoint of,' marks a viewpoint, not a further item added on"
+      },
+      {
+        "form": "にさいして",
+        "gloss": "'on the occasion of,' marks a special occasion for an action, not the cumulative 'in addition to'"
+      },
+      {
+        "form": "に加えると",
+        "gloss": "'if you add,' conditional ending, not the て-form requested"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:にしたがって",
+    "level": "N3",
+    "title": "～にしたがって",
+    "meaning": "as / in accordance with / following",
+    "explanation": "Has two main uses: (1) to express that as one thing changes, another changes proportionally ('as ~'), and (2) to mean 'in accordance with / following' a rule, instruction, or guide.",
+    "formation": "Verb (dictionary form) / Noun + にしたがって (に従って)",
+    "whyRight": "にしたがって links a change or a rule to a corresponding action or change, fitting contexts of proportional change or compliance.",
+    "examples": [
+      {
+        "sentence": "年[とし]を取[と]る___、記憶力[きおくりょく]が落[お]ちてきた。",
+        "answer": "にしたがって",
+        "translation": "As I grow older, my memory has declined."
+      },
+      {
+        "sentence": "山[やま]を登[のぼ]る___、空気[くうき]が薄[うす]くなる。",
+        "answer": "にしたがって",
+        "translation": "As you climb the mountain, the air becomes thinner."
+      },
+      {
+        "sentence": "係員[かかりいん]の指示[しじ]___、避難[ひなん]してください。",
+        "answer": "にしたがって",
+        "translation": "Please evacuate in accordance with the staff's instructions."
+      },
+      {
+        "sentence": "経済[けいざい]が発展[はってん]する___、生活[せいかつ]が豊[ゆた]かになった。",
+        "answer": "にしたがって",
+        "translation": "As the economy develops, life has become more affluent."
+      },
+      {
+        "sentence": "規則[きそく]___、書類[しょるい]を提出[ていしゅつ]した。",
+        "answer": "にしたがって",
+        "translation": "I submitted the documents in accordance with the rules."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "にさいして",
+        "gloss": "'on the occasion of,' marks a one-time event for an action, not proportional change or rule-following"
+      },
+      {
+        "form": "にわたって",
+        "gloss": "'over / throughout (a span),' marks extent of time or space and needs a noun span, so it cannot join a dictionary-form verb of change or a rule"
+      },
+      {
+        "form": "をめぐって",
+        "gloss": "'concerning / over (a dispute),' marks a topic of contention, not proportional change or compliance"
+      },
+      {
+        "form": "にかんして",
+        "gloss": "'regarding,' marks a topic, not change or compliance"
+      },
+      {
+        "form": "にくわえて",
+        "gloss": "'in addition to,' adds an item, not proportional change"
+      },
+      {
+        "form": "にくらべて",
+        "gloss": "'compared to,' a comparison, not change or rule following"
+      },
+      {
+        "form": "にしては",
+        "gloss": "'considering,' unexpected contrast, not compliance or change"
+      },
+      {
+        "form": "にしても",
+        "gloss": "'even if,' concessive, not change or rule"
+      },
+      {
+        "form": "にしたがわず",
+        "gloss": "'without following,' negative, contradicting the intended compliance"
+      },
+      {
+        "form": "にしたがおう",
+        "gloss": "volitional 'let's follow,' wrong form for the blank"
+      },
+      {
+        "form": "にしたがったら",
+        "gloss": "'if you follow,' conditional ending, not the て-form requested"
+      },
+      {
+        "form": "をしたがって",
+        "gloss": "uses the wrong particle を; the object of compliance takes に, so this is ungrammatical"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:にしては",
+    "level": "N3",
+    "title": "～にしては",
+    "meaning": "for / considering / despite being",
+    "explanation": "Expresses that something is unexpected or surprising given the standard implied by the preceding noun or clause. The result differs from what one would normally expect.",
+    "formation": "Verb/Noun (plain) + にしては",
+    "whyRight": "にしては sets a standard and then states a result that deviates from expectation, fitting sentences where the outcome is surprising relative to that standard.",
+    "examples": [
+      {
+        "sentence": "彼[かれ]は初心者[しょしんしゃ]___、なかなか上手[じょうず]だ。",
+        "answer": "にしては",
+        "translation": "For a beginner, he is quite skilled."
+      },
+      {
+        "sentence": "今日[きょう]は冬[ふゆ]___、暖[あたた]かい。",
+        "answer": "にしては",
+        "translation": "For winter, it's warm today."
+      },
+      {
+        "sentence": "値段[ねだん]が安[やす]い___、品質[ひんしつ]がいい。",
+        "answer": "にしては",
+        "translation": "Considering the price is cheap, the quality is good.",
+        "context": "この製品[せいひん]は他[ほか]の商品[しょうひん]よりずっと値段[ねだん]が安[やす]い。",
+        "contextTranslation": "This product is much cheaper than other items."
+      },
+      {
+        "sentence": "子供[こども]が描[か]いた絵[え]___、とてもよくできている。",
+        "answer": "にしては",
+        "translation": "For a picture drawn by a child, it's very well done."
+      },
+      {
+        "sentence": "彼女[かのじょ]は日本[にほん]に来[き]たばかり___、日本語[にほんご]が上手[じょうず]だ。",
+        "answer": "にしては",
+        "translation": "Considering she just arrived in Japan, her Japanese is good."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "について",
+        "gloss": "'about / concerning,' marks a topic, not an unexpected result against a standard"
+      },
+      {
+        "form": "にしても",
+        "gloss": "'even if / even so,' concessive over a possibility, different from contrasting an actual standard"
+      },
+      {
+        "form": "にしたら",
+        "gloss": "'from the standpoint of,' marks a viewpoint, not an unexpected outcome"
+      },
+      {
+        "form": "のもとで",
+        "gloss": "'under (the guidance/condition of),' marks the circumstances an action occurs in, not an unexpected result against a standard"
+      },
+      {
+        "form": "にくらべて",
+        "gloss": "'compared to,' a direct comparison, not surprise against a standard"
+      },
+      {
+        "form": "にかんして",
+        "gloss": "'regarding,' marks a topic, not unexpectedness"
+      },
+      {
+        "form": "にくわえて",
+        "gloss": "'in addition to,' adds an item, not contrast"
+      },
+      {
+        "form": "にかわって",
+        "gloss": "'in place of,' substitution, not contrast"
+      },
+      {
+        "form": "にしたがって",
+        "gloss": "'as / following,' proportional change or compliance, not surprise"
+      },
+      {
+        "form": "にきまっている",
+        "gloss": "'must surely be,' certainty, not unexpected contrast"
+      },
+      {
+        "form": "にしてみれば",
+        "gloss": "'from ~'s perspective,' a viewpoint expression, not contrast against a standard"
+      },
+      {
+        "form": "にあたって",
+        "gloss": "'on the occasion of,' marks a special occasion for an action, not an unexpected result against a standard"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:にしても",
+    "level": "N3",
+    "title": "～にしても",
+    "meaning": "even if / even though / even so",
+    "explanation": "Used to concede a point or assumption while stating that the conclusion still holds. It can also mean 'whether ~ or ~' when paired, and conveys 'even granting that ~.'",
+    "formation": "Verb/i-adjective (plain) / Noun / na-adjective + にしても",
+    "whyRight": "にしても concedes a hypothetical or actual situation and then presents a contrasting or limiting statement, fitting concessive contexts.",
+    "examples": [
+      {
+        "sentence": "いくら忙[いそが]しい___、連絡[れんらく]くらいはするべきだ。",
+        "answer": "にしても",
+        "translation": "Even if you're busy, you should at least make contact."
+      },
+      {
+        "sentence": "冗談[じょうだん]___、言[い]っていいことと悪[わる]いことがある。",
+        "answer": "にしても",
+        "translation": "Even as a joke, there are things you should and shouldn't say.",
+        "context": "人[ひと]を深[ふか]く傷[きず]つけるようなことを笑[わら]いながら言[い]う人[ひと]がいる。",
+        "contextTranslation": "There are people who say deeply hurtful things while laughing."
+      },
+      {
+        "sentence": "新[あたら]しい仕事[しごと]___、もう少[すこ]し考[かんが]えたほうがいい。",
+        "answer": "にしても",
+        "translation": "Even if you take the new job, you'd better think it over a little more.",
+        "context": "その仕事[しごと]は今[いま]の仕事[しごと]より給料[きゅうりょう]が高[たか]いらしい。でも、すぐに決[き]めてはいけない。",
+        "contextTranslation": "That job apparently pays a higher salary than your current one. But you shouldn't decide right away."
+      },
+      {
+        "sentence": "高[たか]い___、これは買[か]う価値[かち]がある。",
+        "answer": "にしても",
+        "translation": "Even if it's expensive, this is worth buying."
+      },
+      {
+        "sentence": "知[し]らなかった___、責任[せきにん]がないわけではない。",
+        "answer": "にしても",
+        "translation": "Even if you didn't know, it doesn't mean you have no responsibility."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "にしては",
+        "gloss": "'considering / for,' contrasts an actual standard, not a conceded hypothetical"
+      },
+      {
+        "form": "にとって",
+        "gloss": "'for / from the standpoint of,' marks a viewpoint and attaches to nouns, ungrammatical after the い-adjectives here and not concessive"
+      },
+      {
+        "form": "について",
+        "gloss": "'about / concerning,' marks a topic, not a conceded point"
+      },
+      {
+        "form": "によって",
+        "gloss": "'by means of / depending on,' marks an agent or cause, not concession"
+      },
+      {
+        "form": "にあたって",
+        "gloss": "'on the occasion of,' marks a one-time event for an action, not concession"
+      },
+      {
+        "form": "にしたがって",
+        "gloss": "'as / following,' proportional change or compliance, not concession"
+      },
+      {
+        "form": "にくらべて",
+        "gloss": "'compared to,' a comparison, not concession"
+      },
+      {
+        "form": "にくわえて",
+        "gloss": "'in addition to,' adds an item, not concession"
+      },
+      {
+        "form": "にかんして",
+        "gloss": "'regarding,' marks a topic, not concession"
+      },
+      {
+        "form": "にきまっている",
+        "gloss": "'must surely be,' certainty, not concession"
+      },
+      {
+        "form": "にかわって",
+        "gloss": "'in place of,' substitution, not concession"
+      },
+      {
+        "form": "にしても、にしても",
+        "gloss": "an awkward doubled fragment, not a single valid token for the blank"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:にしろ",
+    "level": "N3",
+    "title": "～にしろ",
+    "meaning": "even if / whether ... or / no matter",
+    "explanation": "Used to indicate that regardless of the case or option, the same conclusion applies. Often appears in pairs (Aにしろ Bにしろ) to mean 'whether A or B'.",
+    "formation": "Noun / Verb (plain) / な-adjective (である) / い-adjective + にしろ",
+    "whyRight": "にしろ attaches to the plain form and expresses 'even if / no matter' while granting the supposed point; here it concedes the situation before stating the speaker's view.",
+    "examples": [
+      {
+        "sentence": "理由[りゆう]がある___、嘘[うそ]をつくのはよくない。",
+        "answer": "にしろ",
+        "translation": "Even if there is a reason, lying is not good."
+      },
+      {
+        "sentence": "行[い]く___行[い]かない___、早[はや]めに連絡[れんらく]してください。",
+        "answer": "にしろ",
+        "translation": "Whether you go or not, please contact me early."
+      },
+      {
+        "sentence": "冗談[じょうだん]だった___、その言[い]い方[かた]はひどい。",
+        "answer": "にしろ",
+        "translation": "Even if it was a joke, that way of saying it is terrible."
+      },
+      {
+        "sentence": "学生[がくせい]___社会人[しゃかいじん]___、時間[じかん]は守[まも]るべきだ。",
+        "answer": "にしろ",
+        "translation": "Whether a student or a working adult, one should keep to schedules."
+      },
+      {
+        "sentence": "どんなに忙[いそが]しい___、食事[しょくじ]はきちんととった方[ほう]がいい。",
+        "answer": "にしろ",
+        "translation": "No matter how busy you are, you should eat properly."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "にして",
+        "gloss": "'at/for (a time/stage)'; does not express concession 'even if'."
+      },
+      {
+        "form": "にしては",
+        "gloss": "'considering / for (a standard)'; expresses contrast with expectation, not 'even if'."
+      },
+      {
+        "form": "にあたって",
+        "gloss": "'on the occasion of / when doing'; marks a special juncture, not concession 'even if'."
+      },
+      {
+        "form": "にすると",
+        "gloss": "'if you make it into'; conditional of する, not concession."
+      },
+      {
+        "form": "にしろう",
+        "gloss": "ungrammatical volitional-looking blend; not a real conjugation here."
+      },
+      {
+        "form": "にしない",
+        "gloss": "negative of にする 'not decide on'; wrong meaning."
+      },
+      {
+        "form": "としろ",
+        "gloss": "imperative-like blend; not standard concessive grammar."
+      },
+      {
+        "form": "にあろ",
+        "gloss": "not a word; invalid form."
+      },
+      {
+        "form": "ですら",
+        "gloss": "'even'; emphasizes an extreme example, not 'even if (concession)'."
+      },
+      {
+        "form": "からには",
+        "gloss": "'now that / since'; states a basis, not concession."
+      },
+      {
+        "form": "につけ",
+        "gloss": "'every time / whether'; pairs differently and means 'whenever'."
+      },
+      {
+        "form": "にしたら",
+        "gloss": "'from the standpoint of / if'; viewpoint-conditional, not 'even if' concession."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:にせよ",
+    "level": "N3",
+    "title": "～にせよ",
+    "meaning": "even if / whether ... or / no matter",
+    "explanation": "A slightly more formal/written equivalent of にしろ. Concedes a point regardless of which case is true, often in paired form Aにせよ Bにせよ.",
+    "formation": "Noun / Verb (plain) / な-adjective (である) / い-adjective + にせよ",
+    "whyRight": "にせよ is the formal concessive form meaning 'even if / whether'; it fits when granting a hypothetical before drawing a conclusion in writing or formal speech.",
+    "examples": [
+      {
+        "sentence": "失敗[しっぱい]した___、挑戦[ちょうせん]したこと自体[じたい]は立派[りっぱ]だ。",
+        "answer": "にせよ",
+        "translation": "Even if you failed, the very act of trying is admirable."
+      },
+      {
+        "sentence": "賛成[さんせい]する___反対[はんたい]する___、意見[いけん]を述[の]べてほしい。",
+        "answer": "にせよ",
+        "translation": "Whether you agree or oppose, I want you to state your opinion."
+      },
+      {
+        "sentence": "理由[りゆう]がどうである___、無断[むだん]欠勤[けっきん]は許[ゆる]されない。",
+        "answer": "にせよ",
+        "translation": "Whatever the reason may be, an unexcused absence is not permitted."
+      },
+      {
+        "sentence": "高[たか]い___安[やす]い___、品質[ひんしつ]をよく確[たし]かめるべきだ。",
+        "answer": "にせよ",
+        "translation": "Whether expensive or cheap, you should check the quality well."
+      },
+      {
+        "sentence": "いずれ帰国[きこく]する___、今[いま]は勉強[べんきょう]に集中[しゅうちゅう]したい。",
+        "answer": "にせよ",
+        "translation": "Even though I will return home eventually, for now I want to focus on studying."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "にあたって",
+        "gloss": "'on the occasion of / when doing'; marks a special juncture, not concession 'even if'."
+      },
+      {
+        "form": "にして",
+        "gloss": "'at/for (a time)'; not concessive."
+      },
+      {
+        "form": "にしては",
+        "gloss": "'considering / for'; expresses contrast with a standard, not 'even if'."
+      },
+      {
+        "form": "にすれば",
+        "gloss": "'from the standpoint of / if one does'; not concession."
+      },
+      {
+        "form": "にせる",
+        "gloss": "not a valid form; nonsensical here."
+      },
+      {
+        "form": "にせない",
+        "gloss": "ungrammatical negative; not a real expression."
+      },
+      {
+        "form": "とせよ",
+        "gloss": "'let it be that'; assumption-setting, not 'even if' concession."
+      },
+      {
+        "form": "ばかりに",
+        "gloss": "'simply because (with a bad result)'; states a regrettable cause, not concession 'even if'."
+      },
+      {
+        "form": "にしよう",
+        "gloss": "volitional 'let's decide on'; wrong meaning and form."
+      },
+      {
+        "form": "ですら",
+        "gloss": "'even'; emphasis particle, not concessive 'even if'."
+      },
+      {
+        "form": "からといって",
+        "gloss": "'just because'; introduces an unwarranted reason, not concession."
+      },
+      {
+        "form": "にあって",
+        "gloss": "'in (a situation/era)'; locative-temporal, not concession."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:に対して",
+    "level": "N3",
+    "title": "～に対して",
+    "meaning": "toward / regarding / in contrast to",
+    "explanation": "Indicates the target or object of an action or attitude ('toward / to'), or sets up a contrast between two things ('whereas / in contrast to').",
+    "formation": "Noun + に対して",
+    "whyRight": "に対して marks the noun as the target/direction of the action or attitude; it is correct when the verb is directed at that person or thing.",
+    "examples": [
+      {
+        "sentence": "先生[せんせい]___失礼[しつれい]な態度[たいど]をとってはいけない。",
+        "answer": "に対して",
+        "translation": "You must not take a rude attitude toward the teacher."
+      },
+      {
+        "context": "うちの兄弟[きょうだい]は性格[せいかく]が正反対[せいはんたい]だ。",
+        "contextTranslation": "My brothers have completely opposite personalities.",
+        "sentence": "兄[あに]は静[しず]かなの___、弟[おとうと]はとてもにぎやかだ。",
+        "answer": "に対して",
+        "translation": "Whereas my older brother is quiet, my younger brother is very lively."
+      },
+      {
+        "context": "店員[てんいん]は接客[せっきゃく]の基本[きほん]を守[まも]っている。",
+        "contextTranslation": "The clerk follows the basics of customer service.",
+        "sentence": "お客様[きゃくさま]___丁寧[ていねい]な言葉[ことば]で話[はな]す。",
+        "answer": "に対して",
+        "translation": "I speak in polite words toward customers."
+      },
+      {
+        "context": "会議[かいぎ]で社員[しゃいん]から質問[しつもん]が出[で]た。",
+        "contextTranslation": "A question came up from an employee at the meeting.",
+        "sentence": "この質問[しつもん]___明確[めいかく]な答[こた]えを出[だ]してください。",
+        "answer": "に対して",
+        "translation": "Please give a clear answer to this question."
+      },
+      {
+        "context": "都会[とかい]と田舎[いなか]では人[ひと]の流[なが]れが逆[ぎゃく]だ。",
+        "contextTranslation": "The flow of people is the opposite in the city and the countryside.",
+        "sentence": "都会[とかい]の人口[じんこう]が増[ふ]えるの___、田舎[いなか]は減[へ]り続[つづ]けている。",
+        "answer": "に対して",
+        "translation": "In contrast to the rising urban population, the countryside keeps declining."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "について",
+        "gloss": "'about (a topic)'; marks subject matter, not the target of an action/attitude."
+      },
+      {
+        "form": "にとって",
+        "gloss": "'for / from the viewpoint of'; expresses evaluation standpoint, not direction toward."
+      },
+      {
+        "form": "に関して",
+        "gloss": "'regarding (a topic)'; topic marker, not a directed-action target."
+      },
+      {
+        "form": "にかけて",
+        "gloss": "'over a range / toward (time/place)'; not an action target."
+      },
+      {
+        "form": "に向[む]けて",
+        "gloss": "'aimed at (a goal/event)'; goal-directed, not attitude toward a person."
+      },
+      {
+        "form": "に対する",
+        "gloss": "noun-modifying form 'toward'; used before a noun, not before a verb as here."
+      },
+      {
+        "form": "によって",
+        "gloss": "'by / depending on'; agent/cause marker, wrong meaning."
+      },
+      {
+        "form": "に従[したが]って",
+        "gloss": "'in accordance with / as'; not directed action toward."
+      },
+      {
+        "form": "にして",
+        "gloss": "'at/for (a stage)'; not the target of an attitude."
+      },
+      {
+        "form": "に比[くら]べて",
+        "gloss": "'compared to'; comparison of degree only, lacks the opposed-contrast/directed-attitude sense."
+      },
+      {
+        "form": "にあたって",
+        "gloss": "'on the occasion of'; marks a special juncture, not the target/direction of an attitude."
+      },
+      {
+        "form": "について対して",
+        "gloss": "ungrammatical blend of two phrases; invalid."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:に違いない",
+    "level": "N3",
+    "title": "～に違いない",
+    "meaning": "must be / there is no doubt that",
+    "explanation": "Expresses the speaker's strong conviction or near-certain conjecture based on evidence: 'it must be the case that'.",
+    "formation": "Noun / な-adjective + に違いない; Verb (plain) / い-adjective + に違いない",
+    "whyRight": "に違いない conveys a confident inference ('must be'); it fits when the speaker draws a strong conclusion from circumstances rather than stating a plain fact.",
+    "examples": [
+      {
+        "context": "彼[かれ]は毎晩[まいばん]十時[じゅうじ]には必[かなら]ず寝[ね]る。",
+        "contextTranslation": "He always goes to bed at ten every night.",
+        "sentence": "電気[でんき]が消[き]えているから、彼[かれ]はもう寝[ね]た___。",
+        "answer": "に違いない",
+        "translation": "The lights are off, so he must have already gone to sleep."
+      },
+      {
+        "context": "みんながあの人[ひと]にサインを求[もと]めている。",
+        "contextTranslation": "Everyone is asking that person for an autograph.",
+        "sentence": "あの人[ひと]は有名[ゆうめい]な俳優[はいゆう]___。",
+        "answer": "に違いない",
+        "translation": "That person must be a famous actor."
+      },
+      {
+        "context": "この店[みせ]は昼[ひる]も夜[よる]もいつも満席[まんせき]だ。",
+        "contextTranslation": "This restaurant is always full, day and night.",
+        "sentence": "こんなに行列[ぎょうれつ]ができているなら、おいしい___。",
+        "answer": "に違いない",
+        "translation": "If there's such a long line, it must be delicious."
+      },
+      {
+        "context": "彼女[かのじょ]はずっとこの試験[しけん]のために頑張[がんば]ってきた。",
+        "contextTranslation": "She has been working hard for this exam all along.",
+        "sentence": "彼女[かのじょ]は試験[しけん]に合格[ごうかく]して、うれしい___。",
+        "answer": "に違いない",
+        "translation": "She passed the exam, so she must be happy."
+      },
+      {
+        "context": "この独特[どくとく]な字[じ]は田中[たなか]さんしか書[か]けない。",
+        "contextTranslation": "Only Tanaka can write these distinctive characters.",
+        "sentence": "この字[じ]を書[か]いたのは田中[たなか]さん___。",
+        "answer": "に違いない",
+        "translation": "The one who wrote these characters must be Tanaka."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "に違いある",
+        "gloss": "ungrammatical; the expression is fixed as に違いない (negative form)."
+      },
+      {
+        "form": "かもしれない",
+        "gloss": "'might be'; expresses weak possibility, far less certain than 'must be'."
+      },
+      {
+        "form": "はずがない",
+        "gloss": "'cannot possibly be'; opposite certainty (denial), wrong here."
+      },
+      {
+        "form": "に決[き]める",
+        "gloss": "'decide on'; an action of deciding, not an inference."
+      },
+      {
+        "form": "に違いなかった",
+        "gloss": "past 'must have been'; tense does not fit these present-conviction sentences."
+      },
+      {
+        "form": "そうだ",
+        "gloss": "'I heard / it seems'; hearsay or appearance, not firm conviction."
+      },
+      {
+        "form": "らしい",
+        "gloss": "'seems / apparently'; weaker evidential, not strong certainty."
+      },
+      {
+        "form": "わけがない",
+        "gloss": "'there's no way'; strong denial, opposite of the intended meaning."
+      },
+      {
+        "form": "に過[す]ぎない",
+        "gloss": "'is nothing more than'; limiting phrase, unrelated meaning."
+      },
+      {
+        "form": "ということだ",
+        "gloss": "'it means / I hear'; explanation or hearsay, not conviction."
+      },
+      {
+        "form": "べきだ",
+        "gloss": "'should'; obligation, not inference."
+      },
+      {
+        "form": "に違くない",
+        "gloss": "incorrect colloquial conjugation; not standard grammar."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:について",
+    "level": "N3",
+    "title": "～について",
+    "meaning": "about / concerning / regarding",
+    "explanation": "Marks the topic or subject matter that an action (speaking, writing, thinking, researching) is directed at.",
+    "formation": "Noun + について",
+    "whyRight": "について marks the noun as the topic of discussion or investigation; it fits when the following verb (talk, write, research, think) concerns that subject.",
+    "examples": [
+      {
+        "sentence": "日本[にほん]の文化[ぶんか]___レポートを書[か]きました。",
+        "answer": "について",
+        "translation": "I wrote a report about Japanese culture."
+      },
+      {
+        "sentence": "この問題[もんだい]___みんなで話[はな]し合[あ]いましょう。",
+        "answer": "について",
+        "translation": "Let's discuss this problem together."
+      },
+      {
+        "sentence": "環境[かんきょう]問題[もんだい]___詳[くわ]しく調[しら]べている。",
+        "answer": "について",
+        "translation": "I am researching environmental issues in detail."
+      },
+      {
+        "sentence": "新[あたら]しい計画[けいかく]___説明[せつめい]を聞[き]いた。",
+        "answer": "について",
+        "translation": "I heard an explanation about the new plan."
+      },
+      {
+        "sentence": "彼[かれ]の意見[いけん]___私[わたし]は何[なに]も知[し]らない。",
+        "answer": "について",
+        "translation": "I don't know anything about his opinion."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "につき",
+        "gloss": "'per / due to'; formal 'per unit' or 'because of', not 'about a topic'."
+      },
+      {
+        "form": "に対して",
+        "gloss": "'toward / against'; target of an attitude or contrast, not topic of discussion."
+      },
+      {
+        "form": "にとって",
+        "gloss": "'for / from the standpoint of'; evaluation viewpoint, not subject matter."
+      },
+      {
+        "form": "によって",
+        "gloss": "'by / depending on'; agent or cause, wrong meaning."
+      },
+      {
+        "form": "につれて",
+        "gloss": "'as ... changes'; proportional change, not a topic marker."
+      },
+      {
+        "form": "についての",
+        "gloss": "noun-modifying form; used before a noun, not before a verb as here."
+      },
+      {
+        "form": "について話",
+        "gloss": "incomplete fragment, not a valid connective token."
+      },
+      {
+        "form": "に関[かん]する",
+        "gloss": "noun-modifying 'concerning'; must precede a noun, not a verb here."
+      },
+      {
+        "form": "をめぐって",
+        "gloss": "'concerning (a disputed matter)'; implies controversy, narrower than plain 'about'."
+      },
+      {
+        "form": "において",
+        "gloss": "'in / at (a place/situation)'; locative, not topic of discussion."
+      },
+      {
+        "form": "にかけて",
+        "gloss": "'over a range'; spatial/temporal span, not subject matter."
+      },
+      {
+        "form": "にあたって",
+        "gloss": "'on the occasion of'; marks a special juncture, not the topic of discussion."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:につき",
+    "level": "N3",
+    "title": "～につき",
+    "meaning": "per / due to (formal)",
+    "explanation": "A formal expression with two uses: 'per' (a unit/amount), and 'because of / due to' (stating a reason, common on signs and notices).",
+    "formation": "Noun + につき",
+    "whyRight": "につき either distributes a quantity 'per (unit)' or gives a formal reason 'due to'; it fits where a rate per item or a notice-style reason is expressed.",
+    "examples": [
+      {
+        "sentence": "一人[ひとり]___二[ふた]つまでお取[と]りください。",
+        "answer": "につき",
+        "translation": "Please take up to two per person."
+      },
+      {
+        "sentence": "本日[ほんじつ]は祝日[しゅくじつ]___、休業[きゅうぎょう]いたします。",
+        "answer": "につき",
+        "translation": "Due to today being a holiday, we are closed."
+      },
+      {
+        "sentence": "工事中[こうじちゅう]___、通行[つうこう]できません。",
+        "answer": "につき",
+        "translation": "Due to construction, you cannot pass."
+      },
+      {
+        "sentence": "この商品[しょうひん]は一個[いっこ]百円[ひゃくえん]___販売[はんばい]しています。",
+        "answer": "につき",
+        "translation": "This product is sold at 100 yen per item."
+      },
+      {
+        "sentence": "雨天[うてん]___、試合[しあい]は中止[ちゅうし]となりました。",
+        "answer": "につき",
+        "translation": "Due to rain, the match has been canceled."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "について",
+        "gloss": "'about (a topic)'; subject-matter marker, not 'per' or 'due to'."
+      },
+      {
+        "form": "によって",
+        "gloss": "'by / depending on'; agent or variation, not formal 'per/due to'."
+      },
+      {
+        "form": "ごとに",
+        "gloss": "'every / each'; distributes over each unit but not the formal 'per' of につき, and cannot mean 'due to'."
+      },
+      {
+        "form": "として",
+        "gloss": "'as (a role/capacity)'; identifies a role, cannot mean 'per' or 'due to'."
+      },
+      {
+        "form": "に対して",
+        "gloss": "'toward / against'; directed attitude or contrast, not 'per/due to'."
+      },
+      {
+        "form": "につけ",
+        "gloss": "'whenever / every time'; recurring-occasion phrase, wrong meaning."
+      },
+      {
+        "form": "につれて",
+        "gloss": "'as ... changes'; proportional change, not 'per/due to'."
+      },
+      {
+        "form": "にして",
+        "gloss": "'at/for (a stage)'; emphatic time/condition marker, cannot mean 'per' or 'due to'."
+      },
+      {
+        "form": "にて",
+        "gloss": "'at / by means of (formal)'; place/means marker, not 'per/due to'."
+      },
+      {
+        "form": "くらい",
+        "gloss": "'about / approximately'; rough estimate of degree, cannot mean 'per' or 'due to'."
+      },
+      {
+        "form": "に応[おう]じて",
+        "gloss": "'depending on / in response to'; varies with a condition, cannot mean 'per (unit)' or notice-style 'due to'."
+      },
+      {
+        "form": "とともに",
+        "gloss": "'together with / as'; accompaniment or change, not 'per/due to'."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:につれて",
+    "level": "N3",
+    "title": "～につれて",
+    "meaning": "as ... (changes), accordingly",
+    "explanation": "Indicates that as one thing changes, another thing changes along with it proportionally. Both clauses describe gradual, parallel change.",
+    "formation": "Verb (dictionary form) / Noun + につれて",
+    "whyRight": "につれて links two changing situations so that the second follows along with the first; it fits when both sides express gradual, proportional change.",
+    "examples": [
+      {
+        "context": "年齢[ねんれい]が上[あ]がるほど筋肉[きんにく]は弱[よわ]くなる。",
+        "contextTranslation": "The older you get, the weaker your muscles become.",
+        "sentence": "年[とし]を取[と]る___、体力[たいりょく]が落[お]ちてくる。",
+        "answer": "につれて",
+        "translation": "As one gets older, one's physical strength declines."
+      },
+      {
+        "context": "高[たか]い所[ところ]に行[い]くほど酸素[さんそ]は少[すく]なくなる。",
+        "contextTranslation": "The higher you go, the less oxygen there is.",
+        "sentence": "山[やま]を登[のぼ]る___、空気[くうき]が薄[うす]くなった。",
+        "answer": "につれて",
+        "translation": "As we climbed the mountain, the air grew thinner."
+      },
+      {
+        "context": "傷[きず]は時間[じかん]とともに少[すこ]しずつ回復[かいふく]していく。",
+        "contextTranslation": "A wound gradually heals over time.",
+        "sentence": "時間[じかん]がたつ___、傷[きず]の痛[いた]みは和[やわ]らいだ。",
+        "answer": "につれて",
+        "translation": "As time passed, the pain of the wound eased."
+      },
+      {
+        "context": "この都市[とし]は経済[けいざい]も人口[じんこう]も同[おな]じように伸[の]びてきた。",
+        "contextTranslation": "This city's economy and population have both grown in the same way.",
+        "sentence": "都市[とし]の発展[はってん]___、人口[じんこう]も増[ふ]えた。",
+        "answer": "につれて",
+        "translation": "As the city developed, its population also increased."
+      },
+      {
+        "context": "仕事[しごと]は慣[な]れれば慣[な]れるほど面白[おもしろ]くなる。",
+        "contextTranslation": "The more you get used to the work, the more interesting it becomes.",
+        "sentence": "経験[けいけん]を積[つ]む___、仕事[しごと]が楽[たの]しくなってきた。",
+        "answer": "につれて",
+        "translation": "As I gained experience, the work became more enjoyable."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "について",
+        "gloss": "'about (a topic)'; subject marker, not proportional change."
+      },
+      {
+        "form": "につき",
+        "gloss": "'per / due to'; rate or reason, not parallel change."
+      },
+      {
+        "form": "にとって",
+        "gloss": "'for / from the standpoint of'; viewpoint, not change-with."
+      },
+      {
+        "form": "にしては",
+        "gloss": "'considering / for (a standard)'; contrast with expectation, not gradual proportional change."
+      },
+      {
+        "form": "からといって",
+        "gloss": "'just because'; introduces an unwarranted reason, not parallel change."
+      },
+      {
+        "form": "において",
+        "gloss": "'in / at (a place/situation)'; locative, not one change driving another."
+      },
+      {
+        "form": "につけて",
+        "gloss": "'whenever (emotion)'; recurring trigger, not gradual proportional change."
+      },
+      {
+        "form": "によって",
+        "gloss": "'by / depending on'; cause or variation, not the parallel proportional co-change framed here."
+      },
+      {
+        "form": "に対して",
+        "gloss": "'toward / in contrast'; not proportional change."
+      },
+      {
+        "form": "ながら",
+        "gloss": "'while (simultaneous)'; concurrent action, not one change driving another."
+      },
+      {
+        "form": "うちに",
+        "gloss": "'while / before'; a bounded time window in which something happens, not the proportional 'the more ... the more' co-change framed here."
+      },
+      {
+        "form": "につれた",
+        "gloss": "incorrect past-tense form; the connective stays につれて here."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:にとって",
+    "level": "N3",
+    "title": "～にとって",
+    "meaning": "for / to / from the standpoint of",
+    "explanation": "Presents the person or group from whose viewpoint or position something is evaluated or judged: 'for X / to X'.",
+    "formation": "Noun + にとって",
+    "whyRight": "にとって sets the standpoint from which an evaluation is made; it fits when the predicate is a judgment (important, difficult, valuable) seen from that person's perspective.",
+    "examples": [
+      {
+        "sentence": "私[わたし]___家族[かぞく]が一番[いちばん]大切[たいせつ]だ。",
+        "answer": "にとって",
+        "translation": "For me, family is the most important."
+      },
+      {
+        "sentence": "子供[こども]___遊[あそ]びは大事[だいじ]な学[まな]びだ。",
+        "answer": "にとって",
+        "translation": "For children, play is important learning."
+      },
+      {
+        "sentence": "外国人[がいこくじん]___日本語[にほんご]の漢字[かんじ]は難[むずか]しい。",
+        "answer": "にとって",
+        "translation": "For foreigners, Japanese kanji are difficult."
+      },
+      {
+        "sentence": "会社[かいしゃ]___優秀[ゆうしゅう]な人材[じんざい]は宝[たから]だ。",
+        "answer": "にとって",
+        "translation": "For a company, excellent talent is a treasure."
+      },
+      {
+        "sentence": "彼[かれ]___その知[し]らせは大[おお]きな衝撃[しょうげき]だった。",
+        "answer": "にとって",
+        "translation": "For him, that news was a big shock."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "について",
+        "gloss": "'about (a topic)'; subject matter, not a viewpoint of evaluation."
+      },
+      {
+        "form": "に対して",
+        "gloss": "'toward / against'; target of an attitude, not the evaluating standpoint."
+      },
+      {
+        "form": "によって",
+        "gloss": "'by / depending on'; agent or variation, not viewpoint."
+      },
+      {
+        "form": "にとっての",
+        "gloss": "noun-modifying form 'for'; used before a noun, not before an adjective predicate as here."
+      },
+      {
+        "form": "として",
+        "gloss": "'as (a role)'; identifies a capacity, not the standpoint of evaluation."
+      },
+      {
+        "form": "につき",
+        "gloss": "'per / due to'; rate or reason, wrong meaning."
+      },
+      {
+        "form": "につれて",
+        "gloss": "'as ... changes'; proportional change, not viewpoint."
+      },
+      {
+        "form": "にかけては",
+        "gloss": "'when it comes to (a skill)'; field of expertise, not general evaluative standpoint."
+      },
+      {
+        "form": "にあって",
+        "gloss": "'in / at (a situation/era)'; locative-temporal, not a person's evaluating standpoint."
+      },
+      {
+        "form": "において",
+        "gloss": "'in / at (a place/field)'; locative, not a person's viewpoint."
+      },
+      {
+        "form": "に関[かん]して",
+        "gloss": "'regarding (a topic)'; topic marker, not evaluating standpoint."
+      },
+      {
+        "form": "にあたって",
+        "gloss": "'on the occasion of'; marks a special juncture, not a person's evaluating standpoint."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:にともなって",
+    "level": "N3",
+    "title": "～にともなって",
+    "meaning": "along with / accompanying / as ~ changes",
+    "explanation": "Indicates that as one thing changes or progresses, another thing changes along with it. The two events occur in parallel, with one driving the other.",
+    "formation": "Noun + にともなって / Verb (dictionary form) + のにともなって",
+    "whyRight": "にともなって links a gradual change to an accompanying change; it expresses parallel progression rather than a one-time cause or a simple means.",
+    "examples": [
+      {
+        "context": "都市[とし]では人[ひと]が増[ふ]えると同時[どうじ]に色々[いろいろ]な問題[もんだい]も起[お]きる。",
+        "contextTranslation": "In cities, various problems arise as the number of people increases.",
+        "sentence": "人口[じんこう]の増加[ぞうか]に___、住宅[じゅうたく]が不足[ふそく]している。",
+        "answer": "ともなって",
+        "translation": "Along with the population increase, housing is in short supply."
+      },
+      {
+        "context": "体[からだ]の変化[へんか]は年齢[ねんれい]と並行[へいこう]して進[すす]む。",
+        "contextTranslation": "Changes in the body progress in parallel with age.",
+        "sentence": "年[とし]を取[と]ることに___、体力[たいりょく]が落[お]ちてきた。",
+        "answer": "ともなって",
+        "translation": "As I get older, my physical strength has declined."
+      },
+      {
+        "context": "経済[けいざい]と暮[く]らしは一緒[いっしょ]に良[よ]くなっていった。",
+        "contextTranslation": "The economy and daily life improved together.",
+        "sentence": "経済[けいざい]の発展[はってん]に___、生活[せいかつ]が豊[ゆた]かになった。",
+        "answer": "ともなって",
+        "translation": "Along with economic development, life has become more affluent."
+      },
+      {
+        "context": "地球[ちきゅう]では気温[きおん]と海面[かいめん]が同[おな]じように変化[へんか]している。",
+        "contextTranslation": "On Earth, temperatures and sea levels are changing in the same way.",
+        "sentence": "気温[きおん]の上昇[じょうしょう]に___、海面[かいめん]も上[あ]がっている。",
+        "answer": "ともなって",
+        "translation": "Along with rising temperatures, sea levels are also rising."
+      },
+      {
+        "context": "新[あたら]しい技術[ぎじゅつ]が広[ひろ]がると、生活[せいかつ]も同[おな]じように変[か]わっていく。",
+        "contextTranslation": "As new technology spreads, life changes along with it.",
+        "sentence": "技術[ぎじゅつ]の進歩[しんぽ]に___、生活[せいかつ]が便利[べんり]になった。",
+        "answer": "ともなって",
+        "translation": "Along with technological progress, life has become more convenient."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ともなう",
+        "gloss": "plain dictionary form; needs a following noun and cannot end this mid-sentence adverbial clause"
+      },
+      {
+        "form": "ともない",
+        "gloss": "negative/stem-like form; ungrammatical after に and gives no 'accompanying' adverbial reading"
+      },
+      {
+        "form": "とともない",
+        "gloss": "not a valid grammatical form"
+      },
+      {
+        "form": "ともなった",
+        "gloss": "past plain form; cannot stand as the adverbial connector linking the two clauses"
+      },
+      {
+        "form": "よって",
+        "gloss": "に+よって marks direct means or cause, not the simultaneous parallel co-change the sentence frames"
+      },
+      {
+        "form": "おいて",
+        "gloss": "に+おいて marks place or domain ('in/at'), not an accompanying change"
+      },
+      {
+        "form": "とって",
+        "gloss": "に+とって marks a viewpoint ('for'), not parallel progression"
+      },
+      {
+        "form": "ついて",
+        "gloss": "に+ついて introduces a topic ('about'), not a co-occurring change"
+      },
+      {
+        "form": "たいして",
+        "gloss": "に+たいして marks a target or contrast, not accompaniment"
+      },
+      {
+        "form": "かんして",
+        "gloss": "に+かんして is a topic marker ('regarding'), not parallel change"
+      },
+      {
+        "form": "くらべて",
+        "gloss": "に+くらべて is comparison ('compared to'), not an accompanying change"
+      },
+      {
+        "form": "あたって",
+        "gloss": "に+あたって marks the occasion of a one-time event, not gradual co-change"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:によって",
+    "level": "N3",
+    "title": "～によって",
+    "meaning": "by means of / depending on / due to / by (agent)",
+    "explanation": "A versatile expression marking the means, cause, agent (in passive sentences), or a variable on which something depends. Context determines which sense applies.",
+    "formation": "Noun + によって",
+    "whyRight": "によって attaches to a noun to mark the means, cause, agent, or determining factor; it is the standard form for these relationships.",
+    "examples": [
+      {
+        "sentence": "話[はな]し合[あ]いに___、問題[もんだい]を解決[かいけつ]した。",
+        "answer": "よって",
+        "translation": "We solved the problem through discussion."
+      },
+      {
+        "sentence": "この絵[え]は有名[ゆうめい]な画家[がか]に___描[えが]かれた。",
+        "answer": "よって",
+        "translation": "This painting was painted by a famous artist."
+      },
+      {
+        "sentence": "人[ひと]に___考[かんが]え方[かた]が違[ちが]う。",
+        "answer": "よって",
+        "translation": "Ways of thinking differ depending on the person."
+      },
+      {
+        "sentence": "地震[じしん]に___多[おお]くの建物[たてもの]が壊[こわ]れた。",
+        "answer": "よって",
+        "translation": "Many buildings were destroyed due to the earthquake."
+      },
+      {
+        "sentence": "天気[てんき]に___予定[よてい]を変[か]えるかもしれない。",
+        "answer": "よって",
+        "translation": "We may change our plans depending on the weather."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "よる",
+        "gloss": "attributive form; needs a following noun and cannot end this adverbial clause (e.g. the passive 描かれた cannot follow よる)"
+      },
+      {
+        "form": "よると",
+        "gloss": "に+よると ('according to') marks a source of reported info and needs a hearsay ending, which these sentences lack"
+      },
+      {
+        "form": "よれば",
+        "gloss": "に+よれば ('according to') cites an information source, not the means/agent/cause needed here"
+      },
+      {
+        "form": "ついて",
+        "gloss": "に+ついて introduces a topic ('about'), not means or agent"
+      },
+      {
+        "form": "とって",
+        "gloss": "に+とって marks a viewpoint ('for'), not means or cause"
+      },
+      {
+        "form": "おいて",
+        "gloss": "に+おいて marks place or domain ('in/at'), not means or agent"
+      },
+      {
+        "form": "たいして",
+        "gloss": "に+たいして marks a target ('toward/against'), not means"
+      },
+      {
+        "form": "かんして",
+        "gloss": "に+かんして is a topic marker ('regarding'), not means or agent"
+      },
+      {
+        "form": "ともなって",
+        "gloss": "に+ともなって marks parallel co-change, not means, cause, or agent"
+      },
+      {
+        "form": "くらべて",
+        "gloss": "に+くらべて is comparison ('compared to'), not means or cause"
+      },
+      {
+        "form": "かけて",
+        "gloss": "に+かけて marks a range or span, not means or agent"
+      },
+      {
+        "form": "そって",
+        "gloss": "に+そって means 'along/in line with' a guideline or path, not means, agent, or cause"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:による",
+    "level": "N3",
+    "title": "～による",
+    "meaning": "due to / caused by / based on (modifying a noun)",
+    "explanation": "The noun-modifying form of によって. It attaches to a noun and modifies the noun that follows, expressing cause, means, basis, or agent.",
+    "formation": "Noun + による + Noun",
+    "whyRight": "による is the attributive form used to modify a following noun; it links a cause/means/basis to the noun it describes.",
+    "examples": [
+      {
+        "sentence": "不注意[ふちゅうい]に___事故[じこ]が増[ふ]えている。",
+        "answer": "よる",
+        "translation": "Accidents caused by carelessness are increasing."
+      },
+      {
+        "sentence": "地震[じしん]に___被害[ひがい]は大[おお]きかった。",
+        "answer": "よる",
+        "translation": "The damage caused by the earthquake was great."
+      },
+      {
+        "sentence": "専門家[せんもんか]に___調査[ちょうさ]が行[おこな]われた。",
+        "answer": "よる",
+        "translation": "An investigation conducted by experts was carried out.",
+        "context": "大学[だいがく]の研究者[けんきゅうしゃ]たちが集[あつ]まって、水[みず]の安全[あんぜん]を調[しら]べた。",
+        "contextTranslation": "University researchers gathered and examined the safety of the water."
+      },
+      {
+        "sentence": "台風[たいふう]に___洪水[こうずい]で道[みち]が通[とお]れない。",
+        "answer": "よる",
+        "translation": "The road is impassable due to flooding caused by the typhoon."
+      },
+      {
+        "sentence": "火[ひ]の不始末[ふしまつ]に___火事[かじ]が起[お]きた。",
+        "answer": "よる",
+        "translation": "A fire broke out due to carelessness with flames."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "よって",
+        "gloss": "adverbial te-form; cannot directly attach to and modify the following noun (事故, 被害, etc.)"
+      },
+      {
+        "form": "よると",
+        "gloss": "'according to' form; introduces reported speech, cannot modify the plain noun that follows"
+      },
+      {
+        "form": "よれば",
+        "gloss": "conditional 'according to' form; cites an information source and cannot modify the following noun"
+      },
+      {
+        "form": "ついての",
+        "gloss": "に+ついての ('about the') is a topic modifier, not a 'caused by' cause modifier"
+      },
+      {
+        "form": "とっての",
+        "gloss": "に+とっての ('for') marks a viewpoint, not the cause of the following noun"
+      },
+      {
+        "form": "おける",
+        "gloss": "に+おける ('in/at') marks place or domain, not cause"
+      },
+      {
+        "form": "はんした",
+        "gloss": "に+はんした ('contrary to') marks opposition, not the cause of the following noun"
+      },
+      {
+        "form": "たいする",
+        "gloss": "に+たいする ('toward/against') marks a target, not cause"
+      },
+      {
+        "form": "かんする",
+        "gloss": "に+かんする ('regarding') marks a topic, not cause"
+      },
+      {
+        "form": "そった",
+        "gloss": "に+そった ('in line with') marks conformity to a guideline, not cause"
+      },
+      {
+        "form": "くらべた",
+        "gloss": "に+くらべた ('compared with') marks comparison, not cause"
+      },
+      {
+        "form": "むけた",
+        "gloss": "に+むけた ('aimed at') marks a target/destination, not the cause of the following noun"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:によると",
+    "level": "N3",
+    "title": "～によると",
+    "meaning": "according to (a source of information)",
+    "explanation": "Used to indicate the source of information being reported. It is typically paired with a hearsay ending such as そうだ or らしい at the end of the sentence.",
+    "formation": "Noun + によると (often with ～そうだ / ～らしい at sentence end)",
+    "whyRight": "によると marks the source of reported information and pairs naturally with hearsay endings; it is the correct form for citing where information came from.",
+    "examples": [
+      {
+        "sentence": "天気[てんき]予報[よほう]に___、明日[あした]は雨[あめ]だそうだ。",
+        "answer": "よると",
+        "translation": "According to the weather forecast, it will rain tomorrow."
+      },
+      {
+        "sentence": "新聞[しんぶん]に___、来月[らいげつ]から値段[ねだん]が上[あ]がるらしい。",
+        "answer": "よると",
+        "translation": "According to the newspaper, prices will rise from next month."
+      },
+      {
+        "sentence": "友達[ともだち]の話[はなし]に___、あの店[みせ]は閉[し]まったそうだ。",
+        "answer": "よると",
+        "translation": "According to my friend, that shop has closed."
+      },
+      {
+        "sentence": "ニュースに___、事故[じこ]の原因[げんいん]はまだ分[わ]からないそうだ。",
+        "answer": "よると",
+        "translation": "According to the news, the cause of the accident is still unknown."
+      },
+      {
+        "sentence": "先生[せんせい]の説明[せつめい]に___、試験[しけん]は来週[らいしゅう]だそうだ。",
+        "answer": "よると",
+        "translation": "According to the teacher's explanation, the exam is next week."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "よって",
+        "gloss": "に+よって marks means or cause; it does not introduce the source of the reported (だそうだ/らしい) information"
+      },
+      {
+        "form": "よる",
+        "gloss": "attributive form; modifies a following noun and cannot precede the comma + reported clause"
+      },
+      {
+        "form": "ついて",
+        "gloss": "に+ついて introduces a topic ('about'), not the source of hearsay"
+      },
+      {
+        "form": "とって",
+        "gloss": "に+とって marks a viewpoint ('for'), not a source of information"
+      },
+      {
+        "form": "たいして",
+        "gloss": "に+たいして marks a target or contrast, not a source"
+      },
+      {
+        "form": "おいて",
+        "gloss": "に+おいて marks place or domain, not a source of information"
+      },
+      {
+        "form": "かんして",
+        "gloss": "に+かんして is a topic marker ('regarding'), not a citation of source"
+      },
+      {
+        "form": "くらべて",
+        "gloss": "に+くらべて is comparison ('compared to'), not a source"
+      },
+      {
+        "form": "ともなって",
+        "gloss": "に+ともなって marks parallel change, not the source of reported information"
+      },
+      {
+        "form": "かけて",
+        "gloss": "に+かけて marks a range or span, not a source"
+      },
+      {
+        "form": "そって",
+        "gloss": "に+そって means 'in line with', not citing where information came from"
+      },
+      {
+        "form": "むけて",
+        "gloss": "に+むけて ('aimed at') marks a target, not a source of information"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:にわたって",
+    "level": "N3",
+    "title": "～にわたって",
+    "meaning": "over / throughout / across (a span of time, space, or scope)",
+    "explanation": "Indicates that an action or state extends over an entire range, whether a period of time, a geographical area, or a number of items. Emphasizes the breadth of the span.",
+    "formation": "Noun (period / range / scope) + にわたって",
+    "whyRight": "にわたって expresses that something spans an entire extent of time or space; it is the standard form for emphasizing a continuous, wide range.",
+    "examples": [
+      {
+        "sentence": "工事[こうじ]は三[さん]年[ねん]に___続[つづ]いた。",
+        "answer": "わたって",
+        "translation": "The construction continued over three years."
+      },
+      {
+        "sentence": "台風[たいふう]は広[ひろ]い範囲[はんい]に___被害[ひがい]を与[あた]えた。",
+        "answer": "わたって",
+        "translation": "The typhoon caused damage over a wide area."
+      },
+      {
+        "sentence": "会議[かいぎ]は五[ご]時間[じかん]に___行[おこな]われた。",
+        "answer": "わたって",
+        "translation": "The meeting was held over five hours."
+      },
+      {
+        "sentence": "調査[ちょうさ]は十[じゅっ]回[かい]に___実施[じっし]された。",
+        "answer": "わたって",
+        "translation": "The survey was carried out across ten sessions."
+      },
+      {
+        "sentence": "彼[かれ]は長年[ながねん]に___この研究[けんきゅう]を続[つづ]けてきた。",
+        "answer": "わたって",
+        "translation": "He has continued this research over many years."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "わたる",
+        "gloss": "attributive form; needs a following noun and cannot end this adverbial clause before 続いた/行われた"
+      },
+      {
+        "form": "わたった",
+        "gloss": "past plain form; cannot serve as the adverbial connector linking 'over the span' to the main verb"
+      },
+      {
+        "form": "むけて",
+        "gloss": "に+むけて ('aimed at') marks a target or destination, not a span of time or space over which something extends"
+      },
+      {
+        "form": "ついて",
+        "gloss": "に+ついて introduces a topic ('about'), not a span of time or space"
+      },
+      {
+        "form": "ともなって",
+        "gloss": "に+ともなって marks parallel change, not extent over a range"
+      },
+      {
+        "form": "よって",
+        "gloss": "に+よって marks means or cause, not a span"
+      },
+      {
+        "form": "おいて",
+        "gloss": "に+おいて marks a single place/time point ('in/at'), not a continuous span"
+      },
+      {
+        "form": "とって",
+        "gloss": "に+とって marks a viewpoint ('for'), not a span"
+      },
+      {
+        "form": "たいして",
+        "gloss": "に+たいして marks a target or contrast, not a span"
+      },
+      {
+        "form": "くらべて",
+        "gloss": "に+くらべて is comparison ('compared to'), not a span"
+      },
+      {
+        "form": "そって",
+        "gloss": "に+そって means 'along (a line/guideline)', not spanning an entire extent"
+      },
+      {
+        "form": "かんして",
+        "gloss": "に+かんして is a topic marker ('regarding'), not a span"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:のみならず",
+    "level": "N3",
+    "title": "～のみならず",
+    "meaning": "not only ~ but also",
+    "explanation": "A formal expression meaning 'not only X but also Y,' adding a further point. It is more literary than だけでなく and often pairs with も in the second clause.",
+    "formation": "Noun + のみならず / Verb・i-adjective (plain) + のみならず / な-adjective + である + のみならず",
+    "whyRight": "のみならず is the formal 'not only ~ but also' connector adding an additional element; it fits written and formal contexts where だけでなく would be casual.",
+    "examples": [
+      {
+        "sentence": "彼[かれ]は英語[えいご]___、フランス語[ご]も話[はな]せる。",
+        "answer": "のみならず",
+        "translation": "He can speak not only English but also French."
+      },
+      {
+        "sentence": "この薬[くすり]は大人[おとな]___、子供[こども]にも効[き]く。",
+        "answer": "のみならず",
+        "translation": "This medicine works not only on adults but also on children."
+      },
+      {
+        "sentence": "彼女[かのじょ]は歌[うた]がうまい___、踊[おど]りも上手[じょうず]だ。",
+        "answer": "のみならず",
+        "translation": "She is good not only at singing but also at dancing."
+      },
+      {
+        "sentence": "この問題[もんだい]は日本[にほん]___、世界[せかい]中[じゅう]で起[お]きている。",
+        "answer": "のみならず",
+        "translation": "This problem is occurring not only in Japan but all over the world."
+      },
+      {
+        "sentence": "彼[かれ]は遅刻[ちこく]した___、宿題[しゅくだい]も忘[わす]れた。",
+        "answer": "のみならず",
+        "translation": "He not only came late but also forgot his homework."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "のみ",
+        "gloss": "'only'; limits to one thing and contradicts the 'but also' addition (clashes with the も in the second clause)"
+      },
+      {
+        "form": "だけで",
+        "gloss": "'just with / only by'; restrictive, does not carry the additive 'but also' that も requires"
+      },
+      {
+        "form": "だけしか",
+        "gloss": "'nothing but'; demands a negative predicate and excludes the second item, opposite of the additive meaning"
+      },
+      {
+        "form": "ばかりで",
+        "gloss": "'doing nothing but'; restrictive/negative nuance, not the additive 'not only ~ but also'"
+      },
+      {
+        "form": "について",
+        "gloss": "'about'; a topic marker that cannot connect the two clauses additively"
+      },
+      {
+        "form": "にとって",
+        "gloss": "'for / from the viewpoint of'; marks a perspective, not addition"
+      },
+      {
+        "form": "において",
+        "gloss": "'in / at'; place or domain, not addition"
+      },
+      {
+        "form": "ながら",
+        "gloss": "'while / although'; simultaneity or concession, not 'not only ~ but also'"
+      },
+      {
+        "form": "として",
+        "gloss": "'as (a role)'; identifies a role, not addition"
+      },
+      {
+        "form": "にすぎず",
+        "gloss": "'being no more than'; downgrades to a mere minimum, the opposite of adding a further point"
+      },
+      {
+        "form": "を問[と]わず",
+        "gloss": "'regardless of'; dismisses the item rather than adding a second one"
+      },
+      {
+        "form": "はおろか",
+        "gloss": "'let alone'; needs a negative/extreme predicate and the second item to be more extreme, which these neutral additive sentences do not provide"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:の代わりに",
+    "level": "N3",
+    "title": "～の代わりに",
+    "meaning": "instead of / in place of / in exchange for",
+    "explanation": "Indicates that one thing substitutes for or takes the place of another, or that something is given in exchange. Can attach to nouns or verbs.",
+    "formation": "Noun + の代[か]わりに / Verb (dictionary form) + 代[か]わりに",
+    "whyRight": "代わりに expresses substitution or exchange, marking that one thing is done or used in place of another; it is the standard form for 'instead of.'",
+    "examples": [
+      {
+        "sentence": "今日[きょう]は社長[しゃちょう]の___、私[わたし]が会議[かいぎ]に出[で]ます。",
+        "answer": "代[か]わりに",
+        "translation": "Today I will attend the meeting instead of the company president.",
+        "context": "社長[しゃちょう]は急[きゅう]な出張[しゅっちょう]で会社[かいしゃ]に来[こ]られなくなった。",
+        "contextTranslation": "The company president suddenly had to go on a business trip and can no longer come to the office."
+      },
+      {
+        "sentence": "バターの___、オリーブ油[ゆ]を使[つか]った。",
+        "answer": "代[か]わりに",
+        "translation": "I used olive oil instead of butter."
+      },
+      {
+        "sentence": "手伝[てつだ]ってもらう___、昼[ひる]ご飯[はん]をおごるよ。",
+        "answer": "代[か]わりに",
+        "translation": "In exchange for your help, I'll treat you to lunch.",
+        "context": "お礼[れい]にお金[かね]は払[はら]えないんだ。",
+        "contextTranslation": "I can't pay you money as thanks."
+      },
+      {
+        "sentence": "電車[でんしゃ]の___、バスで行[い]くことにした。",
+        "answer": "代[か]わりに",
+        "translation": "I decided to go by bus instead of by train."
+      },
+      {
+        "sentence": "現金[げんきん]の___、カードで支払[しはら]った。",
+        "answer": "代[か]わりに",
+        "translation": "I paid by card instead of cash."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ために",
+        "gloss": "の+ために is 'for the sake of / because of'; purpose or reason, not substitution"
+      },
+      {
+        "form": "ように",
+        "gloss": "'so that / like'; purpose or manner, not substitution"
+      },
+      {
+        "form": "ついでに",
+        "gloss": "'while at it / on the occasion of'; an added action, not a replacement"
+      },
+      {
+        "form": "おかげで",
+        "gloss": "の+おかげで is 'thanks to'; positive cause, not substitution"
+      },
+      {
+        "form": "せいで",
+        "gloss": "の+せいで is 'because of (negative)'; blame, not substitution"
+      },
+      {
+        "form": "とおりに",
+        "gloss": "'just as / according to'; following a model, not substitution"
+      },
+      {
+        "form": "うえに",
+        "gloss": "の+うえに is 'on top of / in addition'; addition, not replacement"
+      },
+      {
+        "form": "かわって",
+        "gloss": "verb te-form 'changing'; not the set noun-modifying substitution form 代わりに"
+      },
+      {
+        "form": "もとに",
+        "gloss": "の+もとに is 'based on / under'; basis, not substitution"
+      },
+      {
+        "form": "について",
+        "gloss": "'about'; a topic marker, not substitution"
+      },
+      {
+        "form": "にとって",
+        "gloss": "'for / from the viewpoint of'; perspective, not substitution"
+      },
+      {
+        "form": "あいだに",
+        "gloss": "の+あいだに is 'during'; a span of time, not a replacement"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:ばほど",
+    "level": "N3",
+    "title": "～ば～ほど",
+    "meaning": "the more ~, the more ~",
+    "explanation": "Expresses that as one thing increases or progresses, another correspondingly increases. The same verb or adjective is repeated, first in its conditional ば-form and then before ほど.",
+    "formation": "Verb (ば-form) + Verb (dict) + ほど / い-adj (ければ) + い-adj + ほど / な-adj (なら / であれば) + な-adj + な + ほど",
+    "whyRight": "The ～ば～ほど pattern pairs a conditional ば-form with ほど to express proportional increase; ほど is the correct second element completing the correlation.",
+    "examples": [
+      {
+        "sentence": "練習[れんしゅう]すればする___、上手[じょうず]になる。",
+        "answer": "ほど",
+        "translation": "The more you practice, the better you get."
+      },
+      {
+        "sentence": "考[かんが]えれば考[かんが]える___、分[わ]からなくなる。",
+        "answer": "ほど",
+        "translation": "The more I think, the less I understand."
+      },
+      {
+        "sentence": "値段[ねだん]が高[たか]ければ高[たか]い___、品質[ひんしつ]がいいとは限[かぎ]らない。",
+        "answer": "ほど",
+        "translation": "The more expensive something is, the better the quality is not necessarily."
+      },
+      {
+        "sentence": "この本[ほん]は読[よ]めば読[よ]む___、面白[おもしろ]くなる。",
+        "answer": "ほど",
+        "translation": "The more you read this book, the more interesting it gets."
+      },
+      {
+        "sentence": "説明[せつめい]が簡単[かんたん]であれば簡単[かんたん]な___、理解[りかい]しやすい。",
+        "answer": "ほど",
+        "translation": "The simpler the explanation, the easier it is to understand."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "さえ",
+        "gloss": "focus particle 'even'; ungrammatical after the repeated dictionary-form verb and does not complete the ば～ほど proportional correlation"
+      },
+      {
+        "form": "くらい",
+        "gloss": "'about / to the extent of'; expresses a degree estimate, not the correlating increase"
+      },
+      {
+        "form": "ばかり",
+        "gloss": "'only / just'; limitation, not proportional increase"
+      },
+      {
+        "form": "より",
+        "gloss": "'than'; comparison, not the paired ば～ほど correlation"
+      },
+      {
+        "form": "ながら",
+        "gloss": "'while'; simultaneity, and ungrammatical after the repeated dictionary form here"
+      },
+      {
+        "form": "とおり",
+        "gloss": "'just as'; following a model, not proportional increase"
+      },
+      {
+        "form": "ところ",
+        "gloss": "'place / moment'; a point or situation, not the correlative degree marker"
+      },
+      {
+        "form": "まま",
+        "gloss": "'as it is / unchanged'; an unchanged state, the opposite of progressive increase"
+      },
+      {
+        "form": "うちに",
+        "gloss": "'while / before'; a window of time, not proportional increase"
+      },
+      {
+        "form": "かわりに",
+        "gloss": "'instead of'; substitution, ungrammatical and unrelated to the ば～ほど correlation"
+      },
+      {
+        "form": "として",
+        "gloss": "'as (a role)'; identifies a role, not degree"
+      },
+      {
+        "form": "ほうが",
+        "gloss": "'the option of'; preference/comparison, not the proportional ほど ending"
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:ばかりか",
+    "level": "N3",
+    "title": "～ばかりか",
+    "meaning": "not only ... but also",
+    "explanation": "Used to add a second, often more surprising fact to the first. It emphasizes that the situation goes beyond what was first stated.",
+    "formation": "Noun / Verb (plain) / い-adjective (plain) / な-adjective (な or である) + ばかりか",
+    "whyRight": "ばかりか connects two related facts where the second exceeds the first, fitting an 'on top of that' addition.",
+    "examples": [
+      {
+        "sentence": "彼[かれ]は英語[えいご]___、フランス語[ご]も話[はな]せる。",
+        "answer": "ばかりか",
+        "translation": "He can speak not only English but also French.",
+        "context": "彼[かれ]は英語[えいご]がとても得意[とくい]だ。",
+        "contextTranslation": "He is very good at English."
+      },
+      {
+        "sentence": "その店[みせ]は値段[ねだん]が高[たか]い___、味[あじ]もよくない。",
+        "answer": "ばかりか",
+        "translation": "That shop is not only expensive but also tastes bad."
+      },
+      {
+        "sentence": "彼女[かのじょ]は仕事[しごと]ができる___、人柄[ひとがら]もいい。",
+        "answer": "ばかりか",
+        "translation": "She is not only good at her job but also has a great personality."
+      },
+      {
+        "sentence": "雨[あめ]が降[ふ]る___、風[かぜ]まで強[つよ]くなってきた。",
+        "answer": "ばかりか",
+        "translation": "Not only is it raining, but the wind has gotten stronger too."
+      },
+      {
+        "sentence": "彼[かれ]は約束[やくそく]を忘[わす]れた___、謝[あやま]りもしなかった。",
+        "answer": "ばかりか",
+        "translation": "He not only forgot the promise but didn't even apologize."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ばかりで",
+        "gloss": "'only doing'; describes a limited state, not an additive 'not only A but also B'."
+      },
+      {
+        "form": "ばかりに",
+        "gloss": "'just because'; introduces a regrettable cause, not an addition."
+      },
+      {
+        "form": "ばかりだ",
+        "gloss": "'only keeps ...ing'; expresses one-directional change, not addition."
+      },
+      {
+        "form": "だけしか",
+        "gloss": "'only'; limits to a single thing, opposite of adding another."
+      },
+      {
+        "form": "からこそ",
+        "gloss": "'precisely because'; emphasizes a reason, not an addition."
+      },
+      {
+        "form": "ところで",
+        "gloss": "'even if'; concessive, does not add a surprising second fact."
+      },
+      {
+        "form": "ばかりだから",
+        "gloss": "ungrammatical fusion; not a standard additive connector."
+      },
+      {
+        "form": "とおりに",
+        "gloss": "'just as'; expresses conformity, unrelated to addition."
+      },
+      {
+        "form": "わりに",
+        "gloss": "'considering'; contrast of expectation, not a 'not only' addition."
+      },
+      {
+        "form": "にもかかわらず",
+        "gloss": "'despite'; concessive contrast, not addition."
+      },
+      {
+        "form": "ばかりも",
+        "gloss": "incorrect form; ばかり does not combine with も this way here."
+      },
+      {
+        "form": "どころか",
+        "gloss": "'far from'; reverses expectations rather than simply adding."
+      }
+    ]
+  },
+  {
+    "id": "grammar:N3:ばかりだ",
+    "level": "N3",
+    "title": "～ばかりだ",
+    "meaning": "to only keep getting ... / nothing left but to ...",
+    "explanation": "Attached to a verb's dictionary form, it shows a situation changing in one direction continuously, often negatively. After て-form it can mean 'just did'.",
+    "formation": "Verb (dictionary form) + ばかりだ",
+    "whyRight": "ばかりだ expresses a one-directional ongoing change, matching a trend that keeps progressing.",
+    "examples": [
+      {
+        "sentence": "景気[けいき]は悪[わる]くなる___。",
+        "answer": "ばかりだ",
+        "translation": "The economy just keeps getting worse.",
+        "context": "不景気[ふけいき]がもう何[なん]年[ねん]も続[つづ]いている。",
+        "contextTranslation": "The recession has already been going on for years."
+      },
+      {
+        "sentence": "彼[かれ]の病気[びょうき]は悪化[あっか]する___。",
+        "answer": "ばかりだ",
+        "translation": "His illness only continues to worsen.",
+        "context": "毎日[まいにち]治療[ちりょう]を続[つづ]けているのに、少[すこ]しもよくならない。",
+        "contextTranslation": "Even though he continues treatment every day, he doesn't get any better at all."
+      },
+      {
+        "sentence": "準備[じゅんび]は終[お]わった。あとは出発[しゅっぱつ]する___。",
+        "answer": "ばかりだ",
+        "translation": "Preparations are done. All that's left is to depart."
+      },
+      {
+        "sentence": "物価[ぶっか]は上[あ]がる___で、生活[せいかつ]が苦[くる]しい。",
+        "answer": "ばかり",
+        "translation": "Prices just keep rising, and life is hard."
+      },
+      {
+        "sentence": "返事[へんじ]を待[ま]つ___で、何[なに]もできない。",
+        "answer": "ばかり",
+        "translation": "I can only keep waiting for a reply and can do nothing."
+      }
+    ],
+    "distractorPool": [
+      {
+        "form": "ばかりか",
+        "gloss": "'not only'; additive connector, not a one-directional trend."
+      },
+      {
+        "form": "ところだ",
+        "gloss": "'about to / just did'; marks a point in time, not continuous change."
+      },
+      {
+        "form": "つもりだ",
+        "gloss": "'intend to'; expresses intention, not an ongoing trend."
+      },
+      {
+        "form": "ばかりに",
+        "gloss": "'just because'; regrettable cause, not continuous change."
+      },
+      {
+        "form": "わけだ",
+        "gloss": "'no wonder / that means'; explanatory, not a directional trend."
+      },
+      {
+        "form": "ものだ",
+        "gloss": "'used to / should'; general truth or recollection, not this trend."
+      },
+      {
+        "form": "がちだ",
+        "gloss": "'tend to'; attaches to a ます-stem/noun, so 「悪くなるがちだ」is ungrammatical after a dictionary-form verb."
+      },
+      {
+        "form": "ことだ",
+        "gloss": "'should'; advice, not a description of ongoing change."
+      },
+      {
+        "form": "わけがない",
+        "gloss": "'there's no way'; flatly denies the change, the opposite of a worsening trend."
+      },
+      {
+        "form": "はずだ",
+        "gloss": "'should be'; expectation, not continuous trend."
+      },
+      {
+        "form": "ものなら",
+        "gloss": "'if it were to'; sets up a conditional that needs a following clause, leaving the sentence incomplete."
+      },
+      {
+        "form": "ぐらいだ",
+        "gloss": "'to the extent of'; expresses degree, not directional change."
       }
     ]
   }
