@@ -14,7 +14,7 @@ A web app for studying the JLPT (Japanese-Language Proficiency Test) across **ka
 
 ## Levels
 
-**N5, N4, N3, and N2 are populated**; N1 is stubbed for later.
+**All five levels (N5–N1) are populated.**
 
 | Level | Kanji | Vocab | Grammar |
 |-------|------:|------:|--------:|
@@ -22,6 +22,7 @@ A web app for studying the JLPT (Japanese-Language Proficiency Test) across **ka
 | N4    |   201 |   631 |     181 |
 | N3    |   332 |   837 |     166 |
 | N2    |   363 |   896 |     275 |
+| N1    | 1,225 |   917 |     184 |
 
 (Counts are auto-derived from the content — see [Content](#content).)
 
