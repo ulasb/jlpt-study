@@ -17,6 +17,9 @@ export default defineConfig(({ command }) => {
       VitePWA({
         registerType: 'autoUpdate',
         includeAssets: ['favicon.svg', 'icon.svg'],
+        // The N1 content chunk (~1,225 kanji) exceeds workbox's 2 MiB default;
+        // raise the limit so every level's chunk is precached for offline use.
+        workbox: { maximumFileSizeToCacheInBytes: 5 * 1024 * 1024 },
         manifest: {
           name: 'JLPT Study',
           short_name: 'JLPT Study',

@@ -26,9 +26,9 @@ export const LEVEL_COUNTS: Record<JlptLevel, Record<Dimension, number>> = {
     "grammar": 275
   },
   "N1": {
-    "kanji": 0,
-    "vocab": 0,
-    "grammar": 0
+    "kanji": 1225,
+    "vocab": 917,
+    "grammar": 184
   }
 }
 
