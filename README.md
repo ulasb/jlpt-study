@@ -7,7 +7,7 @@ A web app for studying the JLPT (Japanese-Language Proficiency Test) across **ka
 <p align="center">
   <img src="docs/screenshots/home.png" width="30%" alt="Home dashboard — levels, progress, and what's due today" />
   &nbsp;
-  <img src="docs/screenshots/study.png" width="30%" alt="Grammar fill-in-the-blank question with context" />
+  <img src="docs/screenshots/study.png" width="30%" alt="Listening question with play-audio button" />
   &nbsp;
   <img src="docs/screenshots/reveal.png" width="30%" alt="Answer explanation with why-right / why-wrong and a Tofugu link" />
 </p>
