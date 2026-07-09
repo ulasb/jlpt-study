@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Reveal } from '../components/Reveal'
 import { FlagButton } from '../components/FlagButton'
+import { AudioButton } from '../components/AudioButton'
 import { db } from '../db/db'
 import { ensureLevelSeeded } from '../db/seed'
 import { useSettings } from '../hooks/useSettings'
@@ -9,6 +10,8 @@ import { trackEvent } from '../lib/analytics'
 import {
   buildGrammarQuestion,
   buildKanjiQuestion,
+  buildListeningQuestion,
+  buildReadingQuestion,
   buildVocabQuestion,
   type Question,
 } from '../study/quiz'
@@ -27,15 +30,19 @@ function shuffle<T>(arr: T[]): T[] {
 
 async function buildExam(level: JlptLevel): Promise<Question[]> {
   await ensureLevelSeeded(level)
-  const [kanji, vocab, grammar] = await Promise.all([
+  const [kanji, vocab, grammar, reading, listening] = await Promise.all([
     db.kanji.where('level').equals(level).toArray(),
     db.vocab.where('level').equals(level).toArray(),
     db.grammar.where('level').equals(level).toArray(),
+    db.reading.where('level').equals(level).toArray(),
+    db.listening.where('level').equals(level).toArray(),
   ])
   const pool: Question[] = [
     ...kanji.map((k) => buildKanjiQuestion(k, kanji)),
     ...vocab.map((w) => buildVocabQuestion(w, vocab)),
     ...grammar.map((g) => buildGrammarQuestion(g)),
+    ...reading.map((r) => buildReadingQuestion(r)),
+    ...listening.map((l) => buildListeningQuestion(l)),
   ]
   return shuffle(pool).slice(0, Math.min(EXAM_LENGTH, pool.length))
 }
@@ -117,7 +124,8 @@ export function Exam() {
 
       <div className="question-card">
         <div className="q-sub">{q.modeLabel}</div>
-        {q.context && <div className="q-context">{q.context}</div>}
+        {q.context && <div className={`q-context${q.contextStyle === 'passage' ? ' passage' : ''}`}>{q.context}</div>}
+        {q.audio && <AudioButton src={q.audio} />}
         <div className={`q-prompt ${q.promptStyle}`}>{q.prompt}</div>
       </div>
 

@@ -28,3 +28,9 @@ export function parseFurigana(text: string): FuriToken[] {
 export function stripFurigana(text: string): string {
   return text.replace(new RegExp(RUBY_SRC, 'g'), '$1')
 }
+
+// Replace each kanji run with its reading, yielding kana-only text. Fed to TTS
+// so the engine can never misread a kanji (行った → いった vs おこなった).
+export function kanaForSpeech(text: string): string {
+  return text.replace(new RegExp(RUBY_SRC, 'g'), '$2')
+}

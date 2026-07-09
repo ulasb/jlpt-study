@@ -131,6 +131,8 @@ h3 { margin: 0; font-size: 16px; }
 .question-card { background: var(--surface); border-radius: var(--radius); padding: 28px 20px; text-align: center; display: flex; flex-direction: column; gap: 10px; }
 .q-sub { color: var(--muted); font-size: 14px; }
 .q-context { color: var(--muted); font-size: 16px; line-height: 1.6; font-style: italic; border-left: 3px solid var(--surface-2); padding-left: 12px; text-align: left; }
+/* Reading passages: full-color upright body text, paragraph breaks preserved */
+.q-context.passage { color: var(--text); font-style: normal; font-size: 18px; line-height: 2; white-space: pre-line; }
 .q-prompt { font-weight: 700; }
 .q-prompt.kanji { font-size: 88px; line-height: 1; }
 .q-prompt.word { font-size: 40px; }
@@ -153,7 +155,7 @@ h3 { margin: 0; font-size: 16px; }
 .reveal-blocks { background: var(--surface); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
 .rb-main { font-size: 40px; font-weight: 700; text-align: center; }
 .rb-sentence { font-size: 19px; line-height: 1.9; }
-.rb-trans { color: var(--muted); font-size: 15px; }
+.rb-trans { color: var(--muted); font-size: 15px; white-space: pre-line; }
 .rb-note { display: flex; flex-direction: column; gap: 2px; border-left: 3px solid var(--surface-2); padding: 4px 0 4px 10px; margin-top: 4px; }
 .rb-note.ok { border-color: var(--good); }
 .rb-note.bad { border-color: var(--accent-2); }
@@ -201,6 +203,13 @@ rt { font-size: 0.5em; color: var(--muted); font-weight: 400; }
 .formation { background: var(--surface-2); border-radius: 8px; padding: 8px 12px; }
 .grammar-body ul { padding-left: 18px; }
 .grammar-body li { margin-bottom: 10px; }
+.reading-passage { font-size: 17px; line-height: 2; }
+
+/* Listening: TTS play/stop */
+.speak-btn { align-self: center; background: var(--surface-2); border: 2px solid var(--surface-2); border-radius: 999px; color: var(--text); font-size: 17px; font-weight: 600; padding: 12px 28px; cursor: pointer; transition: border-color .1s; }
+.speak-btn:hover { border-color: var(--accent-2); }
+.speak-btn.playing { border-color: var(--accent-2); }
+.speak-unavailable { text-align: center; }
 
 /* Settings */
 .setting-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; background: var(--surface); border-radius: 12px; padding: 16px; }

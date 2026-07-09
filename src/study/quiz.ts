@@ -1,6 +1,6 @@
 import { stripFurigana } from '../lib/furigana'
 import { tofuguSearchUrl } from '../lib/tofugu'
-import type { Dimension, Grammar, Kanji, Vocab } from '../types'
+import type { Dimension, Grammar, Kanji, Listening, Reading, Vocab } from '../types'
 
 // A block in the post-answer explanation. `main`/`sentence` may carry furigana
 // markup and are rendered as ruby; `note` explains why a choice is right/wrong.
@@ -18,6 +18,8 @@ export interface Question {
   prompt: string // the thing being asked about (no reading given away)
   promptStyle: 'kanji' | 'word' | 'sentence' | 'meaning'
   context?: string // optional lead-in shown above the prompt (grammar)
+  contextStyle?: 'passage' // render context as a reading passage, not a lead-in
+  audio?: string // listening: audio file path, relative to the app base URL
   options: string[] // exactly 4, already shuffled
   correctIndex: number
   optionStyle?: 'kanji' // enlarge single-kanji options in reverse modes
@@ -193,5 +195,73 @@ export function buildGrammarQuestion(item: Grammar): Question {
     promptStyle: 'sentence',
     context: example.context ? stripFurigana(example.context) : undefined,
     options, correctIndex: options.indexOf(correct), reveal,
+  }
+}
+
+// ---- Reading --------------------------------------------------------------
+// Comprehension: the passage is shown without furigana (like the real JLPT)
+// with one of the passage's questions; the reveal shows the passage with ruby,
+// its translation, and why each option is right/wrong.
+export function buildReadingQuestion(item: Reading): Question {
+  const q = sample(item.questions, 1)[0]
+  const order = shuffle(q.options.map((_, i) => i))
+  const options = order.map((i) => q.options[i].text)
+  const correctIndex = order.indexOf(q.correctIndex)
+
+  const reveal: RevealBlock[] = [
+    ...item.passage
+      .split('\n')
+      .filter(Boolean)
+      .map((p): RevealBlock => ({ kind: 'sentence', text: p })),
+    { kind: 'trans', text: item.translation },
+    { kind: 'sentence', text: q.question },
+    { kind: 'trans', text: q.questionTranslation },
+    // correct answer's note first, then the wrong ones in display order
+    { kind: 'note', ok: true, form: q.options[q.correctIndex].text, text: q.options[q.correctIndex].explanation },
+    ...order
+      .filter((i) => i !== q.correctIndex)
+      .map((i): RevealBlock => ({ kind: 'note', ok: false, form: q.options[i].text, text: q.options[i].explanation })),
+  ]
+
+  return {
+    itemId: item.id, dimension: 'reading', modeLabel: 'Read the passage and answer',
+    prompt: stripFurigana(q.question), promptStyle: 'sentence',
+    context: stripFurigana(item.passage), contextStyle: 'passage',
+    options, correctIndex, reveal,
+  }
+}
+
+// ---- Listening ------------------------------------------------------------
+// The script is never shown before answering — the pre-generated audio file
+// (see scripts/gen-audio.mjs) is played instead. One file per item, derived
+// from the item id: "listening:N5:apple-shop" → audio/listening/n5/apple-shop.m4a
+
+export function audioPathFor(item: Listening): string {
+  return `audio/listening/${item.level.toLowerCase()}/${item.id.split(':')[2]}.m4a`
+}
+
+export function buildListeningQuestion(item: Listening): Question {
+  const q = sample(item.questions, 1)[0]
+  const order = shuffle(q.options.map((_, i) => i))
+  const options = order.map((i) => q.options[i].text)
+  const correctIndex = order.indexOf(q.correctIndex)
+
+  const reveal: RevealBlock[] = [
+    ...item.script.map((l): RevealBlock => ({ kind: 'sentence', text: `${l.speaker}：${l.text}` })),
+    { kind: 'trans', text: item.translation },
+    { kind: 'sentence', text: q.question },
+    { kind: 'trans', text: q.questionTranslation },
+    // correct answer's note first, then the wrong ones in display order
+    { kind: 'note', ok: true, form: q.options[q.correctIndex].text, text: q.options[q.correctIndex].explanation },
+    ...order
+      .filter((i) => i !== q.correctIndex)
+      .map((i): RevealBlock => ({ kind: 'note', ok: false, form: q.options[i].text, text: q.options[i].explanation })),
+  ]
+
+  return {
+    itemId: item.id, dimension: 'listening', modeLabel: 'Listen and answer',
+    prompt: stripFurigana(q.question), promptStyle: 'sentence',
+    audio: audioPathFor(item),
+    options, correctIndex, reveal,
   }
 }

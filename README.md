@@ -2,7 +2,7 @@
 
 **▶ Live app: https://ulasb.github.io/jlpt-study/**
 
-A web app for studying the JLPT (Japanese-Language Proficiency Test) across **kanji**, **vocabulary**, and **grammar**, with spaced repetition. Built as an offline-first PWA — install it to your phone's home screen or run it in any browser.
+A web app for studying the JLPT (Japanese-Language Proficiency Test) across **kanji**, **vocabulary**, **grammar**, **reading**, and **listening**, with spaced repetition. Built as an offline-first PWA — install it to your phone's home screen or run it in any browser.
 
 <p align="center">
   <img src="docs/screenshots/home.png" width="30%" alt="Home dashboard — levels, progress, and what's due today" />
@@ -16,13 +16,13 @@ A web app for studying the JLPT (Japanese-Language Proficiency Test) across **ka
 
 **All five levels (N5–N1) are populated.**
 
-| Level | Kanji | Vocab | Grammar |
-|-------|------:|------:|--------:|
-| N5    |   104 |   543 |      94 |
-| N4    |   201 |   631 |     181 |
-| N3    |   332 |   837 |     166 |
-| N2    |   363 |   896 |     275 |
-| N1    | 1,225 |   917 |     184 |
+| Level | Kanji | Vocab | Grammar | Reading | Listening |
+|-------|------:|------:|--------:|--------:|----------:|
+| N5    |   104 |   543 |      94 |      20 |        20 |
+| N4    |   201 |   631 |     181 |      20 |        20 |
+| N3    |   332 |   837 |     166 |      20 |        20 |
+| N2    |   363 |   896 |     275 |      20 |        20 |
+| N1    | 1,225 |   917 |     184 |      20 |        20 |
 
 (Counts are auto-derived from the content — see [Content](#content).)
 
@@ -31,10 +31,12 @@ A web app for studying the JLPT (Japanese-Language Proficiency Test) across **ka
 - **Spaced repetition (SM-2)** — each item is scheduled by how well you recall it (Again / Hard / Medium / Easy).
 - **Kanji & vocab flashcards** — multiple choice with scrambled options. Readings are hidden until you answer (you're tested on them), then shown. Cards mix directions (meaning→kanji, reading→kanji, word→meaning, …), and distractors are filtered so a wrong option can never be secretly correct (no homophones for reading questions, no synonyms for meaning questions).
 - **Grammar fill-in-the-blank** — pick the form that fits the sentence. Where a single sentence would be ambiguous, a **context sentence** is shown to pin down the intended answer. After answering you get an explanation of *why the answer is right* and *why each shown distractor is wrong* (with furigana), plus a link to the relevant **Tofugu** grammar article.
+- **Reading comprehension** — level-graded passages (short notes and notices at N5 up to editorials and essays at N1), shown without furigana like the real exam, each with multiple-choice comprehension questions. The reveal shows the passage with furigana, its full translation, and why each option is right or wrong.
+- **Listening comprehension** — JLPT-style dialogues and announcements played as audio (script hidden, like the real exam), with distinct male/female voices per speaker and slower pacing at lower levels. The reveal shows the full transcript with furigana, a translation, and per-option explanations.
 - **"I don't know"** option so you never have to guess randomly.
 - **Home dashboard** — progress and what's due "today" across every level, with a per-level **On/Off** toggle to pause levels you're not focusing on.
-- **Browse / learn** — read through kanji, vocab, and grammar points outside of quizzing.
-- **Sample exam** — a mixed multiple-choice test across all three dimensions.
+- **Browse / learn** — read through kanji, vocab, grammar points, reading passages, and listening transcripts outside of quizzing.
+- **Sample exam** — a mixed multiple-choice test across all five dimensions.
 - **Report a problem** — a flag button on any exercise so bad items can be found and fixed (see [Analytics](#analytics-optional)).
 - **Offline & local** — all content and your progress live on-device (IndexedDB); no account, no server.
 
@@ -100,7 +102,9 @@ Pushing to `main` triggers a GitHub Actions workflow (`.github/workflows/deploy.
 
 ## Content
 
-JLPT content lives in `src/data/n5.ts`, `n4.ts`, `n3.ts`, `n2.ts`. It's loaded lazily per level (dynamic import) and seeded into IndexedDB on demand (`src/db/seed.ts`). Content was generated and verified against reference sources; corrections are welcome via PR (or use the in-app flag button).
+JLPT content lives in `src/data/<level>.ts` (kanji/vocab/grammar), `src/data/reading-<level>.ts` (reading passages), and `src/data/listening-<level>.ts` (listening scripts). It's loaded lazily per level (dynamic import) and seeded into IndexedDB on demand (`src/db/seed.ts`).
+
+Listening audio (`public/audio/listening/`) is pre-generated from the scripts with Google Cloud Text-to-Speech by `scripts/gen-audio.mjs` — one `.m4a` per item, distinct voices per speaker, with every kanji's pronunciation pinned to the script's furigana via SSML. Audio is fetched on first play and runtime-cached by the service worker (it is not part of the PWA precache). Regenerate with `GOOGLE_TTS_API_KEY=... node scripts/gen-audio.mjs` (or `GOOGLE_APPLICATION_CREDENTIALS=<service-account.json>`). Content was generated and verified against reference sources; corrections are welcome via PR (or use the in-app flag button).
 
 `src/data/meta.ts` (per-level item counts used by the Home overview) is **auto-generated** from the content files by `scripts/gen-meta.mjs`, which runs before every `dev`/`build` — so the totals can't drift from the data. Regenerate manually with `npm run gen:meta`.
 

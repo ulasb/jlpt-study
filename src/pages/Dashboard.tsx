@@ -8,6 +8,8 @@ const DIMENSIONS: { key: Dimension; label: string; icon: string }[] = [
   { key: 'kanji', label: 'Kanji', icon: '漢' },
   { key: 'vocab', label: 'Vocabulary', icon: 'ア' },
   { key: 'grammar', label: 'Grammar', icon: '文' },
+  { key: 'reading', label: 'Reading', icon: '読' },
+  { key: 'listening', label: 'Listening', icon: '聴' },
 ]
 
 function DimensionCard({ level, dim }: { level: JlptLevel; dim: (typeof DIMENSIONS)[number] }) {
@@ -71,7 +73,7 @@ export function Dashboard() {
     <div className="page">
       <button className="back" onClick={() => navigate('/')}>← All levels</button>
       <h1>{level} · Today</h1>
-      <p className="muted">Review what's due and learn new items across all three dimensions.</p>
+      <p className="muted">Review what's due and learn new items across all five dimensions.</p>
 
       <div className="dim-grid">
         {DIMENSIONS.map((dim) => (

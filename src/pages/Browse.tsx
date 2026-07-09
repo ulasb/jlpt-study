@@ -2,7 +2,9 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Furigana } from '../components/Furigana'
+import { AudioButton } from '../components/AudioButton'
 import { trackEvent } from '../lib/analytics'
+import { audioPathFor } from '../study/quiz'
 import { tofuguSearchUrl } from '../lib/tofugu'
 import { db } from '../db/db'
 import { ensureLevelSeeded } from '../db/seed'
@@ -36,6 +38,14 @@ export function Browse() {
   )
   const grammar = useLiveQuery(
     () => (level && dim === 'grammar' ? db.grammar.where('level').equals(level).toArray() : []),
+    [level, dim],
+  )
+  const reading = useLiveQuery(
+    () => (level && dim === 'reading' ? db.reading.where('level').equals(level).toArray() : []),
+    [level, dim],
+  )
+  const listening = useLiveQuery(
+    () => (level && dim === 'listening' ? db.listening.where('level').equals(level).toArray() : []),
     [level, dim],
   )
 
@@ -132,6 +142,87 @@ export function Browse() {
                       >
                         Look up {it.title} on Tofugu ↗
                       </a>
+                    </div>
+                  )}
+                </div>
+              )
+            })}
+          </div>
+        </>
+      )}
+
+      {dim === 'reading' && (
+        <>
+          <h1>{level} Reading</h1>
+          <div className="browse-list">
+            {reading?.map((it) => {
+              const isOpen = open === it.id
+              return (
+                <div key={it.id} className="browse-item">
+                  <button className="grammar-head" onClick={() => setOpen(isOpen ? null : it.id)}>
+                    <span className="grammar-title"><Furigana text={it.title} /></span>
+                    <span className="muted small">{it.questions.length} questions</span>
+                    <span className="chevron">{isOpen ? '▾' : '▸'}</span>
+                  </button>
+                  {isOpen && (
+                    <div className="grammar-body">
+                      {it.passage.split('\n').filter(Boolean).map((p, i) => (
+                        <p key={i} className="reading-passage"><Furigana text={p} /></p>
+                      ))}
+                      <p className="muted small">{it.translation}</p>
+                      <ul>
+                        {it.questions.map((q, i) => (
+                          <li key={i}>
+                            <Furigana text={q.question} />
+                            <br />
+                            <span className="muted small">
+                              → {q.options[q.correctIndex].text} — {q.questionTranslation}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              )
+            })}
+          </div>
+        </>
+      )}
+
+      {dim === 'listening' && (
+        <>
+          <h1>{level} Listening</h1>
+          <div className="browse-list">
+            {listening?.map((it) => {
+              const isOpen = open === it.id
+              return (
+                <div key={it.id} className="browse-item">
+                  <button className="grammar-head" onClick={() => setOpen(isOpen ? null : it.id)}>
+                    <span className="grammar-title"><Furigana text={it.title} /></span>
+                    <span className="muted small">{it.questions.length} questions</span>
+                    <span className="chevron">{isOpen ? '▾' : '▸'}</span>
+                  </button>
+                  {isOpen && (
+                    <div className="grammar-body">
+                      <AudioButton src={audioPathFor(it)} />
+                      {it.script.map((line, i) => (
+                        <p key={i} className="reading-passage">
+                          <Furigana text={`${line.speaker}：${line.text}`} />
+                        </p>
+                      ))}
+                      <p className="muted small">{it.translation}</p>
+                      <ul>
+                        {it.questions.map((q, i) => (
+                          <li key={i}>
+                            <Furigana text={q.question} />
+                            <br />
+                            <span className="muted small">
+                              → {q.options[q.correctIndex].text} — {q.questionTranslation}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   )}
                 </div>

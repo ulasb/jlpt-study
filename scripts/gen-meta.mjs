@@ -8,21 +8,30 @@
 import fs from 'node:fs'
 
 const LEVELS = ['N5', 'N4', 'N3', 'N2', 'N1']
-const DIMS = ['kanji', 'vocab', 'grammar']
+const DIMS = ['kanji', 'vocab', 'grammar', 'reading', 'listening']
 const dataDir = new URL('../src/data/', import.meta.url)
 
-function countsForLevel(level) {
-  const file = new URL(`${level.toLowerCase()}.ts`, dataDir)
-  let text = ''
+function readOrEmpty(url) {
   try {
-    text = fs.readFileSync(file, 'utf8')
+    return fs.readFileSync(url, 'utf8')
   } catch {
-    return { kanji: 0, vocab: 0, grammar: 0 }
+    return ''
   }
+}
+
+function countsForLevel(level) {
+  // kanji/vocab/grammar live in <level>.ts; reading passages and listening
+  // scripts in reading-/listening-<level>.ts.
+  const text =
+    readOrEmpty(new URL(`${level.toLowerCase()}.ts`, dataDir)) +
+    readOrEmpty(new URL(`reading-${level.toLowerCase()}.ts`, dataDir)) +
+    readOrEmpty(new URL(`listening-${level.toLowerCase()}.ts`, dataDir))
   const out = {}
   for (const dim of DIMS) {
-    // Count occurrences of the id-value prefix, e.g. "kanji:N5:
-    out[dim] = text.split(`"${dim}:${level}:`).length - 1
+    // Count occurrences of the id-value prefix, e.g. "kanji:N5: — quoted with
+    // either quote style (assembled files use ", hand-written ones ').
+    out[dim] =
+      text.split(`"${dim}:${level}:`).length + text.split(`'${dim}:${level}:`).length - 2
   }
   return out
 }
@@ -38,7 +47,7 @@ const body = `import type { Dimension, JlptLevel } from '../types'
 export const LEVEL_COUNTS: Record<JlptLevel, Record<Dimension, number>> = ${JSON.stringify(counts, null, 2)}
 
 export const POPULATED_LEVELS: JlptLevel[] = (Object.keys(LEVEL_COUNTS) as JlptLevel[]).filter(
-  (l) => LEVEL_COUNTS[l].kanji + LEVEL_COUNTS[l].vocab + LEVEL_COUNTS[l].grammar > 0,
+  (l) => Object.values(LEVEL_COUNTS[l]).reduce((a, b) => a + b, 0) > 0,
 )
 `
 

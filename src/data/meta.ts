@@ -8,30 +8,40 @@ export const LEVEL_COUNTS: Record<JlptLevel, Record<Dimension, number>> = {
   "N5": {
     "kanji": 104,
     "vocab": 543,
-    "grammar": 94
+    "grammar": 94,
+    "reading": 20,
+    "listening": 20
   },
   "N4": {
     "kanji": 201,
     "vocab": 631,
-    "grammar": 181
+    "grammar": 181,
+    "reading": 20,
+    "listening": 20
   },
   "N3": {
     "kanji": 332,
     "vocab": 837,
-    "grammar": 166
+    "grammar": 166,
+    "reading": 20,
+    "listening": 20
   },
   "N2": {
     "kanji": 363,
     "vocab": 896,
-    "grammar": 275
+    "grammar": 275,
+    "reading": 20,
+    "listening": 20
   },
   "N1": {
     "kanji": 1225,
     "vocab": 917,
-    "grammar": 184
+    "grammar": 184,
+    "reading": 20,
+    "listening": 20
   }
 }
 
 export const POPULATED_LEVELS: JlptLevel[] = (Object.keys(LEVEL_COUNTS) as JlptLevel[]).filter(
-  (l) => LEVEL_COUNTS[l].kanji + LEVEL_COUNTS[l].vocab + LEVEL_COUNTS[l].grammar > 0,
+  (l) => Object.values(LEVEL_COUNTS[l]).reduce((a, b) => a + b, 0) > 0,
 )

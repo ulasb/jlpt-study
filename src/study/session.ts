@@ -6,6 +6,8 @@ import type { Dimension, JlptLevel } from '../types'
 import {
   buildGrammarQuestion,
   buildKanjiQuestion,
+  buildListeningQuestion,
+  buildReadingQuestion,
   buildVocabQuestion,
   type Question,
 } from './quiz'
@@ -18,7 +20,7 @@ export interface QueueStats {
 
 type Studyable = { id: string }
 
-const DIMS: Dimension[] = ['kanji', 'vocab', 'grammar']
+const DIMS: Dimension[] = ['kanji', 'vocab', 'grammar', 'reading', 'listening']
 
 // Split content into due items (sorted by due date) and brand-new items (no
 // review row yet), capping new items at `newPerDay`.
@@ -62,6 +64,14 @@ export async function buildSession(
     return partitionQueue(items, reviewById, newPerDay, now).map((it) =>
       buildVocabQuestion(it, items),
     )
+  }
+  if (dimension === 'reading') {
+    const items = await db.reading.where('level').equals(level).toArray()
+    return partitionQueue(items, reviewById, newPerDay, now).map((it) => buildReadingQuestion(it))
+  }
+  if (dimension === 'listening') {
+    const items = await db.listening.where('level').equals(level).toArray()
+    return partitionQueue(items, reviewById, newPerDay, now).map((it) => buildListeningQuestion(it))
   }
   const items = await db.grammar.where('level').equals(level).toArray()
   return partitionQueue(items, reviewById, newPerDay, now).map((it) => buildGrammarQuestion(it))

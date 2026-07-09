@@ -19,7 +19,23 @@ export default defineConfig(({ command }) => {
         includeAssets: ['favicon.svg', 'icon.svg'],
         // The N1 content chunk (~1,225 kanji) exceeds workbox's 2 MiB default;
         // raise the limit so every level's chunk is precached for offline use.
-        workbox: { maximumFileSizeToCacheInBytes: 5 * 1024 * 1024 },
+        workbox: {
+          maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+          // Listening audio is deliberately NOT precached (too big to force on
+          // every visitor); each file is cached on first play so replays and
+          // offline listening work afterwards.
+          runtimeCaching: [
+            {
+              urlPattern: ({ url }) => url.pathname.includes('/audio/'),
+              handler: 'CacheFirst',
+              options: {
+                cacheName: 'listening-audio',
+                expiration: { maxEntries: 500 },
+                cacheableResponse: { statuses: [0, 200] },
+              },
+            },
+          ],
+        },
         manifest: {
           name: 'JLPT Study',
           short_name: 'JLPT Study',

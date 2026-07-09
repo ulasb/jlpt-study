@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { FlagButton } from '../components/FlagButton'
 import { Reveal } from '../components/Reveal'
+import { AudioButton } from '../components/AudioButton'
 import { useSettings } from '../hooks/useSettings'
 import { trackEvent } from '../lib/analytics'
 import type { Grade } from '../srs/sm2'
@@ -13,6 +14,18 @@ const LABELS: Record<Dimension, string> = {
   kanji: 'Kanji',
   vocab: 'Vocabulary',
   grammar: 'Grammar',
+  reading: 'Reading',
+  listening: 'Listening',
+}
+
+// Kanji/vocab/grammar test recall of a studied item; reading/listening test
+// comprehension of a fresh question, so "recall" would be the wrong word.
+const GRADE_QUESTION: Record<Dimension, string> = {
+  kanji: 'How hard was it to recall?',
+  vocab: 'How hard was it to recall?',
+  grammar: 'How hard was it to recall?',
+  reading: 'How hard was this question to answer?',
+  listening: 'How hard was this question to answer?',
 }
 
 export function Study() {
@@ -103,7 +116,8 @@ export function Study() {
 
       <div className="question-card">
         <div className="q-sub">{q.modeLabel}</div>
-        {q.context && <div className="q-context">{q.context}</div>}
+        {q.context && <div className={`q-context${q.contextStyle === 'passage' ? ' passage' : ''}`}>{q.context}</div>}
+        {q.audio && <AudioButton src={q.audio} />}
         <div className={`q-prompt ${q.promptStyle}`}>{q.prompt}</div>
       </div>
 
@@ -134,7 +148,7 @@ export function Study() {
           <Reveal blocks={q.reveal} />
           {isCorrect ? (
             <>
-              <p className="muted small grade-q">How hard was it to recall?</p>
+              <p className="muted small grade-q">{GRADE_QUESTION[dim]}</p>
               <div className="grade-row">
                 <button className="btn grade hard" onClick={() => grade('hard')}>Hard</button>
                 <button className="btn grade good" onClick={() => grade('good')}>Medium</button>

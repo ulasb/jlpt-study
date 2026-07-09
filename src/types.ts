@@ -4,7 +4,7 @@ export type JlptLevel = 'N5' | 'N4' | 'N3' | 'N2' | 'N1'
 
 export const ALL_LEVELS: JlptLevel[] = ['N5', 'N4', 'N3', 'N2', 'N1']
 
-export type Dimension = 'kanji' | 'vocab' | 'grammar'
+export type Dimension = 'kanji' | 'vocab' | 'grammar' | 'reading' | 'listening'
 
 export interface Kanji {
   id: string // e.g. "kanji:N4:会"
@@ -62,6 +62,52 @@ export interface Grammar {
   // each with a gloss explaining why it's wrong. At quiz time we sample 3 as
   // distractors and show their glosses after the answer. 10-20 recommended.
   distractorPool: GrammarDistractor[]
+}
+
+export interface ReadingOption {
+  // Plain Japanese (no furigana markup) — rendered directly on answer buttons.
+  text: string
+  // Why this option is right/wrong given the passage. Shown after answering.
+  explanation: string
+}
+
+export interface ReadingQuestion {
+  // Comprehension question about the passage. Furigana markup allowed; it is
+  // stripped in the quiz prompt and rendered as ruby in the explanation.
+  question: string
+  questionTranslation: string
+  options: ReadingOption[] // exactly 4, exactly one correct
+  correctIndex: number
+}
+
+export interface Reading {
+  id: string // e.g. "reading:N4:lost-umbrella"
+  level: JlptLevel
+  title: string // short Japanese title, furigana markup allowed
+  // Passage text with furigana markup; paragraphs separated by "\n". Shown
+  // without furigana while answering (like the real JLPT), with ruby after.
+  passage: string
+  translation: string // English translation of the whole passage
+  questions: ReadingQuestion[] // 2-3 per passage; one is sampled per review
+}
+
+export interface ListeningLine {
+  // Short speaker label shown in the transcript (furigana markup allowed,
+  // e.g. 女[おんな]の人[ひと], アナウンス). Distinct speakers get different
+  // TTS pitches so dialogues are followable by ear.
+  speaker: string
+  text: string // furigana markup — doubles as the TTS source (spoken as kana)
+}
+
+export interface Listening {
+  id: string // e.g. "listening:N4:movie-plans"
+  level: JlptLevel
+  title: string // short Japanese title, furigana markup allowed
+  // The audio script. Never shown before answering; spoken via on-device TTS
+  // (readings come from the furigana markup, so pronunciation is deterministic).
+  script: ListeningLine[]
+  translation: string // English translation of the whole script
+  questions: ReadingQuestion[] // same shape as reading; one sampled per review
 }
 
 // ---- SRS (SM-2) review state, one row per studyable item ----
