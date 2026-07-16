@@ -327,12 +327,14 @@ export function buildVocabQuestion(item: Vocab, pool: Vocab[]): Question {
 // also explains why the answer is right and why each shown distractor is wrong.
 export function buildGrammarQuestion(item: Grammar): Question {
   const example = sample(item.examples, 1)[0]
-  const correct = example.answer
+  // Answer/distractor forms may carry furigana markup (聞[き]いて); options are
+  // shown plain — the reveal renders the marked-up forms as ruby instead.
+  const correct = stripFurigana(example.answer)
   const wrong = sample(
-    item.distractorPool.filter((d) => d.form !== correct),
+    item.distractorPool.filter((d) => stripFurigana(d.form) !== correct),
     3,
   )
-  const options = shuffle([correct, ...wrong.map((d) => d.form)])
+  const options = shuffle([correct, ...wrong.map((d) => stripFurigana(d.form))])
 
   const filled = example.sentence.replace('___', example.answer)
   const contextBlocks: RevealBlock[] = example.context
@@ -346,7 +348,7 @@ export function buildGrammarQuestion(item: Grammar): Question {
     ...contextBlocks,
     { kind: 'sentence', text: filled },
     { kind: 'trans', text: example.translation },
-    { kind: 'note', ok: true, form: correct, text: item.whyRight },
+    { kind: 'note', ok: true, form: example.answer, text: item.whyRight },
     ...wrong.map((d): RevealBlock => ({ kind: 'note', ok: false, form: d.form, text: d.gloss })),
     { kind: 'link', label: `Read more about ${item.title} on Tofugu`, url: tofuguSearchUrl(item.title) },
   ]

@@ -28,7 +28,7 @@ export function Reveal({ blocks }: { blocks: RevealBlock[] }) {
             return (
               <div key={i} className={`rb-note ${b.ok ? 'ok' : 'bad'}`}>
                 <span className="rb-form">
-                  {b.ok ? '✓' : '✗'} {b.form}
+                  {b.ok ? '✓' : '✗'} <Furigana text={b.form} />
                 </span>
                 <span className="rb-gloss">{b.text}</span>
               </div>
