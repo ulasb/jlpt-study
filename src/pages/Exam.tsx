@@ -8,16 +8,23 @@ import { ensureLevelSeeded } from '../db/seed'
 import { useSettings } from '../hooks/useSettings'
 import { trackEvent } from '../lib/analytics'
 import {
+  buildFullExam,
+  examLength,
+  scoreExam,
+  TESTS_PER_LEVEL,
+  type ExamPools,
+  type ExamQuestion,
+} from '../study/exam'
+import {
   buildGrammarQuestion,
   buildKanjiQuestion,
   buildListeningQuestion,
   buildReadingQuestion,
   buildVocabQuestion,
-  type Question,
 } from '../study/quiz'
 import type { JlptLevel } from '../types'
 
-const EXAM_LENGTH = 15
+const QUICK_QUIZ_LENGTH = 15
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr]
@@ -28,7 +35,7 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
-async function buildExam(level: JlptLevel): Promise<Question[]> {
+async function loadPools(level: JlptLevel): Promise<ExamPools> {
   await ensureLevelSeeded(level)
   const [kanji, vocab, grammar, reading, listening] = await Promise.all([
     db.kanji.where('level').equals(level).toArray(),
@@ -37,14 +44,19 @@ async function buildExam(level: JlptLevel): Promise<Question[]> {
     db.reading.where('level').equals(level).toArray(),
     db.listening.where('level').equals(level).toArray(),
   ])
-  const pool: Question[] = [
-    ...kanji.map((k) => buildKanjiQuestion(k, kanji)),
-    ...vocab.map((w) => buildVocabQuestion(w, vocab)),
-    ...grammar.map((g) => buildGrammarQuestion(g)),
-    ...reading.map((r) => buildReadingQuestion(r)),
-    ...listening.map((l) => buildListeningQuestion(l)),
+  return { kanji, vocab, grammar, reading, listening }
+}
+
+// The old behavior: a short random mix across all dimensions.
+function buildQuickQuiz(pools: ExamPools): ExamQuestion[] {
+  const pool: ExamQuestion[] = [
+    ...pools.kanji.map((k) => ({ ...buildKanjiQuestion(k, pools.kanji), paper: 'Quick quiz' })),
+    ...pools.vocab.map((w) => ({ ...buildVocabQuestion(w, pools.vocab), paper: 'Quick quiz' })),
+    ...pools.grammar.map((g) => ({ ...buildGrammarQuestion(g), paper: 'Quick quiz' })),
+    ...pools.reading.map((r) => ({ ...buildReadingQuestion(r), paper: 'Quick quiz' })),
+    ...pools.listening.map((l) => ({ ...buildListeningQuestion(l), paper: 'Quick quiz' })),
   ]
-  return shuffle(pool).slice(0, Math.min(EXAM_LENGTH, pool.length))
+  return shuffle(pool).slice(0, Math.min(QUICK_QUIZ_LENGTH, pool.length))
 }
 
 export function Exam() {
@@ -52,40 +64,85 @@ export function Exam() {
   const settings = useSettings()
   const level = settings?.selectedLevel
 
-  const [questions, setQuestions] = useState<Question[] | null>(null)
+  const [pools, setPools] = useState<ExamPools | null>(null)
+  // null = picker screen; 0 = quick quiz; 1..TESTS_PER_LEVEL = fixed test
+  const [test, setTest] = useState<number | null>(null)
+  const [questions, setQuestions] = useState<ExamQuestion[] | null>(null)
   const [index, setIndex] = useState(0)
   const [picked, setPicked] = useState<number | null>(null)
   const [revealed, setRevealed] = useState(false)
-  const [score, setScore] = useState(0)
+  const [answers, setAnswers] = useState<boolean[]>([])
 
-  function start() {
-    if (!level) return
-    buildExam(level).then((q) => {
-      setQuestions(q)
-      setIndex(0)
-      setPicked(null)
-      setRevealed(false)
-      setScore(0)
-      if (q.length > 0) trackEvent('exam_start', { level })
-    })
+  useEffect(() => {
+    setPools(null)
+    setTest(null)
+    setQuestions(null)
+    if (level) loadPools(level).then(setPools)
+  }, [level])
+
+  function start(t: number) {
+    if (!level || !pools) return
+    setTest(t)
+    setQuestions(t === 0 ? buildQuickQuiz(pools) : buildFullExam(level, t, pools))
+    setIndex(0)
+    setPicked(null)
+    setRevealed(false)
+    setAnswers([])
+    trackEvent('exam_start', { level, test: t })
   }
 
-  useEffect(start, [level])
+  if (!level || pools === null) return <div className="loading">Loading…</div>
 
-  if (!level || questions === null) return <div className="loading">Loading…</div>
+  // ---- Test picker ----------------------------------------------------------
+  if (test === null || questions === null) {
+    return (
+      <div className="page">
+        <h2>Mock exams · {level}</h2>
+        <p className="muted">
+          Ten fixed tests shaped like the real JLPT — 文字・語彙, 文法・読解, then 聴解 (
+          {examLength(level)} questions). Retaking a test repeats the same paper.
+        </p>
+        <div className="exam-grid">
+          {Array.from({ length: TESTS_PER_LEVEL }, (_, i) => (
+            <button key={i} className="btn big" onClick={() => start(i + 1)}>
+              Test {i + 1}
+            </button>
+          ))}
+        </div>
+        <button className="btn ghost" onClick={() => start(0)}>
+          ⚡ Quick quiz ({QUICK_QUIZ_LENGTH} random questions)
+        </button>
+      </div>
+    )
+  }
 
+  // ---- Result ---------------------------------------------------------------
   if (index >= questions.length) {
-    const pct = Math.round((score / questions.length) * 100)
-    const pass = pct >= 60
+    const result = scoreExam(questions, answers)
     return (
       <div className="page center">
-        <h2>Exam result</h2>
-        <div className={`score-ring ${pass ? 'pass' : 'fail'}`}>{pct}%</div>
+        <h2>{test === 0 ? 'Quick quiz result' : `Test ${test} result`}</h2>
+        <div className={`score-ring ${result.pass ? 'pass' : 'fail'}`}>{result.pct}%</div>
         <p className="muted">
-          {score} / {questions.length} correct — {pass ? 'Pass 🎉' : 'Keep practicing'}
+          {result.total} / {questions.length} correct —{' '}
+          {result.pass ? 'Pass 🎉' : result.sectionalOk ? 'Keep practicing' : 'Failed on a sectional minimum'}
         </p>
+        {test !== 0 && (
+          <div className="paper-scores">
+            {result.papers.map((p) => (
+              <div key={p.paper} className="paper-score">
+                <span className="paper-name">{p.paper}</span>
+                <span className={`paper-pct ${p.correct / p.total >= 1 / 3 ? '' : 'bad'}`}>
+                  {p.correct} / {p.total}
+                </span>
+              </div>
+            ))}
+            <p className="muted small">Pass: 60% overall and at least ⅓ in every section.</p>
+          </div>
+        )}
         <div className="row gap">
-          <button className="btn primary" onClick={start}>Retake</button>
+          <button className="btn primary" onClick={() => start(test)}>Retake</button>
+          <button className="btn ghost" onClick={() => setTest(null)}>All tests</button>
           <button className="btn ghost" onClick={() => navigate('/')}>Back to today</button>
         </div>
       </div>
@@ -99,13 +156,14 @@ export function Exam() {
     if (revealed) return
     setPicked(i)
     setRevealed(true)
-    if (i === q.correctIndex) setScore((s) => s + 1)
+    setAnswers((a) => [...a, i === q.correctIndex])
   }
 
   function next() {
     if (index + 1 >= total) {
+      const score = answers.filter(Boolean).length
       const pct = Math.round((score / total) * 100)
-      trackEvent('exam_complete', { level: level!, total, score, pct })
+      trackEvent('exam_complete', { level: level!, test: test!, total, score, pct })
     }
     setPicked(null)
     setRevealed(false)
@@ -115,11 +173,13 @@ export function Exam() {
   return (
     <div className="page study">
       <div className="study-progress">
-        <span className="muted small">Sample exam · {level}</span>
-        <span className="muted small">{index + 1} / {questions.length}</span>
+        <span className="muted small">
+          {test === 0 ? 'Quick quiz' : `Test ${test}`} · {level} · {q.paper}
+        </span>
+        <span className="muted small">{index + 1} / {total}</span>
       </div>
       <div className="study-progress-bar">
-        <div className="study-progress-fill" style={{ width: `${(index / questions.length) * 100}%` }} />
+        <div className="study-progress-fill" style={{ width: `${(index / total) * 100}%` }} />
       </div>
 
       <div className="question-card">
@@ -155,7 +215,7 @@ export function Exam() {
         <div className="reveal">
           <Reveal blocks={q.reveal} />
           <button className="btn primary" onClick={next}>
-            {index + 1 < questions.length ? 'Next question' : 'See result'}
+            {index + 1 < total ? 'Next question' : 'See result'}
           </button>
           <FlagButton key={index} itemId={q.itemId} level={level} dimension={q.dimension} />
         </div>

@@ -35,10 +35,22 @@ export interface Question {
   reveal: RevealBlock[] // shown only after answering
 }
 
+// Randomness source. Defaults to Math.random; exam papers pass a seeded rng
+// (via BuildOpts) so a given test number always produces the same questions.
+// Every exported builder sets this on entry, so it can't leak between calls.
+let rand: () => number = Math.random
+
+export interface BuildOpts {
+  rng?: () => number
+  // Force a specific question mode (exam sections are mode-specific: the
+  // 漢字読み section is all reading questions, 表記 all orthography).
+  mode?: string
+}
+
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr]
   for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
+    const j = Math.floor(rand() * (i + 1))
     ;[a[i], a[j]] = [a[j], a[i]]
   }
   return a
@@ -49,14 +61,14 @@ function sample<T>(arr: T[], n: number): T[] {
 }
 
 function pickMode<T extends string>(modes: T[]): T {
-  return modes[Math.floor(Math.random() * modes.length)]
+  return modes[Math.floor(rand() * modes.length)]
 }
 
 // Weighted mode picker: exam-realistic modes (reading questions) should come
 // up more often than the rest.
 function pickWeighted<T extends string>(entries: [T, number][]): T {
   const total = entries.reduce((s, [, w]) => s + w, 0)
-  let r = Math.random() * total
+  let r = rand() * total
   for (const [v, w] of entries) {
     r -= w
     if (r < 0) return v
@@ -147,7 +159,10 @@ function swappedReadings(wordReading: string, item: Kanji): string[] {
   return out
 }
 
-export function buildKanjiQuestion(item: Kanji, pool: Kanji[]): Question {
+export type KanjiMode = 'k2r' | 'r2k' | 'm2k' | 'k2m'
+
+export function buildKanjiQuestion(item: Kanji, pool: Kanji[], opts?: BuildOpts): Question {
+  rand = opts?.rng ?? Math.random
   const others = pool.filter((k) => k.id !== item.id)
   const meaning = item.meanings.join(', ')
   const readings = [...item.kunyomi, ...item.onyomi]
@@ -168,9 +183,14 @@ export function buildKanjiQuestion(item: Kanji, pool: Kanji[]): Question {
     { kind: 'trans', text: `例 ${exampleLine}` },
   ]
 
-  const mode = readings.length
-    ? pickWeighted<'k2r' | 'r2k' | 'm2k' | 'k2m'>([['k2r', 4], ['r2k', 2], ['m2k', 2], ['k2m', 2]])
-    : pickMode(['k2m', 'm2k'] as const)
+  // A forced mode that needs readings falls back to the no-readings pick.
+  const forced = opts?.mode as KanjiMode | undefined
+  const mode =
+    forced && (readings.length > 0 || (forced !== 'k2r' && forced !== 'r2k'))
+      ? forced
+      : readings.length
+        ? pickWeighted<KanjiMode>([['k2r', 4], ['r2k', 2], ['m2k', 2], ['k2m', 2]])
+        : pickMode(['k2m', 'm2k'] as const)
 
   // Distractor tiers shared by the pick-the-kanji modes: visual look-alikes
   // first, then kanji of similar stroke count (visually plausible), then any.
@@ -251,7 +271,10 @@ export function buildKanjiQuestion(item: Kanji, pool: Kanji[]): Question {
 //   m2w / r2w — meaning or reading → pick the written form; mixes in 表記-style
 //        fake spellings that swap one kanji for a look-alike (大学→犬学).
 //   w2m — word → meaning.
-export function buildVocabQuestion(item: Vocab, pool: Vocab[]): Question {
+export type VocabMode = 'w2r' | 'w2m' | 'm2w' | 'r2w'
+
+export function buildVocabQuestion(item: Vocab, pool: Vocab[], opts?: BuildOpts): Question {
+  rand = opts?.rng ?? Math.random
   const others = pool.filter((w) => w.id !== item.id)
   const meaning = item.meanings.join(', ')
 
@@ -267,9 +290,14 @@ export function buildVocabQuestion(item: Vocab, pool: Vocab[]): Question {
   // Reading modes only make sense when the word isn't already written in kana
   // (word === reading would make the prompt equal the answer).
   const isKana = item.word === item.reading
-  const mode = isKana
-    ? pickMode(['w2m', 'm2w'] as const)
-    : pickWeighted<'w2r' | 'w2m' | 'm2w' | 'r2w'>([['w2r', 4], ['w2m', 2], ['m2w', 2], ['r2w', 2]])
+  // A forced reading mode is meaningless for a kana-only word; fall back.
+  const forced = opts?.mode as VocabMode | undefined
+  const mode =
+    forced && !(isKana && (forced === 'w2r' || forced === 'r2w'))
+      ? forced
+      : isKana
+        ? pickMode(['w2m', 'm2w'] as const)
+        : pickWeighted<VocabMode>([['w2r', 4], ['w2m', 2], ['m2w', 2], ['r2w', 2]])
 
   if (mode === 'w2r') {
     // Distractors that are readings of *other* pool words are fine — the
@@ -325,7 +353,8 @@ export function buildVocabQuestion(item: Vocab, pool: Vocab[]): Question {
 // Fill-in-the-blank. The grammar point's title is NOT shown in the prompt (it
 // would give the answer away); it appears in the post-answer explanation, which
 // also explains why the answer is right and why each shown distractor is wrong.
-export function buildGrammarQuestion(item: Grammar): Question {
+export function buildGrammarQuestion(item: Grammar, opts?: BuildOpts): Question {
+  rand = opts?.rng ?? Math.random
   const example = sample(item.examples, 1)[0]
   // Answer/distractor forms may carry furigana markup (聞[き]いて); options are
   // shown plain — the reveal renders the marked-up forms as ruby instead.
@@ -366,7 +395,8 @@ export function buildGrammarQuestion(item: Grammar): Question {
 // Comprehension: the passage is shown without furigana (like the real JLPT)
 // with one of the passage's questions; the reveal shows the passage with ruby,
 // its translation, and why each option is right/wrong.
-export function buildReadingQuestion(item: Reading): Question {
+export function buildReadingQuestion(item: Reading, opts?: BuildOpts): Question {
+  rand = opts?.rng ?? Math.random
   const q = sample(item.questions, 1)[0]
   const order = shuffle(q.options.map((_, i) => i))
   const options = order.map((i) => q.options[i].text)
@@ -404,7 +434,8 @@ export function audioPathFor(item: Listening): string {
   return `audio/listening/${item.level.toLowerCase()}/${item.id.split(':')[2]}.m4a`
 }
 
-export function buildListeningQuestion(item: Listening): Question {
+export function buildListeningQuestion(item: Listening, opts?: BuildOpts): Question {
+  rand = opts?.rng ?? Math.random
   const q = sample(item.questions, 1)[0]
   const order = shuffle(q.options.map((_, i) => i))
   const options = order.map((i) => q.options[i].text)
