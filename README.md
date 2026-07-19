@@ -61,6 +61,8 @@ npm run typecheck  # type-check only
 
 The same web app is wrapped for Android with Capacitor — no rewrite; it loads the built web assets inside a native shell.
 
+Listening audio is **not bundled into the APK** (it would add ~140 MB): the Capacitor build strips `dist/audio`, and the app downloads each file from the deployed site on first play, caching it on-device for offline replays (`src/lib/audio.ts`).
+
 **Prerequisites (local machine):** [Android Studio](https://developer.android.com/studio) (which provides the Android SDK) and **JDK 21** (Capacitor 8 compiles against Java 21). On macOS: `brew install openjdk@21`.
 
 ```bash

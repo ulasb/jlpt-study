@@ -1,6 +1,21 @@
-import { defineConfig } from 'vite'
+import { rmSync } from 'node:fs'
+import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
+
+// The Capacitor build must NOT bundle the (large) listening audio into the
+// APK — the native app downloads each file on first play from the deployed
+// site and caches it on-device (see src/lib/audio.ts). Vite copies all of
+// public/ into dist, so drop the audio directory after the bundle is written.
+function stripBundledAudio(): Plugin {
+  return {
+    name: 'strip-bundled-audio',
+    apply: 'build',
+    closeBundle() {
+      rmSync('dist/audio', { recursive: true, force: true })
+    },
+  }
+}
 
 // Build targets:
 //  - dev/preview:        base '/'            (served at root)
@@ -12,7 +27,9 @@ export default defineConfig(({ command }) => {
   const isCapacitor = process.env.CAP_BUILD === '1'
 
   const plugins = [react()]
-  if (!isCapacitor) {
+  if (isCapacitor) {
+    plugins.push([stripBundledAudio()])
+  } else {
     plugins.push(
       VitePWA({
         registerType: 'autoUpdate',
