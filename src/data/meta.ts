@@ -9,36 +9,36 @@ export const LEVEL_COUNTS: Record<JlptLevel, Record<Dimension, number>> = {
     "kanji": 104,
     "vocab": 543,
     "grammar": 94,
-    "reading": 20,
-    "listening": 20
+    "reading": 60,
+    "listening": 80
   },
   "N4": {
     "kanji": 201,
     "vocab": 631,
     "grammar": 181,
-    "reading": 20,
-    "listening": 20
+    "reading": 60,
+    "listening": 80
   },
   "N3": {
     "kanji": 332,
     "vocab": 837,
     "grammar": 166,
-    "reading": 20,
-    "listening": 20
+    "reading": 80,
+    "listening": 82
   },
   "N2": {
     "kanji": 363,
     "vocab": 896,
     "grammar": 275,
-    "reading": 20,
-    "listening": 20
+    "reading": 80,
+    "listening": 81
   },
   "N1": {
     "kanji": 1225,
     "vocab": 917,
     "grammar": 184,
-    "reading": 20,
-    "listening": 20
+    "reading": 80,
+    "listening": 80
   }
 }
 

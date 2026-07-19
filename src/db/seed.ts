@@ -2,7 +2,7 @@ import type { Grammar, JlptLevel, Kanji, Listening, Reading, Vocab } from '../ty
 import { db } from './db'
 
 // Bump when seeded content changes; existing content is cleared so it re-seeds.
-const SEED_VERSION = 9
+const SEED_VERSION = 10
 
 // Each level's content lives in its own module, loaded lazily (dynamic import)
 // so the startup bundle stays small — only the level you open is parsed.
