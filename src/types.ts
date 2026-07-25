@@ -130,4 +130,12 @@ export interface AppSettings {
   seedVersion: number
   // Levels the user has paused; they drop out of the Today overview/totals.
   disabledLevels: JlptLevel[]
+  // ---- Google Drive sync bookkeeping (see src/sync/) ----
+  // When the synced preferences above last changed, so a merge can tell which
+  // device's copy is newer. Absent on rows written before sync existed.
+  prefsUpdatedAt?: number
+  // "Progress was reset at" timestamps, per level. A merge drops review rows
+  // older than the marker for their level, so resetting on one device isn't
+  // undone by stale rows arriving from another.
+  resetMarkers?: Partial<Record<JlptLevel, number>>
 }

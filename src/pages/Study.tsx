@@ -7,6 +7,7 @@ import { useSettings } from '../hooks/useSettings'
 import { trackEvent } from '../lib/analytics'
 import type { Grade } from '../srs/sm2'
 import { buildSession, recordGrade } from '../study/session'
+import { scheduleSync } from '../sync/sync'
 import type { Question } from '../study/quiz'
 import type { Dimension } from '../types'
 
@@ -99,6 +100,8 @@ export function Study() {
       const accuracy = total > 0 ? Math.round((correctCount / total) * 100) : 0
       trackEvent('study_complete', { level: level!, dimension: dim, total, correct: correctCount, accuracy })
     }
+    // No-op unless Drive sync is on; coalesces a session's answers into one upload.
+    scheduleSync()
     setPicked(null)
     setRevealed(false)
     setIndex((n) => n + 1)

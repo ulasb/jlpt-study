@@ -39,6 +39,7 @@ A web app for studying the JLPT (Japanese-Language Proficiency Test) across **ka
 - **Sample exam** — a mixed multiple-choice test across all five dimensions.
 - **Report a problem** — a flag button on any exercise so bad items can be found and fixed (see [Analytics](#analytics-optional)).
 - **Offline & local** — all content and your progress live on-device (IndexedDB); no account, no server.
+- **Optional Google Drive sync** — sign in to continue your progress on another device. Entirely opt-in; the app works exactly as before if you never do (see [Google Drive sync](#google-drive-sync-optional)).
 
 ## Tech
 
@@ -111,6 +112,47 @@ Listening audio (`public/audio/listening/`) is pre-generated from the scripts wi
 `src/data/meta.ts` (per-level item counts used by the Home overview) is **auto-generated** from the content files by `scripts/gen-meta.mjs`, which runs before every `dev`/`build` — so the totals can't drift from the data. Regenerate manually with `npm run gen:meta`.
 
 Each item has a stable id (`<dimension>:<level>:<key>`, e.g. `kanji:N3:政`, `vocab:N2:提案`, `grammar:N2:において` — the `～` is stripped from grammar ids) used for seeding, dedup, and flag tracking.
+
+## Google Drive sync (optional)
+
+By default the app is account-free and everything stays on the device. Signing in with Google (**Settings → Sync with Google Drive**) additionally keeps your progress in **your own** Google Drive, so you can carry on from another device.
+
+**What's stored:** one JSON file, `jlpt-study-progress.json`, holding your SRS review history and your preferences (selected level, new-items-per-day, paused levels). JLPT content itself is bundled with the app and never uploaded.
+
+**Where:** Drive's `appDataFolder` — a hidden folder that only this app can see. The single scope requested is `drive.appdata`, which **cannot read, list, or modify any of your own Drive files**. It's a non-sensitive scope, so it needs no Google security assessment. Signing out revokes the grant; the file stays until you delete it (Drive → Settings → Manage apps).
+
+**How merging works** (`src/sync/snapshot.ts`) — sync is peer-to-peer through the file, with no server to arbitrate, so the merge is deliberately conservative:
+
+- Review rows merge **per item**, most recently studied wins. Studying different items on two devices keeps both, so nothing is lost by syncing late or working offline.
+- Resetting a level's progress writes a **reset marker**; rows for that level older than the marker are dropped on merge, so a reset isn't undone by a device that still holds the old rows.
+- Preferences move as one block, from whichever device changed them last.
+
+The merge is symmetric and idempotent, so the order devices sync in doesn't matter and an interrupted sync is simply retried. Syncs run on startup, a few seconds after you finish answering, when you leave the page, and via **Sync now**.
+
+**Browser only.** Google refuses OAuth inside embedded WebViews, so sync is unavailable in the Capacitor Android build — Settings says so instead of offering a button that would fail. Supporting it natively would mean adding a Google Sign-In Capacitor plugin plus an Android-type OAuth client registered with the signing keys' SHA-1 fingerprints. The auth layer (`src/sync/googleAuth.ts`) is isolated behind `syncAvailable()` so that can be added without touching the merge or UI code.
+
+### Setup
+
+Like analytics, the feature is **hidden unless a client ID is configured** — no Google code is loaded without one.
+
+1. In the [Google Cloud Console](https://console.cloud.google.com/), create or select a project.
+2. **APIs & Services → Library** → enable the **Google Drive API**.
+3. Configure the **OAuth consent screen** (app name, support email, developer contact) and add the scope `https://www.googleapis.com/auth/drive.appdata`.
+4. **Credentials → Create credentials → OAuth client ID → Web application**. Under **Authorized JavaScript origins** add the origins you serve from — origins only, no path:
+   - `https://ulasb.github.io` (the deployed site)
+   - `http://localhost:5173` (dev) and `http://localhost:4173` (`npm run preview`)
+5. Copy the client ID and set it as a repo Actions variable named `VITE_GOOGLE_CLIENT_ID` (**Settings → Secrets and variables → Actions → Variables**), then trigger a deploy. *(Inlined at build time, so changing it needs a rebuild.)* A browser OAuth client ID is public by design — it isn't a secret; access is limited by the authorized origins above.
+6. **Publish** the consent screen. While it's in *Testing*, only accounts you list as test users can sign in (max 100).
+
+For local testing put `VITE_GOOGLE_CLIENT_ID=…` in `.env.local` and run `npm run dev`.
+
+### Troubleshooting
+
+**"The Google Drive API has not been used in project … or it is disabled"** — step 2 was skipped. Creating an OAuth client does *not* enable the Drive API; they're separate steps, and sign-in will appear to succeed (you'll even see your email) because the token is fine — it's the first Drive call that gets a 403. Enable the API, wait a minute for it to propagate, then hit **Reconnect**.
+
+**"Reconnect to resume syncing" on startup, with no error** — normal. Access tokens last about an hour and Google's popup can only open from a user gesture, so a background sync after the token expires can't silently renew it. One tap on **Reconnect** or **Sync now** restores it, and every background sync for the next hour then works from the cached token.
+
+**Sign-in popup never appears** — check the browser didn't block it, and that the origin you're on is in the client's authorized origins (`http://localhost:5173` ≠ `http://127.0.0.1:5173` — Google treats those as different origins).
 
 ## Analytics (optional)
 

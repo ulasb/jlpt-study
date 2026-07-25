@@ -215,6 +215,11 @@ rt { font-size: 0.5em; color: var(--muted); font-weight: 400; }
 .setting-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; background: var(--surface); border-radius: 12px; padding: 16px; }
 .stepper { display: flex; align-items: center; gap: 12px; }
 .stepper-val { min-width: 28px; text-align: center; font-weight: 700; font-size: 18px; }
+/* Drive sync: the description column can run to two or three lines, so keep
+   the action button from being squeezed out on narrow screens. */
+.setting-row > .btn { flex: 0 0 auto; }
+.sync-error { color: var(--accent-2); margin-top: 6px; }
+.small-btn { margin-top: 10px; padding: 6px 12px; font-size: 13px; }
 
 /* Cookie-consent banner */
 .consent {

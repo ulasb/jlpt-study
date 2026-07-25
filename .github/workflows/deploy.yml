@@ -23,9 +23,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      # Set this as a repository Actions *variable* (Settings → Secrets and
-      # variables → Actions → Variables). If unset, analytics stays disabled.
+      # Set these as repository Actions *variables* (Settings → Secrets and
+      # variables → Actions → Variables). Both are optional and inlined at
+      # build time, so changing one needs a fresh deploy to take effect.
+      # If unset, analytics stays disabled.
       VITE_GA_ID: ${{ vars.VITE_GA_ID }}
+      # If unset, Google Drive sync stays hidden. Not a secret: an OAuth client
+      # ID for a browser app is public by design (it's sent to Google in the
+      # URL); access is restricted by the client's authorized origins.
+      VITE_GOOGLE_CLIENT_ID: ${{ vars.VITE_GOOGLE_CLIENT_ID }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v6

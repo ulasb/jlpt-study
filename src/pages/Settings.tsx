@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { DriveSync } from '../components/DriveSync'
 import { db } from '../db/db'
 import { setNewPerDay, useSettings } from '../hooks/useSettings'
 import { analyticsAvailable, getConsent, setConsent, type Consent } from '../lib/analytics'
+import { recordResetMarker, scheduleSync } from '../sync/sync'
 
 export function Settings() {
   const navigate = useNavigate()
@@ -20,6 +22,10 @@ export function Settings() {
     if (!level) return
     if (!confirm(`Reset your ${level} progress? Content stays; your ${level} review history is cleared.`)) return
     await db.reviews.where('level').equals(level).delete()
+    // Mark the reset so syncing doesn't resurrect these rows from a device
+    // that still holds them, then push the deletion out.
+    await recordResetMarker(level, Date.now())
+    scheduleSync(0)
   }
 
   return (
@@ -46,6 +52,8 @@ export function Settings() {
           <button className="btn ghost" onClick={() => setNewPerDay(settings.newPerDay + 5)}>+</button>
         </div>
       </div>
+
+      <DriveSync />
 
       {analyticsAvailable() && (
         <div className="setting-row">
