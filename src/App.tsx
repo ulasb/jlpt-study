@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import { ConsentBanner } from './components/ConsentBanner'
+import { SyncAlert } from './components/SyncAlert'
 import { useSettings } from './hooks/useSettings'
 import { trackPageview } from './lib/analytics'
 import { Home } from './pages/Home'
@@ -37,6 +38,9 @@ export default function App() {
           </button>
         )}
       </header>
+      {/* Sits under the top bar rather than over the content: sync being paused
+          is worth knowing about, not worth interrupting a session for. */}
+      <SyncAlert />
       <main className="content">
         <Routes>
           {/* Level-scoped pages read selectedLevel reactively and show a brief

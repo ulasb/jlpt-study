@@ -4,7 +4,7 @@ import { HashRouter } from 'react-router-dom'
 import App from './App'
 import { ensureSettings } from './db/seed'
 import { initAnalytics } from './lib/analytics'
-import { flushPendingSync, initSync } from './sync/sync'
+import { flushPendingSync, initSync, syncOnReturn } from './sync/sync'
 import './styles.css'
 
 initAnalytics()
@@ -15,7 +15,11 @@ initAnalytics()
 window.addEventListener('pagehide', flushPendingSync)
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'hidden') flushPendingSync()
+  // Coming back after a while: pull in whatever the other device did, and give
+  // an expired token a chance to renew before the user hits anything.
+  else syncOnReturn()
 })
+window.addEventListener('online', syncOnReturn)
 
 ensureSettings().then(() => {
   ReactDOM.createRoot(document.getElementById('root')!).render(

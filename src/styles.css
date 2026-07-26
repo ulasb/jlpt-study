@@ -221,6 +221,19 @@ rt { font-size: 0.5em; color: var(--muted); font-weight: 400; }
 .sync-error { color: var(--accent-2); margin-top: 6px; }
 .small-btn { margin-top: 10px; padding: 6px 12px; font-size: 13px; }
 
+/* Sync-paused notice, under the top bar on every screen */
+.sync-alert {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  background: var(--surface); border-bottom: 1px solid var(--surface-2);
+  border-left: 3px solid var(--due); padding: 10px 16px;
+}
+.sync-alert-text { font-size: 13px; color: var(--muted); flex: 1 1 200px; line-height: 1.4; }
+.sync-alert-btn { padding: 6px 14px; font-size: 13px; }
+.sync-alert-close {
+  background: none; border: none; color: var(--muted); font-size: 20px; line-height: 1;
+  padding: 0 4px; cursor: pointer;
+}
+
 /* Cookie-consent banner */
 .consent {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
@@ -246,3 +259,14 @@ rt { font-size: 0.5em; color: var(--muted); font-weight: 400; }
 .paper-name { font-size: 14px; }
 .paper-pct { font-weight: 700; color: var(--good); }
 .paper-pct.bad { color: var(--accent-2); }
+
+/* Exam picker tiles carry the best score, so they stack three short lines */
+.exam-tile { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 12px 10px; }
+.exam-tile-name { font-size: 15px; font-weight: 600; }
+.exam-tile-best { font-size: 18px; font-weight: 800; }
+.exam-tile-best.pass { color: var(--good); }
+.exam-tile-best.fail { color: var(--due); }
+.exam-tile-best.none { font-size: 13px; font-weight: 500; color: var(--muted); }
+.exam-tile-tries { font-size: 11px; color: var(--muted); }
+.exam-best { margin: 0; }
+.exam-best.new { color: var(--good); font-weight: 700; }

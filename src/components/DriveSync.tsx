@@ -87,9 +87,15 @@ export function DriveSync() {
         </div>
         {status.error && <div className="sync-error small">{status.error}</div>}
         {/* Token expired with no click to open a popup with — not a failure,
-            just needs one tap. Shown plainly instead of as an error. */}
+            just needs one tap. Shown plainly instead of as an error. While a
+            tap-triggered retry is still pending, say so: it will very likely
+            have resolved itself before the user reaches for this button. */}
         {status.needsReauth && !status.error && (
-          <div className="muted small">Reconnect to resume syncing.</div>
+          <div className="muted small">
+            {status.autoRetrying
+              ? 'Access expired — renewing itself as you use the app.'
+              : 'Reconnect to resume syncing.'}
+          </div>
         )}
         <button className="btn ghost small-btn" disabled={working} onClick={disconnect}>
           Disconnect

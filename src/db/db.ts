@@ -1,5 +1,14 @@
 import Dexie, { type EntityTable } from 'dexie'
-import type { AppSettings, Grammar, Kanji, Listening, Reading, ReviewState, Vocab } from '../types'
+import type {
+  AppSettings,
+  ExamScore,
+  Grammar,
+  Kanji,
+  Listening,
+  Reading,
+  ReviewState,
+  Vocab,
+} from '../types'
 
 // Local-only, offline storage via IndexedDB.
 // Content tables (kanji/vocab/grammar) are seeded from bundled data and are
@@ -13,6 +22,7 @@ export const db = new Dexie('jlptdroid') as Dexie & {
   reading: EntityTable<Reading, 'id'>
   listening: EntityTable<Listening, 'id'>
   reviews: EntityTable<ReviewState, 'itemId'>
+  examScores: EntityTable<ExamScore, 'id'>
   settings: EntityTable<AppSettings, 'key'>
 }
 
@@ -32,4 +42,9 @@ db.version(2).stores({
 // v3 adds the listening-comprehension content table.
 db.version(3).stores({
   listening: 'id, level',
+})
+
+// v4 adds best-of mock exam scores, one row per (level, test).
+db.version(4).stores({
+  examScores: 'id, level',
 })

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useLiveQuery } from 'dexie-react-hooks'
 import { useNavigate } from 'react-router-dom'
 import { Reveal } from '../components/Reveal'
 import { FlagButton } from '../components/FlagButton'
@@ -15,6 +16,7 @@ import {
   type ExamPools,
   type ExamQuestion,
 } from '../study/exam'
+import { loadExamScores, recordExamAttempt } from '../study/examScores'
 import {
   buildGrammarQuestion,
   buildKanjiQuestion,
@@ -22,9 +24,13 @@ import {
   buildReadingQuestion,
   buildVocabQuestion,
 } from '../study/quiz'
-import type { JlptLevel } from '../types'
+import type { ExamScore, JlptLevel } from '../types'
 
 const QUICK_QUIZ_LENGTH = 15
+
+// Shared empty result so the live query's "still loading" value and its "no
+// level yet" value are the same object — and stay typed as a score lookup.
+const NO_SCORES: Record<number, ExamScore> = {}
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr]
@@ -72,6 +78,19 @@ export function Exam() {
   const [picked, setPicked] = useState<number | null>(null)
   const [revealed, setRevealed] = useState(false)
   const [answers, setAnswers] = useState<boolean[]>([])
+  // How the sitting just finished compares to earlier ones. Filled in when the
+  // paper is scored, so it's null while one is still in progress.
+  const [outcome, setOutcome] = useState<{ isBest: boolean; previousBestPct: number | null } | null>(
+    null,
+  )
+
+  // Live so a best score pulled in from another device shows up without a
+  // reload, and so finishing a paper updates the picker on the way back.
+  const scores = useLiveQuery(
+    () => (level ? loadExamScores(level) : NO_SCORES),
+    [level],
+    NO_SCORES,
+  )
 
   useEffect(() => {
     setPools(null)
@@ -88,6 +107,7 @@ export function Exam() {
     setPicked(null)
     setRevealed(false)
     setAnswers([])
+    setOutcome(null)
     trackEvent('exam_start', { level, test: t })
   }
 
@@ -103,11 +123,26 @@ export function Exam() {
           {examLength(level)} questions). Retaking a test repeats the same paper.
         </p>
         <div className="exam-grid">
-          {Array.from({ length: TESTS_PER_LEVEL }, (_, i) => (
-            <button key={i} className="btn big" onClick={() => start(i + 1)}>
-              Test {i + 1}
-            </button>
-          ))}
+          {Array.from({ length: TESTS_PER_LEVEL }, (_, i) => {
+            const best = scores[i + 1]
+            return (
+              <button key={i} className="btn big exam-tile" onClick={() => start(i + 1)}>
+                <span className="exam-tile-name">Test {i + 1}</span>
+                {best ? (
+                  <>
+                    <span className={`exam-tile-best ${best.bestPass ? 'pass' : 'fail'}`}>
+                      {best.bestPct}%
+                    </span>
+                    <span className="exam-tile-tries">
+                      best of {best.attempts} {best.attempts === 1 ? 'try' : 'tries'}
+                    </span>
+                  </>
+                ) : (
+                  <span className="exam-tile-best none">not taken</span>
+                )}
+              </button>
+            )
+          })}
         </div>
         <button className="btn ghost" onClick={() => start(0)}>
           ⚡ Quick quiz ({QUICK_QUIZ_LENGTH} random questions)
@@ -119,6 +154,7 @@ export function Exam() {
   // ---- Result ---------------------------------------------------------------
   if (index >= questions.length) {
     const result = scoreExam(questions, answers)
+    const best = test === 0 ? undefined : scores[test]
     return (
       <div className="page center">
         <h2>{test === 0 ? 'Quick quiz result' : `Test ${test} result`}</h2>
@@ -127,6 +163,25 @@ export function Exam() {
           {result.total} / {questions.length} correct —{' '}
           {result.pass ? 'Pass 🎉' : result.sectionalOk ? 'Keep practicing' : 'Failed on a sectional minimum'}
         </p>
+        {/* Both arms wait on `outcome`, which the recording write fills in a
+            tick after this first renders — otherwise the "best so far" line
+            would flash the previous mark before settling. */}
+        {best && outcome && (
+          outcome.previousBestPct === null ? (
+            // Nothing to beat yet, so don't dress a first sitting up as a win —
+            // at 0% the trophy would be plainly absurd.
+            <p className="exam-best muted small">
+              First time through this paper — the mark to beat from now on.
+            </p>
+          ) : outcome.isBest ? (
+            <p className="exam-best new">🏅 New best — up from {outcome.previousBestPct}%</p>
+          ) : (
+            <p className="exam-best muted small">
+              Best so far {best.bestPct}% ({best.bestCorrect} / {best.bestTotal}) · {best.attempts}{' '}
+              {best.attempts === 1 ? 'try' : 'tries'}
+            </p>
+          )
+        )}
         {test !== 0 && (
           <div className="paper-scores">
             {result.papers.map((p) => (
@@ -161,9 +216,26 @@ export function Exam() {
 
   function next() {
     if (index + 1 >= total) {
-      const score = answers.filter(Boolean).length
-      const pct = Math.round((score / total) * 100)
-      trackEvent('exam_complete', { level: level!, test: test!, total, score, pct })
+      // `answers` already holds this question: it was appended when the option
+      // was picked, one click ago.
+      const result = scoreExam(questions!, answers)
+      trackEvent('exam_complete', {
+        level: level!,
+        test: test!,
+        total,
+        score: result.total,
+        pct: result.pct,
+      })
+      // Fixed tests only — the quick quiz draws fresh questions every time, so
+      // there's nothing meaningful to hold a record against.
+      if (test !== 0) {
+        void recordExamAttempt(level!, test!, {
+          correct: result.total,
+          total,
+          pct: result.pct,
+          pass: result.pass,
+        }).then(({ isBest, previousBestPct }) => setOutcome({ isBest, previousBestPct }))
+      }
     }
     setPicked(null)
     setRevealed(false)

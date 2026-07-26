@@ -123,6 +123,24 @@ export interface ReviewState {
   lapses: number // times forgotten
 }
 
+// ---- Mock exam results: one row per (level, fixed test) ----
+// Only the best attempt is kept in detail — that's what the exam picker shows —
+// plus a light trail of the most recent one. The quick quiz isn't recorded: its
+// questions are drawn at random every time, so a "best" would mean nothing.
+export interface ExamScore {
+  id: string // `${level}:${test}`, e.g. "N3:4"
+  level: JlptLevel
+  test: number // 1-based test number
+  bestPct: number
+  bestCorrect: number
+  bestTotal: number // questions in the best attempt (papers grow with content)
+  bestPass: boolean // cleared 60% overall *and* every sectional minimum
+  bestAt: number
+  attempts: number
+  lastPct: number
+  lastAt: number
+}
+
 export interface AppSettings {
   key: 'app'
   selectedLevel: JlptLevel | null
